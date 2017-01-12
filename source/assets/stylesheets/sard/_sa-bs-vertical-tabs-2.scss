@@ -4,6 +4,7 @@ $tab-colour:        $grey06;
 $tab-list-colour:   $grey02;
 $tab-list-hover:    $grey08;
 $tab-pane-colour:   white;
+$tab-text:          $grey18;
 
 
 
@@ -25,12 +26,37 @@ $tab-pane-colour:   white;
   margin-right:-10px; // added
 
 
-  .tab-column{ // added
-    // background:pink; // added
-    // height:100%; // added
-    // min-height:100%; // added
-    padding-left:0px; // added
-    margin-bottom:-73px; // This removes the strange spacing below
+  .tab-column{ 
+    padding-left:0px; 
+    margin-bottom:-73px; // This removes the strange spacing below the tab column
+  }
+
+  .nav-list > li > a{ // Used on collapse nav-list links
+    border-bottom: 1px solid $tab-colour;
+    background:$tab-list-colour;
+    margin-right: -1px;
+    padding-top:7px;
+    padding-bottom:7px;
+  }
+
+  .nav-list > li:last-of-type{
+    border-bottom: none;
+
+  }
+
+  .nav-list>li>a:hover,
+  .nav-list>li>a:focus {
+    background:$tab-list-hover; 
+  }
+
+  .nav-list>li.active>a,
+  .nav-list>li.active>a:hover,
+  .nav-list>li.active>a:focus {
+    border-right: none;
+    border-left: 1px solid $tab-colour;
+    background:white; 
+    z-index:1000; 
+    padding-left:14px;
   }
 
   .nav-tabs{}
@@ -47,69 +73,105 @@ $tab-pane-colour:   white;
     border:none;
   }
 
-  .tabs-left {
-    // border:1px solid red inset;
-    border-bottom: none;
-    padding-top: 0px;
+  .list-head{
+    postition:relative;
+    background:$tab-colour;
+    min-height:50px; 
+    display: table; 
+    width:101%;
+    min-width:101%;
+    margin-right:-10px;
+    margin-top:2px;
+    text-align:left;
+    vertical-align:middle; 
+  }
+  .list-head.top{ margin-top:0px;}
+
+  a > .list-head{
+    color:$tab-text;
+  }
+
+  // An attempt at putting a togle image in - didn't work though.
+  
+  // a:hover > .list-head:after{
+  //   font-family: 'Glyphicons Halflings';
+  //     content: "\e114" ;
+  //     padding-right:5px;
+  // }
+
+  a:hover > .list-head,
+  a:focus > .list-head{
+    color:$tab-text;
+  }
+
+  .list-head > .number{
+    display:table-cell;
+    background:$grey18;
+    padding:5px 2px 0px 2px;
+    margin-bottom:0px;
+    width:50px;
+    min-width:50px;
+    color:white;
+    font-size:2em;
+    text-align:center;
+  }
+  .list-head > .title{
+    padding:5px 10px 5px 10px;
+    display:table-cell; 
+    vertical-align:middle;
+    width:100%;
+    min-width:10%;
   }
 
   .tabs-left {
-    // border-right: 0px solid #ddd;
+    border-bottom: none;
+    padding-top: 0px;
   }
 
   .tabs-left>li {
     float: none;
     margin-bottom: 2px;
-    border:1px solid red;
+    border:1px solid $tab-colour;
   }
   .tabs-left>li {
     margin-right: -2px;
+  }
 
+  .tabs-left>li>a {
+    border-radius: 0px; 
+    margin-right: 0;
+    color:$tab-text;
   }
 
   .tabs-left>li.active>a,
   .tabs-left>li.active>a:hover,
   .tabs-left>li.active>a:focus {
-    // border-bottom-color: red;
     border-right: none;
-    background:white; // added
-    z-index:1000; // added
+    background:white; 
+    z-index:1000; 
   }
 
-  .tabs-left>li>a {
-    // border-radius: 4px 0 0 4px;
-    border-radius: 0px; // added
-    margin-right: 0;
-    // display:block;
-  }
 
-  .tab-content-wrapper{ // added
-    // background:yellow; // added
-      display:flex; // added
-      height:100%; // added
-      min-height:100%; // added
-      padding-right:0px; // added
-      // margin-right:0px; // added
+  // Content Area ==========
 
-
+  .tab-content-wrapper{ 
+    display:flex; 
+    height:100%; 
+    min-height:100%; 
+    padding-right:0px; 
   }
 
   .tab-content{
-    border:1px solid red; // added
-    margin-left:-16px; // added
-    background:white; // added
-    width:100%; // added
-    min-width:100%; // added
+    border:1px solid $tab-colour; 
+    margin-left:-16px; 
+    background:white; 
+    width:100%; 
+    min-width:100%;
     padding:0px;
-  
-
   }  
 
   .tab-pane{
-    // background:red;
-    border: none; // added
-    // height:100%; // added
-    // min-height:100%; // added
+    border: none;
     margin-bottom:-73px; // This removes the strange spacing below
       margin-bottom: 0px\9; // ie* Hack
   }
@@ -119,4 +181,8 @@ $tab-pane-colour:   white;
   .tab-pane {margin-bottom: 0px}
   }
 
-}// End BS vertical-tabs-2
+} // End BS vertical-tabs-2
+
+
+  
+
