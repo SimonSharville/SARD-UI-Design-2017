@@ -1,0 +1,373 @@
+
+
+//== Typography
+
+
+
+/*  TYPOGRAPHY GENERAL ========================================================== */
+
+  //letter-spacing
+    $tight: -0.05em; /* 16 * 0.0312 = 1/2px */
+    $reduced: -0.025em; /* 16 * 0.0312 = 1/2px */
+    $vslight: 0.025em; 
+    $slight: 0.05em; /* 16 * 0.0312 = 1/2px */
+    $single: 0.0625em; /* 16 * 0.0625 = 1px */
+    $double: 0.125em; /* 16 * 0.125 = 2px */
+  
+  // Text Link Colours
+    $bodytext:         $grey18;
+    $link:             $grey18;
+    $link-visited:     $plum;
+    $link-hover:       darken($turq, 10%);
+    $link-active:      $purple;
+    
+
+h1, h2, h3, h4, h5, h6, p{
+  font-weight:normal;
+}
+  
+  h1 {
+    font-family: 'robotothin', Helvetica, Arial, Sans-serif;
+    font-size: 4.000em;
+    letter-spacing: $reduced;
+    margin-top:0;
+    margin-left:-4px;
+  }
+  
+  h2 {
+    font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+    font-size: 3.000em;
+    margin-top:0;
+    margin-left:-3px;
+  }
+  
+  h3 {
+    font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+    font-size: 2.000em;
+    margin-top:0;
+    margin-left:-2px;
+  }
+  
+  h4 {
+    font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+    font-size: 1.500em;
+    margin-left:-1px;
+  }
+
+  h5 {
+    font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+    font-size: 1.250em;
+  }
+
+  h6 {
+    font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+    font-size: 1.000em;
+  }
+  
+  p {
+    font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+    font-size: 1.000em;
+    // line-height: 1.5em;
+  }
+
+  .table p { // This adjust the spacing and endents of multi line links in a table
+    // padding-left: 1.25em;
+    // text-indent:-1.25em;
+    margin-bottom:0.5em;
+    line-height: 1.3em;
+  }
+  li p { // This adjust the spacing and endents of multi line links in a list
+    padding-left: 1.25em;
+    text-indent:-1.25em;
+    margin-bottom:0.5em;
+    line-height: 1.3em;
+  }
+
+// Small screens
+@media (max-width: 767px) {
+  h1{ font-size: 3.000em;}
+  h2{ 
+    // font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+    font-size: 2.250em;
+  }
+  h3{
+    font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+    font-size: 1.750em;
+  }
+  h4{font-size: 1.500em;}
+} 
+
+/*  TEXT Styles ========================================================== */
+
+  strong{ 
+    font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+    font-weight:normal;
+  }
+  .green { color:$green;}
+  .red { color:$red;}
+
+  .center{text-align:center;}
+
+/*  TEXT LINK Styles ========================================================== */
+
+
+  a {
+    color: $turq;
+    text-decoration: none; }
+
+    a:hover, a:focus {
+      color: $ink;
+      text-decoration: none; }
+
+    a:focus { }
+
+    a:link{ color:$bodytext;}
+    a:visited{ color:$bodytext;}
+    a:hover{ color:$link-hover;}
+    a:active{ color:$link-hover;}
+    
+    .link-arrow { 
+      // See sard/pages/index.scss
+    }
+
+
+
+  a.glyphicon-info-sign{
+    color: darken($info, 10%); 
+    background-color:white;
+    border-radius:50%;
+    border:1px solid white;
+  }
+
+  a:hover, a:focus .glyphicon-info-sign{
+    color: darken($info, 20%);
+  }
+  
+  // Status Lights ========================================================
+
+  .status{
+    // font-family: 'Glyphicons Halflings';
+    // content: "\e080" ;
+  }
+
+  .status:before{
+    content: "" ;
+    display: inline-block;
+    border-radius:50%;
+    border: 2px solid white;
+    float:left;
+    background-image: url("../graphics/panel_highlight.png");
+
+    font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+    text-align:center;
+    color:white;
+  }
+
+  .status-alert:before{
+    background-color:$orange;
+    content: "A" ;
+  }
+
+  .status-warning:before{
+    background-color:$yellow;
+    content: "W" ;
+  }
+
+  .status-success:before{
+    background-color:$success;
+    content: "S" ;
+  }
+
+  .status-danger:before{
+    background-color:$danger;
+    content: "D" ;
+  }
+
+  .status-none:before{
+    background-color:transparent;
+    content: "N" ;
+    color:$grey10;
+    border-color:$grey10;
+  }
+
+// Table specific Status Lights ================
+.table div{ 
+    &.status:before{
+      height: 30px;
+      width: 30px;
+      background-size: 28px 28px;
+      background-repeat: no-repeat;
+      padding-top:3px;
+      padding-left:1px;
+    }
+    &.status-alert:before{ padding-left:1px; }
+    &.status-danger:before{ padding-left:2px; }
+  }
+
+  .status-col{ 
+    padding: 4px 0px 4px 12px !important; 
+    width:20px;
+  }
+
+
+  // END Status Lights ====================================================
+
+  // Notices ===============================================================
+  .notice{
+    padding-top:1px;
+    margin-bottom:7px;
+    padding-bottom:8px;
+    border-bottom: 1px solid white;
+  }
+  .notice:last-of-type{
+    border-bottom: none;
+    margin-bottom:-20px;
+  }
+
+  .notice{ 
+    &.status:before{
+      height: 32px;
+      width: 32px;
+      background-size: 28px 28px;
+      background-repeat: no-repeat;
+      padding-top:4px;
+    }
+    &.status-alert:before{ padding-left:2px; }
+    &.status-danger:before{ padding-left:2px; }
+    &.status:hover:before{ }
+
+    h5, h6, p{
+      margin:0 0 0 40px;
+    }
+    p{ margin-bottom:-3px;}
+  }
+
+   .notice, h5, p{
+    a:link{ color:$bodytext;}
+    a:visited{ color:$bodytext;}
+    a:hover{ color:$link-hover;}
+    a:active{ color:$link-hover;}
+    a.glyphicon-info-sign{ color: darken($info, 10%); }
+    a:hover, a:focus .glyphicon-info-sign{ color: darken($info, 20%);}
+  }
+
+  // END Notice ========================================================
+
+  // List Groups ===============================================================
+
+  ul { // Removes bullet points globally
+    list-style-type: none;
+  }
+
+  p.link-icon{
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+
+  .link-icon{ // This places the arrow icon in front of a text link
+    p{padding-left: 1.3em ;
+      text-indent: -1.3em ;
+    }
+    a:link:before{
+      font-family: 'Glyphicons Halflings';
+      content: "\e131" ;
+      padding-right:5px;
+      vertical-align:middle;
+      color:$client-colour;
+    }
+    a:visited:before{color:$client-colour;}
+    
+  }
+
+  .link-arrow   { // this puts an arrow before any links with this class
+    p{padding-left: 1.3em ;
+      text-indent: -1.3em ;
+    }
+      a:before{
+      font-family: 'Glyphicons Halflings';
+      content: "\e131" ;
+      padding-right:5px;
+      // vertical-align:middle;
+      position:relative;
+      // top:3px;
+      color:$client-colour;
+    }
+  }
+
+
+  .list-group{ // Used in Dashboard/Support Docs panel .doc-list
+    margin-bottom:0px;
+    .group{
+      font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+      border-bottom:1px solid $bodytext;
+      padding-bottom:5px;
+      margin-bottom:5px;
+      border-top:1px solid $bodytext;
+      padding-top:5px;
+      margin-top:5px;
+    }
+    .group:first-of-type{
+      border-top:none;
+      padding-top:0px;
+      margin-top:0px;
+    }
+    .grouped{
+      border-bottom:1px solid white;
+      padding-bottom:5px;
+      margin-bottom:5px;
+
+      // a:link{ color:$bodytext;}
+      // a:visited{ color:$bodytext;}
+      // a:hover{ color:$link-hover;}
+      // a:active{ color:$link-hover;}
+      // a:link:before{
+      //   font-family: 'Glyphicons Halflings';
+      //   content: "\e131" ;
+      //   padding-right:5px;
+      //   vertical-align:middle;
+      //   color:$client-colour;
+      // }
+      // a:visited:before{color:$client-colour;}
+    }
+  }
+
+   a.link-arrow:before{ // Used on Dashboard/Your Details, email link
+    font-family: 'Glyphicons Halflings';
+        content: "\e131" ;
+        padding-right:5px;
+        vertical-align:middle;
+        color:$client-colour;
+        a:visited:before{color:$client-colour;}
+  }
+
+  // Box content ========================================================
+
+  .box-content{ // Used on Dashboard/Notifications
+    .date {
+      font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+      background: $grey16;
+      color:white;
+      padding: 3px 10px;
+      margin: 10px -3px 8px -3px;
+      border-radius:20px;
+    }
+
+    .time {
+      font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+      border-top: 1px solid white;
+      padding-top: 10px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+    .time:first-of-type{
+      border-top: none;
+      padding-top: 0px;
+    }
+    ul{ padding-left:10px; }
+  }
+
+  // Glyphicons =========================================================
+  .glyphicon-ok{color:$green;}
+  .glyphicon-remove{color:$red;}
+  .glyphicon-minus{color:$grey16;}
+

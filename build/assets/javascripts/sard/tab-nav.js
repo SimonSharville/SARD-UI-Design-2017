@@ -1,0 +1,1 @@
+$(document).ready(function(){location.hash&&$("a[href="+location.hash+"]").tab("show")});

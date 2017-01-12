@@ -1,0 +1,287 @@
+
+
+// SARD Components
+
+// These are any SARD specific componants 
+
+// Sections ===================================================================
+
+
+// This is a SARD Add on to the Navbar
+@media (min-width: 768px) {
+  .settings-tab{float:right;}
+}
+
+
+.sa-top-section{ 
+padding-left:0px;
+padding-right:0px;
+}
+
+.sa-main-section{ 
+  min-height: 100%;    
+  padding-bottom: 60px;
+}
+
+.sa-main-content{  // OPTIONAL
+   background-color: white;
+   min-height: 100%;
+ }
+
+
+.new-footer{
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  background-color:$grey18;
+  color: $client-colour;
+  height:40px;
+  padding: 10px 10px 0px 10px;
+  a{color:white;}
+}
+
+
+.sa-main-column{ } // If creating a 2 column layout like dashboard use this.
+
+.sa-side-column{ 
+padding-left:16px;
+padding-right:16px;
+} // If creating a 2 column layout like dashboard use this.
+
+
+// SARD Incidentals =================================================================
+
+.topButton {
+    position:fixed;
+    bottom:60px;
+    right:0px;
+    border-radius:20px 0px 0px 20px;
+    background-image: url("../graphics/flower_sm_wht.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    width:40px;
+    height:40px;
+    margin:  0px;
+    -webkit-box-shadow: -1px 0px 5px 0px rgba(30, 30, 30, 0.5);
+    -moz-box-shadow:    -1px 0px 5px 0px rgba(30, 30, 30, 0.5);
+    box-shadow:         -1px 0px 5px 0px rgba(30, 30, 30, 0.5);
+    display:none;
+    z-index:3000;
+    &:link{ background-color: $grey16;}
+    &:hover, :focus{
+      background-color: $client-colour;
+    }
+  }
+
+.indent{
+  padding-left:15px;
+  padding-right:15px;
+}
+
+.row-indent{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row-grey{ 
+  background-color:$grey10;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.row-turq{ 
+  background-color:$turq;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+// Only display element on Mobile ==================
+@media only screen and (min-width : 992px) {
+  .mobile-only{display:none} 
+}
+
+// Hide element on Mobile ==========================
+@media only screen and (max-width : 991px) {
+  .mobile-hide{display:none} 
+}
+
+
+// Top Nav =====================================================================
+// You will only nee this if we re-introduce the top nav section
+
+// .sa-top-nav {
+//   .navbar{
+//     margin-bottom: 0px;
+//   }
+
+//   .navbar-brand{
+//     padding: 15px 10px;
+//   }
+
+//   /* Extra Small Devices, Phones */ 
+//   @media only screen and (max-width : 767px) {
+//     .navbar-form{
+//       margin-left:  0px;
+//       margin-right:  0px;
+//       padding:      0px 15px;
+//       border-top:   0px;
+//       border-bottom:   0px;
+//       box-shadow: none;
+//     }
+
+//     .navbar-nav{
+//       margin: 5px 0px 0px 0px;
+//     }
+//   }
+
+//   /* Small Devices, Tablets */
+//   @media only screen and (min-width : 768px) {
+//     .nav > li > a{
+//       padding:      15px 0px;
+//     }
+
+//   }
+// } // End top-nav
+
+
+
+//  Perforation dots ==============================================================
+
+.divide-rule{
+  border-top: 1px solid $grey08;
+  margin:20px 10px 20px 10px;
+}
+
+.perf {
+      background-image: url("../graphics/dot_grey04.png");
+      background-repeat: repeat-x;
+      height: 16px;
+      background-position: -4px 0px;
+      margin: 15px -24px 15px -24px;
+    }
+
+
+  .row{
+    .perf {
+      margin: 15px -9px 25px -9px;
+    }
+
+    &.row-between-perfs{
+      margin: -33px -24px -24px -24px;
+      padding-bottom:20px;
+    }
+
+    &.row-between-perfs:before{
+      display: block;
+      height: 26px;
+      margin-left: -20px;
+      margin-right: -20px;
+      background: url('../graphics/dot_grey04.png');
+      background-repeat: repeat-x;
+      background-position: -4px -8px;
+    }
+
+
+    &.perf-grey06 {
+      background-image: url("../graphics/dot_grey06.png");
+      background-repeat: repeat-x;
+      height: 16px;
+      background-position: -4px 0px;
+      margin: 15px -20px 25px -20px;
+    }
+
+    &.perf-wht {
+      background-image: url("../graphics/dot_white.png");
+      background-repeat: repeat-x;
+      height: 16px;
+      background-position: -4px 0px;
+      margin: 15px -20px 25px -20px;
+    }
+
+    &.divide-space {
+      height: 40px;
+      background:none;
+    }
+  }
+
+  .panel{
+    >.perf-wht{
+        background-image: url("../graphics/dot_white.png");
+        background-repeat: repeat-x;
+        height: 16px;
+        background-position: -4px 0px;
+        margin: 0px 0px 0px 0px;
+      }
+
+    >.perf-grey{
+      background-image: url("../graphics/dot_grey04.png");
+      background-repeat: repeat-x;
+      height: 16px;
+      background-position: -4px 0px;
+      margin: 0px 0px 0px 0px;
+    }
+  }
+
+
+//  Panels ==============================================================
+//  All panel styles are in _bs-overrides.scss
+//  =====================================================================
+
+//  Tables ==============================================================
+//  All tables styles are in _bs-overrides.scss
+//  =====================================================================
+
+//  Buttons ==============================================================
+//  All button styles are in _bs-overrides.scss
+//  =====================================================================
+
+
+
+// Notices ===============================================================
+// Are in Typography
+
+// Status Lights ========================================================
+// Are in Typography
+
+// List Items ========================================================
+// Are in Typography
+
+
+// Images adjustments ================================================
+.row .doc-covers{
+  padding: 0px 8px;
+}
+img.user-guide-cover{
+  width: 100%;
+  // max-width:270px;
+  margin-top:10px;
+  margin-bottom:10px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5); 
+  -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5); 
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5);
+}
+
+.step-by-step{
+  padding-left:5px;
+  padding-right:3px;
+  padding-bottom:0px;
+  img{ 
+  width: 100%;
+  // margin-left: -1%;
+}
+}
+
+
+//  UI Components ==============================================================
+//  These should only be need for use in the UI pages.
+
+.ui-btn{ margin-bottom:10px;}
+
+.ui.page-title{padding-top:30px}
+
+
+

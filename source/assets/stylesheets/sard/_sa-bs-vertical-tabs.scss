@@ -1,0 +1,89 @@
+// ====================================================================================
+
+$tab-colour:        $grey06;
+$tab-list-colour:   $grey02;
+$tab-list-hover:    $grey08;
+$tab-pane-colour:   white;
+
+
+
+// bs vertical-tabs =====================================
+// http://bootsnipp.com/snippets/nP8E7
+
+/*  bs tabs */
+
+  /*!
+ * bootstrap-vertical-tabs - v1.1.0
+ * https://dbtek.github.io/bootstrap-vertical-tabs
+ * 2014-06-06
+ * Copyright (c) 2014 Ä°smail Demirbilek
+ * License: MIT
+ */
+
+ .bs-vertical-tabs{
+  display:flex; // added
+
+  .tab-column{ // added
+    background:pink; // added
+    height:100%; // added
+    min-height:100%; // added
+  }
+
+  .tabs-left {
+    border-bottom: none;
+    padding-top: 2px;
+  }
+
+  .tabs-left {
+    border-right: 1px solid #ddd;
+  }
+
+  .tabs-left>li {
+    float: none;
+    margin-bottom: 2px;
+  }
+  .tabs-left>li {
+    margin-right: -1px;
+  }
+
+  .tabs-left>li.active>a,
+  .tabs-left>li.active>a:hover,
+  .tabs-left>li.active>a:focus {
+    border-bottom-color: #ddd;
+    border-right-color: transparent;
+    background:white; // added
+    z-index:1000; // added
+  }
+
+  .tabs-left>li>a {
+    border-radius: 4px 0 0 4px;
+    margin-right: 0;
+    display:block;
+  }
+
+  .tab-content-wrapper{ // added
+    
+    background:yellow; // added
+      display:flex; // added
+      height:100%; // added
+      min-height:100%; // added
+      padding-right:0px; // added
+  }
+
+  .tab-content{
+    border:1px solid black; // added
+    margin-left:-17px; // added
+    background:white; // added
+    width:100%; // added
+    min-width:100%; // added
+  }  
+
+  .tab-pane{
+    border: none; // added
+    height:100%; // added
+    min-height:100%; // added
+
+  }
+
+}// End BS vertical-tabs
+

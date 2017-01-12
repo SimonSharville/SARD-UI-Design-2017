@@ -1,0 +1,122 @@
+// ====================================================================================
+
+$tab-colour:        $grey06;
+$tab-list-colour:   $grey02;
+$tab-list-hover:    $grey08;
+$tab-pane-colour:   white;
+
+
+
+// bs vertical-tabs =====================================
+// http://bootsnipp.com/snippets/nP8E7
+
+/*  bs tabs */
+
+  /*!
+ * bootstrap-vertical-tabs - v1.1.0
+ * https://dbtek.github.io/bootstrap-vertical-tabs
+ * 2014-06-06
+ * Copyright (c) 2014 Ä°smail Demirbilek
+ * License: MIT
+ */
+
+ .bs-vertical-tabs-2{
+  display:flex; // added
+  margin-right:-10px; // added
+
+
+  .tab-column{ // added
+    // background:pink; // added
+    // height:100%; // added
+    // min-height:100%; // added
+    padding-left:0px; // added
+    margin-bottom:-73px; // This removes the strange spacing below
+  }
+
+  .nav-tabs{}
+
+  .nav-tabs > li{
+    border:none;
+  }
+
+  .nav-tabs > li > a{
+    border:none;
+  }
+
+  .nav-tabs > li.active > a{
+    border:none;
+  }
+
+  .tabs-left {
+    // border:1px solid red inset;
+    border-bottom: none;
+    padding-top: 0px;
+  }
+
+  .tabs-left {
+    // border-right: 0px solid #ddd;
+  }
+
+  .tabs-left>li {
+    float: none;
+    margin-bottom: 2px;
+    border:1px solid red;
+  }
+  .tabs-left>li {
+    margin-right: -2px;
+
+  }
+
+  .tabs-left>li.active>a,
+  .tabs-left>li.active>a:hover,
+  .tabs-left>li.active>a:focus {
+    // border-bottom-color: red;
+    border-right: none;
+    background:white; // added
+    z-index:1000; // added
+  }
+
+  .tabs-left>li>a {
+    // border-radius: 4px 0 0 4px;
+    border-radius: 0px; // added
+    margin-right: 0;
+    // display:block;
+  }
+
+  .tab-content-wrapper{ // added
+    // background:yellow; // added
+      display:flex; // added
+      height:100%; // added
+      min-height:100%; // added
+      padding-right:0px; // added
+      // margin-right:0px; // added
+
+
+  }
+
+  .tab-content{
+    border:1px solid red; // added
+    margin-left:-16px; // added
+    background:white; // added
+    width:100%; // added
+    min-width:100%; // added
+    padding:0px;
+  
+
+  }  
+
+  .tab-pane{
+    // background:red;
+    border: none; // added
+    // height:100%; // added
+    // min-height:100%; // added
+    margin-bottom:-73px; // This removes the strange spacing below
+      margin-bottom: 0px\9; // ie* Hack
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio:0) // Safari Hack
+  {
+  .tab-pane {margin-bottom: 0px}
+  }
+
+}// End BS vertical-tabs-2

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>SARD Appraisal</title>
+
+    <!-- Bootstrap -->
+    <link href="../../assets/stylesheets/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 8]>
+      <link href="../../assets/stylesheets/bootstrap-ie7fix.min.css" rel="stylesheet">
+    <![endif]-->
+    
+    <!-- <link href="assets/css/reset.css" rel="stylesheet"> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="../../assets/stylesheets/sard-styles.css" rel="stylesheet">
+  </head>
+  <body id="appraisal">
+  <a href="#appraisal" class="topButton smoothScroll"></a> <!-- Link for scroll-to-top button -->
+
+
+  <div class="container sa-top-section">
+
+   <!-- ============================================================================ -->
+    <!-- Jumbotron -->
+    <!-- @import "sections/jumbotron.html" -->
+
+
+    <!-- ============================================================================ -->
+    <!-- Main Navigation -->
+    <!-- @import "sections/main-nav.html" -->
+
+    <!-- ============================================================================ -->
+    <!-- Breadcrumb -->
+    <ol class="breadcrumb">
+      <li><a href="../../index.html">Home</a></li>
+      <li class="active">Appraisals</li>
+    </ol>
+
+  </div>  <!-- END top-section -->
+
+  <!-- ============================================================================ -->
+  <!-- Main Section -->
+  <div class="container sa-main-section">
+
+
+    <!-- ============================================================================ -->
+    <!-- Page Header -->
+    <div class=" page-header">
+
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="profile-image pull-left">
+            <img src="../../assets/images/profile-image.jpg" alt="Profile Image">
+          </div>
+
+          <div class="">
+            <div class="user-name">
+              User Name
+            </div>
+            <div class="page-title">
+              Appraisals
+            </div>
+          </div>
+        </div> <!-- col-xs-8 -->
+
+        <div class="col-sm-4 head-nav">
+            <a href="" class="headlink">Go to Portfolio</a>
+            <a href="" class="headlink">Download Portfolio</a>
+        </div> <!-- col-xs-4 -->
+
+
+
+      </div> <!-- END Row -->
+    </div> <!-- END page-header -->
+
+    <div class="row perf"></div>
+
+
+    <!-- ============================================================================ -->
+    <!-- MAIN CONTENT  - OPTIONAL  -->
+    <div class="row sa-main-content">
+
+
+        <div class="appraisal col-sm-12">
+            <!-- tabs -->
+            <div class="vertical-tabs">
+                <div class="nav-stacked col-xs-3">
+                    <div class="nav tabs">
+                      
+                      <ul class="nav tabs">
+                        <p>Some text here</p>
+                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, 'London')">London</a></li>
+                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, 'Paris')">Paris</a></li>
+                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, 'Tokyo')">Tokyo</a></li>
+                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, 'New York')">New York</a></li>
+                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, 'Istambul')">Istambul</a></li>
+                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, 'Hawaii')">Hawaii</a></li>
+                      </ul>
+                    </div>
+                </div>
+
+                <div class="tab-content col-xs-9">
+                    <div id="First-Pane" class="tabcontent tab-pane active">
+                      <h3>How to use this page</h3>
+                      <p>To come back to this pane, Refresh the page.</p>
+                    </div>
+
+                    <div id="London" class="tabcontent tab-pane">
+                      <h3>London</h3>
+                      <p>London is the capital city of England.</p>
+                    </div>
+
+                    <div id="Paris" class="tabcontent tab-pane">
+                      <h3>Paris</h3>
+                      <p>Paris is the capital of France.</p> 
+                    </div>
+
+                    <div id="Tokyo" class="tabcontent tab-pane">
+                      <h3>Tokyo</h3>
+                      <p>Tokyo is the capital of Japan.</p>
+                    </div>
+
+
+                    <div id="New York" class="tabcontent tab-pane">
+                      <h3>New York</h3>
+                      <p>London is the capital city of England.</p>
+                    </div>
+
+                    <div id="Istambul" class="tabcontent tab-pane">
+                      <h3>Istambul</h3>
+                      <p>Paris is the capital of France.</p> 
+                    </div>
+
+                    <div id="Hawaii" class="tabcontent tab-pane">
+                      <h3>Hawaii</h3>
+                      <p>Tokyo is the capital of Japan.</p>
+                    </div>
+                    
+                </div> <!-- END tab-content -->
+            </div> <!-- END Vertical tabs -->
+
+
+
+      
+      
+
+    </div> <!-- END ROW sa-Main Content -->
+  </div>  <!-- END sa-Main Section -->
+  <!-- ============================================================================ -->
+  <!-- Footer -->
+  <!-- @import "sections/footer.html" -->
+  <!-- ============================================================================ -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../assets/javascripts/bootstrap.min.js"></script>
+    <script src="../../assets/javascripts/tooltip.js"></script>
+
+    <!-- Added SARD Scripts -->
+    <!-- @import "../../assets/javascripts/SARD-scripts.html" -->
+
+
+  </body>
+</html>

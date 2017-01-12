@@ -1,0 +1,60 @@
+
+
+//  SARD Colours ===============
+$turq:                  #00B2B2;
+$pink:                  #E50073;
+$orange:                #FF6A00;
+$yellow:                #FFB200;
+$lime:                  #A7BF30;
+$green:                 #359E00;
+$teal:                  #004D4D;
+$blue:                  #003CB8;
+$ink:                   #000078;
+$purple:                #52008C;
+$plum:                  #990099;
+$red:                   #BF0000;
+
+$MRv:                   $turq;
+$NRv:                   $orange;
+$sa-360:                $yellow;
+$eLeave:                $lime;
+$A4A:                   $plum;
+$JPL:                   $pink;
+$eRo:                   $teal;
+$CPL:                   $red;
+
+//  Greys ======================
+$grey02:                #EDEBEB;
+$grey03:                #E3E1E1;
+$grey04:                #D9D6D6;
+$grey06:                #C7C4C2;
+$grey08:                #B5B0B0;
+$grey10:                #A39E9C;
+$grey12:                #827D7D;
+$grey14:                #615E5C;
+$grey16:                #403D3D;
+$grey18:                #211F0F;
+
+//  Other Colours ==============
+$active:                $grey04;
+$success:               #33cc33;
+$info:                  #00CCFF;
+$warning:               #FFCC00;
+$danger:                #FF0000;
+$alert:                 $pink;
+
+
+// Global Mixins ===================
+$background:            $grey04;
+
+$client-colour:                $turq; 
+$client-colour-light:          lighten($client-colour, 5%);
+$client-colour-very-light:     lighten($client-colour, 10%);
+$client-colour-dark:           darken($client-colour, 10%);
+$client-colour-very-dark:      darken($client-colour, 20%);
+
+$panelBaseGrey:         $grey03;
+
+// Admin Mixins ====================
+
+$admin-colour:                $pink;
