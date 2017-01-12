@@ -6,29 +6,7 @@ $tab-list-hover:    $grey08;
 $tab-pane-colour:   white;
 
 // Portfolio =====================================
-.number{
-  float:left;
-  postition:absolute;
-  display:flex;
-  top:0px;
-  background:$grey18;
-  padding-top:5px;
-  padding-right:7px;
-  padding-bottom:5px;
-  margin-top:-10px;
-  margin-right:10px;
-  min-width:40px;
-  color:white;
-  font-size:2em;
-  // line-height:1em;
-  padding-left:10px;
-  border-right: 1px solid $grey18;
-}
-.section-title{
-  // padding-left:40px;
-  line-height:1em;
-  vertical-align:middle;
-}
+
 
 .portfolio{
   // background:black;
@@ -124,6 +102,29 @@ $tab-pane-colour:   white;
     padding-left:30px;
     padding-right:30px;
   }
+
+  .number{
+  float:left;
+  postition:absolute;
+  display:flex;
+  top:0px;
+  background:$grey18;
+  padding-top:5px;
+  padding-right:7px;
+  padding-bottom:5px;
+  margin-top:-10px;
+  margin-right:10px;
+  min-width:40px;
+  color:white;
+  font-size:2em;
+  padding-left:10px;
+  border-right: 1px solid $grey18;
+}
+.section-title{
+  // padding-left:40px;
+  line-height:1em;
+  vertical-align:middle;
+}
 
 
 } // End Portfolio vertical-tabs

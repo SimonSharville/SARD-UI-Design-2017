@@ -1996,27 +1996,6 @@ img.user-guide-cover {
   text-indent: -1.28571429em;
   padding: 0.25em 0em 0.25em 1.28571429em; }
 
-.number {
-  float: left;
-  postition: absolute;
-  display: flex;
-  top: 0px;
-  background: #211F0F;
-  padding-top: 5px;
-  padding-right: 7px;
-  padding-bottom: 5px;
-  margin-top: -10px;
-  margin-right: 10px;
-  min-width: 40px;
-  color: white;
-  font-size: 2em;
-  padding-left: 10px;
-  border-right: 1px solid #211F0F; }
-
-.section-title {
-  line-height: 1em;
-  vertical-align: middle; }
-
 .portfolio {
   padding-bottom: 60px; }
 
@@ -2070,6 +2049,25 @@ img.user-guide-cover {
     min-height: 100%;
     padding-left: 30px;
     padding-right: 30px; }
+  .portfolio .vertical-tabs .number {
+    float: left;
+    postition: absolute;
+    display: flex;
+    top: 0px;
+    background: #211F0F;
+    padding-top: 5px;
+    padding-right: 7px;
+    padding-bottom: 5px;
+    margin-top: -10px;
+    margin-right: 10px;
+    min-width: 40px;
+    color: white;
+    font-size: 2em;
+    padding-left: 10px;
+    border-right: 1px solid #211F0F; }
+  .portfolio .vertical-tabs .section-title {
+    line-height: 1em;
+    vertical-align: middle; }
 
 .appraisal {
   background: black;
@@ -2340,37 +2338,91 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
   .bs-vertical-tabs-2 .tab-column {
     padding-left: 0px;
     margin-bottom: -73px; }
+  .bs-vertical-tabs-2 .nav-list > li > a {
+    border-bottom: 1px solid #C7C4C2;
+    background: #EDEBEB;
+    margin-right: -1px;
+    padding-top: 7px;
+    padding-bottom: 7px; }
+  .bs-vertical-tabs-2 .nav-list > li:last-of-type {
+    border-bottom: none; }
+  .bs-vertical-tabs-2 .nav-list > li > a:hover,
+  .bs-vertical-tabs-2 .nav-list > li > a:focus {
+    background: #B5B0B0; }
+  .bs-vertical-tabs-2 .nav-list > li.active > a,
+  .bs-vertical-tabs-2 .nav-list > li.active > a:hover,
+  .bs-vertical-tabs-2 .nav-list > li.active > a:focus {
+    border-right: none;
+    border-left: 1px solid #C7C4C2;
+    background: white;
+    z-index: 1000;
+    padding-left: 14px; }
   .bs-vertical-tabs-2 .nav-tabs > li {
     border: none; }
   .bs-vertical-tabs-2 .nav-tabs > li > a {
     border: none; }
   .bs-vertical-tabs-2 .nav-tabs > li.active > a {
     border: none; }
+  .bs-vertical-tabs-2 .list-head {
+    postition: relative;
+    background: #C7C4C2;
+    min-height: 50px;
+    display: table;
+    width: 101%;
+    min-width: 101%;
+    margin-right: -10px;
+    margin-top: 2px;
+    text-align: left;
+    vertical-align: middle; }
+  .bs-vertical-tabs-2 .list-head.top {
+    margin-top: 0px; }
+  .bs-vertical-tabs-2 a > .list-head {
+    color: #211F0F; }
+  .bs-vertical-tabs-2 a:hover > .list-head,
+  .bs-vertical-tabs-2 a:focus > .list-head {
+    color: #211F0F; }
+  .bs-vertical-tabs-2 .list-head > .number {
+    display: table-cell;
+    background: #211F0F;
+    padding: 5px 2px 0px 2px;
+    margin-bottom: 0px;
+    width: 50px;
+    min-width: 50px;
+    color: white;
+    font-size: 2em;
+    text-align: center; }
+  .bs-vertical-tabs-2 .list-head > .title {
+    padding: 5px 10px 5px 10px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    min-width: 10%; }
   .bs-vertical-tabs-2 .tabs-left {
     border-bottom: none;
     padding-top: 0px; }
   .bs-vertical-tabs-2 .tabs-left > li {
     float: none;
     margin-bottom: 2px;
-    border: 1px solid red; }
+    border: 1px solid #C7C4C2; }
   .bs-vertical-tabs-2 .tabs-left > li {
     margin-right: -2px; }
+  .bs-vertical-tabs-2 .tabs-left > li > a {
+    border-radius: 0px;
+    margin-right: 0;
+    color: #211F0F; }
   .bs-vertical-tabs-2 .tabs-left > li.active > a,
   .bs-vertical-tabs-2 .tabs-left > li.active > a:hover,
   .bs-vertical-tabs-2 .tabs-left > li.active > a:focus {
     border-right: none;
     background: white;
     z-index: 1000; }
-  .bs-vertical-tabs-2 .tabs-left > li > a {
-    border-radius: 0px;
-    margin-right: 0; }
   .bs-vertical-tabs-2 .tab-content-wrapper {
     display: flex;
     height: 100%;
     min-height: 100%;
     padding-right: 0px; }
   .bs-vertical-tabs-2 .tab-content {
-    border: 1px solid red;
+    border: 1px solid #C7C4C2;
     margin-left: -16px;
     background: white;
     width: 100%;
