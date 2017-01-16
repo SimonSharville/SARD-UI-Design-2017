@@ -2103,7 +2103,8 @@ img.user-guide-cover {
     padding: 0px; }
   .sa-vertical-tabs .tab-pane {
     border: none;
-    margin-bottom: -73px; }
+    margin-bottom: -73px;
+    margin-bottom: 0px\9; }
   @media screen and (-webkit-min-device-pixel-ratio: 0) {
     .sa-vertical-tabs .tab-pane {
       margin-bottom: 0px; } }
