@@ -85,7 +85,7 @@ $tab-text:          $grey18;
     text-align:left;
     vertical-align:middle; 
   }
-  .list-head.top{ margin-top:0px;}
+  // .list-head.top{ margin-top:0px;}
 
   a > .list-head{
     color:$tab-text;
@@ -159,6 +159,7 @@ $tab-text:          $grey18;
     height:100%; 
     min-height:100%; 
     padding-right:0px; 
+    padding-top:2px;
   }
 
   .tab-content{

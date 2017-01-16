@@ -4,200 +4,201 @@ $tab-colour:        $grey06;
 $tab-list-colour:   $grey02;
 $tab-list-hover:    $grey08;
 $tab-pane-colour:   white;
+$tab-text:          $grey18;
 
-// Portfolio =====================================
 
 
-.portfolio{
-  // background:black;
-  padding-bottom: 60px;
-}
+// bs vertical-tabs =====================================
+// http://bootsnipp.com/snippets/nP8E7
 
-.portfolio .vertical-tabs{
-  padding-bottom: 60px;
-  display: flex;
+/*  bs tabs */
 
-  // Style the stack of all links
-  .nav-stacked{
-    padding-left:0px;
+  /*!
+ * bootstrap-vertical-tabs - v1.1.0
+ * https://dbtek.github.io/bootstrap-vertical-tabs
+ * 2014-06-06
+ * Copyright (c) 2014 Ä°smail Demirbilek
+ * License: MIT
+ */
+
+ .sa-vertical-tabs{
+  // background:pink;
+  display:flex; // added
+  margin-right:-16px; // This counterbalances the margin-right on .tab-column, so the conetnt butts up to the tabs.
+
+
+  .tab-column{ 
+    // background:yellow;
+    padding-left:0px; 
     padding-right:0px;
-    border-bottom:1px;
+    margin-right:-8px;
   }
 
-  .collapsed > .list-head{
-    margin-bottom:1px;
-  }
 
-  .collapsed > .list-head.last{
-    margin-bottom:0px;
-  }
-
-  .list-head{
+  .toggle-list{
     postition:relative;
     background:$tab-colour;
-    padding-top:10px;
-    padding-bottom:10px;
-    border-bottom: 1px solid $tab-colour ;
-    min-height:50px;    
+    min-height:50px; 
+    display: table; 
+    width:101%;
+    min-width:101%;
+    margin-right:-10px;
+    margin-top:2px;
+    text-align:left;
+    vertical-align:middle; 
+  }
+  .toggle-list.top{ margin-top:0px;}
+
+  a.toggle-list{
+    color:$tab-text;
   }
 
-  // Style the links inside the list items 
+  // An attempt at putting a togle image in - didn't work though.
+  
+  // a:hover > .list-head:after{
+  //   font-family: 'Glyphicons Halflings';
+  //     content: "\e114" ;
+  //     padding-right:5px;
+  // }
 
-  .tabs li{
-    background:$tab-list-colour; 
-    padding-left:0px;
-    padding-right:0px;
+  a:hover > .toggle-list,
+  a:focus > .ltoggle-list{
+    color:$tab-text;
+  }
+
+  .toggle-list > .number{
+    display:table-cell;
+    background:$grey18;
+    padding:5px 2px 0px 2px;
+    margin-bottom:0px;
+    width:50px;
+    min-width:50px;
+    color:white;
+    font-size:2em;
+    text-align:center;
+  }
+  .toggle-list > .title{
+    padding:5px 10px 5px 10px;
+    display:table-cell; 
+    vertical-align:middle;
+    width:100%;
+    min-width:10%;
+  }
+
+
+  .nav-list > li > a{ // Used on collapse nav-list links
     border-bottom: 1px solid $tab-colour;
-    box-shadow: -1px 0px 0px $tab-colour inset;
-    padding-left:1px;
+    background:$tab-list-colour;
+    margin-right: -1px;
+    padding-top:7px;
+    padding-bottom:7px;
   }
 
-  .tabs li:last-of-type{
+  .nav-list > li:last-of-type{
+    border-bottom: none;
+
   }
 
-  .tabs a:hover{
-    color:$grey18;
+  .nav-list>li>a:hover,
+  .nav-list>li>a:focus {
+    background:$tab-list-hover; 
+    color:$tab-text;
   }
 
-  .tabs li a {
-  }
-  
-  // Change background color of links on hover     
-  .tabs li a:hover {
-      background-color: $tab-list-hover;
-  }
-
-  // Create an active/current tablink class  
-  .tabs li a:focus, .active{
-    background:$tab-pane-colour; 
-    border-right: 1px solid $tab-pane-colour;
-    border-left:1px solid $tab-colour ;
-    z-index:3000;
-    box-sizing: border-box;
-    margin-left:-1px;
+  .nav-list>li.active>a,
+  .nav-list>li.active>a:hover,
+  .nav-list>li.active>a:focus {
+    border-right: none;
+    border-left: 1px solid $tab-colour;
+    background:white; 
+    z-index:1000; 
+    padding-left:14px;
   }
 
-  // KEPT IN FOR REFERENCE
-  // .tabs > li.active > a,
-  // .tabs > li.active > a:hover,
-  // .tabs > li.active > a:focus {
-  //   background:pink; 
-  // }
+  .nav-tabs{}
+
+  .nav-tabs > li{
+    border:none;
+  }
+
+  .nav-tabs > li > a{
+    border:none;
+  }
+
+  .nav-tabs > li.active > a{
+    border:none;
+  }
+
+
+
+  // Single Tabs  --------------------
+
+  .tabs-left {
+    border-bottom: none;
+    padding-top: 0px;
+  }
+
+  .tabs-left>li {
+    float: none;
+    margin-bottom: 2px;
+    margin-right: -2px;
+    border:1px solid $tab-colour;
+  }
+  .tabs-left>li:last-of-type {
+    margin-bottom: 0px;
+  }
+
+  .tabs-left>li>a {
+    border-radius: 0px; 
+    margin-right: 0;
+    color:$tab-text;
+  }
+
+  .tabs-left>li.active>a,
+  .tabs-left>li.active>a:hover,
+  .tabs-left>li.active>a:focus {
+    border-right: none;
+    background:white; 
+    z-index:1000; 
+  }
+
+
+  // Content Area ==========
+
+  .tab-content-wrapper{ 
+    display:flex; 
+    height:100%; 
+    min-height:100%; 
+    // padding-right:0px; 
+    // padding-top:2px;
+    // margin-left:-16px;
+    // margin-right:-16px;
+  }
 
   .tab-content{
-    background:tab-pane-colour;
-    padding-left:0px;
-    padding-right:0px;
-    
-  }
+    border:1px solid $tab-colour; 
+    // margin-left:-16px; 
+    background:white; 
+    width:100%; 
+    min-width:100%;
+    padding:0px;
+    // margin-bottom:2px;
 
-  .tab-content > .tab-pane{
-    border-top:1px solid $tab-colour;
-    border-right:1px solid $tab-colour;
-    border-bottom:1px solid $tab-colour;
-    border-left:1px solid $tab-colour;
-    margin-left:-1px;
-    background:tab-pane-colour;
-    min-height: 100%;
-    padding-left:30px;
-    padding-right:30px;
-  }
-
-  .number{
-  float:left;
-  postition:absolute;
-  display:flex;
-  top:0px;
-  background:$grey18;
-  padding-top:5px;
-  padding-right:7px;
-  padding-bottom:5px;
-  margin-top:-10px;
-  margin-right:10px;
-  min-width:40px;
-  color:white;
-  font-size:2em;
-  padding-left:10px;
-  border-right: 1px solid $grey18;
-}
-.section-title{
-  // padding-left:40px;
-  line-height:1em;
-  vertical-align:middle;
-}
-
-
-} // End Portfolio vertical-tabs
-
-// ================================================================
-
-// Appraisal
-
-.appraisal{
-  background:black;
-  padding-bottom: 60px;
-}
-
-.appraisal .vertical-tabs{
-  background:pink;
-  padding-bottom: 60px;
-  display: flex;
-
-  // Style the stack of all links
-  .nav-stacked{
-    background:red;
-  }
-
-  .list-head{
-    background:yellow;
-    padding-top:10px;
-    padding-bottom:10px;
-    border-bottom: 1px solid black;
-  }
-  .list-head.last{
-    border-bottom: none;
-  }
-
-  .tabs li{
-    background:green; 
-    padding-left:0px;
-    padding-right:0px;
-    border-bottom: 1px solid black;
-  }
-  .tabs li:last-of-type{
-    border-bottom: none;
-  }
-
-  // Style the links inside the list items 
-  .tabs li a {
-    // padding-bottom:0px;
-  }
-  
-  // Change background color of links on hover     
-  .tabs li a:hover {
-      background-color: purple;
-  }
-
-  // Create an active/current tablink class  
-  .tabs li a:focus, .active{
-    background:blue; 
-  }
-
-  // KEPT IN FOR REFERENCE
-  // .tabs > li.active > a,
-  // .tabs > li.active > a:hover,
-  // .tabs > li.active > a:focus {
-  //   background:pink; 
-  // }
-
-
-  .tab-content{
-    background:blue;
-  }
+  }  
 
   .tab-pane{
-    background:orange;
-    min-height: 100%;
+    border: none;
+    margin-bottom:-73px; // This removes the strange spacing below
+      // margin-bottom: 0px\9; // ie* Hack
   }
 
-} // End Appraisal vertical-tabs
+  @media screen and (-webkit-min-device-pixel-ratio:0) // Safari Hack
+  {
+  .tab-pane {margin-bottom: 0px}
+  }
+
+} // End BS vertical-tabs-2
+
+
+  
+

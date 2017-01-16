@@ -26,19 +26,24 @@
 
   @import "sard/sa-vertical-tabs";
 
+  
+
 
 
   // Experiments =======================
 
-  @import "sard/sa-sidebar";
+  @import "experiments/sa-vertical-tabs-exp01";
 
-  @import "sard/sa-bhoechie-vertical-tabs";
+  @import "experiments/sa-sidebar";
 
-  @import "sard/sa-simple-vertical-tabs";
+  // Removed
+  // @import "experiments/sa-bhoechie-vertical-tabs";
 
-  @import "sard/sa-bs-vertical-tabs";
+  // @import "experiments/sa-simple-vertical-tabs";
 
-  @import "sard/sa-bs-vertical-tabs-2";
+  // @import "experiments/sa-bs-vertical-tabs";
+
+  // @import "experiments/sa-bs-vertical-tabs-2";
 
 
 

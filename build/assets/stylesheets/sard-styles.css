@@ -1996,6 +1996,118 @@ img.user-guide-cover {
   text-indent: -1.28571429em;
   padding: 0.25em 0em 0.25em 1.28571429em; }
 
+/*  bs tabs */
+/*!
+ * bootstrap-vertical-tabs - v1.1.0
+ * https://dbtek.github.io/bootstrap-vertical-tabs
+ * 2014-06-06
+ * Copyright (c) 2014 Ä°smail Demirbilek
+ * License: MIT
+ */
+.sa-vertical-tabs {
+  display: flex;
+  margin-right: -16px; }
+  .sa-vertical-tabs .tab-column {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: -8px; }
+  .sa-vertical-tabs .toggle-list {
+    postition: relative;
+    background: #C7C4C2;
+    min-height: 50px;
+    display: table;
+    width: 101%;
+    min-width: 101%;
+    margin-right: -10px;
+    margin-top: 2px;
+    text-align: left;
+    vertical-align: middle; }
+  .sa-vertical-tabs .toggle-list.top {
+    margin-top: 0px; }
+  .sa-vertical-tabs a.toggle-list {
+    color: #211F0F; }
+  .sa-vertical-tabs a:hover > .toggle-list,
+  .sa-vertical-tabs a:focus > .ltoggle-list {
+    color: #211F0F; }
+  .sa-vertical-tabs .toggle-list > .number {
+    display: table-cell;
+    background: #211F0F;
+    padding: 5px 2px 0px 2px;
+    margin-bottom: 0px;
+    width: 50px;
+    min-width: 50px;
+    color: white;
+    font-size: 2em;
+    text-align: center; }
+  .sa-vertical-tabs .toggle-list > .title {
+    padding: 5px 10px 5px 10px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    min-width: 10%; }
+  .sa-vertical-tabs .nav-list > li > a {
+    border-bottom: 1px solid #C7C4C2;
+    background: #EDEBEB;
+    margin-right: -1px;
+    padding-top: 7px;
+    padding-bottom: 7px; }
+  .sa-vertical-tabs .nav-list > li:last-of-type {
+    border-bottom: none; }
+  .sa-vertical-tabs .nav-list > li > a:hover,
+  .sa-vertical-tabs .nav-list > li > a:focus {
+    background: #B5B0B0;
+    color: #211F0F; }
+  .sa-vertical-tabs .nav-list > li.active > a,
+  .sa-vertical-tabs .nav-list > li.active > a:hover,
+  .sa-vertical-tabs .nav-list > li.active > a:focus {
+    border-right: none;
+    border-left: 1px solid #C7C4C2;
+    background: white;
+    z-index: 1000;
+    padding-left: 14px; }
+  .sa-vertical-tabs .nav-tabs > li {
+    border: none; }
+  .sa-vertical-tabs .nav-tabs > li > a {
+    border: none; }
+  .sa-vertical-tabs .nav-tabs > li.active > a {
+    border: none; }
+  .sa-vertical-tabs .tabs-left {
+    border-bottom: none;
+    padding-top: 0px; }
+  .sa-vertical-tabs .tabs-left > li {
+    float: none;
+    margin-bottom: 2px;
+    margin-right: -2px;
+    border: 1px solid #C7C4C2; }
+  .sa-vertical-tabs .tabs-left > li:last-of-type {
+    margin-bottom: 0px; }
+  .sa-vertical-tabs .tabs-left > li > a {
+    border-radius: 0px;
+    margin-right: 0;
+    color: #211F0F; }
+  .sa-vertical-tabs .tabs-left > li.active > a,
+  .sa-vertical-tabs .tabs-left > li.active > a:hover,
+  .sa-vertical-tabs .tabs-left > li.active > a:focus {
+    border-right: none;
+    background: white;
+    z-index: 1000; }
+  .sa-vertical-tabs .tab-content-wrapper {
+    display: flex;
+    height: 100%;
+    min-height: 100%; }
+  .sa-vertical-tabs .tab-content {
+    border: 1px solid #C7C4C2;
+    background: white;
+    width: 100%;
+    min-width: 100%;
+    padding: 0px; }
+  .sa-vertical-tabs .tab-pane {
+    border: none;
+    margin-bottom: -73px; }
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .sa-vertical-tabs .tab-pane {
+      margin-bottom: 0px; } }
+
 .portfolio {
   padding-bottom: 60px; }
 
@@ -2151,287 +2263,3 @@ img.user-guide-cover {
       transform-origin: left top; }
     .sidebar-content .panel-group .panel-footer {
       border-top: 0; }
-
-/*  bhoechie tab */
-div.bhoechie-tab-container {
-  z-index: 10;
-  background-color: #ffffff;
-  padding: 0 !important;
-  border-radius: 4px;
-  -moz-border-radius: 4px;
-  border: 1px solid #ddd;
-  margin-top: 20px;
-  margin-left: 50px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  background-clip: padding-box;
-  opacity: 0.97;
-  filter: alpha(opacity=97); }
-
-div.bhoechie-tab-menu {
-  padding-right: 0;
-  padding-left: 0;
-  padding-bottom: 0; }
-
-div.bhoechie-tab-menu div.list-group {
-  margin-bottom: 0; }
-
-div.bhoechie-tab-menu div.list-group > a {
-  margin-bottom: 0; }
-
-div.bhoechie-tab-menu div.list-group > a .glyphicon,
-div.bhoechie-tab-menu div.list-group > a .fa {
-  color: #5A55A3; }
-
-div.bhoechie-tab-menu div.list-group > a:first-child {
-  border-top-right-radius: 0;
-  -moz-border-top-right-radius: 0; }
-
-div.bhoechie-tab-menu div.list-group > a:last-child {
-  border-bottom-right-radius: 0;
-  -moz-border-bottom-right-radius: 0; }
-
-div.bhoechie-tab-menu div.list-group > a.active,
-div.bhoechie-tab-menu div.list-group > a.active .glyphicon,
-div.bhoechie-tab-menu div.list-group > a.active .fa {
-  background-color: #5A55A3;
-  background-image: #5A55A3;
-  color: #ffffff; }
-
-div.bhoechie-tab-menu div.list-group > a.active:after {
-  content: '';
-  position: absolute;
-  left: 100%;
-  top: 50%;
-  margin-top: -13px;
-  border-left: 0;
-  border-bottom: 13px solid transparent;
-  border-top: 13px solid transparent;
-  border-left: 10px solid #5A55A3; }
-
-div.bhoechie-tab-content {
-  background-color: #ffffff;
-  /* border: 1px solid #eeeeee; */
-  padding-left: 20px;
-  padding-top: 10px; }
-
-div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
-  display: none; }
-
-/*  Simple tab */
-.simple-vertical-tabs .tabs {
-  margin: 0px 20px;
-  position: relative;
-  background: #EFF1E4;
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
-  width: 100%; }
-
-.simple-vertical-tabs .tabs nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  background: #AD9897;
-  color: #6C5D5D;
-  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
-  width: 150px; }
-
-.simple-vertical-tabs .tabs nav a {
-  padding: 20px 0px;
-  text-align: center;
-  width: 100%;
-  cursor: pointer; }
-
-.simple-vertical-tabs .tabs nav a:hover,
-.simple-vertical-tabs .tabs nav a.selected {
-  background: #6C5D5D;
-  color: #AD9897;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
-
-.simple-vertical-tabs .tabs .content {
-  padding: 20px 0px;
-  position: absolute;
-  top: 0px;
-  left: 150px;
-  color: #6C5D5D;
-  width: 0px;
-  height: 100%;
-  overflow: hidden;
-  opacity: 0;
-  transition: opacity 0.1s linear 0s; }
-
-.simple-vertical-tabs .tabs .content.visible {
-  padding: 20px;
-  width: calc(100% - 150px);
-  overflow: scroll;
-  opacity: 1; }
-
-.simple-vertical-tabs .tabs .content p {
-  padding-bottom: 2px; }
-
-.simple-vertical-tabs .tabs .content p:last-of-type {
-  padding-bottom: 0px; }
-
-/*  bs tabs */
-/*!
- * bootstrap-vertical-tabs - v1.1.0
- * https://dbtek.github.io/bootstrap-vertical-tabs
- * 2014-06-06
- * Copyright (c) 2014 Ä°smail Demirbilek
- * License: MIT
- */
-.bs-vertical-tabs {
-  display: flex; }
-  .bs-vertical-tabs .tab-column {
-    background: pink;
-    height: 100%;
-    min-height: 100%; }
-  .bs-vertical-tabs .tabs-left {
-    border-bottom: none;
-    padding-top: 2px; }
-  .bs-vertical-tabs .tabs-left {
-    border-right: 1px solid #ddd; }
-  .bs-vertical-tabs .tabs-left > li {
-    float: none;
-    margin-bottom: 2px; }
-  .bs-vertical-tabs .tabs-left > li {
-    margin-right: -1px; }
-  .bs-vertical-tabs .tabs-left > li.active > a,
-  .bs-vertical-tabs .tabs-left > li.active > a:hover,
-  .bs-vertical-tabs .tabs-left > li.active > a:focus {
-    border-bottom-color: #ddd;
-    border-right-color: transparent;
-    background: white;
-    z-index: 1000; }
-  .bs-vertical-tabs .tabs-left > li > a {
-    border-radius: 4px 0 0 4px;
-    margin-right: 0;
-    display: block; }
-  .bs-vertical-tabs .tab-content-wrapper {
-    background: yellow;
-    display: flex;
-    height: 100%;
-    min-height: 100%;
-    padding-right: 0px; }
-  .bs-vertical-tabs .tab-content {
-    border: 1px solid black;
-    margin-left: -17px;
-    background: white;
-    width: 100%;
-    min-width: 100%; }
-  .bs-vertical-tabs .tab-pane {
-    border: none;
-    height: 100%;
-    min-height: 100%; }
-
-/*  bs tabs */
-/*!
- * bootstrap-vertical-tabs - v1.1.0
- * https://dbtek.github.io/bootstrap-vertical-tabs
- * 2014-06-06
- * Copyright (c) 2014 Ä°smail Demirbilek
- * License: MIT
- */
-.bs-vertical-tabs-2 {
-  display: flex;
-  margin-right: -10px; }
-  .bs-vertical-tabs-2 .tab-column {
-    padding-left: 0px;
-    margin-bottom: -73px; }
-  .bs-vertical-tabs-2 .nav-list > li > a {
-    border-bottom: 1px solid #C7C4C2;
-    background: #EDEBEB;
-    margin-right: -1px;
-    padding-top: 7px;
-    padding-bottom: 7px; }
-  .bs-vertical-tabs-2 .nav-list > li:last-of-type {
-    border-bottom: none; }
-  .bs-vertical-tabs-2 .nav-list > li > a:hover,
-  .bs-vertical-tabs-2 .nav-list > li > a:focus {
-    background: #B5B0B0; }
-  .bs-vertical-tabs-2 .nav-list > li.active > a,
-  .bs-vertical-tabs-2 .nav-list > li.active > a:hover,
-  .bs-vertical-tabs-2 .nav-list > li.active > a:focus {
-    border-right: none;
-    border-left: 1px solid #C7C4C2;
-    background: white;
-    z-index: 1000;
-    padding-left: 14px; }
-  .bs-vertical-tabs-2 .nav-tabs > li {
-    border: none; }
-  .bs-vertical-tabs-2 .nav-tabs > li > a {
-    border: none; }
-  .bs-vertical-tabs-2 .nav-tabs > li.active > a {
-    border: none; }
-  .bs-vertical-tabs-2 .list-head {
-    postition: relative;
-    background: #C7C4C2;
-    min-height: 50px;
-    display: table;
-    width: 101%;
-    min-width: 101%;
-    margin-right: -10px;
-    margin-top: 2px;
-    text-align: left;
-    vertical-align: middle; }
-  .bs-vertical-tabs-2 .list-head.top {
-    margin-top: 0px; }
-  .bs-vertical-tabs-2 a > .list-head {
-    color: #211F0F; }
-  .bs-vertical-tabs-2 a:hover > .list-head,
-  .bs-vertical-tabs-2 a:focus > .list-head {
-    color: #211F0F; }
-  .bs-vertical-tabs-2 .list-head > .number {
-    display: table-cell;
-    background: #211F0F;
-    padding: 5px 2px 0px 2px;
-    margin-bottom: 0px;
-    width: 50px;
-    min-width: 50px;
-    color: white;
-    font-size: 2em;
-    text-align: center; }
-  .bs-vertical-tabs-2 .list-head > .title {
-    padding: 5px 10px 5px 10px;
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    min-width: 10%; }
-  .bs-vertical-tabs-2 .tabs-left {
-    border-bottom: none;
-    padding-top: 0px; }
-  .bs-vertical-tabs-2 .tabs-left > li {
-    float: none;
-    margin-bottom: 2px;
-    border: 1px solid #C7C4C2; }
-  .bs-vertical-tabs-2 .tabs-left > li {
-    margin-right: -2px; }
-  .bs-vertical-tabs-2 .tabs-left > li > a {
-    border-radius: 0px;
-    margin-right: 0;
-    color: #211F0F; }
-  .bs-vertical-tabs-2 .tabs-left > li.active > a,
-  .bs-vertical-tabs-2 .tabs-left > li.active > a:hover,
-  .bs-vertical-tabs-2 .tabs-left > li.active > a:focus {
-    border-right: none;
-    background: white;
-    z-index: 1000; }
-  .bs-vertical-tabs-2 .tab-content-wrapper {
-    display: flex;
-    height: 100%;
-    min-height: 100%;
-    padding-right: 0px; }
-  .bs-vertical-tabs-2 .tab-content {
-    border: 1px solid #C7C4C2;
-    margin-left: -16px;
-    background: white;
-    width: 100%;
-    min-width: 100%;
-    padding: 0px; }
-  .bs-vertical-tabs-2 .tab-pane {
-    border: none;
-    margin-bottom: -73px;
-    margin-bottom: 0px\9; }
-  @media screen and (-webkit-min-device-pixel-ratio: 0) {
-    .bs-vertical-tabs-2 .tab-pane {
-      margin-bottom: 0px; } }
