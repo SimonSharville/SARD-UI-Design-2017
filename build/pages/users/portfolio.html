@@ -136,281 +136,52 @@
     <!-- MAIN CONTENT  - OPTIONAL  -->
     <div class="row sa-main-content">
 
+        <div class="sa-vertical-tabs">
+          <div  class="col-xs-12">
+            <div class="col-xs-3 tab-column">
 
-        <div class="portfolio col-sm-12">
-            <!-- tabs -->
-            <div class="vertical-tabs">
-                <div class="nav-stacked col-xs-3">
-                    <div class="nav tabs">
-                      <a data-toggle="collapse" href="#collapse1">
-                        <div class="list-head">
-                          <div class="number">01</div>
-                          <div class="section-title">Really  title</div>
-                        </div>
-                      <ul id="collapse1" class="collapse in list-group nav tabs"></a>
-                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, '0101-length-of-stay')">Length of stay (T)</a></li>
-                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, '0102-mandatory-data')">Mandatory Data for SHRAD/SHAPPT (T)</a></li>
-                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, '0103-re-admission-rates')">Re-admission Rate (T)</a></li>
-                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, '0104-gp-letters')">GP Letters (T)</a></li>
-                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, '0105-multi-axial-coding')">Multi-axial Coding (T)</a></li>
-                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, '0106-test-dataset')">Test Dataset (T)</a></li>
-                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, '0107-section-58-complience')">Section 58 Complience (T)</a></li>
-                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, '0108-discharge-notifications')">Discharge Notifications (T)</a></li>
-                      </ul>
+                <!-- This is a Collapsable set of lists -->
+                <a data-toggle="collapse" href="#collapse1" class="toggle-list top">
+                  <div class="number">01</div>
+                  <div class="title">Really Really Really Really a a a a a a Really Really Really aReally Really Really Really Really long title</div>
+                </a>
+                <ul id="collapse1" class="collapse in nav nav-list">
+                    <li class="active"><a href="#one" class="nav-tabs " data-toggle="tab">One</a></li>
+                    <li><a href="#two"  class="nav-tabs "data-toggle="tab">Two</a></li>
+                    <li><a href="#three"  class="nav-tabs "data-toggle="tab">Three</a></li>
+                    <li><a href="#four"  class="nav-tabs "data-toggle="tab">Four</a></li>
+                </ul>
 
-                      <a data-toggle="collapse" href="#collapse2">
-                        <div class="list-head">
-                          <div class="number">27</div>
-                          <div class="section-title">Section Two</div>
-                        </div>
-                      <ul id="collapse2" class="collapse list-group nav tabs">
-                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, 'One')">One</a></li>
-                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, 'Two')">Two</a></li>
-                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, 'Three')">Three</a></li>
-                      </ul>
+                <a data-toggle="collapse" href="#collapse2" class="toggle-list">
+                  <div class="number">06</div>
+                  <div class="title">Really title</div>
+                </a>
+                <ul id="collapse2" class="collapse nav nav-list">
+                    <li><a href="#five" class="nav-tabs " data-toggle="tab">Five</a></li>
+                    <li><a href="#six"  class="nav-tabs "data-toggle="tab">Six</a></li>
+                    <li><a href="#seven"  class="nav-tabs "data-toggle="tab">Seven</a></li>
+                    <li><a href="#eight"  class="nav-tabs "data-toggle="tab">Eight</a></li>
+                </ul>
 
-                      <a data-toggle="collapse" href="#collapse3"><div class="list-head last">Section Three</div></a>
-                      <ul id="collapse3" class="collapse list-group nav tabs">
-                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, 'Four')">Four</a></li>
-                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, 'Five')">Five</a></li>
-                        <li><a href="javascript:void(0)" class="tablinks" onclick="showContent(event, 'Six')">Six</a></li>
-                      </ul>
-                    </div>
-                </div>
+            </div> <!-- End tab-column -->
 
-                <div class="tab-content col-xs-9">
-                    <div id="First-Pane" class="tabcontent tab-pane active">
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <h2>How to use this page</h2>
-                          <p>Section tabs are expandable.</p>
-                          <p>Then click on any list tabe to view it's contents.</p>
-                          <p>To see this message again, Refresh the page.</p>
-                        </div> <!-- END Column -->
-                      </div> <!-- END Row -->
-                      
-                      
-                    </div>
+            <div class="col-xs-9 tab-content-wrapper">
+                <div class="tab-content">
+                  <div class="tab-pane active" id="one">One</div>
+                  <div class="tab-pane" id="two">Two</div>
+                  <div class="tab-pane" id="three">Three</div>
+                  <div class="tab-pane" id="four">Four</div>
+                  <div class="tab-pane" id="five">Five</div>
+                  <div class="tab-pane" id="six">Six</div>
+                  <div class="tab-pane" id="seven">Seven</div>
+                  <div class="tab-pane" id="eight">Eight</div>
 
-                    <div id="0101-length-of-stay" class="tabcontent tab-pane">
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <h4>Good Medical Care (T)</h4>
-                          <h2>Length of Stay (T)</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                        </div> <!-- END Column -->
-                      </div> <!-- END Row -->
-                      
-                      
-                    </div>
-
-                    <div id="0102-mandatory-data" class="tabcontent tab-pane">
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <h4>Good Medical Care (T)</h4>
-                          <h2>Mandatory Data for SHRAD/SHAPPT (T)</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                        </div> <!-- END Column -->
-                      </div> <!-- END Row -->
-                      
-                      
-                    </div>
-
-                    <div id="0103-re-admission-rates" class="tabcontent tab-pane">
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <h4>Good Medical Care (T)</h4>
-                          <h2>Re-admission Rate (T)</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                        </div> <!-- END Column -->
-                      </div> <!-- END Row -->
-                      
-                      
-                    </div>
-
-                    <div id="0104-gp-letters" class="tabcontent tab-pane">
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <h4>Good Medical Care (T)</h4>
-                          <h2>GP Letters (T)</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                        </div> <!-- END Column -->
-                      </div> <!-- END Row -->
-                      
-                      
-                    </div>
-
-                    <div id="0105-multi-axial-coding" class="tabcontent tab-pane">
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <h4>Good Medical Care (T)</h4>
-                          <h2>Multi-axial Coding (T)</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                        </div> <!-- END Column -->
-                      </div> <!-- END Row -->
-                      
-                      
-                    </div>
-
-                    <div id="0106-test-dataset" class="tabcontent tab-pane">
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <h4>Good Medical Care (T)</h4>
-                          <h2>Test Dataset (T)</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                        </div> <!-- END Column -->
-                      </div> <!-- END Row -->
-                      
-                      
-                    </div>
-
-                    <div id="0107-section-58-complience" class="tabcontent tab-pane">
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <h4>Good Medical Care (T)</h4>
-                          <h2>Section 58 Complience (T)</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                        </div> <!-- END Column -->
-                      </div> <!-- END Row -->
-                      
-                      
-                    </div>
-
-                    <div id="0108-discharge-notifications" class="tabcontent tab-pane">
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <h4>Good Medical Care (T)</h4>
-                          <h2>Discharge Notifications (T)</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                        </div> <!-- END Column -->
-                      </div> <!-- END Row -->
-                      
-                      
-                    </div>
-
-                    <!-- =========================================================== -->
-
-                    <div id="One" class="tabcontent tab-pane">
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <h4>Section Title</h4>
-                          <h2>Title</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                        </div> <!-- END Column -->
-                      </div> <!-- END Row -->
-                      
-                      
-                    </div>
-
-                    <div id="Two" class="tabcontent tab-pane">
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <h4>Section Title</h4>
-                          <h2>Title</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                        </div> <!-- END Column -->
-                      </div> <!-- END Row -->
-                      
-                      
-                    </div>
-
-                    <div id="Three" class="tabcontent tab-pane">
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <h4>Section Title</h4>
-                          <h2>Title</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                        </div> <!-- END Column -->
-                      </div> <!-- END Row -->
-                      
-                      
-                    </div>
-
-                    <!-- =========================================================== -->
-
-                    <div id="Four" class="tabcontent tab-pane">
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <h4>Section Title</h4>
-                          <h2>Title</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                        </div> <!-- END Column -->
-                      </div> <!-- END Row -->
-                      
-                      
-                    </div>
-
-                    <div id="Five" class="tabcontent tab-pane">
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <h4>Section Title</h4>
-                          <h2>Title</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                        </div> <!-- END Column -->
-                      </div> <!-- END Row -->
-                      
-                      
-                    </div>
-
-                    <div id="Six" class="tabcontent tab-pane">
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <h4>Section Title</h4>
-                          <h2>Title</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-                        </div> <!-- END Column -->
-                      </div> <!-- END Row -->
-                      
-                      
-                    </div>
-                    
                 </div> <!-- END tab-content -->
-            </div> <!-- END Vertical tabs -->
-            
-        </div>
+            </div> <!-- END tab-content-wrapper -->
+            <div class="clearfix"></div>
+          </div> <!-- END col-xs-12 -->
 
+        </div> <!-- END bs-vertical-tabs -->
 
 
       
