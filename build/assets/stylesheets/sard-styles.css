@@ -1958,6 +1958,9 @@ button:hover {
   height: 40px;
   background: none; }
 
+.tab-content .perf {
+  margin: 15px -30px 25px -30px; }
+
 .panel > .perf-wht {
   background-image: url("../graphics/dot_white.png");
   background-repeat: repeat-x;
@@ -2017,7 +2020,6 @@ img.user-guide-cover {
   #portfolio .appraisal-dataset-guidance .rag-boxes {
     display: inline-block;
     width: 50%;
-    height: 200px;
     text-align: center; }
   #portfolio .appraisal-dataset-guidance .box {
     display: inline-block;
@@ -2128,6 +2130,19 @@ img.user-guide-cover {
 
 #portfolio .appraisal-dataset .rag-na {
   background-color: #B5B0B0; }
+
+#portfolio .evidences textarea {
+  word-wrap: break-word;
+  resize: vertical;
+  min-height: 100px;
+  width: 100%; }
+
+#portfolio .evidences .glyphicon {
+  padding: 0 5px; }
+
+#portfolio .evidences .evidence {
+  border-top: 1px solid #211F0F;
+  margin-top: 20px; }
 
 /*  bs tabs */
 /*!

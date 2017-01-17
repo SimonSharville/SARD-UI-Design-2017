@@ -19,7 +19,6 @@ $rag-na:           $grey08;
       .rag-boxes{
         display:inline-block;
         width:50%;
-        height:200px;
         text-align:center;
       }
 
@@ -118,5 +117,28 @@ $rag-na:           $grey08;
     } // End .appraisal-dataset =====================================================================
 
 
+    .evidences{
+      // background-color:pink;
+
+      #new_evidence{
+        // background-color:yellow;
+      }
+
+      textarea {
+        // overflow: hidden; 
+        word-wrap: break-word; 
+        resize: vertical; 
+        min-height: 100px;
+        width:100%;
+      }
+
+      .glyphicon{ padding: 0 5px;}
+
+      .evidence{
+        border-top: 1px solid $grey18;
+        margin-top:20px;
+      }
+
+    }// End .evidences =====================================================================
 
 } // END portfolio
