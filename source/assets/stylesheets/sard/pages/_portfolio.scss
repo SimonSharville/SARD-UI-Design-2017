@@ -12,8 +12,7 @@ $rag-na:           $grey08;
 
 // page specific items here =========================================
 
-  
-    .appraisal-dataset-guidance{
+      .appraisal-dataset-guidance{
       font-size: 0; // This removes the gap between the boxes
       padding-top:20px;
 
@@ -26,6 +25,7 @@ $rag-na:           $grey08;
       .box{
         display:inline-block;
         border-radius:50%;
+        content: " ";
       }
 
       .rag {
@@ -71,13 +71,13 @@ $rag-na:           $grey08;
       .selected.box-green{ border-color: $rag-green;}
       .selected.box-na{ border-color: $rag-na;}
 
-      .rag-red{ background:$rag-red; }
+      .rag-red{ background-color:$rag-red; }
 
-      .rag-amber{ background:$rag-amber; }
+      .rag-amber{ background-color:$rag-amber; }
 
-      .rag-green{ background:$rag-green; }
+      .rag-green{ background-color:$rag-green; }
 
-      .rag-na{ background:$rag-na; }
+      .rag-na{ background-color:$rag-na; }
 
       a:hover.box-red > .rag-red,
       a:focus.box-red > .rag-red {background-color:darken($rag-red, 10%);}
@@ -91,7 +91,30 @@ $rag-na:           $grey08;
       a:hover.box-na > .rag-na,
       a:focus.box-na > .rag-na {background-color:darken($rag-na, 10%);}
       
-    }
+    } // End .appraisal-dataset-guidance ============================================================
+
+    .appraisal-dataset{
+
+      .rag_status{
+            display: inline;
+            float: left;
+            width: 16px;
+            margin-right: 10px;
+            margin-top: 2px;
+            margin-left: -24px; // indenting the text ( see: vertical-tabs.scss / .nav-list > li > a)
+            height: 16px;
+            border-radius:50%;
+      }
+
+      .rag-red{ background-color:$rag-red; }
+
+      .rag-amber{ background-color:$rag-amber; }
+
+      .rag-green{ background-color:$rag-green; }
+
+      .rag-na{ background-color:$rag-na; }
+
+    } // End .appraisal-dataset =====================================================================
 
 
 

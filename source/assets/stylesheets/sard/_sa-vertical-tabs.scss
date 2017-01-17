@@ -85,13 +85,21 @@ $tab-text:          $grey18;
     min-width:10%;
   }
 
-
-  .nav-list > li > a{ // Used on collapse nav-list links
+    .nav-list > li > a{ // Used on collapse nav-list links
     border-bottom: 1px solid $tab-colour;
     background:$tab-list-colour;
     margin-right: -1px;
     padding-top:7px;
     padding-bottom:7px;
+    // text-indent: 62px ;
+  }
+
+  .nav-list > li > a > p{
+    // display:inline;
+    // // margin-left: -22px ;
+    // // padding-left: 22px ;
+    // text-indent: -62px ;
+    // clear:both;
   }
 
   .nav-list > li:last-of-type{
@@ -105,6 +113,10 @@ $tab-text:          $grey18;
     color:$tab-text;
   }
 
+  .nav-list > li > a{
+    padding-left: 34px; // indenting the text (See: portfolio.scss / .rag_status)
+  }
+
   .nav-list>li.active>a,
   .nav-list>li.active>a:hover,
   .nav-list>li.active>a:focus {
@@ -112,7 +124,7 @@ $tab-text:          $grey18;
     border-left: 1px solid $tab-colour;
     background:white; 
     z-index:1000; 
-    padding-left:14px;
+    padding-left:33px; // indenting the text (See: portfolio.scss / .rag_status) (1px less because of border-left)
   }
 
   .nav-tabs{}

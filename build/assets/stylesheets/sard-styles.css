@@ -2020,7 +2020,8 @@ img.user-guide-cover {
     text-align: center; }
   #portfolio .appraisal-dataset-guidance .box {
     display: inline-block;
-    border-radius: 50%; }
+    border-radius: 50%;
+    content: " "; }
   #portfolio .appraisal-dataset-guidance .rag {
     display: inline-block;
     border-radius: 50%;
@@ -2085,13 +2086,13 @@ img.user-guide-cover {
   #portfolio .appraisal-dataset-guidance .selected.box-na {
     border-color: #B5B0B0; }
   #portfolio .appraisal-dataset-guidance .rag-red {
-    background: #BF0000; }
+    background-color: #BF0000; }
   #portfolio .appraisal-dataset-guidance .rag-amber {
-    background: #FFB200; }
+    background-color: #FFB200; }
   #portfolio .appraisal-dataset-guidance .rag-green {
-    background: #33cc33; }
+    background-color: #33cc33; }
   #portfolio .appraisal-dataset-guidance .rag-na {
-    background: #B5B0B0; }
+    background-color: #B5B0B0; }
   #portfolio .appraisal-dataset-guidance a:hover.box-red > .rag-red,
   #portfolio .appraisal-dataset-guidance a:focus.box-red > .rag-red {
     background-color: #8c0000; }
@@ -2104,6 +2105,28 @@ img.user-guide-cover {
   #portfolio .appraisal-dataset-guidance a:hover.box-na > .rag-na,
   #portfolio .appraisal-dataset-guidance a:focus.box-na > .rag-na {
     background-color: #9c9696; }
+
+#portfolio .appraisal-dataset .rag_status {
+  display: inline;
+  float: left;
+  width: 16px;
+  margin-right: 10px;
+  margin-top: 2px;
+  margin-left: -24px;
+  height: 16px;
+  border-radius: 50%; }
+
+#portfolio .appraisal-dataset .rag-red {
+  background-color: #BF0000; }
+
+#portfolio .appraisal-dataset .rag-amber {
+  background-color: #FFB200; }
+
+#portfolio .appraisal-dataset .rag-green {
+  background-color: #33cc33; }
+
+#portfolio .appraisal-dataset .rag-na {
+  background-color: #B5B0B0; }
 
 /*  bs tabs */
 /*!
@@ -2166,6 +2189,8 @@ img.user-guide-cover {
   .sa-vertical-tabs .nav-list > li > a:focus {
     background: #B5B0B0;
     color: #211F0F; }
+  .sa-vertical-tabs .nav-list > li > a {
+    padding-left: 34px; }
   .sa-vertical-tabs .nav-list > li.active > a,
   .sa-vertical-tabs .nav-list > li.active > a:hover,
   .sa-vertical-tabs .nav-list > li.active > a:focus {
@@ -2173,7 +2198,7 @@ img.user-guide-cover {
     border-left: 1px solid #C7C4C2;
     background: white;
     z-index: 1000;
-    padding-left: 14px; }
+    padding-left: 33px; }
   .sa-vertical-tabs .nav-tabs > li {
     border: none; }
   .sa-vertical-tabs .nav-tabs > li > a {
