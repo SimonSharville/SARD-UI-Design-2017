@@ -73,13 +73,18 @@ padding-right:16px;
     z-index:3000;
     &:link{ background-color: $grey16;}
     &:hover, :focus{
-      background-color: $client-colour;
-    }
+    background-color: $client-colour;
   }
+}
 
 .indent{
   padding-left:15px;
   padding-right:15px;
+}
+
+.no-indent{
+  padding-left:0px;
+  padding-right:0px;
 }
 
 .row-indent{
@@ -109,9 +114,12 @@ padding-right:16px;
   .mobile-hide{display:none} 
 }
 
+.space-above{ margin-top:30px;}
+.space-below{ margin-bottom:30px;}
+
 
 // Top Nav =====================================================================
-// You will only nee this if we re-introduce the top nav section
+// You will only need this if we re-introduce the top nav section
 
 // .sa-top-nav {
 //   .navbar{
@@ -165,48 +173,48 @@ padding-right:16px;
     }
 
 
-  .row{
-    .perf {
-      margin: 15px -9px 25px -9px;
-    }
-
-    &.row-between-perfs{
-      margin: -33px -24px -24px -24px;
-      padding-bottom:20px;
-    }
-
-    &.row-between-perfs:before{
-      display: block;
-      height: 26px;
-      margin-left: -20px;
-      margin-right: -20px;
-      background: url('../graphics/dot_grey04.png');
-      background-repeat: repeat-x;
-      background-position: -4px -8px;
-    }
-
-
-    &.perf-grey06 {
-      background-image: url("../graphics/dot_grey06.png");
-      background-repeat: repeat-x;
-      height: 16px;
-      background-position: -4px 0px;
-      margin: 15px -20px 25px -20px;
-    }
-
-    &.perf-wht {
-      background-image: url("../graphics/dot_white.png");
-      background-repeat: repeat-x;
-      height: 16px;
-      background-position: -4px 0px;
-      margin: 15px -20px 25px -20px;
-    }
-
-    &.divide-space {
-      height: 40px;
-      background:none;
-    }
+.row{
+  .perf {
+    margin: 15px -9px 25px -9px;
   }
+
+  &.row-between-perfs{
+    margin: -33px -24px -24px -24px;
+    padding-bottom:20px;
+  }
+
+  &.row-between-perfs:before{
+    display: block;
+    height: 26px;
+    margin-left: -20px;
+    margin-right: -20px;
+    background: url('../graphics/dot_grey04.png');
+    background-repeat: repeat-x;
+    background-position: -4px -8px;
+  }
+
+
+  &.perf-grey06 {
+    background-image: url("../graphics/dot_grey06.png");
+    background-repeat: repeat-x;
+    height: 16px;
+    background-position: -4px 0px;
+    margin: 15px -20px 25px -20px;
+  }
+
+  &.perf-wht {
+    background-image: url("../graphics/dot_white.png");
+    background-repeat: repeat-x;
+    height: 16px;
+    background-position: -4px 0px;
+    margin: 15px -20px 25px -20px;
+  }
+
+  &.divide-space {
+    height: 40px;
+    background:none;
+  }
+}
 
   .panel{
     >.perf-wht{
