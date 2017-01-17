@@ -1,22 +1,25 @@
 <div class="row">  
-  <div class="col-xs-12 space-below">
+  <div class="col-xs-12">
     
       <h4>Good Medical Care (T)</h4>
       <h2>Mandatory Data for SHRAD/SHAPPT (T)</h2>
       <h4>Average patient length of stay in the preceding 12 month period</h4>
   </div> <!-- END Column -->
+</div> <!-- END Row -->
 
+<!-- Status ====================================================================== -->
+<div class="row perf"></div>
+
+<div class="row"> 
   <div class=" col-xs-12">
-    <div class=" panel panel-white">
-      <div class="panel-heading">
-        <h3 class="panel-title">Status<a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="Click on the buttons below to change the status" data-placement="bottom" data-content="- Red means you haven’t started this section yet.<br>
+    <h3>Status<a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="Click on the buttons below to change the status" data-placement="bottom" data-content="- Red means you haven’t started this section yet.<br>
       - Amber means you are working on this section, but it is not yet finished.<br>
       - Green means you have added evidence and this section is complete.<br>
       - N/A means this section is not applicable to you."></a></h3>
-      </div>
-      <div class="panel-body appraisal-dataset-guidance">
 
-        <div class="no-indent col-xs-12 col-sm-6">
+      <div class="appraisal-dataset-guidance">
+
+        <div class="col-xs-12 col-sm-6">
           <div class="rag-boxes">
             <a href="#" class="box box-red selected">
               <div class="rag rag-red ">Red
@@ -49,21 +52,90 @@
         </div>
 
       </div> <!-- END Panel Body -->
-    </div> <!-- END Panel -->
 
   </div> <!-- END Column -->
-</div>
+</div> <!-- END Row -->
 
-<!-- <a class="trigger" style="position: absolute; left: -3px; top: -12px;"> -->
-      <!-- <img alt="Sign_info" src="/assets/lib/icons/sign_info-77a9c5d7939ff58cb0d98cde9da11050.png"> -->
-    <!-- </a> -->
-    <!-- <div class="tooltip">
-    <p>Evidence should be added for each dataset in your portfolio, then the dataset marked as green, amber or N/A. You cannot submit your appraisal unless every dataset in your portfolio is marked green, amber or N/A.</p>
-    <p>Click on the buttons below to change the status:</p>
-    <ul>
-      <li>Red means you haven’t started this section yet.</li>
-      <li>Amber means that you are working on this section, but it is not yet finished.</li>
-      <li>Green means complete.</li>
-      <li>N/A means this is not applicable to you.</li>
-    </ul>
-    </div> -->
+
+<!-- Evidence ====================================================================== -->
+<div class="row perf"></div>
+
+<div class="row">  
+  <div class=" col-xs-12 evidences">
+    <h3>Evidence<a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="Add evidence" data-placement="bottom" data-content="Add your evidence here for it to appear in the list below."></a></h3>
+
+    <div class="new-evidence">
+      <form id="new_evidence" method="post">
+        <textarea id="content" placeholder="Type your evidence here..."></textarea>
+        <div class="shelf">
+          <div class="expiry">
+            <p>
+            <label>Expiry Date:</label>
+            <input id="expiry" type="text" value="" class="hasDatepicker" placeholder="Add date"><span class="glyphicon glyphicon-calendar">
+            </p>
+          </div>
+          <div class="col-xs-6 no-indent attachments">
+            <div class="new-attachment-fragment">
+              <div class="field">
+                <button class="btn btn-default" id="attach" type="button"><span class="glyphicon glyphicon-paperclip"></span>Attach Document</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 no-indent add">
+            <button class="btn btn-default pull-right" id="attach" name="commit" nobind="true" type="submit" value="Save Evidence">Save Evidence</button>
+            <!-- <input id="save-new-evidence" name="commit" nobind="true" type="submit" value="Save Evidence"> -->
+          </div>
+        </div>
+      </form>
+      <div class="clear"></div>
+    </div> <!-- END new-evidences -->
+
+
+    <div class="col-xs-12 evidence">
+      <div class="icon">
+      E
+      </div>
+      <div class="detail">
+      <div class="title"></div>
+      <div class="content">
+      (no content)
+      </div>
+      <p class="expiry">
+      <strong>Expires: not given<br></strong>
+      <a href="#" class="edit-evidence-link">Edit</a>
+      |
+      <a href="#" class="remove-evidence">Remove</a>
+      </p>
+      <div class="edocs">
+      <div class="attachments"></div>
+      </div>
+      </div>
+    </div> <!-- END evidence -->
+
+
+    <div class="col-xs-12 evidence">
+      <div class="icon">
+      E
+      </div>
+      <div class="detail">
+      <div class="title"></div>
+      <div class="content">
+      (no content)
+      </div>
+      <p class="expiry">
+      <strong>Expires: not given<br></strong>
+      <a href="#" class="edit-evidence-link">Edit</a>
+      |
+      <a href="#" class="remove-evidence">Remove</a>
+      </p>
+      <div class="edocs">
+      <div class="attachments"></div>
+      </div>
+      </div>
+    </div> <!-- END evidence -->
+
+  </div> <!-- END evidences -->
+  
+</div> <!-- END Row -->
+
+
