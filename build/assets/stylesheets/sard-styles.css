@@ -1881,6 +1881,10 @@ button:hover {
   padding-left: 15px;
   padding-right: 15px; }
 
+.no-indent {
+  padding-left: 0px;
+  padding-right: 0px; }
+
 .row-indent {
   padding-left: 15px;
   padding-right: 15px; }
@@ -1902,6 +1906,12 @@ button:hover {
 @media only screen and (max-width: 991px) {
   .mobile-hide {
     display: none; } }
+
+.space-above {
+  margin-top: 30px; }
+
+.space-below {
+  margin-bottom: 30px; }
 
 .divide-rule {
   border-top: 1px solid #B5B0B0;
@@ -1995,6 +2005,105 @@ img.user-guide-cover {
   line-height: 1em;
   text-indent: -1.28571429em;
   padding: 0.25em 0em 0.25em 1.28571429em; }
+
+#portfolio .appraisal-dataset-guidance {
+  font-size: 0;
+  padding-top: 20px;
+  /* Custom, iPhone Retina */
+  /* Extra Small Devices, Phones */
+  /* Small Devices, Tablets */
+  /* Medium Devices, Desktops */
+  /* Large Devices, Wide Screens */ }
+  #portfolio .appraisal-dataset-guidance .rag-boxes {
+    display: inline-block;
+    width: 50%;
+    text-align: center; }
+  #portfolio .appraisal-dataset-guidance .box {
+    display: inline-block;
+    border-radius: 50%; }
+  #portfolio .appraisal-dataset-guidance .rag {
+    display: inline-block;
+    border-radius: 50%;
+    color: white; }
+  @media only screen and (min-width: 320px) {
+    #portfolio .appraisal-dataset-guidance .box {
+      width: 90px;
+      min-height: 90px;
+      border: 5px solid transparent;
+      font-family: robotobold;
+      font-size: 14px;
+      line-height: 1em; }
+    #portfolio .appraisal-dataset-guidance .rag {
+      width: 80px;
+      min-height: 80px;
+      border: 5px solid white;
+      padding-top: 30%; } }
+  @media only screen and (min-width: 480px) {
+    #portfolio .appraisal-dataset-guidance .box {
+      width: 130px;
+      min-height: 130px;
+      border: 10px solid transparent;
+      font-family: robotoregular;
+      font-size: 24px; }
+    #portfolio .appraisal-dataset-guidance .rag {
+      width: 110px;
+      min-height: 110px;
+      border: 10px solid white;
+      padding-top: 26%; } }
+  @media only screen and (min-width: 768px) {
+    #portfolio .appraisal-dataset-guidance .box {
+      width: 120px;
+      min-height: 120px; }
+    #portfolio .appraisal-dataset-guidance .rag {
+      width: 100px;
+      min-height: 100px; } }
+  @media only screen and (min-width: 992px) {
+    #portfolio .appraisal-dataset-guidance .box {
+      width: 160px;
+      min-height: 160px;
+      font-family: robotolight;
+      font-size: 34px; }
+    #portfolio .appraisal-dataset-guidance .rag {
+      width: 140px;
+      min-height: 140px;
+      padding-top: 28%; } }
+  @media only screen and (min-width: 1200px) {
+    #portfolio .appraisal-dataset-guidance .box {
+      width: 200px;
+      min-height: 200px;
+      font-size: 40px; }
+    #portfolio .appraisal-dataset-guidance .rag {
+      width: 180px;
+      min-height: 180px;
+      padding-top: 30%; } }
+  #portfolio .appraisal-dataset-guidance .selected.box-red {
+    border-color: #BF0000; }
+  #portfolio .appraisal-dataset-guidance .selected.box-amber {
+    border-color: #FFB200; }
+  #portfolio .appraisal-dataset-guidance .selected.box-green {
+    border-color: #33cc33; }
+  #portfolio .appraisal-dataset-guidance .selected.box-na {
+    border-color: #B5B0B0; }
+  #portfolio .appraisal-dataset-guidance .rag-red {
+    background: #BF0000; }
+  #portfolio .appraisal-dataset-guidance .rag-amber {
+    background: #FFB200; }
+  #portfolio .appraisal-dataset-guidance .rag-green {
+    background: #33cc33; }
+  #portfolio .appraisal-dataset-guidance .rag-na {
+    background: #B5B0B0; }
+  #portfolio .appraisal-dataset-guidance a:hover.box-red > .rag-red,
+  #portfolio .appraisal-dataset-guidance a:focus.box-red > .rag-red {
+    background-color: #8c0000; }
+  #portfolio .appraisal-dataset-guidance a:hover.box-amber > .rag-amber,
+  #portfolio .appraisal-dataset-guidance a:focus.box-amber > .rag-amber {
+    background-color: #cc8e00; }
+  #portfolio .appraisal-dataset-guidance a:hover.box-green > .rag-green,
+  #portfolio .appraisal-dataset-guidance a:focus.box-green > .rag-green {
+    background-color: #29a329; }
+  #portfolio .appraisal-dataset-guidance a:hover.box-na > .rag-na,
+  #portfolio .appraisal-dataset-guidance a:focus.box-na > .rag-na {
+    background-color: #9c9696; }
 
 /*  bs tabs */
 /*!
@@ -2103,6 +2212,8 @@ img.user-guide-cover {
     padding: 0px; }
   .sa-vertical-tabs .tab-pane {
     border: none;
+    margin-left: 15px;
+    margin-right: 15px;
     margin-bottom: -73px;
     margin-bottom: 0px\9; }
   @media screen and (-webkit-min-device-pixel-ratio: 0) {

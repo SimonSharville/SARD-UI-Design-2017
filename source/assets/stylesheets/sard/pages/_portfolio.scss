@@ -1,6 +1,11 @@
 
 
-//== Index Page
+//== Portfolio Page
+
+$rag-red:          $red;
+$rag-amber:        $yellow;
+$rag-green:        $success;
+$rag-na:           $grey08;
 
 
 #portfolio{
@@ -8,7 +13,85 @@
 // page specific items here =========================================
 
   
+    .appraisal-dataset-guidance{
+      font-size: 0; // This removes the gap between the boxes
+      padding-top:20px;
 
+      .rag-boxes{
+        display:inline-block;
+        width:50%;
+        text-align:center;
+      }
+
+      .box{
+        display:inline-block;
+        border-radius:50%;
+      }
+
+      .rag {
+        display:inline-block;
+        border-radius:50%;
+        color:white;
+      }
+
+      // Sizing
+      /* Custom, iPhone Retina */ 
+        @media only screen and (min-width : 320px) {
+          .box{ width:90px; min-height:90px; border:5px solid transparent; font-family:robotobold; font-size: 14px; line-height:1em;}
+          .rag{ width:80px; min-height:80px; border:5px solid white; padding-top:30%;}
+        }
+
+        /* Extra Small Devices, Phones */ 
+        @media only screen and (min-width : 480px) {
+          .box{ width:130px; min-height:130px; border:10px solid transparent; font-family:robotoregular; font-size: 24px; }
+          .rag{ width:110px; min-height:110px; border:10px solid white; padding-top:26%; }
+        }
+
+        /* Small Devices, Tablets */
+        @media only screen and (min-width : 768px) {
+          .box{ width:120px; min-height:120px;}
+          .rag{ width:100px; min-height:100px;}
+        }
+
+        /* Medium Devices, Desktops */
+        @media only screen and (min-width : 992px) {
+          .box{ width:160px; min-height:160px; font-family:robotolight; font-size: 34px;}
+          .rag{ width:140px; min-height:140px; padding-top:28%; }
+        }
+
+        /* Large Devices, Wide Screens */
+        @media only screen and (min-width : 1200px) {
+          .box{ width:200px; min-height:200px; font-size: 40px; }
+          .rag{ width:180px; min-height:180px; padding-top:30%; }
+        }
+
+      // colouring
+      .selected.box-red{ border-color: $rag-red;}
+      .selected.box-amber{ border-color: $rag-amber;}
+      .selected.box-green{ border-color: $rag-green;}
+      .selected.box-na{ border-color: $rag-na;}
+
+      .rag-red{ background:$rag-red; }
+
+      .rag-amber{ background:$rag-amber; }
+
+      .rag-green{ background:$rag-green; }
+
+      .rag-na{ background:$rag-na; }
+
+      a:hover.box-red > .rag-red,
+      a:focus.box-red > .rag-red {background-color:darken($rag-red, 10%);}
+
+      a:hover.box-amber > .rag-amber,
+      a:focus.box-amber > .rag-amber {background-color:darken($rag-amber, 10%);}
+
+      a:hover.box-green > .rag-green,
+      a:focus.box-green > .rag-green {background-color:darken($rag-green, 10%);}
+
+      a:hover.box-na > .rag-na,
+      a:focus.box-na > .rag-na {background-color:darken($rag-na, 10%);}
+      
+    }
 
 
 
