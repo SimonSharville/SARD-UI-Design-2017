@@ -2017,6 +2017,7 @@ img.user-guide-cover {
   #portfolio .appraisal-dataset-guidance .rag-boxes {
     display: inline-block;
     width: 50%;
+    height: 200px;
     text-align: center; }
   #portfolio .appraisal-dataset-guidance .box {
     display: inline-block;
