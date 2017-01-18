@@ -377,14 +377,17 @@ a.link-arrow:before {
 .box-content ul {
   padding-left: 10px; }
 
-.glyphicon-ok {
+.table .glyphicon-ok {
   color: #359E00; }
 
-.glyphicon-remove {
+.table .glyphicon-remove {
   color: #BF0000; }
 
-.glyphicon-minus {
+.table .glyphicon-minus {
   color: #403D3D; }
+
+.btn .glyphicon {
+  padding: 0 3px 0 0; }
 
 * {
   -webkit-font-smoothing: antialiased !important;
@@ -2044,7 +2047,8 @@ img.user-guide-cover {
   #portfolio .appraisal-dataset-guidance .rag {
     display: inline-block;
     border-radius: 50%;
-    color: white; }
+    color: white;
+    background-image: url(../textures/natural-paper.png); }
   @media only screen and (min-width: 320px) {
     #portfolio .appraisal-dataset-guidance .box {
       width: 90px;
@@ -2147,18 +2151,54 @@ img.user-guide-cover {
 #portfolio .appraisal-dataset .rag-na {
   background-color: #B5B0B0; }
 
-#portfolio .evidences textarea {
-  word-wrap: break-word;
-  resize: vertical;
-  min-height: 100px;
-  width: 100%; }
-
-#portfolio .evidences .glyphicon {
-  padding: 0 5px; }
-
-#portfolio .evidences .evidence {
-  border-top: 1px solid #211F0F;
-  margin-top: 20px; }
+#portfolio .evidences, #portfolio .comments {
+  /* Medium Devices, Desktops */ }
+  #portfolio .evidences textarea, #portfolio .comments textarea {
+    word-wrap: break-word;
+    resize: vertical;
+    min-height: 100px;
+    width: 100%;
+    border: 1px solid #A39E9C;
+    padding: 0px 5px; }
+  #portfolio .evidences input, #portfolio .comments input {
+    border: 1px solid #A39E9C;
+    padding: 0px 5px; }
+  #portfolio .evidences .evidence, #portfolio .comments .evidence {
+    display: table;
+    border-top: 6px solid #211F0F;
+    margin-top: 20px;
+    padding: 10px 0px;
+    vertical-align: top; }
+  #portfolio .evidences .evidence .icon-box, #portfolio .comments .evidence .icon-box {
+    display: table-cell;
+    padding-left: 0px;
+    margin-right: -10px;
+    vertical-align: top;
+    width: 40px; }
+  #portfolio .evidences .evidence .icon, #portfolio .comments .evidence .icon {
+    display: table-cell;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border: 4px solid #000;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 32px; }
+  #portfolio .evidences .evidence .detail, #portfolio .comments .evidence .detail {
+    display: table-cell;
+    width: 50%;
+    padding: 0px 10px;
+    vertical-align: top; }
+  @media only screen and (min-width: 992px) {
+    #portfolio .evidences .evidence .detail, #portfolio .comments .evidence .detail {
+      width: 70%; } }
+  #portfolio .evidences .evidence .detail .title, #portfolio .comments .evidence .detail .title {
+    font-weight: bold; }
+  #portfolio .evidences .evidence .expiry, #portfolio .comments .evidence .expiry {
+    display: table-cell;
+    vertical-align: top;
+    padding: 0px 10px;
+    border-left: 1px solid #211F0F; }
 
 /*  bs tabs */
 /*!
@@ -2269,6 +2309,15 @@ img.user-guide-cover {
     width: 100%;
     min-width: 100%;
     padding: 0px; }
+  .sa-vertical-tabs .content-head {
+    background-color: white;
+    margin: -15px -30px 24px -30px !important;
+    padding: 15px; }
+  .sa-vertical-tabs .content-head-inverse {
+    background-color: #211F0F;
+    color: white;
+    margin: -16px -31px 24px -30px !important;
+    padding: 15px; }
   .sa-vertical-tabs .tab-pane {
     background: none;
     border: none;

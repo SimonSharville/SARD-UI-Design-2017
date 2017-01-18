@@ -32,6 +32,7 @@ $rag-na:           $grey08;
         display:inline-block;
         border-radius:50%;
         color:white;
+        background-image:url(../textures/natural-paper.png);
       }
 
       // Sizing
@@ -117,7 +118,7 @@ $rag-na:           $grey08;
     } // End .appraisal-dataset =====================================================================
 
 
-    .evidences{
+    .evidences, .comments{
       // background-color:pink;
 
       #new_evidence{
@@ -130,14 +131,75 @@ $rag-na:           $grey08;
         resize: vertical; 
         min-height: 100px;
         width:100%;
+        border:1px solid $grey10;
+        padding:0px 5px;
       }
 
-      .glyphicon{ padding: 0 5px;}
+      input{
+        border:1px solid $grey10;
+        padding:0px 5px;
+      }
 
       .evidence{
-        border-top: 1px solid $grey18;
+        display: table;
+        border-top: 6px solid $grey18;
         margin-top:20px;
+        padding:10px 0px;
+        vertical-align:top;
       }
+
+     .evidence .icon-box{
+      display: table-cell;
+      padding-left:0px;
+      margin-right:-10px;
+      vertical-align:top;
+      width: 40px;
+     }
+
+      .evidence .icon{
+        display: table-cell;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        border: 4px solid #000;
+        font-size: 2em;
+        font-weight: bold;
+        line-height: 32px;
+      }
+
+      .evidence .detail{
+        display: table-cell;
+        width: 50%;
+        padding:0px 10px;
+        vertical-align:top;
+      }
+
+      /* Medium Devices, Desktops */
+      @media only screen and (min-width : 992px) {
+        .evidence .detail{width: 70%;}
+      }
+
+      .evidence .detail .title{
+        font-weight:bold;
+      }
+
+      .evidence .detail .content{
+      }
+
+      .evidence .expiry{
+        display: table-cell;
+        vertical-align:top;
+        padding:0px 10px;
+        border-left:1px solid $grey18;
+      }
+
+      .evidence .detail .edocs{
+      }
+
+      .evidence .detail .edocs .attachments{
+      }
+
+
 
     }// End .evidences =====================================================================
 
