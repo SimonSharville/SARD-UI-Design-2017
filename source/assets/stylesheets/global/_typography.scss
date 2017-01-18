@@ -367,7 +367,8 @@ h1, h2, h3, h4, h5, h6, p{
   }
 
   // Glyphicons =========================================================
-  .glyphicon-ok{color:$green;}
-  .glyphicon-remove{color:$red;}
-  .glyphicon-minus{color:$grey16;}
+  .table .glyphicon-ok{color:$green;}
+  .table .glyphicon-remove{color:$red;}
+  .table .glyphicon-minus{color:$grey16;}
+  .btn .glyphicon{ padding: 0 3px 0 0;}
 
