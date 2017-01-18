@@ -1,6 +1,7 @@
 // ====================================================================================
 
-$tab-colour:        $grey06;
+$tab-colour:        $grey08;
+$tab-colour-hover:  $grey10;
 $tab-list-colour:   $grey02;
 $tab-list-hover:    $grey08;
 $tab-pane-colour:   white;
@@ -59,9 +60,9 @@ $tab-text:          $grey18;
   //     padding-right:5px;
   // }
 
-  a:hover > .toggle-list,
-  a:focus > .ltoggle-list{
-    color:$tab-text;
+  a:hover.toggle-list,
+  a:focus.ltoggle-list{
+    background-color:$tab-colour-hover;
   }
 
   .toggle-list > .number{
@@ -81,6 +82,7 @@ $tab-text:          $grey18;
     vertical-align:middle;
     width:100%;
     min-width:10%;
+
   }
 
     .nav-list > li > a{ // Used on collapse nav-list links
@@ -113,6 +115,7 @@ $tab-text:          $grey18;
     border-right: none;
     border-left: 1px solid $tab-colour;
     background:white; 
+    background-image:url(../textures/natural-paper.png);
     z-index:1000; 
     padding-left:33px; // indenting the text (See: portfolio.scss / .rag_status) (1px less because of border-left)
   }
@@ -175,7 +178,8 @@ $tab-text:          $grey18;
 
   .tab-content{
     border:1px solid $tab-colour; 
-    background:white; 
+    background:white;
+    background-image:url(../textures/natural-paper.png); 
     width:100%; 
     min-width:100%;
     padding:0px;
@@ -183,7 +187,7 @@ $tab-text:          $grey18;
   }  
 
   .tab-pane{
-    // background:pink;
+    background:none;
     border: none;
     margin-left:15px;
     margin-right:15px;
