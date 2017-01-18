@@ -19,23 +19,37 @@
 
 .page-header .profile-image {
     padding-right: 10px;
+    float:left;
   }
 
   .page-header .profile-image img{
     border-radius: 50%;
   }
 
-  .page-header .user-name{
-    font-size: 20px;
-    font-family: 'robotobold';
-    padding-top:10px;
-    padding-left:115px;
-  }
+  // .page-header .user-name{
+  //   // font-size: 20px;
+  //   font-family: 'robotobold'!important;
+  //   // padding-top:10px;
+  //   padding-left:115px;
+  // }
 
-  .page-header .page-title{
-    font-family: 'robotothin';
-    font-size: 60px;
-    line-height: 50px;
+  // .page-header .page-title{
+  //   font-family: 'robotothin';
+  //   // font-size: 60px;
+  //   // line-height: 50px;
+  // }
+
+  .page-title{
+    display:inline-block;
+    .user-name{
+      font-family: 'robotobold';
+      line-height:1em; 
+      padding-left:2px;
+    }
+    .title{
+      font-family: 'robotothin';
+      line-height:0.6em; 
+    }
   }
 
   .page-header {
@@ -875,6 +889,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
+    margin-top:6px; margin-bottom:6px;
   }
 
   // .btn:hover{ color:white;}
@@ -884,15 +899,17 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     background-image: url("../graphics/panel_highlight.png");
     box-shadow: none;
     top: 3px;
+    margin-bottom: 3px;
+    margin-top: 9px;
   }
 
   .panel {  // This makes them work properly within a panel
-    .btn{ margin-top:6px; margin-bottom:6px;}
+    // .btn{ margin-top:6px; margin-bottom:6px;}
     // .btn:first-of-type{margin-top:0px;}
 
     .btn:active, .btn:active{
-    margin-bottom: 3px;
-    margin-top: 9px;
+    // margin-bottom: 3px;
+    // margin-top: 9px;
     }
     .btn:active:first-of-type, .btn:active:first-of-type{
     // margin-bottom: -3px;
@@ -929,15 +946,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 // Bootstrap Specific Button Styles
 
-.btn-default { 
-  // background: #00b2b2; /* Old browsers */
-  // background: -moz-linear-gradient(-45deg, #00b2b2 0%, #007f7d 100%); /* FF3.6-15 */
-  // background: -webkit-linear-gradient(-45deg, #00b2b2 0%,#007f7d 100%); /* Chrome10-25,Safari5.1-6 */
-  // background: linear-gradient(135deg, darken($turq, 0%),darken($turq, 20%)); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b2b2', endColorstr='#007f7d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  background-color: darken($turq, 0%); 
-  color:white!important;
-}
+.btn-default { background-color: darken($turq, 0%); color:white!important;}
 .btn-default:visited { background-color: darken($turq, 0%); color:white!important;}
 .btn-default:hover { background-color: darken($turq, 10%); color:white!important;}
 .btn-default:active,  { background-color: darken($turq, 20%)!important;}
@@ -973,6 +982,12 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .btn-danger:active,  { background-color: darken($danger, 10%)!important;}
 .btn-danger:focus { background-color: darken($danger, 10%)!important;}
 
+.btn-grey { background-color: darken($grey16, 5%); color:white!important;}
+.btn-grey:visited { background-color: darken($grey16, 5%); color:white!important;}
+.btn-grey:hover { background-color: darken($grey16, 20%); color:white!important;}
+.btn-grey:active,  { background-color: darken($grey16, 20%)!important;}
+.btn-grey:focus { background-color: darken($grey16, 20%)!important;}
+
 .btn-link{
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -980,8 +995,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
    &.btn:active, .btn.active {
     background-image: none;
     box-shadow: none;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    // margin-bottom: 0px;
+    // margin-top: 0px;
     text-decoration:none!important;
     background-color: none;
   }
