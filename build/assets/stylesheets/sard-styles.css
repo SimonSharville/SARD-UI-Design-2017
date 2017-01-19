@@ -1932,6 +1932,10 @@ button:hover {
   margin-top: 20px;
   margin-bottom: 20px; }
 
+.fast-links {
+  margin-top: 20px;
+  margin-bottom: 30px; }
+
 .divide-rule {
   border-top: 1px solid #B5B0B0;
   margin: 20px 10px 20px 10px; }
@@ -2028,25 +2032,25 @@ img.user-guide-cover {
   text-indent: -1.28571429em;
   padding: 0.25em 0em 0.25em 1.28571429em; }
 
-#portfolio .header {
+#portfolio .header, #appraisal .header {
   background-color: #211F0F;
   color: white;
   margin: -16px -31px 24px -30px;
   padding: 15px; }
 
-#portfolio .rag-red {
+#portfolio .rag-red, #appraisal .rag-red {
   background-color: #BF0000; }
 
-#portfolio .rag-amber {
+#portfolio .rag-amber, #appraisal .rag-amber {
   background-color: #FFB200; }
 
-#portfolio .rag-green {
+#portfolio .rag-green, #appraisal .rag-green {
   background-color: #359E00; }
 
-#portfolio .rag-na {
+#portfolio .rag-na, #appraisal .rag-na {
   background-color: #615E5C; }
 
-#portfolio .appraisal-dataset-guidance {
+#portfolio .appraisal-dataset-guidance, #appraisal .appraisal-dataset-guidance {
   font-size: 0;
   padding-top: 20px;
   /* Custom, iPhone Retina */
@@ -2054,91 +2058,101 @@ img.user-guide-cover {
   /* Small Devices, Tablets */
   /* Medium Devices, Desktops */
   /* Large Devices, Wide Screens */ }
-  #portfolio .appraisal-dataset-guidance .rag-boxes {
+  #portfolio .appraisal-dataset-guidance .rag-boxes, #appraisal .appraisal-dataset-guidance .rag-boxes {
     display: inline-block;
     width: 50%;
     text-align: center; }
-  #portfolio .appraisal-dataset-guidance .box {
+  #portfolio .appraisal-dataset-guidance .box, #appraisal .appraisal-dataset-guidance .box {
     display: inline-block;
     border-radius: 50%;
     content: " "; }
-  #portfolio .appraisal-dataset-guidance .rag {
+  #portfolio .appraisal-dataset-guidance .rag, #appraisal .appraisal-dataset-guidance .rag {
+    background-image: url("..//graphics/panel_highlight.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
     display: inline-block;
     border-radius: 50%;
     color: white; }
   @media only screen and (min-width: 320px) {
-    #portfolio .appraisal-dataset-guidance .box {
+    #portfolio .appraisal-dataset-guidance .box, #appraisal .appraisal-dataset-guidance .box {
       width: 90px;
       min-height: 90px;
       border: 5px solid transparent;
       font-family: robotobold;
       font-size: 14px;
       line-height: 1em; }
-    #portfolio .appraisal-dataset-guidance .rag {
+    #portfolio .appraisal-dataset-guidance .rag, #appraisal .appraisal-dataset-guidance .rag {
       width: 80px;
       min-height: 80px;
       border: 5px solid white;
       padding-top: 30%; } }
   @media only screen and (min-width: 480px) {
-    #portfolio .appraisal-dataset-guidance .box {
+    #portfolio .appraisal-dataset-guidance .box, #appraisal .appraisal-dataset-guidance .box {
       width: 130px;
       min-height: 130px;
       border: 10px solid transparent;
       font-family: robotoregular;
       font-size: 24px; }
-    #portfolio .appraisal-dataset-guidance .rag {
+    #portfolio .appraisal-dataset-guidance .rag, #appraisal .appraisal-dataset-guidance .rag {
       width: 110px;
       min-height: 110px;
       border: 10px solid white;
       padding-top: 26%; } }
   @media only screen and (min-width: 768px) {
-    #portfolio .appraisal-dataset-guidance .box {
+    #portfolio .appraisal-dataset-guidance .box, #appraisal .appraisal-dataset-guidance .box {
       width: 120px;
       min-height: 120px; }
-    #portfolio .appraisal-dataset-guidance .rag {
+    #portfolio .appraisal-dataset-guidance .rag, #appraisal .appraisal-dataset-guidance .rag {
       width: 100px;
       min-height: 100px; } }
   @media only screen and (min-width: 992px) {
-    #portfolio .appraisal-dataset-guidance .box {
+    #portfolio .appraisal-dataset-guidance .box, #appraisal .appraisal-dataset-guidance .box {
       width: 160px;
       min-height: 160px;
       font-family: robotolight;
       font-size: 34px; }
-    #portfolio .appraisal-dataset-guidance .rag {
+    #portfolio .appraisal-dataset-guidance .rag, #appraisal .appraisal-dataset-guidance .rag {
       width: 140px;
       min-height: 140px;
       padding-top: 28%; } }
   @media only screen and (min-width: 1200px) {
-    #portfolio .appraisal-dataset-guidance .box {
+    #portfolio .appraisal-dataset-guidance .box, #appraisal .appraisal-dataset-guidance .box {
       width: 200px;
       min-height: 200px;
       font-size: 40px; }
-    #portfolio .appraisal-dataset-guidance .rag {
+    #portfolio .appraisal-dataset-guidance .rag, #appraisal .appraisal-dataset-guidance .rag {
       width: 180px;
       min-height: 180px;
       padding-top: 30%; } }
-  #portfolio .appraisal-dataset-guidance .selected.box-red {
+  #portfolio .appraisal-dataset-guidance .selected.box-red, #appraisal .appraisal-dataset-guidance .selected.box-red {
     border-color: #BF0000; }
-  #portfolio .appraisal-dataset-guidance .selected.box-amber {
+  #portfolio .appraisal-dataset-guidance .selected.box-amber, #appraisal .appraisal-dataset-guidance .selected.box-amber {
     border-color: #FFB200; }
-  #portfolio .appraisal-dataset-guidance .selected.box-green {
+  #portfolio .appraisal-dataset-guidance .selected.box-green, #appraisal .appraisal-dataset-guidance .selected.box-green {
     border-color: #359E00; }
-  #portfolio .appraisal-dataset-guidance .selected.box-na {
+  #portfolio .appraisal-dataset-guidance .selected.box-na, #appraisal .appraisal-dataset-guidance .selected.box-na {
     border-color: #615E5C; }
   #portfolio .appraisal-dataset-guidance a:hover.box-red > .rag-red,
-  #portfolio .appraisal-dataset-guidance a:focus.box-red > .rag-red {
+  #portfolio .appraisal-dataset-guidance a:focus.box-red > .rag-red, #appraisal .appraisal-dataset-guidance a:hover.box-red > .rag-red,
+  #appraisal .appraisal-dataset-guidance a:focus.box-red > .rag-red {
     background-color: #8c0000; }
   #portfolio .appraisal-dataset-guidance a:hover.box-amber > .rag-amber,
-  #portfolio .appraisal-dataset-guidance a:focus.box-amber > .rag-amber {
+  #portfolio .appraisal-dataset-guidance a:focus.box-amber > .rag-amber, #appraisal .appraisal-dataset-guidance a:hover.box-amber > .rag-amber,
+  #appraisal .appraisal-dataset-guidance a:focus.box-amber > .rag-amber {
     background-color: #cc8e00; }
   #portfolio .appraisal-dataset-guidance a:hover.box-green > .rag-green,
-  #portfolio .appraisal-dataset-guidance a:focus.box-green > .rag-green {
+  #portfolio .appraisal-dataset-guidance a:focus.box-green > .rag-green, #appraisal .appraisal-dataset-guidance a:hover.box-green > .rag-green,
+  #appraisal .appraisal-dataset-guidance a:focus.box-green > .rag-green {
     background-color: #246b00; }
   #portfolio .appraisal-dataset-guidance a:hover.box-na > .rag-na,
-  #portfolio .appraisal-dataset-guidance a:focus.box-na > .rag-na {
+  #portfolio .appraisal-dataset-guidance a:focus.box-na > .rag-na, #appraisal .appraisal-dataset-guidance a:hover.box-na > .rag-na,
+  #appraisal .appraisal-dataset-guidance a:focus.box-na > .rag-na {
     background-color: #474543; }
 
-#portfolio .appraisal-dataset .rag_status {
+#portfolio .appraisal-dataset .rag_status, #appraisal .appraisal-dataset .rag_status {
+  background-image: url("..//graphics/panel_highlight.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
   display: inline;
   float: left;
   width: 16px;
@@ -2148,31 +2162,31 @@ img.user-guide-cover {
   height: 16px;
   border-radius: 50%; }
 
-#portfolio .evidences, #portfolio .comments, #portfolio .notes {
+#portfolio .evidences, #portfolio .comments, #portfolio .notes, #appraisal .evidences, #appraisal .comments, #appraisal .notes {
   /* Medium Devices, Desktops */ }
-  #portfolio .evidences textarea, #portfolio .comments textarea, #portfolio .notes textarea {
+  #portfolio .evidences textarea, #portfolio .comments textarea, #portfolio .notes textarea, #appraisal .evidences textarea, #appraisal .comments textarea, #appraisal .notes textarea {
     word-wrap: break-word;
     resize: vertical;
     min-height: 100px;
     width: 100%;
     border: 1px solid #A39E9C;
     padding: 0px 5px; }
-  #portfolio .evidences input, #portfolio .comments input, #portfolio .notes input {
+  #portfolio .evidences input, #portfolio .comments input, #portfolio .notes input, #appraisal .evidences input, #appraisal .comments input, #appraisal .notes input {
     border: 1px solid #A39E9C;
     padding: 0px 5px; }
-  #portfolio .evidences .evidence, #portfolio .comments .evidence, #portfolio .notes .evidence {
+  #portfolio .evidences .evidence, #portfolio .comments .evidence, #portfolio .notes .evidence, #appraisal .evidences .evidence, #appraisal .comments .evidence, #appraisal .notes .evidence {
     display: table;
     border-top: 6px solid #211F0F;
     margin-top: 20px;
     padding: 10px 0px;
     vertical-align: top; }
-  #portfolio .evidences .evidence .icon-box, #portfolio .comments .evidence .icon-box, #portfolio .notes .evidence .icon-box {
+  #portfolio .evidences .evidence .icon-box, #portfolio .comments .evidence .icon-box, #portfolio .notes .evidence .icon-box, #appraisal .evidences .evidence .icon-box, #appraisal .comments .evidence .icon-box, #appraisal .notes .evidence .icon-box {
     display: table-cell;
     padding-left: 0px;
     margin-right: -10px;
     vertical-align: top;
     width: 40px; }
-  #portfolio .evidences .evidence .icon, #portfolio .comments .evidence .icon, #portfolio .notes .evidence .icon {
+  #portfolio .evidences .evidence .icon, #portfolio .comments .evidence .icon, #portfolio .notes .evidence .icon, #appraisal .evidences .evidence .icon, #appraisal .comments .evidence .icon, #appraisal .notes .evidence .icon {
     display: table-cell;
     height: 40px;
     width: 40px;
@@ -2181,17 +2195,17 @@ img.user-guide-cover {
     font-size: 2em;
     font-weight: bold;
     line-height: 32px; }
-  #portfolio .evidences .evidence .detail, #portfolio .comments .evidence .detail, #portfolio .notes .evidence .detail {
+  #portfolio .evidences .evidence .detail, #portfolio .comments .evidence .detail, #portfolio .notes .evidence .detail, #appraisal .evidences .evidence .detail, #appraisal .comments .evidence .detail, #appraisal .notes .evidence .detail {
     display: table-cell;
     width: 50%;
     padding: 0px 10px;
     vertical-align: top; }
   @media only screen and (min-width: 992px) {
-    #portfolio .evidences .evidence .detail, #portfolio .comments .evidence .detail, #portfolio .notes .evidence .detail {
+    #portfolio .evidences .evidence .detail, #portfolio .comments .evidence .detail, #portfolio .notes .evidence .detail, #appraisal .evidences .evidence .detail, #appraisal .comments .evidence .detail, #appraisal .notes .evidence .detail {
       width: 70%; } }
-  #portfolio .evidences .evidence .detail .title, #portfolio .comments .evidence .detail .title, #portfolio .notes .evidence .detail .title {
+  #portfolio .evidences .evidence .detail .title, #portfolio .comments .evidence .detail .title, #portfolio .notes .evidence .detail .title, #appraisal .evidences .evidence .detail .title, #appraisal .comments .evidence .detail .title, #appraisal .notes .evidence .detail .title {
     font-weight: bold; }
-  #portfolio .evidences .evidence .expiry, #portfolio .comments .evidence .expiry, #portfolio .notes .evidence .expiry {
+  #portfolio .evidences .evidence .expiry, #portfolio .comments .evidence .expiry, #portfolio .notes .evidence .expiry, #appraisal .evidences .evidence .expiry, #appraisal .comments .evidence .expiry, #appraisal .notes .evidence .expiry {
     display: table-cell;
     vertical-align: top;
     padding: 0px 10px;
@@ -2208,6 +2222,11 @@ img.user-guide-cover {
 .sa-vertical-tabs {
   display: flex;
   margin-right: -16px; }
+  .sa-vertical-tabs .pre-tab-text {
+    padding: 0 15px 5px 15px;
+    margin-top: -5px; }
+    .sa-vertical-tabs .pre-tab-text .glyphicon {
+      padding-right: 5px; }
   .sa-vertical-tabs .tab-column {
     padding-left: 0px;
     padding-right: 0px;
@@ -2288,13 +2307,30 @@ img.user-guide-cover {
   .sa-vertical-tabs .tabs-left > li > a {
     border-radius: 0px;
     margin-right: 0;
-    color: #211F0F; }
+    color: #211F0F;
+    padding: 0px; }
   .sa-vertical-tabs .tabs-left > li.active > a,
   .sa-vertical-tabs .tabs-left > li.active > a:hover,
   .sa-vertical-tabs .tabs-left > li.active > a:focus {
     border-right: none;
     background: white;
     z-index: 1000; }
+  .sa-vertical-tabs .list-tab {
+    display: table; }
+  .sa-vertical-tabs .tabs-left > li > a .number {
+    display: table-cell;
+    background: #211F0F;
+    padding: 4px 2px 4px 2px;
+    width: 48px;
+    min-width: 48px;
+    color: white;
+    font-size: 2em;
+    text-align: center; }
+  .sa-vertical-tabs .tabs-left > li > a .title {
+    padding: 0px 10px 0px 10px;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1.25em; }
   .sa-vertical-tabs .tab-content-wrapper {
     display: flex;
     height: 100%;

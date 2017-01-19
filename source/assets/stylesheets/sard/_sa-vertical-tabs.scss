@@ -28,6 +28,11 @@ $tab-text:          $grey18;
   display:flex; // added
   margin-right:-16px; // This counterbalances the margin-right on .tab-column, so the content butts up to the tabs.
 
+  .pre-tab-text{
+    padding: 0 15px 5px 15px;
+    margin-top:-5px;
+    .glyphicon{padding-right:5px;}
+  }
 
   .tab-column{ 
     padding-left:0px; 
@@ -84,7 +89,6 @@ $tab-text:          $grey18;
     vertical-align:middle;
     width:100%;
     min-width:10%;
-
   }
 
     .nav-list > li > a{ // Used on collapse nav-list links
@@ -159,6 +163,7 @@ $tab-text:          $grey18;
     border-radius: 0px; 
     margin-right: 0;
     color:$tab-text;
+    padding:0px;
   }
 
   .tabs-left>li.active>a,
@@ -167,6 +172,26 @@ $tab-text:          $grey18;
     border-right: none;
     background:white; 
     z-index:1000; 
+  }
+
+  .list-tab{
+    display:table;
+  }
+  .tabs-left>li>a .number{
+    display:table-cell;
+    background:$grey18;
+    padding:4px 2px 4px 2px;
+    width:48px;
+    min-width:48px;
+    color:white;
+    font-size:2em;
+    text-align:center;
+  }
+  .tabs-left>li>a .title{
+    padding:0px 10px 0px 10px;
+    display:table-cell; 
+    vertical-align:middle;
+    line-height:1.25em;
   }
 
 
