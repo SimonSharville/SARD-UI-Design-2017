@@ -68,13 +68,6 @@
           </div>
         </div> <!-- col-xs-8 -->
 
-        <div class="col-sm-4 head-nav">
-            <a href="" class="headlink">Go to Portfolio</a>
-            <a href="" class="headlink">Download Portfolio</a>
-        </div> <!-- col-xs-4 -->
-
-
-
       </div> <!-- END Row -->
     </div> <!-- END page-header -->
 
@@ -83,9 +76,18 @@
 
     <!-- ============================================================================ -->
     <!-- MAIN CONTENT  - OPTIONAL  -->
-    <div class="row sa-main-content">
+    <div class="sa-main-content">
 
+      <div class="row fast-links">
+        <div class="col-xs-6">
+        <a href="portfolio.html" class="btn btn-grey btn-block" role="button">Go to Portfolio</a>
+        </div>
+        <div class="col-xs-6">
+        <a href="#" class="btn btn-grey btn-block" role="button"><span class="glyphicon glyphicon-download"></span>Appraisal</a>
+        </div> 
+      </div> <!-- END Row --> 
 
+      <div class="row">
         <div class="sa-vertical-tabs">
           <div  class="col-xs-12">
             <div class="col-xs-3 tab-column">
@@ -93,10 +95,23 @@
 
                 <!-- This is a single tab list -->
                 <ul class="nav nav-tabs tabs-left"></a>
-                    <li  class="active"><a href="#home" data-toggle="tab">Home</a></li>
-                    <li><a href="#profile" data-toggle="tab">Profile</a></li>
-                    <li><a href="#messages" data-toggle="tab">Messages</a></li>
-                    <li><a href="#settings" data-toggle="tab">Settings</a></li>
+                    <div class="pre-tab-text"> 
+                      <p><strong>Created: </strong>06/01/2017 </br>
+                         <strong>Submitted: </strong>None </br>
+                         <strong>Meeting date: </strong>None </br>
+                         <strong>Completed: </strong>None
+                       </p>
+
+                      <p><strong>Lead Appraiser </strong></br>
+                         Dr Janet T Johnson </br>
+                         <span class="glyphicon glyphicon-earphone"></span> 000 0000 0000</br>
+                         <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:janet@example.com">janet@example.com</a>
+                       </p>
+                    </div>
+                    <li class="active"> <a href="#home" data-toggle="tab"> <div class="number rag-green">01</div> <div class="title">Home ssc cs cesc cess ce rvewg wvdv dcew cecw svc e</div> </a> </li>
+                    <li> <a href="#profile" data-toggle="tab"> <div class="number rag-red">02</div> <div class="title">Profile</div></a> </li>
+                    <li> <a href="#messages" data-toggle="tab"> <div class="number rag-red">03</div> <div class="title">Messages</div></a> </li>
+                    <li> <a href="#settings" data-toggle="tab"> <div class="number rag-red">04</div> <div class="title">Settings</div> </a> </li>
                 </ul>
             </div> <!-- End tab-column -->
 
@@ -115,6 +130,7 @@
           </div> <!-- END col-xs-12 -->
 
         </div> <!-- END bs-vertical-tabs -->
+      </div> <!-- END Row -->
 
     </div> <!-- END ROW sa-Main Content -->
   </div>  <!-- END sa-Main Section -->
