@@ -1,11 +1,314 @@
-<div class="row">
+<div class="row header rag-amber">  
   <div class="col-xs-12">
-    <h4>Good Medical Care (T)</h4>
-    <h2>Re-admission Rate (T)</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu magna et ante lacinia ullamcorper. Quisque mauris est, varius at finibus sed, ornare a dolor. Vivamus ultricies, mauris nec ultricies rutrum, ex ligula interdum nulla, ac pharetra nulla nisi non lectus. Donec ut libero blandit, facilisis nisl sit amet, fringilla leo. Nullam ut fringilla enim. Donec aliquet lorem id mattis volutpat. Ut molestie faucibus imperdiet. Quisque sit amet ornare dui. Praesent vitae faucibus ipsum, vitae egestas erat. Nam euismod, nibh ut eleifend vestibulum, nunc turpis efficitur tortor, eu dignissim mauris nibh et dolor.</p>
+    
+      <h4>Good Medical Care (T)</h4>
+      <h2>Re-admission Rate (T)</h2>
+      <h4>Average patient re-admission rate in the preceding 12 month period</h4>
   </div> <!-- END Column -->
 </div> <!-- END Row -->
+
+<!-- Status ====================================================================== -->
+<!-- <div class="row perf"></div> -->
+
+<div class="row"> 
+  <div class=" col-xs-12">
+    <h2>Status<a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="Click on the buttons below to change the status" data-placement="bottom" data-content="- Red means you haven’t started this section yet.<br>
+      - Amber means you are working on this section, but it is not yet finished.<br>
+      - Green means you have added evidence and this section is complete.<br>
+      - N/A means this section is not applicable to you."></a></h2>
+
+      <div class="appraisal-dataset-guidance">
+
+        <div class="col-xs-12 col-sm-6">
+          <div class="rag-boxes">
+            <a href="#" class="box box-red">
+              <div class="rag rag-red ">Red
+              </div>
+            </a>
+          </div>
+        
+          <div class="rag-boxes">
+            <a href="#" class="box box-amber selected">
+              <div class="rag rag-amber ">Amber
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="no-indent col-xs-12 col-sm-6">
+          <div class="rag-boxes">
+            <a href="#" class="box box-green">
+              <div class="rag rag-green ">Green
+              </div>
+            </a>
+          </div>
+  
+          <div class="rag-boxes">
+            <a href="#" class="box box-na">
+              <div class="rag rag-na ">N/A
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div> <!-- appraisal-dataset-guidance -->
+
+  </div> <!-- END Column -->
+</div> <!-- END Row -->
+
+
+<!-- Evidence ====================================================================== -->
+<div class="row perf"></div>
+
+<div class="row">  
+  <div class=" col-xs-12 evidences">
+    <h2>Evidence<a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="Add evidence" data-placement="bottom" data-content="Add your evidence here for it to appear in the list below."></a></h2>
+
+    <div class="new-evidence">
+      <form id="new_evidence" method="post">
+        <textarea id="content" placeholder="Type your evidence here..."></textarea>
+        <div class="shelf">
+          <div class="expiry">
+            <p>
+            <label>Expiry Date:</label>
+            <input id="expiry" type="text" value="" class="hasDatepicker" placeholder="Add date"> <span class="glyphicon glyphicon-calendar">
+            </p>
+          </div>
+          <div class="col-xs-6 no-indent attachments">
+            <div class="new-attachment-fragment">
+              <div class="field">
+                <button class="btn btn-default" id="attach" type="button"><span class="glyphicon glyphicon-paperclip"></span> Attach Document</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 no-indent add">
+            <button class="btn btn-default pull-right" id="attach" name="commit" nobind="true" type="submit" value="Save Evidence"><span class="glyphicon glyphicon-ok"></span>Save Evidence</button>
+            <!-- <input id="save-new-evidence" name="commit" nobind="true" type="submit" value="Save Evidence"> -->
+          </div>
+        </div>
+      </form>
+      <div class="clear"></div>
+    </div> <!-- END new-evidences -->
+
+
+    <div class="col-xs-12 evidence">
+      <div class="icon-box">
+        <div class="icon"></div>
+      </div>
+      <div class="detail">
+        <div class="title"></div>
+        <div class="content">(no content)</div>
+        
+        <div class="edocs">
+          <div class="attachments">
+          </div> <!-- END attachments -->
+        </div> <!-- END edocs -->
+      </div> <!-- END detail -->
+      <div class="expiry">
+          <strong>Expires: </strong>not given<br>
+          <strong>From: </strong>not given<br>
+          <a href="#" class="btn btn-default btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
+          <a href="#" class="btn btn-danger btn-xs remove-evidence" role="button"><span class="glyphicon glyphicon-remove-sign"></span>Remove</a>
+        </div> <!-- END expiry -->
+    </div> <!-- END evidence -->
+    
+
+    <div class="col-xs-12 evidence">
+      <div class="icon-box">
+        <div class="icon">E</div>
+      </div>
+      <div class="detail">
+        <div class="title">Test</div>
+        <div class="content"></div>
+        
+        <div class="edocs">
+          <div class="attachments">
+            <div class="attachment-fragment">
+              <div class="file">
+                <a class="Research_Paper.pdf" href="#" target="_blank">
+                  <div class="name"><span class="glyphicon glyphicon-file"></span> Patient Feedback</div>
+                </a>
+              </div> <!-- END file -->
+            </div> <!-- END attachments-fragment -->
+          </div> <!-- END attachments -->
+        </div> <!-- END edocs -->
+      </div> <!-- END detail -->
+
+      <div class="expiry">
+        <strong>Expires: </strong>18/05/2018<br>
+        <strong>From: </strong>Portfolio Dec 2016<br>
+        <a href="#" class="btn btn-default btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
+        <a href="#" class="btn btn-danger btn-xs remove-evidence" role="button"><span class="glyphicon glyphicon-remove-sign"></span>Remove</a>
+      </div> <!-- END expiry -->
+
+    </div> <!-- END evidence -->
+
+  </div> <!-- END evidences -->
+  
+</div> <!-- END Row -->
+
+
+<!-- Comments / Reflection ====================================================================== -->
+<div class="row perf"></div>
+
+<div class="row">  
+  <div class=" col-xs-12 evidences">
+    <h2>Comments/Relections<a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="Add evidence" data-placement="bottom" data-content="Add your evidence here for it to appear in the list below."></a></h2>
+
+    <div class="new-evidence">
+      <form id="new_evidence" method="post">
+        <textarea id="content" placeholder="Type your comment/reflection here..."></textarea>
+        <div class="shelf">
+          
+          
+          <div class="col-xs-12 no-indent add">
+            <button class="btn btn-default pull-right" id="attach" name="commit" nobind="true" type="submit" value="Save Evidence"><span class="glyphicon glyphicon-ok"></span>Save Comment/Relection</button>
+            <!-- <input id="save-new-evidence" name="commit" nobind="true" type="submit" value="Save Evidence"> -->
+          </div>
+        </div>
+      </form>
+      <div class="clear"></div>
+    </div> <!-- END new-evidences -->
+
+
+    <div class="col-xs-12 evidence">
+      <div class="icon-box">
+        <div class="icon">C</div>
+      </div>
+      <div class="detail">
+        <div class="title"></div>
+        <div class="content">(no content)</div>
+        
+        <div class="edocs">
+          <div class="attachments">
+          </div> <!-- END attachments -->
+        </div> <!-- END edocs -->
+      </div> <!-- END detail -->
+      <div class="expiry">
+          <strong>By: </strong>Dr John T Smith<br>
+          18/01/2017 16:54 </br>
+          <strong>From: </strong>Portfolio Dec 2016<br>
+          <a href="#" class="btn btn-default btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
+          <a href="#" class="btn btn-danger btn-xs remove-evidence" role="button"><span class="glyphicon glyphicon-remove-sign"></span>Remove</a>
+        </div> <!-- END expiry -->
+    </div> <!-- END evidence -->
+    
+
+    <div class="col-xs-12 evidence">
+      <div class="icon-box">
+        <div class="icon">C</div>
+      </div>
+      <div class="detail">
+        <div class="title">Test</div>
+        <div class="content"></div>
+        
+        <div class="edocs">
+          <div class="attachments">
+            <div class="attachment-fragment">
+              <div class="file">
+                <a class="Research_Paper.pdf" href="#" target="_blank">
+                  <div class="name"><span class="glyphicon glyphicon-file"></span> Patient Feedback</div>
+                </a>
+              </div> <!-- END file -->
+            </div> <!-- END attachments-fragment -->
+          </div> <!-- END attachments -->
+        </div> <!-- END edocs -->
+      </div> <!-- END detail -->
+
+      <div class="expiry">
+        <strong>By: </strong>Dr John T Smith<br>
+        18/01/2017 18:02 </br>
+        <strong>From: </strong>Portfolio Dec 2016<br>
+        <a href="#" class="btn btn-default btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
+        <a href="#" class="btn btn-danger btn-xs remove-evidence" role="button"><span class="glyphicon glyphicon-remove-sign"></span>Remove</a>
+      </div> <!-- END expiry -->
+
+    </div> <!-- END evidence -->
+
+  </div> <!-- END evidences -->
+  
+</div> <!-- END Row -->
+
+
+<!-- Private Notes ====================================================================== -->
+<div class="row perf"></div>
+
+<div class="row">  
+  <div class=" col-xs-12 evidences">
+    <h2>Private Notes<a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="Add evidence" data-placement="bottom" data-content="Add your evidence here for it to appear in the list below."></a></h2>
+
+    <div class="new-evidence">
+      <form id="new_evidence" method="post">
+        <textarea id="content" placeholder="Type your private note here..."></textarea>
+        <div class="shelf">
+          
+          
+          <div class="col-xs-12 no-indent add">
+            <button class="btn btn-default pull-right" id="attach" name="commit" nobind="true" type="submit" value="Save Evidence"><span class="glyphicon glyphicon-ok"></span>Save note</button>
+            <!-- <input id="save-new-evidence" name="commit" nobind="true" type="submit" value="Save Evidence"> -->
+          </div>
+        </div>
+      </form>
+      <div class="clear"></div>
+    </div> <!-- END new-evidences -->
+
+
+    <div class="col-xs-12 evidence">
+      <div class="icon-box">
+        <div class="icon">N</div>
+      </div>
+      <div class="detail">
+        <div class="title"></div>
+        <div class="content">(no content)</div>
+        
+        <div class="edocs">
+          <div class="attachments">
+          </div> <!-- END attachments -->
+        </div> <!-- END edocs -->
+      </div> <!-- END detail -->
+      <div class="expiry">
+          <strong>By: </strong>Dr John T Smith<br>
+          18/01/2017 16:54 </br>
+          <strong>From: </strong>Portfolio Dec 2016<br>
+          <a href="#" class="btn btn-default btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
+          <a href="#" class="btn btn-danger btn-xs remove-evidence" role="button"><span class="glyphicon glyphicon-remove-sign"></span>Remove</a>
+        </div> <!-- END expiry -->
+    </div> <!-- END evidence -->
+    
+
+    <div class="col-xs-12 evidence">
+      <div class="icon-box">
+        <div class="icon">N</div>
+      </div>
+      <div class="detail">
+        <div class="title">Private Note</div>
+        <div class="content"></div>
+        
+        <div class="edocs">
+          <div class="attachments">
+            <div class="attachment-fragment">
+              <div class="file">
+                <a class="Research_Paper.pdf" href="#" target="_blank">
+                  <div class="name"><span class="glyphicon glyphicon-file"></span> Patient Feedback</div>
+                </a>
+              </div> <!-- END file -->
+            </div> <!-- END attachments-fragment -->
+          </div> <!-- END attachments -->
+        </div> <!-- END edocs -->
+      </div> <!-- END detail -->
+
+      <div class="expiry">
+        <strong>By: </strong>Dr John T Smith<br>
+        18/01/2017 18:02 </br>
+        <strong>From: </strong>Portfolio Dec 2016<br>
+        <a href="#" class="btn btn-default btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
+        <a href="#" class="btn btn-danger btn-xs remove-evidence" role="button"><span class="glyphicon glyphicon-remove-sign"></span>Remove</a>
+      </div> <!-- END expiry -->
+
+    </div> <!-- END evidence -->
+
+  </div> <!-- END evidences -->
+  
+</div> <!-- END Row -->
+
 

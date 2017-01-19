@@ -4,14 +4,32 @@
 
 $rag-red:          $red;
 $rag-amber:        $yellow;
-$rag-green:        $success;
-$rag-na:           $grey08;
+$rag-green:        $green;
+$rag-na:           $grey14;
 
 
 #portfolio{
 
 // page specific items here =========================================
 
+  .header{
+    background-color:$grey18;
+    // background-image:url(../textures/natural-paper.png);
+    color:white;
+    margin:-16px -31px 24px -30px;
+    padding: 15px;
+  }
+
+  // Colouring
+  .rag-red{ background-color:$rag-red; }
+
+  .rag-amber{ background-color:$rag-amber; }
+
+  .rag-green{ background-color:$rag-green; }
+
+  .rag-na{ background-color:$rag-na; }
+
+      // Status Buttons
       .appraisal-dataset-guidance{
       font-size: 0; // This removes the gap between the boxes
       padding-top:20px;
@@ -32,7 +50,7 @@ $rag-na:           $grey08;
         display:inline-block;
         border-radius:50%;
         color:white;
-        background-image:url(../textures/natural-paper.png);
+        // background-image:url(../textures/natural-paper.png);
       }
 
       // Sizing
@@ -66,19 +84,11 @@ $rag-na:           $grey08;
           .rag{ width:180px; min-height:180px; padding-top:30%; }
         }
 
-      // colouring
+      // Status effects
       .selected.box-red{ border-color: $rag-red;}
       .selected.box-amber{ border-color: $rag-amber;}
       .selected.box-green{ border-color: $rag-green;}
       .selected.box-na{ border-color: $rag-na;}
-
-      .rag-red{ background-color:$rag-red; }
-
-      .rag-amber{ background-color:$rag-amber; }
-
-      .rag-green{ background-color:$rag-green; }
-
-      .rag-na{ background-color:$rag-na; }
 
       a:hover.box-red > .rag-red,
       a:focus.box-red > .rag-red {background-color:darken($rag-red, 10%);}
@@ -94,31 +104,23 @@ $rag-na:           $grey08;
       
     } // End .appraisal-dataset-guidance ============================================================
 
-    .appraisal-dataset{
-
-      .rag_status{
-            display: inline;
-            float: left;
-            width: 16px;
-            margin-right: 10px;
-            margin-top: 2px;
-            margin-left: -24px; // indenting the text ( see: vertical-tabs.scss / .nav-list > li > a)
-            height: 16px;
-            border-radius:50%;
-      }
-
-      .rag-red{ background-color:$rag-red; }
-
-      .rag-amber{ background-color:$rag-amber; }
-
-      .rag-green{ background-color:$rag-green; }
-
-      .rag-na{ background-color:$rag-na; }
-
-    } // End .appraisal-dataset =====================================================================
+    // Status tag in navs
+      .appraisal-dataset .rag_status{
+        display: inline;
+        float: left;
+        width: 16px;
+        margin-right: 10px;
+        margin-top: 2px;
+        margin-left: -24px; // indenting the text ( see: vertical-tabs.scss / .nav-list > li > a)
+        height: 16px;
+        border-radius:50%;
+      } 
 
 
-    .evidences, .comments{
+
+    // Evidences, Comments and Notes =====================================================================
+
+    .evidences, .comments, .notes{
       // background-color:pink;
 
       #new_evidence{
@@ -199,8 +201,6 @@ $rag-na:           $grey08;
       .evidence .detail .edocs .attachments{
       }
 
-
-
-    }// End .evidences =====================================================================
+    }// End .evidences, .comments, .notes =====================================================================
 
 } // END portfolio
