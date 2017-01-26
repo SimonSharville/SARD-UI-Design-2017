@@ -23,47 +23,44 @@
     <![endif]-->
   </head>
   <body id="bhoechie-vertical-tabs">
-  <a href="#bhoechie-vertical-tabs" class="topButton smoothScroll"></a> <!-- Link for scroll-to-top button -->
 
 
-  <div class="container sa-top-section">
-
-    <!-- ============================================================================ -->
-    <!-- Jumbotron -->
-    
-    <a href="../../index.html">
-      <div class="jumbotron">
-          <img src="../../assets/images/header-placement.png" alt="SARD">
-      </div>
-    </a>
-
+  <div class="sa-top-section">
 
     <!-- ============================================================================ -->
     <!-- Main Navigation -->
-    <nav class="navbar navbar-default">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <!-- <a class="navbar-brand" href="#">Bootstrap theme</a> -->
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="../users/dashboard.html">Dashboard</a></li>
-          <li><a href="../users/portfolio.html">Portfolio</a></li>
-          <li><a href="../users/appraisal.html">Appraisal</a></li>
-          <li><a href="#edocs">eDocs</a></li>
-          <li><a href="#msf">MSF</a></li>
-          <li><a href="#jobplan">Job Plan</a></li>
-          <li><a href="#eleave">eLeave</a></li>
-          <li><a href="#ecalendar">eCalendar</a></li>
-        </ul>
     
-        <ul class="nav navbar-nav navbar-right"> 
-          <li id="fat-menu" class="dropdown"> 
+    
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="../users/dashboard.html">Dashboard</a></li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Appraisals <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="../users/portfolio.html">Portfolio</a></li>
+                <li class=""><a href="../users/appraisal.html">Appraisal</a></li>
+                <li><a href="#edocs">eDocs</a></li>
+              </ul>
+            </li>
+            <li><a href="#msf">MSF</a></li>
+            <li><a href="#jobplan">Job Plan</a></li>
+            <li><a href="#eleave">eLeave</a></li>
+            <li><a href="#ecalendar">eCalendar</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"> 
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="#">Profile</a></li>
@@ -73,36 +70,49 @@
               <li role="separator" class="divider"></li>
               <li><a href="#">Log Out</a></li>
             </ul> 
-          </li> 
-        </ul>
+          </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
     
     
+    <!-- ============================================================================ -->
+    <!-- Jumbotron -->
     
-    
-    
-      </div>  <!-- END nav-collapse -->
-    </nav>  <!-- END NAVIGATION -->
-    
+    <a href="../../index.html">
+      
+      <div id="top" class="jumbotron">
+        <div class="container">
+          <img src="../../assets/images/header-placement.png" alt="SARD">
+      </div>
+      </div>
+    </a>
+ 
 
     <!-- ============================================================================ -->
     <!-- Breadcrumb -->
-    <ol class="breadcrumb">
-      <li><a href="../../index.html">Home</a></li>
-      <li>Experiments</li>
-      <li class="active">Bhoechie Vertical Tabs</li>
-    </ol>
-    
+    <div class="breadcrumbs">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="../../index.html">Home</a></li>
+          <li class="active">Bhoechie Vertical Tabs</li>
+        </ol>
+      </div>
+    </div>
+
 
   </div>  <!-- END top-section -->
 
   <!-- ============================================================================ -->
   <!-- Main Section -->
-  <div class="container sa-main-section">
+  <div class="sa-main-section">
 
 
   <!-- ============================================================================ -->
   <!-- Page Header -->
-    <div class=" page-header">
+  <div class="container">
+    <div class="page-header">
 
       <div class="row">
           <div class="profile-image pull-left">
@@ -115,12 +125,13 @@
 
       </div> <!-- END Row -->
     </div> <!-- END page-header -->
+    </div>
 
-
+<div class="row perf"></div>
     <!-- ============================================================================ -->
     <!-- MAIN CONTENT  - OPTIONAL  -->
 
-    <div class=" sa-main-content">
+    <div class="container sa-main-content">
 
       <!-- Vertical Tabs -->
       <!-- http://bootsnipp.com/snippets/featured/simple-vertical-tab -->

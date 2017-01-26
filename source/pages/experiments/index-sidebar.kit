@@ -21,65 +21,39 @@
     <![endif]-->
   </head>
   <body id="exp-sidebar">
-  <a href="#exp-sidebar" class="topButton smoothScroll"></a> <!-- Link for scroll-to-top button -->
 
+  <div class="sa-top-section">
 
-  <div class="container sa-top-section">
-
+    <!-- ============================================================================ -->
+    <!-- Main Navigation -->
+    <!-- @import "sections/top-navbar.html" -->
     <!-- ============================================================================ -->
     <!-- Jumbotron -->
     <!-- @import "sections/jumbotron.html" -->
 
-
-    <!-- ============================================================================ -->
-    <!-- Main Navigation -->
-    <!-- @import "sections/main-nav.html" -->
-
     <!-- ============================================================================ -->
     <!-- Breadcrumb -->
-    <ol class="breadcrumb">
-      <li><a href="../../index.html">Home</a></li>
-      <li>Experiments</li>
-      <li class="active">Sidebar</li>
-    </ol>
-    
+    <div class="breadcrumbs">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="../../index.html">Home</a></li>
+          <li class="active">Sidebar</li>
+        </ol>
+      </div>
+    </div>
 
   </div>  <!-- END top-section -->
 
   <!-- ============================================================================ -->
   <!-- Main Section -->
-  <div class="container sa-main-section">
+  <div class="sa-main-section">
 
 
-  <!-- ============================================================================ -->
-  <!-- Sidebar -->
-  <div class="container sidebar">
-            <div class="sidebar-content">
-                <div class="panel-group" id="accordion">
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                             <h4 class="panel-title">
-                               <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                 Sidebar
-                               </a>
-                             </h4>
-                        </div>
-
-                        <div id="collapseTwo" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                Text Here
-                            </div>
-                        </div>
-                    </div>
-
-                </div> <!-- END panel group accordian -->
-            </div> <!-- END sa-sidebar-content -->
-  </div> <!-- END sidebar -->
 
 
   <!-- ============================================================================ -->
   <!-- Page Header -->
+  <div class="container">
     <div class=" page-header">
 
       <div class="row">
@@ -92,12 +66,46 @@
           </div>
       </div> <!-- END Row -->
     </div> <!-- END page-header -->
+    </div>
+
+    <div class="row perf"></div>
 
 
     <!-- ============================================================================ -->
     <!-- MAIN CONTENT  - OPTIONAL  -->
+    <!-- ============================================================================ -->
+  <!-- Sidebar -->
+  <div class="container">
 
-    <div class=" sa-main-content">
+    <div class="sidebar">
+              <div class="sidebar-content">
+                  <div class="panel-group" id="accordion">
+
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                               <h4 class="panel-title">
+                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                   Sidebar
+                                 </a>
+                               </h4>
+                          </div>
+
+                          <div id="collapseTwo" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                  Text Here
+                              </div>
+                          </div>
+                      </div>
+
+                  </div> <!-- END panel group accordian -->
+              </div> <!-- END sa-sidebar-content -->
+    </div> <!-- END sidebar -->
+  </div>
+
+
+
+    <div class="container sa-main-content">
+
 
       <div class="row">
         <div class="col-md-9">

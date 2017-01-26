@@ -24,38 +24,38 @@
     <link href="../../assets/stylesheets/sard-styles.css" rel="stylesheet">
   </head>
   <body id="portfolio">
-  <a href="#portfolio" class="topButton smoothScroll"></a> <!-- Link for scroll-to-top button -->
 
+    <div id="top"></div>
 
-  <div class="container sa-top-section">
-
-   <!-- ============================================================================ -->
-    <!-- Jumbotron -->
-    <!-- @import "sections/jumbotron.html" -->
-
+  <div class="sa-top-section">
 
     <!-- ============================================================================ -->
     <!-- Main Navigation -->
-    <!-- @import "sections/main-nav.html" -->
+    <!-- @import "sections/top-navbar.html" -->
+    <!-- ============================================================================ -->
+    <!-- Jumbotron -->
+    <!-- @import "sections/jumbotron.html" -->
 
     <!-- ============================================================================ -->
     <!-- Breadcrumb -->
-    <ol class="breadcrumb">
-      <li><a href="../../index.html">Home</a></li>
-      <li class="active">Portfolio</li>
-    </ol>
+    <div class="breadcrumbs">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a href="../../index.html">Home</a></li>
+        <li class="active">Portfolio</li>
+      </ol>
+    </div>
+    </div>
 
-  </div>  <!-- END top-section -->
+  
 
-  <!-- ============================================================================ -->
-  <!-- Main Section -->
-  <div class="container sa-main-section">
+  
 
 
     <!-- ============================================================================ -->
     <!-- Page Header -->
+    <div class="container">
     <div class=" page-header">
-
       <div class="row">
         <div class="col-xs-12">
           <div class="profile-image">
@@ -70,13 +70,19 @@
 
       </div> <!-- END Row -->
     </div> <!-- END page-header -->
+    </div> <!-- END Container -->
 
     <div class="row perf"></div>
 
+    </div>  <!-- END top-section -->
 
+<!-- ============================================================================ -->
+  <!-- Main Section -->
+  <div class="sa-main-section">
+    
     <!-- ============================================================================ -->
     <!-- MAIN CONTENT  - OPTIONAL  -->
-    <div class="sa-main-content">
+    <div class="container sa-main-content">
 
       <div class="row fast-links">
         <div class="col-xs-6">
