@@ -21,47 +21,43 @@
     <![endif]-->
   </head>
   <body id="exp-sidebar">
-  <a href="#exp-sidebar" class="topButton smoothScroll"></a> <!-- Link for scroll-to-top button -->
 
-
-  <div class="container sa-top-section">
-
-    <!-- ============================================================================ -->
-    <!-- Jumbotron -->
-    
-    <a href="../../index.html">
-      <div class="jumbotron">
-          <img src="../../assets/images/header-placement.png" alt="SARD">
-      </div>
-    </a>
-
+  <div class="sa-top-section">
 
     <!-- ============================================================================ -->
     <!-- Main Navigation -->
-    <nav class="navbar navbar-default">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <!-- <a class="navbar-brand" href="#">Bootstrap theme</a> -->
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="../users/dashboard.html">Dashboard</a></li>
-          <li><a href="../users/portfolio.html">Portfolio</a></li>
-          <li><a href="../users/appraisal.html">Appraisal</a></li>
-          <li><a href="#edocs">eDocs</a></li>
-          <li><a href="#msf">MSF</a></li>
-          <li><a href="#jobplan">Job Plan</a></li>
-          <li><a href="#eleave">eLeave</a></li>
-          <li><a href="#ecalendar">eCalendar</a></li>
-        </ul>
     
-        <ul class="nav navbar-nav navbar-right"> 
-          <li id="fat-menu" class="dropdown"> 
+    
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="../users/dashboard.html">Dashboard</a></li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Appraisals <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="../users/portfolio.html">Portfolio</a></li>
+                <li class=""><a href="../users/appraisal.html">Appraisal</a></li>
+                <li><a href="#edocs">eDocs</a></li>
+              </ul>
+            </li>
+            <li><a href="#msf">MSF</a></li>
+            <li><a href="#jobplan">Job Plan</a></li>
+            <li><a href="#eleave">eLeave</a></li>
+            <li><a href="#ecalendar">eCalendar</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"> 
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="#">Profile</a></li>
@@ -71,62 +67,48 @@
               <li role="separator" class="divider"></li>
               <li><a href="#">Log Out</a></li>
             </ul> 
-          </li> 
-        </ul>
+          </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
     
     
+    <!-- ============================================================================ -->
+    <!-- Jumbotron -->
     
-    
-    
-      </div>  <!-- END nav-collapse -->
-    </nav>  <!-- END NAVIGATION -->
-    
+    <a href="../../index.html">
+      
+      <div id="top" class="jumbotron">
+        <div class="container">
+          <img src="../../assets/images/header-placement.png" alt="SARD">
+      </div>
+      </div>
+    </a>
 
     <!-- ============================================================================ -->
     <!-- Breadcrumb -->
-    <ol class="breadcrumb">
-      <li><a href="../../index.html">Home</a></li>
-      <li>Experiments</li>
-      <li class="active">Sidebar</li>
-    </ol>
-    
+    <div class="breadcrumbs">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="../../index.html">Home</a></li>
+          <li class="active">Sidebar</li>
+        </ol>
+      </div>
+    </div>
 
   </div>  <!-- END top-section -->
 
   <!-- ============================================================================ -->
   <!-- Main Section -->
-  <div class="container sa-main-section">
+  <div class="sa-main-section">
 
 
-  <!-- ============================================================================ -->
-  <!-- Sidebar -->
-  <div class="container sidebar">
-            <div class="sidebar-content">
-                <div class="panel-group" id="accordion">
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                             <h4 class="panel-title">
-                               <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                 Sidebar
-                               </a>
-                             </h4>
-                        </div>
-
-                        <div id="collapseTwo" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                Text Here
-                            </div>
-                        </div>
-                    </div>
-
-                </div> <!-- END panel group accordian -->
-            </div> <!-- END sa-sidebar-content -->
-  </div> <!-- END sidebar -->
 
 
   <!-- ============================================================================ -->
   <!-- Page Header -->
+  <div class="container">
     <div class=" page-header">
 
       <div class="row">
@@ -139,12 +121,46 @@
           </div>
       </div> <!-- END Row -->
     </div> <!-- END page-header -->
+    </div>
+
+    <div class="row perf"></div>
 
 
     <!-- ============================================================================ -->
     <!-- MAIN CONTENT  - OPTIONAL  -->
+    <!-- ============================================================================ -->
+  <!-- Sidebar -->
+  <div class="container">
 
-    <div class=" sa-main-content">
+    <div class="sidebar">
+              <div class="sidebar-content">
+                  <div class="panel-group" id="accordion">
+
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                               <h4 class="panel-title">
+                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                   Sidebar
+                                 </a>
+                               </h4>
+                          </div>
+
+                          <div id="collapseTwo" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                  Text Here
+                              </div>
+                          </div>
+                      </div>
+
+                  </div> <!-- END panel group accordian -->
+              </div> <!-- END sa-sidebar-content -->
+    </div> <!-- END sidebar -->
+  </div>
+
+
+
+    <div class="container sa-main-content">
+
 
       <div class="row">
         <div class="col-md-9">

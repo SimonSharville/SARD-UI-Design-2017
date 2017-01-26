@@ -23,48 +23,46 @@
     <![endif]-->
     <link href="../../assets/stylesheets/sard-styles.css" rel="stylesheet">
   </head>
-  <body id="appraisal">
-  <a href="#appraisal" class="topButton smoothScroll"></a> <!-- Link for scroll-to-top button -->
+<body id="appraisal">
 
-
-  <div class="container sa-top-section">
+  <div id="top"></div>
+  
+  <div class="sa-top-section">
 
    <!-- ============================================================================ -->
-    <!-- Jumbotron -->
-    
-    <a href="../../index.html">
-      <div class="jumbotron">
-          <img src="../../assets/images/header-placement.png" alt="SARD">
-      </div>
-    </a>
-
-
-    <!-- ============================================================================ -->
     <!-- Main Navigation -->
-    <nav class="navbar navbar-default">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <!-- <a class="navbar-brand" href="#">Bootstrap theme</a> -->
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="dashboard.html">Dashboard</a></li>
-          <li><a href="portfolio.html">Portfolio</a>
-          <li><a href="appraisal.html">Appraisal</a></li>
-          <li><a href="#edocs">eDocs</a></li>
-          <li><a href="#msf">MSF</a></li>
-          <li><a href="#jobplan">Job Plan</a></li>
-          <li><a href="#eleave">eLeave</a></li>
-          <li><a href="#ecalendar">eCalendar</a></li>
-        </ul>
     
-        <ul class="nav navbar-nav navbar-right"> 
-          <li id="fat-menu" class="dropdown"> 
+    
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="dashboard.html">Dashboard</a></li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Appraisals <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li class=""><a href="appraisal.html">Appraisal</a></li>
+                <li><a href="#edocs">eDocs</a></li>
+              </ul>
+            </li>
+            <li><a href="#msf">MSF</a></li>
+            <li><a href="#jobplan">Job Plan</a></li>
+            <li><a href="#eleave">eLeave</a></li>
+            <li><a href="#ecalendar">eCalendar</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"> 
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="#">Profile</a></li>
@@ -74,56 +72,67 @@
               <li role="separator" class="divider"></li>
               <li><a href="#">Log Out</a></li>
             </ul> 
-          </li> 
-        </ul>
+          </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
     
     
+
+    <!-- ============================================================================ -->
+    <!-- Jumbotron -->
     
-    
-    
-      </div>  <!-- END nav-collapse -->
-    </nav>  <!-- END NAVIGATION -->
-    
+    <a href="../../index.html">
+      
+      <div class="jumbotron">
+        <div class="container">
+          <img src="../../assets/images/header-placement.png" alt="SARD">
+      </div>
+      </div>
+    </a>
 
     <!-- ============================================================================ -->
     <!-- Breadcrumb -->
-    <ol class="breadcrumb">
-      <li><a href="../../index.html">Home</a></li>
-      <li class="active">Appraisals</li>
-    </ol>
+    <div class="breadcrumbs">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a href="../../index.html">Home</a></li>
+        <li class="active">Appraisals</li>
+      </ol>
+    </div>
+    </div>
 
-  </div>  <!-- END top-section -->
-
-  <!-- ============================================================================ -->
-  <!-- Main Section -->
-  <div class="container sa-main-section">
-
-
-    <!-- ============================================================================ -->
+      <!-- ============================================================================ -->
     <!-- Page Header -->
-    <div class=" page-header">
-
-      <div class="row">
-        <div class="col-sm-8">
-          <div class="profile-image">
-            <img src="../../assets/images/profile-image.jpg" alt="Profile Image">
-          </div>
-
-          <div class="page-title">
-              <h4 class="user-name">User Name</h4>
-              <h1 class="title">Appraisal</h1>
-          </div>
-        </div> <!-- col-xs-8 -->
-
-      </div> <!-- END Row -->
-    </div> <!-- END page-header -->
+    <div class="container">
+      <div class="page-header">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="profile-image">
+              <img src="../../assets/images/profile-image.jpg" alt="Profile Image">
+            </div>
+  
+            <div class="page-title">
+                <h4 class="user-name">User Name</h4>
+                <h1 class="title">Appraisal</h1>
+            </div>
+          </div> <!-- col-xs-8 -->
+        </div> <!-- END Row -->
+      </div> <!-- END page-header -->
+    </div>
 
     <div class="row perf"></div>
 
+    </div>  <!-- END top-section -->
+
+<!-- ============================================================================ -->
+<!-- Main Section -->
+<div class="sa-main-section">
 
     <!-- ============================================================================ -->
     <!-- MAIN CONTENT  - OPTIONAL  -->
-    <div class="sa-main-content">
+    <div class="container sa-main-content">
 
       <div class="row fast-links">
         <div class="col-xs-6">
@@ -186,13 +195,16 @@
   
   
   <!-- <div class="row"> -->
-  <div class="container new-footer">
-          <div class=" col-xs-6">
+  <div class="new-footer">
+    <div class="container">
+          <div class=" col-xs-5 text-left">
             © <a href="http://www.sardjv.co.uk/" target="new">SARD JV</a>
           </div>
-          <div class=" col-xs-6 text-right">
+            <a href="#top" class="col-xs-2 topButton"></a> <!-- Link for scroll-to-top button -->
+          <div class=" col-xs-5 text-right">
             Design: <a href="http://www.simonsharville.co.uk" target="new">SiDe</a>
           </div>
+        </div>
   </div>
   <!-- </div> -->
   <!-- ============================================================================ -->
