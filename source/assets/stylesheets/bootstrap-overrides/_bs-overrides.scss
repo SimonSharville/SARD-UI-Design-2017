@@ -8,11 +8,13 @@
 
 // Pageheader =====================================================================
 
+.container{
+  // background-color:pink;
+}
+
 .page-header{
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-left: -5px;
-  margin-right: -5px;
   padding: 10px 5px 5px 5px;
   border-bottom: none;
 }
@@ -25,19 +27,6 @@
   .page-header .profile-image img{
     border-radius: 50%;
   }
-
-  // .page-header .user-name{
-  //   // font-size: 20px;
-  //   font-family: 'robotobold'!important;
-  //   // padding-top:10px;
-  //   padding-left:115px;
-  // }
-
-  // .page-header .page-title{
-  //   font-family: 'robotothin';
-  //   // font-size: 60px;
-  //   // line-height: 50px;
-  // }
 
   .page-title{
     display:inline-block;
@@ -52,40 +41,14 @@
     }
   }
 
-  .page-header {
-    .head-nav{
-      text-align:right;
-      margin-top:10px;
-    }
-
-    .headlink{
-      // content: "" ;
-      display:inline-block;
-      border-radius:50%;
-      background-color:$grey04;
-      border:0px solid $grey04;
-      height:80px;
-      width: 80px;
-      min-height:80px;
-      min-width: 80px;
-      // float:right;
-      margin:5px 0px 0px 5px;
-      padding-top:20px;
-      text-align:center;
-      line-height:1.25em;
-    }
-    a:hover{
-      background-color:$grey08;
-      color:white;
-    }
-  }
 
 
 // Jumbotron =====================================================================
-.container .jumbotron {
+.jumbotron {
   background-color: $client-colour;
   border-radius: 0px;
   padding:0;
+  // margin-top:50px;
   margin-bottom:0px;
   }
 
@@ -111,8 +74,8 @@
 
 @media (min-width: 768px){
   .navbar-right {
-    float: right !important;
-    margin-right: 0px;
+    // float: right !important;
+    // margin-right: 0px;
   }
 }
 
@@ -457,14 +420,18 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 // END Nav Tabs --------------------------------------------------------
 
 // Breadcrumb ===========================================================================
+.breadcrumbs{
+  border-bottom: 1px solid $grey04;
+  margin-bottom:20px;
+}
+
 .breadcrumb {
-  padding: 6px 20px;
-  margin-top: -20px;
-  margin-bottom: 20px;
+  padding: 6px 0px;
+  margin-bottom: 0px;
   list-style: none;
   background-color: transparent;
   border-radius: 0px;
-  border-bottom: 1px solid $grey04;
+  
 }
 .breadcrumb > li {
   display: inline-block;

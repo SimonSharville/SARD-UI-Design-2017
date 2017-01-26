@@ -23,39 +23,32 @@
     <![endif]-->
     <link href="../../assets/stylesheets/sard-styles.css" rel="stylesheet">
   </head>
-  <body id="dashboard">
-  <a href="#dashboard" class="topButton smoothScroll"></a> <!-- Link for scroll-to-top button -->
+<body id="dashboard">
 
+<div id="top"></div>
 
-  <div class="container sa-top-section">
-
-   <!-- ============================================================================ -->
-    <!-- Jumbotron -->
-    <!-- @import "sections/jumbotron.html" -->
-
-
-    <!-- ============================================================================ -->
-    <!-- Main Navigation -->
-    <!-- @import "sections/main-nav.html" -->
+<div class="sa-top-section">
+  <!-- ============================================================================ -->
+  <!-- Main Navigation -->
+  <!-- @import "sections/top-navbar.html" -->
+  <!-- ============================================================================ -->
+  <!-- Jumbotron -->
+  <!-- @import "sections/jumbotron.html" -->
 
     <!-- ============================================================================ -->
     <!-- Breadcrumb -->
-    <ol class="breadcrumb">
-      <li><a href="../../index.html">Home</a></li>
-      <li class="active">Dashboard</li>
-    </ol>
-
-  </div>  <!-- END top-section -->
-
-  <!-- ============================================================================ -->
-  <!-- Main Section -->
-  <div class="container sa-main-section">
-
-
+    <div class="breadcrumbs">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a href="../../index.html">Home</a></li>
+        <li class="active">Dashboard</li>
+      </ol>
+    </div>
+    </div>
     <!-- ============================================================================ -->
     <!-- Page Header -->
+    <div class="container">
     <div class=" page-header">
-
       <div class="row">
         <div class="col-xs-12">
           <div class="profile-image">
@@ -70,16 +63,23 @@
 
       </div> <!-- END Row -->
     </div> <!-- END page-header -->
+  </div> <!-- END Container -->
+    
+</div>  <!-- END top-section -->
 
-    <div class="row perf"></div>
+<div class="row perf"></div>
 
+
+  <!-- ============================================================================ -->
+  <!-- Main Section -->
+  <div class="sa-main-section">
     <!-- ============================================================================ -->
     <!-- MAIN CONTENT  - OPTIONAL  -->
 
-    <div class="row sa-main-content">
+    <div class="container sa-main-content">
 
       
-        <div class="col-md-3 col-md-push-9 sa-side-column">
+        <div class="col-md-3 col-md-push-9 sa-right-column">
 
             <div class="row">  <!-- Row for top 2 panels -->
               <div class="col-sm-6 col-md-12">
@@ -241,9 +241,7 @@
 
         <!-- ==================================================================== -->
 
-        <div class="perf mobile-only">
-          <!-- <div class=" perf "></div> -->
-        </div>
+
 
         <!-- ==================================================================== -->
 

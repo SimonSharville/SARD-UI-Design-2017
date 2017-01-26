@@ -12,20 +12,18 @@
   .settings-tab{float:right;}
 }
 
+#top{
+  min-height:50px;
+}
 
 .sa-top-section{ 
-padding-left:0px;
-padding-right:0px;
 }
 
 .sa-main-section{ 
-  min-height: 100%;    
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .sa-main-content{  // OPTIONAL
-   background-color: white;
-   min-height: 100%;
  }
 
 
@@ -39,42 +37,36 @@ padding-right:0px;
   background-color:$grey18;
   color: $client-colour;
   height:40px;
-  padding: 10px 10px 0px 10px;
+  padding: 10px 0px 0px 0px;
   a{color:white;}
 }
+
+.new-footer .text-left{ padding-left:0px;}
+.new-footer .text-right{ padding-right:0px;}
 
 
 .sa-main-column{ } // If creating a 2 column layout like dashboard use this.
 
-.sa-side-column{ 
+.sa-right-column{ 
 padding-left:16px;
+} // If creating a 2 column layout like dashboard use this.
+
+.sa-left-column{ 
 padding-right:16px;
 } // If creating a 2 column layout like dashboard use this.
 
-
 // SARD Incidentals =================================================================
 
+
 .topButton {
-    position:fixed;
-    bottom:60px;
-    right:0px;
-    border-radius:20px 0px 0px 20px;
+    margin-top:-10px;
+  padding:0;
     background-image: url("../graphics/flower_sm_wht.png");
     background-size: 25px 25px;
     background-repeat: no-repeat;
     background-position: center; 
-    width:40px;
+    // width:40px;
     height:40px;
-    margin:  0px;
-    -webkit-box-shadow: -1px 0px 5px 0px rgba(30, 30, 30, 0.5);
-    -moz-box-shadow:    -1px 0px 5px 0px rgba(30, 30, 30, 0.5);
-    box-shadow:         -1px 0px 5px 0px rgba(30, 30, 30, 0.5);
-    display:none;
-    z-index:3000;
-    &:link{ background-color: $grey16;}
-    &:hover, :focus{
-    background-color: $client-colour;
-  }
 }
 
 
@@ -105,8 +97,8 @@ padding-right:16px;
 // Various sapcings ================================
 
 .indent{
-  padding-left:15px;
-  padding-right:15px;
+  // padding-left:15px;
+  // padding-right:15px;
 }
 
 .no-indent{
@@ -176,34 +168,31 @@ padding-right:16px;
       background-repeat: repeat-x;
       height: 16px;
       background-position: -4px 0px;
-      margin: 15px -24px 25px -24px;
+      margin: 15px 0px 25px 0px;
     }
 
-
-
-
-.row{
-  .perf {
-    margin: 15px -9px 25px -9px;
-  }
-
-  &.row-between-perfs{
-    margin: -33px -24px -24px -24px;
-    padding-bottom:20px;
-  }
-
-  &.row-between-perfs:before{
+ .row-top-perfs:before{
     display: block;
-    height: 26px;
+    height: 16px;
     margin-left: -20px;
     margin-right: -20px;
-    background: url('../graphics/dot_grey04.png');
+    background: url('../graphics/dot_white.png');
     background-repeat: repeat-x;
     background-position: -4px -8px;
   }
 
+  .row-bottom-perfs:after{
+    display: block;
+    height: 16px;
+    margin-left: -20px;
+    margin-right: -20px;
+    background: url('../graphics/dot_white.png');
+    background-repeat: repeat-x;
+    background-position: -4px 8px;
+  }
 
-  &.perf-grey06 {
+
+  .perf-grey06 {
     background-image: url("../graphics/dot_grey06.png");
     background-repeat: repeat-x;
     height: 16px;
@@ -211,7 +200,7 @@ padding-right:16px;
     margin: 15px -20px 25px -20px;
   }
 
-  &.perf-wht {
+  .perf-wht {
     background-image: url("../graphics/dot_white.png");
     background-repeat: repeat-x;
     height: 16px;
@@ -219,11 +208,11 @@ padding-right:16px;
     margin: 15px -20px 25px -20px;
   }
 
-  &.divide-space {
+  .divide-space {
     height: 40px;
     background:none;
   }
-}
+
 
 
   .tab-content .perf {
