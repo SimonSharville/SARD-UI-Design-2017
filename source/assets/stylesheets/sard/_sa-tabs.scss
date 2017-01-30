@@ -1,0 +1,148 @@
+// sa-tabs =====================================
+// This is used for the Appraisal pages
+
+
+$tab-colour:        $grey04;
+$tab-colour-hover:  $grey06;
+$tab-list-colour:   $grey02;
+$tab-list-hover:    $grey08;
+$tab-pane-colour:   white;
+$tab-text:          $grey18;
+
+
+
+// everything should be contained in the following tag
+
+.sa-tabs{
+    // background-color:pink;
+    margin-top:20px;
+
+    // horzontal tabs =================================================
+
+    .horizontal-tabs{  // This places the rule full width of the window
+      border-bottom: 1px solid $client-colour;
+    }
+
+    .h-tab-wrapper { // This keeps the tabs within a conatiner
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      // margin-bottom:-1px;
+    }
+    @media (min-width: 768px) {
+      .h-tab-wrapper {
+        width: 750px;
+      }
+    }
+    @media (min-width: 992px) {
+      .h-tab-wrapper {
+        width: 970px;
+      }
+    }
+    @media (min-width: 1200px) {
+      .h-tab-wrapper {
+        width: 1170px;
+      }
+    }
+
+
+
+    .nav-tabs {
+      border: 0px solid transparent;
+      // margin-bottom: -1px;
+    }
+    .nav-tabs > li {
+      float: left;
+      margin-bottom: -1px;
+      border-bottom: 2px solid $grey10;   // Change these together for bottom line adjustment
+    }
+    .nav-tabs > li > a {
+      background-color: $tab-colour;
+      margin-right: 0px;
+      line-height: 1.42857143;
+      border: 0px solid transparent;
+      border-radius: 0px 0px 0 0;
+
+    }
+    .nav-tabs > li > a:hover {
+      background-color: $tab-colour-hover;
+      border-color: #eeeeee #eeeeee #dddddd $tab-colour-hover;
+    }
+    .nav-tabs > li.active{
+      border-top: 1px solid $client-colour;
+      border-right: 1px solid $client-colour;
+      border-bottom: 2px solid white;   // Change these together for bottom line adjustment
+      border-left: 1px solid $client-colour;
+    }
+    .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:hover,
+    .nav-tabs > li.active > a:focus {
+      color: #555555;
+      background-color: #ffffff;
+      border: 0px solid #dddddd;
+      border-bottom-color: white;
+      cursor: default;
+    }
+
+    .h-spacer{
+      content: " ";
+      width:10px!important;
+      min-width:10px!important;
+      border-bottom:none!important;
+    }
+
+    .nav-justified{
+      
+    }
+
+    .nav-tabs.nav-justified {
+      width: 100%;
+      border-bottom: 0;
+      margin-bottom: 0px;
+    }
+    .nav-tabs.nav-justified > li {
+      float: none;      
+    }
+    .nav-tabs.nav-justified > li > a {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+    .nav-tabs.nav-justified > .dropdown .dropdown-menu {
+      top: auto;
+      left: auto;
+    }
+    @media (min-width: 768px) {
+      .nav-tabs.nav-justified > li {
+        display: table-cell;
+        width: 1%;
+      }
+      .nav-tabs.nav-justified > li > a {
+        margin-bottom: 0;
+      }
+    }
+    .nav-tabs.nav-justified > li > a {
+      margin-right: 0;
+      border-radius: 0px;
+    }
+    .nav-tabs.nav-justified > .active > a,
+    .nav-tabs.nav-justified > .active > a:hover,
+    .nav-tabs.nav-justified > .active > a:focus {
+      border: 0px solid #dddddd;
+    }
+    @media (min-width: 768px) {
+      .nav-tabs.nav-justified > li > a {
+        border-bottom: 0px solid #dddddd;
+        border-radius: 0px 0px 0 0;
+      }
+      .nav-tabs.nav-justified > .active > a,
+      .nav-tabs.nav-justified > .active > a:hover,
+      .nav-tabs.nav-justified > .active > a:focus {
+        border-bottom-color: #ffffff;
+      }
+    }
+
+
+} // End sa-tabs
+
+

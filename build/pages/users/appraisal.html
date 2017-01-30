@@ -27,7 +27,7 @@
 
   <div id="top"></div>
   
-  <div class="sa-top-section">
+  <div class="sa-top-section sa-header">
 
    <!-- ============================================================================ -->
     <!-- Main Navigation -->
@@ -122,7 +122,7 @@
       </div> <!-- END page-header -->
     </div>
 
-    <div class="row perf"></div>
+    <!-- <div class="row perf"></div> -->
 
     </div>  <!-- END top-section -->
 
@@ -132,61 +132,48 @@
 
     <!-- ============================================================================ -->
     <!-- MAIN CONTENT  - OPTIONAL  -->
-    <div class="container sa-main-content">
+    <div class="sa-main-content">
 
-      <div class="row fast-links">
-        <div class="col-xs-6">
-        <a href="portfolio.html" class="btn btn-grey btn-block" role="button">Go to Portfolio</a>
-        </div>
-        <div class="col-xs-6">
-        <a href="#" class="btn btn-grey btn-block" role="button"><span class="glyphicon glyphicon-download"></span>Appraisal</a>
-        </div> 
-      </div> <!-- END Row --> 
+      <div class="sa-tabs">
 
-      <div class="row">
-        <div class="sa-vertical-tabs">
-          <div  class="col-xs-12">
-            <div class="col-xs-3 tab-column">
-                
+          <div class="horizontal-tabs">
+            <div class="h-tab-wrapper">
+              <!-- tab-navs -->
+              <ul class="container nav nav-tabs">
+                <li class="active"><a href="#tab_a" data-toggle="tab">Tab A</a></li>
+                <li class="h-spacer">&nbsp;</li>
+                <li class=""><a href="#tab_b" data-toggle="tab">Tab B</a></li>
+                <li class="h-spacer">&nbsp;</li>
+                <li class=""><a href="#tab_c" data-toggle="tab">Tab C</a></li>
+                <li class="h-spacer">&nbsp;</li>
+                <li class=""><a href="#tab_d" data-toggle="tab">Tab D</a></li>
+              </ul>
+            </div> <!-- END h-tab-wrapper -->
+          </div> <!-- END horizontal-tabs --> 
 
-                <!-- This is a single tab list -->
-                <ul class="nav nav-tabs tabs-left"></a>
-                    <div class="pre-tab-text"> 
-                      <p><strong>Created: </strong>06/01/2017 </br>
-                         <strong>Submitted: </strong>None </br>
-                         <strong>Meeting date: </strong>None </br>
-                         <strong>Completed: </strong>None
-                       </p>
+            <!-- tab-content -->
 
-                      <p><strong>Lead Appraiser </strong></br>
-                         Dr Janet T Johnson </br>
-                         <span class="glyphicon glyphicon-earphone"></span> 000 0000 0000</br>
-                         <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:janet@example.com">janet@example.com</a>
-                       </p>
-                    </div>
-                    <li class="active"> <a href="#home" data-toggle="tab"> <div class="number rag-green">01</div> <div class="title">Home ssc cs cesc cess ce rvewg wvdv dcew cecw svc e</div> </a> </li>
-                    <li> <a href="#profile" data-toggle="tab"> <div class="number rag-red">02</div> <div class="title">Profile</div></a> </li>
-                    <li> <a href="#messages" data-toggle="tab"> <div class="number rag-red">03</div> <div class="title">Messages</div></a> </li>
-                    <li> <a href="#settings" data-toggle="tab"> <div class="number rag-red">04</div> <div class="title">Settings</div> </a> </li>
-                </ul>
-            </div> <!-- End tab-column -->
+      </div> <!-- END sa-tabs --> 
 
-            <div class="col-xs-9 tab-content-wrapper">
-                <div class="tab-content">
-                    <div class="tab-pane active" id="home">Home Tab.</div>
-                    <div class="tab-pane" id="profile">Profile Tab.</div>
-                    <div class="tab-pane" id="messages">Messages Tab.</div>
-                    <div class="tab-pane" id="settings">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et convallis ligula. Phasellus quis odio vel urna auctor vestibulum. Suspendisse viverra ex ut auctor tincidunt. Curabitur blandit tortor sem, ut suscipit neque tristique in. Morbi placerat est eu augue elementum viverra. Nulla ac bibendum erat. Pellentesque et sapien eleifend, ultrices libero eget, finibus est. Suspendisse in velit eu tellus convallis sagittis. Nam nec bibendum lorem, et efficitur magna. Mauris sagittis nisl rhoncus dolor consequat, a convallis metus hendrerit. Praesent tempus tempus mauris a mattis. Nulla facilisi. Nullam molestie facilisis metus sed suscipit. Donec eu magna ante. Donec vulputate eget nisi a interdum.</p>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et convallis ligula. Phasellus quis odio vel urna auctor vestibulum. Suspendisse viverra ex ut auctor tincidunt. Curabitur blandit tortor sem, ut suscipit neque tristique in. Morbi placerat est eu augue elementum viverra. Nulla ac bibendum erat. Pellentesque et sapien eleifend, ultrices libero eget, finibus est. Suspendisse in velit eu tellus convallis sagittis. Nam nec bibendum lorem, et efficitur magna. Mauris sagittis nisl rhoncus dolor consequat, a convallis metus hendrerit. Praesent tempus tempus mauris a mattis. Nulla facilisi. Nullam molestie facilisis metus sed suscipit. Donec eu magna ante. Donec vulputate eget nisi a interdum.</p>
-                    </div>
-                </div> <!-- END tab-content -->
-            </div> <!-- END tab-content-wrapper -->
-            <div class="clearfix"></div>
-          </div> <!-- END col-xs-12 -->
+      <div class="sa-tabs">
 
-        </div> <!-- END bs-vertical-tabs -->
-      </div> <!-- END Row -->
+          <div class="horizontal-tabs">
+            <div class="h-tab-wrapper">
+              <!-- tab-navs -->
+              <ul class="container nav nav-tabs nav-justified">
+                <li class="active"><a href="#tab_a" data-toggle="tab">Tab A</a></li>
+                <li class=""><a href="#tab_b" data-toggle="tab">Tab B</a></li>
+                <li class=""><a href="#tab_c" data-toggle="tab">Tab C</a></li>
+                <li class=""><a href="#tab_d" data-toggle="tab">Tab D</a></li>
+              </ul>
+            </div> <!-- END h-tab-wrapper -->
+          </div> <!-- END horizontal-tabs --> 
+
+            <!-- tab-content -->
+
+      </div> <!-- END sa-tabs --> 
+
+
 
     </div> <!-- END ROW sa-Main Content -->
   </div>  <!-- END sa-Main Section -->
