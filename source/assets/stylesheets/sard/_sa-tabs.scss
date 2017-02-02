@@ -28,6 +28,8 @@ $tab-shadow:        $grey10;
       margin-left: auto;
       padding-left: 15px;
       padding-right: 15px;
+      // padding-bottom:0px;
+      background-color:pink;
     }
     @media (min-width: 768px) {
       .h-tab-wrapper {
@@ -47,20 +49,21 @@ $tab-shadow:        $grey10;
 
     .nav-tabs {
       border: 0px;
-      margin-bottom: -1px;
       padding:0px;
+      // min-height:100%!important;
     }
     .nav-tabs > li {
       float: left;
-      border-bottom: 0px;
-      margin-bottom: -1px;
+      // min-height:100%!important;
     }
-
+    
     .nav-tabs > li > a {
-      border: 0px;
-      background-color: $tab-colour;
-      margin-bottom: -1px;
+      border: 1px solid $tab-colour;
+      // background-color: $tab-colour;
       border-radius: 0px 0px 0 0;
+      border-bottom-color:$client-colour;
+      // height:50px;
+      // min-height:50px;
     }
 
     // tab spacing
@@ -68,60 +71,55 @@ $tab-shadow:        $grey10;
     .nav-tabs > li > a {
       margin-left:5px;
       margin-right:5px;
-      border-bottom: 4px solid $tab-shadow;   // Change these together for tab shadow adjustment
     }
 
     .nav-tabs > li > a:hover {
-      background-color: $tab-colour-hover;
+      // background-color: $tab-colour-hover;
     }
 
     .nav-tabs .active{
-      border-top: 1px solid $client-colour;
-      border-right: 1px solid $client-colour;
-      border-bottom: 6px solid white;   // Change these together for tab shadow adjustment
-      border-left: 1px solid $client-colour;
-      margin-bottom: -1px;
     }
 
     .nav-tabs > li.active > a,
     .nav-tabs > li.active > a:hover,
     .nav-tabs > li.active > a:focus {
-      color: #555555;
-      background-color: transparent;
-      border: 0px;
-      border-bottom-color: white;
-      cursor: default;
+      border-color:$client-colour;
+      border-bottom-color:white;
+      // background-color:white;
     }
-
 
     
     // nav-tabs.nav-justified =================================
 
     .nav-tabs.nav-justified {
       width: 100%;
-      border: 0;
       padding:0px;
     }
 
     .nav-tabs.nav-justified > li {
       float: none;
-      margin-left:0px;
-      margin-right:5px;
-      margin-bottom:1px;
+      margin-bottom:10px;
+    }
+
+    .nav-tabs.nav-justified > li:last-of-type {
+      float: none;
+      margin-bottom:-1px;
     }
 
     .nav-tabs.nav-justified > li > a {
-      text-align: center;
-      background-color: $tab-colour;
-      border-bottom: 5px solid $tab-shadow;
+      text-align: left;
+      // background-color: $tab-colour;
     }
 
     @media (min-width: 768px) {
+      .nav-tabs.nav-justified{
+      }
       .nav-tabs.nav-justified > li {
-        display: table-cell;
+        // display: table-cell;
         width: 1%;
       }
       .nav-tabs.nav-justified > li > a {
+        margin-right:5px!important;
       }
     }
 
@@ -133,10 +131,14 @@ $tab-shadow:        $grey10;
     .nav-tabs.nav-justified > li > a {
       margin-right: 0;
       border-radius: 0px;
+      border-bottom-color:$tab-colour;
+    }
+
+    .nav-tabs.nav-justified > li > a:hover {
+      // background-color: $tab-colour-hover;
     }
 
     .nav-tabs.nav-justified .active{
-      border: 0px;
     }
 
     .nav-tabs.nav-justified > .active > a{
@@ -145,25 +147,147 @@ $tab-shadow:        $grey10;
     .nav-tabs.nav-justified > .active > a,
     .nav-tabs.nav-justified > .active > a:hover,
     .nav-tabs.nav-justified > .active > a:focus {
-      background-color: white;
-      border-top: 1px solid $client-colour;
-      border-right: 1px solid $client-colour;
-      border-bottom: 6px solid $client-colour;   // Change these together for tab shadow adjustment
-      border-left: 1px solid $client-colour;
+      border-bottom-color:$client-colour;
+    }
+
+    .nav-tabs.nav-justified > .active:last-of-type > a,
+    .nav-tabs.nav-justified > .active:last-of-type  a:hover,
+    .nav-tabs.nav-justified > .active:last-of-type > a:focus {
+      border-bottom-color:white;
     }
 
     @media (min-width: 768px) {
       .nav-tabs.nav-justified > li > a {
-        border-bottom: 4px solid $tab-shadow;   // Change these together for tab shadow adjustment
         border-radius: 0px 0px 0 0;
+        margin-bottom:-1px!important;
+        border-bottom-color:$client-colour;
       }
       .nav-tabs.nav-justified > .active > a,
       .nav-tabs.nav-justified > .active > a:hover,
       .nav-tabs.nav-justified > .active > a:focus {
-        border-bottom-color: #ffffff;
+        border-bottom-color:white;
+      }
+      .nav-tabs.nav-justified > .active:last-of-type > a,
+      .nav-tabs.nav-justified > .active:last-of-type  a:hover,
+      .nav-tabs.nav-justified > .active:last-of-type > a:focus {
+        border-bottom-color:white;
+      }
+      .nav-tabs.nav-justified > li.active > a,
+      .nav-tabs.nav-justified > li.active > a:hover,
+      .nav-tabs.nav-justified > li.active > a:focus{
+      }
+
+      .nav-tabs.nav-justified > li > a {
       }
     }
 
+} // End sa-tabs
+
+// Tab Contents =====================================
+
+.sa-tabs{
+  .sa-tab{
+    background-color:$tab-colour;
+    min-height:50px;
+    padding:0;
+    margin:0px;
+    // z-index:4000!important;
+    height:50px;
+    min-height:50px;
+    // text-align:left!important;
+  }
+
+
+  .sa-tab a,
+  .sa-tab:hover,
+  .sa-tab:focus{
+    background-color:$tab-colour-hover;
+  }
+
+  .active .sa-tab{
+    background-color:white;
+  }
+
+  // .sa-tab{
+  //   .tab-content{
+  //     // background-color:red!important;
+  //     display:inline;
+  //     // padding:0;
+  //     // height:100%;
+  //     // min-height:100%;
+  //   }
+  //   .number{
+  //     // display:table-cell;
+  //     float:left;
+  //     background-color:$grey18!important;
+  //     padding:5px 2px 0px 2px;
+  //     margin:0px;
+  //     width:50px;
+  //     min-width:50px;
+  //     color:white;
+  //     font-size:2em;
+  //     // line-height:0.5em;
+  //     text-align:center;
+  //     height:100%;
+  //     min-height:100%;
+  //     clear:both;
+  //   }
+  //   .title{
+  //     // float:right;
+  //     background-color:red!important;
+  //     // margin:0!important;
+  //     // margin-top:10px!important;
+  //     padding-top:10px;
+  //     // display:table-cell; 
+  //     display:inline;
+  //     // vertical-align:middle;
+  //     // width:100%;
+  //     // min-width:100%;
+  //     // height:50px;
+  //     // min-height:50px;
+  //   }
+  // }
+
+  .number{
+    // display:inline-block;
+    display:table-cell;
+    float:left;
+    background:$grey18;
+    // padding:5px 2px 0px 2px;
+
+    width:50px;
+    min-width:50px;
+    height:100%;
+    min-height:100%;
+    text-align:center;
+  }
+  .number p{
+    color:white;
+    padding-top:5px;
+    font-size:2em;
+  }
+  .title{
+    display:block;
+    // display:inline-block;
+    // display:table-cell;
+    background-color:red!important;
+    // text-align:left!important;
+    // margin-left:60px;
+    // padding:5px 10px 0px 10px;
+    // vertical-align:middle;
+    // width:100%;
+    // min-width:10%;
+    // margin-top:-5px;
+    height:100%;
+    min-height:100%;
+    
+  }
+  .title p{
+    text-align:left;
+    text-indent:0px;
+    // margin:10px 10px 0px 10px;
+    // padding:5px 10px 0px 10px;
+  }
 
 } // End sa-tabs
 
