@@ -28,8 +28,8 @@ $tab-shadow:        $grey10;
       margin-left: auto;
       padding-left: 15px;
       padding-right: 15px;
-      // padding-bottom:0px;
-      background-color:pink;
+      height:100%;
+      min-height:100%;
     }
     @media (min-width: 768px) {
       .h-tab-wrapper {
@@ -50,20 +50,19 @@ $tab-shadow:        $grey10;
     .nav-tabs {
       border: 0px;
       padding:0px;
-      // min-height:100%!important;
     }
     .nav-tabs > li {
       float: left;
-      // min-height:100%!important;
     }
     
     .nav-tabs > li > a {
-      border: 1px solid $tab-colour;
-      // background-color: $tab-colour;
+      border: 1px solid $tab-colour inset;
       border-radius: 0px 0px 0 0;
       border-bottom-color:$client-colour;
-      // height:50px;
-      // min-height:50px;
+      height:50px;
+      min-height:50px;
+      background-color:$tab-colour;
+      color: $tab-text;
     }
 
     // tab spacing
@@ -74,7 +73,7 @@ $tab-shadow:        $grey10;
     }
 
     .nav-tabs > li > a:hover {
-      // background-color: $tab-colour-hover;
+      background-color:$tab-colour-hover;
     }
 
     .nav-tabs .active{
@@ -85,7 +84,7 @@ $tab-shadow:        $grey10;
     .nav-tabs > li.active > a:focus {
       border-color:$client-colour;
       border-bottom-color:white;
-      // background-color:white;
+      background-color:white;
     }
 
     
@@ -94,6 +93,11 @@ $tab-shadow:        $grey10;
     .nav-tabs.nav-justified {
       width: 100%;
       padding:0px;
+      
+    }
+
+    .nav-tabs.nav-justified:last-of-type{
+      margin-bottom:-1px;
     }
 
     .nav-tabs.nav-justified > li {
@@ -101,21 +105,23 @@ $tab-shadow:        $grey10;
       margin-bottom:10px;
     }
 
-    .nav-tabs.nav-justified > li:last-of-type {
+    .nav-tabs.nav-justified > li:last-of-type > a {
       float: none;
-      margin-bottom:-1px;
+      margin-bottom:-10px;
+      // top:1px;
+      // border-bottom:1px solid white;
+
     }
 
     .nav-tabs.nav-justified > li > a {
       text-align: left;
-      // background-color: $tab-colour;
+      border-bottom:none;
     }
 
     @media (min-width: 768px) {
       .nav-tabs.nav-justified{
       }
       .nav-tabs.nav-justified > li {
-        // display: table-cell;
         width: 1%;
       }
       .nav-tabs.nav-justified > li > a {
@@ -131,11 +137,7 @@ $tab-shadow:        $grey10;
     .nav-tabs.nav-justified > li > a {
       margin-right: 0;
       border-radius: 0px;
-      border-bottom-color:$tab-colour;
-    }
-
-    .nav-tabs.nav-justified > li > a:hover {
-      // background-color: $tab-colour-hover;
+      // border-bottom:1px solid $tab-colour;
     }
 
     .nav-tabs.nav-justified .active{
@@ -147,20 +149,24 @@ $tab-shadow:        $grey10;
     .nav-tabs.nav-justified > .active > a,
     .nav-tabs.nav-justified > .active > a:hover,
     .nav-tabs.nav-justified > .active > a:focus {
-      border-bottom-color:$client-colour;
+      // border-bottom-color:white;
+      border-bottom:1px solid $client-colour;
     }
 
     .nav-tabs.nav-justified > .active:last-of-type > a,
     .nav-tabs.nav-justified > .active:last-of-type  a:hover,
     .nav-tabs.nav-justified > .active:last-of-type > a:focus {
-      border-bottom-color:white;
+      border-bottom:1px solid white;
     }
 
     @media (min-width: 768px) {
+      .nav-tabs.nav-justified:last-of-type{
+      margin-bottom:0px;
+    }
       .nav-tabs.nav-justified > li > a {
         border-radius: 0px 0px 0 0;
         margin-bottom:-1px!important;
-        border-bottom-color:$client-colour;
+       border-bottom:1px solid $client-colour;
       }
       .nav-tabs.nav-justified > .active > a,
       .nav-tabs.nav-justified > .active > a:hover,
@@ -186,80 +192,55 @@ $tab-shadow:        $grey10;
 // Tab Contents =====================================
 
 .sa-tabs{
+
+  li p{ // Overrides bootstrap seetings, hopefully
+    text-indent:0px;
+    line-height:initial;
+    margin: initial;
+    padding: initial;
+  }
+
   .sa-tab{
-    background-color:$tab-colour;
-    min-height:50px;
+    display:block;
+    // background-color:$tab-colour;
     padding:0;
     margin:0px;
-    // z-index:4000!important;
-    height:50px;
-    min-height:50px;
-    // text-align:left!important;
+    -webkit-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.25);
+    box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.25);
   }
 
 
   .sa-tab a,
   .sa-tab:hover,
   .sa-tab:focus{
-    background-color:$tab-colour-hover;
   }
 
   .active .sa-tab{
-    background-color:white;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
   }
 
-  // .sa-tab{
-  //   .tab-content{
-  //     // background-color:red!important;
-  //     display:inline;
-  //     // padding:0;
-  //     // height:100%;
-  //     // min-height:100%;
-  //   }
-  //   .number{
-  //     // display:table-cell;
-  //     float:left;
-  //     background-color:$grey18!important;
-  //     padding:5px 2px 0px 2px;
-  //     margin:0px;
-  //     width:50px;
-  //     min-width:50px;
-  //     color:white;
-  //     font-size:2em;
-  //     // line-height:0.5em;
-  //     text-align:center;
-  //     height:100%;
-  //     min-height:100%;
-  //     clear:both;
-  //   }
-  //   .title{
-  //     // float:right;
-  //     background-color:red!important;
-  //     // margin:0!important;
-  //     // margin-top:10px!important;
-  //     padding-top:10px;
-  //     // display:table-cell; 
-  //     display:inline;
-  //     // vertical-align:middle;
-  //     // width:100%;
-  //     // min-width:100%;
-  //     // height:50px;
-  //     // min-height:50px;
-  //   }
-  // }
-
   .number{
-    // display:inline-block;
-    display:table-cell;
     float:left;
     background:$grey18;
-    // padding:5px 2px 0px 2px;
-
     width:50px;
     min-width:50px;
     height:100%;
     min-height:100%;
     text-align:center;
+    -webkit-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.100);
+    -moz-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.100);
+    box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.100);
+  }
+  .active .number{
+    background:$client-colour;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    height:49px;
+    min-height:49px;
   }
   .number p{
     color:white;
@@ -267,27 +248,16 @@ $tab-shadow:        $grey10;
     font-size:2em;
   }
   .title{
-    display:block;
-    // display:inline-block;
-    // display:table-cell;
-    background-color:red!important;
-    // text-align:left!important;
-    // margin-left:60px;
-    // padding:5px 10px 0px 10px;
-    // vertical-align:middle;
-    // width:100%;
-    // min-width:10%;
-    // margin-top:-5px;
-    height:100%;
-    min-height:100%;
-    
+    display:table-cell;
+    vertical-align:middle;
+    padding-left:5px;
+    padding-right:5px;
+    position:relative;
+    height:48px;
+    min-height:48px;
   }
-  .title p{
-    text-align:left;
-    text-indent:0px;
-    // margin:10px 10px 0px 10px;
-    // padding:5px 10px 0px 10px;
-  }
+
+  
 
 } // End sa-tabs
 
