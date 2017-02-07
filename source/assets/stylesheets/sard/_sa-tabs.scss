@@ -12,10 +12,14 @@ $tab-shadow:        $grey10;
 
 
 
-// everything should be contained in the sa-tabs tag
+// everything should be contained in the .sa-tabs tag
+
+.sa-tabs:first-of-type{
+    margin-top:0px;
+  }
 
 .sa-tabs{
-    margin-top:20px;
+    margin-top:30px;
 
     // horzontal tabs =================================================
 
@@ -257,8 +261,26 @@ $tab-shadow:        $grey10;
     min-height:48px;
   }
 
-  
-
 } // End sa-tabs
 
+.sa-tabs{
+  .tab-content{
+    padding-left:20px;
+    padding-right:15px;
+  }
+  @media (min-width: 768px) {
+    .tab-content{
+    padding-right:20px;
+  }
+  }
 
+  .tab-content > .tab-pane {
+    display: none;
+    border:none;
+    background-color:pink;
+  }
+  .tab-content > .active {
+    display: block;
+  }
+
+} // End sa-tabs

@@ -720,7 +720,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 .breadcrumbs {
   border-bottom: 1px solid #00B2B2;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  background-color: white; }
 
 .breadcrumb {
   padding: 6px 0px;
@@ -1798,6 +1799,7 @@ button:hover {
   margin-bottom: 20px; }
 
 .sa-main-section {
+  padding-top: 20px;
   margin-bottom: 60px; }
 
 .new-footer {
@@ -2294,8 +2296,11 @@ img.user-guide-cover {
     .sa-vertical-tabs .tab-pane {
       margin-bottom: 0px; } }
 
+.sa-tabs:first-of-type {
+  margin-top: 0px; }
+
 .sa-tabs {
-  margin-top: 20px; }
+  margin-top: 30px; }
   .sa-tabs .horizontal-tabs {
     border-bottom: 1px solid #00B2B2; }
   .sa-tabs .h-tab-wrapper {
@@ -2439,6 +2444,22 @@ img.user-guide-cover {
   position: relative;
   height: 48px;
   min-height: 48px; }
+
+.sa-tabs .tab-content {
+  padding-left: 20px;
+  padding-right: 15px; }
+
+@media (min-width: 768px) {
+  .sa-tabs .tab-content {
+    padding-right: 20px; } }
+
+.sa-tabs .tab-content > .tab-pane {
+  display: none;
+  border: none;
+  background-color: pink; }
+
+.sa-tabs .tab-content > .active {
+  display: block; }
 
 .portfolio {
   padding-bottom: 60px; }
