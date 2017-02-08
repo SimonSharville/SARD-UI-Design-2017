@@ -28,9 +28,13 @@
 .sa-main-section{
   padding-top: 20px; 
   margin-bottom: 60px;
+  height:100%;
+  min-height:100%;
 }
 
 .sa-main-content{  // OPTIONAL
+  height:100%;
+  min-height:100%;
  }
 
 
@@ -52,14 +56,18 @@
 .new-footer .text-right{ padding-right:0px;}
 
 
-.sa-main-column{ } // If creating a 2 column layout like dashboard use this.
+.sa-main-column{ 
+  // margin-bottom:60px;
+} // If creating a 2 column layout like dashboard use this.
 
 .sa-right-column{ 
 padding-left:16px;
+// margin-bottom:60px;
 } // If creating a 2 column layout like dashboard use this.
 
 .sa-left-column{ 
 padding-right:16px;
+// margin-bottom:60px;
 } // If creating a 2 column layout like dashboard use this.
 
 // SARD Incidentals =================================================================

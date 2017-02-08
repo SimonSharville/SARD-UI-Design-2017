@@ -20,8 +20,7 @@ $(document).ready(function(){
 });
 
 
-//
-http://www.paulund.co.uk/smooth-scroll-to-internal-links-with-jquery
+// http://www.paulund.co.uk/smooth-scroll-to-internal-links-with-jquery
 $(document).ready(function(){
   $('a[href^="#"]').on('click',function (e) {
       e.preventDefault();

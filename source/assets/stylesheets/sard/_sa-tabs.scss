@@ -10,6 +10,9 @@ $tab-pane-colour:   white;
 $tab-text:          $grey18;
 $tab-shadow:        $grey10;
 
+$rag-green:        $success;
+
+
 
 
 // everything should be contained in the .sa-tabs tag
@@ -32,8 +35,6 @@ $tab-shadow:        $grey10;
       margin-left: auto;
       padding-left: 15px;
       padding-right: 15px;
-      height:100%;
-      min-height:100%;
     }
     @media (min-width: 768px) {
       .h-tab-wrapper {
@@ -51,236 +52,448 @@ $tab-shadow:        $grey10;
       }
     }
 
-    .nav-tabs {
-      border: 0px;
-      padding:0px;
-    }
-    .nav-tabs > li {
-      float: left;
-    }
-    
-    .nav-tabs > li > a {
-      border: 1px solid $tab-colour inset;
-      border-radius: 0px 0px 0 0;
-      border-bottom-color:$client-colour;
-      height:50px;
-      min-height:50px;
-      background-color:$tab-colour;
-      color: $tab-text;
-    }
+    .h-tab-wrapper{
+      .nav-tabs {
+        border: 0px;
+        padding:0px;
+      }
+      .nav-tabs > li {
+        float: left;
+      }
+      
+      .nav-tabs > li > a {
+        border: 1px solid $tab-colour inset;
+        border-radius: 0px 0px 0 0;
+        border-bottom-color:$client-colour;
+        height:50px;
+        min-height:50px;
+        background-color:$tab-colour;
+        color: $tab-text;
+      }
 
-    // tab spacing
-    // http://stackoverflow.com/questions/16906642/twitter-bootstrap-tabs-how-to-increase-spacing-between-tabs
-    .nav-tabs > li > a {
-      margin-left:5px;
-      margin-right:5px;
-    }
+      // tab spacing
+      // http://stackoverflow.com/questions/16906642/twitter-bootstrap-tabs-how-to-increase-spacing-between-tabs
+      .nav-tabs > li > a {
+        margin-left:5px;
+        margin-right:5px;
+      }
 
-    .nav-tabs > li > a:hover {
-      background-color:$tab-colour-hover;
-    }
+      .nav-tabs > li > a:hover {
+        background-color:$tab-colour-hover;
+      }
 
-    .nav-tabs .active{
-    }
+      .nav-tabs .active{
+      }
 
-    .nav-tabs > li.active > a,
-    .nav-tabs > li.active > a:hover,
-    .nav-tabs > li.active > a:focus {
-      border-color:$client-colour;
-      border-bottom-color:white;
-      background-color:white;
-    }
+      .nav-tabs > li.active > a,
+      .nav-tabs > li.active > a:hover,
+      .nav-tabs > li.active > a:focus {
+        border-color:$client-colour;
+        border-bottom-color:white;
+        background-color:white;
+      }
+    } // end h-tab-wrapper
 
     
     // nav-tabs.nav-justified =================================
 
-    .nav-tabs.nav-justified {
-      width: 100%;
-      padding:0px;
-      
+     .h-tab-wrapper{
+        .nav-tabs.nav-justified {
+          width: 100%;
+          padding:0px;
+          
+        }
+
+        .nav-tabs.nav-justified:last-of-type{
+          margin-bottom:-1px;
+        }
+
+        .nav-tabs.nav-justified > li {
+          float: none;
+          margin-bottom:10px;
+        }
+
+        .nav-tabs.nav-justified > li:last-of-type > a {
+          float: none;
+          margin-bottom:-10px;
+        }
+
+        .nav-tabs.nav-justified > li > a {
+          text-align: left;
+          border-bottom:none;
+        }
+
+        @media (min-width: 768px) {
+          .nav-tabs.nav-justified{
+          }
+          .nav-tabs.nav-justified > li {
+            width: 1%;
+          }
+          .nav-tabs.nav-justified > li > a {
+            margin-right:5px!important;
+          }
+        }
+
+        .nav-tabs.nav-justified > .dropdown .dropdown-menu {
+          top: auto;
+          left: auto;
+        }
+        
+        .nav-tabs.nav-justified > li > a {
+          margin-right: 0;
+          border-radius: 0px;
+        }
+
+        .nav-tabs.nav-justified .active{
+        }
+
+        .nav-tabs.nav-justified > .active > a{
+        }
+
+        .nav-tabs.nav-justified > .active > a,
+        .nav-tabs.nav-justified > .active > a:hover,
+        .nav-tabs.nav-justified > .active > a:focus {
+          // border-bottom-color:white;
+          border-bottom:1px solid $client-colour;
+        }
+
+        .nav-tabs.nav-justified > .active:last-of-type > a,
+        .nav-tabs.nav-justified > .active:last-of-type  a:hover,
+        .nav-tabs.nav-justified > .active:last-of-type > a:focus {
+          border-bottom:1px solid white;
+        }
+
+        @media (min-width: 768px) {
+          .nav-tabs.nav-justified:last-of-type{
+            margin-bottom:0px;
+          }
+          .nav-tabs.nav-justified > li > a {
+            border-radius: 0px 0px 0 0;
+            margin-bottom:-1px!important;
+           border-bottom:1px solid $client-colour;
+          }
+          .nav-tabs.nav-justified > .active > a,
+          .nav-tabs.nav-justified > .active > a:hover,
+          .nav-tabs.nav-justified > .active > a:focus {
+            border-bottom-color:white;
+          }
+          .nav-tabs.nav-justified > .active:last-of-type > a,
+          .nav-tabs.nav-justified > .active:last-of-type  a:hover,
+          .nav-tabs.nav-justified > .active:last-of-type > a:focus {
+            border-bottom-color:white;
+          }
+          .nav-tabs.nav-justified > li.active > a,
+          .nav-tabs.nav-justified > li.active > a:hover,
+          .nav-tabs.nav-justified > li.active > a:focus{
+          }
+
+          .nav-tabs.nav-justified > li > a {
+          }
+        }
+    } // End h-tab-wrapper
+
+} // End sa-tabs
+
+// SARD Horizontal Tabs ====================================================
+
+.sa-tabs{
+
+  .h-tab-wrapper{
+
+    li p{ // Overrides bootstrap seetings, hopefully
+      text-indent:0px;
+      line-height:initial;
+      margin: initial;
+      padding: initial;
     }
 
-    .nav-tabs.nav-justified:last-of-type{
-      margin-bottom:-1px;
+    .sa-tab{
+      display:block;
+      padding:0;
+      margin:0px;
+      -webkit-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.25);
+      -moz-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.25);
+      box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.25);
     }
 
-    .nav-tabs.nav-justified > li {
-      float: none;
-      margin-bottom:10px;
+    .active .sa-tab{
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
     }
 
-    .nav-tabs.nav-justified > li:last-of-type > a {
-      float: none;
-      margin-bottom:-10px;
-      // top:1px;
-      // border-bottom:1px solid white;
-
+    .number{
+      float:left;
+      background:$grey18;
+      width:50px;
+      min-width:50px;
+      height:100%;
+      min-height:100%;
+      text-align:center;
+      -webkit-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.100);
+      -moz-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.100);
+      box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.100);
     }
-
-    .nav-tabs.nav-justified > li > a {
-      text-align: left;
-      border-bottom:none;
+    .active .number{
+      background:$client-colour;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      height:49px;
+      min-height:49px;
     }
-
-    @media (min-width: 768px) {
-      .nav-tabs.nav-justified{
-      }
-      .nav-tabs.nav-justified > li {
-        width: 1%;
-      }
-      .nav-tabs.nav-justified > li > a {
-        margin-right:5px!important;
-      }
+    .number p{
+      color:white;
+      padding-top:5px;
+      font-size:2em;
     }
-
-    .nav-tabs.nav-justified > .dropdown .dropdown-menu {
-      top: auto;
-      left: auto;
+    .title{
+      display:table-cell;
+      vertical-align:middle;
+      padding-left:5px;
+      padding-right:5px;
+      position:relative;
+      height:48px;
+      min-height:48px;
     }
-    
-    .nav-tabs.nav-justified > li > a {
-      margin-right: 0;
-      border-radius: 0px;
-      // border-bottom:1px solid $tab-colour;
-    }
+    .title p{ }
 
-    .nav-tabs.nav-justified .active{
-    }
-
-    .nav-tabs.nav-justified > .active > a{
-    }
-
-    .nav-tabs.nav-justified > .active > a,
-    .nav-tabs.nav-justified > .active > a:hover,
-    .nav-tabs.nav-justified > .active > a:focus {
-      // border-bottom-color:white;
-      border-bottom:1px solid $client-colour;
-    }
-
-    .nav-tabs.nav-justified > .active:last-of-type > a,
-    .nav-tabs.nav-justified > .active:last-of-type  a:hover,
-    .nav-tabs.nav-justified > .active:last-of-type > a:focus {
-      border-bottom:1px solid white;
-    }
-
-    @media (min-width: 768px) {
-      .nav-tabs.nav-justified:last-of-type{
+    .title h3{
+      font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+      font-size: 2.000em;
+      padding-left:5px;
       margin-bottom:0px;
     }
-      .nav-tabs.nav-justified > li > a {
-        border-radius: 0px 0px 0 0;
-        margin-bottom:-1px!important;
-       border-bottom:1px solid $client-colour;
-      }
-      .nav-tabs.nav-justified > .active > a,
-      .nav-tabs.nav-justified > .active > a:hover,
-      .nav-tabs.nav-justified > .active > a:focus {
-        border-bottom-color:white;
-      }
-      .nav-tabs.nav-justified > .active:last-of-type > a,
-      .nav-tabs.nav-justified > .active:last-of-type  a:hover,
-      .nav-tabs.nav-justified > .active:last-of-type > a:focus {
-        border-bottom-color:white;
-      }
-      .nav-tabs.nav-justified > li.active > a,
-      .nav-tabs.nav-justified > li.active > a:hover,
-      .nav-tabs.nav-justified > li.active > a:focus{
-      }
 
-      .nav-tabs.nav-justified > li > a {
-      }
-    }
+  } // End h-tab-wrapper
 
 } // End sa-tabs
 
-// Tab Contents =====================================
 
-.sa-tabs{
+
+
+// vertical-tabs =====================================================
+
+//http://bootsnipp.com/snippets/nP8E7
+
+.sa-v-tabs{
+
+  .tab-section-text{
+    margin-bottom:20px;
+  }
+
+  .tab-column{
+    padding:0;
+  }
+
+  .tab-column p, h1, h2, h3, h4, h5, h6{
+    // margin-bottom:10px;
+    padding-right:10px;
+    padding-top:10px;
+  }
+
+  .nav-tabs > li > a{
+    border: 0px;
+    // margin-bottom:10px;
+    border-top: 1px solid $tab-colour;
+    border-bottom: 1px solid $tab-colour;
+    background-color:$tab-colour;
+    color: $tab-text;
+    padding:0;
+    border:transparent;
+  }
+
+  .tabs-left>li>a:hover,
+  .tabs-left>li>a:focus {
+    background-color:$tab-colour-hover;
+    border-top: 1px solid $tab-colour-hover;
+    border-bottom: 1px solid $tab-colour-hover;
+    border:transparent;
+  }
+
+  .tabs-left {
+    border-bottom: none;
+    padding-top: 2px;
+    margin-right:0px;
+
+  }
+  .tabs-left {
+  }
+
+  .tabs-left>li {
+    float: none;
+    margin-bottom: 10px;
+
+  }
+  .tabs-left>li {
+    margin-right: -3px;
+
+  }
+
+  .tabs-left>li.active>a,
+  .tabs-left>li.active>a:hover,
+  .tabs-left>li.active>a:focus {
+    border-top: 1px solid $client-colour;
+    border-right: 1px solid white;
+    border-bottom: 1px solid $client-colour;
+    border-left: 1px solid $client-colour;
+    background-color:white;
+    // top:1px;
+    left:-1px;
+    // margin-right: 1px;
+    // margin-right: 1px;
+    // margin-bottom: 12px;
+
+    z-index:100;
+  }
 
   li p{ // Overrides bootstrap seetings, hopefully
-    text-indent:0px;
-    line-height:initial;
-    margin: initial;
-    padding: initial;
-  }
+      text-indent:0px;
+      // line-height:initial;
+      margin: initial;
+      padding: initial;
+    }
 
-  .sa-tab{
-    display:block;
-    // background-color:$tab-colour;
-    padding:0;
-    margin:0px;
-    -webkit-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.25);
-    box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.25);
-  }
+    .sa-tab{
+      // display:block;
+      display:table;
+      padding:0;
+      -webkit-box-shadow: inset -6px 0px 0px 0px rgba(0,0,0,0.25);
+      -moz-box-shadow: inset -6px 0px 0px 0px rgba(0,0,0,0.25);
+      box-shadow: inset -6px 0px 0px 0px rgba(0,0,0,0.25);
+      height:50px;
+      min-height:50px;
+      width:100%;
+      min-width:100%;
+      // width:calc(100% - 1px);
+      // min-width:calc(100% - 1px);
+      // clear:both;
+    }
+
+    .active .sa-tab{
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+
+    .number{
+      // float:left;
+      // display:block;
+      display:table-cell;
+      // vertical-align:middle;
+      background:$grey18;
+      width:50px;
+      min-width:50px;
+      // height:100%;
+      // min-height:100%;
+      text-align:center;
+      // clear:both;
+    }
+    .active .number{
+      background:$client-colour;
+      // height:49px;
+      // min-height:49px;
+    }
+    .number p{
+      color:white;
+      padding:0px;
+      padding-top:5px;
+      font-size:2em;
+
+    }
+    .title{
+      display:table-cell;
+      // text-align:left;
+      vertical-align:middle;
+      padding-top:0px;
+      padding-left:5px;
+      padding-right:5px;
+      // position:relative;
+      // height:48px;
+      // min-height:48px;
+      // height:100%;
+      // min-height:100%;
+      // clear:both;
+    }
+    .title p{ padding-top:0px;}
 
 
-  .sa-tab a,
-  .sa-tab:hover,
-  .sa-tab:focus{
-  }
 
-  .active .sa-tab{
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-  }
+} // End sa-v-tabs
 
-  .number{
-    float:left;
-    background:$grey18;
-    width:50px;
-    min-width:50px;
-    height:100%;
-    min-height:100%;
-    text-align:center;
-    -webkit-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.100);
-    -moz-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.100);
-    box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.100);
-  }
-  .active .number{
-    background:$client-colour;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    height:49px;
-    min-height:49px;
-  }
-  .number p{
-    color:white;
-    padding-top:5px;
-    font-size:2em;
-  }
-  .title{
-    display:table-cell;
-    vertical-align:middle;
-    padding-left:5px;
-    padding-right:5px;
-    position:relative;
-    height:48px;
-    min-height:48px;
-  }
 
-} // End sa-tabs
+
+// Tab Content =====================================================
 
 .sa-tabs{
-  .tab-content{
+
+  .horizontal.tab-content{
     padding-left:20px;
     padding-right:15px;
   }
   @media (min-width: 768px) {
-    .tab-content{
+    .horizontal.tab-content{
     padding-right:20px;
   }
   }
 
-  .tab-content > .tab-pane {
+  .horizontal.tab-content > .tab-pane {
     display: none;
     border:none;
-    background-color:pink;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:30px;
+    // clear:both;
   }
-  .tab-content > .active {
+  .horizontal.tab-content > .active {
     display: block;
   }
 
+  .vertical.tab-content{
+    background-color:white;
+    padding:0px;
+    border-top: 0px;
+    border-right: 1px solid $client-colour;
+    border-bottom: 1px solid $client-colour;
+    border-left: 1px solid $client-colour;
+  }
+
+  .vertical.tab-content > .tab-pane {
+    border: 0px;
+    border-top: 12px solid $client-colour;
+  }
+
 } // End sa-tabs
+
+// Column Heights Fix =====================================================
+// Adjust this to make the vertical tabs and content fit full height
+
+.sa-v-tabs{
+  @media (max-width: 767px) {
+  .tab-column{
+    min-height: calc(100vh - 730px); /* Replace 42px with the needed height. 100vh means the whole height of the browser's viewport */
+    min-height: -webkit-calc(100vh - 730px);
+    min-height: -moz-calc(100vh - 730px);
+  }
+
+  .tab-content{ 
+    min-height: calc(100vh - 730px); /* Replace 42px with the needed height. 100vh means the whole height of the browser's viewport */
+    min-height: -webkit-calc(100vh - 730px);
+    min-height: -moz-calc(100vh - 730px);
+  }
+}
+
+  @media (min-width: 768px) {
+    .tab-column{
+    min-height: calc(100vh - 670px); /* Replace 42px with the needed height. 100vh means the whole height of the browser's viewport */
+    min-height: -webkit-calc(100vh - 670px);
+    min-height: -moz-calc(100vh - 670px);
+  }
+
+  .tab-content{ 
+    min-height: calc(100vh - 670px); /* Replace 42px with the needed height. 100vh means the whole height of the browser's viewport */
+    min-height: -webkit-calc(100vh - 670px);
+    min-height: -moz-calc(100vh - 670px);
+  }
+  }
+}
