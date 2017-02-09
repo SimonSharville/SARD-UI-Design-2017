@@ -92,74 +92,57 @@
       <div class="row perf"></div> 
       
 
-      <div class="container">
-        <!-- Nav tabs -->
+      <div class="sa-h-tabs">
 
-          <!-- Tabs -->
-          <ul class="nav nav-tabs nav-justified" role="tablist">
-            <li role="presentation" class="active"><a href="#status-alerts" aria-controls="status-alerts" role="tab" data-toggle="tab">Status Alerts</a></li>
+          <div class="horizontal-tabs">
+            <div class="h-tab-wrapper">
+              <!-- tab-navs -->
+              <ul class="container nav nav-tabs nav-justified">
+                <li class="active">
+                  <a href="#tab-a" class="sa-tab" data-toggle="tab">
+                      <div class="number"><p>A</p></div>
+                      <div class="title"><h6>Status Alerts</h6></div>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="#tab-b" class="sa-tab" data-toggle="tab">
+                    <div class="number"><p>B</p></div>
+                    <div class="title centre"><h6>Variable Columns</h6></div>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="#tab-c" class="sa-tab" data-toggle="tab">
+                    <div class="number"><p>C</p></div>
+                    <div class="title"><h6>Text Links</h6></div>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="#tab-d" class="sa-tab" data-toggle="tab">
+                    <div class="number"><p>D</p></div>
+                    <div class="title"><h6>Nav Tabs</h6></div>
+                  </a>
+                </li>
+              </ul>
+            </div> <!-- END h-tab-wrapper -->
+          </div> <!-- END horizontal-tabs --> 
 
-            <li role="presentation"><a href="#variable-columns" aria-controls="variable-columns" role="tab" data-toggle="tab">Variable Columns</a></li>
-
-            <li role="presentation"><a href="#text-links" aria-controls="text-links" role="tab" data-toggle="tab">Text Links</a></li>
-
-            <li role="presentation"><a href="#vertical-tabs" aria-controls="vertical-tabs" role="tab" data-toggle="tab">Vertical Tabs</a></li>
-
-
-          </ul> <!-- END Tabs -->
-
-
-          <!-- Tabs Contents-->
-          <div class="tab-content">
-
-            <div role="tabpanel" class="tab-pane active" id="status-alerts">
-              <div class="row row-indent">
-                <div class="col-xs-12">
-                  <!-- Panels =============================================================== -->
-                  <!-- @import "components/status-alerts.html" -->
-                </div>
+            <!-- horizontal-tab-content -->
+            <div class="tab-content horizontal container">
+              <div id="tab-a" class="tab-pane fade in active" id="status-alerts">
+                <!-- @import "components/status-alerts.html" -->
               </div>
-            </div> <!-- END tabpanel-->
-
-
-            <div role="tabpanel" class="tab-pane fade" id="variable-columns">
-              <div class="row row-indent">
-                <div class="col-xs-12">
-                  <!-- Buttons =============================================================== -->
-                  <!-- @import "components/variable-columns.html" -->
-                </div>
+              <div id="tab-b" class="tab-pane fade" id="variable-columns">
+                <!-- @import "components/variable-columns.html" -->
               </div>
-            </div> <!-- END tabpanel-->
-
-
-            <div role="tabpanel" class="tab-pane fade" id="text-links">
-              <div class="row row-indent">
-                <div class="col-xs-12">
-                  <!-- Buttons =============================================================== -->
-                  <!-- @import "components/text-links.html" -->
-                </div>
+              <div id="tab-c" class="tab-pane fade" id="text-links">
+                <!-- @import "components/text-links.html" -->
               </div>
-            </div> <!-- END tabpanel-->
-
-
-            <div role="tabpanel" class="tab-pane fade" id="vertical-tabs">
-              <div class="row row-indent">
-                <div class="col-xs-12">
-                  <!-- Buttons =============================================================== -->
-                  <!-- @import "components/vertical-tabs.html" -->
-                </div>
+              <div id="tab-d" class="tab-pane fade" id="sard-nav-tabs">
+                <!-- @import "components/sard-nav-tabs.html" -->
               </div>
-            </div> <!-- END tabpanel-->
+            </div> <!-- END tab-content horizontal -->
 
-
-
-
-
-          </div> <!-- END Tab Content -->
-
-
-        </div> <!-- END container -->
-
+      </div> <!-- END sa-tabs --> 
 
 
         
