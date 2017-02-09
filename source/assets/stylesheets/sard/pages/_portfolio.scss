@@ -122,6 +122,20 @@ $rag-na:           $grey14;
         border-radius:50%;
       } 
 
+      .tag-status-bar{
+        height:30px;
+        margin-left:-1px;
+        margin-top:-1px;
+        margin-right:-1px;
+        text-align:right;
+        font-weight:bold;
+        color:white;
+        padding:5px;
+        // display:table;
+        // width:calc(100% + 2px);
+        // vertical-align:middle;
+      }
+
 
 
     // Evidences, Comments and Notes =====================================================================

@@ -84,13 +84,13 @@
             <div class="h-tab-wrapper">
               <!-- tab-navs -->
               <ul class="container nav nav-tabs nav-justified">
-                <li class="">
+                <li class="active">
                   <a href="#tab-a" class="sa-tab" data-toggle="tab">
                       <div class="number"><p>A</p></div>
                       <div class="title"><h3>Portfolio</h3></div>
                   </a>
                 </li>
-                <li class="active">
+                <li class="">
                   <a href="#tab-b" class="sa-tab" data-toggle="tab">
                     <div class="number"><p>B</p></div>
                     <div class="title"><h3>Appraisals</h3></div>
@@ -108,12 +108,11 @@
 
             <!-- horizontal-tab-content -->
             <div class="tab-content horizontal container">
-              <div id="tab-a" class="tab-pane fade  ">
-                <h3>TAB A</h3>
-                <p>Some content in tab A.</p>
+              <div id="tab-a" class="tab-pane fade in active">
+                <!-- @import "portfolio.html" -->
               </div>
-              <div id="tab-b" class="tab-pane fade in active">
-                <!-- @import "appraisals.kit" -->
+              <div id="tab-b" class="tab-pane fade">
+                <!-- @import "appraisals.html" -->
               </div>
               <div id="tab-c" class="tab-pane fade">
                 <h3>TAB C</h3>
