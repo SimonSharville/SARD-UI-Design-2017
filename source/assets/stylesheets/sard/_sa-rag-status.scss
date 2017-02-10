@@ -1,0 +1,32 @@
+// Rag Status
+
+$rag-red:          $red;
+$rag-amber:        $yellow;
+$rag-green:        $green;
+$rag-na:           $grey14;
+
+
+
+// Colouring
+.rag-red{ background-color:$rag-red; }
+
+.rag-amber{ background-color:$rag-amber; }
+
+.rag-green{ background-color:$rag-green; }
+
+.rag-na{ background-color:$rag-na; }
+
+
+// Elements
+
+.rag-status-bar{
+  height:30px;
+  margin-left:-16px;
+  margin-top:-16px;
+  margin-right:-16px;
+  margin-bottom:10px;
+  text-align:right;
+  font-weight:bold;
+  color:white;
+  padding:5px;
+}

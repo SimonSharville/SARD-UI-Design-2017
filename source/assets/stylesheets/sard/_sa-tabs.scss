@@ -315,7 +315,7 @@ $tab-shadow:        $grey10;
 
 //http://bootsnipp.com/snippets/nP8E7
 
-.v-tabs-wrapper{
+.v-tab-wrapper{
   display: flex;
 }
 
@@ -497,14 +497,9 @@ $tab-shadow:        $grey10;
     border: 0px;
     // border-top: 1px solid $client-colour;
     min-height:100%!important;
-    padding:0px;
-    // clear:both;
-  }
-
-  .pane-content{
     padding:15px;
-
   }
+
 
 } // End sa-v-tabs
 
