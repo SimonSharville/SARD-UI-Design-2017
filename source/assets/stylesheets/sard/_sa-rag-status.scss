@@ -30,3 +30,73 @@ $rag-na:           $grey14;
   color:white;
   padding:5px;
 }
+
+
+  // Status Lights ========================================================
+
+  .status{
+    // font-family: 'Glyphicons Halflings';
+    // content: "\e080" ;
+  }
+
+  .status:before{
+    content: "" ;
+    display: inline-block;
+    border-radius:50%;
+    border: 2px solid white;
+    float:left;
+    background-image: url("../graphics/panel_highlight.png");
+
+    font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+    text-align:center;
+    color:white;
+  }
+
+  .status-alert:before{
+    background-color:$orange;
+    content: "A" ;
+  }
+
+  .status-warning:before{
+    background-color:$yellow;
+    content: "W" ;
+  }
+
+  .status-success:before{
+    background-color:$success;
+    content: "S" ;
+  }
+
+  .status-danger:before{
+    background-color:$danger;
+    content: "D" ;
+  }
+
+  .status-none:before{
+    background-color:transparent;
+    content: "N" ;
+    color:$grey10;
+    border-color:$grey10;
+  }
+
+// Table specific Status Lights ================
+.table div{ 
+    &.status:before{
+      height: 30px;
+      width: 30px;
+      background-size: 28px 28px;
+      background-repeat: no-repeat;
+      padding-top:3px;
+      padding-left:1px;
+    }
+    &.status-alert:before{ padding-left:1px; }
+    &.status-danger:before{ padding-left:2px; }
+  }
+
+  .status-col{ 
+    padding: 4px 0px 4px 12px !important; 
+    width:20px;
+  }
+
+
+  // END Status Lights ====================================================
