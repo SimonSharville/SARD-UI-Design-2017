@@ -270,13 +270,161 @@ padding-right:16px;
 
 
 // Notices ===============================================================
-// Are in Typography
+  .notice{
+    padding-top:1px;
+    margin-bottom:7px;
+    padding-bottom:8px;
+    border-bottom: 1px solid white;
+  }
+  .notice:last-of-type{
+    border-bottom: none;
+    margin-bottom:-20px;
+  }
+
+  .notice{ 
+    &.status:before{
+      height: 32px;
+      width: 32px;
+      background-size: 28px 28px;
+      background-repeat: no-repeat;
+      padding-top:4px;
+    }
+    &.status-alert:before{ padding-left:2px; }
+    &.status-danger:before{ padding-left:2px; }
+    &.status:hover:before{ }
+
+    h5, h6, p{
+      margin:0 0 0 40px;
+    }
+    p{ margin-bottom:-3px;}
+  }
+
+   .notice, h5, p{
+    a:link{ color:$bodytext;}
+    a:visited{ color:$bodytext;}
+    a:hover{ color:$link-hover;}
+    a:active{ color:$link-hover;}
+    a.glyphicon-info-sign{ color: darken($info, 10%); }
+    a:hover, a:focus .glyphicon-info-sign{ color: darken($info, 20%);}
+  }
+
 
 // Status Lights ========================================================
-// Are in Typography
+// Are in _sa-rag-status
+
 
 // List Items ========================================================
-// Are in Typography
+  ul { // Removes bullet points globally
+    list-style-type: none;
+  }
+
+  p.link-icon{
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+
+  .link-icon{ // This places the arrow icon in front of a text link
+    p{padding-left: 1.3em ;
+      text-indent: -1.3em ;
+    }
+    a:link:before{
+      font-family: 'Glyphicons Halflings';
+      content: "\e131" ;
+      padding-right:5px;
+      vertical-align:middle;
+      color:$client-colour;
+    }
+    a:visited:before{color:$client-colour;}
+    
+  }
+
+  .link-arrow   { // this puts an arrow before any links with this class
+    p{padding-left: 1.3em ;
+      text-indent: -1.3em ;
+    }
+      a:before{
+      font-family: 'Glyphicons Halflings';
+      content: "\e131" ;
+      padding-right:5px;
+      // vertical-align:middle;
+      position:relative;
+      // top:3px;
+      color:$client-colour;
+    }
+  }
+
+
+  .list-group{ // Used in Dashboard/Support Docs panel .doc-list
+    margin-bottom:0px;
+    .group{
+      font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+      border-bottom:1px solid $bodytext;
+      padding-bottom:5px;
+      margin-bottom:5px;
+      border-top:1px solid $bodytext;
+      padding-top:5px;
+      margin-top:5px;
+    }
+    .group:first-of-type{
+      border-top:none;
+      padding-top:0px;
+      margin-top:0px;
+    }
+    .grouped{
+      border-bottom:1px solid white;
+      padding-bottom:5px;
+      margin-bottom:5px;
+
+      // a:link{ color:$bodytext;}
+      // a:visited{ color:$bodytext;}
+      // a:hover{ color:$link-hover;}
+      // a:active{ color:$link-hover;}
+      // a:link:before{
+      //   font-family: 'Glyphicons Halflings';
+      //   content: "\e131" ;
+      //   padding-right:5px;
+      //   vertical-align:middle;
+      //   color:$client-colour;
+      // }
+      // a:visited:before{color:$client-colour;}
+    }
+  }
+
+   a.link-arrow:before{ // Used on Dashboard/Your Details, email link
+    font-family: 'Glyphicons Halflings';
+        content: "\e131" ;
+        padding-right:5px;
+        vertical-align:middle;
+        color:$client-colour;
+        a:visited:before{color:$client-colour;}
+  }
+
+// Box content ========================================================
+
+  .box-content{ // Used on Dashboard/Notifications
+    .date {
+      font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+      background: $grey16;
+      color:white;
+      padding: 3px 10px;
+      margin: 10px -3px 8px -3px;
+      border-radius:20px;
+    }
+
+    .time {
+      font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+      border-top: 1px solid white;
+      padding-top: 10px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+    .time:first-of-type{
+      border-top: none;
+      padding-top: 0px;
+    }
+    ul{ padding-left:10px; }
+  }
+
 
 
 // Images adjustments ================================================
@@ -322,7 +470,6 @@ img.user-guide-cover{
   width: 100%;
   min-width: 100%;
   margin-bottom:60px;
-
 }
 
 
