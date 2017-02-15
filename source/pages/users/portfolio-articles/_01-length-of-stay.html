@@ -13,37 +13,15 @@
   <div class=" col-xs-12">
 
       <div class="appraisal-dataset-guidance">
-
-        <div class="col-xs-12 col-sm-6">
-          <div class="rag-boxes">
-            <a href="#" class="box box-red selected">
-              <div class="rag rag-red ">Red
-              </div>
-            </a>
-          </div>
-        
-          <div class="rag-boxes">
-            <a href="#" class="box box-amber">
-              <div class="rag rag-amber ">Amber
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="no-indent col-xs-12 col-sm-6">
-          <div class="rag-boxes">
-            <a href="#" class="box box-green">
-              <div class="rag rag-green ">Green
-              </div>
-            </a>
-          </div>
-  
-          <div class="rag-boxes">
-            <a href="#" class="box box-na">
-              <div class="rag rag-na ">N/A
-              </div>
-            </a>
-          </div>
+        <h4><a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="Click on the buttons below to change the status" data-placement="bottom" data-content="- Red means you haven’t started this section yet.<br>
+      - Amber means you are working on this section, but it is not yet finished.<br>
+      - Green means you have added evidence and this section is complete.<br>
+      - N/A means this section is not applicable to you."></a></h4>
+        <div class="rag-buttons">
+          <button class="rag-btn rag-btn-red" data-tab="red">Red</button>
+          <button class="rag-btn rag-btn-green selected" data-tab="green">Green</button>
+          <button class="rag-btn rag-btn-amber" data-tab="amber">Amber</button>
+          <button class="rag-btn rag-btn-na" data-tab="na">N/A</button>
         </div>
 
       </div> <!-- appraisal-dataset-guidance -->
@@ -311,5 +289,4 @@
   </div> <!-- END evidences -->
   
 </div> <!-- END Row -->
-
 

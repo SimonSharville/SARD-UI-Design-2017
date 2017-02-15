@@ -1,0 +1,1 @@
+$(".rag-btn").on("click",function(){$(".rag-btn").removeClass("selected"),$(this).addClass("selected")});
