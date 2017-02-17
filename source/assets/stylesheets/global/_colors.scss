@@ -1,0 +1,152 @@
+
+
+//  SARD Colours ===============
+$turq:                  #00B2B2;
+$pink:                  #E50073;
+$orange:                #FF6A00;
+$yellow:                #FFB200;
+$lime:                  #A7BF30;
+$green:                 #359E00;
+$teal:                  #004D4D;
+$blue:                  #003CB8;
+$ink:                   #000078;
+$purple:                #52008C;
+$plum:                  #990099;
+$red:                   #BF0000;
+$white:                 #FFFFFF;
+
+$MRv:                   $turq;
+$NRv:                   $orange;
+$sa-360:                $yellow;
+$eLeave:                $lime;
+$A4A:                   $plum;
+$JPL:                   $pink;
+$eRo:                   $teal;
+$CPL:                   $red;
+
+//  Greys ======================
+$grey02:                #EDEBEB;
+$grey03:                #E3E1E1;
+$grey04:                #D9D6D6;
+$grey06:                #C7C4C2;
+$grey08:                #B5B0B0;
+$grey10:                #A39E9C;
+$grey12:                #827D7D;
+$grey14:                #615E5C;
+$grey16:                #403D3D;
+$grey18:                #211F0F;
+
+//  Other Colours ==============
+$active:                $grey04; // Used in Bootstrap Overrides Table Hover line 1030.
+$success:               #33cc33;
+$info:                  #00CCFF;
+$warning:               #FFCC00;
+$danger:                #FF0000;
+$alert:                 $pink;
+
+
+// Global Mixins ===================
+$background:            $grey04;
+
+$client-colour:                $turq; 
+$client-colour-light:          lighten($client-colour, 5%);
+$client-colour-very-light:     lighten($client-colour, 10%);
+$client-colour-dark:           darken($client-colour, 10%);
+$client-colour-very-dark:      darken($client-colour, 20%);
+
+$panelBaseGrey:         $grey03;
+
+// Text Colours ====================
+
+.turq{ color: $turq;}
+.pink{ color: $pink;}
+.orange{ color: $orange;}
+.yellow{ color: $yellow;}
+.lime{ color: $lime;}
+.green{ color: $green;}
+.teal{ color: $teal;}
+.blue{ color: $blue;}
+.ink{ color: $ink;}
+.purple{ color: $purple;}
+.plum{ color: $plum;}
+.red{ color: $red;}
+.white{ color: $white;}
+
+.MRv{ color: $MRv;}
+.NRv{ color: $NRv;}
+.sa-360{ color: $sa-360;}
+.eLeave{ color: $eLeave;}
+.A4A{ color: $A4A;}
+.JPL{ color: $JPL;}
+.eRo{ color: $eRo;}
+.CPL{ color: $CPL;}
+
+.grey02{ color: $grey02;}
+.grey03{ color: $grey03;}
+.grey04{ color: $grey04;}
+.grey06{ color: $grey06;}
+.grey08{ color: $grey08;}
+.grey10{ color: $grey10;}
+.grey10{ color: $grey10;}
+.grey12{ color: $grey12;}
+.grey14{ color: $grey14;}
+.grey16{ color: $grey16;}
+.grey18{ color: $grey18;}
+
+.success{ color: $success;}
+.info{ color: $info;}
+.warning{ color: $warning;}
+.danger{ color: $danger;}
+.alert{ color: $alert;}
+
+// Background Colours ====================
+
+.turq-bg{ background-color: $turq;}
+.pink-bg{ background-color: $pink;}
+.orange-bg{ background-color: $orange;}
+.yellow-bg{ background-color: $yellow;}
+.lime-bg{ background-color: $lime;}
+.green-bg{ background-color: $green;}
+.teal-bg{ background-color: $teal;}
+.blue-bg{ background-color: $blue;}
+.ink-bg{ background-color: $ink;}
+.purple-bg{ background-color: $purple;}
+.plum-bg{ background-color: $plum;}
+.red-bg{ background-color: $red;}
+.white-bg{ background-color: $white;}
+
+.MRv-bg{ background-color: $MRv;}
+.NRv-bg{ background-color: $NRv;}
+.sa-360-bg{ background-color: $sa-360;}
+.eLeave-bg{ background-color: $eLeave;}
+.A4A-bg{ background-color: $A4A;}
+.JPL-bg{ background-color: $JPL;}
+.eRo-bg{ background-color: $eRo;}
+.CPL-bg{ background-color: $CPL;}
+
+.grey02-bg{ background-color: $grey02;}
+.grey03-bg{ background-color: $grey03;}
+.grey04-bg{ background-color: $grey04;}
+.grey06-bg{ background-color: $grey06;}
+.grey08-bg{ background-color: $grey08;}
+.grey10-bg{ background-color: $grey10;}
+.grey10-bg{ background-color: $grey10;}
+.grey12-bg{ background-color: $grey12;}
+.grey14-bg{ background-color: $grey14;}
+.grey16-bg{ background-color: $grey16;}
+.grey18-bg{ background-color: $grey18;}
+
+.success-bg{ background-color: $success;}
+.info-bg{ background-color: $info;}
+.warning-bg{ background-color: $warning;}
+.danger-bg{ background-color: $danger;}
+.alert-bg{ background-color: $alert;}
+
+// Admin Mixins ====================
+
+$admin-colour:               $pink;
+$admin-colour-light:         lighten($admin-colour, 5%);
+$admin-colour-very-light:    lighten($admin-colour, 10%);
+$admin-colour-dark:          darken($admin-colour, 10%);
+$admin-colour-very-dark:     darken($admin-colour, 20%);
+

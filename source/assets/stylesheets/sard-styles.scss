@@ -5,9 +5,11 @@
 
 
 // Global styles =======================
-  @import "global/variables";
+  @import "global/colors";
 
   @import "global/fonts";
+
+  @import "../fonts/font-awesome/css/font-awesome.css";
 
   @import "global/typography";
 
@@ -36,13 +38,15 @@
 
   // Experiments =======================
 
-  // @import "experiments/sa-vertical-tabs-exp01";
 
   @import "experiments/sa-sidebar";
 
    @import "experiments/sa-polygon";
 
   // Removed
+
+  // @import "experiments/sa-vertical-tabs-exp01";
+  
   // @import "experiments/sa-bhoechie-vertical-tabs";
 
   // @import "experiments/sa-simple-vertical-tabs";

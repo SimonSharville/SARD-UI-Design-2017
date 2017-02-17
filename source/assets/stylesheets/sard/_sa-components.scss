@@ -318,24 +318,17 @@ padding-right:16px;
     list-style-type: none;
   }
 
-  p.link-icon{
-    padding-left: 1.3em ;
-    text-indent: -1.3em ;
-  }
-
-  .link-icon{ // This places the arrow icon in front of a text link
+  .link-arrow{ // This places the arrow icon in front of a text link
     p{padding-left: 1.3em ;
       text-indent: -1.3em ;
     }
     a:link:before{
-      font-family: 'Glyphicons Halflings';
-      content: "\e131" ;
+      font-family: 'FontAwesome';
+      content: "\f0a9" ;
       padding-right:5px;
-      vertical-align:middle;
       color:$client-colour;
     }
     a:visited:before{color:$client-colour;}
-    
   }
 
   .link-arrow   { // this puts an arrow before any links with this class
@@ -343,12 +336,10 @@ padding-right:16px;
       text-indent: -1.3em ;
     }
       a:before{
-      font-family: 'Glyphicons Halflings';
-      content: "\e131" ;
+      font-family: 'FontAwesome';
+      content: "\f0a9" ;
       padding-right:5px;
-      // vertical-align:middle;
       position:relative;
-      // top:3px;
       color:$client-colour;
     }
   }
@@ -374,25 +365,12 @@ padding-right:16px;
       border-bottom:1px solid white;
       padding-bottom:5px;
       margin-bottom:5px;
-
-      // a:link{ color:$bodytext;}
-      // a:visited{ color:$bodytext;}
-      // a:hover{ color:$link-hover;}
-      // a:active{ color:$link-hover;}
-      // a:link:before{
-      //   font-family: 'Glyphicons Halflings';
-      //   content: "\e131" ;
-      //   padding-right:5px;
-      //   vertical-align:middle;
-      //   color:$client-colour;
-      // }
-      // a:visited:before{color:$client-colour;}
     }
   }
 
    a.link-arrow:before{ // Used on Dashboard/Your Details, email link
-    font-family: 'Glyphicons Halflings';
-        content: "\e131" ;
+    font-family: 'FontAwesome';
+        content: "\f0a9" ;
         padding-right:5px;
         vertical-align:middle;
         color:$client-colour;
@@ -433,7 +411,6 @@ padding-right:16px;
 }
 img.user-guide-cover{
   width: 100%;
-  // max-width:270px;
   margin-top:10px;
   margin-bottom:10px;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5); 
