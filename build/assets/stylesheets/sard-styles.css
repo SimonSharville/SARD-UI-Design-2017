@@ -2718,7 +2718,12 @@ img.user-guide-cover {
   margin-right: 2px;
   z-index: 1000;
   text-align: left;
-  padding: 5px; }
+  padding: 5px;
+  -webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  -webkit-filter: drop-shadow(6px 0 2px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(6px 0 2px rgba(0, 0, 0, 0.2)); }
 
 .poly-1 {
   display: inherit;
@@ -2758,4 +2763,7 @@ img.user-guide-cover {
   height: 130px;
   position: relative;
   z-index: 1000;
-  vertical-align: middle; }
+  vertical-align: middle;
+  -webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2); }

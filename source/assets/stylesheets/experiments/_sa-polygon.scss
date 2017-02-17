@@ -31,6 +31,13 @@ $tab-pane-colour:   white;
   z-index:1000;
   text-align:left;
   padding:5px;
+
+  -webkit-box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.2); // Shadows don't seem to work with polygons
+  -moz-box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.2);
+  box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.2);
+
+  -webkit-filter: drop-shadow( 6px 0 2px hsla(0, 0%, 0%, 0.2));  // Nor as filter
+  filter: drop-shadow( 6px 0 2px hsla(0, 0%, 0%, 0.2));
 }
 
 .poly-1{
@@ -78,9 +85,9 @@ $tab-pane-colour:   white;
   position:relative;
   z-index:1000;
   vertical-align:middle;
-  // -webkit-box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.2);
-  // -moz-box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.2);
-  // box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.2);
+  box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.2);
 }
 
 
