@@ -1,6 +1,229 @@
 /*!
   These are the SARD specific styles
  */
+@import url(../fonts/font-awesome/css/font-awesome.css);
+.turq {
+  color: #00B2B2; }
+
+.pink {
+  color: #E50073; }
+
+.orange {
+  color: #FF6A00; }
+
+.yellow {
+  color: #FFB200; }
+
+.lime {
+  color: #A7BF30; }
+
+.green {
+  color: #359E00; }
+
+.teal {
+  color: #004D4D; }
+
+.blue {
+  color: #003CB8; }
+
+.ink {
+  color: #000078; }
+
+.purple {
+  color: #52008C; }
+
+.plum {
+  color: #990099; }
+
+.red {
+  color: #BF0000; }
+
+.white {
+  color: #FFFFFF; }
+
+.MRv {
+  color: #00B2B2; }
+
+.NRv {
+  color: #FF6A00; }
+
+.sa-360 {
+  color: #FFB200; }
+
+.eLeave {
+  color: #A7BF30; }
+
+.A4A {
+  color: #990099; }
+
+.JPL {
+  color: #E50073; }
+
+.eRo {
+  color: #004D4D; }
+
+.CPL {
+  color: #BF0000; }
+
+.grey02 {
+  color: #EDEBEB; }
+
+.grey03 {
+  color: #E3E1E1; }
+
+.grey04 {
+  color: #D9D6D6; }
+
+.grey06 {
+  color: #C7C4C2; }
+
+.grey08 {
+  color: #B5B0B0; }
+
+.grey10 {
+  color: #A39E9C; }
+
+.grey10 {
+  color: #A39E9C; }
+
+.grey12 {
+  color: #827D7D; }
+
+.grey14 {
+  color: #615E5C; }
+
+.grey16 {
+  color: #403D3D; }
+
+.grey18 {
+  color: #211F0F; }
+
+.success {
+  color: #33cc33; }
+
+.info {
+  color: #00CCFF; }
+
+.warning {
+  color: #FFCC00; }
+
+.danger {
+  color: #FF0000; }
+
+.alert {
+  color: #E50073; }
+
+.turq-bg {
+  background-color: #00B2B2; }
+
+.pink-bg {
+  background-color: #E50073; }
+
+.orange-bg {
+  background-color: #FF6A00; }
+
+.yellow-bg {
+  background-color: #FFB200; }
+
+.lime-bg {
+  background-color: #A7BF30; }
+
+.green-bg {
+  background-color: #359E00; }
+
+.teal-bg {
+  background-color: #004D4D; }
+
+.blue-bg {
+  background-color: #003CB8; }
+
+.ink-bg {
+  background-color: #000078; }
+
+.purple-bg {
+  background-color: #52008C; }
+
+.plum-bg {
+  background-color: #990099; }
+
+.red-bg {
+  background-color: #BF0000; }
+
+.white-bg {
+  background-color: #FFFFFF; }
+
+.MRv-bg {
+  background-color: #00B2B2; }
+
+.NRv-bg {
+  background-color: #FF6A00; }
+
+.sa-360-bg {
+  background-color: #FFB200; }
+
+.eLeave-bg {
+  background-color: #A7BF30; }
+
+.A4A-bg {
+  background-color: #990099; }
+
+.JPL-bg {
+  background-color: #E50073; }
+
+.eRo-bg {
+  background-color: #004D4D; }
+
+.CPL-bg {
+  background-color: #BF0000; }
+
+.grey02-bg {
+  background-color: #EDEBEB; }
+
+.grey03-bg {
+  background-color: #E3E1E1; }
+
+.grey04-bg {
+  background-color: #D9D6D6; }
+
+.grey06-bg {
+  background-color: #C7C4C2; }
+
+.grey08-bg {
+  background-color: #B5B0B0; }
+
+.grey10-bg {
+  background-color: #A39E9C; }
+
+.grey10-bg {
+  background-color: #A39E9C; }
+
+.grey12-bg {
+  background-color: #827D7D; }
+
+.grey14-bg {
+  background-color: #615E5C; }
+
+.grey16-bg {
+  background-color: #403D3D; }
+
+.grey18-bg {
+  background-color: #211F0F; }
+
+.success-bg {
+  background-color: #33cc33; }
+
+.info-bg {
+  background-color: #00CCFF; }
+
+.warning-bg {
+  background-color: #FFCC00; }
+
+.danger-bg {
+  background-color: #FF0000; }
+
+.alert-bg {
+  background-color: #E50073; }
+
 /* ROBOTO */
 @font-face {
   font-family: 'robotothin';
@@ -2062,22 +2285,17 @@ button:hover {
 ul {
   list-style-type: none; }
 
-p.link-icon {
+.link-arrow p {
   padding-left: 1.3em;
   text-indent: -1.3em; }
 
-.link-icon p {
-  padding-left: 1.3em;
-  text-indent: -1.3em; }
-
-.link-icon a:link:before {
-  font-family: 'Glyphicons Halflings';
-  content: "\e131";
+.link-arrow a:link:before {
+  font-family: 'FontAwesome';
+  content: "\f0a9";
   padding-right: 5px;
-  vertical-align: middle;
   color: #00B2B2; }
 
-.link-icon a:visited:before {
+.link-arrow a:visited:before {
   color: #00B2B2; }
 
 .link-arrow p {
@@ -2085,8 +2303,8 @@ p.link-icon {
   text-indent: -1.3em; }
 
 .link-arrow a:before {
-  font-family: 'Glyphicons Halflings';
-  content: "\e131";
+  font-family: 'FontAwesome';
+  content: "\f0a9";
   padding-right: 5px;
   position: relative;
   color: #00B2B2; }
@@ -2111,8 +2329,8 @@ p.link-icon {
     margin-bottom: 5px; }
 
 a.link-arrow:before {
-  font-family: 'Glyphicons Halflings';
-  content: "\e131";
+  font-family: 'FontAwesome';
+  content: "\f0a9";
   padding-right: 5px;
   vertical-align: middle;
   color: #00B2B2; }
@@ -2181,16 +2399,6 @@ img.user-guide-cover {
   line-height: 1em;
   text-indent: -1.28571429em;
   padding: 0.25em 0em 0.25em 1.28571429em; }
-
-.appraisal-dataset-guidance {
-  /* Custom, iPhone Retina */
-  /* Extra Small Devices, Phones */
-  /* Small Devices, Tablets */
-  /* Medium Devices, Desktops */
-  /* Large Devices, Wide Screens */ }
-
-.evidences, .comments, .notes {
-  /* Medium Devices, Desktops */ }
 
 .appraisal-header .section {
   margin: 0;
