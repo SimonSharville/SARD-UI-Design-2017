@@ -132,34 +132,413 @@
 
     <!-- ============================================================================ -->
     <!-- MAIN CONTENT  - OPTIONAL  -->
-    <div class="sa-main-content ">
-      <div class="container">
- 
-      <div class="polygon-wrapper">
-        <div class="polygon poly-1 rag-green">
-          Polygon-1
-        </div>
-        <div class="polygon poly-1 rag-green">
-          Polygon-1
-        </div>
-        <div class="polygon poly-1 rag-white">
-          Polygon-2
-        </div>
-        <div class="circle rag-na">
-          Circle
-        </div>
-        <div class="polygon poly-2 rag-white">
-          Polygon-2
-        </div>
-        <div class="polygon poly-1 rag-white">
-          Polygon-1
-        </div>
-        <div class="polygon poly-1 rag-white">
-          Polygon-1
-        </div>
-      </div> <!-- END polygon-wrapper -->
-    </div> <!-- END container -->
+        <div class="container sa-main-content">
 
+      
+        <div class="col-md-3 col-md-push-9 sa-right-column">
+
+            <div class="row">  <!-- Row for top 2 panels -->
+              <div class="col-sm-6 col-md-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Notices<a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="Popover title" data-placement="bottom" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam massa sem, aliquet a sagittis sit amet, euismod hendrerit massa. Morbi lorem mauris, sagittis ut dapibus et, rutrum et risus. Phasellus in erat faucibus, venenatis risus et, congue diam. Maecenas feugiat sem in ante suscipit, et conseuqat justo ultricies. Donec a tincidunt dolor. Cras faucibus ipsum id laoreet pulvinar. Nulla porttitor metus eget mauris convallis mollis. Proin tempus mi id tortor elementum lobortis eu quis dui. In id nisl congue, fermentum risus eget, fringilla tellus. Phasellus auctor diam vel porta efficitur. Nunc quis ante a mi egestas vulputate eget eu arcu. Nam dui arcu, commodo eu congue at, imperdiet maximus leo."></a></h3>
+                  </div>
+                  <div class="panel-body">
+                    <div class="notice status status-success">
+                      <a href="#">
+                        <h6>Recommendation Due</h6>
+                        <p>Fri 31 Jan 2020</p>
+                      </a>
+                    </div>
+                    <div class="notice status status-warning">
+                      <a href="#">
+                        <h6>Approved Clinician Expiry</h6>
+                        <p>Sun 22 Oct 2017</p>
+                      </a>
+                    </div>
+                    <div class="notice status status-alert">
+                      <a class="pull-right glyphicon glyphicon-info-sign"  
+                      data-toggle="tooltip" 
+                      title="The <strong>GMC Registration Expiry</strong> is the date on which you normally renew your GMC registration. 
+                      This can be updated by clicking on 'Edit My Details' below. 
+                      If your GMC registration is renewed annually by direct debit this can be blank."></a>
+                      <a href="#">
+                        <h6>GMC Registration Expiry</h6>
+                        <p>Sat 01 Jul 2017</p>
+                      </a>
+                    </div>
+                    <div class="notice status status-danger">
+                      <a href="#">
+                        <h6>Appraisal Due</h6>
+                        <p>Sat 01 Jul 2017</p>
+                      </a>
+                    </div>
+                    <div class="notice status status-success">
+                      <a class="pull-right glyphicon glyphicon-info-sign"  
+                      data-toggle="tooltip" 
+                      title="Your <strong>MSF due date</strong> is 5 years after the date of your last complete MSF. 
+                      To have a complete MSF you must have completed the self assessment questionnaire, colleague feedback and patient feedback."></a>
+                      <a href="#">
+                        <h6>MSF Due</h6>
+                        <p>Wed 14 Jul 2021</p>
+                      </a>
+                    </div>
+                    <div class="notice status status-none">
+                      <a href="#">
+                        <h6>Job Plan Due</h6>
+                        <p>Sun 01 Apr 2018</p>
+                      </a>
+                    </div>
+                  </div>
+                </div> <!-- END Panel -->
+              </div> <!-- END Col -->
+
+              <div class="col-sm-6 col-md-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Support Docs</h3>
+                  </div>
+                  <div class="panel-body">
+                      <ul class="list-group doc-list">
+                        <li class="group">Trust Policy Documents</li>
+                        <li class="grouped link-icon"><a href="https://s3-eu-west-1.amazonaws.com/sardjv-production/uploads/public/support_documents/sources/52b/463/15e/3e1/f15/747/000/3f2/original/appraisal.txt?1387553885" target="_blank">Appraisal Policy</a></li>
+                        <li class="grouped link-icon"><a href="https://s3-eu-west-1.amazonaws.com/sardjv-production/uploads/public/support_documents/sources/57e/13f/4f8/025/420/c86/000/005/original/GSTT_DBS_declaration.docx?1474379599" target="_blank">DBS Declaration</a></li>
+                        </ul>
+                  </div>
+                </div> <!-- END Panel -->
+              </div> <!-- END Col -->
+            </div> <!-- END Row for top 2 panels -->
+
+            <div class="row">  <!-- Row for bottom panels -->
+              <div class="col-sm-6 col-md-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Your Details</h3>
+                  </div>
+                  <div class="panel-body list">
+                    <p>
+                    <strong>GMC Reference Number:</strong>
+                    123456788
+                    </p>
+                    <p>
+                    <strong>Employee Number:</strong>
+                    3
+                    </p>
+                    <p>
+                    <strong>Email:</strong>
+                    john@example.com
+                    </p>
+                    <p>
+                    <strong>Directorate:</strong>
+                    Test
+                    </p>
+                    <p>
+                    <strong>Location org l4:</strong>
+                    KH Test Location Org
+                    </p>
+                    <p>
+                    <strong>Team org l5:</strong>
+                    Andrews Team
+                    </p>
+                    <p>
+                    <strong>Delegates:</strong>
+                    <br>
+                    Mrs Bella Owen<br>Miss Jane T Jones
+                    </p>
+                    <p>
+                    <strong>
+                    Lead Appraiser:
+                    </strong>
+                    <br>
+                    Dr Janet T Johnson
+                    <br>
+                    <a href="mailto:janet@example.com" class="link-arrow">Email: janet@example.com</a>
+                    <br>
+                    </p>
+                    <p>
+                    <strong>Medical Roles:</strong>
+                    <br>
+                    DIR ALD Doctor (T)<br>Doctor<br>Educational Supervisor<br>Inpatient Doctor (T)<br>Psychiatrist (T)<br>Those with responsibility to section (T)
+                    </p>
+                  </div>
+                  <div class="perf-wht"></div>
+                  <div class="panel-body button">
+                    <a href="" class="btn btn-default">Edit My Details</a>
+                  </div>
+                </div> <!-- END Panel -->
+              </div> <!-- END Col -->
+
+              <div class="col-sm-6 col-md-12">
+                <div class="panel panel-clean">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Support Documents</h3>
+                  </div>
+                  <div class="panel-body">
+                    <div class="row doc-covers">
+                    <div class="col-xs-6 col-md-12">
+                    <a href="assets/docs/SARD-User-Guide-Job-Planning.pdf" target="new">
+                      <img src="../../assets/images/SARD-User-Guide-Job-Planning-cover.png" class="user-guide-cover" alt="Job Planning User Guide">
+                    </a>
+                    </div>
+                    <div class="col-xs-6 col-md-12">
+                    <a href="assets/docs/SARD-User-Guide-eLeave.pdf" target="new">
+                      <img src="../../assets/images/SARD-User-Guide-eLeave-cover.png" class="user-guide-cover" alt="Job Planning User Guide">
+                    </a>
+                    </div>
+                    </div>
+                  </div>
+
+                </div> <!-- END Panel -->
+              </div> <!-- END Col -->
+
+            </div> <!-- END Row for bottom panels -->
+
+        </div> <!-- END sa-side-column -->
+
+        <!-- ==================================================================== -->
+
+
+
+        <!-- ==================================================================== -->
+
+
+        <div class="col-md-9 col-md-pull-3 sa-main-column">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">What to do next<a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" 
+                title="Getting Started" 
+                data-placement="left" 
+                data-content="<p>To get started, click on the ‘New Appraisal’ button in the Appraisals section. This will create 2 new pages: ‘My Appraisal’ and ‘My Portfolio’.</p>
+                <p><strong>01 Update Portfolio</strong>
+                                Evidence should be added for each section of your portfolio, then the section marked as green, amber or N/A.</p>
+                <p><strong>02 Appraisal Preparation</strong>
+                                Sections 1 to 18 of your appraisal should be filled in. Once you’ve completed a section you need to click on ‘Mark As Complete’.</p>
+                <p><strong>03 Send to Appraiser</strong>
+                                When Sections 1 to 18 have been marked as completed and all sections of the portfolio have been marked green, amber or N/A, you can submit the appraisal to your appraiser.</p>
+                <p><strong>04 Agree PDP and statements</strong>
+                                The appraiser is responsible for Section 19 and Section 20 of your appraisal. These should be completed during or after the appraisal meeting.</p>
+                <p><strong>05 Appraiser Sign-Off and Doctor Sign-Off</strong>
+                                Section 21 should be completed by the appraiser. Section 22 should be completed by the doctor.</p>
+                <p><strong>06 Submit to RO</strong>
+                                 Once the appraisal is complete, the appraiser can submit it to the responsible officer. No changes can be made after this point.</p> "></a></h3>
+            </div>
+            <div class="panel-body step-by-step">
+              <img src="../../assets/graphics/step_by_step_1.png" alt="Step by Step graphic">
+            </div>
+
+            <div class="polygon-wrapper">
+              <div class="polygon poly-1 rag-green">
+                Polygon-1
+              </div>
+              <div class="polygon poly-1 rag-green">
+                Polygon-1
+              </div>
+              <div class="polygon poly-1 rag-white">
+                Polygon-2
+              </div>
+              <div class="circle rag-na">
+                Circle
+              </div>
+              <div class="polygon poly-2 rag-white">
+                Polygon-2
+              </div>
+              <div class="polygon poly-1 rag-white">
+                Polygon-1
+              </div>
+              <div class="square rag-white">
+                Polygon-1
+              </div>
+            </div> <!-- END polygon-wrapper -->
+
+            <div class="panel-body">
+              <p><strong>NOTES on above<br></strong>
+                Above is a test in recreataing the graphic with live css polygons.</br>
+                <strong>Issues:</strong> Doesn't work in IE8.</br>
+                Can't add shadows to polygons.
+              </p>
+            </div>
+            <div class="perf-wht"></div>
+            <div class="panel-body button">
+              <a href="" class="btn btn-default">Go to Portfolio</a>
+            </div>
+          </div> <!-- END Panel -->
+
+          <!-- ==================================================================== -->
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Your Notifications</h3>
+            </div>
+            <div class="panel-body">
+              <div class="box-content content">
+              <p class="date">Sat, 10 Dec 2016</p>
+              <ul class="link-icon">
+                <h6 class="time">01:16PM</h6>
+                <li><p><a href="https://demo.sardjv.co.uk/users/2-3/eleave_calendar">Dr Janet T Johnson approved a leave period</a></p></li>
+              </ul>
+                <p class="date">Thu, 08 Dec 2016</p>
+              <ul class="link-icon">
+                <h6 class="time">10:41 AM</h6>
+                <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith is now complete</a></p></li>
+                <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith has been signed off by  Laura Gordon</a></p></li>
+                <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith has been signed off by Dr Sophie Buijsen</a></p></li>
+                <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith has been signed off by Dr John T Smith</a></p></li>
+                <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith is ready to sign off and requires your signature</a></p></li>
+                <h6 class="time">09:30 AM</h6>
+                <li><p><a href="https://demo.sardjv.co.uk/users/2-3/eleave_calendar">Dr Janet T Johnson approved a leave period</a></p></li>
+              </ul>
+              <p class="date">Thu, 17 Nov 2016</p>
+              <ul class="link-icon">
+                <h6 class="time">03:33 PM</h6>
+                <li><p><a href="https://demo.sardjv.co.uk/users/2-3/appraisals/jul2016-1/portfolio#domain_attributes/5034dfb2e3e1f1226d00000c/appraisal_datasets/5034e01ee3e1f12443000055">Evidence uploaded by  SARD System was attached to your portfolio Jul 2016</a></p></li>
+                <h6 class="time">03:32PM</h6>
+                <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/555c56c1f2a39f7ff900017f">The Job Plan Apr 2017 for Dr John T Smith is now complete</a></p></li>
+                <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/555c56c1f2a39f7ff900017f">The Job Plan Apr 2017 for Dr John T Smith has been signed off by Dr Sophie Buijsen</a></p></li>
+              </ul>
+              </div>
+            </div>
+            <div class="perf-wht"></div>
+            <div class="panel-body button">
+              <a href="/notifications" class="btn btn-default">View All Notifications</a>
+            </div>
+          </div> <!-- END Panel -->
+
+          <!-- ==================================================================== -->
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Appraisals</h3>
+            </div>
+
+            <div class="panel-body panel-table table-responsive">
+              <table class="table table-hover">
+                <caption>This is an optional table caption.</caption>
+                <thead>
+                  <tr>
+                    <th class="status-col"></th>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Docs</th>
+                    <th>Portfolio</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="status-col">
+                      <div class="status status-alert"></div>
+                    </td>
+                    <td class="link-icon"><p><a href="#">Appraisal Jul 2016</a></p></td>
+                    <td>01 Jul 2016</td>
+                    <td class="link-icon"><p><a href="#" target="_blank">AppraisalPDF </a></p>
+                      <p><a href="#" target="_blank">PortfolioPDF </a></p>
+                      <p><a href="#" target="_blank">Medical Educators Framework Areas PDF xxx x xxxx xxx</a></p>
+                      <p><a href="#" target="_blank">SummaryPDF </a></p></td>
+                    <td><p class="link-icon"><a href="#">Portfolio Jul 2016</a></p></td>
+                  </tr>
+                  <tr>
+                    <td class="status-col">
+                      <div class="status status-danger"></div></td>
+                    <td class="link-icon"><p><a href="#">Appraisal Jul 2014</a></p></td>
+                    <td>29 Jul 2014</td>
+                    <td>Doc</td>
+                    <td>Portfolio</td>
+                  </tr>
+                  <tr>
+                    <td class="status-col">
+                      <div class="status status-success"></div></td>
+                    <td><p class="link-icon"><a href="#">Appraisal Oct 2013</a></p></td>
+                    <td>10 Oct 2013</td>
+                    <td>Doc</td>
+                    <td>Portfolio</td>
+                  </tr>
+                  <tr>
+                    <td class="status-col">
+                      <div class="status status-alert"></div></td>
+                    <td><p class="link-icon"><a href="#">Appraisal Jun 2013</a></p></td>
+                    <td>15 Jun 2013</td>
+                    <td>Doc</td>
+                    <td>Portfolio</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div><!-- END Panel Body-->
+            <div class="perf-wht"></div>
+            <div class="panel-body">
+              <p>No current appraisal in progress. </br>
+                Click on 'Add Appraisal' to get started. This will create your portfolio and appraisal form:
+              </p>
+              <button type="button" class="btn btn-default">Add Appraisal</button>
+            </div><!-- END Panel Body-->
+          </div> <!-- END Panel -->
+
+          <!-- ==================================================================== -->
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Multi Source Feedback</h3>
+            </div>
+
+            <div class="panel-body panel-table table-responsive">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Title</th>
+                    <th>Includes SA?</th>
+                    <th>Includes CF?</th>
+                    <th>Includes PF?</th>
+                    <th>Completion date</th>
+                    <th>Report</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><p><a href="#">MSF May 2012 (offline)</a></p></td>
+                    <td class="center"><span class="glyphicon glyphicon-ok"></td>
+                    <td class="center"><span class="glyphicon glyphicon-ok"></td>
+                    <td class="center"><span class="glyphicon glyphicon-ok"></td>
+                    <td>Wed, 02 May 2012</td>
+                    <td><p></p></td>
+                  </tr>
+                  <tr>
+                    <td><p><a href="#">MSF Jul 2016 (complete)</a></p></td>
+                    <td class="center"><span class="glyphicon glyphicon-ok"></td>
+                    <td class="center"><span class="glyphicon glyphicon-ok"></td>
+                    <td class="center"><span class="glyphicon glyphicon-ok"></td>
+                    <td>Thu, 14 Jul 2016</td>
+                    <td><p class="link-icon"><a href="#">MSF Report Nov 2015</a></p></td>
+                  </tr>
+                  <tr>
+                    <td><p><a href="#">MSF Jul 2016</a></p></td>
+                    <td class="center"><span class="glyphicon glyphicon-ok"></td>
+                    <td class="center"><span class="glyphicon glyphicon-remove"></td>
+                    <td class="center"><span class="glyphicon glyphicon-ok"></td>
+                    <td>No Date</td>
+                    <td><p></p></td>
+                  </tr>
+                  <tr>
+                    <td><p><a href="#">MSF Jan 2016 (offline)</a></p></td>
+                    <td class="center"><span class="glyphicon glyphicon-minus"></td>
+                    <td class="center"><span class="glyphicon glyphicon-ok"></td>
+                    <td class="center"><span class="glyphicon glyphicon-minus"></td>
+                    <td>Mon, 18 Jan 2016</td>
+                    <td><p></p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div><!-- END Panel Body-->
+            <div class="perf-wht"></div>
+            <div class="panel-body">
+              <button type="button" class="btn btn-default">Go to My MSF</button></br>
+              <button type="button" class="btn btn-default">Upload previous MSF</button>
+            </div><!-- END Panel Body-->
+          </div> <!-- END Panel -->
+
+
+        </div> <!-- END sa-main-column -->
+
+        <!-- ==================================================================== -->
+
+      
 
     </div> <!-- END ROW sa-Main Content -->
   </div>  <!-- END sa-Main Section -->
