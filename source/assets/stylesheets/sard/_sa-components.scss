@@ -331,10 +331,13 @@ padding-right:16px;
     a:visited:before{color:$client-colour;}
   }
 
-  .link-arrow   { // this puts an arrow before any links with this class
-    p{padding-left: 1.3em ;
-      text-indent: -1.3em ;
+  p.link-arrow{
+    padding-left: 1.5rem ;
+    text-indent: -1.5rem ;
     }
+
+  .link-arrow   { // this puts an arrow before any links with this class
+
       a:before{
       font-family: 'FontAwesome';
       content: "\f0a9" ;

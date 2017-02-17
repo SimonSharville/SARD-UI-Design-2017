@@ -2298,9 +2298,9 @@ ul {
 .link-arrow a:visited:before {
   color: #00B2B2; }
 
-.link-arrow p {
-  padding-left: 1.3em;
-  text-indent: -1.3em; }
+p.link-arrow {
+  padding-left: 1.5rem;
+  text-indent: -1.5rem; }
 
 .link-arrow a:before {
   font-family: 'FontAwesome';
