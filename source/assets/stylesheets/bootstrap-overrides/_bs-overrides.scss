@@ -47,10 +47,19 @@
   width: 100%;
 }
 
+.jumbotron .container{
+  // padding-left: 0px;
+  // padding-right: 0px;
+}
+
 
 
 // Navbar Default =====================================================================
 // These are taken from bootstrap-example-code.css and amended
+
+.navbar-brand{
+  padding: 0px 15px;
+}
 
 .navbar{
   border-radius: 0px;

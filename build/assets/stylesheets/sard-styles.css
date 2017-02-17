@@ -509,6 +509,9 @@ body {
 .jumbotron img {
   width: 100%; }
 
+.navbar-brand {
+  padding: 0px 15px; }
+
 .navbar {
   border-radius: 0px; }
 
