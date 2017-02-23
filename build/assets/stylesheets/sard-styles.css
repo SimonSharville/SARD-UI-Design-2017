@@ -398,17 +398,17 @@ strong {
   font-family: 'robotothin', Helvetica, Arial, Sans-serif;
   font-weight: normal; }
 
-.green {
-  color: #359E00; }
-
-.red {
-  color: #BF0000; }
-
 .center {
   text-align: center; }
 
 .centre {
   text-align: center; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
 
 .page-title .user-name {
   font-family: 'robotoregular';
@@ -438,6 +438,66 @@ a:hover {
 
 a:active {
   color: #007f7f; }
+
+.link-arrow p {
+  padding-left: 1.3em;
+  text-indent: -1.3em; }
+
+.link-arrow a:link:before {
+  font-family: 'FontAwesome';
+  content: "\f0a9";
+  padding-right: 5px;
+  color: #00B2B2; }
+
+.link-arrow a:visited:before {
+  color: #00B2B2; }
+
+p.link-arrow {
+  padding-left: 1.3em;
+  text-indent: -1.3em; }
+
+ul li p.link-arrow {
+  padding-left: 1.3em;
+  text-indent: -1.3em; }
+
+p.link-arrow a:link:before {
+  font-family: 'FontAwesome';
+  content: "\f0a9";
+  padding-right: 5px;
+  color: #00B2B2; }
+
+p.link-arrow a:visited:before {
+  color: #00B2B2; }
+
+.link-pdf p {
+  padding-left: 1.3em;
+  text-indent: -1.3em; }
+
+.link-pdf a:link:before {
+  font-family: 'FontAwesome';
+  content: "\f1c1";
+  padding-right: 5px;
+  color: #00B2B2; }
+
+.link-pdf a:visited:before {
+  color: #00B2B2; }
+
+p.link-pdf {
+  padding-left: 1.3em;
+  text-indent: -1.3em; }
+
+ul li p.link-pdf {
+  padding-left: 1.3em;
+  text-indent: -1.3em; }
+
+p.link-pdf a:link:before {
+  font-family: 'FontAwesome';
+  content: "\f1c1";
+  padding-right: 5px;
+  color: #00B2B2; }
+
+p.link-pdf a:visited:before {
+  color: #00B2B2; }
 
 a.glyphicon-info-sign {
   color: #00a3cc;
@@ -2287,30 +2347,6 @@ button:hover {
 
 ul {
   list-style-type: none; }
-
-.link-arrow p {
-  padding-left: 1.3em;
-  text-indent: -1.3em; }
-
-.link-arrow a:link:before {
-  font-family: 'FontAwesome';
-  content: "\f0a9";
-  padding-right: 5px;
-  color: #00B2B2; }
-
-.link-arrow a:visited:before {
-  color: #00B2B2; }
-
-p.link-arrow {
-  padding-left: 1.5rem;
-  text-indent: -1.5rem; }
-
-.link-arrow a:before {
-  font-family: 'FontAwesome';
-  content: "\f0a9";
-  padding-right: 5px;
-  position: relative;
-  color: #00B2B2; }
 
 .list-group {
   margin-bottom: 0px; }

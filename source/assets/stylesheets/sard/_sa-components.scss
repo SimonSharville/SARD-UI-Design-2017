@@ -318,36 +318,7 @@ padding-right:16px;
     list-style-type: none;
   }
 
-  .link-arrow{ // This places the arrow icon in front of a text link
-    p{padding-left: 1.3em ;
-      text-indent: -1.3em ;
-    }
-    a:link:before{
-      font-family: 'FontAwesome';
-      content: "\f0a9" ;
-      padding-right:5px;
-      color:$client-colour;
-    }
-    a:visited:before{color:$client-colour;}
-  }
-
-  p.link-arrow{
-    padding-left: 1.5rem ;
-    text-indent: -1.5rem ;
-    }
-
-  .link-arrow   { // this puts an arrow before any links with this class
-
-      a:before{
-      font-family: 'FontAwesome';
-      content: "\f0a9" ;
-      padding-right:5px;
-      position:relative;
-      color:$client-colour;
-    }
-  }
-
-
+  
   .list-group{ // Used in Dashboard/Support Docs panel .doc-list
     margin-bottom:0px;
     .group{

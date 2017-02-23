@@ -76,6 +76,8 @@ h1, h2, h3, h4, h5, h6, p{
     margin-bottom:0.5em;
     line-height: 1.3em;
   }
+
+
   li p { // This adjust the spacing and endents of multi line links in a list
     padding-left: 1.25em;
     text-indent:-1.25em;
@@ -124,11 +126,10 @@ h1, h2, h3, h4, h5, h6, p{
     font-weight:normal;
   }
 
-  .green { color:$green;}
-  .red { color:$red;}
-
   .center{text-align:center;}
   .centre{text-align:center;}
+  .left{text-align:left;}
+  .right{text-align:right;}
 
 
 // Global Page styles ==========================================================
@@ -147,7 +148,6 @@ h1, h2, h3, h4, h5, h6, p{
 
 //  TEXT LINK Styles ========================================================== 
 
-
   a {
     color: $turq;
     text-decoration: none; }
@@ -163,11 +163,75 @@ h1, h2, h3, h4, h5, h6, p{
     a:hover{ color:$link-hover;}
     a:active{ color:$link-hover;}
     
-    .link-arrow { 
-      // See sard/pages/index.scss
+    
+// Link Icons ==========================================================================
+
+  // ARROW =============================================================================
+  .link-arrow{ // This places the arrow icon in front of all text links in a single cell
+    p{padding-left: 1.3em ;
+      text-indent: -1.3em ;
     }
+    a:link:before{
+      font-family: 'FontAwesome';
+      content: "\f0a9" ;
+      padding-right:5px;
+      color:$turq;
+    }
+    a:visited:before{color:$turq;}
+  }
+
+  p.link-arrow{ // This places the pdf icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+
+  ul li p.link-arrow{ // This places the pdf icon in front individual text in a list
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+
+  p.link-arrow a:link:before{
+    font-family: 'FontAwesome';
+    content: "\f0a9" ;
+    padding-right:5px;
+    color:$turq;
+  }
+
+  p.link-arrow a:visited:before{color:$turq;}
 
 
+  // PDF ===========================================================================
+  .link-pdf{ // This places the pdf icon in front of all text links in a single cell
+    p{padding-left: 1.3em ;
+      text-indent: -1.3em ;
+    }
+    a:link:before{
+      font-family: 'FontAwesome';
+      content: "\f1c1" ;
+      padding-right:5px;
+      color:$turq;
+    }
+    a:visited:before{color:$turq;}
+  }
+
+  p.link-pdf{ // This places the pdf icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+  ul li p.link-pdf{ // This places the pdf icon in front individual text in a list
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+  p.link-pdf a:link:before{
+    font-family: 'FontAwesome';
+    content: "\f1c1" ;
+    padding-right:5px;
+    color:$turq;
+  }
+  p.link-pdf a:visited:before{color:$turq;}
+
+
+// Glyphicons =========================================================================
 
   a.glyphicon-info-sign{
     color: darken($info, 10%); 
@@ -180,9 +244,6 @@ h1, h2, h3, h4, h5, h6, p{
     color: darken($info, 20%);
   }
   
-
-
-  // Glyphicons =========================================================
   .table .glyphicon-ok{color:$green;}
   .table .glyphicon-remove{color:$red;}
   .table .glyphicon-minus{color:$grey16;}
