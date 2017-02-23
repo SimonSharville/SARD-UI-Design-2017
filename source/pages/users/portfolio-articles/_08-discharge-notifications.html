@@ -22,7 +22,7 @@
           <button class="rag-btn rag-btn-red" data-tab="red">Red</button>
           <button class="rag-btn rag-btn-green" data-tab="green">Green</button>
           <button class="rag-btn rag-btn-amber" data-tab="amber">Amber</button>
-          <button class="rag-btn rag-btn-na" data-tab="na">N/A</button>
+          <button class="rag-btn rag-btn-na selected" data-tab="na">N/A</button>
         </div>
 
       </div> <!-- appraisal-dataset-guidance -->
@@ -47,7 +47,7 @@
           <div class="expiry">
             <p>
             <label>Expiry Date:</label>
-            <input id="expiry" type="text" value="" class="hasDatepicker" placeholder="Add date"> <span class="glyphicon glyphicon-calendar">
+            <input id="expiry" type="text" value="" class="hasDatepicker" placeholder="Add date"> <span class="fa fa-calendar">
             </p>
           </div>
           <div class="col-xs-6 no-indent attachments">
@@ -83,7 +83,7 @@
       <div class="expiry">
           <strong>Expires: </strong>not given<br>
           <strong>From: </strong>not given<br>
-          <a href="#" class="btn btn-default btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
+          <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
           <a href="#" class="btn btn-danger btn-xs remove-evidence" role="button"><span class="glyphicon glyphicon-remove-sign"></span>Remove</a>
         </div> <!-- END expiry -->
     </div> <!-- END evidence -->
@@ -94,7 +94,7 @@
         <div class="icon">E</div>
       </div>
       <div class="detail">
-        <div class="title">Test</div>
+        <div class="title">Evidence</div>
         <div class="content"></div>
         
         <div class="edocs">
@@ -102,18 +102,23 @@
             <div class="attachment-fragment">
               <div class="file">
                 <a class="Research_Paper.pdf" href="#" target="_blank">
-                  <div class="name"><span class="glyphicon glyphicon-file"></span> Patient Feedback</div>
+                  <div class="name"><span class="fa fa-file-pdf-o"></span> Patient Feedback</div>
                 </a>
               </div> <!-- END file -->
             </div> <!-- END attachments-fragment -->
           </div> <!-- END attachments -->
         </div> <!-- END edocs -->
+        <div class="location">Location:&nbsp;
+          <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button">Appraisal</a>
+          <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button">Portfolio</a>
+          <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button">eDocs</a>
+        </div>
       </div> <!-- END detail -->
 
       <div class="expiry">
         <strong>Expires: </strong>18/05/2018<br>
         <strong>From: </strong>Portfolio Dec 2016<br>
-        <a href="#" class="btn btn-default btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
+        <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
         <a href="#" class="btn btn-danger btn-xs remove-evidence" role="button"><span class="glyphicon glyphicon-remove-sign"></span>Remove</a>
       </div> <!-- END expiry -->
 
@@ -151,7 +156,7 @@
 
     <div class="col-xs-12 evidence">
       <div class="icon-box">
-        <div class="icon">C</div>
+        <div class="icon"></div>
       </div>
       <div class="detail">
         <div class="title"></div>
@@ -166,7 +171,7 @@
           <strong>By: </strong>Dr John T Smith<br>
           18/01/2017 16:54 </br>
           <strong>From: </strong>Portfolio Dec 2016<br>
-          <a href="#" class="btn btn-default btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
+          <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
           <a href="#" class="btn btn-danger btn-xs remove-evidence" role="button"><span class="glyphicon glyphicon-remove-sign"></span>Remove</a>
         </div> <!-- END expiry -->
     </div> <!-- END evidence -->
@@ -177,7 +182,7 @@
         <div class="icon">C</div>
       </div>
       <div class="detail">
-        <div class="title">Test</div>
+        <div class="title">Comment/Feedback</div>
         <div class="content"></div>
         
         <div class="edocs">
@@ -185,9 +190,14 @@
             <div class="attachment-fragment">
               <div class="file">
                 <a class="Research_Paper.pdf" href="#" target="_blank">
-                  <div class="name"><span class="glyphicon glyphicon-file"></span> Patient Feedback</div>
+                  <div class="name"><span class="fa fa-file-pdf-o"></span> Patient Feedback</div>
                 </a>
               </div> <!-- END file -->
+              <div class="location">Location:&nbsp;
+          <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button">Appraisal</a>
+          <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button">Portfolio</a>
+          <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button">eDocs</a>
+        </div>
             </div> <!-- END attachments-fragment -->
           </div> <!-- END attachments -->
         </div> <!-- END edocs -->
@@ -197,7 +207,7 @@
         <strong>By: </strong>Dr John T Smith<br>
         18/01/2017 18:02 </br>
         <strong>From: </strong>Portfolio Dec 2016<br>
-        <a href="#" class="btn btn-default btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
+        <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
         <a href="#" class="btn btn-danger btn-xs remove-evidence" role="button"><span class="glyphicon glyphicon-remove-sign"></span>Remove</a>
       </div> <!-- END expiry -->
 
@@ -250,7 +260,7 @@
           <strong>By: </strong>Dr John T Smith<br>
           18/01/2017 16:54 </br>
           <strong>From: </strong>Portfolio Dec 2016<br>
-          <a href="#" class="btn btn-default btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
+          <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
           <a href="#" class="btn btn-danger btn-xs remove-evidence" role="button"><span class="glyphicon glyphicon-remove-sign"></span>Remove</a>
         </div> <!-- END expiry -->
     </div> <!-- END evidence -->
@@ -269,9 +279,14 @@
             <div class="attachment-fragment">
               <div class="file">
                 <a class="Research_Paper.pdf" href="#" target="_blank">
-                  <div class="name"><span class="glyphicon glyphicon-file"></span> Patient Feedback</div>
+                  <div class="name"><span class="fa fa-file-pdf-o"></span> Patient Feedback</div>
                 </a>
               </div> <!-- END file -->
+              <div class="location">Location:&nbsp;
+                <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button">Appraisal</a>
+                <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button">Portfolio</a>
+                <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button">eDocs</a>
+              </div>
             </div> <!-- END attachments-fragment -->
           </div> <!-- END attachments -->
         </div> <!-- END edocs -->
@@ -281,7 +296,7 @@
         <strong>By: </strong>Dr John T Smith<br>
         18/01/2017 18:02 </br>
         <strong>From: </strong>Portfolio Dec 2016<br>
-        <a href="#" class="btn btn-default btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
+        <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
         <a href="#" class="btn btn-danger btn-xs remove-evidence" role="button"><span class="glyphicon glyphicon-remove-sign"></span>Remove</a>
       </div> <!-- END expiry -->
 
