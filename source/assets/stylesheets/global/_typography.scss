@@ -231,6 +231,75 @@ h1, h2, h3, h4, h5, h6, p{
   p.link-pdf a:visited:before{color:$turq;}
 
 
+  // Phone ===========================================================================
+  .link-phone{ // This places the phone icon in front of all text links in a single cell
+    p{padding-left: 1.3em ;
+      text-indent: -1.3em ;
+    }
+    a:link:before{
+      font-family: 'FontAwesome';
+      content: "\f095" ;
+      padding-right:5px;
+      color:$grey18;
+    }
+    a:visited:before{color:$grey18;}
+  }
+
+  p.link-phone{ // This places the phone icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+  ul li p.link-phone{ // This places the phone icon in front individual text in a list
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+  p.link-phone a:link:before{
+    font-family: 'FontAwesome';
+    content: "\f095" ;
+    padding-right:5px;
+    color:$grey18;
+  }
+  p.link-phone a:visited:before{color:$grey18;}
+
+  span.link-phone:before{
+    font-family: 'FontAwesome';
+    content: "\f095" ;
+    padding-right:5px;
+    color:$grey18;
+  }
+
+
+  // EMAIL ===========================================================================
+  .link-email{ // This places the email icon in front of all text links in a single cell
+    p{padding-left: 1.3em ;
+      text-indent: -1.3em ;
+    }
+    a:link:before{
+      font-family: 'FontAwesome';
+      content: "\f003" ;
+      padding-right:5px;
+      color:$grey18;
+    }
+    a:visited:before{color:$grey18;}
+  }
+
+  p.link-email{ // This places the email icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+  ul li p.link-email{ // This places the email icon in front individual text in a list
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+  p.link-email a:link:before{
+    font-family: 'FontAwesome';
+    content: "\f003" ;
+    padding-right:5px;
+    color:$grey18;
+  }
+  p.link-email a:visited:before{color:$grey18;}
+
+
 // Glyphicons =========================================================================
 
   a.glyphicon-info-sign{

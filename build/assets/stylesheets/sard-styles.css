@@ -499,6 +499,72 @@ p.link-pdf a:link:before {
 p.link-pdf a:visited:before {
   color: #00B2B2; }
 
+.link-phone p {
+  padding-left: 1.3em;
+  text-indent: -1.3em; }
+
+.link-phone a:link:before {
+  font-family: 'FontAwesome';
+  content: "\f095";
+  padding-right: 5px;
+  color: #211F0F; }
+
+.link-phone a:visited:before {
+  color: #211F0F; }
+
+p.link-phone {
+  padding-left: 1.3em;
+  text-indent: -1.3em; }
+
+ul li p.link-phone {
+  padding-left: 1.3em;
+  text-indent: -1.3em; }
+
+p.link-phone a:link:before {
+  font-family: 'FontAwesome';
+  content: "\f095";
+  padding-right: 5px;
+  color: #211F0F; }
+
+p.link-phone a:visited:before {
+  color: #211F0F; }
+
+span.link-phone:before {
+  font-family: 'FontAwesome';
+  content: "\f095";
+  padding-right: 5px;
+  color: #211F0F; }
+
+.link-email p {
+  padding-left: 1.3em;
+  text-indent: -1.3em; }
+
+.link-email a:link:before {
+  font-family: 'FontAwesome';
+  content: "\f003";
+  padding-right: 5px;
+  color: #211F0F; }
+
+.link-email a:visited:before {
+  color: #211F0F; }
+
+p.link-email {
+  padding-left: 1.3em;
+  text-indent: -1.3em; }
+
+ul li p.link-email {
+  padding-left: 1.3em;
+  text-indent: -1.3em; }
+
+p.link-email a:link:before {
+  font-family: 'FontAwesome';
+  content: "\f003";
+  padding-right: 5px;
+  color: #211F0F; }
+
+p.link-email a:visited:before {
+  color: #211F0F; }
+
 a.glyphicon-info-sign {
   color: #00a3cc;
   background-color: white;
@@ -2621,6 +2687,11 @@ img.user-guide-cover {
   font-size: 1.500em;
   line-height: 1.15em;
   margin-bottom: 5px; }
+
+.tab-button {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-right: 20px; }
 
 .sa-h-tabs li p {
   text-indent: 0px;
