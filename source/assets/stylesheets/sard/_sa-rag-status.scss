@@ -19,19 +19,21 @@ $rag-white:        $white;
 
 .rag-white{ background-color:$rag-white; }
 
+.rag-default{ background-color:$grey16; }
+
 
 // Elements
 
 .rag-status-bar{
-  height:30px;
-  min-height:30px;
+  height:32px;
+  min-height:32px;
   margin-left:-20px;
   margin-top:-21px;
   margin-right:-21px;
   margin-bottom:10px;
   font-weight:bold;
   color:white;
-  padding:5px 20px 5px 20px;
+  padding:6px 22px 0px 22px;
 }
 
 

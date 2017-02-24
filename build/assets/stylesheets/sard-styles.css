@@ -108,7 +108,7 @@
   color: #FFCC00; }
 
 .danger {
-  color: #FF0000; }
+  color: #DF0000; }
 
 .alert {
   color: #E50073; }
@@ -219,7 +219,7 @@
   background-color: #FFCC00; }
 
 .danger-bg {
-  background-color: #FF0000; }
+  background-color: #DF0000; }
 
 .alert-bg {
   background-color: #E50073; }
@@ -1051,21 +1051,21 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 .panel-danger > .panel-heading {
   background-color: black;
-  color: #FF0000;
+  color: #DF0000;
   border: 0; }
 
 .panel-danger > .panel-body {
-  background-color: red; }
+  background-color: #df0000; }
 
 .panel-danger > .perf-wht {
-  background-color: red; }
+  background-color: #df0000; }
 
 .panel-danger > .perf-grey {
-  background-color: red; }
+  background-color: #df0000; }
 
 .panel-danger > .panel-footer {
   background-color: black;
-  color: #FF0000;
+  color: #DF0000;
   border: 0; }
 
 .panel-MRv > .panel-heading {
@@ -1353,10 +1353,10 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     color: black; }
 
 .alert-danger {
-  background-color: #FF0000;
+  background-color: #DF0000;
   border: none; }
   .alert-danger a:link {
-    color: #660000; }
+    color: #460000; }
   .alert-danger a:hover, .alert-danger a:focus {
     color: black; }
 
@@ -1563,22 +1563,22 @@ button:hover {
   background-color: #cca300 !important; }
 
 .btn-danger {
-  background-color: #e60000;
+  background-color: #c60000;
   color: white !important; }
 
 .btn-danger:visited {
-  background-color: #e60000;
+  background-color: #c60000;
   color: white !important; }
 
 .btn-danger:hover {
-  background-color: #cc0000;
+  background-color: #ac0000;
   color: white !important; }
 
 .btn-danger:active {
-  background-color: #cc0000 !important; }
+  background-color: #ac0000 !important; }
 
 .btn-danger:focus {
-  background-color: #cc0000 !important; }
+  background-color: #ac0000 !important; }
 
 .btn-grey {
   background-color: #333131;
@@ -1741,14 +1741,14 @@ button:hover {
 .table > thead > tr.danger > th,
 .table > tbody > tr.danger > th,
 .table > tfoot > tr.danger > th {
-  background-color: #FF0000; }
+  background-color: #DF0000; }
 
 .table-hover > tbody > tr > td.danger:hover,
 .table-hover > tbody > tr > th.danger:hover,
 .table-hover > tbody > tr.danger:hover > td,
 .table-hover > tbody > tr:hover > .danger,
 .table-hover > tbody > tr.danger:hover > th {
-  background-color: #cc0000; }
+  background-color: #ac0000; }
 
 .table-default {
   background-color: #E3E1E1; }
@@ -1865,7 +1865,7 @@ button:hover {
   background-color: #e6b800; }
 
 .panel-danger .table-hover > tbody > tr:hover {
-  background-color: #e60000; }
+  background-color: #c60000; }
 
 .tcol-66 {
   width: 66%; }
@@ -1994,16 +1994,19 @@ button:hover {
 .rag-white {
   background-color: #FFFFFF; }
 
+.rag-default {
+  background-color: #403D3D; }
+
 .rag-status-bar {
-  height: 30px;
-  min-height: 30px;
+  height: 32px;
+  min-height: 32px;
   margin-left: -20px;
   margin-top: -21px;
   margin-right: -21px;
   margin-bottom: 10px;
   font-weight: bold;
   color: white;
-  padding: 5px 20px 5px 20px; }
+  padding: 6px 22px 0px 22px; }
 
 .status:before {
   content: "";
@@ -2029,7 +2032,7 @@ button:hover {
   content: "S"; }
 
 .status-danger:before {
-  background-color: #FF0000;
+  background-color: #DF0000;
   content: "D"; }
 
 .status-none:before {
@@ -2575,11 +2578,11 @@ img.user-guide-cover {
   margin-top: 5px;
   margin-bottom: -12px; }
 
-.appraisal-header .section {
+.appraisal-header .section, .portfolio-header .section {
   margin: 0;
   font-family: 'robotobold', Helvetica, Arial, Sans-serif; }
 
-.appraisal-header .title {
+.appraisal-header .title, .portfolio-header .title {
   margin: 0;
   padding: 0;
   font-family: 'robotothin', Helvetica, Arial, Sans-serif;
@@ -2587,10 +2590,10 @@ img.user-guide-cover {
   margin-left: -4px; }
 
 @media (max-width: 767px) {
-  .appraisal-header .title {
+  .appraisal-header .title, .portfolio-header .title {
     font-size: 3.000em; } }
 
-.appraisal-header .description {
+.appraisal-header .description, .portfolio-header .description {
   font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
   font-size: 1.25em;
   margin: 0;
