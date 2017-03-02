@@ -1287,6 +1287,11 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
   letter-spacing: $vslight;
 }
+.tooltip p{
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+  letter-spacing: $vslight;
+  text-align:left;
+}
 
 .tooltip.in {
   opacity: 0.9;
@@ -1355,3 +1360,5 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .popover.bottom > .arrow:after{ border-bottom-color: lighten($info, 5%)}
 .popover.left > .arrow:after{ border-left-color: lighten($info, 5%)}
 
+.popover-content a:link{ color:white; font-family: 'robotomedium', Helvetica, Arial, Sans-serif;}
+.popover-content a:visited{ color:white;}

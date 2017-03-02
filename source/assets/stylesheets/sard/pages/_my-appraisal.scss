@@ -32,6 +32,13 @@
   }
 }
 
+.appraisal{
+  h3{
+    font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+    margin-bottom:5px;
+  }
+}
+
 // appraisal-dataset =================================================
 
 .appraisal-dataset{ }
@@ -151,6 +158,115 @@
 
 
 }// End .evidences, .comments, .notes =====================================================================
+
+
+// Appraisal Forms ========================================================================================
+.appraisal-form{
+}
+
+.appraisal-form .form-horizontal{
+  .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-left: 0px; // changed from 8px in structure.scss
+    padding-right: 0px; // changed from 8px in structure.scss
+  }
+}
+
+.appraisal-form .form-horizontal{
+}
+
+.appraisal-form fieldset{
+  background-color:$grey02;
+  border-radius: 5px;
+   padding:10px;
+   padding-top:40px;
+   margin-top:10px;
+   position:relative;
+}
+
+.appraisal-form legend{
+  border-bottom: 1px solid $grey10;
+  position:absolute;
+  top:0px;
+  width:calc(100% - 20px);
+  margin-bottom:10px;
+  padding-top:5px;
+}
+
+.appraisal-form fieldset.no-legend{
+  padding-top:5px;
+}
+
+.appraisal-form .form-group{
+  // background-color:yellow;
+  border-bottom: 1px solid white;
+  padding-bottom:10px;
+  margin-left:0px;
+  margin-right:0px;
+  margin-bottom:10px;
+}
+.appraisal-form .form-group:first-of-type{
+  margin-top:10px;
+}
+.appraisal-form .form-group:last-of-type{
+  border:none;
+}
+
+.appraisal-form .form-control:focus{
+  box-shadow: none;
+}
+
+.appraisal-form .control-label{
+  text-align:left;
+  line-height:1.2em;
+  padding-top:0px;
+}
+
+.appraisal-form textarea{
+  resize: vertical;
+}
+.appraisal-form .form-control:focus{
+  border-color: $turq;
+}
+
+// Expanding form groups ====================
+
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: scale(0.8);
+  transition: 0.5s;
+  input[type="radio"]:checked ~ &,
+  input[type="checkbox"]:checked ~ & {
+    opacity: 1;
+    max-height: 100px;
+    overflow: visible;
+    padding: 10px 20px;
+    transform: scale(1);
+  }
+}
+.reveal-if-active .form-group:first-of-type{
+  margin-top:0px;
+}
+
+// Input =====================================
+
+.form-submission{
+  padding-top:5px;
+}
+
+input[type=submit]:focus{
+  outline: none !important; // This removes the glow on imput buttons
+}
+
+// Keep as reference
+// input[type=submit].positive, input[type=submit].positive:visited { background-color:$green; color:white;}
+// input[type=submit].positive:hover { background-color:darken($green, 5%); }
+// input[type=submit].positive:active, { background-color:darken($green, 10%); }
+// input[type=submit].positive:focus { background-color:darken($green, 10%); }
+
+// END Appraisal Forms =================================================================================
+
 
 
 

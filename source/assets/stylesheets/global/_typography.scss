@@ -85,6 +85,25 @@ h1, h2, h3, h4, h5, h6, p{
     line-height: 1.3em;
   }
 
+  ul.bullet-list{
+    padding-left:12px;
+    list-style: none;
+    // list-style-type: disc;
+    // list-style-position: outside;
+    // list-style-image: none;
+    li::before {
+      content: "•"; 
+      // color: $turq;
+      display: inline-block; width: .55em;
+      margin-left: -.55em;
+      font-size: 190%;
+      vertical-align:middle;
+      line-height:.4em;
+    }
+    li{ padding-bottom:.5em;}
+    li:last-of-type{ padding-bottom:0em;}
+  }
+
 // Small screens
 @media (max-width: 767px) {
   h1{ font-size: 4.000em;}
@@ -105,7 +124,7 @@ h1, h2, h3, h4, h5, h6, p{
     font-family: 'robotoblack', Helvetica, Arial, Sans-serif;
     font-weight:normal;
   }
-  strong{ 
+  strong, bold{ 
     font-family: 'robotobold', Helvetica, Arial, Sans-serif;
     font-weight:normal;
   }
@@ -125,6 +144,8 @@ h1, h2, h3, h4, h5, h6, p{
     font-family: 'robotothin', Helvetica, Arial, Sans-serif;
     font-weight:normal;
   }
+
+  .asterisk{color:$turq}
 
   .center{text-align:center;}
   .centre{text-align:center;}
@@ -150,20 +171,26 @@ h1, h2, h3, h4, h5, h6, p{
 
   a {
     color: $turq;
+    text-decoration: none; 
+  }
+
+  a:hover, a:focus {
+    color: $ink;
     text-decoration: none; }
 
-    a:hover, a:focus {
-      color: $ink;
-      text-decoration: none; }
+  a:focus { }
 
-    a:focus { }
+  a:link{ color:$bodytext;}
+  a:visited{ color:$bodytext;}
+  a:hover{ color:$link-hover;}
+  a:active{ color:$link-hover;}
+    
+  // This makes links in text blue when they have no link icon
+  .text-link:link{ color:darken($turq, 10%);}
+  a.text-link:visited{ color:darken($turq, 10%);}
+  a.text-link:hover{ color:$teal;}
+  a.text-link:active{ color:$teal;}
 
-    a:link{ color:$bodytext;}
-    a:visited{ color:$bodytext;}
-    a:hover{ color:$link-hover;}
-    a:active{ color:$link-hover;}
-    
-    
 // Link Icons ==========================================================================
 
   // ARROW =============================================================================
