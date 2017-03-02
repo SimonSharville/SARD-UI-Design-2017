@@ -258,6 +258,130 @@ h1, h2, h3, h4, h5, h6, p{
   p.link-pdf a:visited:before{color:$turq;}
 
 
+  // Word Docs ===========================================================================
+  .link-doc, .link-docx{ // This places the doc icon in front of all text links in a single cell
+    p{padding-left: 1.3em ;
+      text-indent: -1.3em ;
+    }
+    a:link:before{
+      font-family: 'FontAwesome';
+      content: "\f1c2" ;
+      padding-right:5px;
+      color:$blue;
+    }
+    a:visited:before{color:$blue;}
+  }
+
+  p.link-doc, p.link-docx{ // This places the doc icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+  ul li p.link-doc, ul li p.link-docx{ // This places the doc icon in front individual text in a list
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+  p.link-doc, p.link-docx a:link:before{
+    font-family: 'FontAwesome';
+    content: "\f1c2" ;
+    padding-right:5px;
+    color:$blue;
+  }
+  p.link-doc, p.link-docx a:visited:before{color:$blue;}
+
+  // Text docs, RTF docs ===========================================================================
+  .link-txt, .link-rtf{ // This places the txt icon in front of all text links in a single cell
+    p{padding-left: 1.3em ;
+      text-indent: -1.3em ;
+    }
+    a:link:before{
+      font-family: 'FontAwesome';
+      content: "\f0f6" ;
+      padding-right:5px;
+      color:$grey18;
+    }
+    a:visited:before{color:$grey18;}
+  }
+
+  p.link-txt, p.link-rtf{ // This places the doc icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+  ul li p.link-txt, ul li p.link-rtf{ // This places the doc icon in front individual text in a list
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+  p.link-txt, p.link-rtf a:link:before{
+    font-family: 'FontAwesome';
+    content: "\f0f6" ;
+    padding-right:5px;
+    color:$grey18;
+  }
+  p.link-txt, p.link-rtf a:visited:before{color:$grey18;}
+
+
+  // Excel docs ===========================================================================
+  .link-xls, .link-xslx{ // This places the xls icon in front of all text links in a single cell
+    p{padding-left: 1.3em ;
+      text-indent: -1.3em ;
+    }
+    a:link:before{
+      font-family: 'FontAwesome';
+      content: "\f1c3" ;
+      padding-right:5px;
+      color:$green;
+    }
+    a:visited:before{color:$green;}
+  }
+
+  p.link-xls, p.link-xslx{ // This places the doc icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+  ul li p.link-xls, ul li p.link-xslx{ // This places the doc icon in front individual text in a list
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+  p.link-xls, p.link-xslx a:link:before{
+    font-family: 'FontAwesome';
+    content: "\f1c3" ;
+    padding-right:5px;
+    color:$green;
+  }
+  p.link-xls, p.link-xslx a:visited:before{color:$green;}
+
+
+
+  // JPG, Photos & Images ===========================================================================
+  .link-jpg, .link-photo, .link-image, .link-gif, .link-png{ // This places the jpg icon in front of all text links in a single cell
+    p{padding-left: 1.3em ;
+      text-indent: -1.3em ;
+    }
+    a:link:before{
+      font-family: 'FontAwesome';
+      content: "\f0f6" ;
+      padding-right:5px;
+      color:$grey18;
+    }
+    a:visited:before{color:$grey18;}
+  }
+
+  p.link-jpg, p.link-photo, p.link-image, p.link-gif, p.link-png{ // This places the doc icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+  ul li p.link-jpg, ul li p.link-photo, ul li p.link-image, ul li p.link-gif, ul li p.link-png{ // This places the doc icon in front individual text in a list
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+  p.link-jpg, p.link-photo, p.link-image, p.link-gif, p.link-png a:link:before{
+    font-family: 'FontAwesome';
+    content: "\f0f6" ;
+    padding-right:5px;
+    color:$grey18;
+  }
+  p.link-jpg, p.link-photo, p.link-image, p.link-gif, p.link-png a:visited:before{color:$grey18;}
+
+
   // Phone ===========================================================================
   .link-phone{ // This places the phone icon in front of all text links in a single cell
     p{padding-left: 1.3em ;

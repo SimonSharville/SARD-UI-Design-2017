@@ -26,13 +26,21 @@
   .description{
     font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
     font-size: 1.25em;
+    line-height:1.27em;
     margin:0;
     padding:0;
-    padding-top:5px;
+    padding-top:10px;
   }
 }
 
-.appraisal{
+// .appraisal{
+//   h3{
+//     font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+//     margin-bottom:5px;
+//   }
+// }
+
+#appraisal{
   h3{
     font-family: 'robotolight', Helvetica, Arial, Sans-serif;
     margin-bottom:5px;
@@ -141,40 +149,24 @@
     border-left:1px solid $grey08;
   }
 
-  // EXPERIMENT --- NOT USED ------------------------------------------------------------
-  // .evidence .expiry{
-  //   border-left-style: dotted;
-  //   border-left-color: $grey10;
-  //       //border-image-source: url("http://cl.ly/3c2J3c0l3r0P/dots.svg"); ORIGIAL-BILD  
-  //   border-image-source: url("../graphics/dots-g06.svg");
-  //       // border-image-slice: 33% 33%; 
-  //   border-image-slice: 33% 33%; 
-  //   border-image-repeat: round;
-  //   border-width: 0px  0px 0px 1px;
-  // }
-  // @media screen\0 { // ie8, 9, 10 Hack
-  //   .evidence .expiry{ border-left: 2px dotted $grey08;}
-  // }
-
-
 }// End .evidences, .comments, .notes =====================================================================
 
 
 // Appraisal Forms ========================================================================================
-.appraisal-form{
+#appraisal .appraisal-form{
 }
 
-.appraisal-form .form-horizontal{
+#appraisal .form-horizontal{
   .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
     padding-left: 0px; // changed from 8px in structure.scss
     padding-right: 0px; // changed from 8px in structure.scss
   }
 }
 
-.appraisal-form .form-horizontal{
+#appraisal .form-horizontal{
 }
 
-.appraisal-form fieldset{
+#appraisal fieldset{
   background-color:$grey02;
   border-radius: 5px;
    padding:10px;
@@ -194,7 +186,7 @@
 // }
 
 // Alternative
-.appraisal-form legend{
+#appraisal legend{
   background-color:$grey10;
   position:absolute;
   top:0px;
@@ -206,21 +198,21 @@
   padding:5px 10px;
 }
 
-.appraisal-form fieldset.no-legend{
+#appraisal fieldset.no-legend{
   padding-top:5px;
 }
 
-.appraisal-form .form-group{
+#appraisal .form-group{
   border-bottom: 1px solid white;
   padding-bottom:10px;
   margin-left:0px;
   margin-right:0px;
   margin-bottom:10px;
 }
-.appraisal-form .form-group:first-of-type{
+#appraisal .form-group:first-of-type{
   margin-top:10px;
 }
-.appraisal-form .form-group:last-of-type{
+#appraisal .form-group:last-of-type{
   border:none;
 }
 
@@ -228,13 +220,13 @@
   box-shadow: none;
 }
 
-.appraisal-form .control-label{
+#appraisal .control-label{
   text-align:left;
   line-height:1.2em;
   padding-top:0px;
 }
 
-.appraisal-form textarea{
+#appraisal textarea{
   resize: vertical;
 }
 .appraisal-form .form-control:focus{
@@ -280,7 +272,84 @@ input[type=submit]:focus{
 
 // END Appraisal Forms =================================================================================
 
+// Attachments =========================================================================================
 
+.attachments{
+  border-top: 2px solid $grey18;
+}
+
+.attachments h3, h4{
+  padding-bottom:10px;
+}
+
+.attachment-fragment{
+  padding-bottom:5px;
+  margin-bottom:5px;
+  border-bottom: 1px dotted $grey04;
+}
+.attachment-fragment:last-of-type{
+  border-bottom: transparent;
+}
+
+.attachment-fragment .file{
+  padding-left: 1.5em ;
+  text-indent: -1.5em ;
+}
+
+// .attachment-fragment .fa{ padding-right:20px;}
+
+.attachment-fragment a[class$='pdf']:before, .file a[class$='pdf']:before {
+  font-family: 'FontAwesome';
+  content: "\f1c1" ;
+  padding-right:20px;
+  color:$red;
+  float:left;
+}
+
+.attachment-fragment a[class$='doc']:before, .file a[class$='doc']:before,
+.attachment-fragment a[class$='docx']:before, .file a[class$='docx']:before {
+  font-family: 'FontAwesome';
+  content: "\f1c2" ;
+  padding-right:20px;
+  color:$blue;
+  float:left;
+}
+
+.attachment-fragment a[class$='txt']:before, .file a[class$='txt']:before,
+.attachment-fragment a[class$='rtf']:before, .file a[class$='rtf']:before {
+  font-family: 'FontAwesome';
+  content: "\f0f6" ;
+  padding-right:20px;
+  color:$grey18;
+  float:left;
+}
+
+.attachment-fragment a[class$='jpg']:before, .file a[class$='jpg']:before {
+  font-family: 'FontAwesome';
+  content: "\f1c5" ;
+  padding-right:20px;
+  color:$grey18;
+  float:left;
+}
+
+.attachment-fragment a[class$='jpg']:before, .file a[class$='jpg']:before,
+.attachment-fragment a[class$='gif']:before, .file a[class$='gif']:before,
+.attachment-fragment a[class$='png']:before, .file a[class$='png']:before {
+  font-family: 'FontAwesome';
+  content: "\f1c5" ;
+  padding-right:20px;
+  color:$grey18;
+  float:left;
+}
+
+.attachment-fragment a[class$='xls']:before, .file a[class$='xls']:before,
+.attachment-fragment a[class$='xlsx']:before, .file a[class$='xlsx']:before {
+  font-family: 'FontAwesome';
+  content: "\f1c3" ;
+  padding-right:20px;
+  color:$green;
+  float:left;
+}
 
 
 
