@@ -274,8 +274,10 @@ input[type=submit]:focus{
 
 // Attachments =========================================================================================
 
+
 .attachments{
-  border-top: 2px solid $grey18;
+  border-top: 1px solid $grey18;
+  // margin-left:10px;
 }
 
 .attachments h3, h4{
