@@ -178,18 +178,32 @@
   background-color:$grey02;
   border-radius: 5px;
    padding:10px;
-   padding-top:40px;
+   padding-top:45px;
    margin-top:10px;
    position:relative;
 }
 
+// Alternative
+// .appraisal-form legend{
+//   border-bottom: 1px solid $grey10;
+//   position:absolute;
+//   top:0px;
+//   width:calc(100% - 20px);
+//   margin-bottom:10px;
+//   padding-top:5px;
+// }
+
+// Alternative
 .appraisal-form legend{
-  border-bottom: 1px solid $grey10;
+  background-color:$grey10;
   position:absolute;
   top:0px;
-  width:calc(100% - 20px);
-  margin-bottom:10px;
-  padding-top:5px;
+  width:100%;
+  border-bottom: 0px solid $grey10;
+  border-radius: 5px 5px 0px 0px;
+  color:white;
+  margin-left:-10px;
+  padding:5px 10px;
 }
 
 .appraisal-form fieldset.no-legend{
@@ -197,7 +211,6 @@
 }
 
 .appraisal-form .form-group{
-  // background-color:yellow;
   border-bottom: 1px solid white;
   padding-bottom:10px;
   margin-left:0px;

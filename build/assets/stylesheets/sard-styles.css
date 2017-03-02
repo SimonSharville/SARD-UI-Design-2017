@@ -2721,17 +2721,20 @@ img.user-guide-cover {
   background-color: #EDEBEB;
   border-radius: 5px;
   padding: 10px;
-  padding-top: 40px;
+  padding-top: 45px;
   margin-top: 10px;
   position: relative; }
 
 .appraisal-form legend {
-  border-bottom: 1px solid #A39E9C;
+  background-color: #A39E9C;
   position: absolute;
   top: 0px;
-  width: calc(100% - 20px);
-  margin-bottom: 10px;
-  padding-top: 5px; }
+  width: 100%;
+  border-bottom: 0px solid #A39E9C;
+  border-radius: 5px 5px 0px 0px;
+  color: white;
+  margin-left: -10px;
+  padding: 5px 10px; }
 
 .appraisal-form fieldset.no-legend {
   padding-top: 5px; }
