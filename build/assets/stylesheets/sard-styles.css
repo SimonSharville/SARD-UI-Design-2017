@@ -2911,7 +2911,7 @@ input[type=submit]:focus {
   outline: none !important; }
 
 .attachments {
-  border-top: 2px solid #211F0F; }
+  border-top: 1px solid #211F0F; }
 
 .attachments h3, h4 {
   padding-bottom: 10px; }
