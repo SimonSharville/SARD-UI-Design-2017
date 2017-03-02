@@ -2,21 +2,296 @@
   <div class="col-xs-12">
     
       <h2 class="title">Personal Details</h2>
-      <h4 class="description">Description</h4>
   </div> <!-- END Column -->
 </div> <!-- END Row -->
 
 
 
 <!-- Content ====================================================================== -->
-<div class="row perf"></div>
+<!-- <div class="row perf"></div> -->
 
-<div class="row">  
+<div class="row appraisal">  
 
   <div class=" col-xs-12">
-    Content to come
+    <div class="appraisal-form">
+      <form class="form-horizontal">
+        <fieldset>
+          <legend class="">Contact Details</legend>
+          <p>Please ensure that you provide either email address or telephone number, both if possible.</p>
+          <div class="form-group">
+            <label for="appraisee_name" class="col-sm-4 control-label">Name <span class="asterisk">*</span></label>
+            <div class="col-sm-8">
+              <input id="appraisee_name" name="appraisee_name" class="form-control" type="text" value="Dr John T Smith">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="appraisee_address" class="col-sm-4 control-label">Contact address</label>
+            <div class="col-sm-8">
+              <textarea id="appraisee_address" class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="appraisee_tel" class="col-sm-4 control-label">Contact telephone number</label>
+            <div class="col-sm-8">
+              <input id="appraisee_tel" name="appraisee_name" class="form-control" type="text" value="">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="appraisee_email" class="col-sm-4 control-label">Contact email</label>
+            <div class="col-sm-8">
+              <input id="appraisee_email" name="appraisee_name" class="form-control" type="text" value="">
+            </div>
+          </div>
+        </fieldset> 
+
+        <fieldset class="no-legend">
+          <div class="form-group">
+            <label for="appraisee_gmc" class="col-sm-4 control-label">GMC number <span class="asterisk">*</span></label>
+            <div class="col-sm-8">
+              <input id="appraisee_gmc" name="appraisee_name" class="form-control" type="text" value="123456789">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="appraisee_email" class="col-sm-4 control-label">Name of designated body 
+              <a class="glyphicon glyphicon-info-sign" data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-trigger="click" id="" 
+              data-original-title="" 
+              data-content='<p>A ‘designated body’ is an organisation that employs or contracts with doctors and is designated in The Medical Profession (Responsible Officer) Regulations 2010.</p>
+
+              <p>The types of designated bodies are listed in the legislation and include government departments, all NHS trusts and other bodies employing or contracting with a medical practitioner.</p>
+
+              <p>Further explanation can be found <a href="http://www.gmc-uk.org/doctors/revalidation/faq_revalidation.asp#what_is_my_db" target="_blank">here</a></p>
+
+              <p>For most doctors this is likely to be your main employer. For GPs, this will probably be the body on whose performers list you appear.</p>'></a> 
+            </label>
+            <div class="col-sm-8">
+              <input id="appraisee_email" name="appraisee_name" class="form-control" type="text" value="">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="">Qualifications</legend>
+          <div class="form-group">
+            <label for="appraisee_qualifications" class="col-sm-4 control-label">Medical qualifications, UK or elsewhere, including dates where appropriate
+            <a class="glyphicon glyphicon-info-sign" data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-trigger="click" id="" 
+              data-original-title="" 
+              data-content='<p>Your appraiser needs to understand how you carry out your scope of work, so please list your professional medical qualifications. For some roles, it may also be appropriate to list any experience gained through postgraduate diplomas, courses or other relevant programmes.</p>
+              <p>Please note that whilst you should include the date that the qualification was obtained, it is acceptable to just note the year.</p>'></a>
+            </label>
+            <div class="col-sm-8">
+              <textarea id="appraisee_qualifications" class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="">Appraisal Details</legend>
+          <div class="form-group">
+            <label for="appraisal_meeting_due_date" class="col-sm-4 control-label">When your appraisal meeting is due to take place (dd/mm/yyyy) <span class="asterisk">*</span></label>
+            <div class="col-sm-8">
+              <div class="input-group">
+              <div class="input-group-addon">
+                <i class="fa fa-calendar">
+                </i>
+               </div>
+               <input class="form-control" id="appraisal_meeting_due_date" name="date" placeholder="DD/MM/YYYY" type="text"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="appraisal_meeting_due_date" class="col-sm-4 control-label">Lead Appraiser <span class="asterisk">*</span></label>
+              <select id="section3_lead_appraiser_id" name="section3[lead_appraiser_id]"  class="col-sm-8">
+                <option value=""></option><optgroup label="-"><option value="2-21071989">Buijsen, Dr Sophie</option>
+                <option value="2-2474129772349234">Malone, Dr Bob</option>
+                <option value="2-123987723472">Trainee,  Trainee</option></optgroup><optgroup label="Test"><option value="2-600" selected="selected" disabled="disabled">Johnson, Dr Janet T</option>
+                <option value="2-601">Lampard, Dr Frank</option>
+                <option value="2-4">Monk, Dr Josh</option></optgroup><optgroup label="Test1"><option value="2-888666888">Drummond, Dr Sarah</option>
+                <option value="2-1000" disabled="disabled">Okocha, Dr Ify</option></optgroup>
+              </select>
+              <div class="no-pdf">
+                <div id="lead-appraiser-warning" style="display: none;">
+                <br>
+                NB Section 20 has already been signed off by Dr Janet T Johnson.
+                If the lead appraiser is changed, any data entered in section 20 by Dr Janet T Johnson
+                will be cleared.
+                </div>
+                <br>
+                If your appraiser is greyed out or not listed in the box then please contact your organisation's administrator:
+                <a href="mailto:bella.owen@example.com"  class="text-link">email administrator.</a>
+              </div>
+          </div>
+
+          <div class="form-group second-appraiser">
+            <p>Are you a clinical academic who requires an academic appraiser under the Follett principles?</br> 
+            If your lead appraiser is your academic appraiser, please select No.
+            <a class="glyphicon glyphicon-info-sign" data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-trigger="click" id="" 
+              data-original-title="" 
+              data-content='<p>The Follett review states that “universities and NHS bodies should work together to develop a jointly agreed annual appraisal and performance review process based on that for NHS consultants, to meet the needs of both partners”. That principle continues in medical appraisal and clinical academics will continue to participate in joint appraisal.</p>
+
+              <p>If this situation applies to you, please select ‘Yes’ which will allow for an academic appraiser to participate in this process. If you require an academic appraiser for any other reason, please do not select this option.</p>
+
+              <p>Once selected they will be notified and will be required to sign off the appraisal in the ‘Appraiser Statement’ section.</p>'></a></p>
+
+            
+            <div class="col-xs-offset-4 col-xs-8">
+                <input type="radio" name="second_appraiser_required" id="second_appraiser_required" class="second-appraiser-required" required>
+                <label for="second-appraiser-required">Yes</label>
+              
+                <div class="reveal-if-active">
+                    <div class="form-group col-xs-12">
+                      <label for="second_appraiser_required">Academic appraiser's name <span class="asterisk">*</span></label>
+                      <input type="text" id="second_appraiser_name" name="second_appraiser_name" class="require-if-active col-xs-12" data-require-pair="#second-appraiser-name">
+                    </div>
+                    <div class="form-group col-xs-12">
+                      <label for="which-cat">Academic appraiser's email <span class="asterisk">*</span></label>
+                      <input type="text" id="second_appraiser_email" name="second_appraiser_email" class="require-if-active col-xs-12" data-require-pair="#second-appraiser-email">
+                    </div>
+                </div>
+            </div>
+              
+            <div class="col-xs-offset-4 col-xs-8">
+              <input type="radio" name="second_appraiser_required" id="second_appraiser_required">
+              <label for="second-appraiser-not-required" class="second-appraiser-not-required">No</label>
+            </div>
+          </div> <!-- End form-group second-appraiser -->
+
+
+          <div class="form-group additional-appraiser">
+            <p>Do you require an additional appraiser?
+            <a class="glyphicon glyphicon-info-sign" data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-trigger="click" id="" 
+              data-original-title="" 
+              data-content='<p>If you require an additional appraiser for any other reason, please select ‘Yes’ which will allow for an additional appraiser to participate in this process. They can be a <span class="caps">SARD</span> user or an external user. Once selected they will be notified and will be required to sign off the appraisal in the ‘Appraiser Statement’ section.</p>'></a></p>
+
+            
+            <div class="col-xs-offset-4 col-xs-8">
+                <input type="radio" name="additional_appraiser_required" id="additional_appraiser_required" class="additional-appraiser-required" required>
+                <label for="additional-appraiser-required">Yes</label>
+              
+                <div class="reveal-if-active">
+                    <div class="form-group col-xs-12">
+                      <label for="additional_appraiser_required">Additional appraiser's name <span class="asterisk">*</span></label>
+                      <input type="text" id="additional_appraiser_name" name="additional_appraiser_name" class="require-if-active col-xs-12" data-require-pair="#additional-appraiser-name">
+                    </div>
+                    <div class="form-group col-xs-12">
+                      <label for="which-cat">Additional appraiser's email <span class="asterisk">*</span></label>
+                      <input type="text" id="additional_appraiser_email" name="additional_appraiser_email" class="require-if-active col-xs-12" data-require-pair="#additional-appraiser-email">
+                    </div>
+                </div>
+            </div>
+              
+            <div class="col-xs-offset-4 col-xs-8">
+              <input type="radio" name="additional_appraiser_required" id="additional_appraiser_required">
+              <label for="additional-appraiser-not-required" class="additional-appraiser-not-required">No</label>
+            </div>
+          </div> <!-- End form-group additional-appraiser -->
+
+        </fieldset>
+
+        <div class="form-submission no-pdf">
+          <input class="btn btn-danger btn-block mark-as-button mark-as-incomplete negative" role="button" data-method="put" data-remote="true" rel="nofollow" name="commit" type="submit" value="Mark as Incomplete">
+        </div>
+
+         <!-- <div class="form-submission no-pdf">
+          <input class="btn btn-success btn-block mark-as-button mark-as-incomplete positive" role="button" data-method="put" data-remote="true" rel="nofollow" name="commit" type="submit" value="Mark as Complete">
+        </div> -->
+        
+      </form> <!-- END form-horizontal -->
+    </div>  <!-- END appraisal-form -->
   </div> <!-- END col-xs-12 -->
-  
+
 </div> <!-- END Row -->
 
+<div class="row perf"></div>
+
+<!-- Comments - Section Evendences -->
+
+<div class="row">  
+  <div class=" col-xs-12 evidences">
+    <h2 class="evidence-title">Comments/Relections
+      <a class="glyphicon glyphicon-info-sign"  data-toggle="popover" title="Add evidence" data-placement="bottom" data-content="Add your evidence here for it to appear in the list below."></a>
+    </h2>
+
+    <div class="new-evidence">
+      <form id="new_evidence" method="post">
+        <textarea id="content" placeholder="Type your comment/reflection here..."></textarea>
+        <div class="shelf">
+          
+          
+          <div class="col-xs-12 no-indent add">
+            <button class="btn btn-default pull-right" id="attach" name="commit" nobind="true" type="submit" value="Save Evidence"><span class="glyphicon glyphicon-ok"></span>Save Comment/Reflection</button>
+            <!-- <input id="save-new-evidence" name="commit" nobind="true" type="submit" value="Save Evidence"> -->
+          </div>
+        </div>
+      </form>
+      <div class="clear"></div>
+    </div> <!-- END new-evidences -->
+
+
+    <div class="col-xs-12 evidence">
+      <div class="icon-box">
+        <div class="icon"></div>
+      </div>
+      <div class="detail">
+        <div class="title"></div>
+        <div class="content">(no content)</div>
+        
+        <div class="edocs">
+          <div class="attachments">
+          </div> <!-- END attachments -->
+        </div> <!-- END edocs -->
+      </div> <!-- END detail -->
+      <div class="expiry">
+          <strong>By: </strong>Dr John T Smith<br>
+          18/01/2017 16:54 </br>
+          <strong>From: </strong>Portfolio Dec 2016<br>
+          <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
+          <a href="#" class="btn btn-danger btn-xs remove-evidence" role="button"><span class="glyphicon glyphicon-remove-sign"></span>Remove</a>
+        </div> <!-- END expiry -->
+    </div> <!-- END evidence -->
+    
+
+    <div class="col-xs-12 evidence">
+      <div class="icon-box">
+        <div class="icon">C</div>
+      </div>
+      <div class="detail">
+        <div class="title">Comment/Feedback</div>
+        <div class="content"></div>
+        
+        <div class="edocs">
+          <div class="attachments">
+            <div class="attachment-fragment">
+              <div class="file">
+                <a class="Research_Paper.pdf" href="#" target="_blank">
+                  <div class="name"><span class="fa fa-file-pdf-o"></span> Patient Feedback</div>
+                </a>
+              </div> <!-- END file -->
+              <div class="location">Location:&nbsp;
+          <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button">Appraisal</a>
+          <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button">Portfolio</a>
+          <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button">eDocs</a>
+        </div>
+            </div> <!-- END attachments-fragment -->
+          </div> <!-- END attachments -->
+        </div> <!-- END edocs -->
+      </div> <!-- END detail -->
+
+      <div class="expiry">
+        <strong>By: </strong>Dr John T Smith<br>
+        18/01/2017 18:02 </br>
+        <strong>From: </strong>Portfolio Dec 2016<br>
+        <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
+        <a href="#" class="btn btn-danger btn-xs remove-evidence" role="button"><span class="glyphicon glyphicon-remove-sign"></span>Remove</a>
+      </div> <!-- END expiry -->
+
+    </div> <!-- END evidence -->
+
+  </div> <!-- END evidences -->
+  
+</div> <!-- END Row -->
 
