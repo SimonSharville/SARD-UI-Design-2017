@@ -2153,7 +2153,7 @@ button:hover {
   background-color: #359E00; }
 
 .rag-na {
-  background-color: #615E5C; }
+  background-color: #827D7D; }
 
 .rag-white {
   background-color: #FFFFFF; }
@@ -2171,6 +2171,12 @@ button:hover {
   font-weight: bold;
   color: white;
   padding: 6px 22px 0px 22px; }
+
+.rag-bar-title {
+  float: left; }
+
+.rag-bar-status {
+  float: right; }
 
 .status:before {
   content: "";
@@ -2324,17 +2330,17 @@ button:hover {
   background-color: #FFB200; }
 
 .rag-buttons button.rag-btn-na {
-  color: #615E5C; }
+  color: #827D7D; }
 
 .rag-buttons button.rag-btn-na:hover {
-  background-color: #615E5C;
-  border-color: #474543;
+  background-color: #827D7D;
+  border-color: #686464;
   color: white; }
 
 .rag-buttons button.rag-btn-na:focus {
   top: 4px;
-  background-color: #615E5C;
-  border-color: #474543;
+  background-color: #827D7D;
+  border-color: #686464;
   color: white;
   padding-top: 1.2rem;
   -webkit-box-shadow: inset 4px 4px 0px 0px rgba(0, 0, 0, 0.3);
@@ -2343,7 +2349,7 @@ button:hover {
   z-index: 100; }
 
 .rag-buttons button.rag-btn-na:active {
-  background-color: #615E5C; }
+  background-color: #827D7D; }
 
 .rag-buttons button.rag-btn.selected {
   top: 4px;
@@ -2367,8 +2373,8 @@ button:hover {
   border-color: #cc8e00; }
 
 .rag-buttons button.rag-btn.rag-btn-na.selected {
-  background-color: #615E5C;
-  border-color: #474543; }
+  background-color: #827D7D;
+  border-color: #686464; }
 
 @media (min-width: 768px) {
   .settings-tab {
@@ -3246,7 +3252,7 @@ input[type=submit]:focus {
   background: #FFB200; }
 
 .sa-v-tabs .tab-number.rag-na {
-  background: #615E5C; }
+  background: #827D7D; }
 
 .sa-v-tabs .tab-number p {
   color: white;
