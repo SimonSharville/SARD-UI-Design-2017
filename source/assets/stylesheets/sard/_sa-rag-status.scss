@@ -3,7 +3,7 @@
 $rag-red:          $red;
 $rag-amber:        $yellow;
 $rag-green:        $green;
-$rag-na:           $grey14;
+$rag-na:           $grey12;
 $rag-white:        $white;
 
 
@@ -35,6 +35,9 @@ $rag-white:        $white;
   color:white;
   padding:6px 22px 0px 22px;
 }
+
+.rag-bar-title{float:left}
+.rag-bar-status{float:right}
 
 
   // Status Lights ========================================================
