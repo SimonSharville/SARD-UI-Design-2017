@@ -8,7 +8,7 @@
 // page specific items here =========================================
 
   
-.appraisal-header, .portfolio-header{
+.appraisal-header, .portfolio-header, #edocs{
   .section{
     margin:0;
     font-family: 'robotobold', Helvetica, Arial, Sans-serif;
@@ -32,13 +32,6 @@
     padding-top:10px;
   }
 }
-
-// .appraisal{
-//   h3{
-//     font-family: 'robotolight', Helvetica, Arial, Sans-serif;
-//     margin-bottom:5px;
-//   }
-// }
 
 #appraisal{
   h3{
@@ -294,64 +287,126 @@ input[type=submit]:focus{
 }
 
 .attachment-fragment .file{
-  padding-left: 1.5em ;
-  text-indent: -1.5em ;
+  padding-left: 1.3em ;
+  text-indent: -1.3em ;
 }
 
 // .attachment-fragment .fa{ padding-right:20px;}
 
-.attachment-fragment a[class$='pdf']:before, .file a[class$='pdf']:before {
-  font-family: 'FontAwesome';
-  content: "\f1c1" ;
-  padding-right:20px;
-  color:$red;
-  float:left;
+// a[class$='pdf']:before, .file a[class$='pdf']:before {
+//   font-family: 'FontAwesome';
+//   content: "\f1c1" ;
+//   padding-right:20px;
+//   color:$red;
+//   float:left;
+// }
+
+// .attachment-fragment a[class$='doc']:before, .file a[class$='doc']:before,
+// .attachment-fragment a[class$='docx']:before, .file a[class$='docx']:before {
+//   font-family: 'FontAwesome';
+//   content: "\f1c2" ;
+//   padding-right:20px;
+//   color:$blue;
+//   float:left;
+// }
+
+// .attachment-fragment a[class$='txt']:before, .file a[class$='txt']:before,
+// .attachment-fragment a[class$='rtf']:before, .file a[class$='rtf']:before {
+//   font-family: 'FontAwesome';
+//   content: "\f0f6" ;
+//   padding-right:20px;
+//   color:$grey18;
+//   float:left;
+// }
+
+// .attachment-fragment a[class$='jpg']:before, .file a[class$='jpg']:before {
+//   font-family: 'FontAwesome';
+//   content: "\f1c5" ;
+//   padding-right:20px;
+//   color:$grey18;
+//   float:left;
+// }
+
+// .attachment-fragment a[class$='jpg']:before, .file a[class$='jpg']:before,
+// .attachment-fragment a[class$='gif']:before, .file a[class$='gif']:before,
+// .attachment-fragment a[class$='png']:before, .file a[class$='png']:before {
+//   font-family: 'FontAwesome';
+//   content: "\f1c5" ;
+//   padding-right:20px;
+//   color:$grey18;
+//   float:left;
+// }
+
+// .attachment-fragment a[class$='xls']:before, .file a[class$='xls']:before,
+// .attachment-fragment a[class$='xlsx']:before, .file a[class$='xlsx']:before {
+//   font-family: 'FontAwesome';
+//   content: "\f1c3" ;
+//   padding-right:20px;
+//   color:$green;
+//   float:left;
+// }
+
+
+// eDocs ===================================================================
+
+
+.edoc-list{ 
+  margin-top:20px;
 }
 
-.attachment-fragment a[class$='doc']:before, .file a[class$='doc']:before,
-.attachment-fragment a[class$='docx']:before, .file a[class$='docx']:before {
-  font-family: 'FontAwesome';
-  content: "\f1c2" ;
-  padding-right:20px;
-  color:$blue;
-  float:left;
+.edoc-list .edocuments{
+  padding-right:10px;
+  padding-left:10px;
+}
+  .edoc-list .date {
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+  background: $grey16;
+  color:white;
+  padding: 3px 20px;
+  margin: 00px -13px 0px -13px;
+  border-radius:20px;
 }
 
-.attachment-fragment a[class$='txt']:before, .file a[class$='txt']:before,
-.attachment-fragment a[class$='rtf']:before, .file a[class$='rtf']:before {
-  font-family: 'FontAwesome';
-  content: "\f0f6" ;
-  padding-right:20px;
-  color:$grey18;
-  float:left;
+.edoc-list .time {
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+  border-top: 1px solid white;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.edoc-list .time:first-of-type{
+  border-top: none;
+  padding-top: 0px;
+}
+// .edoc-list ul{ padding-left:10px; }
+
+// .edoc-list li a{
+//   font-size:1.25em;
+// }
+
+.edoc-list table{
+  margin-bottom:0px;
 }
 
-.attachment-fragment a[class$='jpg']:before, .file a[class$='jpg']:before {
-  font-family: 'FontAwesome';
-  content: "\f1c5" ;
-  padding-right:20px;
-  color:$grey18;
-  float:left;
+.edoc-list tr > td {
+  border-top:1px solid $grey04!important;
 }
 
-.attachment-fragment a[class$='jpg']:before, .file a[class$='jpg']:before,
-.attachment-fragment a[class$='gif']:before, .file a[class$='gif']:before,
-.attachment-fragment a[class$='png']:before, .file a[class$='png']:before {
-  font-family: 'FontAwesome';
-  content: "\f1c5" ;
-  padding-right:20px;
-  color:$grey18;
-  float:left;
+.edoc-list td.file{
+  // padding-right:15px;
+  font-size:1.2em;
+  line-height:1.25em;
+  padding-left: 2em ;
+  text-indent: -1.3em ;
 }
 
-.attachment-fragment a[class$='xls']:before, .file a[class$='xls']:before,
-.attachment-fragment a[class$='xlsx']:before, .file a[class$='xlsx']:before {
-  font-family: 'FontAwesome';
-  content: "\f1c3" ;
-  padding-right:20px;
-  color:$green;
-  float:left;
+.edoc-list td.links{
+  text-align:right;
+  font-size:1.2em;
+  padding-bottom:7px;
+  margin-bottom:7px;
 }
+
 
 
 

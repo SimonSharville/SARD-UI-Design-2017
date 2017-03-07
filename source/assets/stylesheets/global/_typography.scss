@@ -228,227 +228,209 @@ h1, h2, h3, h4, h5, h6, p{
 
 
   // PDF ===========================================================================
-  .link-pdf{ // This places the pdf icon in front of all text links in a single cell
-    p{padding-left: 1.3em ;
-      text-indent: -1.3em ;
-    }
-    a:link:before{
-      font-family: 'FontAwesome';
-      content: "\f1c1" ;
-      padding-right:5px;
-      color:$turq;
-    }
-    a:visited:before{color:$turq;}
-  }
+  // This places the pdf icon in front of text links
 
+  .link-pdf a:link:before{
+    font-family: 'FontAwesome';
+    content: "\f1c1" ;
+    padding-right:7px;
+    color:$red;
+  }
+  a[class$='pdf']:before,
+  span.link-pdf:before {
+    font-family: 'FontAwesome';
+    content: "\f1c1" ;
+    padding-right:20px;
+    color:$red;
+    float:left;
+  }
   p.link-pdf{ // This places the pdf icon in front individual text
     padding-left: 1.3em ;
     text-indent: -1.3em ;
   }
-  ul li p.link-pdf{ // This places the pdf icon in front individual text in a list
-    padding-left: 1.3em ;
-    text-indent: -1.3em ;
-  }
-  p.link-pdf a:link:before{
-    font-family: 'FontAwesome';
-    content: "\f1c1" ;
-    padding-right:5px;
-    color:$turq;
-  }
-  p.link-pdf a:visited:before{color:$turq;}
 
+  
+  // WORD DOCS ===========================================================================
+  // This places the doc icon in front of text links
 
-  // Word Docs ===========================================================================
-  .link-doc, .link-docx{ // This places the doc icon in front of all text links in a single cell
-    p{padding-left: 1.3em ;
-      text-indent: -1.3em ;
-    }
-    a:link:before{
-      font-family: 'FontAwesome';
-      content: "\f1c2" ;
-      padding-right:5px;
-      color:$blue;
-    }
-    a:visited:before{color:$blue;}
-  }
-
-  p.link-doc, p.link-docx{ // This places the doc icon in front individual text
-    padding-left: 1.3em ;
-    text-indent: -1.3em ;
-  }
-  ul li p.link-doc, ul li p.link-docx{ // This places the doc icon in front individual text in a list
-    padding-left: 1.3em ;
-    text-indent: -1.3em ;
-  }
-  p.link-doc, p.link-docx a:link:before{
+  .link-doc a:link:before, 
+  .link-docx a:link:before{
     font-family: 'FontAwesome';
     content: "\f1c2" ;
-    padding-right:5px;
+    padding-right:7px;
     color:$blue;
   }
-  p.link-doc, p.link-docx a:visited:before{color:$blue;}
+  a[class$='doc']:before,
+  a[class$='docx']:before,
+  span.link-doc:before, 
+  span.link-docx:before {
+    font-family: 'FontAwesome';
+    content: "\f1c2" ;
+    padding-right:20px;
+    color:$blue;
+    float:left;
+  }
+  p.link-doc, 
+  p.link-docx{ // This places the doc icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+
 
   // Text docs, RTF docs ===========================================================================
-  .link-txt, .link-rtf{ // This places the txt icon in front of all text links in a single cell
-    p{padding-left: 1.3em ;
-      text-indent: -1.3em ;
-    }
-    a:link:before{
-      font-family: 'FontAwesome';
-      content: "\f0f6" ;
-      padding-right:5px;
-      color:$grey18;
-    }
-    a:visited:before{color:$grey18;}
-  }
+  // This places the txt icon in front of text links
 
-  p.link-txt, p.link-rtf{ // This places the doc icon in front individual text
-    padding-left: 1.3em ;
-    text-indent: -1.3em ;
-  }
-  ul li p.link-txt, ul li p.link-rtf{ // This places the doc icon in front individual text in a list
-    padding-left: 1.3em ;
-    text-indent: -1.3em ;
-  }
-  p.link-txt, p.link-rtf a:link:before{
+  .link-txt a:link:before, 
+  .link-rtf a:link:before{
     font-family: 'FontAwesome';
     content: "\f0f6" ;
-    padding-right:5px;
+    padding-right:7px;
     color:$grey18;
   }
-  p.link-txt, p.link-rtf a:visited:before{color:$grey18;}
+  a[class$='txt']:before,
+  a[class$='rtf']:before,
+  span.link-txt:before, 
+  span.link-rtf:before {
+    font-family: 'FontAwesome';
+    content: "\f0f6" ;
+    padding-right:20px;
+    color:$grey18;
+    float:left;
+  }
+  p.link-txt, 
+  p.link-rtf{ // This places the txt icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
 
 
   // Excel docs ===========================================================================
-  .link-xls, .link-xslx{ // This places the xls icon in front of all text links in a single cell
-    p{padding-left: 1.3em ;
-      text-indent: -1.3em ;
-    }
-    a:link:before{
-      font-family: 'FontAwesome';
-      content: "\f1c3" ;
-      padding-right:5px;
-      color:$green;
-    }
-    a:visited:before{color:$green;}
-  }
-
-  p.link-xls, p.link-xslx{ // This places the doc icon in front individual text
-    padding-left: 1.3em ;
-    text-indent: -1.3em ;
-  }
-  ul li p.link-xls, ul li p.link-xslx{ // This places the doc icon in front individual text in a list
-    padding-left: 1.3em ;
-    text-indent: -1.3em ;
-  }
-  p.link-xls, p.link-xslx a:link:before{
+  // This places the xls icon in front of text links
+  .link-xls a:link:before,
+  .link-xlsx a:link:before{
     font-family: 'FontAwesome';
     content: "\f1c3" ;
-    padding-right:5px;
+    padding-right:7px;
     color:$green;
   }
-  p.link-xls, p.link-xslx a:visited:before{color:$green;}
-
-
-
-  // JPG, Photos & Images ===========================================================================
-  .link-jpg, .link-photo, .link-image, .link-gif, .link-png{ // This places the jpg icon in front of all text links in a single cell
-    p{padding-left: 1.3em ;
-      text-indent: -1.3em ;
-    }
-    a:link:before{
-      font-family: 'FontAwesome';
-      content: "\f0f6" ;
-      padding-right:5px;
-      color:$grey18;
-    }
-    a:visited:before{color:$grey18;}
-  }
-
-  p.link-jpg, p.link-photo, p.link-image, p.link-gif, p.link-png{ // This places the doc icon in front individual text
-    padding-left: 1.3em ;
-    text-indent: -1.3em ;
-  }
-  ul li p.link-jpg, ul li p.link-photo, ul li p.link-image, ul li p.link-gif, ul li p.link-png{ // This places the doc icon in front individual text in a list
-    padding-left: 1.3em ;
-    text-indent: -1.3em ;
-  }
-  p.link-jpg, p.link-photo, p.link-image, p.link-gif, p.link-png a:link:before{
+  a[class$='xls']:before,
+  a[class$='xlsx']:before,
+  span.link-xls:before, 
+  span.link-xlsx:before {
     font-family: 'FontAwesome';
-    content: "\f0f6" ;
-    padding-right:5px;
+    content: "\f1c3" ;
+    padding-right:20px;
+    color:$green;
+    float:left;
+  }
+  p.link-xls, 
+  p.link-xlsx{ // This places the xls icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+
+
+  // JPG, PNG, Photos & Images ===========================================================================
+  // This places the image icon in front of text links
+  .link-jpg a:link:before, 
+  .link-png a:link:before, 
+  .link-gif a:link:before, 
+  .link-photo a:link:before, 
+  .link-image a:link:before{
+    font-family: 'FontAwesome';
+    content: "\f1c5" ;
+    padding-right:7px;
     color:$grey18;
   }
-  p.link-jpg, p.link-photo, p.link-image, p.link-gif, p.link-png a:visited:before{color:$grey18;}
+  a[class$='jpg']:before,
+  a[class$='png']:before,
+  a[class$='gif']:before,
+  a[class$='photo']:before,
+  a[class$='image']:before,
+  span.link-jpg:before, 
+  span.link-png:before, 
+  span.link-gif:before, 
+  span.link-photo:before, 
+  span.link-image:before {
+    font-family: 'FontAwesome';
+    content: "\f1c5" ;
+    padding-right:20px;
+    color:$grey18;
+    float:left;
+    
+  }
+  p.link-jpg, 
+  p.link-png{ // This places the image icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+
+
+
+  // ZIP ===========================================================================
+  // This places the zip icon in front of text links
+  .link-zip a:link:before{
+    font-family: 'FontAwesome';
+    content: "\f1c6" ;
+    padding-right:7px;
+    color:$grey18;
+  }
+  a[class$='zip']:before,
+  span.link-zip:before {
+    font-family: 'FontAwesome';
+    content: "\f1c6" ;
+    padding-right:20px;
+    color:$grey18;
+    float:left;
+  }
+  p.link-zip{ // This places the zip icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
 
 
   // Phone ===========================================================================
-  .link-phone{ // This places the phone icon in front of all text links in a single cell
-    p{padding-left: 1.3em ;
-      text-indent: -1.3em ;
-    }
-    a:link:before{
-      font-family: 'FontAwesome';
-      content: "\f095" ;
-      padding-right:5px;
-      color:$grey18;
-    }
-    a:visited:before{color:$grey18;}
+  // This places the phone icon in front of text links
+  .link-phone a:link:before{
+    font-family: 'FontAwesome';
+    content: "\f095" ;
+    padding-right:7px;
+    color:$grey18;
   }
-
+  a[class$='phone']:before,
+  span.link-phone:before {
+    font-family: 'FontAwesome';
+    content: "\f095" ;
+    padding-right:8px;
+    color:$grey18;
+    // float:left;
+  }
   p.link-phone{ // This places the phone icon in front individual text
     padding-left: 1.3em ;
     text-indent: -1.3em ;
   }
-  ul li p.link-phone{ // This places the phone icon in front individual text in a list
-    padding-left: 1.3em ;
-    text-indent: -1.3em ;
-  }
-  p.link-phone a:link:before{
-    font-family: 'FontAwesome';
-    content: "\f095" ;
-    padding-right:5px;
-    color:$grey18;
-  }
-  p.link-phone a:visited:before{color:$grey18;}
-
-  span.link-phone:before{
-    font-family: 'FontAwesome';
-    content: "\f095" ;
-    padding-right:5px;
-    color:$grey18;
-  }
 
 
   // EMAIL ===========================================================================
-  .link-email{ // This places the email icon in front of all text links in a single cell
-    p{padding-left: 1.3em ;
-      text-indent: -1.3em ;
-    }
-    a:link:before{
-      font-family: 'FontAwesome';
-      content: "\f003" ;
-      padding-right:5px;
-      color:$grey18;
-    }
-    a:visited:before{color:$grey18;}
+  // This places the email icon in front of text links
+  .link-email a:link:before{
+    font-family: 'FontAwesome';
+    content: "\f003" ;
+    padding-right:7px;
+    color:$grey18;
   }
-
-  p.link-email{ // This places the email icon in front individual text
-    padding-left: 1.3em ;
-    text-indent: -1.3em ;
-  }
-  ul li p.link-email{ // This places the email icon in front individual text in a list
-    padding-left: 1.3em ;
-    text-indent: -1.3em ;
-  }
-  p.link-email a:link:before{
+  a[class$='email']:before,
+  span.link-email:before {
     font-family: 'FontAwesome';
     content: "\f003" ;
     padding-right:5px;
     color:$grey18;
+    // float:left;
   }
-  p.link-email a:visited:before{color:$grey18;}
+  p.link-email{ // This places the email icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
 
 
 // Glyphicons =========================================================================

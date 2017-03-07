@@ -1,0 +1,50 @@
+// From: http://bootsnipp.com/snippets/featured/custom-search-input
+
+.sard-search{
+  background-color:$turq;
+  margin:0px 0px 30px 0px;
+  padding:10px;
+  border-radius:12px;
+}
+
+#sard-search-input{
+    padding: 4px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+#sard-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#sard-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#sard-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#sard-search-input .glyphicon-search{
+    font-size: 23px;
+    color:$turq;
+}
+#sard-search-input .glyphicon-search:hover{
+    color:$teal;
+}
+#sard-search-input .glyphicon-search:active{
+    color:$ink;
+}
+
+#sard-search-input .btn{
+  top: 0px; // Ths overrides the sard button styles for movement when pressed
+}
+
