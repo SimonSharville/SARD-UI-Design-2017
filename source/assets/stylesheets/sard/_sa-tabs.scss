@@ -485,6 +485,11 @@ $tab-number-bg-active:    $grey18;
     display: block;
   }
 
+  .horizontal.tab-content .row {  // this overrides the row margins when placed in horizontal tab content
+    margin-left:0px;
+    margin-right:0px;
+  }
+
 } // End sa-h-tabs
 
 
