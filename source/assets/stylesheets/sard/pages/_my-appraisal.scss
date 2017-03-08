@@ -407,7 +407,51 @@ input[type=submit]:focus{
   margin-bottom:7px;
 }
 
+// eDocs Sortable Table styles ============================================
 
+.datatable .table{
+  padding:0px;
+  margin-left:-8px;
+  margin-right:-8px;
+  width: calc(100% + 16px);
+}
+
+.datatable .table > thead > tr > th{
+  border-bottom: 0px solid red;
+  background-color: $grey16;
+  color:white;
+  border-radius:20px;
+  text-align:center;
+  vertical-align:middle;
+}
+.datatable .table > thead > tr > th:first-of-type{
+  left:-5px;
+}
+.datatable .table > thead > tr > th:last-of-type{
+  right:-5px;
+}
+
+
+.datatable .table td{
+  border-top: none;
+  border-bottom: 1px solid $grey04;
+  padding-left:5px;
+  padding-right:5px;
+}
+
+.datatable .table a:before{
+  margin-right:-10px;
+}
+
+.datatable .table a:link{
+  // padding-left: 0px ;
+  // text-indent: 0px ;
+}
+
+.datatable .edit{
+  float:right;
+  padding-right:10px;
+}
 
 
 

@@ -7422,6 +7422,7 @@
                 
                   <div class="row">
                     <h2 class="title">Documents</h2>
+                    <h4>Option 1: This uses separate tables for each date entry but cannot be sorted.</h4>
                     <div class="edoc-list">
                 
                       <div class="edocuments">
@@ -7430,7 +7431,7 @@
                           <tbody>
                             <tr>
                               <td class="file">
-                                <a href="#" class="link-jpg">Unnamed</a>
+                                <a href="#" class="link-jpg">Document Title</a>
                               </td>
                               <td class="links">
                                 <a href="#" role="button"><i class="fa fa-info-circle turq"></i></a>
@@ -7440,7 +7441,7 @@
                             </tr>
                             <tr>
                               <td class="file">
-                              <a href="#" class="link-pdf">Really, really, really, extrodinary long file name</a>
+                              <a href="#" class="link-pdf">Really, really, really, extrodinary long document title</a>
                             </td>
                               <td class="links">
                               <a href="#" role="button"><i class="fa fa-info-circle turq"></i></a>
@@ -7450,7 +7451,7 @@
                             </tr>
                             <tr>
                               <td class="file">
-                              <a href="#" class="link-jpg">Average length file name</a>
+                              <a href="#" class="link-jpg">Average length document Title</a>
                             </td>
                               <td class="links">
                               <a href="#" role="button"><i class="fa fa-info-circle turq"></i></a>
@@ -7486,7 +7487,7 @@
                           <tbody>
                             <tr>
                               <td class="file">
-                                <a href="#" class="link-jpg">Unnamed</a>
+                                <a href="#" class="link-jpg">Document Title</a>
                               </td>
                               <td class="links">
                                 <a href="#" role="button"><i class="fa fa-info-circle turq"></i></a>
@@ -7504,7 +7505,7 @@
                           <tbody>
                             <tr>
                               <td class="file">
-                                <a href="#" class="link-zip">Unnamed</a>
+                                <a href="#" class="link-zip">Document Title</a>
                               </td>
                               <td class="links">
                                 <a href="#" role="button"><i class="fa fa-info-circle turq"></i></a>
@@ -7515,10 +7516,127 @@
                           </tbody>
                         </table>
                       </div> <!-- END edocuments -->
-                      
-                      
                       
                     </div> <!-- END edoc-list -->
+                  </div> <!-- END row -->
+                
+                
+                  <div class="row perf"></div>
+                
+                
+                  <div class="row">
+                    <h2 class="title">Documents</h2>
+                    <h4>Option 2: This is a sortable and searchable table, but I can't make the dates sort correctly while keeping them in the style format they are in (mon, 06 Feb 2017), which I feel is more legible.</h4>
+                    <h4>If you wish to go with this option, I can do some more design tweaks to it, if need be.</h4>
+                    <div class="datatable">
+                      <table id="datatable" class="table table-hover">
+                        <thead>
+                            <tr>
+                              <th>Date</th>
+                              <th>File name</th>
+                              <th>File type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td>Mon, 06 Feb 2017</td>
+                              <td>
+                                <a href="#" class="link-jpg">Document Title</a>
+                                <span class="edit">
+                                  <a href="#" role="button"><i class="fa fa-info-circle turq"></i></a>
+                                  <a href="#" role="button"><i class="fa fa-download"></i></a>
+                                  <a href="#" role="button"><i class="fa fa-times-circle red"></i></a>
+                                </span>
+                              </td>
+                              <td>JPG</td>
+                            </tr>
+                            <tr>
+                              <td>Tue, 10 Dec 2016</td>
+                              <td>
+                                <a href="#" class="link-pdf">Really, really, really, extrodinary long document title</a>
+                                <span class="edit">
+                                  <a href="#" role="button"><i class="fa fa-info-circle turq"></i></a>
+                                  <a href="#" role="button"><i class="fa fa-download"></i></a>
+                                  <a href="#" role="button"><i class="fa fa-times-circle red"></i></a>
+                                </span>
+                              </td>
+                              <td>PDF</td>
+                            </tr>
+                            <tr>
+                              <td>Wed, 9 Dec 2016</td>
+                              <td>
+                                <a href="#" class="link-pdf">Avarage long document title</a>
+                                <span class="edit">
+                                  <a href="#" role="button"><i class="fa fa-info-circle turq"></i></a>
+                                  <a href="#" role="button"><i class="fa fa-download"></i></a>
+                                  <a href="#" role="button"><i class="fa fa-times-circle red"></i></a>
+                                </span>
+                              </td>
+                              <td>PDF</td>
+                            </tr>
+                            <tr>
+                              <td>Thur, 10 Dec 2015</td>
+                              <td>
+                                <a href="#" class="link-xls">Avarage long document title</a>
+                                <span class="edit">
+                                  <a href="#" role="button"><i class="fa fa-info-circle turq"></i></a>
+                                  <a href="#" role="button"><i class="fa fa-download"></i></a>
+                                  <a href="#" role="button"><i class="fa fa-times-circle red"></i></a>
+                                </span>
+                              </td>
+                              <td>Excel</td>
+                            </tr>
+                            <tr>
+                              <td>Fri, 10 Dec 2016</td>
+                              <td>
+                                <a href="#" class="link-pdf">Really, really, really, really, really, really, really, really, extrodinary long document title</a>
+                                <span class="edit">
+                                  <a href="#" role="button"><i class="fa fa-info-circle turq"></i></a>
+                                  <a href="#" role="button"><i class="fa fa-download"></i></a>
+                                  <a href="#" role="button"><i class="fa fa-times-circle red"></i></a>
+                                </span>
+                              </td>
+                              <td>PDF</td>
+                            </tr>
+                            <tr>
+                              <td>Thur, 10 Dec 2015</td>
+                              <td>
+                                <a href="#" class="link-xls">Avarage long document title</a>
+                                <span class="edit">
+                                  <a href="#" role="button"><i class="fa fa-info-circle turq"></i></a>
+                                  <a href="#" role="button"><i class="fa fa-download"></i></a>
+                                  <a href="#" role="button"><i class="fa fa-times-circle red"></i></a>
+                                </span>
+                              </td>
+                              <td>Excel</td>
+                            </tr>
+                            <tr>
+                              <td>Thur, 10 Dec 2015</td>
+                              <td>
+                                <a href="#" class="link-xls">Avarage long document title</a>
+                                <span class="edit">
+                                  <a href="#" role="button"><i class="fa fa-info-circle turq"></i></a>
+                                  <a href="#" role="button"><i class="fa fa-download"></i></a>
+                                  <a href="#" role="button"><i class="fa fa-times-circle red"></i></a>
+                                </span>
+                              </td>
+                              <td>Excel</td>
+                            </tr>
+                            <tr>
+                              <td>Thur, 10 Dec 2015</td>
+                              <td>
+                                <a href="#" class="link-xls">Avarage long document title</a>
+                                <span class="edit">
+                                  <a href="#" role="button"><i class="fa fa-info-circle turq"></i></a>
+                                  <a href="#" role="button"><i class="fa fa-download"></i></a>
+                                  <a href="#" role="button"><i class="fa fa-times-circle red"></i></a>
+                                </span>
+                              </td>
+                              <td>Excel</td>
+                            </tr>
+                          </tbody>
+                      </table>
+                    </div>
                   </div> <!-- END row -->
                 
                 
@@ -7580,6 +7698,12 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/> -->
     <script type="text/javascript" src="../../assets/javascripts/sard/sa-datepicker.js"></script>
+    
+    <!-- Data Table -->
+    <!-- https://datatables.net/examples/styling/bootstrap.html -->
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../assets/javascripts/sard/sa-datatable.js"></script>
     
     
     <!-- EXPERIMENTS -->
