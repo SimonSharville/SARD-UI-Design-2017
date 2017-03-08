@@ -26,15 +26,16 @@
 
   @import "sard/sa-components";
 
-  @import "sard/sa-page-elements";
-
-  // @import "sard/sa-vertical-tabs"; // Remove when below is complete
-
   @import "sard/sa-tabs";
 
   @import "sard/sa-datepicker";
 
   @import "sard/sa-search";
+
+  @import "sard/sa-datatable";
+
+  // Keep this last in list
+  @import "sard/sa-page-elements";
 
   
 
@@ -45,7 +46,7 @@
 
   @import "experiments/sa-sidebar";
 
-   @import "experiments/sa-polygon";
+  @import "experiments/sa-polygon";
 
   // Removed
 
@@ -58,6 +59,8 @@
   // @import "experiments/sa-bs-vertical-tabs";
 
   // @import "experiments/sa-bs-vertical-tabs-2";
+
+  // @import "sard/sa-vertical-tabs";
 
 
 
