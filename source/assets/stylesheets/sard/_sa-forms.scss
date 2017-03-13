@@ -17,11 +17,9 @@
 .sa-form fieldset{
   background-color:$grey02;
   border-radius: 5px;
-   padding:15px;
-   padding-top:45px;
-   margin-top:10px;
-   margin-bottom:15px;
-   position:relative;
+  padding:10px 15px 0px 15px;
+  margin-bottom:20px;
+  position:relative;
 }
 
 // Alternative 1
@@ -38,18 +36,14 @@
 // Alternative 2
 .sa-form legend{
   background-color:$grey16;
-  position:absolute;
-  top:0px;
-  width:100%;
+  width:calc(100% + 30px);
   border-bottom: 0px solid $grey16;
   border-radius: 5px 5px 0px 0px;
   color:white;
   margin-left:-15px;
+  margin-right:-15px;
+  margin-bottom: 0px;
   padding:5px 15px;
-}
-
-.sa-form fieldset.no-legend{
-  padding-top:5px;
 }
 
 .sa-form .form-group{
@@ -66,14 +60,15 @@
   border:none;
 }
 
-.appraisal-form .form-control:focus{
+.sa-form .form-control:focus{
   box-shadow: none;
 }
 
-.sa-form .control-label{
+.sa-form .form-horizontal .control-label{
   text-align:left;
   line-height:1.2em;
-  padding-top:0px;
+  // padding-top:0px;
+  padding-right:10px;
 }
 
 .sa-form textarea{
@@ -82,6 +77,11 @@
 .sa-form .form-control:focus{
   border-color: $turq;
 }
+
+.sa-form .form-submission{
+  // padding-top:5px;
+}
+
 
 // Expanding form groups ====================
 
@@ -103,3 +103,18 @@
 .reveal-if-active .form-group:first-of-type{
   margin-top:0px;
 }
+
+
+// Input =====================================
+
+
+
+input[type=submit]:focus{
+  outline: none !important; // This removes the glow on input buttons
+}
+
+// Keep as reference
+// input[type=submit].positive, input[type=submit].positive:visited { background-color:$green; color:white;}
+// input[type=submit].positive:hover { background-color:darken($green, 5%); }
+// input[type=submit].positive:active, { background-color:darken($green, 10%); }
+// input[type=submit].positive:focus { background-color:darken($green, 10%); }
