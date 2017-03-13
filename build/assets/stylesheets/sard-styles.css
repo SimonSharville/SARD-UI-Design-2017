@@ -2210,7 +2210,7 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 20px; }
 
 .rag-buttons .rag-btn {
@@ -2642,35 +2642,31 @@ img.user-guide-cover {
   margin-bottom: 60px; }
 
 .tab-section-title {
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
 
-.section-title {
-  font-family: 'robotothin', Helvetica, Arial, Sans-serif;
-  font-size: 5.000em;
-  letter-spacing: -0.025em;
-  margin-top: 0;
-  margin-left: -4px;
+.tab-section-title .section {
+  margin: 0;
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+  font-size: 1.7em;
   margin-bottom: -10px; }
 
-@media (max-width: 767px) {
-  .section-title {
-    font-size: 4.000em; } }
+.tab-section-title .title {
+  margin: 0;
+  padding: 0;
+  font-family: 'robotothin', Helvetica, Arial, Sans-serif;
+  font-size: 4.000em;
+  margin-left: -4px; }
+  @media (max-width: 767px) {
+    .tab-section-title .title {
+      font-size: 3.000em; } }
 
-.section-details {
+.tab-section-title .description {
   font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
-  font-size: 1.500em;
-  margin-left: -1px; }
-
-.tab-subtitle {
-  font-family: 'robotolight', Helvetica, Arial, Sans-serif;
-  font-size: 1.500em;
-  line-height: 1.15em;
-  margin-bottom: 5px; }
-
-.tab-button {
-  padding-top: 10px;
-  padding-bottom: 20px;
-  padding-right: 20px; }
+  font-size: 1.25em;
+  line-height: 1.27em;
+  margin: 0;
+  padding: 0;
+  padding-top: 8px; }
 
 .sa-h-tabs li p {
   text-indent: 0px;
@@ -2868,6 +2864,17 @@ img.user-guide-cover {
   background-color: #403D3D;
   color: white;
   z-index: 100; }
+
+.sa-v-tabs .tabs-left .tab-subtitle {
+  font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+  font-size: 1.500em;
+  line-height: 1.15em;
+  margin-bottom: 5px; }
+
+.sa-v-tabs .tabs-left .tab-button {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-right: 20px; }
 
 .sa-v-tabs li p {
   text-indent: 0px;
@@ -4061,36 +4068,6 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   border-top: 1px solid #403D3D;
   margin-top: 5px;
   margin-bottom: -12px; }
-
-.appraisal-header .section, .portfolio-header .section, #edocs .section {
-  margin: 0;
-  font-family: 'robotobold', Helvetica, Arial, Sans-serif; }
-
-.appraisal-header .title, .portfolio-header .title, #edocs .title {
-  margin: 0;
-  padding: 0;
-  font-family: 'robotothin', Helvetica, Arial, Sans-serif;
-  font-size: 4.000em;
-  margin-left: -4px; }
-
-@media (max-width: 767px) {
-  .appraisal-header .title, .portfolio-header .title, #edocs .title {
-    font-size: 3.000em; } }
-
-.appraisal-header .description, .portfolio-header .description, #edocs .description {
-  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
-  font-size: 1.25em;
-  line-height: 1.27em;
-  margin: 0;
-  padding: 0;
-  padding-top: 10px; }
-
-#appraisal h3 {
-  font-family: 'robotolight', Helvetica, Arial, Sans-serif;
-  margin-bottom: 5px; }
-
-.appraisal-dataset-guidance {
-  margin-top: 20px; }
 
 .evidences, .comments, .notes {
   /* Medium Devices, Desktops */ }

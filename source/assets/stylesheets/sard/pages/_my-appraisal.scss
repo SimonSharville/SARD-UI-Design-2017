@@ -3,49 +3,12 @@
 //  My Appraisal Pages
 
 
-
-
-// page specific items here =========================================
-
-  
-.appraisal-header, .portfolio-header, #edocs{
-  .section{
-    margin:0;
-    font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-  }
-  .title{
-    margin:0;
-    padding:0;
-    font-family: 'robotothin', Helvetica, Arial, Sans-serif;
-    font-size: 4.000em;
-    margin-left:-4px;
-  }
-  @media (max-width: 767px) {
-    .title{font-size: 3.000em;}
-  }
-  .description{
-    font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
-    font-size: 1.25em;
-    line-height:1.27em;
-    margin:0;
-    padding:0;
-    padding-top:10px;
-  }
-}
-
-#appraisal{
-  h3{
-    font-family: 'robotolight', Helvetica, Arial, Sans-serif;
-    margin-bottom:5px;
-  }
-}
-
 // appraisal-dataset =================================================
 
 .appraisal-dataset{ }
 
 .appraisal-dataset-guidance{ 
-  margin-top:20px;
+  // margin-top:20px;
 }
 
 
