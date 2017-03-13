@@ -10,42 +10,44 @@ $tab-list-hover:          $grey08;
 $tab-pane-colour:         white;
 $tab-text:                $grey18;
 $tab-shadow:              $grey10;
-$tab-number-bg:           $grey14;
-$tab-number-bg-active:    $grey18;
+$h-tab-number-bg:           $grey12;
+$h-tab-number-bg-active:    $grey18;
+$v-tab-number-bg:           $grey16;
+$v-tab-number-bg-active:    $grey18;
 
 
 
 // Global styles ======================================
 
 .tab-section-title{
-    margin-bottom:20px;
-  }
+  margin-bottom:20px;
+}
 
-  .tab-section-title .section{
-    margin:0;
-    font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-    font-size: 1.7em;
-    margin-bottom:-10px;
+.tab-section-title .section{
+  margin:0;
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+  font-size: 1.7em;
+  margin-bottom:-10px;
+}
+.tab-section-title .title{
+  margin:0;
+  padding:0;
+  font-family: 'robotothin', Helvetica, Arial, Sans-serif;
+  font-size: 4.000em;
+  margin-left:-4px;
+  @media (max-width: 767px) {
+    font-size: 3.000em;
   }
-  .tab-section-title .title{
-    margin:0;
-    padding:0;
-    font-family: 'robotothin', Helvetica, Arial, Sans-serif;
-    font-size: 4.000em;
-    margin-left:-4px;
-    @media (max-width: 767px) {
-      font-size: 3.000em;
-    }
-  }
-  
-  .tab-section-title .description{
-    font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
-    font-size: 1.25em;
-    line-height:1.27em;
-    margin:0;
-    padding:0;
-    padding-top:8px;
-  }
+}
+
+.tab-section-title .description{
+  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+  font-size: 1.25em;
+  line-height:1.27em;
+  margin:0;
+  padding:0;
+  padding-top:8px;
+}
 
 // .section-title {
 //   font-family: 'robotothin', Helvetica, Arial, Sans-serif;
@@ -262,7 +264,7 @@ $tab-number-bg-active:    $grey18;
       box-shadow: none;
     }
     .tab-number{
-      background:$tab-number-bg;
+      background:$h-tab-number-bg;
       display:table-cell;
       vertical-align:middle;
       text-align:center;
@@ -283,7 +285,7 @@ $tab-number-bg-active:    $grey18;
     }
 
     .active .tab-number{
-      background-color: $tab-number-bg-active;
+      background-color: $h-tab-number-bg-active;
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
       box-shadow: none;
@@ -448,14 +450,14 @@ $tab-number-bg-active:    $grey18;
 
   .tab-number{
     display:table-cell;
-    background:$tab-number-bg;
+    background:$v-tab-number-bg;
     width:50px;
     min-width:50px;
     text-align:center;
     vertical-align:middle;
   }
   .active .tab-number{
-    background:$tab-number-bg-active;
+    background:$v-tab-number-bg-active;
   }
 
   .tab-number.rag-red{background:$rag-red}
@@ -598,8 +600,8 @@ $tab-number-bg-active:    $grey18;
     box-shadow: none;
   }
 
-  .sa-h-tabs .h-tab-wrapper .sa-tab .tab-number{ background-color: $tab-number-bg;}
+  .sa-h-tabs .h-tab-wrapper .sa-tab .tab-number{ background-color: $h-tab-number-bg;}
 
-  .sa-h-tabs .h-tab-wrapper .active .sa-tab .tab-number{ background-color: $tab-number-bg-active;}
+  .sa-h-tabs .h-tab-wrapper .active .sa-tab .tab-number{ background-color: $h-tab-number-bg-active;}
 
 }

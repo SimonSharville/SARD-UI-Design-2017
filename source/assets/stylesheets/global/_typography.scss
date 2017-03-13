@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6, p{
   }
   
   h3 {
-    font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+    font-family: 'robotolight', Helvetica, Arial, Sans-serif;
     font-size: 2.000em;
     margin-top:0;
     margin-left:-2px;
@@ -67,17 +67,9 @@ h1, h2, h3, h4, h5, h6, p{
   p {
     font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
     font-size: 1.000em;
-    // line-height: 1.5em;
   }
 
-  .table p { // This adjust the spacing and endents of multi line links in a table
-    // padding-left: 1.25em;
-    // text-indent:-1.25em;
-    margin-bottom:0.5em;
-    line-height: 1.3em;
-  }
-
-
+  
   li p { // This adjust the spacing and endents of multi line links in a list
     padding-left: 1.25em;
     text-indent:-1.25em;

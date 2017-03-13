@@ -459,7 +459,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   border-radius:0px;
   border-color:white;
   h3{
-    // font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+    font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
     font-size: 1.500em;
   }
 }
@@ -975,6 +975,15 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 // Tables ===============================================================================
 
+.table h3{
+  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+}
+
+.table p { // This adjust the spacing and endents of multi line links in a table
+  margin-bottom:0.5em;
+  line-height: 1.3em;
+}
+  
 // Bootstrap overrides ------------------
 // Anything commented out means no change
 
