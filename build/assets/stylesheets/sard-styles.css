@@ -332,7 +332,7 @@ h2 {
   margin-left: -3px; }
 
 h3 {
-  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+  font-family: 'robotolight', Helvetica, Arial, Sans-serif;
   font-size: 2.000em;
   margin-top: 0;
   margin-left: -2px; }
@@ -353,10 +353,6 @@ h6 {
 p {
   font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
   font-size: 1.000em; }
-
-.table p {
-  margin-bottom: 0.5em;
-  line-height: 1.3em; }
 
 li p {
   padding-left: 1.25em;
@@ -1047,6 +1043,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   border-radius: 0px;
   border-color: white; }
   .panel-heading h3 {
+    font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
     font-size: 1.500em; }
 
 .panel-body, .button {
@@ -1710,6 +1707,13 @@ button:hover {
     box-shadow: none;
     text-decoration: none !important;
     background-color: none; }
+
+.table h3 {
+  font-family: 'robotoregular', Helvetica, Arial, Sans-serif; }
+
+.table p {
+  margin-bottom: 0.5em;
+  line-height: 1.3em; }
 
 .table {
   padding-left: 10px;
@@ -2756,7 +2760,7 @@ img.user-guide-cover {
   box-shadow: none; }
 
 .sa-h-tabs .h-tab-wrapper .tab-number {
-  background: #615E5C;
+  background: #827D7D;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
@@ -2900,7 +2904,7 @@ img.user-guide-cover {
 
 .sa-v-tabs .tab-number {
   display: table-cell;
-  background: #615E5C;
+  background: #403D3D;
   width: 50px;
   min-width: 50px;
   text-align: center;
@@ -3015,10 +3019,81 @@ img.user-guide-cover {
   box-shadow: none; }
 
 .tab-content.vertical .sa-h-tabs .h-tab-wrapper .sa-tab .tab-number {
-  background-color: #615E5C; }
+  background-color: #827D7D; }
 
 .tab-content.vertical .sa-h-tabs .h-tab-wrapper .active .sa-tab .tab-number {
   background-color: #211F0F; }
+
+.sa-form .form-horizontal .col-xs-1, .sa-form .form-horizontal .col-sm-1, .sa-form .form-horizontal .col-md-1, .sa-form .form-horizontal .col-lg-1, .sa-form .form-horizontal .col-xs-2, .sa-form .form-horizontal .col-sm-2, .sa-form .form-horizontal .col-md-2, .sa-form .form-horizontal .col-lg-2, .sa-form .form-horizontal .col-xs-3, .sa-form .form-horizontal .col-sm-3, .sa-form .form-horizontal .col-md-3, .sa-form .form-horizontal .col-lg-3, .sa-form .form-horizontal .col-xs-4, .sa-form .form-horizontal .col-sm-4, .sa-form .form-horizontal .col-md-4, .sa-form .form-horizontal .col-lg-4, .sa-form .form-horizontal .col-xs-5, .sa-form .form-horizontal .col-sm-5, .sa-form .form-horizontal .col-md-5, .sa-form .form-horizontal .col-lg-5, .sa-form .form-horizontal .col-xs-6, .sa-form .form-horizontal .col-sm-6, .sa-form .form-horizontal .col-md-6, .sa-form .form-horizontal .col-lg-6, .sa-form .form-horizontal .col-xs-7, .sa-form .form-horizontal .col-sm-7, .sa-form .form-horizontal .col-md-7, .sa-form .form-horizontal .col-lg-7, .sa-form .form-horizontal .col-xs-8, .sa-form .form-horizontal .col-sm-8, .sa-form .form-horizontal .col-md-8, .sa-form .form-horizontal .col-lg-8, .sa-form .form-horizontal .col-xs-9, .sa-form .form-horizontal .col-sm-9, .sa-form .form-horizontal .col-md-9, .sa-form .form-horizontal .col-lg-9, .sa-form .form-horizontal .col-xs-10, .sa-form .form-horizontal .col-sm-10, .sa-form .form-horizontal .col-md-10, .sa-form .form-horizontal .col-lg-10, .sa-form .form-horizontal .col-xs-11, .sa-form .form-horizontal .col-sm-11, .sa-form .form-horizontal .col-md-11, .sa-form .form-horizontal .col-lg-11, .sa-form .form-horizontal .col-xs-12, .sa-form .form-horizontal .col-sm-12, .sa-form .form-horizontal .col-md-12, .sa-form .form-horizontal .col-lg-12 {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.sa-form fieldset {
+  background-color: #EDEBEB;
+  border-radius: 5px;
+  padding: 15px;
+  padding-top: 45px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  position: relative; }
+
+.sa-form legend {
+  background-color: #403D3D;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  border-bottom: 0px solid #403D3D;
+  border-radius: 5px 5px 0px 0px;
+  color: white;
+  margin-left: -15px;
+  padding: 5px 15px; }
+
+.sa-form fieldset.no-legend {
+  padding-top: 5px; }
+
+.sa-form .form-group {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px; }
+
+.sa-form .form-group:first-of-type {
+  margin-top: 10px; }
+
+.sa-form .form-group:last-of-type {
+  border: none; }
+
+.appraisal-form .form-control:focus {
+  box-shadow: none; }
+
+.sa-form .control-label {
+  text-align: left;
+  line-height: 1.2em;
+  padding-top: 0px; }
+
+.sa-form textarea {
+  resize: vertical; }
+
+.sa-form .form-control:focus {
+  border-color: #00B2B2; }
+
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: scale(0.8);
+  transition: 0.5s; }
+  input[type="radio"]:checked ~ .reveal-if-active,
+  input[type="checkbox"]:checked ~ .reveal-if-active {
+    opacity: 1;
+    max-height: 100px;
+    overflow: visible;
+    padding: 10px 0px 10px 16px;
+    transform: scale(1); }
+
+.reveal-if-active .form-group:first-of-type {
+  margin-top: 0px; }
 
 /*!
  * Datepicker for Bootstrap v1.4.1 (https://github.com/eternicode/bootstrap-datepicker)
@@ -4130,76 +4205,6 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
     vertical-align: top;
     padding: 10px 10px;
     border-left: 1px solid #B5B0B0; }
-
-#appraisal .form-horizontal .col-xs-1, #appraisal .form-horizontal .col-sm-1, #appraisal .form-horizontal .col-md-1, #appraisal .form-horizontal .col-lg-1, #appraisal .form-horizontal .col-xs-2, #appraisal .form-horizontal .col-sm-2, #appraisal .form-horizontal .col-md-2, #appraisal .form-horizontal .col-lg-2, #appraisal .form-horizontal .col-xs-3, #appraisal .form-horizontal .col-sm-3, #appraisal .form-horizontal .col-md-3, #appraisal .form-horizontal .col-lg-3, #appraisal .form-horizontal .col-xs-4, #appraisal .form-horizontal .col-sm-4, #appraisal .form-horizontal .col-md-4, #appraisal .form-horizontal .col-lg-4, #appraisal .form-horizontal .col-xs-5, #appraisal .form-horizontal .col-sm-5, #appraisal .form-horizontal .col-md-5, #appraisal .form-horizontal .col-lg-5, #appraisal .form-horizontal .col-xs-6, #appraisal .form-horizontal .col-sm-6, #appraisal .form-horizontal .col-md-6, #appraisal .form-horizontal .col-lg-6, #appraisal .form-horizontal .col-xs-7, #appraisal .form-horizontal .col-sm-7, #appraisal .form-horizontal .col-md-7, #appraisal .form-horizontal .col-lg-7, #appraisal .form-horizontal .col-xs-8, #appraisal .form-horizontal .col-sm-8, #appraisal .form-horizontal .col-md-8, #appraisal .form-horizontal .col-lg-8, #appraisal .form-horizontal .col-xs-9, #appraisal .form-horizontal .col-sm-9, #appraisal .form-horizontal .col-md-9, #appraisal .form-horizontal .col-lg-9, #appraisal .form-horizontal .col-xs-10, #appraisal .form-horizontal .col-sm-10, #appraisal .form-horizontal .col-md-10, #appraisal .form-horizontal .col-lg-10, #appraisal .form-horizontal .col-xs-11, #appraisal .form-horizontal .col-sm-11, #appraisal .form-horizontal .col-md-11, #appraisal .form-horizontal .col-lg-11, #appraisal .form-horizontal .col-xs-12, #appraisal .form-horizontal .col-sm-12, #appraisal .form-horizontal .col-md-12, #appraisal .form-horizontal .col-lg-12 {
-  padding-left: 0px;
-  padding-right: 0px; }
-
-#appraisal fieldset {
-  background-color: #EDEBEB;
-  border-radius: 5px;
-  padding: 10px;
-  padding-top: 45px;
-  margin-top: 10px;
-  position: relative; }
-
-#appraisal legend {
-  background-color: #A39E9C;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  border-bottom: 0px solid #A39E9C;
-  border-radius: 5px 5px 0px 0px;
-  color: white;
-  margin-left: -10px;
-  padding: 5px 10px; }
-
-#appraisal fieldset.no-legend {
-  padding-top: 5px; }
-
-#appraisal .form-group {
-  border-bottom: 1px solid white;
-  padding-bottom: 10px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 10px; }
-
-#appraisal .form-group:first-of-type {
-  margin-top: 10px; }
-
-#appraisal .form-group:last-of-type {
-  border: none; }
-
-.appraisal-form .form-control:focus {
-  box-shadow: none; }
-
-#appraisal .control-label {
-  text-align: left;
-  line-height: 1.2em;
-  padding-top: 0px; }
-
-#appraisal textarea {
-  resize: vertical; }
-
-.appraisal-form .form-control:focus {
-  border-color: #00B2B2; }
-
-.reveal-if-active {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transform: scale(0.8);
-  transition: 0.5s; }
-  input[type="radio"]:checked ~ .reveal-if-active,
-  input[type="checkbox"]:checked ~ .reveal-if-active {
-    opacity: 1;
-    max-height: 100px;
-    overflow: visible;
-    padding: 10px 20px;
-    transform: scale(1); }
-
-.reveal-if-active .form-group:first-of-type {
-  margin-top: 0px; }
 
 .form-submission {
   padding-top: 5px; }
