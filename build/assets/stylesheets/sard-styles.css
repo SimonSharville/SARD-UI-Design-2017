@@ -3031,25 +3031,20 @@ img.user-guide-cover {
 .sa-form fieldset {
   background-color: #EDEBEB;
   border-radius: 5px;
-  padding: 15px;
-  padding-top: 45px;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  padding: 10px 15px 0px 15px;
+  margin-bottom: 20px;
   position: relative; }
 
 .sa-form legend {
   background-color: #403D3D;
-  position: absolute;
-  top: 0px;
-  width: 100%;
+  width: calc(100% + 30px);
   border-bottom: 0px solid #403D3D;
   border-radius: 5px 5px 0px 0px;
   color: white;
   margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 0px;
   padding: 5px 15px; }
-
-.sa-form fieldset.no-legend {
-  padding-top: 5px; }
 
 .sa-form .form-group {
   border-bottom: 1px solid white;
@@ -3064,13 +3059,13 @@ img.user-guide-cover {
 .sa-form .form-group:last-of-type {
   border: none; }
 
-.appraisal-form .form-control:focus {
+.sa-form .form-control:focus {
   box-shadow: none; }
 
-.sa-form .control-label {
+.sa-form .form-horizontal .control-label {
   text-align: left;
   line-height: 1.2em;
-  padding-top: 0px; }
+  padding-right: 10px; }
 
 .sa-form textarea {
   resize: vertical; }
@@ -3094,6 +3089,9 @@ img.user-guide-cover {
 
 .reveal-if-active .form-group:first-of-type {
   margin-top: 0px; }
+
+input[type=submit]:focus {
+  outline: none !important; }
 
 /*!
  * Datepicker for Bootstrap v1.4.1 (https://github.com/eternicode/bootstrap-datepicker)
@@ -4205,12 +4203,6 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
     vertical-align: top;
     padding: 10px 10px;
     border-left: 1px solid #B5B0B0; }
-
-.form-submission {
-  padding-top: 5px; }
-
-input[type=submit]:focus {
-  outline: none !important; }
 
 .attachments {
   border-top: 1px solid #211F0F; }

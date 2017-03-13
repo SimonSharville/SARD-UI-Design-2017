@@ -110,24 +110,6 @@
 
 
 
-// Input =====================================
-
-.form-submission{
-  padding-top:5px;
-}
-
-input[type=submit]:focus{
-  outline: none !important; // This removes the glow on imput buttons
-}
-
-// Keep as reference
-// input[type=submit].positive, input[type=submit].positive:visited { background-color:$green; color:white;}
-// input[type=submit].positive:hover { background-color:darken($green, 5%); }
-// input[type=submit].positive:active, { background-color:darken($green, 10%); }
-// input[type=submit].positive:focus { background-color:darken($green, 10%); }
-
-// END Appraisal Forms =================================================================================
-
 // Attachments =========================================================================================
 
 
