@@ -1,0 +1,341 @@
+<!-- Activities ==================================================================================== -->
+
+<div id="all-activities">
+  <div id="job-content-sort-picker">
+    <div class="no-pdf">
+      Sort by:
+    </div>
+    <label class="no-pdf">
+      <input class="sort" name="sort_method" type="radio" value="chronological_order">
+      Weekday
+    </label>
+    <label class="no-pdf">
+      <input class="sort" name="sort_method" type="radio" value="order">
+      Custom
+    </label>
+    <label class="no-pdf">
+      <input class="sort" name="sort_method" type="radio" value="categorisation">
+      Category
+    </label>
+  </div>
+  <table id="job-contents" class="table table-hover">
+    <thead>
+      <tr>
+        <th class="drag_handle_header"></th>
+        <th class="start_time">Start</th>
+        <th class="end_time">End</th>
+        <th class="categorisation"></th>
+        <th class="activity">Activity</th>
+        <th class="hours_per_week">Hours / week</th>
+        <th class="pas_per_week">PAs / week</th>
+        <th class="edit"></th>
+        <th class="destroy"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="sortable" class="job-content-row">
+        <td class="drag_handle"></td>
+        <td class="edit start_time">08:00</td>
+        <td class="edit end_time">12:00</td>
+        <td class="edit categorisation"><strong>DCC</strong></td>
+        <td class="edit activity">Weekly on Mondays</td>
+        <td class="edit hours_per_week">4</td>
+        <td class="edit pas_per_week">1</td>
+        <td class="edit">
+          <a class="no-pdf edit" href="#">Edit</a>
+        </td>
+        <td>
+          <a class="no-pdf destroy" href="#">Remove</a>
+        </td>
+      </tr>
+      
+      <tr id="sortable"  class="job-content-row">
+        <td class="drag_handle"></td>
+        <td class="edit start_time">08:00</td>
+        <td class="edit end_time">12:00</td>
+        <td class="edit categorisation">
+          <strong>DCC</strong>
+        </td>
+        <td class="edit activity">Weekly on Mondays</td>
+        <td class="edit hours_per_week">4</td>
+        <td class="edit pas_per_week">1</td>
+        <td class="edit">
+          <a class="no-pdf edit" href="#">Edit</a>
+        </td>
+        <td>
+          <a class="no-pdf destroy" href="#">Remove</a>
+        </td>
+      </tr>
+      
+      <tr id="sortable"  class="job-content-row">
+        <td class="drag_handle"></td>
+        <td class="edit start_time">08:00</td>
+        <td class="edit end_time">12:00</td>
+        <td class="edit categorisation">
+          <strong>DCC</strong>
+        </td>
+        <td class="edit activity">Weekly on Mondays</td>
+        <td class="edit hours_per_week">4</td>
+        <td class="edit pas_per_week">1</td>
+        <td class="edit">
+          <a class="no-pdf edit" href="#">Edit</a>
+        </td>
+        <td>
+          <a class="no-pdf destroy" href="#">Remove</a>
+        </td>
+      </tr>
+      
+      <tr class="job-content-row">
+        <td class="drag_handle"></td>
+        <td class="edit start_time">08:00</td>
+        <td class="edit end_time">12:00</td>
+        <td class="edit categorisation">
+          <strong>DCC</strong>
+        </td>
+        <td class="edit activity">Weekly on Mondays, Tuesdays, and Wednesdays</td>
+        <td class="edit hours_per_week">12</td>
+        <td class="edit pas_per_week">3</td>
+        <td class="edit">
+          <a class="no-pdf edit" href="#">Edit</a>
+        </td>
+        <td>
+          <a class="no-pdf destroy" href="#">Remove</a>
+        </td>
+      </tr>
+      
+      <tr class="job-content-row">
+        <td class="drag_handle"></td>
+        <td class="edit start_time">08:00</td>
+        <td class="edit end_time">12:00</td>
+        <td class="edit categorisation">
+          <strong>DCC</strong>
+        </td>
+        <td class="edit activity">Weekly on Mondays<br>PROSPECTIVE COVER</td>
+        <td class="edit hours_per_week">4</td>
+        <td class="edit pas_per_week">1.238</td>
+        <td class="edit">
+          <a class="no-pdf edit" href="#">Edit</a>
+        </td>
+        <td>
+          <a class="no-pdf destroy" href="#">Remove</a>
+        </td>
+      </tr>
+      
+      <tr class="job-content-row">
+        <td class="drag_handle"></td>
+        <td class="edit start_time">08:00</td>
+        <td class="edit end_time">12:00</td>
+        <td class="edit categorisation">
+          <strong>DCC</strong>
+        </td>
+        <td class="edit activity">2 in every 10 weeks on Mondays<br>PROSPECTIVE COVER<br>Enter a brief description...</td>
+        <td class="edit hours_per_week">0.77</td>
+        <td class="edit pas_per_week">0.238</td>
+        <td class="edit">
+          <a class="no-pdf edit" href="#">Edit</a>
+        </td>
+        <td>
+          <a class="no-pdf destroy" href="#">Remove</a>
+        </td>
+      </tr>
+      
+      <tr class="job-content-row">
+        <td class="drag_handle"></td>
+        <td class="edit start_time">08:00</td>
+        <td class="edit end_time">12:00</td>
+        <td class="edit categorisation">
+          <strong>DCC</strong>
+        </td>
+        <td class="edit activity">Every 2 months on the 1st Monday and 2nd Monday and 3rd Monday and 4th Monday and 5th Monday<br>OVERRIDE: 21.0 per year<br>PROSPECTIVE COVER<br>EMG Clinic</td>
+        <td class="edit hours_per_week">1.62</td>
+        <td class="edit pas_per_week">0.5</td>
+        <td class="edit">
+          <a class="no-pdf edit" href="#">Edit</a>
+        </td>
+        <td>
+          <a class="no-pdf destroy" href="#">Remove</a>
+        </td>
+      </tr>
+      
+      <tr class="job-content-row">
+        <td class="drag_handle"></td>
+        <td class="edit start_time">08:00</td>
+        <td class="edit end_time">22:00</td>
+        <td class="edit categorisation">
+          <strong>DCC</strong>
+        </td>
+        <td class="edit activity">Every 12 weeks on Weekdays<br>PROSPECTIVE COVER<br>Labour Ward Cover</td>
+        <td class="edit hours_per_week">5.38</td>
+        <td class="edit pas_per_week">1.786</td>
+        <td class="edit">
+          <a class="no-pdf edit" href="#">Edit</a>
+        </td>
+        <td>
+          <a class="no-pdf destroy" href="#">Remove</a>
+        </td>
+      </tr>
+      
+      <tr class="job-content-row">
+        <td class="drag_handle"></td>
+        <td class="edit start_time">08:30</td>
+        <td class="edit end_time">19:30</td>
+        <td class="edit categorisation">
+          <strong>DCC</strong>
+        </td>
+        <td class="edit activity">Predictable On-Call: <br>Weekly on Weekdays<br>OVERRIDE: 10.0 per year<br>PROSPECTIVE COVER</td>
+        <td class="edit hours_per_week">2.12</td>
+        <td class="edit pas_per_week">0.665</td>
+        <td class="edit">
+          <a class="no-pdf edit" href="#">Edit</a>
+        </td>
+        <td>
+          <a class="no-pdf destroy" href="#">Remove</a>
+        </td>
+      </tr>
+      
+      <tr class="job-content-row">
+        <td class="drag_handle"></td>
+        <td class="edit start_time">08:30</td>
+        <td class="edit end_time">09:30</td>
+        <td class="edit categorisation">
+          <strong>DCC</strong>
+        </td>
+        <td class="edit activity">2 in every 3 weeks on Mondays, Tuesdays, Thursdays, and Fridays<br>Preparation for Ward Round, reading Rio and discussion with Ward Staff</td>
+        <td class="edit hours_per_week">2.69</td>
+        <td class="edit pas_per_week">0.673</td>
+        <td class="edit">
+          <a class="no-pdf edit" href="#">Edit</a>
+        </td>
+        <td>
+          <a class="no-pdf destroy" href="#">Remove</a>
+        </td>
+      </tr>
+      
+      <tr class="job-content-row">
+        <td class="drag_handle"></td>
+        <td class="edit start_time">09:30</td>
+        <td class="edit end_time">13:30</td>
+        <td class="edit categorisation">
+          <strong>DCC</strong>
+        </td>
+        <td class="edit activity">Weekly on Mondays, Tuesdays, Thursdays, and Fridays<br>Ward Round B2</td>
+        <td class="edit hours_per_week">16</td>
+        <td class="edit pas_per_week">4</td>
+        <td class="edit">
+          <a class="no-pdf edit" href="#">Edit</a>
+        </td>
+        <td>
+          <a class="no-pdf destroy" href="#">Remove</a>
+        </td>
+      </tr>
+      
+      <tr class="job-content-row">
+        <td class="drag_handle"></td>
+        <td class="edit start_time">13:00</td>
+        <td class="edit end_time">17:00</td>
+        <td class="edit categorisation">
+          <strong>DCC</strong>
+        </td>
+        <td class="edit activity">11 in every 12 weeks on Mondays, Tuesdays, Wednesdays, Thursdays, Fridays, and Saturdays<br>Ward Rounds</td>
+        <td class="edit hours_per_week">22.15</td>
+        <td class="edit pas_per_week">5.846</td>
+        <td class="edit">
+          <a class="no-pdf edit" href="#">Edit</a>
+        </td>
+        <td>
+          <a class="no-pdf destroy" href="#">Remove</a>
+        </td>
+      </tr>
+      
+      <tr class="job-content-row">
+        <td class="drag_handle"></td>
+        <td class="edit start_time">17:00</td>
+        <td class="edit end_time">23:00</td>
+        <td class="edit categorisation">
+          <strong>DCC</strong>
+        </td>
+        <td class="edit activity">Predictable On-Call: <br>Weekly on Weekdays</td>
+        <td class="edit hours_per_week">30</td>
+        <td class="edit pas_per_week">9.167</td>
+        <td class="edit">
+          <a class="no-pdf edit" href="#">Edit</a>
+        </td>
+        <td>
+          <a class="no-pdf destroy" href="#">Remove</a>
+        </td>
+      </tr>
+      
+      <tr class="job-content-row">
+        <td class="drag_handle"></td>
+        <td class="edit start_time">17:00</td>
+        <td class="edit end_time">23:00</td>
+        <td class="edit categorisation">
+          <strong>DCC</strong>
+        </td>
+        <td class="edit activity">Every 8 weeks on Wednesdays<br>OVERRIDE: 6.0 per year<br>PROSPECTIVE COVER</td>
+        <td class="edit hours_per_week">0.69</td>
+        <td class="edit pas_per_week">0.262</td>
+        <td class="edit">
+          <a class="no-pdf edit" href="#">Edit</a>
+        </td>
+        <td>
+          <a class="no-pdf destroy" href="#">Remove</a>
+        </td>
+      </tr>
+
+      <tr class="job-content-row">
+        <td class="drag_handle"></td>
+        <td class="edit start_time">08:00</td>
+        <td class="edit end_time">19:30</td>
+        <td class="edit categorisation">
+          <strong>DCC</strong>
+        </td>
+        <td class="edit activity">Predictable On-Call: <br>Every 8 weeks on Weekends<br>OVERRIDE: 13.0 per year<br>PROSPECTIVE COVER</td>
+        <td class="edit hours_per_week">2.88</td>
+        <td class="edit pas_per_week">1.187</td>
+        <td class="edit">
+          <a class="no-pdf edit" href="#">Edit</a>
+        </td>
+        <td>
+          <a class="no-pdf destroy" href="#">Remove</a>
+        </td>
+      </tr>
+
+      <tr class="job-content-row">
+        <td class="drag_handle"></td>
+        <td class="edit start_time">08:00</td>
+        <td class="edit end_time">16:30</td>
+        <td class="edit categorisation">
+          <strong>DCC</strong>
+        </td>
+        <td class="edit activity">Every 12 weeks on Weekends<br>PROSPECTIVE COVER<br>Labour Ward Cover weekends</td>
+        <td class="edit hours_per_week">1.47</td>
+        <td class="edit pas_per_week">0.607</td>
+        <td class="edit">
+          <a class="no-pdf edit" href="#">Edit</a>
+        </td>
+        <td>
+          <a class="no-pdf destroy" href="#">Remove</a>
+        </td>
+      </tr>
+
+      <tr class="job-content-row">
+        <td class="drag_handle"></td>
+        <td class="edit start_time">08:00</td>
+        <td class="edit end_time">19:30</td>
+        <td class="edit categorisation">
+          <strong>DCC</strong>
+        </td>
+        <td class="edit activity">Predictable On-Call: <br>Every 8 weeks on Weekends<br>OVERRIDE: 13.0 per year<br>PROSPECTIVE COVER</td>
+        <td class="edit hours_per_week">2.88</td>
+        <td class="edit pas_per_week">1.187</td>
+        <td class="edit">
+          <a class="no-pdf edit" href="#">Edit</a>
+        </td>
+        <td>
+          <a class="no-pdf destroy" href="#">Remove</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

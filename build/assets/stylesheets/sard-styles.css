@@ -4321,6 +4321,15 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   float: right;
   padding-right: 10px; }
 
+.all-activities {
+  display: block; }
+
+.drag_handle_header {
+  display: none; }
+
+.drag_handle {
+  display: none; }
+
 .sidebar {
   z-index: 100;
   position: relative;

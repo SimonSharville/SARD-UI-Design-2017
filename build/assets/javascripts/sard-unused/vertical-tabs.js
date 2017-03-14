@@ -1,0 +1,1 @@
+function showContent(e,t){var a,n,s;for(n=document.getElementsByClassName("tabcontent"),a=0;a<n.length;a++)n[a].style.display="none";for(s=document.getElementsByClassName("tablinks"),a=0;a<s.length;a++)s[a].className=s[a].className.replace(" active","");document.getElementById(t).style.display="block",e.currentTarget.className+=" active"}
