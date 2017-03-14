@@ -904,7 +904,7 @@
                                     <!-- required for floating -->
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs tabs-left">
-                                        <p class="tab-intro">Here are Vertical Tabs that sit within the tab-content of the above Horizontal Tabs.</p>
+                                        <p class="tab-intro">Here are Vertical Tabs that sit within the tab-content of the above Horizontal Tabs. Vertical Tabs use a class of <code>.sa-v-tabs</code>.</p>
                                         <li class="active">
                                           <a href="#tab-1" class="sa-tab" data-toggle="tab">
                                             <div class="tab-number"><p>1</p></div>
@@ -996,7 +996,7 @@
                                   <li>
                                     <a href="#tab-6" class="sa-tab" data-toggle="tab">
                                       <div class="tab-number"><p>6</p></div>
-                                      <div class="tab-title"><p>multiple line</br>Title</p></div>
+                                      <div class="tab-title"><p>Nested  Horizontal Tabs</br>with no attached number</p></div>
                                     </a>
                                   </li>
                                   <li>
@@ -1081,11 +1081,66 @@
                               </div>
                 
                               <div class="tab-pane" id="tab-6">
-                                Tab Six.</br>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium mi et magna euismod fringilla. Quisque dictum vulputate neque quis blandit. Morbi porttitor enim ac enim gravida, sed tempor risus dapibus. Pellentesque molestie diam vel nunc lacinia tristique. Nunc non scelerisque erat, et lobortis nibh. Nam et malesuada enim. Etiam vitae nulla at ligula tincidunt bibendum elementum vitae mi. Duis vulputate libero sit amet rhoncus interdum. Nam laoreet venenatis nulla, id placerat tortor vehicula a. Aenean mollis mi sed lacus aliquam accumsan. Curabitur euismod ante quis eros efficitur scelerisque. Pellentesque mollis tempus massa nec interdum. Vivamus accumsan mauris sit amet velit dictum, nec lacinia leo consectetur. Aliquam fringilla felis est, tincidunt feugiat enim vehicula non. Vivamus ipsum lorem, varius at nisl nec, volutpat cursus nibh.</br>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium mi et magna euismod fringilla. Quisque dictum vulputate neque quis blandit. Morbi porttitor enim ac enim gravida, sed tempor risus dapibus. Pellentesque molestie diam vel nunc lacinia tristique. Nunc non scelerisque erat, et lobortis nibh. Nam et malesuada enim. Etiam vitae nulla at ligula tincidunt bibendum elementum vitae mi. Duis vulputate libero sit amet rhoncus interdum. Nam laoreet venenatis nulla, id placerat tortor vehicula a. Aenean mollis mi sed lacus aliquam accumsan. Curabitur euismod ante quis eros efficitur scelerisque. Pellentesque mollis tempus massa nec interdum. Vivamus accumsan mauris sit amet velit dictum, nec lacinia leo consectetur. Aliquam fringilla felis est, tincidunt feugiat enim vehicula non. Vivamus ipsum lorem, varius at nisl nec, volutpat cursus nibh.
-                                </br>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium mi et magna euismod fringilla. Quisque dictum vulputate neque quis blandit. Morbi porttitor enim ac enim gravida, sed tempor risus dapibus. Pellentesque molestie diam vel nunc lacinia tristique. Nunc non scelerisque erat, et lobortis nibh. Nam et malesuada enim. Etiam vitae nulla at ligula tincidunt bibendum elementum vitae mi. Duis vulputate libero sit amet rhoncus interdum. Nam laoreet venenatis nulla, id placerat tortor vehicula a. Aenean mollis mi sed lacus aliquam accumsan. Curabitur euismod ante quis eros efficitur scelerisque. Pellentesque mollis tempus massa nec interdum. Vivamus accumsan mauris sit amet velit dictum, nec lacinia leo consectetur. Aliquam fringilla felis est, tincidunt feugiat enim vehicula non. Vivamus ipsum lorem, varius at nisl nec, volutpat cursus nibh.</div>
+                                <h3>Nested Horizontal Tabs with no attached number</h3>
+                                <div class="sa-h-tabs">
+                                  <div class="horizontal-tabs">
+                                    <div class="h-tab-wrapper">
+                                      <!-- tab-navs -->
+                                      <ul class="container nav nav-tabs nav-justified">
+                                        <li class="active">
+                                          <a href="#tab-M" class="sa-tab-center clearfix" data-toggle="tab"> <!-- These have been changed from sa-tab to sa-tab-center, and clearfix added. This won't work in ie8 though. ss --> 
+                                              <!-- <div class="tab-number"><p>A</p></div> -->
+                                              <!-- <div class="tab-title"><p>Overview</p></div> -->
+                                              <h5>Tab M</h5>
+                                          </a>
+                                        </li>
+                                        <li class="">
+                                          <a href="#tab-N" class="sa-tab-center clearfix" data-toggle="tab">
+                                              <!-- <div class="tab-number"><p>B</p></div> -->
+                                              <!-- <div class="tab-title"><p>Breakdown</p></div> -->
+                                              <h5>Tab N</h5>
+                                          </a>
+                                        </li>
+                                        <li class="">
+                                          <a href="#tab-O" class="sa-tab-center clearfix" data-toggle="tab">
+                                              <!-- <div class="tab-number"><p>C</p></div> -->
+                                              <!-- <div class="tab-title"><p>Weekley Calendar</p></div> -->
+                                              <h5>Tab O</h5>
+                                          </a>
+                                        </li>
+                                        <li class="">
+                                          <a href="#tab-P" class="sa-tab-center clearfix" data-toggle="tab">
+                                              <!-- <div class="tab-number"><p>D</p></div> -->
+                                              <!-- <div class="tab-title"><p>Clashing Activities</p></div> -->
+                                              <h5>Tab P</h5>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </div> <!-- END h-tab-wrapper -->
+                                  </div> <!-- END horizontal-tabs --> 
+                
+                                  <!-- tab-content -->
+                                  <div class="tab-content horizontal container">
+                                    <div id="tab-M" class="tab-pane fade in active">
+                                      <h3>Tab M</h3>
+                                      <p>Nested Horizontal Tabs with no added number are built slightly different.</p>
+                                      <p>To centre the title within the tab, the tab has the following class <code>class="sa-tab-center clearfix"</code>. This uses Flexbox to align everthing and isn't recognised in IE below version 10. </p>
+                                    </div>
+                                    <div id="tab-N" class="tab-pane fade">
+                                      <h3>Tab N</h3>
+                                      <p>Some content</p>
+                                    </div>
+                                    <div id="tab-O" class="tab-pane fade">
+                                      <h3>Tab O</h3>
+                                      <p>Some content</p>
+                                    </div>
+                                    <div id="tab-P" class="tab-pane fade">
+                                      <h3>Tab P</h3>
+                                      <p>Some content</p>
+                                    </div>
+                                  </div> <!-- tab-content horizontal container -->
+                                </div>
+                              </div>
                               <div class="tab-pane" id="tab-7">Tab Seven.</div>
                               <div class="tab-pane" id="tab-8">Tab Eight.</div>
                           </div> <!-- END tab-content vertical -->

@@ -140,7 +140,7 @@ $v-tab-number-bg-active:    $grey18;
       }
 
       // tab spacing
-      .nav-tabs > li > a {
+      .nav-tabs > li > a {  // this sets the space between tabs
         margin-left:5px;
         margin-right:5px;
       }
@@ -258,11 +258,37 @@ $v-tab-number-bg-active:    $grey18;
       -moz-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.30);
       box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.30);
     }
+
     .active .sa-tab{
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
       box-shadow: none;
     }
+
+    .sa-tab-center{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding: 0 5px;
+      -webkit-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.30);
+      -moz-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.30);
+      box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.30);
+    }
+    .active .sa-tab-center{
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+
+    .sa-tab-center p, h1, h2, h3, h4, h5, h6{
+      font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+      font-size:1.2em;
+      line-height:1.1em;
+      padding:0;
+      margin:0;
+    }
+
+    
     .tab-number{
       background:$h-tab-number-bg;
       display:table-cell;
@@ -306,10 +332,10 @@ $v-tab-number-bg-active:    $grey18;
       text-align:left;
     }
 
-    .tab-title p{ 
-      display:table-cell;
-      vertical-align:middle;
-    }
+    // .tab-title p{ 
+    //   display:table-cell;
+    //   vertical-align:middle;
+    // }
 
     .tab-title h3{
       font-family: 'robotolight', Helvetica, Arial, Sans-serif;
@@ -320,6 +346,12 @@ $v-tab-number-bg-active:    $grey18;
 
     .tab-title h4, h5, h6{
       font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+    }
+
+    .tab-title-center{
+      // display:flex;
+      vertical-align:middle;
+      text-align:center;
     }
 
   } // End h-tab-wrapper
@@ -564,6 +596,11 @@ $v-tab-number-bg-active:    $grey18;
     margin-right:-20px;
   }
 
+  .nav-tabs > li > a { // this closes the space between tabs
+    margin-left:0px;
+    margin-right:0px;
+  }
+
   .horizontal.tab-content{
     padding:0px;
     width:100%;
@@ -584,8 +621,8 @@ $v-tab-number-bg-active:    $grey18;
   }
 
   .sa-h-tabs .h-tab-wrapper .nav-tabs.nav-justified > li{
-    padding-right:5px;
-    padding-left:5px;
+    padding-right:0px;
+    padding-left:10px;
   }
 
   .sa-h-tabs .h-tab-wrapper .sa-tab{
