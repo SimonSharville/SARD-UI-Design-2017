@@ -17,11 +17,17 @@
     display: none;
   }
 
-#job-content-sort-picker{
-  label {
-    padding-right:20px;
+  #job-content-sort-picker{
+    label {
+      padding-right:20px;
+    }
   }
-}
+
+  #left-activity-summary table > tfoot{
+    border-top:2px solid $grey18;
+    border-bottom:2px solid $grey18;
+  }
+
 
 
 } // END job-plan

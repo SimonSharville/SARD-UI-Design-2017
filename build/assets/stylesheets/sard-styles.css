@@ -2855,7 +2855,7 @@ img.user-guide-cover {
 
 .sa-v-tabs .tab-intro {
   padding-top: 0px;
-  padding-right: 10px;
+  padding-right: 20px;
   padding-bottom: 10px;
   margin-top: -6px; }
 
@@ -4336,6 +4336,10 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 
 #job-plan #job-content-sort-picker label {
   padding-right: 20px; }
+
+#job-plan #left-activity-summary table > tfoot {
+  border-top: 2px solid #211F0F;
+  border-bottom: 2px solid #211F0F; }
 
 .sidebar {
   z-index: 100;
