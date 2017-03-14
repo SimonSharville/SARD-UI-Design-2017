@@ -2759,6 +2759,27 @@ img.user-guide-cover {
   -moz-box-shadow: none;
   box-shadow: none; }
 
+.sa-h-tabs .h-tab-wrapper .sa-tab-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+  -webkit-box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.3); }
+
+.sa-h-tabs .h-tab-wrapper .active .sa-tab-center {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+.sa-h-tabs .h-tab-wrapper .sa-tab-center p, .sa-h-tabs .h-tab-wrapper h1, .sa-h-tabs .h-tab-wrapper h2, .sa-h-tabs .h-tab-wrapper h3, .sa-h-tabs .h-tab-wrapper h4, .sa-h-tabs .h-tab-wrapper h5, .sa-h-tabs .h-tab-wrapper h6 {
+  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+  font-size: 1.2em;
+  line-height: 1.1em;
+  padding: 0;
+  margin: 0; }
+
 .sa-h-tabs .h-tab-wrapper .tab-number {
   background: #827D7D;
   display: table-cell;
@@ -2798,10 +2819,6 @@ img.user-guide-cover {
   line-height: 1.2em;
   text-align: left; }
 
-.sa-h-tabs .h-tab-wrapper .tab-title p {
-  display: table-cell;
-  vertical-align: middle; }
-
 .sa-h-tabs .h-tab-wrapper .tab-title h3 {
   font-family: 'robotolight', Helvetica, Arial, Sans-serif;
   font-size: 2.000em;
@@ -2810,6 +2827,10 @@ img.user-guide-cover {
 
 .sa-h-tabs .h-tab-wrapper .tab-title h4, .sa-h-tabs .h-tab-wrapper h5, .sa-h-tabs .h-tab-wrapper h6 {
   font-family: 'robotoregular', Helvetica, Arial, Sans-serif; }
+
+.sa-h-tabs .h-tab-wrapper .tab-title-center {
+  vertical-align: middle;
+  text-align: center; }
 
 .v-tab-wrapper {
   display: flex;
@@ -2989,6 +3010,10 @@ img.user-guide-cover {
   margin-left: -20px;
   margin-right: -20px; }
 
+.tab-content.vertical .nav-tabs > li > a {
+  margin-left: 0px;
+  margin-right: 0px; }
+
 .tab-content.vertical .horizontal.tab-content {
   padding: 0px;
   width: 100%; }
@@ -3005,8 +3030,8 @@ img.user-guide-cover {
   padding-right: 20px; }
 
 .tab-content.vertical .sa-h-tabs .h-tab-wrapper .nav-tabs.nav-justified > li {
-  padding-right: 5px;
-  padding-left: 5px; }
+  padding-right: 0px;
+  padding-left: 10px; }
 
 .tab-content.vertical .sa-h-tabs .h-tab-wrapper .sa-tab {
   -webkit-box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.25);
@@ -4203,9 +4228,6 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
     vertical-align: top;
     padding: 10px 10px;
     border-left: 1px solid #B5B0B0; }
-
-.attachments {
-  border-top: 1px solid #211F0F; }
 
 .attachments h3, h4 {
   padding-bottom: 10px; }
