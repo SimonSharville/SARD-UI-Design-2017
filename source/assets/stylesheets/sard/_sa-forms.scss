@@ -118,3 +118,7 @@ input[type=submit]:focus{
 // input[type=submit].positive:hover { background-color:darken($green, 5%); }
 // input[type=submit].positive:active, { background-color:darken($green, 10%); }
 // input[type=submit].positive:focus { background-color:darken($green, 10%); }
+
+.form-submission .btn{
+  min-width: 16.66666667%; // Equal to col-xs-2
+}

@@ -2,13 +2,8 @@
 
 //== Job Plan Page
 
-// $rag-red:          $red;
-// $rag-amber:        $yellow;
-// $rag-green:        $green;
-// $rag-na:           $grey14;
 
-
-// #job-plan{
+#job-plan{
 
   .all-activities{
     display: block;
@@ -22,6 +17,12 @@
     display: none;
   }
 
+#job-content-sort-picker{
+  label {
+    padding-right:20px;
+  }
+}
 
 
-// } // END job-plan
+} // END job-plan
+

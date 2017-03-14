@@ -3008,7 +3008,8 @@ img.user-guide-cover {
 
 .tab-content.vertical .horizontal-tabs {
   margin-left: -20px;
-  margin-right: -20px; }
+  margin-right: -20px;
+  margin-bottom: 15px; }
 
 .tab-content.vertical .nav-tabs > li > a {
   margin-left: 0px;
@@ -3117,6 +3118,9 @@ img.user-guide-cover {
 
 input[type=submit]:focus {
   outline: none !important; }
+
+.form-submission .btn {
+  min-width: 16.66666667%; }
 
 /*!
  * Datepicker for Bootstrap v1.4.1 (https://github.com/eternicode/bootstrap-datepicker)
@@ -4321,14 +4325,17 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   float: right;
   padding-right: 10px; }
 
-.all-activities {
+#job-plan .all-activities {
   display: block; }
 
-.drag_handle_header {
+#job-plan .drag_handle_header {
   display: none; }
 
-.drag_handle {
+#job-plan .drag_handle {
   display: none; }
+
+#job-plan #job-content-sort-picker label {
+  padding-right: 20px; }
 
 .sidebar {
   z-index: 100;

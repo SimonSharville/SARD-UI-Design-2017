@@ -594,7 +594,9 @@ $v-tab-number-bg-active:    $grey18;
   .horizontal-tabs{
     margin-left:-20px;
     margin-right:-20px;
+    margin-bottom: 15px;
   }
+
 
   .nav-tabs > li > a { // this closes the space between tabs
     margin-left:0px;
