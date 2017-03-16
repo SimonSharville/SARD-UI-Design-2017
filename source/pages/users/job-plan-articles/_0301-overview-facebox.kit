@@ -1,0 +1,113 @@
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div id="job-content-form" class="job-content-view">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+        <div class="sa-form">
+        <form class="form-horizontal">
+          <fieldset>
+            <legend>Categorisation</legend>
+            <div class="form-group">
+              <label for="categorisation" class="col-sm-4 control-label">Category</label>
+              <select id="categorisation" name="categorisation" class="col-sm-8">
+                <option value="">Choose one...</option>
+                <option value="DCC">DCC</option>
+                <option value="SPA">SPA</option>
+                <option value="AR">AR</option>
+                <option value="ED">ED</option>
+                <option value="TRAV">TRAV</option>
+                <option value="FPS">FPS</option>
+                <option value="MS">MS</option>
+                <option value="PRIV">PRIV</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="benchmarks" class="col-sm-4 control-label">Subcategory</label>
+              <select id="benchmarks" name="benchmarks" class="col-sm-8">
+                <option value="">Choose one...</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="subcategorisation" class="col-sm-4 control-label">Activity</label>
+              <select id="subcategorisation" name="subcategorisation" class="col-sm-8">
+                <option value="">Choose one...</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="on_call_true" class="col-sm-4">Type</label>
+              <input checked="checked" class="activity_type" name="activity_type" type="radio" value="Core">Core (default)
+              <input class="activity_type" name="activity_type" type="radio" value="ATC">Additional to Contract
+              <input class="activity_type" name="activity_type" type="radio" value="APA">Additional Programmed Activity
+            </div>
+
+            <div class="form-group">
+              <label for="tags" class="control-label">Tags:</label>
+              <input type="text" value="Ward Rounds," data-role="tagsinput" placeholder="Add tag"> 
+            </div>
+
+            <div class="form-group">
+              <label for="employer" class="col-sm-4 control-label">Employer</label>
+              <select id="employer" name="employer" class="col-sm-8">
+                <option value="">Choose one...</option>
+                <option value="East London NHS Foundation Trust">East London NHS Foundation Trust</option>
+                <option value="Guy's and St Thomas' NHS Foundation Trust">Guy's and St Thomas' NHS Foundation Trust</option>
+                <option value="Harrogate and District NHS Foundation Trust">Harrogate and District NHS Foundation Trust</option>
+                <option value="King's College Hospital NHS Foundation Trust">King's College Hospital NHS Foundation Trust</option>
+                <option value="Oxleas NHS Foundation Trust">Oxleas NHS Foundation Trust</option>
+                <option value="Pennine Care NHS Foundation Trust">Pennine Care NHS Foundation Trust</option>
+                <option value="Self Employed">Self Employed</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="location" class="col-sm-4 control-label">Location</label>
+              <select id="location" name="location" class="col-sm-8" title="Choose one of the following...">
+                <option value="">Choose one...</option>
+                <option value="Clinic">Clinic</option>
+                <option value="Hospital">Hospital</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="description" class=" control-label">Description</label>
+              <div class="">
+                <textarea id="description" class="form-control" rows="3" placeholder="Enter a brief description..."></textarea>
+              </div>
+            </div>
+
+            <div class="form-group">
+            <label for="on_call_true">On Call</label>
+            <div class="pull-right col-sm-8">
+              <input class="on_call" name="on_call" type="radio" value="true">Yes  &nbsp;
+              <input class="on_call" name="on_call" type="radio" value="false">No
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Scheduled</legend>
+            <div class="form-group">
+              <label for="scheduled">Scheduled</label>
+              <div class="pull-right col-sm-8">
+              <input type="radio" data-targets="scheduled_true" name="type" id="scheduled" value="true"  checked="checked" />Yes  &nbsp;
+              <input type="radio" data-targets="scheduled_false" name="type" id="scheduled" value="false" />No
+              </div>
+              <div id="scheduled_true">
+                boxBook
+              </div>
+            </div> <!-- END form-group -->
+            
+          </fieldset>
+
+
+        </form>
+      </div>   <!-- END sa-form -->
+      </div>
+
+    </div> <!-- END modal-content -->
+  </div> <!-- END modal-dialog -->
+</div> <!-- END modal fade -->

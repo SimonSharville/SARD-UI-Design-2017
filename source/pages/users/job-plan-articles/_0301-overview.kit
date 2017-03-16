@@ -1,3 +1,4 @@
+
 <!-- Activities ==================================================================================== -->
 <div class="row">  
   <div class="col-xs-12 tab-section-title">
@@ -37,7 +38,7 @@
         <th class="destroy"></th>
       </tr>
     </thead>
-    <tbody>
+    <tbody  class="sortable">
       <tr id="sortable" class="job-content-row">
         <td class="drag_handle"></td>
         <td class="edit start_time">08:00</td>
@@ -47,7 +48,10 @@
         <td class="edit hours_per_week">4</td>
         <td class="edit pas_per_week">1</td>
         <td class="edit">
-          <a href="#" role="button"><i class="fa fa-pencil turq"></i></a>
+          <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#facebox">
+  Launch demo modal
+</button> -->
+          <a href="#" role="button"  data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil turq"></i></a>
         </td>
         <td>
           <a href="#" role="button"><i class="fa fa-times-circle red"></i></a>
@@ -433,3 +437,8 @@
     </form>
   </div>
 </div>
+
+<!-- Modal Facebox ================================================ -->
+
+<!-- @import "0301-overview-facebox" -->
+

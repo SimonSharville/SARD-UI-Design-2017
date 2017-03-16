@@ -2120,6 +2120,40 @@ button:hover {
   background-color: #00B2B2;
   border-color: #00B2B2; }
 
+.modal-dialog {
+  margin-top: 30px; }
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 700px; } }
+
+@media (min-width: 992px) {
+  .modal-dialog {
+    width: 800px; } }
+
+@media (min-width: 1200px) {
+  .modal-dialog {
+    width: 900px; } }
+
+.modal-content {
+  padding: 5px; }
+
+.modal .close {
+  position: absolute;
+  right: -15px;
+  margin-top: -30px;
+  background-color: white;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+  font-size: 2em;
+  color: #00B2B2; }
+
+.modal .close:hover {
+  color: #BF0000; }
+
 .rag-red {
   background-color: #BF0000; }
 
@@ -3091,6 +3125,7 @@ img.user-guide-cover {
 .sa-form .form-horizontal .control-label {
   text-align: left;
   line-height: 1.2em;
+  padding-top: 2px;
   padding-right: 10px; }
 
 .sa-form textarea {
@@ -3105,8 +3140,8 @@ img.user-guide-cover {
   overflow: hidden;
   transform: scale(0.8);
   transition: 0.5s; }
-  input[type="radio"]:checked ~ .reveal-if-active,
-  input[type="checkbox"]:checked ~ .reveal-if-active {
+  input[value="true"]:checked ~ .reveal-if-active,
+  input[value="true"]:checked ~ .reveal-if-active {
     opacity: 1;
     max-height: 100px;
     overflow: visible;
@@ -3119,8 +3154,65 @@ img.user-guide-cover {
 input[type=submit]:focus {
   outline: none !important; }
 
+input[type=radio] {
+  margin: 4px; }
+
+input[type=radio]:first-of-type {
+  margin-left: 0px; }
+
 .form-submission .btn {
   min-width: 16.66666667%; }
+
+.bootstrap-tagsinput {
+  background-color: #fff;
+  border: none;
+  display: block;
+  padding: 4px 6px;
+  color: #555;
+  vertical-align: middle;
+  border-radius: 4px;
+  max-width: 100%;
+  line-height: 28px;
+  cursor: text;
+  margin-top: 5px; }
+
+.bootstrap-tagsinput input {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0 6px;
+  margin: 0;
+  min-width: 100px; }
+
+.bootstrap-tagsinput.form-control input::-moz-placeholder {
+  color: #777;
+  opacity: 1; }
+
+.bootstrap-tagsinput.form-control input:-ms-input-placeholder {
+  color: #777; }
+
+.bootstrap-tagsinput.form-control input::-webkit-input-placeholder {
+  color: #777; }
+
+.bootstrap-tagsinput input:focus {
+  border: none;
+  box-shadow: none; }
+
+.bootstrap-tagsinput .tag {
+  background-color: #827D7D;
+  font-size: 1em;
+  margin-right: 2px;
+  color: white; }
+
+.bootstrap-tagsinput .tag [data-role="remove"] {
+  margin-left: 8px;
+  cursor: pointer; }
+
+.bootstrap-tagsinput .tag [data-role="remove"]:after {
+  font-family: 'FontAwesome';
+  content: "\f057";
+  padding: 0px 1px; }
 
 /*!
  * Datepicker for Bootstrap v1.4.1 (https://github.com/eternicode/bootstrap-datepicker)
@@ -4340,6 +4432,9 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 #job-plan #left-activity-summary table > tfoot {
   border-top: 2px solid #211F0F;
   border-bottom: 2px solid #211F0F; }
+
+#job-plan #job-content-form {
+  padding: 10px; }
 
 .sidebar {
   z-index: 100;

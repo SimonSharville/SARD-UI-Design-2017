@@ -1,0 +1,1 @@
+var places=[{name:"New York"},{name:"Los Angeles"},{name:"Copenhagen"},{name:"Albertslund"},{name:"Skjern"}];$(".tagsinput-typeahead").tagsinput({typeahead:{source:places.map(function(e){return e.name}),afterSelect:function(){this.$element[0].value=""}}});
