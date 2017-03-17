@@ -3126,7 +3126,8 @@ img.user-guide-cover {
   text-align: left;
   line-height: 1.2em;
   padding-top: 2px;
-  padding-right: 10px; }
+  padding-right: 10px;
+  padding-bottom: 5px; }
 
 .sa-form textarea {
   resize: vertical; }
@@ -4435,6 +4436,43 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 
 #job-plan #job-content-form {
   padding: 10px; }
+
+#job-plan .table-clickable {
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+#job-plan .table-clickable > tbody > tr > td {
+  border: 1px solid #B5B0B0;
+  text-align: center;
+  padding: 0;
+  margin: 0px; }
+
+#job-plan .table-clickable > tbody > tr > td:hover {
+  background-color: #B5B0B0; }
+
+#job-plan .table-clickable > tbody > tr > td:active,
+#job-plan .table-clickable > tbody > tr > td:focus,
+#job-plan .table-clickable > tbody > tr > td .selected {
+  background-color: #827D7D;
+  color: white; }
+
+#job-plan .table-summery {
+  margin-top: 20px; }
+
+#job-plan .table-summery > tbody > tr > td {
+  border: 1px solid #B5B0B0;
+  text-align: center;
+  background-color: white; }
+
+#job-plan .table-summery > thead > tr > th {
+  border: 1px solid #403D3D;
+  background-color: #403D3D;
+  text-align: center;
+  color: white; }
+
+#job-plan .table-summery > thead > tr > th:first-of-type {
+  border-right: 1px solid #EDEBEB; }
 
 .sidebar {
   z-index: 100;
