@@ -67,8 +67,9 @@
   .table-clickable > tbody > tr > td:active,
   .table-clickable > tbody > tr > td:focus,
   .table-clickable > tbody > tr > td .selected, {
-    background-color: $grey12;
+    background-color: $turq;
     color:white;
+    font-weight:bold;
   }
 
   // Specific Table Styles ==================================
