@@ -1,1 +1,0 @@
-$(function(){function e(e){$(".tabs .content.visible").removeClass("visible"),$(".tabs .content:nth-of-type("+(e+1)+")").addClass("visible"),$(".tabs nav a.selected").removeClass("selected"),$(".tabs nav a:nth-of-type("+(e+1)+")").addClass("selected")}$(".tabs nav a").on("click",function(){e($(this).index())}),e(0)});
