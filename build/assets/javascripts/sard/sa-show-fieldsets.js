@@ -1,1 +1,1 @@
-$("#scheduled_true").show(),$('input:radio[name="type"]').click(function(){var t=$(this).attr("data-targets");$('div [id="scheduled_true"]').hide(),$("#"+t).show()});
+$(document).ready(function(){$("#scheduled_true").show(),$('input:radio[name="type"]').click(function(){var e=$(this).attr("data-targets");$('div [id="scheduled_true"]').hide(),$("#"+e).show()})}),$(document).ready(function(){$("#repeatselector").change(function(){$(".repeats").hide(),$("#"+$(this).val()).show()})});

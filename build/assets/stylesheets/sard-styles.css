@@ -4454,8 +4454,9 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 #job-plan .table-clickable > tbody > tr > td:active,
 #job-plan .table-clickable > tbody > tr > td:focus,
 #job-plan .table-clickable > tbody > tr > td .selected {
-  background-color: #827D7D;
-  color: white; }
+  background-color: #00B2B2;
+  color: white;
+  font-weight: bold; }
 
 #job-plan .table-summery {
   margin-top: 20px; }
