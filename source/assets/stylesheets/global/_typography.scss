@@ -427,19 +427,8 @@ h1, h2, h3, h4, h5, h6, p{
 
 // Glyphicons =========================================================================
 
-  a.glyphicon-info-sign{
-    color: darken($info, 10%); 
-    background-color:white;
-    border-radius:50%;
-    border:1px solid white;
-  }
-
-  a:hover, a:focus .glyphicon-info-sign{
-    color: darken($info, 20%);
-  }
-  
-  .table .glyphicon-ok{color:$green;}
-  .table .glyphicon-remove{color:$red;}
-  .table .glyphicon-minus{color:$grey16;}
-  .btn .glyphicon{ padding: 0 3px 0 0;}
+  .glyphicon-ok{color:$green;}
+  .glyphicon-remove{color:$red;}
+  .glyphicon-minus{color:$grey16;}
+  .glyphicon{ padding: 0 3px 0 0;}
 
