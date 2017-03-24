@@ -1,0 +1,27 @@
+// BS Breadcrumbs Overrides
+
+.breadcrumbs{
+  border-bottom: 1px solid $client-colour;
+  margin-bottom:20px;
+  background-color:white;
+}
+
+.breadcrumb {
+  padding: 6px 0px;
+  margin-bottom: 0px;
+  list-style: none;
+  background-color: transparent;
+  border-radius: 0px;
+  
+}
+.breadcrumb > li {
+  display: inline-block;
+}
+.breadcrumb > li + li:before {
+  content: "/\00a0";
+  padding: 0 5px;
+  color: $grey08;
+}
+.breadcrumb > .active {
+  color: $client-colour-dark;
+}
