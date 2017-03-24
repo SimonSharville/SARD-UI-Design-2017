@@ -1,0 +1,81 @@
+// BS Tooltips & Popovers Overrides
+
+.tooltip{
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+  letter-spacing: $vslight;
+}
+.tooltip p{
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+  letter-spacing: $vslight;
+  text-align:left;
+}
+
+.tooltip.in {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.tooltip-inner {
+  background-color: darken($info, 10%);
+}
+
+.tooltip.top .tooltip-arrow{
+  border-top-color: darken($info, 10%);
+}
+
+.tooltip.top-left .tooltip-arrow{
+  border-top-color: darken($info, 10%);
+}
+
+.tooltip.top-right .tooltip-arrow{
+  border-top-color: darken($info, 10%);
+}
+
+.tooltip.right .tooltip-arrow{
+  border-right-color: darken($info, 10%);
+}
+
+.tooltip.left .tooltip-arrow{
+  border-left-color: darken($info, 10%);
+}
+
+.tooltip.bottom .tooltip-arrow{
+  border-bottom-color: darken($info, 10%);
+}
+
+.tooltip.bottom-left .tooltip-arrow{
+  border-bottom-color: darken($info, 10%);
+}
+
+.tooltip.bottom-right .tooltip-arrow{
+  border-bottom-color: darken($info, 10%);
+}
+
+.popover{
+  max-width: 500px;
+  background-color: lighten($info, 5%);
+  // padding:0px;
+}
+
+.popover-title{ 
+  background-color: darken($info, 10%);
+  color: black;
+  border-bottom: 0px solid darken($info, 10%);
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+  letter-spacing: $slight;
+}
+
+.popover-content{ 
+  color: black; 
+  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+  letter-spacing: $vslight;
+  line-height:1.3em;
+}
+
+.popover.top > .arrow:after{ border-top-color: lighten($info, 5%)}
+.popover.right > .arrow:after{ border-right-color: lighten($info, 5%)}
+.popover.bottom > .arrow:after{ border-bottom-color: lighten($info, 5%)}
+.popover.left > .arrow:after{ border-left-color: lighten($info, 5%)}
+
+.popover-content a:link{ color:white; font-family: 'robotomedium', Helvetica, Arial, Sans-serif;}
+.popover-content a:visited{ color:white;}

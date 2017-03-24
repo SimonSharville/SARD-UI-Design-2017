@@ -1,43 +1,21 @@
 
 
-//== Index Page
+// Index Page
 
 
 #index-page{
 
-// page specific items here =========================================
-
-
-// .link-arrow   { // this puts an arrow bwfore any links with this class
-//       a:before{
-//       font-family: 'Glyphicons Halflings';
-//       content: "\e131" ;
-//       padding-right:5px;
-//       // vertical-align:middle;
-//       position:relative;
-//       top:3px;
-//       color:$turq;
-//     }
-//   }
-.index-list{
-  ul{ 
-    padding-left:20px;
-    font-size: 2.000em;
+  .index-list{
+    ul{ 
+      padding-left:20px;
+      font-size: 2.000em;
+    }
+    li{ 
+      font-size: 0.750em;
+      line-height:1em;
+      text-indent: -1.28571429em;
+      padding:0.25em 0em 0.25em 1.28571429em;
+    }
   }
-  li{ 
-    // padding-left:20px;
-    font-size: 0.750em;
-    line-height:1em;
-
-    text-indent: -1.28571429em;
-
-    padding:0.25em 0em 0.25em 1.28571429em;
-  }
-  // li:first-of-type{
-  //     padding-left:0px
-  //   }
-}
-
-// page specific items here =========================================
 
 } // END index

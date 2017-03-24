@@ -1,0 +1,21 @@
+// BS Pageheader Overrides
+
+.page-header{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 10px 5px 5px 5px;
+  border-bottom: none;
+}
+
+.page-header .profile-image {
+    padding-right: 10px;
+    float:left;
+  }
+
+  .page-header .profile-image img{
+    border-radius: 50%;
+  }
+
+  .page-title{
+    display:inline-block;
+  }

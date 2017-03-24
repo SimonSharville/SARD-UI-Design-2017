@@ -1,0 +1,12 @@
+// bs Jumbotron Overrides
+
+.jumbotron {
+  background-color: $client-colour;
+  border-radius: 0px;
+  padding:0;
+  margin-bottom:0px;
+  }
+
+.jumbotron img{
+  width: 100%;
+}
