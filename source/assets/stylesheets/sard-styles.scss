@@ -1,7 +1,5 @@
-/*!
-  These are the SARD specific styles
- */
 
+// These are the SARD specific styles
 
 
 // Global styles =======================
@@ -18,9 +16,32 @@
 
 // Bootstrap overrides =================
 
-  @import "bootstrap-overrides/bs-overrides";
+  @import "bootstrap-overrides/bs-page-header";
 
-  // SARD styles =======================
+  @import "bootstrap-overrides/bs-jumbotron";
+
+  @import "bootstrap-overrides/bs-navbar-default";
+
+  @import "bootstrap-overrides/bs-breadcrumbs";
+
+  @import "bootstrap-overrides/bs-nav-tabs";
+
+  @import "bootstrap-overrides/bs-panels";
+
+  @import "bootstrap-overrides/bs-alerts";
+
+  @import "bootstrap-overrides/bs-tables";
+
+  @import "bootstrap-overrides/bs-buttons";
+
+  @import "bootstrap-overrides/bs-tooltips-popovers";
+
+  @import "bootstrap-overrides/bs-pagination";
+
+  @import "bootstrap-overrides/bs-modal";
+
+
+// SARD styles =======================
 
   @import "sard/sa-rag-status";
 
@@ -36,21 +57,25 @@
 
   @import "sard/sa-datatable";
 
-  // Keep this last in list
-  @import "sard/sa-page-elements";
 
-  
+// SARD Page Specific Items ==========
+
+  @import "sard/pages/index";
+
+  @import "sard/pages/dashboard";
+
+  @import "sard/pages/my-appraisal";
+
+  @import "sard/pages/jobplan";
 
 
-
-  // Experiments =======================
-
-
-  @import "experiments/sa-sidebar";
-
-  @import "experiments/sa-polygon";
+// Experiments =======================
 
   // Removed
+
+  // @import "experiments/sa-sidebar";
+
+  // @import "experiments/sa-polygon";
 
   // @import "experiments/sa-vertical-tabs-exp01";
   

@@ -22,18 +22,6 @@
   position:relative;
 }
 
-// Alternative 1
-// .sa-form legend{
-//   border-bottom: 1px solid $grey16;
-//   position:absolute;
-//   top:0px;
-//   width:calc(100% - 30px);
-//   margin-bottom:15px;
-//   padding-top:5px;
-//   padding-bottom:5px;
-// }
-
-// Alternative 2
 .sa-form legend{
   background-color:$grey16;
   width:calc(100% + 30px);
@@ -85,6 +73,7 @@
 
 
 // Expanding form groups ====================
+// Used in My Appraisal
 // https://css-tricks.com/exposing-form-fields-radio-button-css/
 
 .reveal-if-active {

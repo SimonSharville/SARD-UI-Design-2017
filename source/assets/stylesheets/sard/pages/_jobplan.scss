@@ -1,99 +1,98 @@
 
-
-//== Job Plan Page
+// Job Plan Page
 
 
 #job-plan{
 
-  .all-activities{
-    display: block;
-  }
-
-  .drag_handle_header{
-    display: none;
-  }
-
-  .drag_handle{
-    display: none;
-  }
-
-  #job-content-sort-picker{
-    label {
-      padding-right:20px;
+    .all-activities{
+      display: block;
     }
-  }
 
-  #left-activity-summary table > tfoot{
-    border-top:2px solid $grey18;
-    border-bottom:2px solid $grey18;
-  }
+    .drag_handle_header{
+      display: none;
+    }
 
-  // Job Content Popup Form Styles ===================
-  #job-content-form{
-    padding:10px;
-  }
+    .drag_handle{
+      display: none;
+    }
+
+    #job-content-sort-picker{
+      label {
+        padding-right:20px;
+      }
+    }
+
+    #left-activity-summary table > tfoot{
+      border-top:2px solid $grey18;
+      border-bottom:2px solid $grey18;
+    }
+
+    // Job Content Popup Form Styles ===================
+    #job-content-form{
+      padding:10px;
+    }
 
 
-  // Clickable Table Cell Styles =======================
+    // Clickable Table Cell Styles =======================
 
-  .rota-weeks{
-    // display:block;
-    // margin: 0px;
-    // padding: 0px;
-  }
+    .rota-weeks{
+      // display:block;
+      // margin: 0px;
+      // padding: 0px;
+    }
 
-  .table-clickable{
-    margin: 0px;
-    margin-top:10px;
-    margin-bottom:10px;
-    // border-collapse: collapse;
-    // width: 100%;
-    // border-spacing: 0;
-    //   -webkit-border-horizontal-spacing: 0px;
-    //   -webkit-border-vertical-spacing: 0px;
-  }
+    .table-clickable{
+      margin: 0px;
+      margin-top:10px;
+      margin-bottom:10px;
+      // border-collapse: collapse;
+      // width: 100%;
+      // border-spacing: 0;
+      //   -webkit-border-horizontal-spacing: 0px;
+      //   -webkit-border-vertical-spacing: 0px;
+    }
 
-  .table-clickable > tbody > tr > td{
-    border:1px solid $grey08;
-    text-align:center;
-    padding: 0;
-    margin: 0px;
-  }
+    .table-clickable > tbody > tr > td{
+      border:1px solid $grey08;
+      text-align:center;
+      padding: 0;
+      margin: 0px;
+    }
 
-  .table-clickable > tbody > tr > td:hover {
-    background-color: $grey08;
-  }
+    .table-clickable > tbody > tr > td:hover {
+      background-color: $grey08;
+    }
 
-  .table-clickable > tbody > tr > td:active,
-  .table-clickable > tbody > tr > td:focus,
-  .table-clickable > tbody > tr > td .selected, {
-    background-color: $turq;
-    color:white;
-    font-weight:bold;
-  }
+    .table-clickable > tbody > tr > td:active,
+    .table-clickable > tbody > tr > td:focus,
+    .table-clickable > tbody > tr > td .selected, {
+      background-color: $turq;
+      color:white;
+      font-weight:bold;
+    }
 
-  // Specific Table Styles ==================================
+    // Specific Table Styles ==================================
 
-  .table-summery{
-    margin-top:20px;
-  }
+    .table-summery{
+      margin-top:20px;
+    }
 
-  .table-summery > tbody > tr > td{
-    border:1px solid $grey08;
-    text-align:center;
-    background-color: white;
-  }
+    .table-summery > tbody > tr > td{
+      border:1px solid $grey08;
+      text-align:center;
+      background-color: white;
+    }
 
-  .table-summery > thead > tr > th{
-    border:1px solid $grey16;
-    background-color: $grey16;
-    text-align:center;
-    color:white;
-  }
+    .table-summery > thead > tr > th{
+      border:1px solid $grey16;
+      background-color: $grey16;
+      text-align:center;
+      color:white;
+    }
 
-  .table-summery > thead > tr > th:first-of-type{
-    border-right:1px solid $grey02;
-  }
+    .table-summery > thead > tr > th:first-of-type{
+      border-right:1px solid $grey02;
+    }
 
 
 } // END job-plan
