@@ -3,11 +3,6 @@
 // Global button styles
 
 
-#ui-kop .btn{
-  // margin-right:5px;
-  margin-bottom:5px;
-}
-
 
 .btn{
   border:0px;
@@ -15,6 +10,7 @@
   letter-spacing:$single;
   font-size: 16px;
   padding: 10px 14px;
+  margin-bottom:5px;
   -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2);
   -moz-box-shadow:    0px 1px 1px 0px rgba(0,0,0,0.2);
   box-shadow:         0px 1px 1px 0px rgba(0,0,0,0.2);
@@ -172,4 +168,11 @@ $btn-light: $grey04;
        text-decoration: none;
     }
   }
+}
+
+//  Buton Lables =================
+.btn-label{
+  .glyphicon-ok{color:white;}
+  .glyphicon-remove{color:white;}
+  .glyphicon-minus{color:$white;}
 }
