@@ -671,7 +671,7 @@ p.link-email {
   color: #403D3D; }
 
 .glyphicon {
-  padding: 0 3px 0 0; }
+  padding: 0 5px 0 0; }
 
 * {
   -webkit-font-smoothing: antialiased !important;
@@ -1826,15 +1826,13 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .tcol-fixed-5 {
   width: 5px; }
 
-#ui-kop .btn {
-  margin-bottom: 5px; }
-
 .btn {
   border: 0px;
   font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
   letter-spacing: 0.0625em;
   font-size: 16px;
   padding: 10px 14px;
+  margin-bottom: 5px;
   -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2); }
@@ -2061,11 +2059,21 @@ button:hover {
   fieldset[disabled] .btn-link:focus {
     text-decoration: none; }
 
+.btn-label .glyphicon-ok {
+  color: white; }
+
+.btn-label .glyphicon-remove {
+  color: white; }
+
+.btn-label .glyphicon-minus {
+  color: #FFFFFF; }
+
 a.glyphicon-info-sign {
   color: #00a0e0;
   background-color: white;
   border-radius: 50%;
-  border: 1px solid white; }
+  border: 1px solid white;
+  padding: 0px; }
 
 a:hover, a:focus .glyphicon-info-sign {
   color: #007cad; }
