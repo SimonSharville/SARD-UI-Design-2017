@@ -792,13 +792,22 @@ body {
   background-color: #004c4c;
   color: #fff; }
 
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 0px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #006666;
+  border: none; }
+
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-  color: #777777; }
+  color: white; }
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
   color: #fff;
-  background-color: #006666; }
+  background-color: #004c4c; }
 
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
