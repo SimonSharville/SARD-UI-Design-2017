@@ -27,13 +27,13 @@
   }
 }
 
-// Button Sizes
-// --------------------------------------------------
+// Button Sizes --------------------------------------------------
 
 .btn-xl,
 .btn-group-xl > .btn {
   font-size: 24px;
   padding: 15px 24px;
+  border-radius:6px;
 }
 .btn-lg,
 .btn-group-lg > .btn {
@@ -65,7 +65,7 @@
   }
 
 
-// Bootstrap Specific Button Styles
+// SARD Specific Button Styles ===========================================================
 
 $btn-default: $grey14;
 .btn-default { background-color: darken($btn-default, 0%); color:white!important;}
@@ -108,6 +108,7 @@ $btn-default: $grey14;
 .btn-danger:focus { background-color: darken($danger, 5%)!important;}
 .btn-danger:active,  { background-color: darken($danger, 7%)!important;}
 
+
 $btn-dark: $grey16;
 .btn-dark { background-color: darken($btn-dark, 0%); color:white!important;}
 .btn-dark:visited { background-color: darken($btn-dark, 0%); color:white!important;}
@@ -115,12 +116,14 @@ $btn-dark: $grey16;
 .btn-dark:focus { background-color: darken($btn-dark, 7%)!important;}
 .btn-dark:active,  { background-color: darken($btn-dark, 10%)!important;}
 
+
 $btn-light: $grey04;
 .btn-light { background-color: darken($btn-light, 0%); color:$grey16!important;}
 .btn-light:visited { background-color: darken($btn-light, 0%); color:$grey16!important;}
 .btn-light:hover { background-color: darken($btn-light, 5%); color:$grey16!important;}
 .btn-light:focus { background-color: darken($btn-light, 7%)!important;}
 .btn-light:active,  { background-color: darken($btn-light, 10%)!important;}
+
 
 .btn-white { background-color: white; color:$grey14!important;}
 .btn-white:visited { background-color: white; color:$grey14!important;}
@@ -170,9 +173,16 @@ $btn-light: $grey04;
   }
 }
 
-//  Buton Lables =================
+//  Button Lables ----------------------------------
 .btn-label{
-  .glyphicon-ok{color:white;}
-  .glyphicon-remove{color:white;}
-  .glyphicon-minus{color:$white;}
+  .glyphicon{color:white;}
+}
+.btn-white .btn-label{
+  .glyphicon{color:$grey14;}
+}
+.btn-link .btn-label{
+  .glyphicon{color:$turq;}
+}
+.btn-light .btn-label{
+  .glyphicon{color:$grey16;}
 }
