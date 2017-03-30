@@ -1,79 +1,320 @@
 // SARD Forms Styles
 
-// Appraisal Forms ========================================================================================
-.sa-form{
+#ui-kop .sa-form{
+  margin-bottom:20px;
 }
 
-.sa-form .form-horizontal{
+.sa-form fieldset{
+  background-color:$grey02;
+  padding:10px;
+  padding-bottom:5px;
+  border-radius: 5px;
+  margin-bottom:15px;
+}
+
+.sa-form .form-group{
+  border-bottom: 1px solid white;
+  padding-bottom:5px;
+  margin-bottom:10px;
+}
+
+.sa-form .form-group:last-of-type{
+  border:none;
+  padding-bottom:0px;
+  margin-bottom:0px;
+}
+
+.sa-form .form-group.multi-column{ // This option aligns multi-columns withing a form-group
+  margin-left:-8px;
+  margin-right:-8px;
+}
+
+.sa-form .form-group div[class*="col-"]{
+  margin-top: -2px;
+}
+
+.sa-form legend{
+  background-color:$grey16;
+  width:calc(100% + 20px);
+  border-bottom: 0px solid $grey16;
+  border-radius: 5px 5px 0px 0px;
+  color:white;
+  margin-left:-10px;
+  margin-right:-10px;
+  margin-bottom: 0px;
+  padding:3px 10px 5px 10px;
+}
+
+.sa-form .form-control{
+  margin-bottom:5px;
+}
+
+.sa-form .form-control:focus{
+  box-shadow: none;
+  border-color: $turq;
+}
+
+
+// Forms Horizontal ================================================
+
+.sa-form.form-horizontal{
+}
+
+.sa-form.form-horizontal{ // This aligns the label & inputs to the field-group
   .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
     padding-left: 0px; // changed from 8px in structure.scss
     padding-right: 0px; // changed from 8px in structure.scss
   }
 }
 
-.sa-form .form-horizontal{
+.sa-form.form-horizontal label{ // This puts a little space between the label and input
+  padding-right: 10px!important;
+  text-align:left;
 }
 
-.sa-form fieldset{
-  background-color:$grey02;
-  border-radius: 5px;
-  padding:10px 15px 0px 15px;
-  margin-bottom:20px;
-  position:relative;
-}
-
-.sa-form legend{
-  background-color:$grey16;
-  width:calc(100% + 30px);
-  border-bottom: 0px solid $grey16;
-  border-radius: 5px 5px 0px 0px;
-  color:white;
-  margin-left:-15px;
-  margin-right:-15px;
-  margin-bottom: 0px;
-  padding:5px 15px;
-}
-
-.sa-form .form-group{
-  border-bottom: 1px solid white;
-  padding-bottom:10px;
+.sa-form.form-horizontal .form-group{
   margin-left:0px;
   margin-right:0px;
-  margin-bottom:10px;
 }
-.sa-form .form-group:first-of-type{
-  margin-top:10px;
-}
-.sa-form .form-group:last-of-type{
-  border:none;
+@media (min-width: 768px) {
+  .sa-form.form-horizontal .form-group:first-of-type{
+    padding-top:5px;
+  }
 }
 
-.sa-form .form-control:focus{
-  box-shadow: none;
+// Forms Inline ================================---================
+
+@media (min-width: 768px) {
+    .sa-form.form-inline{
+    }
+
+    .sa-form.form-inline .form-group{
+      border:none;
+      padding-bottom:0px;
+      margin-bottom:0px;
+      
+    }
+
+    .sa-form.form-inline div{
+      padding-right:10px;
+    }
 }
 
-.sa-form .form-horizontal .control-label{
-  text-align:left;
-  line-height:1.2em;
-  padding-top:2px;
-  padding-right:10px;
-  padding-bottom:5px;
+// Supported Controls =============================================
+
+.sa-form .help-block {
+  color: $grey16;
 }
+.sa-form .help-block:before {
+  font-family: 'FontAwesome';
+  content: "\f059" ;
+  margin-right:5px;
+  color:$turq;
+  background-color:white;
+  border-radius:50%;
+  border: 1px solid white;
+}
+
+.sa-form .has-success .help-block,
+.sa-form .has-success .control-label,
+.sa-form .has-success .radio,
+.sa-form .has-success .checkbox,
+.sa-form .has-success .radio-inline,
+.sa-form .has-success .checkbox-inline,
+.sa-form .has-success.radio label,
+.sa-form .has-success.checkbox label,
+.sa-form .has-success.radio-inline label,
+.sa-form .has-success.checkbox-inline label {
+  color: $success;
+}
+.sa-form .has-success .form-control{
+  border-color: $success;
+}
+.sa-form .has-success .form-control:focus{
+  border-color: darken($success, 10%);
+}
+.sa-form .has-success .input-group-addon { // not amended yet
+  // color: #3c763d;
+  // border-color: #3c763d;
+  // background-color: #dff0d8;
+}
+.sa-form .has-success .form-control-feedback { // not amended yet
+  // color: #3c763d;
+}
+
+.sa-form has-warning .help-block,
+.sa-form .has-warning .control-label,
+.sa-form .has-warning .radio,
+.sa-form .has-warning .checkbox,
+.sa-form .has-warning .radio-inline,
+.sa-form .has-warning .checkbox-inline,
+.sa-form .has-warning.radio label,
+.sa-form .has-warning.checkbox label,
+.sa-form .has-warning.radio-inline label,
+.sa-form .has-warning.checkbox-inline label {
+  color: darken($warning, 10%)
+}
+.sa-form .has-warning .form-control{
+  border-color: darken($warning, 10%);
+}
+.sa-form .has-warning .form-control:focus{
+  border-color: darken($warning, 20%);
+}
+.sa-form .has-warning .input-group-addon { // not amended yet
+  // color: #3c763d;
+  // border-color: #3c763d;
+  // background-color: #dff0d8;
+}
+.sa-form .has-warning .form-control-feedback { // not amended yet
+  // color: #3c763d;
+}
+
+.sa-form .has-error .help-block,
+.sa-form .has-error .control-label,
+.sa-form .has-error .radio,
+.sa-form .has-error .checkbox,
+.sa-form .has-error .radio-inline,
+.sa-form .has-error .checkbox-inline,
+.sa-form .has-error.radio label,
+.sa-form .has-error.checkbox label,
+.sa-form .has-error.radio-inline label,
+.sa-form .has-error.checkbox-inline label {
+  color: darken($danger, 0%)
+}
+.sa-form .has-error .form-control{
+  border-color: darken($danger, 0%);
+}
+.sa-form .has-error .form-control:focus{
+  border-color: darken($danger, 10%);
+}
+.sa-form .has-error .input-group-addon { // not amended yet
+  // color: #3c763d;
+  // border-color: #3c763d;
+  // background-color: #dff0d8;
+}
+.sa-form .has-error .form-control-feedback { // not amended yet
+  // color: #3c763d;
+}
+
+// Inputs Tweaks =============================================
 
 .sa-form textarea{
   resize: vertical;
-}
-.sa-form .form-control:focus{
-  border-color: $turq;
+  margin-bottom:5px;
 }
 
-.sa-form .form-submission{
-  // padding-top:5px;
+.sa-form input{
+  margin-bottom:5px;
 }
 
+.sa-form .radio{
+  padding-top:2px;
+}
+
+.sa-form .radio-inline{
+  padding-top:2px;
+  margin-bottom:5px;
+}
+
+.sa-form .sub-label{
+  display:inline-block;
+  padding-top:5px;
+  padding-left:5px;
+}
+
+// .sa-form input[type=submit]:focus{
+  // outline: none !important; // This removes the glow on input buttons
+// }
+
+// .sa-form input[type=radio]{
+//   margin:4px;
+// }
+// .sa-form input[type=radio]:first-of-type{
+//   margin-left:0px;
+// }
+
+// Input Groups =============================================
+
+.sa-form .input-group{
+  margin-top:10px;
+  margin-bottom:5px;
+}
+.sa-form .input-group:first-of-type{
+  margin-top:0px;
+}
+.sa-form .input-group:last-of-type{
+  margin-top:5px;
+}
+
+.sa-form .input-group .form-control{
+  margin-bottom:0px;
+}
+
+.sa-form .input-group-addon{
+  background-color:$grey16;
+  color:white;
+  border-color:$grey16;
+}
+
+.sa-form .input-group-btn > .btn{
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.sa-form .input-group-lg > .input-group-btn > .btn {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+.sa-form .input-group-sm > .input-group-btn > .btn {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+// Added Features =================================================
+
+.sa-form .form-group-nested{
+  border-bottom: none;
+  margin-bottom:5px;
+}
+
+.sa-form .form-group-divide{
+  text-align: center;
+  border-bottom: 1px solid $grey06;
+  margin-top:-15px;
+  margin-bottom:20px;
+  p{ 
+    display:inline-block;
+    position:relative;
+    top:10px;
+    margin-bottom:-10px;
+    background-color:$grey02;    
+    padding:5px;
+  }
+}
+
+// This is for the little : between times form-controls
+.sa-form .control-divider{
+  width:10px;
+  margin-top:5px;
+  margin-left:7px;
+}
+
+// this puts a little space after form-contols when they are inline
+.sa-form .form-control-inline div[class*="col-"]{
+  margin-right:10px;
+}
+.sa-form .form-control-inline div[class*="col-"]:last-of-type{
+  margin-right:0px;
+}
+
+// Form functions =================================================
 
 // Expanding form groups ====================
-// Used in My Appraisal
+// Used in My Appraisal and Job Planning
 // https://css-tricks.com/exposing-form-fields-radio-button-css/
 
 .reveal-if-active {
@@ -90,43 +331,25 @@
     padding: 10px 0px 10px 16px;
     transform: scale(1);
   }
-
 }
+
 .reveal-if-active .form-group:first-of-type{
   margin-top:0px;
 }
 
-
-
-
-// Input =====================================
-
-
-
-input[type=submit]:focus{
-  outline: none !important; // This removes the glow on input buttons
-}
-
-// Keep as reference
-// input[type=submit].positive, input[type=submit].positive:visited { background-color:$green; color:white;}
-// input[type=submit].positive:hover { background-color:darken($green, 5%); }
-// input[type=submit].positive:active, { background-color:darken($green, 10%); }
-// input[type=submit].positive:focus { background-color:darken($green, 10%); }
-
-input[type=radio]{
-  margin:4px;
-}
-input[type=radio]:first-of-type{
-  margin-left:0px;
-}
-
-.form-submission .btn{
-  min-width: 16.66666667%; // Equal to col-xs-2
+// This is meant to remove the border-bottom when the No button is active
+.expandable input[value="false"]{ // CAN'T GET THIS TO WORK
+  border:none!important;
+  margin-bottom:0px!important;
 }
 
 
+
+// Tags Styles =====================================================
 // Bootstrap Tagsinput ==========================
 // Changes commented out
+
+$tag-color: $turq;
 
 .bootstrap-tagsinput {
   background-color: #fff;
@@ -142,6 +365,7 @@ input[type=radio]:first-of-type{
   line-height: 28px;
   cursor: text;
   margin-top:5px;
+  margin-bottom:5px;
 }
 .bootstrap-tagsinput input {
   border: none;
@@ -170,10 +394,16 @@ input[type=radio]:first-of-type{
   box-shadow: none;
 }
 .bootstrap-tagsinput .tag {
-  background-color:$grey12;
+  background-color:$tag-color;
   font-size:1em;
   margin-right: 2px;
   color: white;
+}
+.bootstrap-tagsinput .tag:hover {
+  background-color:darken($tag-color, 3%);
+}
+.bootstrap-tagsinput .tag:active {
+  background-color:darken($tag-color, 6%);
 }
 .bootstrap-tagsinput .tag [data-role="remove"] {
   margin-left: 8px;

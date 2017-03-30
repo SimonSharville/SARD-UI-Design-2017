@@ -1,0 +1,192 @@
+// SARD Forms Styles
+
+// Appraisal Forms ========================================================================================
+.sa-form{
+}
+
+.sa-form .form-horizontal{
+  .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-left: 0px; // changed from 8px in structure.scss
+    padding-right: 0px; // changed from 8px in structure.scss
+  }
+}
+
+.sa-form .form-horizontal{
+}
+
+.sa-form fieldset{
+  background-color:$grey02;
+  border-radius: 5px;
+  padding:10px 15px 0px 15px;
+  margin-bottom:20px;
+  position:relative;
+}
+
+.sa-form legend{
+  background-color:$grey16;
+  width:calc(100% + 30px);
+  border-bottom: 0px solid $grey16;
+  border-radius: 5px 5px 0px 0px;
+  color:white;
+  margin-left:-15px;
+  margin-right:-15px;
+  margin-bottom: 0px;
+  padding:5px 15px;
+}
+
+.sa-form .form-group{
+  border-bottom: 1px solid white;
+  padding-bottom:10px;
+  margin-left:0px;
+  margin-right:0px;
+  margin-bottom:10px;
+}
+.sa-form .form-group:first-of-type{
+  margin-top:10px;
+}
+.sa-form .form-group:last-of-type{
+  border:none;
+}
+
+.sa-form .form-control:focus{
+  box-shadow: none;
+}
+
+.sa-form .form-horizontal .control-label{
+  text-align:left;
+  line-height:1.2em;
+  padding-top:2px;
+  padding-right:10px;
+  padding-bottom:5px;
+}
+
+.sa-form textarea{
+  resize: vertical;
+}
+.sa-form .form-control:focus{
+  border-color: $turq;
+}
+
+.sa-form .form-submission{
+  // padding-top:5px;
+}
+
+
+// Expanding form groups ====================
+// Used in My Appraisal
+// https://css-tricks.com/exposing-form-fields-radio-button-css/
+
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: scale(0.8);
+  transition: 0.5s;
+  input[value="true"]:checked ~ &,
+  input[value="true"]:checked ~ & {
+    opacity: 1;
+    max-height: 100px;
+    overflow: visible;
+    padding: 10px 0px 10px 16px;
+    transform: scale(1);
+  }
+
+}
+.reveal-if-active .form-group:first-of-type{
+  margin-top:0px;
+}
+
+
+
+
+// Input =====================================
+
+
+
+input[type=submit]:focus{
+  outline: none !important; // This removes the glow on input buttons
+}
+
+// Keep as reference
+// input[type=submit].positive, input[type=submit].positive:visited { background-color:$green; color:white;}
+// input[type=submit].positive:hover { background-color:darken($green, 5%); }
+// input[type=submit].positive:active, { background-color:darken($green, 10%); }
+// input[type=submit].positive:focus { background-color:darken($green, 10%); }
+
+input[type=radio]{
+  margin:4px;
+}
+input[type=radio]:first-of-type{
+  margin-left:0px;
+}
+
+.form-submission .btn{
+  min-width: 16.66666667%; // Equal to col-xs-2
+}
+
+
+// Bootstrap Tagsinput ==========================
+// Changes commented out
+
+.bootstrap-tagsinput {
+  background-color: #fff;
+  // border: 1px solid #ccc;
+  border: none;
+  // box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  display: block;
+  padding: 4px 6px;
+  color: #555;
+  vertical-align: middle;
+  border-radius: 4px;
+  max-width: 100%;
+  line-height: 28px;
+  cursor: text;
+  margin-top:5px;
+}
+.bootstrap-tagsinput input {
+  border: none;
+  // border:1px solid red;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0 6px;
+  margin: 0;
+  min-width:100px;
+  // width: auto;
+  // max-width: inherit;
+}
+.bootstrap-tagsinput.form-control input::-moz-placeholder {
+  color: #777;
+  opacity: 1;
+}
+.bootstrap-tagsinput.form-control input:-ms-input-placeholder {
+  color: #777;
+}
+.bootstrap-tagsinput.form-control input::-webkit-input-placeholder {
+  color: #777;
+}
+.bootstrap-tagsinput input:focus {
+  border: none;
+  box-shadow: none;
+}
+.bootstrap-tagsinput .tag {
+  background-color:$grey12;
+  font-size:1em;
+  margin-right: 2px;
+  color: white;
+}
+.bootstrap-tagsinput .tag [data-role="remove"] {
+  margin-left: 8px;
+  cursor: pointer;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:after {
+  font-family: 'FontAwesome';
+  content: "\f057";
+  padding: 0px 1px;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover {
+  // box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover:active {
+  // box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
