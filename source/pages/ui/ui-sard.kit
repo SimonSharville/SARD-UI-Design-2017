@@ -85,7 +85,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
-              <h4>This page shows examples of any SARD specific components or items.</h4>
+              <h4>This sectio shows examples of any SARD specific components or items.</h4>
           </div> <!-- END Column -->
         </div> <!-- END Row -->
       </div> <!-- END container -->
@@ -99,28 +99,34 @@
             <div class="h-tab-wrapper">
               <!-- tab-navs -->
               <ul class="container nav nav-tabs nav-justified">
-                <li class="active">
-                  <a href="#tab-a" class="sa-tab" data-toggle="tab">
+                <li class="">
+                  <a href="#statusalerts" class="sa-tab" data-toggle="tab">
                       <div class="tab-number"><p>A</p></div>
                       <div class="tab-title"><h6>Status Alerts</h6></div>
                   </a>
                 </li>
                 <li class="">
-                  <a href="#tab-b" class="sa-tab" data-toggle="tab">
+                  <a href="#variablecolumns" class="sa-tab" data-toggle="tab">
                     <div class="tab-number"><p>B</p></div>
                     <div class="tab-title"><h6>Variable Columns</h6></div>
                   </a>
                 </li>
                 <li class="">
-                  <a href="#tab-c" class="sa-tab" data-toggle="tab">
+                  <a href="#textlinks" class="sa-tab" data-toggle="tab">
                     <div class="tab-number"><p>C</p></div>
                     <div class="tab-title"><h6>Text Links</h6></div>
                   </a>
                 </li>
                 <li class="">
-                  <a href="#tab-d" class="sa-tab" data-toggle="tab">
+                  <a href="#navtabs" class="sa-tab" data-toggle="tab">
                     <div class="tab-number"><p>D</p></div>
                     <div class="tab-title"><h6>Nav Tabs</h6></div>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="#forms" class="sa-tab" data-toggle="tab">
+                    <div class="tab-number"><p>E</p></div>
+                    <div class="tab-title"><h6>Forms</h6></div>
                   </a>
                 </li>
               </ul>
@@ -129,17 +135,20 @@
 
             <!-- horizontal-tab-content -->
             <div class="tab-content horizontal container">
-              <div id="tab-a" class="tab-pane fade in active" id="status-alerts">
+              <div id="statusalerts" class="tab-pane fade" id="status-alerts">
                 <!-- @import "components/status-alerts.html" -->
               </div>
-              <div id="tab-b" class="tab-pane fade" id="variable-columns">
+              <div id="variablecolumns" class="tab-pane fade" id="variable-columns">
                 <!-- @import "components/variable-columns.html" -->
               </div>
-              <div id="tab-c" class="tab-pane fade" id="text-links">
+              <div id="textlinks" class="tab-pane fade" id="text-links">
                 <!-- @import "components/text-links.html" -->
               </div>
-              <div id="tab-d" class="tab-pane fade" id="sard-nav-tabs">
+              <div id="navtabs" class="tab-pane fade" id="sard-nav-tabs">
                 <!-- @import "components/sard-nav-tabs.html" -->
+              </div>
+              <div id="forms" class="tab-pane fade in active" id="sard-forms">
+                <!-- @import "components/forms.html" -->
               </div>
             </div> <!-- END tab-content horizontal -->
 

@@ -173,6 +173,15 @@ $btn-light: $grey04;
   }
 }
 
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+  background-color:$grey08;
+}
+.btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default.focus{
+  background-color:$grey08;
+}
+
 //  Button Lables ----------------------------------
 .btn-label{
   .glyphicon{color:white;}
@@ -185,4 +194,18 @@ $btn-light: $grey04;
 }
 .btn-light .btn-label{
   .glyphicon{color:$grey16;}
+}
+
+// Added Features ==================================
+.btn-space-below-5{
+  margin-bottom:5px;
+}
+.btn-space-below-10{
+  margin-bottom:10px;
+}
+.btn-space-below-15{
+  margin-bottom:15px;
+}
+.button-space-below-20{
+  margin-bottom:20px;
 }
