@@ -19,8 +19,7 @@
 <div class="row appraisal">  
 
   <div class=" col-xs-12">
-    <div class="sa-form">
-      <form class="form-horizontal">
+      <form class="sa-form form-horizontal">
         <fieldset>
           <legend class="">Contact Details</legend>
           <p>Please ensure that you provide either email address or telephone number, both if possible.</p>
@@ -100,12 +99,13 @@
             <label for="appraisal_meeting_due_date" class="col-sm-4 control-label">When your appraisal meeting is due to take place (dd/mm/yyyy) <span class="asterisk">*</span></label>
             <div class="col-sm-8">
               <div class="input-group">
-              <div class="input-group-addon">
-                <i class="fa fa-calendar">
-                </i>
-               </div>
-               <input class="form-control" id="appraisal_meeting_due_date" name="date" placeholder="DD/MM/YYYY" type="text"/>
-              </div>
+                <input type="text" class="form-control" id="appraisal_meeting_due_date" name="date" placeholder="DD/MM/YYYY">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" id="appraisal_meeting_due_date" name="date">
+                    <i class="fa fa-calendar"></i>
+                  </button>
+                </span>
+              </div><!-- /input-group -->
             </div>
           </div>
 
@@ -151,11 +151,11 @@
                 <div class="reveal-if-active">
                     <div class="form-group col-xs-12">
                       <label for="second_appraiser_required">Academic appraiser's name <span class="asterisk">*</span></label>
-                      <input type="text" id="second_appraiser_name" name="second_appraiser_name" class="require-if-active col-xs-12" data-require-pair="#second-appraiser-name">
+                      <input type="text" id="second_appraiser_name" name="second_appraiser_name" class="col-xs-12 require-if-active form-control" data-require-pair="#second-appraiser-name">
                     </div>
                     <div class="form-group col-xs-12">
                       <label for="second_appraiser_email">Academic appraiser's email <span class="asterisk">*</span></label>
-                      <input type="text" id="second_appraiser_email" name="second_appraiser_email" class="require-if-active col-xs-12" data-require-pair="#second-appraiser-email">
+                      <input type="text" id="second_appraiser_email" name="second_appraiser_email" class="col-xs-12 require-if-active form-control" data-require-pair="#second-appraiser-email">
                     </div>
                 </div>
             </div>
@@ -181,11 +181,11 @@
                 <div class="reveal-if-active">
                     <div class="form-group col-xs-12">
                       <label for="additional_appraiser_required">Additional appraiser's name <span class="asterisk">*</span></label>
-                      <input type="text" id="additional_appraiser_name" name="additional_appraiser_name" class="require-if-active col-xs-12" data-require-pair="#additional-appraiser-name">
+                      <input type="text" id="additional_appraiser_name" name="additional_appraiser_name" class="col-xs-12 require-if-active form-control" data-require-pair="#additional-appraiser-name">
                     </div>
                     <div class="form-group col-xs-12">
                       <label for="additional_appraiser_email">Additional appraiser's email <span class="asterisk">*</span></label>
-                      <input type="text" id="additional_appraiser_email" name="additional_appraiser_email" class="require-if-active col-xs-12" data-require-pair="#additional-appraiser-email">
+                      <input type="text" id="additional_appraiser_email" name="additional_appraiser_email" class="col-xs-12 require-if-active form-control" data-require-pair="#additional-appraiser-email">
                     </div>
                 </div>
             </div>
@@ -199,15 +199,11 @@
         </fieldset>
 
         <div class="form-submission no-pdf">
-          <input class="btn btn-danger btn-block mark-as-button mark-as-incomplete negative" role="button" data-method="put" data-remote="true" rel="nofollow" name="commit" type="submit" value="Mark as Incomplete">
+          <input class="btn btn-success btn-block mark-as-button mark-as-incomplete negative" role="button" data-method="put" data-remote="true" rel="nofollow" name="commit" type="submit" value="Mark as Incomplete">
         </div>
 
-         <!-- <div class="form-submission no-pdf">
-          <input class="btn btn-success btn-block mark-as-button mark-as-incomplete positive" role="button" data-method="put" data-remote="true" rel="nofollow" name="commit" type="submit" value="Mark as Complete">
-        </div> -->
-        
       </form> <!-- END form-horizontal -->
-    </div>  <!-- END sa-form -->
+    
   </div> <!-- END col-xs-12 -->
 
 </div> <!-- END Row -->
@@ -255,7 +251,7 @@
           <strong>By: </strong>Dr John T Smith<br>
           18/01/2017 16:54 </br>
           <strong>From: </strong>Portfolio Dec 2016<br>
-          <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
+          <a href="#" class="btn btn-default btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
           <a href="#" class="btn btn-danger btn-xs remove-evidence" role="button"><span class="glyphicon glyphicon-remove-sign"></span>Remove</a>
         </div> <!-- END expiry -->
     </div> <!-- END evidence -->
@@ -278,9 +274,9 @@
                 </a>
               </div> <!-- END file -->
               <div class="location">Location:&nbsp;
-          <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button">Appraisal</a>
-          <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button">Portfolio</a>
-          <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button">eDocs</a>
+          <a href="#" class="btn btn-default btn-xs edit-evidence-link" role="button">Appraisal</a>
+          <a href="#" class="btn btn-default btn-xs edit-evidence-link" role="button">Portfolio</a>
+          <a href="#" class="btn btn-default btn-xs edit-evidence-link" role="button">eDocs</a>
         </div>
             </div> <!-- END attachments-fragment -->
           </div> <!-- END attachments -->
@@ -291,7 +287,7 @@
         <strong>By: </strong>Dr John T Smith<br>
         18/01/2017 18:02 </br>
         <strong>From: </strong>Portfolio Dec 2016<br>
-        <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
+        <a href="#" class="btn btn-default btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
         <a href="#" class="btn btn-danger btn-xs remove-evidence" role="button"><span class="glyphicon glyphicon-remove-sign"></span>Remove</a>
       </div> <!-- END expiry -->
 
