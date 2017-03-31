@@ -1308,9 +1308,71 @@
                                 <fieldset>
                                   <legend>Summary</legend>
                                   <table class="table table-summery summary per_occurrence">
+                                    <thead>
+                                      <tr>
+                                        <th>Per Occurrence</th>
+                                        <th class="non_premium">Non-Premium Time</th>
+                                        <th class="premium">Premium Time</th>
+                                        <th class="total_title">Total Time</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>Hours Worked</td>
+                                        <td class="summary_data non_premium">4</td>
+                                        <td class="summary_data premium">0</td>
+                                        <td class="summary_data">4</td>
+                                      </tr>
+                                      <tr>
+                                        <td>PAs Accumulated</td>
+                                        <td class="summary_data non_premium">1</td>
+                                        <td class="summary_data premium">0</td>
+                                        <td class="summary_data">1</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </fieldset>
+                      
+                                <fieldset>
+                                  <legend>Summary (alternative)</legend>
+                                  <div class="form-group per_occurance">
+                                    <h3>Per Occurrence</h3>
+                                    <table class="table table-summery-alt summary per_occurrence">
+                                      <thead>
+                                        <tr>
+                                          <th class="tcol-33 summary_title"></th>
+                                          <th class="tcol-33 summary_title hours_worked">Hours Worked</th>
+                                          <th class="tcol-33 summary_title pas_accumulated">PAs Accumulated</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td class="summary_section premium">Premium Time</td>
+                                          <td class="summary_data premium">0</td>
+                                          <td class="summary_data premium">0</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="summary_section non_premium">Non-Premium Time</td>
+                                          <td class="summary_data non_premium">4</td>
+                                          <td class="summary_data non_premium">1</td>
+                                        </tr>
+                                      </tbody>
+                                      <tfoot>
+                                        <tr>
+                                          <td class="summary_total_title ">Total Time</td>
+                                          <td class="summary_total">4</td>
+                                          <td class="summary_total">1</td>
+                                        </tr>
+                                      </tfoot>
+                                    </table>
+                                  </div> <!-- / form-group -->
+                                  <div class="form-group override_occurrences">
+                                    <h3><a class="summary" href="#" id="view_breakdown_toggle">Override Occurrences</a></h3>
+                                    <div class="view_breakdown">
+                                      <table class="table table-summery-alt summary">
                                         <thead>
                                           <tr>
-                                            <th>Per Occurrence</th>
+                                            <th>Per Year, Ignoring Leave</th>
                                             <th class="non_premium" style="display: none;">Non-Premium Time</th>
                                             <th class="premium" style="display: none;">Premium Time</th>
                                             <th class="total_title">Non-Premium Time</th>
@@ -1318,20 +1380,36 @@
                                         </thead>
                                         <tbody>
                                           <tr>
-                                            <td>Hours Worked</td>
-                                            <td class="summary_data non_premium" style="display: none;">4</td>
-                                            <td class="summary_data premium" style="display: none;">0</td>
-                                            <td class="summary_data">4</td>
+                                            <td>Occurrences (if no leave were taken)</td>
+                                            <td class="summary_data non_premium old_data" style="display: none;">52</td>
+                                            <td class="summary_data premium old_data" style="display: none;">0</td>
+                                            <td>
+                                              <div id="annualised">
+                                                Override?
+                                                <input class="annualised" name="annualised" type="checkbox" value="1">
+                                              </div>
+                                              <div class="number_per_year">
+                                                <select class="every_n number_per_year" id="number_per_year" value="1">
+                                                  <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option>
+                                                </select>
+                                              </div>
+                                              <div class="occurrences_per_year summary_data old_data" style="display: none;">
+                                                52
+                                              </div>
+                                            </td>
                                           </tr>
                                           <tr>
-                                            <td>PAs Accumulated</td>
-                                            <td class="summary_data non_premium" style="display: none;">1</td>
-                                            <td class="summary_data premium" style="display: none;">0</td>
-                                            <td class="summary_data">1</td>
+                                            <td>Hours Worked (if no leave were taken)</td>
+                                            <td class="summary_data non_premium old_data" style="display: none;">208</td>
+                                            <td class="summary_data premium old_data" style="display: none;">0</td>
+                                            <td class="summary_data old_data">208</td>
                                           </tr>
                                         </tbody>
                                       </table>
+                                    </div>
+                                  </div> <!-- / form-group -->
                                 </fieldset>
+                      
                               </form>
                             </div>
                       
