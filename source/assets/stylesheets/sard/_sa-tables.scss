@@ -1,0 +1,270 @@
+// SA Table Styles
+ 
+
+// Tables with SARD styles
+
+.table-default{
+  background-color:$panelBaseGrey;
+  thead {background-color: darken($grey08, 0%);}
+  thead > tr > th { border-bottom: none; }
+  tbody > tr > td{ border-top: 1px solid white;}
+  .top-row{ border-top: none;}
+  tfoot {background-color: darken($grey12, 0%);}
+  tfoot > tr > th { border-top: none; color:white;}
+  &.table-hover > tbody > tr:hover {background-color: darken($panelBaseGrey, 5%);}
+}
+
+.table-info{
+  background-color:$info;
+  thead {background-color: darken($info, 10%); color:white;}
+  thead > tr > th { border-bottom: none; }
+  tbody > tr > td{ border-top: 1px solid white;}
+  .top-row{ border-top: none;}
+  tfoot {background-color: darken($info, 20%);}
+  tfoot > tr > th { border-top: none; color:white;}
+  &.table-hover > tbody > tr:hover {background-color: darken($info, 5%);}
+}
+
+
+
+// Tables in Panels --------------------------
+.panel{
+  .table > thead > tr > th,
+  .table > tbody > tr > th,
+  .table > tfoot > tr > th,
+  .table > thead > tr > td,
+  .table > tbody > tr > td,
+  .table > tfoot > tr > td {
+    padding: 8px 0px;
+    // line-height: 1.42857143;
+    // vertical-align: top;
+    border-top: 1px solid white;
+  }
+
+  .table > thead > tr > th {
+    padding: 8px 0px;
+    // vertical-align: bottom;
+    border-bottom: 2px solid white;
+  }
+
+  caption{ color: black;}
+}
+
+
+// SARD fixes ---------------------------
+.panel-table{
+  padding-left:0px;
+  padding-right:0px;
+}
+
+.panel-table {
+  .table tbody tr td , 
+  .table thead tr th ,
+  .table tfoot tr th ,
+  .table tfoot tr td ,
+  .table caption{ 
+  padding: 8px 15px;}
+}
+
+.panel .table{ margin-bottom:-15px;}
+
+.panel-white{
+  .table > thead > tr > th,
+  .table > tbody > tr > th,
+  .table > tfoot > tr > th,
+  .table > thead > tr > td,
+  .table > tbody > tr > td,
+  .table > tfoot > tr > td {
+    // padding: 8px;
+    // line-height: 1.42857143;
+    // vertical-align: top;
+    border-top: 1px solid $grey08;
+}
+
+.table > thead > tr > th {
+  // vertical-align: bottom;
+  border-bottom: 2px solid $grey08;
+}
+}
+
+.panel-MRv{
+  .table-hover > tbody > tr:hover {background-color: darken($MRv, 5%);}
+}
+.panel-NRv{
+  .table-hover > tbody > tr:hover {background-color: darken($NRv, 5%);}
+}
+.panel-360{
+  .table-hover > tbody > tr:hover {background-color: darken($sa-360, 5%);}
+}
+.panel-eLeave{
+  .table-hover > tbody > tr:hover {background-color: darken($eLeave, 5%);}
+}
+.panel-A4A{
+  .table-hover > tbody > tr:hover {background-color: darken($A4A, 5%);}
+}
+.panel-JPL{
+  .table-hover > tbody > tr:hover {background-color: darken($JPL, 5%);}
+}
+.panel-eRo{
+  .table-hover > tbody > tr:hover {background-color: darken($eRo, 5%);}
+}
+.panel-CPL{
+  .table-hover > tbody > tr:hover {background-color: darken($CPL, 5%);}
+}
+
+.panel-primary{
+  .table-hover > tbody > tr:hover {background-color: darken($turq, 5%);}
+}
+.panel-success{
+  .table-hover > tbody > tr:hover {background-color: darken($success, 5%);}
+}
+.panel-info{
+  .table-hover > tbody > tr:hover {background-color: darken($info, 5%);}
+}
+.panel-warning{
+  .table-hover > tbody > tr:hover {background-color: darken($warning, 5%);}
+}
+.panel-danger{
+  .table-hover > tbody > tr:hover {background-color: darken($danger, 5%);}
+}
+
+// Table column variations - Use these within the td to adjust it's width.
+// Table column widths must add up to 100% in total, or leave columns empty and it will fill to fit.
+// You should only need to apply this to the top table head or table cell in a column.
+.tcol-66 { width:66%; } 
+.tcol-50 { width:50%; }
+.tcol-45 { width:45%; }
+.tcol-41 { width:41%; }
+.tcol-40 { width:40%; }
+.tcol-39 { width:39%; }
+.tcol-33 { width:33%; }
+.tcol-30 { width:30%; }
+.tcol-25 { width:25%; }
+.tcol-20 { width:20%; }
+.tcol-15 { width:15%; }
+.tcol-14 { width:14%; }
+.tcol-10 { width:10%; }
+.tcol-5 { width:5%; }
+
+// These are fixed variations on the above
+.tcol-fixed-50 { width:50px; }
+.tcol-fixed-5 { width:5px; }
+
+
+
+// Clickable Table Cell Styles =======================
+
+.rota-weeks{
+  // display:block;
+  // margin: 0px;
+  // padding: 0px;
+}
+
+.table-clickable{
+  margin: 0px;
+  margin-top:15px;
+  margin-bottom:10px;
+  // border-collapse: collapse;
+  // width: 100%;
+  // border-spacing: 0;
+  //   -webkit-border-horizontal-spacing: 0px;
+  //   -webkit-border-vertical-spacing: 0px;
+}
+
+.table-clickable > tbody > tr > td{
+  border:1px solid $grey02;
+  background-color: white;
+  text-align:center;
+  padding: 5px;
+  margin: 0px;
+}
+
+.table-clickable > tbody > tr > td:hover {
+  background-color: $grey08;
+}
+
+.table-clickable > tbody > tr > td:active,
+.table-clickable > tbody > tr > td:focus,
+.table-clickable > tbody > tr > td .selected, {
+  background-color: $turq;
+  color:white;
+  font-weight:bold;
+}
+
+// Summary Table Styles ==================================
+// Used in Job Planning
+
+.table-summery{
+  margin-top:20px;
+}
+
+.table-summery > tbody > tr > td{
+  border:1px solid $grey08;
+  text-align:center;
+  background-color: white;
+}
+
+.table-summery > thead > tr > th{
+  border:1px solid $grey16;
+  background-color: $grey16;
+  text-align:center;
+  color:white;
+}
+
+.table-summery > thead > tr > th:first-of-type{
+  border-right:1px solid $grey02;
+}
+
+// Alternative Summary Table Styles ==================================
+.table-summery-alt{
+  background-color:white;
+  text-align:center;
+  border-spacing: 10px 0;
+  border-collapse: separate;
+  padding:10px;
+  border-radius: 10px;
+  font-size:1.2em;
+}
+
+.table-summery-alt > thead > tr > th{
+  // background-color:yellow;
+  text-align:center;
+  border:none;
+}
+
+.table-summery-alt > tbody > tr > td{
+  border:none;
+  padding:5px 0px;
+  vertical-align:middle;
+}
+
+.table-summery-alt > tfoot > tr > td{
+  border:none;
+  padding:5px 0px;
+  vertical-align:middle;
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+}
+
+.table-summery-alt .summary_section,
+.table-summery-alt .summary_total_title{
+  text-align:left;
+}
+
+.table-summery-alt .summary_data,
+.table-summery-alt .summary_total{
+  font-size:2em;
+  line-height:1em;
+}
+
+.table-summery-alt .summary_data{
+  font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+}
+
+.table-summery-alt .summary_total{
+  border-top: 1px solid black;
+  margin-left:10px;
+  margin-right: 10px;
+}
+
+
+
