@@ -2,7 +2,9 @@
 
 // Global button styles
 
-
+.btn{
+  border-radius:4px;
+}
 
 .btn{
   border:0px;
@@ -32,7 +34,7 @@
 .btn-xl,
 .btn-group-xl > .btn {
   font-size: 24px;
-  padding: 15px 24px;
+  padding: 16px 24px;
   border-radius:6px;
 }
 .btn-lg,
@@ -43,7 +45,7 @@
 .btn-sm,
 .btn-group-sm > .btn {
   font-size: 14px;
-  padding: 6px 10px;
+  padding: 7px 10px;
 }
 .btn-xs,
 .btn-group-xs > .btn {
@@ -87,6 +89,11 @@ $btn-default: $grey14;
 .btn-info:focus { background-color: darken($info, 7%)!important;}
 .btn-info:active,  { background-color: darken($info, 8%)!important;}
 
+.btn-teal { background-color: darken($teal, 0%); color:white!important;}
+.btn-teal:visited { background-color: darken($teal, 0%); color:white!important;}
+.btn-teal:hover { background-color: darken($teal, 5%); color:white!important;}
+.btn-teal:focus { background-color: darken($teal, 7%)!important;}
+.btn-teal:active,  { background-color: darken($teal, 8%)!important;}
 
 .btn-success { background-color: darken($success, 0%); color:white!important;}
 .btn-success:visited { background-color: darken($success, 0%); color:white!important;}
@@ -130,6 +137,12 @@ $btn-light: $grey04;
 .btn-white:hover { background-color: white; color:$grey14!important;}
 .btn-white:focus { background-color: white!important; box-shadow:none!important;}
 .btn-white:active,  { background-color: white!important; box-shadow:none!important;}
+
+.btn-client { background-color: darken($client-colour, 15%); color:white!important;}
+.btn-client:visited { background-color: darken($client-colour, 15%); color:white!important;}
+.btn-client:hover { background-color: darken($client-colour, 17%); color:white!important;}
+.btn-client:focus { background-color: darken($client-colour, 17%)!important;}
+.btn-client:active,  { background-color: darken($client-colour, 20%)!important;}
 
 
 .btn-link{

@@ -25,16 +25,26 @@ $eRo:                   $teal;
 $CPL:                   $red;
 
 //  Greys ======================
+$grey00:                #f0f0f0;
+$grey01:                #F0F0F0;
 $grey02:                #EDEBEB;
 $grey03:                #E3E1E1;
 $grey04:                #D9D6D6;
+$grey05:                #d0cecd;
 $grey06:                #C7C4C2;
+$grey07:                #bdbab9;
 $grey08:                #B5B0B0;
+$grey09:                #aba6a5;
 $grey10:                #A39E9C;
+$grey11:                #918d8b;
 $grey12:                #827D7D;
+$grey13:                #716d6c;
 $grey14:                #615E5C;
+$grey15:                #514e4d;
 $grey16:                #403D3D;
+$grey17:                #302f2e;
 $grey18:                #211F0F;
+$grey19:                #0e0e0e;
 
 //  Other Colours ==============
 $active:                $grey04; // Used in Bootstrap Overrides Table Hover line 1030.
@@ -54,7 +64,7 @@ $client-colour-very-light:     lighten($client-colour, 10%);
 $client-colour-dark:           darken($client-colour, 10%);
 $client-colour-very-dark:      darken($client-colour, 20%);
 
-$panelBaseGrey:         $grey03;
+
 
 // Text Colours ====================
 

@@ -1,4 +1,12 @@
-// SARD Forms Styles
+// Bootstrap Overrides ==========================================================================
+
+textarea{
+  resize: vertical;
+  margin-bottom:5px;
+}
+
+
+// SARD Forms Styles ============================================================================
 
 #ui-kop .sa-form{
   margin-bottom:20px;
@@ -196,12 +204,8 @@
   // color: #3c763d;
 }
 
-// Inputs Tweaks =============================================
+// SARD Inputs Tweaks =============================================
 
-.sa-form textarea{
-  resize: vertical;
-  margin-bottom:5px;
-}
 
 .sa-form input{
   margin-bottom:5px;

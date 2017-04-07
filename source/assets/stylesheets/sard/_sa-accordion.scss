@@ -1,0 +1,62 @@
+// SA-Accordion ================================================
+
+.sa-accordion .panel-heading .accordion-toggle {
+  display: block;
+}
+
+/* set panel-heading paddings to <a> instead of h3 */    
+.sa-accordion .panel-heading { 
+  padding: 0;
+}
+
+.sa-accordion .panel-heading a:link{ // This makes the entire panel-heading a link
+  padding:10px 15px;
+  color:$grey18;
+}
+
+.sa-accordion .panel-heading h3{ 
+  margin:0; // Adjusts some strange overlap of the panel-heading
+}
+
+// Colouring ====================================
+$accordian-head: $grey04;
+
+/* change color of open class */
+.sa-accordion .panel-heading h3{ 
+  background-color: darken($accordian-head, 5%); 
+}
+.sa-accordion .panel-heading h3:hover{
+  background-color:darken($accordian-head, 7%);
+}
+.sa-accordion .panel-heading h3:active{
+  background-color:darken($accordian-head, 10%);
+}
+
+/* change color of collapsed class */
+.sa-accordion .collapsed { 
+  background-color: darken($accordian-head, 0%); 
+}
+.sa-accordion .collapsed:hover { 
+  background-color: darken($accordian-head, 5%); 
+}
+.sa-accordion .collapsed:active { 
+  background-color: darken($accordian-head, 10%); 
+}
+
+.sa-accordion .panel{
+  background-color:white;
+  border:none;
+  box-shadow:none;
+}
+.sa-accordion .panel-default > .panel-heading + .panel-collapse > .panel-body{ 
+  border:none;
+  border-left:1px solid $accordian-head;
+  border-right:1px solid $accordian-head;
+}
+.sa-accordion .panel-body{
+  margin-bottom:-1px;
+  border:none;
+  box-shadow:none;
+}
+
+

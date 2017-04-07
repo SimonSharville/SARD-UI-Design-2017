@@ -584,101 +584,147 @@
                           
                           <!-- Evidence ====================================================================== -->
                           <div class="row perf"></div>
+                          <div class="row">
+                          <div class="col-xs-12 evidence-box">  
+                              <h2>Evidence</h2>
+                                <div class="panel-group sa-accordion" id="accordion" role="tablist" aria-multiselectable="true">
                           
-                          <div class="row">  
-                            <div class=" col-xs-12 evidences">
-                              <h2 class="evidence-title">Evidence
-                                <a class="glyphicon glyphicon-info-sign"  data-toggle="popover" title="Add evidence" data-placement="bottom" data-content="Add your evidence here for it to appear in the list below."></a>
-                              </h2>
-                          
-                              <div class="new-evidence">
-                                <form id="new_evidence" method="post">
-                                  <textarea id="content" placeholder="Type your evidence here..."></textarea>
-                                  <div class="shelf">
-                                    <div class="expiry">
-                                      <p>
-                                      <label>Expiry Date:</label>
-                                      <input id="expiry" type="text" value="" class="hasDatepicker" placeholder="Add date"> <span class="fa fa-calendar">
-                                      </p>
+                                  <!-- Add Evidence ============================================================================ -->
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" id="toggle_add_evidence" role="tab">
+                                    <h3 class="panel-title">
+                                      <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_evidence" aria-expanded="false" data-toggle="collapse" data-target="#add_evidence">Add Evidence
+                                        <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+                                      </a>
+                                    </h3>
                                     </div>
-                                    <div class="col-xs-6 no-indent attachments">
-                                      <div class="new-attachment-fragment">
-                                        <div class="field">
-                                          <button class="btn btn-default" id="attach" type="button"><span class="glyphicon glyphicon-paperclip"></span> Attach Document</button>
-                                        </div>
+                                    <div id="add_evidence" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                      <div class="panel-body add-evidence">
+                                        <form  class="sa-form" method="post">
+                                            <div class="form-group">
+                                              <textarea class="form-control" rows="2" placeholder=" Add Title"></textarea>
+                                              <div class="row">
+                                                <div class="col-sm-6">
+                                                  <div class="input-group">
+                                                    <span class="input-group-addon" id="expiry_date">Expiry Date</span>
+                                                    <!-- <input class="form-control hasDatepicker" id="date" name="date" placeholder="DD/MM/YYY" type="text"/> -->
+                                                    <input id="date" type="text" class="form-control hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="Add date">
+                                                    <span class="input-group-addon"><span class="fa fa-calendar"></span>
+                                                  </div>
+                                                </div> <!-- END col -->
+                                                                  
+                                                <div class="col-sm-6">
+                                                  <button type="button" class="btn btn-labeled pull-left btn-dark btn-sm margin-top-5px">
+                                                     <span class="btn-label"><i class="glyphicon glyphicon-paperclip"></i></span>Add attachment
+                                                  </button>
+                                                  <button type="submit" class="btn btn-success pull-right btn-sm margin-top-5px">Submit</button>
+                                                </div> <!-- END col -->
+                                              </div> <!-- END Row -->
+                                            </div>  <!-- / form-group -->
+                                          </form>
                                       </div>
                                     </div>
-                                    <div class="col-xs-6 no-indent add">
-                                      <button class="btn btn-default pull-right" id="attach" name="commit" nobind="true" type="submit" value="Save Evidence"><span class="glyphicon glyphicon-ok"></span>Save Evidence</button>
-                                      <!-- <input id="save-new-evidence" name="commit" nobind="true" type="submit" value="Save Evidence"> -->
+                                  </div> <!-- / panel -->
+                          
+                                  <!-- View Evidences ============================================================================ -->
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" id="toggle_view_evidences" role="tab">
+                                    <h3 class="panel-title">
+                                      <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="view_evidences" aria-expanded="false" data-toggle="collapse" data-target="#view_evidences">View Evidences
+                                        <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+                                      </a>
+                                    </h3>
                                     </div>
-                                  </div>
-                                </form>
-                                <div class="clear"></div>
-                              </div> <!-- END new-evidences -->
                           
+                                    <div id="view_evidences" class="panel-collapse collapse in" aria-labelledby="toggle_view_evidences" role="tabpanel">
+                                      <div class="panel-body">
+                                        <div class="col-xs-12 is-table-row evidence">
+                                          <div class="col-sm-8 col-md-9 detail">
+                                            <div class="title">Evidence Title</div>
+                                            <div class="content"></div>
+                                            
+                                            <div class="edocs">
+                                              <div class="attachments">
+                                                <div class="attachment-fragment">
+                                                  <div class="file">
+                                                    <a class="Research_Paper.pdf" href="#" target="_blank">
+                                                      <div class="name">Patient Feedback</div>
+                                                    </a>
+                                                    <a class="Research_Paper.pdf" href="#" target="_blank">
+                                                      <div class="name">Patient Feedback</div>
+                                                    </a>
+                                                  </div> <!-- END file -->
+                                                </div> <!-- END attachments-fragment -->
+                                              </div> <!-- END attachments -->
+                                            </div> <!-- END edocs -->
+                                            <div class="location">
+                                              <label>Location:</label>
+                                              <a href="#" class="btn btn-dark btn-xs" role="button">Appraisal</a>
+                                              <a href="#" class="btn btn-dark btn-xs" role="button">Portfolio</a>
+                                              <a href="#" class="btn btn-dark btn-xs" role="button">eDocs</a>
+                                            </div>
+                                          </div> <!-- END detail -->
+                                          <div class="col-sm-4 col-md-3 expiry">
+                                            <div class="col-xs-9 col-md-12 expiry-dates ">
+                                              <strong>Expires: </strong>18/05/2018<br>
+                                              <strong>From: </strong>Portfolio Dec 2016
+                                            </div>
+                                            <div class="col-xs-3 col-md-12 edit-links clearfix">
+                                              <div id="open_evidence-1" class="edit-evidence-link glyphicon glyphicon-pencil"></div>
+                                              <a href="#" class="edit-evidence-link glyphicon glyphicon-remove-circle" ></a>
+                                            </div>
+                                          </div> <!-- END expiry -->
+                                        </div> <!-- / evidence -->
+                                      </div> <!-- / panel-body -->
+                                       
+                                      <div id="edit_evidence-1" class="edit-evidence">
+                                        <form id="edit_evidence" class="sa-form" method="put">
+                                            <div class="form-group">
+                                              <textarea class="form-control" rows="2" placeholder=" Edit Evidence Title"></textarea>
+                                              <div class="row">
+                                                <div class="col-sm-6">
+                                                  <div class="input-group">
+                                                    <span class="input-group-addon" id="expiry_date">Expiry Date</span>
+                                                    <!-- <input class="form-control hasDatepicker" id="date" name="date" placeholder="DD/MM/YYY" type="text"/> -->
+                                                    <input id="date" type="text" class="form-control hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="Add date">
+                                                    <span class="input-group-addon"><span class="fa fa-calendar"></span>
+                                                  </div>
+                                                </div> <!-- END col -->
+                                                                  
+                                                <div class="col-sm-6">
+                                                  <button type="button" class="btn btn-labeled pull-left btn-dark btn-sm margin-top-5px">
+                                                     <span class="btn-label"><i class="glyphicon glyphicon-paperclip"></i></span>Add attachment
+                                                  </button>
+                                                  <button type="button" class="btn btn-client pull-right btn-sm margin-top-5px close-evidence-1">Save & Close</button>
+                                                </div> <!-- END col -->
+                                              </div> <!-- END Row -->
+                                            </div>  <!-- / form-group -->
+                                        </form>
+                                      </div> <!-- / edit-evidence -->
                           
-                              <div class="col-xs-12 evidence">
-                                <div class="icon-box">
-                                  <div class="icon"></div>
-                                </div>
-                                <div class="detail">
-                                  <div class="title"></div>
-                                  <div class="content">(no content)</div>
-                                  
-                                  <div class="edocs">
-                                    <div class="attachments">
-                                    </div> <!-- END attachments -->
-                                  </div> <!-- END edocs -->
-                                </div> <!-- END detail -->
-                                <div class="expiry">
-                                    <strong>Expires: </strong>not given<br>
-                                    <strong>From: </strong>not given<br>
-                                    <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
-                                    <a href="#" class="btn btn-danger btn-xs remove-evidence" role="button"><span class="glyphicon glyphicon-remove-sign"></span>Remove</a>
-                                  </div> <!-- END expiry -->
-                              </div> <!-- END evidence -->
-                              
+                                    </div> <!-- / view_evidences -->
+                                  </div> <!-- / panel -->
                           
-                              <div class="col-xs-12 evidence">
-                                <div class="icon-box">
-                                  <div class="icon">E</div>
-                                </div>
-                                <div class="detail">
-                                  <div class="title">Evidence</div>
-                                  <div class="content"></div>
-                                  
-                                  <div class="edocs">
-                                    <div class="attachments">
-                                      <div class="attachment-fragment">
-                                        <div class="file">
-                                          <a class="Research_Paper.pdf" href="#" target="_blank">
-                                            <div class="name">Patient Feedback</div>
-                                          </a>
-                                        </div> <!-- END file -->
-                                      </div> <!-- END attachments-fragment -->
-                                    </div> <!-- END attachments -->
-                                  </div> <!-- END edocs -->
-                                  <div class="location">Location:&nbsp;
-                                    <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button">Appraisal</a>
-                                    <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button">Portfolio</a>
-                                    <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button">eDocs</a>
-                                  </div>
-                                </div> <!-- END detail -->
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" id="heading_six" role="tab">
+                                    <h3 class="panel-title">
+                                      <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="collapse_six" aria-expanded="false" data-toggle="collapse" data-target="#collapse_six">Collapsable Three
+                                        <i class="more-less glyphicon glyphicon-plus pull-right"></i>
+                                      </a>
+                                    </h3>
+                                    </div>
                           
-                                <div class="expiry">
-                                  <strong>Expires: </strong>18/05/2018<br>
-                                  <strong>From: </strong>Portfolio Dec 2016<br>
-                                  <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
-                                  <a href="#" class="btn btn-danger btn-xs remove-evidence" role="button"><span class="glyphicon glyphicon-remove-sign"></span>Remove</a>
-                                </div> <!-- END expiry -->
+                                    <div id="collapse_six" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_six">
+                                      <div class="panel-body">
+                                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                      </div>
+                                    </div>
+                                  </div> <!-- / panel -->
                           
-                              </div> <!-- END evidence -->
-                          
-                            </div> <!-- END evidences -->
+                                </div>  <!-- / panel-group sa-accordion -->
                             
-                          </div> <!-- END Row -->
-                          
+                          </div> <!-- / col evidence-box-->
+                          </div> <!-- / Row -->
                           
                           <!-- Comments / Reflection ====================================================================== -->
                           <div class="row perf"></div>
@@ -686,7 +732,8 @@
                           <div class="row">  
                             <div class=" col-xs-12 evidences">
                               <h2 class="evidence-title">Comments/Relections
-                                <a class="glyphicon glyphicon-info-sign"  data-toggle="popover" title="Add evidence" data-placement="bottom" data-content="Add your evidence here for it to appear in the list below."></a>
+                                <a class="glyphicon glyphicon-info-sign"  data-toggle="popover" title="Add evidence" data-placement="bottom" data-content="Add your evidence here for it to appear in the list below.">
+                                </a>
                               </h2>
                           
                               <div class="new-evidence">
@@ -7947,7 +7994,11 @@
     <!-- Clickable Table Cells -->
     <script type="text/javascript" src="../../assets/javascripts/sard/sa-clickable-table-cells.js"></script>
     
+    <!-- Accordion Plus-Minus -->
+    <script type="text/javascript" src="../../assets/javascripts/sard/sa-accordion-plus-minus.js"></script>
     
+    <!-- Show Hide -->
+    <script type="text/javascript" src="../../assets/javascripts/sard/sa-openclose.js"></script>
     
     
     
