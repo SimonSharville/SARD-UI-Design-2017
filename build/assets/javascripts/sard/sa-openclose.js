@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#open_evidence-1").click(function(){$("#edit_evidence-1").slideToggle(500)}),$(".close-evidence-1").click(function(){$("#edit_evidence-1").slideToggle(500)})});

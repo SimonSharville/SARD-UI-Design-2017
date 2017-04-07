@@ -390,9 +390,11 @@ $v-tab-number-bg-active:    $grey18;
     padding:0;
   }
 
-  .tab-column p, h1, h2, h3, h4, h5, h6{
-    padding-right:10px;
-    padding-top:10px;
+  .tab-column {
+    p, h1, h2, h3, h4, h5, h6{
+      padding-right:10px;
+      padding-top:10px;
+    }
   }
 
   .tab-intro{
