@@ -1,5 +1,7 @@
 // BS Panels Overrides
 
+$panelBaseGrey:         $grey02;
+
 .panel{
   border-radius:0px;
   font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
@@ -13,6 +15,10 @@
   h3{
     font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
     font-size: 1.500em;
+  }
+  h4{
+    padding-bottom:0px;
+    font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
   }
 }
 
@@ -34,14 +40,14 @@
 
 .panel-default{  }
 
-.panel-default > .panel-heading{ background-color:darken($panelBaseGrey, 20%); border:0; }
+.panel-default > .panel-heading{ background-color:darken($panelBaseGrey, 15%); border:0; }
 
 .panel-default > .panel-body{ background-color:$panelBaseGrey; }
 
 .panel-default > .perf-wht{ background-color:$panelBaseGrey; }
 .panel-default > .perf-grey{ background-color:$panelBaseGrey; }
 
-.panel-default > .panel-footer{ background-color:darken($panelBaseGrey, 20%);   color: white;   border:0;}
+.panel-default > .panel-footer{ background-color:darken($panelBaseGrey, 15%);   color: white;   border:0;}
 
 // Panel Primary ----------------------------------------------------------------------
 
@@ -286,4 +292,14 @@
   border-bottom:none;
   padding-left:0px;
   padding-right:0px;
+}
+
+// Panel Groups ======================================================================================================================
+
+.panel-group .panel{
+  border-radius:0;
+}
+
+.panel-group .panel + .panel {
+  margin-top: 1px;
 }
