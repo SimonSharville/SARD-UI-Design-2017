@@ -504,7 +504,7 @@ a[class$='pdf']:before,
 span.link-pdf:before {
   font-family: 'FontAwesome';
   content: "\f1c1";
-  padding-right: 20px;
+  padding-right: 1.3em;
   color: #BF0000;
   float: left; }
 
@@ -525,7 +525,7 @@ span.link-doc:before,
 span.link-docx:before {
   font-family: 'FontAwesome';
   content: "\f1c2";
-  padding-right: 20px;
+  padding-right: 1.3em;
   color: #003CB8;
   float: left; }
 
@@ -547,7 +547,7 @@ span.link-txt:before,
 span.link-rtf:before {
   font-family: 'FontAwesome';
   content: "\f0f6";
-  padding-right: 20px;
+  padding-right: 1.3em;
   color: #211F0F;
   float: left; }
 
@@ -569,7 +569,7 @@ span.link-xls:before,
 span.link-xlsx:before {
   font-family: 'FontAwesome';
   content: "\f1c3";
-  padding-right: 20px;
+  padding-right: 1.3em;
   color: #359E00;
   float: left; }
 
@@ -600,7 +600,7 @@ span.link-photo:before,
 span.link-image:before {
   font-family: 'FontAwesome';
   content: "\f1c5";
-  padding-right: 20px;
+  padding-right: 1.3em;
   color: #211F0F;
   float: left; }
 
@@ -619,7 +619,7 @@ a[class$='zip']:before,
 span.link-zip:before {
   font-family: 'FontAwesome';
   content: "\f1c6";
-  padding-right: 20px;
+  padding-right: 1.3em;
   color: #211F0F;
   float: left; }
 
@@ -4650,12 +4650,11 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   padding-left: 10px;
   padding-right: 10px; }
 
-.datatable .table a:before {
-  margin-right: -10px; }
+.datatable .table td a:before {
+  padding-right: 5px; }
 
 .datatable .edit {
-  float: right;
-  padding-right: 10px; }
+  float: right; }
 
 #index-page .index-list ul {
   padding-left: 20px;
@@ -4742,6 +4741,10 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 
 .appraisal-dataset-guidance .glyphicon {
   padding-bottom: 5px; }
+
+.appraisal-dataset-guidance .btn {
+  border-radius: 4px;
+  padding: 20px 0px; }
 
 .evidence-box .panel-body {
   padding: 15px; }
@@ -4834,6 +4837,9 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   margin-top: 1px;
   margin-bottom: -1px; }
 
+.evidence-box .attachments .file a:link:before {
+  padding-right: 7px; }
+
 .edoc-list {
   margin-top: 20px; }
 
@@ -4846,7 +4852,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   background: #403D3D;
   color: white;
   padding: 3px 20px;
-  margin: 00px -13px 0px -13px;
+  margin: 0px -13px 0px -13px;
   border-radius: 20px; }
 
 .edoc-list .time {
