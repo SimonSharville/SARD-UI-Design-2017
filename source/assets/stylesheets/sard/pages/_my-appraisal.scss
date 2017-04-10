@@ -15,14 +15,6 @@
 }
 
 
-
-
-
-
-
-
-
-
 // Evidences, Comments and Notes =====================================
 
 // All Evidences ---------------------------------------------
@@ -362,11 +354,6 @@
   border-top: none;
   padding-top: 0px;
 }
-// .edoc-list ul{ padding-left:10px; }
-
-// .edoc-list li a{
-//   font-size:1.25em;
-// }
 
 .edoc-list table{
   margin-bottom:0px;
@@ -377,7 +364,6 @@
 }
 
 .edoc-list td.file{
-  // padding-right:15px;
   font-size:1.2em;
   line-height:1.25em;
   padding-left: 2em ;
@@ -391,51 +377,6 @@
   margin-bottom:7px;
 }
 
-// eDocs Sortable Table styles ============================================
-
-.datatable .table{
-  padding:0px;
-  margin-left:-8px;
-  margin-right:-8px;
-  width: calc(100% + 16px);
-}
-
-.datatable .table > thead > tr > th{
-  border-bottom: 0px solid red;
-  background-color: $grey16;
-  color:white;
-  border-radius:20px;
-  text-align:center;
-  vertical-align:middle;
-}
-.datatable .table > thead > tr > th:first-of-type{
-  left:-5px;
-}
-.datatable .table > thead > tr > th:last-of-type{
-  right:-5px;
-}
-
-
-.datatable .table td{
-  border-top: none;
-  border-bottom: 1px solid $grey04;
-  padding-left:5px;
-  padding-right:5px;
-}
-
-.datatable .table a:before{
-  margin-right:-10px;
-}
-
-.datatable .table a:link{
-  // padding-left: 0px ;
-  // text-indent: 0px ;
-}
-
-.datatable .edit{
-  float:right;
-  padding-right:10px;
-}
 
 
 
