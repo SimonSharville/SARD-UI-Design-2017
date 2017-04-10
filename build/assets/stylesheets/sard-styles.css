@@ -4530,9 +4530,8 @@ table.dataTable thead .sorting_desc:after,
 table.dataTable thead .sorting_asc_disabled:after,
 table.dataTable thead .sorting_desc_disabled:after {
   position: absolute;
-  bottom: 8px;
   right: 8px;
-  display: block;
+  float: right;
   font-family: 'Glyphicons Halflings';
   opacity: 0.9; }
 
@@ -4614,6 +4613,49 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:fir
 
 div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:last-child {
   padding-right: 0; }
+
+.dataTables_wrapper > .row:first-child {
+  margin-left: -8px !important;
+  margin-right: -8px !important; }
+
+.dataTables_wrapper > .row:last-child {
+  margin-left: -8px !important;
+  margin-right: -8px !important; }
+
+.datatable .table {
+  padding: 0px;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: calc(100% + 16px);
+  border-left: 1px solid #E3E1E1;
+  border-right: 1px solid #E3E1E1; }
+
+.datatable .table > thead > tr > th {
+  border-bottom: 0px solid red;
+  background-color: #403D3D;
+  color: white;
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.datatable .table > thead > tr > th:first-of-type {
+  left: -1px; }
+
+.datatable .table > thead > tr > th:last-of-type {
+  right: -1px; }
+
+.datatable .table td {
+  border-top: none;
+  border-bottom: 1px solid #E3E1E1;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.datatable .table a:before {
+  margin-right: -10px; }
+
+.datatable .edit {
+  float: right;
+  padding-right: 10px; }
 
 #index-page .index-list ul {
   padding-left: 20px;
@@ -4835,39 +4877,6 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   font-size: 1.2em;
   padding-bottom: 7px;
   margin-bottom: 7px; }
-
-.datatable .table {
-  padding: 0px;
-  margin-left: -8px;
-  margin-right: -8px;
-  width: calc(100% + 16px); }
-
-.datatable .table > thead > tr > th {
-  border-bottom: 0px solid red;
-  background-color: #403D3D;
-  color: white;
-  border-radius: 20px;
-  text-align: center;
-  vertical-align: middle; }
-
-.datatable .table > thead > tr > th:first-of-type {
-  left: -5px; }
-
-.datatable .table > thead > tr > th:last-of-type {
-  right: -5px; }
-
-.datatable .table td {
-  border-top: none;
-  border-bottom: 1px solid #D9D6D6;
-  padding-left: 5px;
-  padding-right: 5px; }
-
-.datatable .table a:before {
-  margin-right: -10px; }
-
-.datatable .edit {
-  float: right;
-  padding-right: 10px; }
 
 #job-plan .all-activities {
   display: block; }
