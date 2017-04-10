@@ -107,9 +107,11 @@ table.dataTable thead .sorting_desc:after,
 table.dataTable thead .sorting_asc_disabled:after,
 table.dataTable thead .sorting_desc_disabled:after {
     position: absolute;
-    bottom: 8px;
+    // bottom: 8px;
     right: 8px;
-    display: block;
+    // display: block;
+
+    float:right;
     font-family: 'Glyphicons Halflings';
     opacity: 0.9;
 }
@@ -177,7 +179,7 @@ table.dataTable.table-condensed .sorting:after,
 table.dataTable.table-condensed .sorting_asc:after,
 table.dataTable.table-condensed .sorting_desc:after {
     top: 6px;
-    right: 6px
+    right: 6px;
 }
 
 table.table-bordered.dataTable th,
@@ -212,3 +214,60 @@ div.table-responsive>div.dataTables_wrapper>div.row>div[class^="col-"]:first-chi
 div.table-responsive>div.dataTables_wrapper>div.row>div[class^="col-"]:last-child {
     padding-right: 0
 }
+
+// DATATABLE Sortable Table styling ============================================
+
+.dataTables_wrapper>.row:first-child{ // this aligns the show options and search with the table below.
+  margin-left:-8px!important;
+  margin-right:-8px!important;
+}
+
+.dataTables_wrapper>.row:last-child{ // This aligns the pagintaion etc with eth table above.
+  margin-left:-8px!important;
+  margin-right:-8px!important;
+}
+
+.datatable .table{
+  padding:0px;
+  margin-left:-8px;
+  margin-right:-8px;
+  width: calc(100% + 16px);
+   border-left: 1px solid $grey03;
+   border-right: 1px solid $grey03;
+}
+
+.datatable .table > thead > tr > th{
+  border-bottom: 0px solid red;
+  background-color: $grey16;
+  color:white;
+  vertical-align:middle;
+  padding-left:10px;
+  padding-right:10px;
+}
+.datatable .table > thead > tr > th:first-of-type{
+  left:-1px;
+}
+.datatable .table > thead > tr > th:last-of-type{
+  right:-1px;
+}
+
+
+.datatable .table td{
+  border-top: none;
+  border-bottom: 1px solid $grey03;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.datatable .table a:before{
+  margin-right:-10px;
+}
+
+.datatable .table a:link{
+}
+
+.datatable .edit{
+  float:right;
+  padding-right:10px;
+}
+
