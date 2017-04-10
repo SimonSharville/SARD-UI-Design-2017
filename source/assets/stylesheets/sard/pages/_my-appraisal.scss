@@ -14,6 +14,11 @@
   padding-bottom:5px;
 }
 
+.appraisal-dataset-guidance .btn{
+  border-radius:4px;
+  padding:20px 0px;
+}
+
 
 // Evidences, Comments and Notes =====================================
 
@@ -135,6 +140,10 @@
   padding:15px;
   margin-top:1px;
   margin-bottom:-1px;
+}
+
+.evidence-box .attachments .file a:link:before{
+padding-right:7px;
 }
 
 
@@ -339,7 +348,7 @@
   background: $grey16;
   color:white;
   padding: 3px 20px;
-  margin: 00px -13px 0px -13px;
+  margin: 0px -13px 0px -13px;
   border-radius:20px;
 }
 
@@ -376,6 +385,10 @@
   padding-bottom:7px;
   margin-bottom:7px;
 }
+
+
+
+// a[class$='pdf']:before, span.link-pdf:before
 
 
 
