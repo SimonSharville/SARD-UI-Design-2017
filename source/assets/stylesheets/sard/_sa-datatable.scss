@@ -259,8 +259,8 @@ div.table-responsive>div.dataTables_wrapper>div.row>div[class^="col-"]:last-chil
   padding-right:10px;
 }
 
-.datatable .table a:before{
-  margin-right:-10px;
+.datatable .table td a:before{
+  padding-right: 5px;
 }
 
 .datatable .table a:link{
@@ -268,6 +268,6 @@ div.table-responsive>div.dataTables_wrapper>div.row>div[class^="col-"]:last-chil
 
 .datatable .edit{
   float:right;
-  padding-right:10px;
+  // padding-right:10px;
 }
 

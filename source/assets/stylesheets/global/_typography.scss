@@ -232,7 +232,7 @@ h1, h2, h3, h4, h5, h6, p{
   span.link-pdf:before {
     font-family: 'FontAwesome';
     content: "\f1c1" ;
-    padding-right:20px;
+    padding-right:1.3em;
     color:$red;
     float:left;
   }
@@ -258,7 +258,7 @@ h1, h2, h3, h4, h5, h6, p{
   span.link-docx:before {
     font-family: 'FontAwesome';
     content: "\f1c2" ;
-    padding-right:20px;
+    padding-right:1.3em;
     color:$blue;
     float:left;
   }
@@ -285,7 +285,7 @@ h1, h2, h3, h4, h5, h6, p{
   span.link-rtf:before {
     font-family: 'FontAwesome';
     content: "\f0f6" ;
-    padding-right:20px;
+    padding-right:1.3em;
     color:$grey18;
     float:left;
   }
@@ -311,7 +311,7 @@ h1, h2, h3, h4, h5, h6, p{
   span.link-xlsx:before {
     font-family: 'FontAwesome';
     content: "\f1c3" ;
-    padding-right:20px;
+    padding-right:1.3em;
     color:$green;
     float:left;
   }
@@ -346,7 +346,7 @@ h1, h2, h3, h4, h5, h6, p{
   span.link-image:before {
     font-family: 'FontAwesome';
     content: "\f1c5" ;
-    padding-right:20px;
+    padding-right:1.3em;
     color:$grey18;
     float:left;
     
@@ -371,7 +371,7 @@ h1, h2, h3, h4, h5, h6, p{
   span.link-zip:before {
     font-family: 'FontAwesome';
     content: "\f1c6" ;
-    padding-right:20px;
+    padding-right:1.3em;
     color:$grey18;
     float:left;
   }
