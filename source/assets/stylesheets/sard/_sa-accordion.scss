@@ -11,7 +11,7 @@
 
 .sa-accordion .panel-heading a:link{ // This makes the entire panel-heading a link
   padding:10px 15px;
-  color:$grey18;
+  color:white;
 }
 
 .sa-accordion .panel-heading h3{ 
@@ -19,7 +19,7 @@
 }
 
 // Colouring ====================================
-$accordian-head: $grey04;
+$accordian-head: $grey14;
 
 /* change color of open class */
 .sa-accordion .panel-heading h3{ 
@@ -58,5 +58,6 @@ $accordian-head: $grey04;
   border:none;
   box-shadow:none;
 }
+
 
 
