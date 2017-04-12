@@ -109,17 +109,17 @@ padding-right:16px;
 // =======================================================
 // Turns columns into table rows to achieve equal heights
 @media only screen and (min-width : 768px) {
-    .is-table-row {
+    .table-row {
         display: table;
     }
-    .is-table-row [class*="col-"] {
+    .table-row [class*="col-"] {
         float: none;
         display: table-cell;
         vertical-align: top;
     }
 }
 // This overrides the above for any columns nested within
-.is-table-row [class*="col-"]{
+.table-row [class*="col-"]{
   [class*="col-"]{
     float: initial;
     display: initial;
