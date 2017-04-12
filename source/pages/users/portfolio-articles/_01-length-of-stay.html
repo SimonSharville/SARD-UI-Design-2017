@@ -101,17 +101,20 @@
           </div>
 
           <div id="view_evidences" class="panel-collapse collapse in" aria-labelledby="toggle_view_evidences" role="tabpanel">
-            <div class="panel-body">
-              <div class="col-xs-12 is-table-row evidence">
-                <div class="col-sm-8 col-md-9 detail">
+            <div class="panel-body evidence">
+                <div class="detail">
                   <div class="title">Evidence Title</div>
                   <div class="content"></div>
                   
                   <div class="edocs">
                     <div class="attachments">
                       <div class="attachment-fragment">
+                        <h6>Attachments:</h6>
                         <div class="file">
                           <a class="Research_Paper.pdf" href="#" target="_blank">
+                            <div class="name">Patient Feedback</div>
+                          </a>
+                          <a class="Research_Paper.doc" href="#" target="_blank">
                             <div class="name">Patient Feedback</div>
                           </a>
                           <a class="Research_Paper.pdf" href="#" target="_blank">
@@ -128,20 +131,19 @@
                     <a href="#" class="btn btn-dark btn-xs" role="button">eDocs</a>
                   </div>
                 </div> <!-- END detail -->
-                <div class="col-sm-4 col-md-3 expiry">
+                <div class="expiry">
                   <div class="col-xs-9 col-md-12 expiry-dates ">
                     <strong>Expires: </strong>18/05/2018<br>
                     <strong>From: </strong>Portfolio Dec 2016
                   </div>
-                  <div class="col-xs-3 col-md-12 edit-links clearfix">
-                    <div id="open_evidence-1" class="edit-evidence-link glyphicon glyphicon-pencil"></div>
+                  <div class="edit-links">
+                    <div id="open_evidence_1" class="edit-evidence-link glyphicon glyphicon-pencil"></div>
                     <a href="#" class="edit-evidence-link glyphicon glyphicon-remove-circle" ></a>
                   </div>
                 </div> <!-- END expiry -->
-              </div> <!-- / evidence -->
-            </div> <!-- / panel-body -->
+            </div> <!-- / evidence -->
              
-            <div id="edit_evidence-1" class="edit-evidence">
+            <div id="edit_evidence_1" class="edit-evidence">
               <form id="edit_evidence" class="sa-form" method="put">
                   <div class="form-group">
                     <textarea class="form-control" rows="2" placeholder=" Edit Evidence Title"></textarea>
@@ -149,7 +151,6 @@
                       <div class="col-sm-6">
                         <div class="input-group">
                           <span class="input-group-addon" id="expiry_date">Expiry Date</span>
-                          <!-- <input class="form-control hasDatepicker" id="date" name="date" placeholder="DD/MM/YYY" type="text"/> -->
                           <input id="date" type="text" class="form-control hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="Add date">
                           <span class="input-group-addon"><span class="fa fa-calendar"></span>
                         </div>
@@ -159,7 +160,75 @@
                         <button type="button" class="btn btn-labeled pull-left btn-dark btn-sm margin-top-5px">
                            <span class="btn-label"><i class="glyphicon glyphicon-paperclip"></i></span>Add attachment
                         </button>
-                        <button type="button" class="btn btn-client pull-right btn-sm margin-top-5px close-evidence-1">Save & Close</button>
+                        <button type="button" class="btn btn-client pull-right btn-sm margin-top-5px close-evidence_1">Save & Close</button>
+                      </div> <!-- END col -->
+                    </div> <!-- END Row -->
+                  </div>  <!-- / form-group -->
+              </form>
+            </div> <!-- / edit-evidence -->
+
+            <!-- EVIDENCE 2 ===================================================================================== -->
+
+            <div class="panel-body evidence">
+                <div class="detail">
+                  <div class="title">Evidence Title</div>
+                  <div class="content"></div>
+                  
+                  <div class="edocs">
+                    <div class="attachments">
+                      <div class="attachment-fragment">
+                        <h6>Attachments:</h6>
+                        <div class="file">
+                          <a class="Research_Paper.pdf" href="#" target="_blank">
+                            <div class="name">Patient Feedback</div>
+                          </a>
+                          <a class="Research_Paper.doc" href="#" target="_blank">
+                            <div class="name">Patient Feedback</div>
+                          </a>
+                          <a class="Research_Paper.pdf" href="#" target="_blank">
+                            <div class="name">Patient Feedback</div>
+                          </a>
+                        </div> <!-- END file -->
+                      </div> <!-- END attachments-fragment -->
+                    </div> <!-- END attachments -->
+                  </div> <!-- END edocs -->
+                  <div class="location">
+                    <label>Location:</label>
+                    <a href="#" class="btn btn-dark btn-xs" role="button">Appraisal</a>
+                    <a href="#" class="btn btn-dark btn-xs" role="button">Portfolio</a>
+                    <a href="#" class="btn btn-dark btn-xs" role="button">eDocs</a>
+                  </div>
+                </div> <!-- END detail -->
+                <div class="expiry">
+                  <div class="expiry-dates">
+                    <strong>Expires: </strong>18/05/2018<br>
+                    <strong>From: </strong>Portfolio Dec 2016
+                  </div>
+                  <div class="edit-links">
+                    <div id="open_evidence_2" class="edit-evidence-link glyphicon glyphicon-pencil"></div>
+                    <a href="#" class="edit-evidence-link glyphicon glyphicon-remove-circle" ></a>
+                  </div>
+                </div> <!-- END expiry -->
+            </div> <!-- / evidence -->
+             
+            <div id="edit_evidence_2" class="edit-evidence">
+              <form id="edit_evidence" class="sa-form" method="put">
+                  <div class="form-group">
+                    <textarea class="form-control" rows="2" placeholder=" Edit Evidence Title"></textarea>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="input-group">
+                          <span class="input-group-addon" id="expiry_date">Expiry Date</span>
+                          <input id="date" type="text" class="form-control hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="Add date">
+                          <span class="input-group-addon"><span class="fa fa-calendar"></span>
+                        </div>
+                      </div> <!-- END col -->
+                                        
+                      <div class="col-sm-6">
+                        <button type="button" class="btn btn-labeled pull-left btn-dark btn-sm margin-top-5px">
+                           <span class="btn-label"><i class="glyphicon glyphicon-paperclip"></i></span>Add attachment
+                        </button>
+                        <button type="button" class="btn btn-client pull-right btn-sm margin-top-5px close-evidence_2">Save & Close</button>
                       </div> <!-- END col -->
                     </div> <!-- END Row -->
                   </div>  <!-- / form-group -->
@@ -167,7 +236,13 @@
             </div> <!-- / edit-evidence -->
 
           </div> <!-- / view_evidences -->
+
         </div> <!-- / panel -->
+
+
+
+
+
 
         <div class="panel panel-default">
           <div class="panel-heading" id="heading_six" role="tab">

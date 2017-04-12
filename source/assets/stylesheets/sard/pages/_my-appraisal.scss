@@ -34,26 +34,117 @@
 }
 
 
-// View Evidences --------------------------------------------
-#view_evidences .panel-body{
-  padding:0px;
-}
+
+// View Evidences =========================================
+
 #view_evidences .evidence{
   padding:0px;
+  border-top:4px solid $grey14;
+  display:table;
+  width:100%;
 }
-.evidence-box .panel-body{
+#view_evidences .evidence:first-of-type{
+  border-top:none;
 }
+#view_evidences .evidence:last-of-type{
+}
+
+
+
+// Detail Section --------------------------
 .evidence-box .evidence .detail{
   padding:10px 15px;
 }
+
+// Expiry section -------------------------
+
+.evidence-box .evidence .expiry{
+  padding:10px 0px;
+}
+.evidence-box .evidence .expiry .expiry-dates{
+  padding:0px 10px 10px 10px;
+  float:left;
+}
+
+.evidence-box .evidence .edit-links{
+  padding:10px 15px 5px 15px;
+  float:right;
+  font-size: 1.75em;
+  text-align:right;
+}
+
+
+// Size layouts ----------------------------------
+
+
+// Medium screens
+@media (max-width: 991px) {
+  .evidence-box .evidence .detail{
+    display:block;
+  }
+  .evidence-box .evidence .expiry{
+    display:block;
+    border-top:1px dotted $grey14;
+  }
+  .evidence-box .evidence .expiry .expiry-dates{
+    display:table-cell;
+  }
+  .evidence-box .evidence .edit-links{
+    display:table-cell;
+  }
+} 
+
+
+// Large screens
+@media (min-width: 992px) {
+  .evidence-box .evidence .detail{
+    display:table-cell;
+    width:75%;
+    vertical-align:top;
+  }
+  .evidence-box .evidence .expiry{
+    display:table-cell;
+    vertical-align:top;
+    position: relative;
+    border-left:1px dotted $grey14;
+  }
+  .evidence-box .evidence .expiry .expiry-dates{
+    display:table-cell;
+  }
+  .evidence-box .evidence .edit-links{
+    display:block;
+    position: absolute;
+    bottom: 0px;
+    width:100%;
+  }
+} 
+
+
 
 .evidence-box .evidence .detail .title{
   font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
   font-size: 1.500em;
   line-height:1.2em;
   margin:0;
+  padding-bottom:5px;
   margin-bottom:5px;
+  border-bottom: 1px dotted $grey14;
 }
+
+.evidence-box .evidence .detail .attachments{
+  padding-bottom:5px;
+  border-bottom: 1px dotted $grey14;
+}
+
+.evidence-box .evidence .detail .attachments h6{
+  margin-top:2px;
+  margin-bottom:2px;
+}
+
+.evidence-box .evidence .detail .attachments .file a:link:before{
+padding-right:7px;
+}
+
 
 .evidence-box .evidence .detail .location{
   padding-top:10px;
@@ -64,51 +155,8 @@
   padding-right:5px;
 }
 
-.evidence-box .evidence .expiry{
-}
 
-@media only screen and (min-width : 768px){
-  .evidence-box .evidence .expiry{
-    border-left:1px dotted $grey08;
-    padding:10px 10px;
-  }
-}
-@media only screen and (max-width : 767px){
-  .evidence-box .evidence .expiry{
-    border-top:1px dotted $grey08;
-    padding:10px 15px ;
-  }
-}
 
-.evidence-box .evidence .expiry [class*="col-"]{ // removes padding for nested columns
-  float: initial;
-  display: initial;
-  padding:0;
-}
-
-.evidence-box .evidence .expiry .expiry-dates{
-  padding-bottom:10px;
-}
-
-@media only screen and (max-width : 767px){
-  .evidence-box .evidence .expiry .expiry-dates{
-    max-width:75%;
-    width:75%;
-    float:left;
-  }
-  .evidence-box .evidence .expiry .edit-links{
-    max-width:25%;
-    width:25%;
-    float:right;
-    text-align:right;
-  }
-}
-
-.evidence-box .edit-links{
-  font-size: 2em;
-  float:right;
-  text-align:left;
-}
 .evidence-box .edit-links .glyphicon.glyphicon-pencil {
   color:$turq;
 }
@@ -132,6 +180,8 @@
 .evidence-box .edit-evidence-link{
   cursor:pointer;
 }
+
+// Edit Evidence Toggle ====================
 .evidence-box .edit-evidence{
   display:none;
   text-align:center;
@@ -142,9 +192,6 @@
   margin-bottom:-1px;
 }
 
-.evidence-box .attachments .file a:link:before{
-padding-right:7px;
-}
 
 
 
@@ -154,182 +201,7 @@ padding-right:7px;
 
 
 
-//OLD =================================================================
-// .evidences, .comments, .notes{
 
-//     .evidence-title{
-//       padding:0;
-//       .glyphicon{
-//         float:right;
-//         font-size:0.5em;
-//       }
-//     }
-
-//     #new_evidence{
-//     }
-
-//     textarea {
-//       overflow: hidden; 
-//       word-wrap: break-word; 
-//       resize: vertical; 
-//       min-height: 100px;
-//       width:100%;
-//       border:1px solid $grey10;
-//       padding:0px 5px;
-//     }
-
-//     input{
-//       border:1px solid $grey10;
-//       padding:0px 5px;
-//     }
-
-//     .evidence{
-//       display: table;
-//       border-top: 1px solid $grey08;
-//       margin-top:20px;
-//       padding:0px;
-//       vertical-align:top;
-//     }
-
-//      .evidence .icon-box{
-//       float:left;
-//       display: table-cell;
-//       padding-left:0px;
-//       margin-right:-10px;
-//       vertical-align:top;
-//       width: 50px;
-//       margin-top:10px;
-//      }
-
-//     .evidence .icon{
-//       display: table-cell;
-//       height: 40px;
-//       width: 40px;
-//       text-align: center;
-//       border: 4px solid #000;
-//       font-size: 2em;
-//       font-weight: bold;
-//       line-height: 32px;
-//     }
-
-//     .evidence .detail{
-//       display: table-cell;
-//       width: 50%;
-//       padding:7px 10px 10px 10px;
-//       vertical-align:top;
-//     }
-
-//     /* Medium Devices, Desktops */
-//     @media only screen and (min-width : 992px) {
-//       .evidence .detail{width: 70%;}
-//     }
-
-//     .evidence .detail .title{
-//       font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-//       font-size:1.3em;
-//       margin-top:-2px;
-//     }
-
-//     .evidence .detail .content{
-//     }
-
-//     .evidence .location{
-//       padding-top:10px;
-//       font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-//     }
-
-//     .evidence .expiry{
-//       display: table-cell;
-//       vertical-align:top;
-//       padding:10px 10px;
-//       border-left:1px solid $grey08;
-//     }
-
-// }// End .evidences, .comments, .notes =====================================================================
-
-
-
-
-// Attachments =========================================================================================
-
-
-// .attachments{
-//   // border-top: 1px solid $grey18;
-//   // margin-left:10px;
-// }
-
-// .attachments h3, h4{
-//   padding-bottom:10px;
-// }
-
-// .attachment-fragment{
-//   padding-bottom:5px;
-//   margin-bottom:5px;
-//   border-bottom: 1px dotted $grey04;
-// }
-// .attachment-fragment:last-of-type{
-//   border-bottom: transparent;
-// }
-
-// .attachment-fragment .file{
-//   padding-left: 1.3em ;
-//   text-indent: -1.3em ;
-// }
-
-// .attachment-fragment .fa{ padding-right:20px;}
-
-// a[class$='pdf']:before, .file a[class$='pdf']:before {
-//   font-family: 'FontAwesome';
-//   content: "\f1c1" ;
-//   padding-right:20px;
-//   color:$red;
-//   float:left;
-// }
-
-// .attachment-fragment a[class$='doc']:before, .file a[class$='doc']:before,
-// .attachment-fragment a[class$='docx']:before, .file a[class$='docx']:before {
-//   font-family: 'FontAwesome';
-//   content: "\f1c2" ;
-//   padding-right:20px;
-//   color:$blue;
-//   float:left;
-// }
-
-// .attachment-fragment a[class$='txt']:before, .file a[class$='txt']:before,
-// .attachment-fragment a[class$='rtf']:before, .file a[class$='rtf']:before {
-//   font-family: 'FontAwesome';
-//   content: "\f0f6" ;
-//   padding-right:20px;
-//   color:$grey18;
-//   float:left;
-// }
-
-// .attachment-fragment a[class$='jpg']:before, .file a[class$='jpg']:before {
-//   font-family: 'FontAwesome';
-//   content: "\f1c5" ;
-//   padding-right:20px;
-//   color:$grey18;
-//   float:left;
-// }
-
-// .attachment-fragment a[class$='jpg']:before, .file a[class$='jpg']:before,
-// .attachment-fragment a[class$='gif']:before, .file a[class$='gif']:before,
-// .attachment-fragment a[class$='png']:before, .file a[class$='png']:before {
-//   font-family: 'FontAwesome';
-//   content: "\f1c5" ;
-//   padding-right:20px;
-//   color:$grey18;
-//   float:left;
-// }
-
-// .attachment-fragment a[class$='xls']:before, .file a[class$='xls']:before,
-// .attachment-fragment a[class$='xlsx']:before, .file a[class$='xlsx']:before {
-//   font-family: 'FontAwesome';
-//   content: "\f1c3" ;
-//   padding-right:20px;
-//   color:$green;
-//   float:left;
-// }
 
 
 // eDocs ===================================================================
@@ -386,9 +258,6 @@ padding-right:7px;
   margin-bottom:7px;
 }
 
-
-
-// a[class$='pdf']:before, span.link-pdf:before
 
 
 

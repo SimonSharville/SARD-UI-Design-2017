@@ -1,1 +1,1 @@
-$(document).ready(function(){$("#open_evidence-1").click(function(){$("#edit_evidence-1").slideToggle(500)}),$(".close-evidence-1").click(function(){$("#edit_evidence-1").slideToggle(500)})});
+$(document).ready(function(){$("#open_evidence_1").click(function(){$("#edit_evidence_1").slideToggle(500)}),$(".close-evidence_1").click(function(){$("#edit_evidence_1").slideToggle(500)}),$("#open_evidence_2").click(function(){$("#edit_evidence_2").slideToggle(500)}),$(".close-evidence_2").click(function(){$("#edit_evidence_2").slideToggle(500)})});
