@@ -3611,15 +3611,22 @@ textarea {
 .sa-accordion .panel-heading h3 {
   margin: 0; }
 
+.sa-accordion .glyphicon {
+  padding: 0; }
+
+.sa-accordion .glyphicon-minus,
+.sa-accordion .glyphicon-plus {
+  color: white; }
+
 /* change color of open class */
 .sa-accordion .panel-heading h3 {
-  background-color: #545150; }
+  background-color: #3a3837; }
 
 .sa-accordion .panel-heading h3:hover {
-  background-color: #4f4c4b; }
+  background-color: #2d2b2a; }
 
 .sa-accordion .panel-heading h3:active {
-  background-color: #474543; }
+  background-color: #201f1e; }
 
 /* change color of collapsed class */
 .sa-accordion .collapsed {
@@ -3640,6 +3647,9 @@ textarea {
   border: none;
   border-left: 1px solid #615E5C;
   border-right: 1px solid #615E5C; }
+
+.sa-accordion .panel-default:last-of-type > .panel-heading + .panel-collapse > .panel-body {
+  border-bottom: 1px solid #615E5C; }
 
 .sa-accordion .panel-body {
   margin-bottom: -1px;
