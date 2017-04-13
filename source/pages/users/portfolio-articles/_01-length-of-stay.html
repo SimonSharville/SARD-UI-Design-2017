@@ -48,383 +48,535 @@
 
 <!-- Evidence ====================================================================== -->
 <div class="row perf"></div>
-<div class="row">
-<div class="col-xs-12 evidence-box">  
-    <h2>Evidence</h2>
-      <div class="panel-group sa-accordion" id="accordion" role="tablist" aria-multiselectable="true">
+<div class="row evidences">
+  <div class="col-xs-12 evidence-box">  
+      <h2>Evidence</h2>
+        <div class="panel-group sa-accordion" id="accordion" role="tablist" aria-multiselectable="true">
 
-        <!-- Add Evidence ============================================================================ -->
-        <div class="panel panel-default">
-          <div class="panel-heading" id="toggle_add_evidence" role="tab">
-          <h3 class="panel-title">
-            <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_evidence" aria-expanded="false" data-toggle="collapse" data-target="#add_evidence">Add Evidence
-              <i class="more-less glyphicon glyphicon-minus pull-right"></i>
-            </a>
-          </h3>
-          </div>
-          <div id="add_evidence" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
-            <div class="panel-body add-evidence">
-              <form  class="sa-form" method="post">
-                  <div class="form-group">
-                    <textarea class="form-control" rows="2" placeholder=" Add Title"></textarea>
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <div class="input-group">
-                          <span class="input-group-addon" id="expiry_date">Expiry Date</span>
-                          <!-- <input class="form-control hasDatepicker" id="date" name="date" placeholder="DD/MM/YYY" type="text"/> -->
-                          <input id="date" type="text" class="form-control hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="Add date">
-                          <span class="input-group-addon"><span class="fa fa-calendar"></span>
-                        </div>
-                      </div> <!-- END col -->
-                                        
-                      <div class="col-sm-6">
-                        <button type="button" class="btn btn-labeled pull-left btn-dark btn-sm margin-top5px">
-                           <span class="btn-label"><i class="glyphicon glyphicon-paperclip"></i></span>Add attachment
-                        </button>
-                        <button type="submit" class="btn btn-success pull-right btn-sm margin-top5px">Submit</button>
-                      </div> <!-- END col -->
-                    </div> <!-- END Row -->
-                  </div>  <!-- / form-group -->
+          <!-- Add Evidence ============================================================================ -->
+          <div class="panel panel-default">
+            <div class="panel-heading" id="toggle_add_evidence" role="tab">
+            <h3 class="panel-title">
+              <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_evidence" aria-expanded="false" data-toggle="collapse" data-target="#add_evidence">Add Evidence
+                <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+              </a>
+            </h3>
+            </div>
+            <div id="add_evidence" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+              <div class="panel-body add-evidence">
+                <form  class="sa-form" method="post">
+                    <div class="form-group">
+                      <textarea class="form-control" rows="2" placeholder=" Add Title"></textarea>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="input-group">
+                            <span class="input-group-addon" id="expiry_date">Expiry Date</span>
+                            <!-- <input class="form-control hasDatepicker" id="date" name="date" placeholder="DD/MM/YYY" type="text"/> -->
+                            <input id="date" type="text" class="form-control hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="Add date">
+                            <span class="input-group-addon"><span class="fa fa-calendar"></span>
+                          </div>
+                        </div> <!-- END col -->
+                                          
+                        <div class="col-sm-6">
+                          <button type="button" class="btn btn-labeled pull-left btn-dark btn-sm margin-top5px">
+                             <span class="btn-label"><i class="glyphicon glyphicon-paperclip"></i></span>Add attachment
+                          </button>
+                          <button type="submit" class="btn btn-success pull-right btn-sm margin-top5px">Submit</button>
+                        </div> <!-- END col -->
+                      </div> <!-- END Row -->
+                    </div>  <!-- / form-group -->
+                  </form>
+              </div>
+            </div>
+          </div> <!-- / panel -->
+
+          <!-- View Evidences ============================================================================ -->
+          <div class="panel panel-default">
+            <div class="panel-heading" id="toggle_view_evidences" role="tab">
+            <h3 class="panel-title">
+              <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="view_evidences" aria-expanded="false" data-toggle="collapse" data-target="#view_evidences">View Evidences
+                <i class="more-less glyphicon glyphicon-plus pull-right"></i>
+              </a>
+            </h3>
+            </div>
+
+            <div id="view_evidences" class="panel-collapse collapse" aria-labelledby="toggle_view_evidences" role="tabpanel">
+              <div class="panel-body evidence">
+                  <div class="detail">
+                    <div class="title">Evidence Title</div>
+                    <div class="content"></div>
+                    
+                    <div class="attachments">
+                      <label>Attachments:</label>
+                      <div class="file">
+                        <a class="Research_Paper.pdf" href="#" target="_blank">
+                          <span class="name">Patient Feedback</span>
+                        </a>
+                      </div> <!-- END file -->
+                      <div class="file">
+                        <a class="Research_Paper.doc" href="#" target="_blank">
+                          <span class="name">Patient Feedback</span>
+                        </a>
+                      </div> <!-- END file -->
+                      <div class="file">
+                        <a class="Research_Paper.pdf" href="#" target="_blank">
+                          <span class="name">Patient Feedback</span>
+                        </a>
+                      </div> <!-- END file -->
+                    </div> <!-- END attachments -->
+
+                    <div class="location">
+                      <label>Location:</label>
+                      <a href="#" class="btn btn-dark btn-xs" role="button">Appraisal</a>
+                      <a href="#" class="btn btn-dark btn-xs" role="button">Portfolio</a>
+                      <a href="#" class="btn btn-dark btn-xs" role="button">eDocs</a>
+                    </div>
+                  </div> <!-- END detail -->
+                  <div class="expiry">
+                    <div class="col-xs-9 col-md-12 expiry-dates ">
+                      <strong>Expires: </strong>18/05/2018<br>
+                      <strong>From: </strong>Portfolio Dec 2016
+                    </div>
+                    <div class="edit-links">
+                      <div id="open_evidence_1" class="edit-evidence-link glyphicon glyphicon-pencil"></div>
+                      <a href="#" class="edit-evidence-link glyphicon glyphicon-remove-circle" ></a>
+                    </div>
+                  </div> <!-- END expiry -->
+              </div> <!-- / evidence -->
+               
+              <div id="edit_evidence_1" class="edit-evidence">
+                <form id="edit_evidence" class="sa-form" method="put">
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <textarea class="form-control" rows="2" placeholder=" Edit Evidence Title"></textarea>
+                        </div><!-- END col -->
+                      </div> <!-- END Row -->
+
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="input-group">
+                            <span class="input-group-addon" id="expiry_date">Expiry Date</span>
+                            <input id="date" type="text" class="form-control hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="Add date">
+                            <span class="input-group-addon"><span class="fa fa-calendar"></span>
+                          </div>
+                        </div><!-- END col -->
+
+                        <div class="col-sm-6">
+                          <div class="attachments">
+                            <label>Attachments:</label>
+                            <div class="file">
+                              <a class="Research_Paper.pdf" href="#" target="_blank">
+                                <span class="name">Patient Feedback</span>
+                              </a>
+                               <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                            </div> <!-- END file -->
+                            <div class="file">
+                              <a class="Research_Paper.doc" href="#" target="_blank">
+                                <span class="name">Patient Feedback</span>
+                              </a>
+                               <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                            </div> <!-- END file -->
+                            <div class="file">
+                              <a class="Research_Paper.pdf" href="#" target="_blank">
+                                <span class="name">Patient Feedback</span>
+                              </a>
+                               <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                            </div> <!-- END file -->
+                          </div> <!-- END attachments -->
+
+                          <div>
+                            <button type="button" class="btn btn-labeled pull-left btn-dark btn-sm">
+                               <span class="btn-label"><i class="glyphicon glyphicon-paperclip"></i></span>Add attachment
+                            </button>
+                          </div>
+                        </div> <!-- END col -->
+                      </div> <!-- END Row -->
+
+                      
+                      <div class="row"> 
+                        <div class="col-xs-12">
+                          <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px close-evidence_1">Save & Close</button>
+                        </div><!-- END col -->
+                      </div> <!-- END Row -->
+                    </div>  <!-- / form-group -->
                 </form>
-            </div>
-          </div>
-        </div> <!-- / panel -->
+              </div> <!-- / edit-evidence -->
 
-        <!-- View Evidences ============================================================================ -->
-        <div class="panel panel-default">
-          <div class="panel-heading" id="toggle_view_evidences" role="tab">
-          <h3 class="panel-title">
-            <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="view_evidences" aria-expanded="false" data-toggle="collapse" data-target="#view_evidences">View Evidences
-              <i class="more-less glyphicon glyphicon-minus pull-right"></i>
-            </a>
-          </h3>
-          </div>
+              <!-- EVIDENCE 2 ===================================================================================== -->
 
-          <div id="view_evidences" class="panel-collapse collapse in" aria-labelledby="toggle_view_evidences" role="tabpanel">
-            <div class="panel-body evidence">
-                <div class="detail">
-                  <div class="title">Evidence Title</div>
-                  <div class="content"></div>
-                  
-                  <div class="attachments">
-                    <label>Attachments:</label>
-                    <div class="file">
-                      <a class="Research_Paper.pdf" href="#" target="_blank">
-                        <span class="name">Patient Feedback</span>
-                      </a>
-                    </div> <!-- END file -->
-                    <div class="file">
-                      <a class="Research_Paper.doc" href="#" target="_blank">
-                        <span class="name">Patient Feedback</span>
-                      </a>
-                    </div> <!-- END file -->
-                    <div class="file">
-                      <a class="Research_Paper.pdf" href="#" target="_blank">
-                        <span class="name">Patient Feedback</span>
-                      </a>
-                    </div> <!-- END file -->
-                  </div> <!-- END attachments -->
-
-                  <div class="location">
-                    <label>Location:</label>
-                    <a href="#" class="btn btn-dark btn-xs" role="button">Appraisal</a>
-                    <a href="#" class="btn btn-dark btn-xs" role="button">Portfolio</a>
-                    <a href="#" class="btn btn-dark btn-xs" role="button">eDocs</a>
-                  </div>
-                </div> <!-- END detail -->
-                <div class="expiry">
-                  <div class="col-xs-9 col-md-12 expiry-dates ">
-                    <strong>Expires: </strong>18/05/2018<br>
-                    <strong>From: </strong>Portfolio Dec 2016
-                  </div>
-                  <div class="edit-links">
-                    <div id="open_evidence_1" class="edit-evidence-link glyphicon glyphicon-pencil"></div>
-                    <a href="#" class="edit-evidence-link glyphicon glyphicon-remove-circle" ></a>
-                  </div>
-                </div> <!-- END expiry -->
-            </div> <!-- / evidence -->
-             
-            <div id="edit_evidence_1" class="edit-evidence">
-              <form id="edit_evidence" class="sa-form" method="put">
-                  <div class="form-group">
-                    <div class="row">
-                      <div class="col-xs-12">
-                        <textarea class="form-control" rows="2" placeholder=" Edit Evidence Title"></textarea>
-                      </div><!-- END col -->
-                    </div> <!-- END Row -->
-
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <div class="input-group">
-                          <span class="input-group-addon" id="expiry_date">Expiry Date</span>
-                          <input id="date" type="text" class="form-control hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="Add date">
-                          <span class="input-group-addon"><span class="fa fa-calendar"></span>
-                        </div>
-                      </div><!-- END col -->
-
-                      <div class="col-sm-6">
-                        <div class="attachments">
-                          <label>Attachments:</label>
-                          <div class="file">
-                            <a class="Research_Paper.pdf" href="#" target="_blank">
-                              <span class="name">Patient Feedback</span>
-                            </a>
-                             <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
-                          </div> <!-- END file -->
-                          <div class="file">
-                            <a class="Research_Paper.doc" href="#" target="_blank">
-                              <span class="name">Patient Feedback</span>
-                            </a>
-                             <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
-                          </div> <!-- END file -->
-                          <div class="file">
-                            <a class="Research_Paper.pdf" href="#" target="_blank">
-                              <span class="name">Patient Feedback</span>
-                            </a>
-                             <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
-                          </div> <!-- END file -->
-                        </div> <!-- END attachments -->
-
-                        <div>
-                          <button type="button" class="btn btn-labeled pull-left btn-dark btn-sm">
-                             <span class="btn-label"><i class="glyphicon glyphicon-paperclip"></i></span>Add attachment
-                          </button>
-                        </div>
-                      </div> <!-- END col -->
-                    </div> <!-- END Row -->
-
+              <div class="panel-body evidence">
+                  <div class="detail">
+                    <div class="title">Evidence Title</div>
+                    <div class="content"></div>
                     
-                    <div class="row"> 
-                      <div class="col-xs-12">
-                        <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px close-evidence_1">Save & Close</button>
-                      </div><!-- END col -->
-                    </div> <!-- END Row -->
-                  </div>  <!-- / form-group -->
-              </form>
-            </div> <!-- / edit-evidence -->
+                    <div class="attachments">
+                      <label>Attachments:</label>
+                      <div class="file">
+                        <a class="Research_Paper.pdf" href="#" target="_blank">
+                          <span class="name">Patient Feedback</span>
+                        </a>
+                      </div> <!-- END file -->
+                      <div class="file">
+                        <a class="Research_Paper.doc" href="#" target="_blank">
+                          <span class="name">Patient Feedback</span>
+                        </a>
+                      </div> <!-- END file -->
+                      <div class="file">
+                        <a class="Research_Paper.pdf" href="#" target="_blank">
+                          <span class="name">Patient Feedback</span>
+                        </a>
+                      </div> <!-- END file -->
+                    </div> <!-- END attachments -->
 
-            <!-- EVIDENCE 2 ===================================================================================== -->
+                    <div class="location">
+                      <label>Location:</label>
+                      <a href="#" class="btn btn-dark btn-xs" role="button">Appraisal</a>
+                      <a href="#" class="btn btn-dark btn-xs" role="button">Portfolio</a>
+                      <a href="#" class="btn btn-dark btn-xs" role="button">eDocs</a>
+                    </div>
+                  </div> <!-- END detail -->
+                  <div class="expiry">
+                    <div class="expiry-dates">
+                      <strong>Expires: </strong>18/05/2018<br>
+                      <strong>From: </strong>Portfolio Dec 2016
+                    </div>
+                    <div class="edit-links">
+                      <div id="open_evidence_2" class="edit-evidence-link glyphicon glyphicon-pencil"></div>
+                      <a href="#" class="edit-evidence-link glyphicon glyphicon-remove-circle" ></a>
+                    </div>
+                  </div> <!-- END expiry -->
+              </div> <!-- / evidence -->
+               
+              <div id="edit_evidence_2" class="edit-evidence">
+                <form id="edit_evidence" class="sa-form" method="put">
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <textarea class="form-control" rows="2" placeholder=" Edit Evidence Title"></textarea>
+                        </div><!-- END col -->
+                      </div> <!-- END Row -->
 
-            <div class="panel-body evidence">
-                <div class="detail">
-                  <div class="title">Evidence Title</div>
-                  <div class="content"></div>
-                  
-                  <div class="attachments">
-                    <label>Attachments:</label>
-                    <div class="file">
-                      <a class="Research_Paper.pdf" href="#" target="_blank">
-                        <span class="name">Patient Feedback</span>
-                      </a>
-                    </div> <!-- END file -->
-                    <div class="file">
-                      <a class="Research_Paper.doc" href="#" target="_blank">
-                        <span class="name">Patient Feedback</span>
-                      </a>
-                    </div> <!-- END file -->
-                    <div class="file">
-                      <a class="Research_Paper.pdf" href="#" target="_blank">
-                        <span class="name">Patient Feedback</span>
-                      </a>
-                    </div> <!-- END file -->
-                  </div> <!-- END attachments -->
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="input-group">
+                            <span class="input-group-addon" id="expiry_date">Expiry Date</span>
+                            <input id="date" type="text" class="form-control hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="Add date">
+                            <span class="input-group-addon"><span class="fa fa-calendar"></span>
+                          </div>
+                        </div><!-- END col -->
 
-                  <div class="location">
-                    <label>Location:</label>
-                    <a href="#" class="btn btn-dark btn-xs" role="button">Appraisal</a>
-                    <a href="#" class="btn btn-dark btn-xs" role="button">Portfolio</a>
-                    <a href="#" class="btn btn-dark btn-xs" role="button">eDocs</a>
-                  </div>
-                </div> <!-- END detail -->
-                <div class="expiry">
-                  <div class="expiry-dates">
-                    <strong>Expires: </strong>18/05/2018<br>
-                    <strong>From: </strong>Portfolio Dec 2016
-                  </div>
-                  <div class="edit-links">
-                    <div id="open_evidence_2" class="edit-evidence-link glyphicon glyphicon-pencil"></div>
-                    <a href="#" class="edit-evidence-link glyphicon glyphicon-remove-circle" ></a>
-                  </div>
-                </div> <!-- END expiry -->
-            </div> <!-- / evidence -->
-             
-            <div id="edit_evidence_2" class="edit-evidence">
-              <form id="edit_evidence" class="sa-form" method="put">
-                  <div class="form-group">
-                    <div class="row">
-                      <div class="col-xs-12">
-                        <textarea class="form-control" rows="2" placeholder=" Edit Evidence Title"></textarea>
-                      </div><!-- END col -->
-                    </div> <!-- END Row -->
+                        <div class="col-sm-6">
+                          <div class="attachments">
+                            <label>Attachments:</label>
+                            <div class="file">
+                              <a class="Research_Paper.pdf" href="#" target="_blank">
+                                <span class="name">Patient Feedback</span>
+                              </a>
+                               <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                            </div> <!-- END file -->
+                            <div class="file">
+                              <a class="Research_Paper.doc" href="#" target="_blank">
+                                <span class="name">Patient Feedback</span>
+                              </a>
+                               <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                            </div> <!-- END file -->
+                            <div class="file">
+                              <a class="Research_Paper.pdf" href="#" target="_blank">
+                                <span class="name">Patient Feedback</span>
+                              </a>
+                               <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                            </div> <!-- END file -->
+                          </div> <!-- END attachments -->
 
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <div class="input-group">
-                          <span class="input-group-addon" id="expiry_date">Expiry Date</span>
-                          <input id="date" type="text" class="form-control hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="Add date">
-                          <span class="input-group-addon"><span class="fa fa-calendar"></span>
-                        </div>
-                      </div><!-- END col -->
+                          <div>
+                            <button type="button" class="btn btn-labeled pull-left btn-dark btn-sm">
+                               <span class="btn-label"><i class="glyphicon glyphicon-paperclip"></i></span>Add attachment
+                            </button>
+                          </div>
+                        </div> <!-- END col -->
+                      </div> <!-- END Row -->
 
-                      <div class="col-sm-6">
-                        <div class="attachments">
-                          <label>Attachments:</label>
-                          <div class="file">
-                            <a class="Research_Paper.pdf" href="#" target="_blank">
-                              <span class="name">Patient Feedback</span>
-                            </a>
-                             <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
-                          </div> <!-- END file -->
-                          <div class="file">
-                            <a class="Research_Paper.doc" href="#" target="_blank">
-                              <span class="name">Patient Feedback</span>
-                            </a>
-                             <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
-                          </div> <!-- END file -->
-                          <div class="file">
-                            <a class="Research_Paper.pdf" href="#" target="_blank">
-                              <span class="name">Patient Feedback</span>
-                            </a>
-                             <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
-                          </div> <!-- END file -->
-                        </div> <!-- END attachments -->
+                      
+                      <div class="row"> 
+                        <div class="col-xs-12">
+                          <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px close-evidence_1">Save & Close</button>
+                        </div><!-- END col -->
+                      </div> <!-- END Row -->
+                    </div>  <!-- / form-group -->
+                </form>
+              </div> <!-- / edit-evidence -->
 
-                        <div>
-                          <button type="button" class="btn btn-labeled pull-left btn-dark btn-sm">
-                             <span class="btn-label"><i class="glyphicon glyphicon-paperclip"></i></span>Add attachment
-                          </button>
-                        </div>
-                      </div> <!-- END col -->
-                    </div> <!-- END Row -->
+            </div> <!-- / view_evidences -->
 
-                    
-                    <div class="row"> 
-                      <div class="col-xs-12">
-                        <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px close-evidence_1">Save & Close</button>
-                      </div><!-- END col -->
-                    </div> <!-- END Row -->
-                  </div>  <!-- / form-group -->
-              </form>
-            </div> <!-- / edit-evidence -->
+          </div> <!-- / panel -->
 
-          </div> <!-- / view_evidences -->
-
-        </div> <!-- / panel -->
-
-
-
-
-
-
-        <div class="panel panel-default">
-          <div class="panel-heading" id="heading_six" role="tab">
-          <h3 class="panel-title">
-            <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="collapse_six" aria-expanded="false" data-toggle="collapse" data-target="#collapse_six">Collapsable Three
-              <i class="more-less glyphicon glyphicon-plus pull-right"></i>
-            </a>
-          </h3>
-          </div>
-
-          <div id="collapse_six" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_six">
-            <div class="panel-body">
-              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-            </div>
-          </div>
-        </div> <!-- / panel -->
-
-      </div>  <!-- / panel-group sa-accordion -->
-  
-</div> <!-- / col evidence-box-->
+        </div>  <!-- / panel-group sa-accordion -->
+    
+  </div> <!-- / col evidence-box-->
 </div> <!-- / Row -->
 
 <!-- Comments / Reflection ====================================================================== -->
 <div class="row perf"></div>
 
-<div class="row">  
-  <div class=" col-xs-12 evidences">
-    <h2 class="evidence-title">Comments/Relections
-      <a class="glyphicon glyphicon-info-sign"  data-toggle="popover" title="Add evidence" data-placement="bottom" data-content="Add your evidence here for it to appear in the list below.">
-      </a>
-    </h2>
+<div class="row comments">
+  <div class="col-xs-12 evidence-box">  
+      <h2>Comments / Reflections</h2>
+        <div class="panel-group sa-accordion" id="accordion" role="tablist" aria-multiselectable="true">
 
-    <div class="new-evidence">
-      <form id="new_evidence" method="post">
-        <textarea id="content" placeholder="Type your comment/reflection here..."></textarea>
-        <div class="shelf">
-          
-          
-          <div class="col-xs-12 no-indent add">
-            <button class="btn btn-default pull-right" id="attach" name="commit" nobind="true" type="submit" value="Save Evidence"><span class="glyphicon glyphicon-ok"></span>Save Comment/Reflection</button>
-            <!-- <input id="save-new-evidence" name="commit" nobind="true" type="submit" value="Save Evidence"> -->
-          </div>
-        </div>
-      </form>
-      <div class="clear"></div>
-    </div> <!-- END new-evidences -->
+          <!-- Add Comments ============================================================================ -->
+          <div class="panel panel-default">
+            <div class="panel-heading" id="toggle_add_evidence" role="tab">
+            <h3 class="panel-title">
+              <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_comment" aria-expanded="false" data-toggle="collapse" data-target="#add_comment">Add Comment
+                <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+              </a>
+            </h3>
+            </div>
+            <div id="add_comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+              <div class="panel-body add-evidence">
+                <form  class="sa-form" method="post">
+                    <div class="form-group">
+                      <textarea class="form-control" rows="4" placeholder=" Add your comment/reflection here"></textarea>
+                      <div class="row">
+                        
+                                          
+                        <div class="col-xs-12">
+                          
+                          <button type="submit" class="btn btn-success pull-right btn-sm margin-top5px">Submit</button>
+                        </div> <!-- END col -->
+                      </div> <!-- END Row -->
+                    </div>  <!-- / form-group -->
+                  </form>
+              </div>
+            </div>
+          </div> <!-- / panel -->
 
+          <!-- View Comments ============================================================================ -->
+          <div class="panel panel-default">
+            <div class="panel-heading" id="toggle_view_evidences" role="tab">
+            <h3 class="panel-title">
+              <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="view_comments" aria-expanded="false" data-toggle="collapse" data-target="#view_comments">View Comments
+                <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+              </a>
+            </h3>
+            </div>
 
-    <div class="col-xs-12 evidence">
-      <div class="icon-box">
-        <div class="icon"></div>
-      </div>
-      <div class="detail">
-        <div class="title"></div>
-        <div class="content">(no content)</div>
-        
-        <div class="edocs">
-          <div class="attachments">
-          </div> <!-- END attachments -->
-        </div> <!-- END edocs -->
-      </div> <!-- END detail -->
-      <div class="expiry">
-          <strong>By: </strong>Dr John T Smith<br>
-          18/01/2017 16:54 </br>
-          <strong>From: </strong>Portfolio Dec 2016<br>
-          <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
-          <a href="#" class="btn btn-danger btn-xs remove-evidence" role="button"><span class="glyphicon glyphicon-remove-sign"></span>Remove</a>
-        </div> <!-- END expiry -->
-    </div> <!-- END evidence -->
+            <div id="view_comments" class="panel-collapse collapse" aria-labelledby="toggle_view_evidences" role="tabpanel">
+              <div class="panel-body evidence">
+                  <div class="detail">
+                    <div class="title">Evidence Title</div>
+                    <div class="content"></div>
+                    
+                    <div class="attachments">
+                      <label>Attachments:</label>
+                      <div class="file">
+                        <a class="Research_Paper.pdf" href="#" target="_blank">
+                          <span class="name">Patient Feedback</span>
+                        </a>
+                      </div> <!-- END file -->
+                      <div class="file">
+                        <a class="Research_Paper.doc" href="#" target="_blank">
+                          <span class="name">Patient Feedback</span>
+                        </a>
+                      </div> <!-- END file -->
+                      <div class="file">
+                        <a class="Research_Paper.pdf" href="#" target="_blank">
+                          <span class="name">Patient Feedback</span>
+                        </a>
+                      </div> <!-- END file -->
+                    </div> <!-- END attachments -->
+
+                    <div class="location">
+                      <label>Location:</label>
+                      <a href="#" class="btn btn-dark btn-xs" role="button">Appraisal</a>
+                      <a href="#" class="btn btn-dark btn-xs" role="button">Portfolio</a>
+                      <a href="#" class="btn btn-dark btn-xs" role="button">eDocs</a>
+                    </div>
+                  </div> <!-- END detail -->
+                  <div class="expiry">
+                    <div class="col-xs-9 col-md-12 expiry-dates ">
+                      <strong>Expires: </strong>18/05/2018<br>
+                      <strong>From: </strong>Portfolio Dec 2016
+                    </div>
+                    <div class="edit-links">
+                      <div id="open_comment_1" class="edit-evidence-link glyphicon glyphicon-pencil"></div>
+                      <a href="#" class="edit-evidence-link glyphicon glyphicon-remove-circle" ></a>
+                    </div>
+                  </div> <!-- END expiry -->
+              </div> <!-- / evidence -->
+               
+              <div id="edit_comment_1" class="edit-evidence">
+                <form id="edit_evidence" class="sa-form" method="put">
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <textarea class="form-control" rows="2" placeholder=" Edit Evidence Title"></textarea>
+                        </div><!-- END col -->
+                      </div> <!-- END Row -->
+
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="input-group">
+                            <span class="input-group-addon" id="expiry_date">Expiry Date</span>
+                            <input id="date" type="text" class="form-control hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="Add date">
+                            <span class="input-group-addon"><span class="fa fa-calendar"></span>
+                          </div>
+                        </div><!-- END col -->
+
+                        <div class="col-sm-6">
+                          <div class="attachments">
+                            <label>Attachments:</label>
+                            <div class="file">
+                              <a class="Research_Paper.pdf" href="#" target="_blank">
+                                <span class="name">Patient Feedback</span>
+                              </a>
+                               <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                            </div> <!-- END file -->
+                            <div class="file">
+                              <a class="Research_Paper.doc" href="#" target="_blank">
+                                <span class="name">Patient Feedback</span>
+                              </a>
+                               <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                            </div> <!-- END file -->
+                            <div class="file">
+                              <a class="Research_Paper.pdf" href="#" target="_blank">
+                                <span class="name">Patient Feedback</span>
+                              </a>
+                               <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                            </div> <!-- END file -->
+                          </div> <!-- END attachments -->
+
+                          <div>
+                            <button type="button" class="btn btn-labeled pull-left btn-dark btn-sm">
+                               <span class="btn-label"><i class="glyphicon glyphicon-paperclip"></i></span>Add attachment
+                            </button>
+                          </div>
+                        </div> <!-- END col -->
+                      </div> <!-- END Row -->
+
+                      
+                      <div class="row"> 
+                        <div class="col-xs-12">
+                          <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px close-comment_1">Save & Close</button>
+                        </div><!-- END col -->
+                      </div> <!-- END Row -->
+                    </div>  <!-- / form-group -->
+                </form>
+              </div> <!-- / edit-evidence -->
+
+              <!-- EVIDENCE 2 ===================================================================================== -->
+
+              <div class="panel-body evidence">
+                  <div class="detail">
+                    <div class="title">Evidence Title</div>
+                    <div class="content"></div>
+                    
+                    <div class="attachments">
+                      <label>Attachments:</label>
+                      <div class="file">
+                        <a class="Research_Paper.pdf" href="#" target="_blank">
+                          <span class="name">Patient Feedback</span>
+                        </a>
+                      </div> <!-- END file -->
+                      <div class="file">
+                        <a class="Research_Paper.doc" href="#" target="_blank">
+                          <span class="name">Patient Feedback</span>
+                        </a>
+                      </div> <!-- END file -->
+                      <div class="file">
+                        <a class="Research_Paper.pdf" href="#" target="_blank">
+                          <span class="name">Patient Feedback</span>
+                        </a>
+                      </div> <!-- END file -->
+                    </div> <!-- END attachments -->
+
+                    <div class="location">
+                      <label>Location:</label>
+                      <a href="#" class="btn btn-dark btn-xs" role="button">Appraisal</a>
+                      <a href="#" class="btn btn-dark btn-xs" role="button">Portfolio</a>
+                      <a href="#" class="btn btn-dark btn-xs" role="button">eDocs</a>
+                    </div>
+                  </div> <!-- END detail -->
+                  <div class="expiry">
+                    <div class="expiry-dates">
+                      <strong>Expires: </strong>18/05/2018<br>
+                      <strong>From: </strong>Portfolio Dec 2016
+                    </div>
+                    <div class="edit-links">
+                      <div id="open_comment_2" class="edit-evidence-link glyphicon glyphicon-pencil"></div>
+                      <a href="#" class="edit-evidence-link glyphicon glyphicon-remove-circle" ></a>
+                    </div>
+                  </div> <!-- END expiry -->
+              </div> <!-- / evidence -->
+               
+              <div id="edit_comment_2" class="edit-evidence">
+                <form id="edit_evidence" class="sa-form" method="put">
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <textarea class="form-control" rows="2" placeholder=" Edit Evidence Title"></textarea>
+                        </div><!-- END col -->
+                      </div> <!-- END Row -->
+
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="input-group">
+                            <span class="input-group-addon" id="expiry_date">Expiry Date</span>
+                            <input id="date" type="text" class="form-control hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="Add date">
+                            <span class="input-group-addon"><span class="fa fa-calendar"></span>
+                          </div>
+                        </div><!-- END col -->
+
+                        <div class="col-sm-6">
+                          <div class="attachments">
+                            <label>Attachments:</label>
+                            <div class="file">
+                              <a class="Research_Paper.pdf" href="#" target="_blank">
+                                <span class="name">Patient Feedback</span>
+                              </a>
+                               <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                            </div> <!-- END file -->
+                            <div class="file">
+                              <a class="Research_Paper.doc" href="#" target="_blank">
+                                <span class="name">Patient Feedback</span>
+                              </a>
+                               <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                            </div> <!-- END file -->
+                            <div class="file">
+                              <a class="Research_Paper.pdf" href="#" target="_blank">
+                                <span class="name">Patient Feedback</span>
+                              </a>
+                               <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                            </div> <!-- END file -->
+                          </div> <!-- END attachments -->
+
+                          <div>
+                            <button type="button" class="btn btn-labeled pull-left btn-dark btn-sm">
+                               <span class="btn-label"><i class="glyphicon glyphicon-paperclip"></i></span>Add attachment
+                            </button>
+                          </div>
+                        </div> <!-- END col -->
+                      </div> <!-- END Row -->
+
+                      
+                      <div class="row"> 
+                        <div class="col-xs-12">
+                          <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px close-comment_1">Save & Close</button>
+                        </div><!-- END col -->
+                      </div> <!-- END Row -->
+                    </div>  <!-- / form-group -->
+                </form>
+              </div> <!-- / edit-evidence -->
+
+            </div> <!-- / view_evidences -->
+
+          </div> <!-- / panel -->
+
+        </div>  <!-- / panel-group sa-accordion -->
     
-
-    <div class="col-xs-12 evidence">
-      <div class="icon-box">
-        <div class="icon">C</div>
-      </div>
-      <div class="detail">
-        <div class="title">Comment/Feedback</div>
-        <div class="content"></div>
-        
-        <div class="edocs">
-          <div class="attachments">
-            <div class="attachment-fragment">
-              <div class="file">
-                <a class="Research_Paper.pdf" href="#" target="_blank">
-                  <div class="name">Patient Feedback</div>
-                </a>
-              </div> <!-- END file -->
-              <div class="location">Location:&nbsp;
-          <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button">Appraisal</a>
-          <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button">Portfolio</a>
-          <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button">eDocs</a>
-        </div>
-            </div> <!-- END attachments-fragment -->
-          </div> <!-- END attachments -->
-        </div> <!-- END edocs -->
-      </div> <!-- END detail -->
-
-      <div class="expiry">
-        <strong>By: </strong>Dr John T Smith<br>
-        18/01/2017 18:02 </br>
-        <strong>From: </strong>Portfolio Dec 2016<br>
-        <a href="#" class="btn btn-grey btn-xs edit-evidence-link" role="button"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
-        <a href="#" class="btn btn-danger btn-xs remove-evidence" role="button"><span class="glyphicon glyphicon-remove-sign"></span>Remove</a>
-      </div> <!-- END expiry -->
-
-    </div> <!-- END evidence -->
-
-  </div> <!-- END evidences -->
-  
-</div> <!-- END Row -->
+  </div> <!-- / col evidence-box-->
+</div> <!-- / Row -->
 
 
 <!-- Private Notes ====================================================================== -->
