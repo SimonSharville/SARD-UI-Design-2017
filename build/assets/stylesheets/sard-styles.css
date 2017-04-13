@@ -697,8 +697,29 @@ body {
   padding-left: 8px;
   padding-right: 8px; }
 
-.margin-top-5px {
+.margin-top5px {
   margin-top: 5px; }
+
+.margin-top10px {
+  margin-top: 10px; }
+
+.margin-top15px {
+  margin-top: 15px; }
+
+.margin-top20px {
+  margin-top: 20px; }
+
+.margin-bottom5px {
+  margin-bottom: 5px; }
+
+.margin-bottom10px {
+  margin-bottom: 10px; }
+
+.margin-bottom15px {
+  margin-bottom: 15px; }
+
+.margin-bottom20px {
+  margin-bottom: 20px; }
 
 .page-header {
   margin-top: 0px;
@@ -4822,15 +4843,17 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   margin-bottom: 5px;
   border-bottom: 1px dotted #615E5C; }
 
-.evidence-box .evidence .detail .attachments {
+.evidence-box .attachments {
   padding-bottom: 5px;
-  border-bottom: 1px dotted #615E5C; }
+  border-bottom: 1px dotted #615E5C;
+  text-align: left; }
 
-.evidence-box .evidence .detail .attachments h6 {
+.evidence-box .attachments label {
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
   margin-top: 2px;
   margin-bottom: 2px; }
 
-.evidence-box .evidence .detail .attachments .file a:link:before {
+.evidence-box .attachments .file a:link:before {
   padding-right: 7px; }
 
 .evidence-box .evidence .detail .location {
@@ -4862,6 +4885,10 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 .evidence-box .edit-evidence-link {
   cursor: pointer; }
 
+.evidence-box .edit-evidence .form-group .row {
+  margin-left: -10px;
+  margin-right: -10px; }
+
 .evidence-box .edit-evidence {
   display: none;
   text-align: center;
@@ -4870,6 +4897,22 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   padding: 15px;
   margin-top: 1px;
   margin-bottom: -1px; }
+
+.evidence-box .edit-evidence .attachments {
+  padding-bottom: 5px;
+  border-bottom: none;
+  color: #211F0F;
+  text-align: left; }
+  .evidence-box .edit-evidence .attachments a:before {
+    color: #211F0F; }
+
+.evidence-box .edit-evidence .file a {
+  color: #211F0F; }
+
+.evidence-box .edit-evidence .file button {
+  background-color: transparent;
+  border: none;
+  color: #004c4c; }
 
 .edoc-list {
   margin-top: 20px; }

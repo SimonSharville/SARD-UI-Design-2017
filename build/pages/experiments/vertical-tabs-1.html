@@ -269,10 +269,10 @@
                                             </div> <!-- END col -->
                                                               
                                             <div class="col-sm-6">
-                                              <button type="button" class="btn btn-labeled pull-left btn-dark btn-sm margin-top-5px">
+                                              <button type="button" class="btn btn-labeled pull-left btn-dark btn-sm margin-top5px">
                                                  <span class="btn-label"><i class="glyphicon glyphicon-paperclip"></i></span>Add attachment
                                               </button>
-                                              <button type="submit" class="btn btn-success pull-right btn-sm margin-top-5px">Submit</button>
+                                              <button type="submit" class="btn btn-success pull-right btn-sm margin-top5px">Submit</button>
                                             </div> <!-- END col -->
                                           </div> <!-- END Row -->
                                         </div>  <!-- / form-group -->
@@ -297,24 +297,25 @@
                                         <div class="title">Evidence Title</div>
                                         <div class="content"></div>
                                         
-                                        <div class="edocs">
-                                          <div class="attachments">
-                                            <div class="attachment-fragment">
-                                              <h6>Attachments:</h6>
-                                              <div class="file">
-                                                <a class="Research_Paper.pdf" href="#" target="_blank">
-                                                  <div class="name">Patient Feedback</div>
-                                                </a>
-                                                <a class="Research_Paper.doc" href="#" target="_blank">
-                                                  <div class="name">Patient Feedback</div>
-                                                </a>
-                                                <a class="Research_Paper.pdf" href="#" target="_blank">
-                                                  <div class="name">Patient Feedback</div>
-                                                </a>
-                                              </div> <!-- END file -->
-                                            </div> <!-- END attachments-fragment -->
-                                          </div> <!-- END attachments -->
-                                        </div> <!-- END edocs -->
+                                        <div class="attachments">
+                                          <label>Attachments:</label>
+                                          <div class="file">
+                                            <a class="Research_Paper.pdf" href="#" target="_blank">
+                                              <span class="name">Patient Feedback</span>
+                                            </a>
+                                          </div> <!-- END file -->
+                                          <div class="file">
+                                            <a class="Research_Paper.doc" href="#" target="_blank">
+                                              <span class="name">Patient Feedback</span>
+                                            </a>
+                                          </div> <!-- END file -->
+                                          <div class="file">
+                                            <a class="Research_Paper.pdf" href="#" target="_blank">
+                                              <span class="name">Patient Feedback</span>
+                                            </a>
+                                          </div> <!-- END file -->
+                                        </div> <!-- END attachments -->
+                      
                                         <div class="location">
                                           <label>Location:</label>
                                           <a href="#" class="btn btn-dark btn-xs" role="button">Appraisal</a>
@@ -337,7 +338,12 @@
                                   <div id="edit_evidence_1" class="edit-evidence">
                                     <form id="edit_evidence" class="sa-form" method="put">
                                         <div class="form-group">
-                                          <textarea class="form-control" rows="2" placeholder=" Edit Evidence Title"></textarea>
+                                          <div class="row">
+                                            <div class="col-xs-12">
+                                              <textarea class="form-control" rows="2" placeholder=" Edit Evidence Title"></textarea>
+                                            </div><!-- END col -->
+                                          </div> <!-- END Row -->
+                      
                                           <div class="row">
                                             <div class="col-sm-6">
                                               <div class="input-group">
@@ -345,14 +351,44 @@
                                                 <input id="date" type="text" class="form-control hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="Add date">
                                                 <span class="input-group-addon"><span class="fa fa-calendar"></span>
                                               </div>
-                                            </div> <!-- END col -->
-                                                              
+                                            </div><!-- END col -->
+                      
                                             <div class="col-sm-6">
-                                              <button type="button" class="btn btn-labeled pull-left btn-dark btn-sm margin-top-5px">
-                                                 <span class="btn-label"><i class="glyphicon glyphicon-paperclip"></i></span>Add attachment
-                                              </button>
-                                              <button type="button" class="btn btn-client pull-right btn-sm margin-top-5px close-evidence_1">Save & Close</button>
+                                              <div class="attachments">
+                                                <label>Attachments:</label>
+                                                <div class="file">
+                                                  <a class="Research_Paper.pdf" href="#" target="_blank">
+                                                    <span class="name">Patient Feedback</span>
+                                                  </a>
+                                                   <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                                </div> <!-- END file -->
+                                                <div class="file">
+                                                  <a class="Research_Paper.doc" href="#" target="_blank">
+                                                    <span class="name">Patient Feedback</span>
+                                                  </a>
+                                                   <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                                </div> <!-- END file -->
+                                                <div class="file">
+                                                  <a class="Research_Paper.pdf" href="#" target="_blank">
+                                                    <span class="name">Patient Feedback</span>
+                                                  </a>
+                                                   <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                                </div> <!-- END file -->
+                                              </div> <!-- END attachments -->
+                      
+                                              <div>
+                                                <button type="button" class="btn btn-labeled pull-left btn-dark btn-sm">
+                                                   <span class="btn-label"><i class="glyphicon glyphicon-paperclip"></i></span>Add attachment
+                                                </button>
+                                              </div>
                                             </div> <!-- END col -->
+                                          </div> <!-- END Row -->
+                      
+                                          
+                                          <div class="row"> 
+                                            <div class="col-xs-12">
+                                              <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px close-evidence_1">Save & Close</button>
+                                            </div><!-- END col -->
                                           </div> <!-- END Row -->
                                         </div>  <!-- / form-group -->
                                     </form>
@@ -365,24 +401,25 @@
                                         <div class="title">Evidence Title</div>
                                         <div class="content"></div>
                                         
-                                        <div class="edocs">
-                                          <div class="attachments">
-                                            <div class="attachment-fragment">
-                                              <h6>Attachments:</h6>
-                                              <div class="file">
-                                                <a class="Research_Paper.pdf" href="#" target="_blank">
-                                                  <div class="name">Patient Feedback</div>
-                                                </a>
-                                                <a class="Research_Paper.doc" href="#" target="_blank">
-                                                  <div class="name">Patient Feedback</div>
-                                                </a>
-                                                <a class="Research_Paper.pdf" href="#" target="_blank">
-                                                  <div class="name">Patient Feedback</div>
-                                                </a>
-                                              </div> <!-- END file -->
-                                            </div> <!-- END attachments-fragment -->
-                                          </div> <!-- END attachments -->
-                                        </div> <!-- END edocs -->
+                                        <div class="attachments">
+                                          <label>Attachments:</label>
+                                          <div class="file">
+                                            <a class="Research_Paper.pdf" href="#" target="_blank">
+                                              <span class="name">Patient Feedback</span>
+                                            </a>
+                                          </div> <!-- END file -->
+                                          <div class="file">
+                                            <a class="Research_Paper.doc" href="#" target="_blank">
+                                              <span class="name">Patient Feedback</span>
+                                            </a>
+                                          </div> <!-- END file -->
+                                          <div class="file">
+                                            <a class="Research_Paper.pdf" href="#" target="_blank">
+                                              <span class="name">Patient Feedback</span>
+                                            </a>
+                                          </div> <!-- END file -->
+                                        </div> <!-- END attachments -->
+                      
                                         <div class="location">
                                           <label>Location:</label>
                                           <a href="#" class="btn btn-dark btn-xs" role="button">Appraisal</a>
@@ -405,7 +442,12 @@
                                   <div id="edit_evidence_2" class="edit-evidence">
                                     <form id="edit_evidence" class="sa-form" method="put">
                                         <div class="form-group">
-                                          <textarea class="form-control" rows="2" placeholder=" Edit Evidence Title"></textarea>
+                                          <div class="row">
+                                            <div class="col-xs-12">
+                                              <textarea class="form-control" rows="2" placeholder=" Edit Evidence Title"></textarea>
+                                            </div><!-- END col -->
+                                          </div> <!-- END Row -->
+                      
                                           <div class="row">
                                             <div class="col-sm-6">
                                               <div class="input-group">
@@ -413,14 +455,44 @@
                                                 <input id="date" type="text" class="form-control hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="Add date">
                                                 <span class="input-group-addon"><span class="fa fa-calendar"></span>
                                               </div>
-                                            </div> <!-- END col -->
-                                                              
+                                            </div><!-- END col -->
+                      
                                             <div class="col-sm-6">
-                                              <button type="button" class="btn btn-labeled pull-left btn-dark btn-sm margin-top-5px">
-                                                 <span class="btn-label"><i class="glyphicon glyphicon-paperclip"></i></span>Add attachment
-                                              </button>
-                                              <button type="button" class="btn btn-client pull-right btn-sm margin-top-5px close-evidence_2">Save & Close</button>
+                                              <div class="attachments">
+                                                <label>Attachments:</label>
+                                                <div class="file">
+                                                  <a class="Research_Paper.pdf" href="#" target="_blank">
+                                                    <span class="name">Patient Feedback</span>
+                                                  </a>
+                                                   <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                                </div> <!-- END file -->
+                                                <div class="file">
+                                                  <a class="Research_Paper.doc" href="#" target="_blank">
+                                                    <span class="name">Patient Feedback</span>
+                                                  </a>
+                                                   <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                                </div> <!-- END file -->
+                                                <div class="file">
+                                                  <a class="Research_Paper.pdf" href="#" target="_blank">
+                                                    <span class="name">Patient Feedback</span>
+                                                  </a>
+                                                   <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                                </div> <!-- END file -->
+                                              </div> <!-- END attachments -->
+                      
+                                              <div>
+                                                <button type="button" class="btn btn-labeled pull-left btn-dark btn-sm">
+                                                   <span class="btn-label"><i class="glyphicon glyphicon-paperclip"></i></span>Add attachment
+                                                </button>
+                                              </div>
                                             </div> <!-- END col -->
+                                          </div> <!-- END Row -->
+                      
+                                          
+                                          <div class="row"> 
+                                            <div class="col-xs-12">
+                                              <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px close-evidence_1">Save & Close</button>
+                                            </div><!-- END col -->
                                           </div> <!-- END Row -->
                                         </div>  <!-- / form-group -->
                                     </form>

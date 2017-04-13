@@ -131,17 +131,22 @@
   border-bottom: 1px dotted $grey14;
 }
 
-.evidence-box .evidence .detail .attachments{
+.evidence-box .attachments{
   padding-bottom:5px;
   border-bottom: 1px dotted $grey14;
+  text-align:left;
 }
 
-.evidence-box .evidence .detail .attachments h6{
+.evidence-box .attachments label{
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
   margin-top:2px;
   margin-bottom:2px;
 }
 
-.evidence-box .evidence .detail .attachments .file a:link:before{
+.evidence-box .attachments .file{
+  
+}
+.evidence-box .attachments .file a:link:before{
 padding-right:7px;
 }
 
@@ -155,7 +160,7 @@ padding-right:7px;
   padding-right:5px;
 }
 
-
+// Edit Evidence Buttons ------------------------------
 
 .evidence-box .edit-links .glyphicon.glyphicon-pencil {
   color:$turq;
@@ -181,15 +186,41 @@ padding-right:7px;
   cursor:pointer;
 }
 
-// Edit Evidence Toggle ====================
+// Edit Evidence section -----------------------------------
+
+.evidence-box .edit-evidence .form-group .row{
+  margin-left:-10px;
+  margin-right:-10px;
+}
+
 .evidence-box .edit-evidence{
   display:none;
   text-align:center;
-  background:$client-colour;
+  background:$turq;
   color:#fff;
   padding:15px;
   margin-top:1px;
   margin-bottom:-1px;
+}
+
+.evidence-box .edit-evidence .attachments{
+  padding-bottom:5px;
+  border-bottom: none;
+  color:$grey18;
+  text-align:left;
+  a:before{
+    color:$grey18;
+  }
+}
+
+.evidence-box .edit-evidence .file a{
+  color:$grey18;
+}
+
+.evidence-box .edit-evidence .file button{
+  background-color: transparent;
+  border:none;
+  color:darken($turq, 20%);
 }
 
 
@@ -202,10 +233,8 @@ padding-right:7px;
 
 
 
-
-
-// eDocs ===================================================================
-
+// eDoc List ===================================================================
+// Option 1 ONLY
 
 .edoc-list{ 
   margin-top:20px;
