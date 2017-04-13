@@ -18,29 +18,35 @@
   margin:0; // Adjusts some strange overlap of the panel-heading
 }
 
+.sa-accordion .glyphicon{ padding: 0;}
+
+.sa-accordion .glyphicon-minus,
+.sa-accordion .glyphicon-plus
+{color:white;}
+
 // Colouring ====================================
-$accordian-head: $grey14;
+$accordian: $grey14;
 
 /* change color of open class */
 .sa-accordion .panel-heading h3{ 
-  background-color: darken($accordian-head, 5%); 
+  background-color: darken($accordian, 15%); 
 }
 .sa-accordion .panel-heading h3:hover{
-  background-color:darken($accordian-head, 7%);
+  background-color:darken($accordian, 20%);
 }
 .sa-accordion .panel-heading h3:active{
-  background-color:darken($accordian-head, 10%);
+  background-color:darken($accordian, 25%);
 }
 
 /* change color of collapsed class */
 .sa-accordion .collapsed { 
-  background-color: darken($accordian-head, 0%); 
+  background-color: darken($accordian, 0%); 
 }
 .sa-accordion .collapsed:hover { 
-  background-color: darken($accordian-head, 5%); 
+  background-color: darken($accordian, 5%); 
 }
 .sa-accordion .collapsed:active { 
-  background-color: darken($accordian-head, 10%); 
+  background-color: darken($accordian, 10%); 
 }
 
 .sa-accordion .panel{
@@ -50,9 +56,15 @@ $accordian-head: $grey14;
 }
 .sa-accordion .panel-default > .panel-heading + .panel-collapse > .panel-body{ 
   border:none;
-  border-left:1px solid $accordian-head;
-  border-right:1px solid $accordian-head;
+  border-left:1px solid $accordian;
+  border-right:1px solid $accordian;
+  
 }
+
+.sa-accordion .panel-default:last-of-type > .panel-heading + .panel-collapse > .panel-body{
+  border-bottom:1px solid $accordian;
+}
+
 .sa-accordion .panel-body{
   margin-bottom:-1px;
   border:none;
