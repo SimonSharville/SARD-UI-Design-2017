@@ -44,6 +44,7 @@
   border-top:4px solid $grey14;
   display:table;
   width:100%;
+  min-height:100px;
 }
 #view_evidences .evidence:first-of-type,
 #view_comments .evidence:first-of-type,
@@ -58,12 +59,13 @@
   padding:10px 15px;
 }
 
-// Expiry section -------------------------
+// meta section -------------------------
 
-.evidence-box .evidence .expiry{
+.evidence-box .evidence .meta{
   padding:10px 0px;
 }
-.evidence-box .evidence .expiry .expiry-dates{
+.evidence-box .evidence .meta .meta-details,
+.evidence-box .evidence .meta .expiry-dates{
   padding:0px 10px 10px 10px;
   float:left;
 }
@@ -84,11 +86,12 @@
   .evidence-box .evidence .detail{
     display:block;
   }
-  .evidence-box .evidence .expiry{
+  .evidence-box .evidence .meta{
     display:block;
     border-top:1px dotted $grey14;
   }
-  .evidence-box .evidence .expiry .expiry-dates{
+  .evidence-box .evidence .meta .meta-details,
+  .evidence-box .evidence .meta .expiry-dates{
     display:table-cell;
   }
   .evidence-box .evidence .edit-links{
@@ -104,13 +107,15 @@
     width:75%;
     vertical-align:top;
   }
-  .evidence-box .evidence .expiry{
+  .evidence-box .evidence .meta{
     display:table-cell;
     vertical-align:top;
     position: relative;
     border-left:1px dotted $grey14;
   }
-  .evidence-box .evidence .expiry .expiry-dates{
+
+  .evidence-box .evidence .meta .meta-details,
+  .evidence-box .evidence .meta .expiry-dates{
     display:table-cell;
   }
   .evidence-box .evidence .edit-links{
@@ -128,14 +133,21 @@
   font-size: 1.500em;
   line-height:1.2em;
   margin:0;
+}
+
+.evidence-box .evidence .detail .evidence-note,
+.evidence-box .evidence .detail .comment,
+.evidence-box .evidence .detail .private-note{
+  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+  font-size: 1em;
+  margin:0;
   padding-bottom:5px;
-  margin-bottom:5px;
-  border-bottom: 1px dotted $grey14;
 }
 
 .evidence-box .attachments{
   padding-bottom:5px;
-  border-bottom: 1px dotted $grey14;
+  padding-top:2px;
+  border-top: 1px dotted $grey14;
   text-align:left;
 }
 
@@ -155,6 +167,7 @@ padding-right:7px;
 
 .evidence-box .evidence .detail .location{
   padding-top:10px;
+  border-top: 1px dotted $grey14;
 }
 .evidence-box .evidence .detail .location label{
   font-family: 'robotobold', Helvetica, Arial, Sans-serif;
@@ -201,13 +214,13 @@ padding-right:7px;
   background:$turq;
   color:#fff;
   padding:15px;
-  margin-top:1px;
+  margin-top:0px;
   margin-bottom:-1px;
 }
 
 .evidence-box .edit-evidence .attachments{
   padding-bottom:5px;
-  border-bottom: none;
+  border-top: none;
   color:$grey18;
   text-align:left;
   a:before{
