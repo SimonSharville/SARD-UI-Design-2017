@@ -4786,7 +4786,8 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   padding: 0px;
   border-top: 4px solid #615E5C;
   display: table;
-  width: 100%; }
+  width: 100%;
+  min-height: 100px; }
 
 #view_evidences .evidence:first-of-type,
 #view_comments .evidence:first-of-type,
@@ -4796,10 +4797,11 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 .evidence-box .evidence .detail {
   padding: 10px 15px; }
 
-.evidence-box .evidence .expiry {
+.evidence-box .evidence .meta {
   padding: 10px 0px; }
 
-.evidence-box .evidence .expiry .expiry-dates {
+.evidence-box .evidence .meta .meta-details,
+.evidence-box .evidence .meta .expiry-dates {
   padding: 0px 10px 10px 10px;
   float: left; }
 
@@ -4812,10 +4814,11 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 @media (max-width: 991px) {
   .evidence-box .evidence .detail {
     display: block; }
-  .evidence-box .evidence .expiry {
+  .evidence-box .evidence .meta {
     display: block;
     border-top: 1px dotted #615E5C; }
-  .evidence-box .evidence .expiry .expiry-dates {
+  .evidence-box .evidence .meta .meta-details,
+  .evidence-box .evidence .meta .expiry-dates {
     display: table-cell; }
   .evidence-box .evidence .edit-links {
     display: table-cell; } }
@@ -4825,12 +4828,13 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
     display: table-cell;
     width: 75%;
     vertical-align: top; }
-  .evidence-box .evidence .expiry {
+  .evidence-box .evidence .meta {
     display: table-cell;
     vertical-align: top;
     position: relative;
     border-left: 1px dotted #615E5C; }
-  .evidence-box .evidence .expiry .expiry-dates {
+  .evidence-box .evidence .meta .meta-details,
+  .evidence-box .evidence .meta .expiry-dates {
     display: table-cell; }
   .evidence-box .evidence .edit-links {
     display: block;
@@ -4842,14 +4846,20 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
   font-size: 1.500em;
   line-height: 1.2em;
+  margin: 0; }
+
+.evidence-box .evidence .detail .evidence-note,
+.evidence-box .evidence .detail .comment,
+.evidence-box .evidence .detail .private-note {
+  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+  font-size: 1em;
   margin: 0;
-  padding-bottom: 5px;
-  margin-bottom: 5px;
-  border-bottom: 1px dotted #615E5C; }
+  padding-bottom: 5px; }
 
 .evidence-box .attachments {
   padding-bottom: 5px;
-  border-bottom: 1px dotted #615E5C;
+  padding-top: 2px;
+  border-top: 1px dotted #615E5C;
   text-align: left; }
 
 .evidence-box .attachments label {
@@ -4861,7 +4871,8 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   padding-right: 7px; }
 
 .evidence-box .evidence .detail .location {
-  padding-top: 10px; }
+  padding-top: 10px;
+  border-top: 1px dotted #615E5C; }
 
 .evidence-box .evidence .detail .location label {
   font-family: 'robotobold', Helvetica, Arial, Sans-serif;
@@ -4899,12 +4910,11 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   background: #00B2B2;
   color: #fff;
   padding: 15px;
-  margin-top: 1px;
   margin-bottom: -1px; }
 
 .evidence-box .edit-evidence .attachments {
   padding-bottom: 5px;
-  border-bottom: none;
+  border-top: none;
   color: #211F0F;
   text-align: left; }
   .evidence-box .edit-evidence .attachments a:before {
