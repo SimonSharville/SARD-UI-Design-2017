@@ -29,7 +29,7 @@ textarea{
 .sa-form .form-group:last-of-type{
   border:none;
   padding-bottom:0px;
-  margin-bottom:0px;
+margin-bottom:5px;
 }
 
 .sa-form .form-group.multi-column{ // This option aligns multi-columns withing a form-group
@@ -313,6 +313,10 @@ textarea{
 }
 .sa-form .form-control-inline div[class*="col-"]:last-of-type{
   margin-right:0px;
+}
+
+input, button, select, textarea{
+  line-height:1em;
 }
 
 // Form functions =================================================
