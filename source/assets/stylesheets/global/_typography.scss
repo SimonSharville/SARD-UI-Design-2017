@@ -245,7 +245,8 @@ h1, h2, h3, h4, h5, h6, p{
   // WORD DOCS ===========================================================================
   // This places the doc icon in front of text links
 
-  .link-doc a:link:before, 
+  .link-doc a:link:before,
+  .link-docm a:link:before, 
   .link-docx a:link:before{
     font-family: 'FontAwesome';
     content: "\f1c2" ;
@@ -253,8 +254,10 @@ h1, h2, h3, h4, h5, h6, p{
     color:$blue;
   }
   a[class$='doc']:before,
+  a[class$='docm']:before,
   a[class$='docx']:before,
-  span.link-doc:before, 
+  span.link-doc:before,
+  span.link-docm:before, 
   span.link-docx:before {
     font-family: 'FontAwesome';
     content: "\f1c2" ;
@@ -262,7 +265,8 @@ h1, h2, h3, h4, h5, h6, p{
     color:$blue;
     float:left;
   }
-  p.link-doc, 
+  p.link-doc,
+  p.link-docm, 
   p.link-docx{ // This places the doc icon in front individual text
     padding-left: 1.3em ;
     text-indent: -1.3em ;
@@ -272,7 +276,8 @@ h1, h2, h3, h4, h5, h6, p{
   // Text docs, RTF docs ===========================================================================
   // This places the txt icon in front of text links
 
-  .link-txt a:link:before, 
+  .link-txt a:link:before,
+  .link-odt a:link:before, 
   .link-rtf a:link:before{
     font-family: 'FontAwesome';
     content: "\f0f6" ;
@@ -280,8 +285,10 @@ h1, h2, h3, h4, h5, h6, p{
     color:$grey18;
   }
   a[class$='txt']:before,
+  a[class$='odt']:before,
   a[class$='rtf']:before,
-  span.link-txt:before, 
+  span.link-txt:before,
+  span.link-odt:before, 
   span.link-rtf:before {
     font-family: 'FontAwesome';
     content: "\f0f6" ;
@@ -289,7 +296,8 @@ h1, h2, h3, h4, h5, h6, p{
     color:$grey18;
     float:left;
   }
-  p.link-txt, 
+  p.link-txt,
+  p.link-odt, 
   p.link-rtf{ // This places the txt icon in front individual text
     padding-left: 1.3em ;
     text-indent: -1.3em ;
@@ -327,8 +335,9 @@ h1, h2, h3, h4, h5, h6, p{
   .link-jpg a:link:before, 
   .link-png a:link:before, 
   .link-gif a:link:before, 
+  .link-photo a:link:before,
   .link-photo a:link:before, 
-  .link-image a:link:before{
+  .link-ico a:link:before{
     font-family: 'FontAwesome';
     content: "\f1c5" ;
     padding-right:7px;
@@ -339,11 +348,13 @@ h1, h2, h3, h4, h5, h6, p{
   a[class$='gif']:before,
   a[class$='photo']:before,
   a[class$='image']:before,
+  a[class$='ico']:before,
   span.link-jpg:before, 
   span.link-png:before, 
   span.link-gif:before, 
   span.link-photo:before, 
-  span.link-image:before {
+  span.link-image:before,
+  span.link-ico:before {
     font-family: 'FontAwesome';
     content: "\f1c5" ;
     padding-right:1.3em;
@@ -352,7 +363,11 @@ h1, h2, h3, h4, h5, h6, p{
     
   }
   p.link-jpg, 
-  p.link-png{ // This places the image icon in front individual text
+  p.link-png,
+  p.link-gif,
+  p.link-photo,
+  p.link-image,
+  p.link-ico{ // This places the image icon in front individual text
     padding-left: 1.3em ;
     text-indent: -1.3em ;
   }
