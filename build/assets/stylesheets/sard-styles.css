@@ -513,6 +513,7 @@ p.link-pdf {
   text-indent: -1.3em; }
 
 .link-doc a:link:before,
+.link-docm a:link:before,
 .link-docx a:link:before {
   font-family: 'FontAwesome';
   content: "\f1c2";
@@ -520,8 +521,10 @@ p.link-pdf {
   color: #003CB8; }
 
 a[class$='doc']:before,
+a[class$='docm']:before,
 a[class$='docx']:before,
 span.link-doc:before,
+span.link-docm:before,
 span.link-docx:before {
   font-family: 'FontAwesome';
   content: "\f1c2";
@@ -530,11 +533,13 @@ span.link-docx:before {
   float: left; }
 
 p.link-doc,
+p.link-docm,
 p.link-docx {
   padding-left: 1.3em;
   text-indent: -1.3em; }
 
 .link-txt a:link:before,
+.link-odt a:link:before,
 .link-rtf a:link:before {
   font-family: 'FontAwesome';
   content: "\f0f6";
@@ -542,8 +547,10 @@ p.link-docx {
   color: #211F0F; }
 
 a[class$='txt']:before,
+a[class$='odt']:before,
 a[class$='rtf']:before,
 span.link-txt:before,
+span.link-odt:before,
 span.link-rtf:before {
   font-family: 'FontAwesome';
   content: "\f0f6";
@@ -552,6 +559,7 @@ span.link-rtf:before {
   float: left; }
 
 p.link-txt,
+p.link-odt,
 p.link-rtf {
   padding-left: 1.3em;
   text-indent: -1.3em; }
@@ -582,7 +590,8 @@ p.link-xlsx {
 .link-png a:link:before,
 .link-gif a:link:before,
 .link-photo a:link:before,
-.link-image a:link:before {
+.link-photo a:link:before,
+.link-ico a:link:before {
   font-family: 'FontAwesome';
   content: "\f1c5";
   padding-right: 7px;
@@ -593,11 +602,13 @@ a[class$='png']:before,
 a[class$='gif']:before,
 a[class$='photo']:before,
 a[class$='image']:before,
+a[class$='ico']:before,
 span.link-jpg:before,
 span.link-png:before,
 span.link-gif:before,
 span.link-photo:before,
-span.link-image:before {
+span.link-image:before,
+span.link-ico:before {
   font-family: 'FontAwesome';
   content: "\f1c5";
   padding-right: 1.3em;
@@ -605,7 +616,11 @@ span.link-image:before {
   float: left; }
 
 p.link-jpg,
-p.link-png {
+p.link-png,
+p.link-gif,
+p.link-photo,
+p.link-image,
+p.link-ico {
   padding-left: 1.3em;
   text-indent: -1.3em; }
 
@@ -2170,7 +2185,7 @@ a:hover, a:focus .glyphicon-info-sign {
 .modal .close {
   position: absolute;
   right: -15px;
-  margin-top: -30px;
+  margin-top: -20px;
   background-color: white;
   border-radius: 50%;
   -moz-border-radius: 50%;
@@ -2182,6 +2197,38 @@ a:hover, a:focus .glyphicon-info-sign {
 
 .modal .close:hover {
   color: #BF0000; }
+
+.progress-bar {
+  background-color: #00B2B2; }
+
+.progress-bar-success {
+  background-color: #359E00; }
+
+.progress-bar-info {
+  background-color: #00a0e0; }
+
+.progress-bar-warning {
+  background-color: #FFB200; }
+
+.progress-bar-danger {
+  background-color: #BF0000; }
+
+.progress-xl {
+  height: 40px; }
+
+.progress-xl .progress-bar {
+  font-size: 30px;
+  line-height: 40px; }
+
+.progress-lg {
+  height: 30px; }
+
+.progress-lg .progress-bar {
+  font-size: 20px;
+  line-height: 30px; }
+
+.progress-sm {
+  height: 10px; }
 
 .rag-red {
   background-color: #BF0000; }
@@ -2743,7 +2790,7 @@ img.user-guide-cover {
   background-color: #D9D6D6;
   color: #211F0F; }
 
-.sa-h-tabs .h-tab-wrapper .nav-tabs > li > a {
+.sa-h-tabs .h-tab-wrapper .nav-tabs > li {
   margin-left: 5px;
   margin-right: 5px; }
 
@@ -2766,6 +2813,10 @@ img.user-guide-cover {
 
 .sa-h-tabs .h-tab-wrapper .nav-tabs.nav-justified > li:last-of-type > a {
   float: none; }
+
+.sa-h-tabs .h-tab-wrapper .nav-tabs.nav-justified > li > a {
+  margin-left: 5px;
+  margin-right: 5px; }
 
 @media (min-width: 768px) {
   .sa-h-tabs .h-tab-wrapper .nav-tabs.nav-justified > li {
@@ -2805,7 +2856,7 @@ img.user-guide-cover {
   font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
   font-size: 1.2em;
   line-height: 1.1em;
-  padding: 0;
+  padding: 0px 5px;
   margin: 0; }
 
 .sa-h-tabs .h-tab-wrapper .tab-number {
@@ -3057,9 +3108,8 @@ img.user-guide-cover {
   padding-left: 10px;
   padding-right: 20px; }
 
-.tab-content.vertical .sa-h-tabs .h-tab-wrapper .nav-tabs.nav-justified > li {
-  padding-right: 0px;
-  padding-left: 10px; }
+.tab-content.vertical .nav-tabs.nav-justified > li:last-of-type > a {
+  margin-right: -5px; }
 
 .tab-content.vertical .sa-h-tabs .h-tab-wrapper .sa-tab {
   -webkit-box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.25);
@@ -3344,7 +3394,7 @@ textarea {
 .sa-form .form-group:last-of-type {
   border: none;
   padding-bottom: 0px;
-  margin-bottom: 0px; }
+  margin-bottom: 5px; }
 
 .sa-form .form-group.multi-column {
   margin-left: -8px;
@@ -3538,6 +3588,9 @@ textarea {
 
 .sa-form .form-control-inline div[class*="col-"]:last-of-type {
   margin-right: 0px; }
+
+input, button, select, textarea {
+  line-height: 1em; }
 
 .reveal-if-active {
   opacity: 0;
@@ -4910,6 +4963,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   background: #00B2B2;
   color: #fff;
   padding: 15px;
+  margin-top: 0px;
   margin-bottom: -1px; }
 
 .evidence-box .edit-evidence .attachments {
@@ -4927,6 +4981,105 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   background-color: transparent;
   border: none;
   color: #004c4c; }
+
+#edocument-dropbox .row {
+  padding: 10px 20px; }
+
+#edocument-dropbox .title {
+  padding: 0; }
+
+#existing-documents #existing-container {
+  overflow: auto;
+  width: 100%;
+  height: 300px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+#existing-documents #existing-container .edoc {
+  padding-top: 5px;
+  border-bottom: 1px solid white; }
+
+#existing-documents #existing-container .edoc input {
+  float: right; }
+
+#existing-documents #existing-container > li {
+  list-style-type: none;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+#existing-documents #existing-container > li:hover {
+  background: #E3E1E1; }
+
+#new-document .sa-form .btn,
+#existing-documents .sa-form .btn {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px; }
+
+#new-document .sa-form .form-group:last-of-type {
+  margin-bottom: 0px; }
+
+#new-document .sa-form fieldset,
+#existing-documents .sa-form fieldset {
+  margin-bottom: 10px; }
+
+#existing-documents #existing-container .edoc input[data-source-file$='odt']:before,
+#existing-documents #existing-container .edoc input[data-source-file$='txt']:before,
+#existing-documents #existing-container .edoc input[data-source-file$='rtf']:before {
+  font-family: 'FontAwesome';
+  content: "\f0f6";
+  color: #211F0F;
+  float: left;
+  position: relative;
+  right: 200%; }
+
+#existing-documents #existing-container .edoc input[data-source-file$='pdf']:before {
+  font-family: 'FontAwesome';
+  content: "\f1c1";
+  color: #211F0F;
+  float: left;
+  position: relative;
+  right: 200%; }
+
+#existing-documents #existing-container .edoc input[data-source-file$='doc']:before,
+#existing-documents #existing-container .edoc input[data-source-file$='docm']:before,
+#existing-documents #existing-container .edoc input[data-source-file$='docx']:before {
+  font-family: 'FontAwesome';
+  content: "\f1c2";
+  color: #211F0F;
+  float: left;
+  position: relative;
+  right: 200%; }
+
+#existing-documents #existing-container .edoc input[data-source-file$='xls']:before,
+#existing-documents #existing-container .edoc input[data-source-file$='xlsx']:before {
+  font-family: 'FontAwesome';
+  content: "\f1c3";
+  color: #211F0F;
+  float: left;
+  position: relative;
+  right: 200%; }
+
+#existing-documents #existing-container .edoc input[data-source-file$='jpg']:before,
+#existing-documents #existing-container .edoc input[data-source-file$='png']:before,
+#existing-documents #existing-container .edoc input[data-source-file$='gif']:before,
+#existing-documents #existing-container .edoc input[data-source-file$='photo']:before,
+#existing-documents #existing-container .edoc input[data-source-file$='image']:before,
+#existing-documents #existing-container .edoc input[data-source-file$='ico']:before {
+  font-family: 'FontAwesome';
+  content: "\f1c5";
+  color: #211F0F;
+  float: left;
+  position: relative;
+  right: 200%; }
+
+#existing-documents #existing-container .edoc input[data-source-file$='zip']:before {
+  font-family: 'FontAwesome';
+  content: "\f1c6";
+  color: #211F0F;
+  float: left;
+  position: relative;
+  right: 200%; }
 
 .edoc-list {
   margin-top: 20px; }
