@@ -204,6 +204,8 @@ padding-right:16px;
       margin: 15px 0px 25px 0px;
     }
 
+
+
  .row-top-perfs:before{
     display: block;
     height: 16px;
@@ -239,6 +241,11 @@ padding-right:16px;
     height: 16px;
     background-position: -4px 0px;
     margin: 15px -20px 25px -20px;
+  }
+
+    .break {
+    margin-left:-100%;
+    margin-right:-100%;
   }
 
   .divide-space {

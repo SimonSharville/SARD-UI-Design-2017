@@ -27,6 +27,7 @@
   // line-height: 1.42857143;
   // vertical-align: top;
   border-top: 1px solid $grey10;
+  line-height:1.3em;
 }
 
 .table > thead > tr > th {
@@ -163,4 +164,6 @@
 .table-hover > tbody > tr.danger:hover > th {
   background-color: darken($danger, 10%);
 }
+
+
 

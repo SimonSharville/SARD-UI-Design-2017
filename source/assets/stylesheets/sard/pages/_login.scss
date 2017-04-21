@@ -1,0 +1,114 @@
+
+
+// Index Page
+
+#login-page{
+  background-color:$client-colour;
+
+.brand{
+  text-align:center;
+}
+
+.welcome{
+  margin-bottom:50px;
+}
+
+// Small screens
+@media (max-width: 767px) {
+  .brand img{
+    width:100%;
+    margin: 0 0px 50px 0px;
+  }
+} 
+
+// Medium screens
+@media (min-width: 768px){
+  .brand img{
+    width:calc(100% + 10px);
+    margin: 0 -5px 50px -5px;
+  }
+} 
+
+.sign-in{
+  margin-bottom:60px;
+}
+
+.demonstration .demo-statement{
+  padding:10px 15px;
+}
+
+// Adjusts the table spacing in the systemAccess Table
+#systemAccess  {
+  ,.panel {
+    .table > thead > tr > th,
+    .table > tbody > tr > th,
+    .table > tfoot > tr > th,
+    .table > thead > tr > td,
+    .table > tbody > tr > td,
+    .table > tfoot > tr > td {
+      padding: 8px 8px;
+    }
+  }
+}
+
+#systemAccess table{
+  margin-bottom:10px;
+}
+
+#supportVideos .vid-list{
+  padding: 10px 0;
+  border-bottom:1px solid $grey16;
+}
+
+#supportVideos .vid-list:last-of-type{
+  border-bottom:none;
+  padding-bottom:0;
+}
+
+#supportVideos .vid-thumb{
+  padding: 0 0 0 15px;
+  img{
+    width:100%;
+  }
+}
+
+#supportVideos .vid-text{
+  padding: 0 15px;
+  h4{margin-top:0;}
+}
+
+#supportVideos .modal-content{
+  background-color:black;
+  color:white;
+  // padding:0;
+  // margin:0;
+}
+
+#supportVideos .modal-header{
+  border:none;
+  text-align:center;
+}
+
+#supportVideos .modal-body{
+  color:white;
+  padding:0;
+  margin:0;
+}
+
+#supportVideos .modal-body .video{
+  padding:0;
+  margin:0;
+}
+
+#supportVideos .modal-footer{
+  border:none;
+}
+
+
+
+} // END login
+
+
+
+
+// input[data-source-file$='rtf']

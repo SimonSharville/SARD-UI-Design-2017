@@ -36,19 +36,17 @@
   .table > tbody > tr > td,
   .table > tfoot > tr > td {
     padding: 8px 0px;
-    // line-height: 1.42857143;
-    // vertical-align: top;
     border-top: 1px solid white;
   }
 
   .table > thead > tr > th {
     padding: 8px 0px;
-    // vertical-align: bottom;
     border-bottom: 2px solid white;
   }
 
   caption{ color: black;}
 }
+
 
 
 // SARD fixes ---------------------------
@@ -112,6 +110,9 @@
   .table-hover > tbody > tr:hover {background-color: darken($CPL, 5%);}
 }
 
+.panel-default{
+  .table-hover > tbody > tr:hover {background-color: $grey04;}
+}
 .panel-primary{
   .table-hover > tbody > tr:hover {background-color: darken($turq, 5%);}
 }
@@ -127,6 +128,19 @@
 .panel-danger{
   .table-hover > tbody > tr:hover {background-color: darken($danger, 5%);}
 }
+
+// Condensed Tables ================================
+
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 
 // Table column variations - Use these within the td to adjust it's width.
 // Table column widths must add up to 100% in total, or leave columns empty and it will fill to fit.
@@ -227,7 +241,6 @@
 }
 
 .table-summery-alt > thead > tr > th{
-  // background-color:yellow;
   text-align:center;
   border:none;
 }
@@ -266,3 +279,7 @@
   margin-right: 10px;
 }
 
+// Tables in fieldsets ==========================
+fieldset .table-hover > tbody > tr:hover {
+  background-color: $grey04;
+}
