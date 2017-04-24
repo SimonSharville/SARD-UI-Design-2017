@@ -2808,7 +2808,8 @@ img.user-guide-cover {
 .sa-h-tabs .h-tab-wrapper .nav-tabs > li.active > a:focus {
   border: 0px;
   background-color: #403D3D;
-  color: white; }
+  color: white;
+  font-weight: 100 !important; }
 
 .sa-h-tabs .h-tab-wrapper .nav-tabs.nav-justified {
   width: 100%;
@@ -4781,51 +4782,63 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
       margin: 0 -5px 50px -5px; } }
   #login-page .sign-in {
     margin-bottom: 60px; }
-  #login-page .demonstration .demo-statement {
-    padding: 10px 15px; }
-  #login-page #systemAccess .table > thead > tr > th,
-  #login-page #systemAccess .table > tbody > tr > th,
-  #login-page #systemAccess .table > tfoot > tr > th,
-  #login-page #systemAccess .table > thead > tr > td,
-  #login-page #systemAccess .table > tbody > tr > td,
-  #login-page #systemAccess .table > tfoot > tr > td, #login-page #systemAccess .panel .table > thead > tr > th,
-  #login-page #systemAccess .panel .table > tbody > tr > th,
-  #login-page #systemAccess .panel .table > tfoot > tr > th,
-  #login-page #systemAccess .panel .table > thead > tr > td,
-  #login-page #systemAccess .panel .table > tbody > tr > td,
-  #login-page #systemAccess .panel .table > tfoot > tr > td {
-    padding: 8px 8px; }
-  #login-page #systemAccess table {
-    margin-bottom: 10px; }
-  #login-page #supportVideos .vid-list {
-    padding: 10px 0;
-    border-bottom: 1px solid #403D3D; }
-  #login-page #supportVideos .vid-list:last-of-type {
-    border-bottom: none;
-    padding-bottom: 0; }
-  #login-page #supportVideos .vid-thumb {
-    padding: 0 0 0 15px; }
-    #login-page #supportVideos .vid-thumb img {
-      width: 100%; }
-  #login-page #supportVideos .vid-text {
-    padding: 0 15px; }
-    #login-page #supportVideos .vid-text h4 {
-      margin-top: 0; }
-  #login-page #supportVideos .modal-content {
-    background-color: black;
-    color: white; }
-  #login-page #supportVideos .modal-header {
-    border: none;
-    text-align: center; }
-  #login-page #supportVideos .modal-body {
-    color: white;
-    padding: 0;
-    margin: 0; }
-  #login-page #supportVideos .modal-body .video {
-    padding: 0;
-    margin: 0; }
-  #login-page #supportVideos .modal-footer {
-    border: none; }
+  #login-page .login-addons .demo-statement {
+    padding: 0px 15px 10px 15px; }
+
+#login-page #supportVideos .vid-thumb {
+  padding: 0 0 0 15px; }
+
+#systemAccess .table > thead > tr > th,
+#systemAccess .table > tbody > tr > th,
+#systemAccess .table > tfoot > tr > th,
+#systemAccess .table > thead > tr > td,
+#systemAccess .table > tbody > tr > td,
+#systemAccess .table > tfoot > tr > td {
+  padding: 8px 8px; }
+
+#systemAccess table {
+  margin-bottom: 10px; }
+
+#supportVideos .vid-list {
+  padding: 20px 0;
+  border-bottom: 1px solid #403D3D; }
+
+#supportVideos .vid-list:first-of-type {
+  padding-top: 10px; }
+
+#supportVideos .vid-list:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0; }
+
+#supportVideos .vid-thumb {
+  padding: 0 0 0 0px; }
+  #supportVideos .vid-thumb img {
+    width: 100%; }
+
+#supportVideos .vid-text {
+  padding: 0 15px; }
+  #supportVideos .vid-text h4 {
+    margin-top: 0; }
+
+#supportVideos .modal-content {
+  background-color: black;
+  color: white; }
+
+#supportVideos .modal-header {
+  border: none;
+  text-align: center; }
+
+#supportVideos .modal-body {
+  color: white;
+  padding: 0;
+  margin: 0; }
+
+#supportVideos .modal-body .video {
+  padding: 0;
+  margin: 0; }
+
+#supportVideos .modal-footer {
+  border: none; }
 
 #index-page .index-list ul {
   padding-left: 20px;

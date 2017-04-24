@@ -40,7 +40,7 @@
 
   @import "bootstrap-overrides/bs-modal";
 
-   @import "bootstrap-overrides/bs-progress-bar";
+  @import "bootstrap-overrides/bs-progress-bar";
 
 
 // SARD styles =======================
@@ -67,6 +67,8 @@
 // SARD Page Specific Items ==========
 
   @import "sard/pages/login";
+
+  @import "sard/pages/support";
 
   @import "sard/pages/index";
 
