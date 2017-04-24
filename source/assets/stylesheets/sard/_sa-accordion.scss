@@ -6,7 +6,8 @@
 
 /* set panel-heading paddings to <a> instead of h3 */    
 .sa-accordion .panel-heading { 
-  padding: 0;
+  padding:0px;
+  color:white;
 }
 
 .sa-accordion .panel-heading a:link{ // This makes the entire panel-heading a link
@@ -15,7 +16,7 @@
 }
 
 .sa-accordion .panel-heading a:visited{ // This makes the entire panel-heading a link
-  color:white!important;
+  color:white;
 }
 
 .sa-accordion .panel-heading h3{ 

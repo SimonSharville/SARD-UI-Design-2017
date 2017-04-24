@@ -3437,7 +3437,8 @@ input, button, select, textarea {
 
 /* set panel-heading paddings to <a> instead of h3 */
 .sa-accordion .panel-heading {
-  padding: 0; }
+  padding: 0px;
+  color: white; }
 
 .sa-accordion .panel-heading a:link {
   padding: 10px 15px;
