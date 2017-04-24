@@ -3443,6 +3443,9 @@ input, button, select, textarea {
   padding: 10px 15px;
   color: white; }
 
+.sa-accordion .panel-heading a:visited {
+  color: white; }
+
 .sa-accordion .panel-heading h3 {
   margin: 0; }
 
