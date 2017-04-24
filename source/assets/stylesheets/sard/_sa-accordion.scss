@@ -14,6 +14,10 @@
   color:white;
 }
 
+.sa-accordion .panel-heading a:visited{ // This makes the entire panel-heading a link
+  color:white;
+}
+
 .sa-accordion .panel-heading h3{ 
   margin:0; // Adjusts some strange overlap of the panel-heading
 }
