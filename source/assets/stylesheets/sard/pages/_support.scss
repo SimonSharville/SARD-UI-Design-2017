@@ -1,0 +1,74 @@
+// Support
+
+// Adjusts the table spacing in the systemAccess Table
+#systemAccess  {
+    .table > thead > tr > th,
+    .table > tbody > tr > th,
+    .table > tfoot > tr > th,
+    .table > thead > tr > td,
+    .table > tbody > tr > td,
+    .table > tfoot > tr > td {
+      padding: 8px 8px;
+    }
+}
+
+#systemAccess table{
+  margin-bottom:10px;
+}
+
+
+
+
+// Support Videos ====================
+#supportVideos .vid-list{
+  padding: 20px 0;
+  border-bottom:1px solid $grey16;
+}
+
+#supportVideos .vid-list:first-of-type{
+  padding-top:10px;
+}
+
+#supportVideos .vid-list:last-of-type{
+  border-bottom:none;
+  padding-bottom:0;
+}
+
+#supportVideos .vid-thumb{
+  padding: 0 0 0 0px;
+  img{
+    width:100%;
+  }
+}
+
+
+
+#supportVideos .vid-text{
+  padding: 0 15px;
+  h4{margin-top:0;}
+}
+
+#supportVideos .modal-content{
+  background-color:black;
+  color:white;
+}
+
+#supportVideos .modal-header{
+  border:none;
+  text-align:center;
+}
+
+#supportVideos .modal-body{
+  color:white;
+  padding:0;
+  margin:0;
+}
+
+#supportVideos .modal-body .video{
+  padding:0;
+  margin:0;
+}
+
+#supportVideos .modal-footer{
+  border:none;
+}

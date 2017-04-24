@@ -159,6 +159,8 @@ $v-tab-number-bg-active:    $grey18;
         border: 0px;
         background-color:$tab-colour-active;
         color:white;
+        font-weight:100!important;
+        
       }
 
     } // end h-tab-wrapper
@@ -187,6 +189,7 @@ $v-tab-number-bg-active:    $grey18;
         .nav-tabs.nav-justified > li > a {
           margin-left:5px;
         margin-right:5px;
+
         }
 
         @media (min-width: 768px) {
@@ -196,6 +199,7 @@ $v-tab-number-bg-active:    $grey18;
             width: 1%;
           }
           .nav-tabs.nav-justified > li > a {
+
           }
         }
 
