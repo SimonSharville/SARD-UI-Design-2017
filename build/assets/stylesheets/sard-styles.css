@@ -747,7 +747,8 @@ body {
   float: left; }
 
 .page-header .profile-image img {
-  border-radius: 50%; }
+  border-radius: 50%;
+  width: 100px; }
 
 .page-title {
   display: inline-block; }
@@ -811,7 +812,6 @@ body {
   background-color: transparent; }
 
 .navbar-default .navbar-toggle {
-  border: none;
   background-color: #004c4c; }
 
 .navbar-default .navbar-toggle:hover,
@@ -4766,6 +4766,76 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 .datatable .edit {
   float: right; }
 
+.do-next-wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px; }
+
+.do-next-chart, .do-next-info {
+  display: table;
+  width: 100%;
+  text-align: center; }
+
+.do-next-chart .station {
+  display: table-cell;
+  vertical-align: middle;
+  width: 60px;
+  height: 60px; }
+
+.do-next-chart .space {
+  width: 16.66%;
+  max-width: 16.66%; }
+
+.do-next-chart .stop {
+  display: block;
+  background-color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding-top: 5px;
+  border: 6px solid #403D3D;
+  font-size: 2em;
+  line-height: 1.25em; }
+
+.do-next-chart .stop.complete {
+  background-color: #359E00;
+  border: none;
+  line-height: 1.7em;
+  color: white; }
+
+.do-next-chart .appraisal {
+  background-color: #403D3D;
+  border-radius: 50%;
+  border: none;
+  width: 90px;
+  height: 90px;
+  font-size: 1em;
+  padding-top: 26px;
+  color: white; }
+
+.do-next-chart .appraisal.complete {
+  background-color: #359E00; }
+
+.dn-rule hr {
+  border-top: 6px solid #403D3D;
+  margin-top: 50px;
+  margin-bottom: -48px; }
+
+.do-next-chart .title {
+  width: 50px;
+  font-size: 0.8em;
+  line-height: 1.2em;
+  overflow: visible;
+  white-space: nowrap;
+  padding: 0px;
+  vertical-align: top;
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif; }
+
+.do-next-chart .title hr {
+  border-top: 1px solid #403D3D;
+  margin-top: 5px;
+  margin-bottom: -12px; }
+
 #login-page {
   background-color: #00B2B2; }
   #login-page .brand {
@@ -4849,76 +4919,6 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   line-height: 1em;
   text-indent: -1.28571429em;
   padding: 0.25em 0em 0.25em 1.28571429em; }
-
-#dashboard .do-next-wrapper {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px; }
-
-#dashboard .do-next-chart, #dashboard .do-next-info {
-  display: table;
-  width: 100%;
-  text-align: center; }
-
-#dashboard .do-next-chart .station {
-  display: table-cell;
-  vertical-align: middle;
-  width: 60px;
-  height: 60px; }
-
-#dashboard .do-next-chart .space {
-  width: 16.66%;
-  max-width: 16.66%; }
-
-#dashboard .do-next-chart .stop {
-  display: block;
-  background-color: white;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  padding-top: 5px;
-  border: 6px solid #403D3D;
-  font-size: 2em;
-  line-height: 1.25em; }
-
-#dashboard .do-next-chart .stop.complete {
-  background-color: #359E00;
-  border: none;
-  line-height: 1.7em;
-  color: white; }
-
-#dashboard .do-next-chart .appraisal {
-  background-color: #403D3D;
-  border-radius: 50%;
-  border: none;
-  width: 90px;
-  height: 90px;
-  font-size: 1em;
-  padding-top: 26px;
-  color: white; }
-
-#dashboard .do-next-chart .appraisal.complete {
-  background-color: #359E00; }
-
-#dashboard .dn-rule hr {
-  border-top: 6px solid #403D3D;
-  margin-top: 50px;
-  margin-bottom: -48px; }
-
-#dashboard .do-next-chart .title {
-  width: 50px;
-  font-size: 0.8em;
-  line-height: 1.2em;
-  overflow: visible;
-  white-space: nowrap;
-  padding: 0px;
-  vertical-align: top;
-  font-family: 'robotomedium', Helvetica, Arial, Sans-serif; }
-
-#dashboard .do-next-chart .title hr {
-  border-top: 1px solid #403D3D;
-  margin-top: 5px;
-  margin-bottom: -12px; }
 
 .appraisal-dataset-guidance {
   margin-top: -10px; }
