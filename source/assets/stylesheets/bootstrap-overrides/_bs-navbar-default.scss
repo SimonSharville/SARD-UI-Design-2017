@@ -61,7 +61,6 @@
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-
   background-color: $client-colour-very-dark;
 }
 .navbar-default .navbar-toggle:hover,
@@ -84,7 +83,7 @@
 
 // dropdown -------------------------------------------------------------
 
-.navbar-nav > li > .dropdown-menu {
+.navbar-default .navbar-nav > li > .dropdown-menu {
   margin-top: 0px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;

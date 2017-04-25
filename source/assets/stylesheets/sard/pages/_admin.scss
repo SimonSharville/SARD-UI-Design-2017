@@ -2,9 +2,23 @@
 
 // Admin
 
-
-#admin{
-
+// The Navbar Admin is in sard/_sa-navbar
 
 
-} // END admin
+
+
+.admin .jumbotron{
+  background-color:$admin-colour;
+}
+
+.admin #top{
+  min-height:90px;
+}
+
+.admin .breadcrumbs{
+  border-bottom: 1px solid $admin-colour;
+}
+
+.admin .breadcrumb > .active {
+  color: $admin-colour-dark;
+}

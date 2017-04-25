@@ -20,10 +20,6 @@
 
   @import "bootstrap-overrides/bs-jumbotron";
 
-  @import "bootstrap-overrides/bs-navbar-default";
-
-  @import "bootstrap-overrides/bs-breadcrumbs";
-
   @import "bootstrap-overrides/bs-nav-tabs";
 
   @import "bootstrap-overrides/bs-panels";
@@ -48,6 +44,10 @@
   @import "sard/sa-rag-status";
 
   @import "sard/sa-components";
+
+  @import "sard/sa-navbar";
+
+  @import "sard/sa-breadcrumbs";
 
   @import "sard/sa-tabs";
 
