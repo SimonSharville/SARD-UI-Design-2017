@@ -1,0 +1,79 @@
+.do-next-wrapper{
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:10px;
+}
+
+.do-next-chart, .do-next-info{
+  display:table;
+  width:100%;
+  text-align:center;
+}
+
+.do-next-chart .station{
+  display:table-cell;
+  vertical-align:middle;
+  width:60px;
+  height:60px;
+}
+
+.do-next-chart .space{
+  width:16.66%;
+  max-width:16.66%;
+}
+
+.do-next-chart .stop{
+  display:block;
+  background-color:white;
+  border-radius:50%;
+  width:60px;
+  height:60px;
+  padding-top:5px;
+  border: 6px solid $grey16;
+  font-size:2em;
+  line-height:1.25em;
+}
+
+.do-next-chart .stop.complete{
+  background-color:$green;
+  border:none;
+  line-height:1.7em;
+  color:white;
+}
+
+.do-next-chart .appraisal{
+  background-color:$grey16;
+  border-radius:50%;
+  border:none;
+  width:90px;
+  height:90px;
+  font-size:1em;
+  padding-top:26px;
+  color:white;
+}
+
+.do-next-chart .appraisal.complete{
+  background-color:$green;
+}
+
+.dn-rule hr{
+  border-top: 6px solid $grey16;
+  margin-top:50px;
+  margin-bottom:-48px;
+}
+
+.do-next-chart .title{
+  width: 50px;
+  font-size:0.8em;
+  line-height:1.2em;
+  overflow: visible;
+  white-space: nowrap;
+  padding:0px;
+  vertical-align:top;
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+}
+.do-next-chart .title hr{
+  border-top: 1px solid $grey16;
+  margin-top:5px;
+  margin-bottom:-12px;
+}
