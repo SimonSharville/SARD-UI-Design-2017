@@ -19,15 +19,12 @@
 
 @media (min-width: 768px){
   .navbar-right {
-    // float: right !important;
-    // margin-right: 0px;
   }
 }
 
 
 .navbar-default {
   background-color: $client-colour-dark;
-  // border-color: #de0000;
   border:none; // Added
 }
 .navbar-default .navbar-brand {
@@ -64,8 +61,7 @@
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-  // border-color: #dddddd;
-  border:none; // Added
+
   background-color: $client-colour-very-dark;
 }
 .navbar-default .navbar-toggle:hover,

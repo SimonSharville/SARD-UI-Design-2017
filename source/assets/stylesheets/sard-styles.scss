@@ -63,6 +63,8 @@
 
   @import "sard/sa-datatable";
 
+  @import "sard/sa-do-next-chart";
+
 
 // SARD Page Specific Items ==========
 
@@ -72,11 +74,11 @@
 
   @import "sard/pages/index";
 
-  @import "sard/pages/dashboard";
-
   @import "sard/pages/my-appraisal";
 
   @import "sard/pages/jobplan";
+
+  @import "sard/pages/admin";
 
 
 // Experiments =======================
