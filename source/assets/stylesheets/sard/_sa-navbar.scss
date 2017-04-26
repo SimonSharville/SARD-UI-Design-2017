@@ -89,6 +89,7 @@
 
 // dropdown -------------------------------------------------------------
 
+
 .navbar-default .navbar-nav > li > .dropdown-menu {
   margin-top: 0px;
   border-top-right-radius: 0;
@@ -97,8 +98,17 @@
   border-bottom-left-radius: 0;
   background-color:darken($client-colour, 15%);
   border:none;
+  color: white;
 }
 
+.navbar-default .navbar-nav .dropdown-menu > li > a {
+  color: white;
+}
+.navbar-default .navbar-nav .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .dropdown-menu > li > a:focus, {
+  color: #fff;
+  background-color: darken($client-colour, 20%);
+}
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: white;
@@ -238,6 +248,14 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   border:none;
 }
 
+.navbar-admin .navbar-nav .dropdown-menu > li > a {
+  color: white;
+}
+.navbar-admin .navbar-nav .dropdown-menu > li > a:hover,
+.navbar-admin .navbar-nav .dropdown-menu > li > a:focus {
+  color: #fff;
+  background-color: darken($admin-navbar, 20%);
+}
 
 .navbar-admin .navbar-nav .open .dropdown-menu > li > a {
     color: white;
