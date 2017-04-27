@@ -2956,7 +2956,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   position: static !important; }
 
 .megamenu {
-  padding: 20px 0px;
+  padding: 10px 0px;
   width: 100%;
   background-color: white !important;
   font-family: 'robotoregular', Helvetica, Arial, Sans-serif; }
@@ -2970,23 +2970,22 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 .megamenu > li > ul > li > a {
   display: block;
-  padding: 3px 20px;
+  padding: 3px 10px;
   clear: both;
   font-weight: normal;
-  line-height: 1.428571429;
-  color: #333333;
+  line-height: 1.2;
+  color: #211F0F;
   white-space: normal; }
 
 .megamenu > li ul > li > a:hover,
 .megamenu > li ul > li > a:focus {
   text-decoration: none;
-  color: #262626;
-  background-color: #f5f5f5; }
+  background-color: #EDEBEB; }
 
 .megamenu.disabled > a,
 .megamenu.disabled > a:hover,
 .megamenu.disabled > a:focus {
-  color: #999999; }
+  color: #D9D6D6; }
 
 .megamenu.disabled > a:hover,
 .megamenu.disabled > a:focus {
@@ -2998,7 +2997,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 .megamenu li .dropdown-header {
   color: #00B2B2;
-  font-size: 18px; }
+  font-size: 18px;
+  padding: 3px 10px !important; }
 
 .megamenu .divider {
   background-color: #00B2B2; }
@@ -3006,15 +3006,25 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 @media (max-width: 768px) {
   .megamenu {
     margin-left: 0;
-    margin-right: 0; }
+    margin-right: 0;
+    height: 200px;
+    max-height: 200px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch; }
   .megamenu > li {
-    margin-bottom: 30px; }
+    margin-bottom: 0px; }
+  .megamenu > li > ul > li > a {
+    padding: 3px 10px; }
   .megamenu > li:last-child {
     margin-bottom: 0; }
-  .megamenu.dropdown-header {
-    padding: 3px 15px !important; }
-  .navbar-nav .open .dropdown-menu .dropdown-header {
-    color: #fff; } }
+  .megamenu .divider {
+    margin-right: 15px; } }
+
+.menu-large.admin .megamenu li .dropdown-header {
+  color: #E50073; }
+
+.menu-large.admin .megamenu .divider {
+  background-color: #E50073; }
 
 .breadcrumbs {
   border-bottom: 1px solid #00B2B2;
