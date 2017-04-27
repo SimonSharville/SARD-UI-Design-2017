@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){$(".dropdown").hover(function(){$(".dropdown-menu",this).stop().slideDown("")},function(){$(".dropdown-menu",this).stop().slideUp("")})});

@@ -59,6 +59,67 @@
             <li><a href="../users/job-plan.html">Job Plan</a></li>
             <li><a href="#eleave">eLeave</a></li>
             <li><a href="#ecalendar">eCalendar</a></li>
+    
+            <li class="dropdown menu-large">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Megamenu <b class="caret"></b></a>       
+              <ul class="dropdown-menu megamenu row">
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">Glyphicons</li>
+                    <li><a href="#">Available glyphs</a></li>
+                    <li class="disabled"><a href="#">How to use</a></li>
+                    <li><a href="#">Examples</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Dropdowns</li>
+                    <li><a href="#">Example</a></li>
+                    <li><a href="#">Aligninment options</a></li>
+                    <li><a href="#">Headers</a></li>
+                    <li><a href="#">Disabled menu items</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">Button groups</li>
+                    <li><a href="#">Basic example</a></li>
+                    <li><a href="#">Button toolbar</a></li>
+                    <li><a href="#">Sizing</a></li>
+                    <li><a href="#">Nesting</a></li>
+                    <li><a href="#">Vertical variation</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Button dropdowns</li>
+                    <li><a href="#">Single button dropdowns</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">Input groups</li>
+                    <li><a href="#">Basic example</a></li>
+                    <li><a href="#">Sizing</a></li>
+                    <li><a href="#">Checkboxes and radio addons</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Navs</li>
+                    <li><a href="#">Tabs</a></li>
+                    <li><a href="#">Pills</a></li>
+                    <li><a href="#">Justified</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">Navbar</li>
+                    <li><a href="#">Default navbar</a></li>
+                    <li><a href="#">Buttons</a></li>
+                    <li><a href="#">Text</a></li>
+                    <li><a href="#">Non-nav links</a></li>
+                    <li><a href="#">Component alignment</a></li>
+                    <li><a href="#">Fixed to top</a></li>
+                    <li><a href="#">Fixed to bottom</a></li>
+                    <li><a href="#">Static top</a></li>
+                    <li><a href="#">Inverted navbar</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+    
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown"> 
@@ -140,7 +201,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
-              <h4>This sectio shows examples of any SARD specific components or items.</h4>
+              <h4>This section shows examples of any SARD specific components or items.</h4>
           </div> <!-- END Column -->
         </div> <!-- END Row -->
       </div> <!-- END container -->
@@ -184,12 +245,20 @@
                     <div class="tab-title"><h6>Forms</h6></div>
                   </a>
                 </li>
-                <li class="active">
-                  <a href="#accordions" class="sa-tab" data-toggle="tab">
+                <li class="">
+                  <a href="#megamenu" class="sa-tab" data-toggle="tab">
                     <div class="tab-number"><p>F</p></div>
+                    <div class="tab-title"><h6>Megamenu</h6></div>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="#accordions" class="sa-tab" data-toggle="tab">
+                    <div class="tab-number"><p>G</p></div>
                     <div class="tab-title"><h6>Accordions</h6></div>
                   </a>
                 </li>
+                
+                
               </ul>
             </div> <!-- END h-tab-wrapper -->
           </div> <!-- END horizontal-tabs --> 
@@ -2069,7 +2138,23 @@
                 
                 </div> <!-- END Row -->
               </div>
-              <div id="accordions" class="tab-pane fade in active" id="sard-accordions">
+              <div id="megamenu" class="tab-pane fade" id="sard-megamenu">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h1>Megamenu</h1>
+                    <p>Click on the link in the top nav to view it.</p>
+                    <p>To change it's colour to the admin colour, simply add <code>admin</code> after <code>menu-large</code> </br>
+                    i.e <code>class="dropdown menu-large admin"</code></p>
+                    <p>If you don't want the dropdown menus, including the megamenu to appear on hover, then de-activete the JS script in javascripts/sard/sa-megamenu.</p>
+                  </div> <!-- END Column -->
+                </div> <!-- END Row -->
+                
+                
+                
+                
+                
+              </div>
+              <div id="accordions" class="tab-pane fade" id="sard-accordions">
                 <div class="row">
                   <div class="col-xs-12">
                     <h1>Accordions and Collapsable Panels</h1>
@@ -2213,6 +2298,8 @@
                 
                 
               </div>
+              
+              
             </div> <!-- END tab-content horizontal -->
 
       </div> <!-- END sa-tabs --> 
