@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Bootstrap Nav Tabs</h1>
+      <h4>This is the standard Bootstrap tabbed navigation</br>
+        To view the SARD specific version look under SARD Components.</h4>
+      
+    </div> <!-- END Column -->
+  </div> <!-- END Row -->
+
+  <!-- Nav tabs -->
+  <div class="row">
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs nav-justified" role="tablist">
+      <li role="presentation" class="active"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">Info</a></li>
+      <li role="presentation"><a href="#panel" aria-controls="panel" role="tab" data-toggle="tab">Panel</a></li>
+      <li role="presentation"><a href="#table" aria-controls="table" role="tab" data-toggle="tab">Table</a></li>
+      <li role="presentation" class="dropdown" role="tablist">
+        <a href="#" class="dropdown-toggle" id="myTabDrop1" data-toggle="dropdown" aria-controls="myTabDrop1-contents" aria-expanded="false">Dropdown <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents"> <li><a href="#dropdown1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1">Item One</a></li> <li><a href="#dropdown2" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2">Item Two</a></li> </ul>
+      </li>
+    </ul> <!-- END Tabs -->
+
+    <!-- Tabs Contents-->
+    <div class="tab-content">
+
+      <div role="tabpanel" class="tab-pane active" id="info">
+        <p>This is an example of a Justified Nav Tab set. It is a justified set of tabs, 
+        <code>&lt;ul class="nav nav-tabs nav-justified" role="tablist"&gt;</code>. </p>
+        <p>To stop it being justified simply remove the <code>nav-justified</code> from the class.</p>
+      </div>
+
+      <div role="tabpanel" class="tab-pane fade" id="panel">
+        <p>This shows a panel within the tab-content.</p>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">class="panel panel-default"</h3>
+              </div>
+              <div class="panel-body">
+                <p>Panel body</p>
+              </div>
+              <div class="panel-dots"></div>
+              <div class="panel-body">
+                <p>Panel body</p>
+                <button type="button" class="btn btn-default">Button Default</button>
+                <button type="button" class="btn btn-primary">Button Primary</button>
+                <button type="button" class="btn btn-info">Button Info</button>
+              </div>
+              <div class="panel-footer">
+                Panel footer
+              </div>
+            </div> <!-- END Panel -->
+          </div> <!-- END Column -->
+        </div>
+      </div>
+
+      <div role="tabpanel" class="tab-pane fade" id="table">table Here</div>
+
+      <div class="tab-pane fade" role="tabpanel" id="dropdown1" aria-labelledby="dropdown1-tab"> <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p> </div>
+
+      <div class="tab-pane fade" role="tabpanel" id="dropdown2" aria-labelledby="dropdown2-tab"> <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p> </div>
+
+    </div> <!-- END Tab Content -->
+
+  </div><!-- Nav tabs -->
+</div> <!-- / container -->

@@ -425,9 +425,7 @@ $inpageNavDropdownBG  : darken($inpage-navbar, 15%);
 .navbar-inpage{
   min-height:40px!important;
   padding-top:10px;
-  padding-top:10px;
-  top:50px;
-  z-index:900;
+  margin-bottom:20px!important;
 }
 
 .navbar-inpage .container{
