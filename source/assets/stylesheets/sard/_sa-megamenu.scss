@@ -51,7 +51,9 @@
 .megamenu li .dropdown-header {
   color: $client-colour;
   font-size: 18px;
+  line-height: 1.2;
   padding: 3px 10px!important;
+  white-space: normal;
 }
 .megamenu .divider{
 background-color:$client-colour;

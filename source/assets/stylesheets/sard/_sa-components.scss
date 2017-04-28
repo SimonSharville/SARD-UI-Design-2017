@@ -71,14 +71,14 @@ padding-right:16px;
 
 
 .topButton {
-    margin-top:-10px;
+  margin-top:-10px;
   padding:0;
-    background-image: url("../graphics/flower_sm_wht.png");
-    background-size: 25px 25px;
-    background-repeat: no-repeat;
-    background-position: center; 
-    // width:40px;
-    height:40px;
+  background-image: url("../graphics/flower_sm_wht.png");
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-position: center; 
+  // width:40px;
+  height:40px;
 }
 
 .row-grey{ 
@@ -240,7 +240,7 @@ padding-right:16px;
     margin: 15px -20px 25px -20px;
   }
 
-    .break {
+  .break {
     margin-left:-100%;
     margin-right:-100%;
   }
@@ -444,6 +444,14 @@ img.user-guide-cover{
   margin-left:0px;
   margin-right:0px;
   margin-bottom:20px;
+}
+
+.ui-navbar{
+  // margin-top:-40px;
+  // background-color:red;
+  .navbar{
+    // margin-bottom:0!important;
+  }
 }
 
 

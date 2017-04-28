@@ -2872,9 +2872,7 @@ img.user-guide-cover {
 .navbar-inpage {
   min-height: 40px !important;
   padding-top: 10px;
-  padding-top: 10px;
-  top: 50px;
-  z-index: 900; }
+  margin-bottom: 20px !important; }
 
 .navbar-inpage .container {
   padding-left: 5px;
@@ -3019,7 +3017,9 @@ img.user-guide-cover {
 .megamenu li .dropdown-header {
   color: #00B2B2;
   font-size: 18px;
-  padding: 3px 10px !important; }
+  line-height: 1.2;
+  padding: 3px 10px !important;
+  white-space: normal; }
 
 .megamenu .divider {
   background-color: #00B2B2; }
