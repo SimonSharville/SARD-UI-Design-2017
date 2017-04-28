@@ -2,6 +2,25 @@
 
 // // These are taken from bootstrap-example-code.css and amended
 
+
+.navbar{
+  border-radius: 0px;
+}
+/* Over Small Devices, Tablets */
+  @media only screen and (min-width : 768px) {
+    .navbar-collapse{
+      padding-left: 0px;
+      padding-right: 0px;
+  }
+}
+
+@media (min-width: 768px){
+  .navbar-right {
+  }
+}
+
+// Navbar Default ======================================
+
 $navBG          : darken($client-colour, 10%);
 $navHover       : darken($client-colour, 15%);
 $navActive      : darken($client-colour, 20%);
@@ -256,7 +275,6 @@ $secondNavDropdownBG  : darken($second-navbar, 15%);
   min-height:40px!important;
   padding-top:10px;
   padding-top:10px;
-  top:50px;
   z-index:900;
 }
 
@@ -391,6 +409,159 @@ $secondNavDropdownBG  : darken($second-navbar, 15%);
     .navbar-second .navbar-nav .open .dropdown-menu > .active > a:focus {
       color: $navText;
       background-color: $secondNavActive;
+    }
+
+}
+// End small screens
+
+// InPage Navbar ===========================================================
+
+$inpage-navbar        : $grey16;
+$inpageNavBG          : darken($inpage-navbar, 10%);
+$inpageNavHover       : darken($inpage-navbar, 15%);
+$inpageNavActive      : darken($inpage-navbar, 20%);
+$inpageNavDropdownBG  : darken($inpage-navbar, 15%);
+
+.navbar-inpage{
+  min-height:40px!important;
+  padding-top:10px;
+  padding-top:10px;
+  top:50px;
+  z-index:900;
+}
+
+.navbar-inpage .container{
+  padding-left:5px;
+  padding-right:5px;
+}
+
+.navbar-inpage form{
+    margin:0;
+    margin-top:-4px;
+    padding-right:0;
+  }
+.navbar-inpage form .input-group > .form-control{
+    height:29px;
+  }
+
+
+.navbar-inpage {
+  background-color: $inpageNavBG;
+  border:none; // Added
+  margin-bottom:0;
+}
+
+.navbar-inpage .navbar-text {
+  color: $navText;
+}
+.navbar-inpage .navbar-nav > li > a {
+  color: $navText;
+  padding: 10px;
+  margin-top:-10px;
+}
+.navbar-inpage .navbar-nav > li > a:hover,
+.navbar-inpage .navbar-nav > li > a:focus {
+  color: $navText;
+  background-color: $inpageNavHover;
+}
+.navbar-inpage .navbar-nav > .active > a,
+.navbar-inpage .navbar-nav > .active > a:hover,
+.navbar-inpage .navbar-nav > .active > a:focus {
+  color: $navText;
+  background-color: $inpageNavHover;
+}
+
+.navbar-inpage .navbar-nav > .open > a,
+.navbar-inpage .navbar-nav > .open > a:hover,
+.navbar-inpage .navbar-nav > .open > a:focus {
+  background-color: $inpageNavActive ;
+  color: $navText;
+}
+
+.navbar-inpage .navbar-collapse,
+.navbar-inpage .navbar-form {
+  border-color: $inpage-navbar ;
+}
+
+// dropdown -------------------------------------------------------------
+
+
+.navbar-inpage .navbar-nav > li > .dropdown-menu {
+  border-radius: 0;
+  background-color:$inpageNavDropdownBG;
+  border:none;
+  color: $navText;
+}
+
+.navbar-inpage .navbar-nav .dropdown-menu > li > a {
+  color: $navText;
+}
+
+.navbar-inpage .navbar-nav .dropdown-menu > li > a:hover,
+.navbar-inpage .navbar-nav .dropdown-menu > li > a:focus, {
+  background-color: $inpageNavActive;
+  color: $navText;
+}
+
+.navbar-inpage .navbar-nav .open .dropdown-menu > li > a {
+  color: $navText;
+}
+.navbar-inpage .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-inpage .navbar-nav .open .dropdown-menu > li > a:focus {
+  color: $navText;
+  background-color: $inpageNavActive;
+}
+.navbar-inpage .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-inpage .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-inpage .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: $navText;
+  background-color: $inpageNavActive;
+}
+
+
+
+// END dropdown
+
+// Small screens --------------------------------------------------------
+@media (max-width: 767px) {
+
+
+
+    .navbar-inpage .container{
+      // padding-left:25px;
+      // padding-right:15px;
+    }
+
+    .navbar-inpage form{
+      border:none;
+      padding-bottom:10px;
+    }
+
+    .navbar-inpage .navbar-nav{
+      margin:5px 0px;
+    }
+
+    .navbar-inpage .navbar-nav > li > a {
+      padding: 5px 10px;
+      margin-top:0px;
+    }
+    .navbar-inpage .navbar-nav > li:last-child > a{
+      padding-bottom:10px;
+    }
+
+    .navbar-inpage .navbar-nav .open .dropdown-menu > li > a {
+      color: $navText;
+    }
+    .navbar-inpage .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-inpage .navbar-nav .open .dropdown-menu > li > a:focus {
+      color: $navText;
+      background-color: $inpageNavActive;
+    }
+    .navbar-inpage .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-inpage .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-inpage .navbar-nav .open .dropdown-menu > .active > a:focus {
+      color: $navText;
+      background-color: $inpageNavActive;
     }
 
 }

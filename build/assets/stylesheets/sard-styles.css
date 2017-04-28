@@ -2564,6 +2564,15 @@ img.user-guide-cover {
   margin-right: 0px;
   margin-bottom: 20px; }
 
+.navbar {
+  border-radius: 0px; }
+
+/* Over Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .navbar-collapse {
+    padding-left: 0px;
+    padding-right: 0px; } }
+
 /* navbar */
 .navbar-default {
   background-color: #007f7f;
@@ -2761,7 +2770,6 @@ img.user-guide-cover {
   min-height: 40px !important;
   padding-top: 10px;
   padding-top: 10px;
-  top: 50px;
   z-index: 900; }
 
 #second-navbar .container {
@@ -2861,6 +2869,110 @@ img.user-guide-cover {
     color: white;
     background-color: #7f0040; } }
 
+.navbar-inpage {
+  min-height: 40px !important;
+  padding-top: 10px;
+  padding-top: 10px;
+  top: 50px;
+  z-index: 900; }
+
+.navbar-inpage .container {
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.navbar-inpage form {
+  margin: 0;
+  margin-top: -4px;
+  padding-right: 0; }
+
+.navbar-inpage form .input-group > .form-control {
+  height: 29px; }
+
+.navbar-inpage {
+  background-color: #262424;
+  border: none;
+  margin-bottom: 0; }
+
+.navbar-inpage .navbar-text {
+  color: white; }
+
+.navbar-inpage .navbar-nav > li > a {
+  color: white;
+  padding: 10px;
+  margin-top: -10px; }
+
+.navbar-inpage .navbar-nav > li > a:hover,
+.navbar-inpage .navbar-nav > li > a:focus {
+  color: white;
+  background-color: #191818; }
+
+.navbar-inpage .navbar-nav > .active > a,
+.navbar-inpage .navbar-nav > .active > a:hover,
+.navbar-inpage .navbar-nav > .active > a:focus {
+  color: white;
+  background-color: #191818; }
+
+.navbar-inpage .navbar-nav > .open > a,
+.navbar-inpage .navbar-nav > .open > a:hover,
+.navbar-inpage .navbar-nav > .open > a:focus {
+  background-color: #0c0b0b;
+  color: white; }
+
+.navbar-inpage .navbar-collapse,
+.navbar-inpage .navbar-form {
+  border-color: #403D3D; }
+
+.navbar-inpage .navbar-nav > li > .dropdown-menu {
+  border-radius: 0;
+  background-color: #191818;
+  border: none;
+  color: white; }
+
+.navbar-inpage .navbar-nav .dropdown-menu > li > a {
+  color: white; }
+
+.navbar-inpage .navbar-nav .dropdown-menu > li > a:hover,
+.navbar-inpage .navbar-nav .dropdown-menu > li > a:focus {
+  background-color: #0c0b0b;
+  color: white; }
+
+.navbar-inpage .navbar-nav .open .dropdown-menu > li > a {
+  color: white; }
+
+.navbar-inpage .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-inpage .navbar-nav .open .dropdown-menu > li > a:focus {
+  color: white;
+  background-color: #0c0b0b; }
+
+.navbar-inpage .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-inpage .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-inpage .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: white;
+  background-color: #0c0b0b; }
+
+@media (max-width: 767px) {
+  .navbar-inpage form {
+    border: none;
+    padding-bottom: 10px; }
+  .navbar-inpage .navbar-nav {
+    margin: 5px 0px; }
+  .navbar-inpage .navbar-nav > li > a {
+    padding: 5px 10px;
+    margin-top: 0px; }
+  .navbar-inpage .navbar-nav > li:last-child > a {
+    padding-bottom: 10px; }
+  .navbar-inpage .navbar-nav .open .dropdown-menu > li > a {
+    color: white; }
+  .navbar-inpage .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-inpage .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: white;
+    background-color: #0c0b0b; }
+  .navbar-inpage .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-inpage .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-inpage .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: white;
+    background-color: #0c0b0b; } }
+
 .menu-large {
   position: static !important; }
 
@@ -2934,6 +3046,33 @@ img.user-guide-cover {
 
 .menu-large.admin .megamenu .divider {
   background-color: #E50073; }
+
+div[class*="col-xs-10"] .navbar-nav > li > .dropdown-menu, div[class*="col-sm-10"] .navbar-nav > li > .dropdown-menu, div[class*="col-lg-10"] .navbar-nav > li > .dropdown-menu, div[class*="col-xl-10"] .navbar-nav > li > .dropdown-menu {
+  width: 120%; }
+
+div[class*="col-xs-9"] .navbar-nav > li > .dropdown-menu, div[class*="col-sm-9"] .navbar-nav > li > .dropdown-menu, div[class*="col-lg-9"] .navbar-nav > li > .dropdown-menu, div[class*="col-xl-9"] .navbar-nav > li > .dropdown-menu {
+  width: 133.4%; }
+
+div[class*="col-xs-8"] .navbar-nav > li > .dropdown-menu, div[class*="col-sm-8"] .navbar-nav > li > .dropdown-menu, div[class*="col-lg-8"] .navbar-nav > li > .dropdown-menu, div[class*="col-xl-8"] .navbar-nav > li > .dropdown-menu {
+  width: 150%; }
+
+div[class*="col-xs-7"] .navbar-nav > li > .dropdown-menu, div[class*="col-sm-7"] .navbar-nav > li > .dropdown-menu, div[class*="col-lg-7"] .navbar-nav > li > .dropdown-menu, div[class*="col-xl-7"] .navbar-nav > li > .dropdown-menu {
+  width: 171.5%; }
+
+div[class*="col-xs-6"] .navbar-nav > li > .dropdown-menu, div[class*="col-sm-6"] .navbar-nav > li > .dropdown-menu, div[class*="col-lg-6"] .navbar-nav > li > .dropdown-menu, div[class*="col-xl-6"] .navbar-nav > li > .dropdown-menu {
+  width: 200%; }
+
+div[class*="col-xs-5"] .navbar-nav > li > .dropdown-menu, div[class*="col-sm-5"] .navbar-nav > li > .dropdown-menu, div[class*="col-lg-5"] .navbar-nav > li > .dropdown-menu, div[class*="col-xl-5"] .navbar-nav > li > .dropdown-menu {
+  width: 240%; }
+
+div[class*="col-xs-4"] .navbar-nav > li > .dropdown-menu, div[class*="col-sm-4"] .navbar-nav > li > .dropdown-menu, div[class*="col-lg-4"] .navbar-nav > li > .dropdown-menu, div[class*="col-xl-4"] .navbar-nav > li > .dropdown-menu {
+  width: 300%; }
+
+div[class*="col-xs-3"] .navbar-nav > li > .dropdown-menu, div[class*="col-sm-3"] .navbar-nav > li > .dropdown-menu, div[class*="col-lg-3"] .navbar-nav > li > .dropdown-menu, div[class*="col-xl-3"] .navbar-nav > li > .dropdown-menu {
+  width: 400%; }
+
+div[class*="col-xs-2"] .navbar-nav > li > .dropdown-menu, div[class*="col-sm-2"] .navbar-nav > li > .dropdown-menu, div[class*="col-lg-2"] .navbar-nav > li > .dropdown-menu, div[class*="col-xl-2"] .navbar-nav > li > .dropdown-menu {
+  width: 600%; }
 
 .breadcrumbs {
   border-bottom: 1px solid #00B2B2;
