@@ -6,6 +6,7 @@
 .menu-large {
   position: static !important; // This make the menu full body width
 }
+
 .megamenu{
   padding: 10px 0px;
   width:100%;
@@ -92,3 +93,68 @@ background-color:$client-colour;
   background-color:$admin-colour;
   }
 }
+
+// Dropdown overrides ==============================================================================
+// This adjust to width of the megamenu if placed within a column
+// Only works from columns of col-*-2 to col-*-10
+
+div[class*="col-xs-10"], div[class*="col-sm-10"], div[class*="col-lg-10"], div[class*="col-xl-10"] { 
+  .navbar-nav > li > .dropdown-menu{
+    width:120%;
+  }
+}
+
+div[class*="col-xs-9"], div[class*="col-sm-9"], div[class*="col-lg-9"], div[class*="col-xl-9"] { 
+  .navbar-nav > li > .dropdown-menu{
+    width:133.4%;
+  }
+}
+
+div[class*="col-xs-8"], div[class*="col-sm-8"], div[class*="col-lg-8"], div[class*="col-xl-8"] { 
+  .navbar-nav > li > .dropdown-menu{
+    width:150%;
+  }
+}
+
+div[class*="col-xs-7"], div[class*="col-sm-7"], div[class*="col-lg-7"], div[class*="col-xl-7"] { 
+  .navbar-nav > li > .dropdown-menu{
+    width:171.5%;
+  }
+}
+
+div[class*="col-xs-6"], div[class*="col-sm-6"], div[class*="col-lg-6"], div[class*="col-xl-6"] { 
+  .navbar-nav > li > .dropdown-menu{
+    width:200%;
+  }
+}
+
+div[class*="col-xs-5"], div[class*="col-sm-5"], div[class*="col-lg-5"], div[class*="col-xl-5"] { 
+  .navbar-nav > li > .dropdown-menu{
+    width:240%;
+  }
+}
+
+div[class*="col-xs-4"], div[class*="col-sm-4"], div[class*="col-lg-4"], div[class*="col-xl-4"] { 
+  .navbar-nav > li > .dropdown-menu{
+    width:300%;
+  }
+}
+
+div[class*="col-xs-3"], div[class*="col-sm-3"], div[class*="col-lg-3"], div[class*="col-xl-3"] { 
+  .navbar-nav > li > .dropdown-menu{
+    width:400%;
+  }
+}
+
+div[class*="col-xs-2"], div[class*="col-sm-2"], div[class*="col-lg-2"], div[class*="col-xl-2"] { 
+  .navbar-nav > li > .dropdown-menu{
+    width:600%;
+  }
+}
+
+// div[class*="col-xs-1"], div[class*="col-sm-1"], div[class*="col-lg-1"], div[class*="col-xl-1"] { 
+//   .navbar-nav > li > .dropdown-menu{
+//     width:1200%;
+//   }
+// }
+
