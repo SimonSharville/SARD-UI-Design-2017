@@ -7,7 +7,12 @@
 // Sections ===================================================================
 
 
-
+.container{
+  // background-color:orange;
+}
+.row{
+  // background-color:pink;
+}
 
 #top{
   min-height:50px;
@@ -57,15 +62,27 @@
   // margin-bottom:60px;
 } // If creating a 2 column layout like dashboard use this.
 
-.sa-right-column{ 
-padding-left:16px;
-// margin-bottom:60px;
-} // If creating a 2 column layout like dashboard use this.
+@media only screen and (min-width : 992px){
+  .sa-right-column{ // If creating a 2 column layout like dashboard use this.
+  padding-left:16px;
+  } 
 
-.sa-left-column{ 
-padding-right:16px;
-// margin-bottom:60px;
-} // If creating a 2 column layout like dashboard use this.
+  .sa-left-column{ // If creating a 2 column layout like dashboard use this.
+  padding-left:0px;
+  } 
+}
+
+@media only screen and (max-width : 991px){
+  .sa-right-column{ // If creating a 2 column layout like dashboard use this.
+  } 
+
+  .sa-left-column{ // If creating a 2 column layout like dashboard use this.
+  padding-right:0px;
+  padding-left:0px;
+  } 
+}
+
+
 
 // SARD Incidentals =================================================================
 
