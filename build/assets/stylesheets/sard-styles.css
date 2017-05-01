@@ -2296,11 +2296,16 @@ a:hover, a:focus .glyphicon-info-sign {
 .new-footer .text-right {
   padding-right: 0px; }
 
-.sa-right-column {
-  padding-left: 16px; }
+@media only screen and (min-width: 992px) {
+  .sa-right-column {
+    padding-left: 16px; }
+  .sa-left-column {
+    padding-left: 0px; } }
 
-.sa-left-column {
-  padding-right: 16px; }
+@media only screen and (max-width: 991px) {
+  .sa-left-column {
+    padding-right: 0px;
+    padding-left: 0px; } }
 
 .topButton {
   margin-top: -10px;
