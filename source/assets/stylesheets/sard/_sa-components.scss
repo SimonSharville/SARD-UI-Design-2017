@@ -64,7 +64,7 @@
 
 @media only screen and (min-width : 992px){
   .sa-right-column{ // If creating a 2 column layout like dashboard use this.
-  padding-left:16px;
+  padding-right:0px;
   } 
 
   .sa-left-column{ // If creating a 2 column layout like dashboard use this.
@@ -74,6 +74,8 @@
 
 @media only screen and (max-width : 991px){
   .sa-right-column{ // If creating a 2 column layout like dashboard use this.
+    padding-right:0px;
+    padding-left:0px;
   } 
 
   .sa-left-column{ // If creating a 2 column layout like dashboard use this.
@@ -419,9 +421,11 @@
 
 
 // Images adjustments ================================================
-.row .doc-covers{
-  padding: 0px 8px;
-}
+.doc-covers{
+    margin-left:-8px;
+    margin-right:-8px;
+  }
+
 img.user-guide-cover{
   width: 100%;
   margin-top:10px;
