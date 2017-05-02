@@ -37,19 +37,15 @@
 
 // View Evidences, Comments, Notes =========================================
 
-#view_evidences .evidence,
-#view_comments .evidence,
-#view_notes .evidence{
+.evidence-box .evidence{
   padding:0px;
-  border-top:4px solid $grey14;
+  border-top:4px solid $grey14!important;
   display:table;
   width:100%;
   min-height:100px;
 }
-#view_evidences .evidence:first-of-type,
-#view_comments .evidence:first-of-type,
-#view_notes .evidence:first-of-type{
-  border-top:none;
+.evidence-box .evidence:first-of-type{
+  border-top:none!important;
 }
 
 
