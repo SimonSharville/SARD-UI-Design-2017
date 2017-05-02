@@ -5321,19 +5321,15 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 .evidence-box .panel-body {
   padding: 15px; }
 
-#view_evidences .evidence,
-#view_comments .evidence,
-#view_notes .evidence {
+.evidence-box .evidence {
   padding: 0px;
-  border-top: 4px solid #615E5C;
+  border-top: 4px solid #615E5C !important;
   display: table;
   width: 100%;
   min-height: 100px; }
 
-#view_evidences .evidence:first-of-type,
-#view_comments .evidence:first-of-type,
-#view_notes .evidence:first-of-type {
-  border-top: none; }
+.evidence-box .evidence:first-of-type {
+  border-top: none !important; }
 
 .evidence-box .evidence .detail {
   padding: 10px 15px; }
