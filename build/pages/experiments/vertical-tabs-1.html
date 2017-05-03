@@ -584,12 +584,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_comment" aria-expanded="false" data-toggle="collapse" data-target="#add_comment">Add Comment
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P01_Add_Comment" aria-expanded="false" data-toggle="collapse" data-target="#P01_Add_Comment">Add Comment
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P01_Add_Comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -612,7 +612,7 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_view_evidences" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="view_comments" aria-expanded="false" data-toggle="collapse" data-target="#view_comments">View Comments
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P01_View_Comments" aria-expanded="false" data-toggle="collapse" data-target="#P01_View_Comments">View Comments
                                       <i class="more-less glyphicon glyphicon-plus pull-right"></i>
                                     </a>
                                   </h3>
@@ -620,7 +620,7 @@
                       
                                   <!-- View Comment 1 ===================================================================================== -->
                       
-                                  <div id="view_comments" class="panel-collapse collapse" aria-labelledby="toggle_view_evidences" role="tabpanel">
+                                  <div id="P01_View_Comments" class="panel-collapse collapse" aria-labelledby="toggle_view_evidences" role="tabpanel">
                                     <div class="panel-body evidence">
                                         <div class="detail">
                                           <div class="title">Comment 1</div>
@@ -723,12 +723,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_note" aria-expanded="false" data-toggle="collapse" data-target="#add_note">Add Private Note
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P01_Add_Note" aria-expanded="false" data-toggle="collapse" data-target="#P01_Add_Note">Add Private Note
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P01_Add_Note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -751,7 +751,7 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_view_evidences" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="view_notes" aria-expanded="false" data-toggle="collapse" data-target="#view_notes">View Private Notes
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P01_View_Notes" aria-expanded="false" data-toggle="collapse" data-target="#P01_View_Notes">View Private Notes
                                       <i class="more-less glyphicon glyphicon-plus pull-right"></i>
                                     </a>
                                   </h3>
@@ -759,7 +759,7 @@
                       
                                   <!-- View Note 1 ===================================================================================== -->
                       
-                                  <div id="view_notes" class="panel-collapse collapse" aria-labelledby="toggle_view_evidences" role="tabpanel">
+                                  <div id="P01_View_Notes" class="panel-collapse collapse" aria-labelledby="toggle_view_evidences" role="tabpanel">
                                     <div class="panel-body evidence">
                                         <div class="detail">
                                           <div class="title">Note 1</div>
@@ -850,395 +850,7 @@
                       </div> <!-- / Row -->
                       
                       
-                      <!-- Evidence Attachment Modal ========================================================================================== -->
                       
-                      
-                      <div class="modal fade" id="edocument-dropbox" role="dialog">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
-                      
-                            <div class="row">
-                              <div class="col-xs-12 title">
-                                <h3>E-Document Dropbox</h3>
-                              </div>
-                            </div> <!-- / row -->
-                            <div class="row">
-                              <div class="sa-h-tabs">
-                                <div class="horizontal-tabs">
-                                  <div class="h-tab-wrapper">
-                                    <!-- tab-navs -->
-                                    <ul class="container nav nav-tabs">
-                                      <li class="active">
-                                        <a href="#new-document" class="sa-tab-center clearfix" data-toggle="tab" aria-expanded="true"> <!-- These have been changed from sa-tab to sa-tab-center, and clearfix added. This won't work in ie8 though. ss --> 
-                                            <!-- <div class="tab-number"><p>A</p></div> -->
-                                            <!-- <div class="tab-title"><p>Overview</p></div> -->
-                                            <h5>New Document</h5>
-                                        </a>
-                                      </li>
-                                      <li class="">
-                                        <a href="#existing-documents" class="sa-tab-center clearfix" data-toggle="tab" aria-expanded="true">
-                                            <!-- <div class="tab-number"><p>B</p></div> -->
-                                            <!-- <div class="tab-title"><p>Breakdown</p></div> -->
-                                            <h5>Existing Documents</h5>
-                                        </a>
-                                      </li>
-                                    </ul>
-                                  </div> <!-- END h-tab-wrapper -->
-                                </div> <!-- END horizontal-tabs --> 
-                      
-                                <!-- tab-content -->
-                                <div class="tab-content horizontal container">
-                                  <div id="new-document" class="tab-pane fade in active">
-                                    <h3>New Document</h3>
-                                    <form class="sa-form form-horizontal">
-                                      <fieldset>
-                                        <legend>Upload a new document</legend>
-                                       <div class="form-group">
-                                        <label for="example">Document name</label>
-                                        <input type="name" class="form-control" id="example" placeholder="Add name...">
-                                       </div>
-                                       <div class="form-group">
-                                        <label for="exampleInputFile">File input</label>
-                                        <input type="file" id="exampleInputFile">
-                      
-                                        <button type="submit" class="btn btn-default btn-sm">Submit</button>
-                                       </div>
-                                       <div class="form-group">
-                                        <label for="progress-bar">Progress</label>
-                                        <div class="progress">
-                                          <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
-                                            20%
-                                          </div>
-                                        </div> <!-- / progress -->
-                                       </div>
-                                      </fieldset>
-                                    </form>
-                                  </div>  <!-- / tab-pane -->
-                      
-                      
-                                  <div id="existing-documents" class="tab-pane fade">
-                                    <h3>Existing Documents</h3>
-                                    <form class="sa-form form-horizontal">
-                                      <fieldset>
-                                        <legend>Use an existing document</legend>
-                                        <div class="form-group">
-                                            <ol id="existing-container">
-                                              <li class="edoc">
-                                                <label class="left-align" for="5034e032e3e1f12443000068">Job Plan for 2011</label>
-                                                <input data-source-file="job_plan_2012.txt" data-source-url="/edocs/5034e032e3e1f12443000068/download" data-title="Job Plan for 2011" id="5034e032e3e1f12443000068" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5034e032e3e1f1244300006a">My Non-Clinical Activities File</label>
-                                                <input data-source-file="non_clinical_data.odt" data-source-url="/edocs/5034e032e3e1f1244300006a/download" data-title="My Non-Clinical Activities File" id="5034e032e3e1f1244300006a" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="50914515e3e1f156500000b5">Section 58 Certificate</label>
-                                                <input data-source-file="Research_Paper.pdf" data-source-url="/edocs/50914515e3e1f156500000b5/download" data-title="Section 58 Certificate" id="50914515e3e1f156500000b5" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="509149d5e3e1f156500000d9">Patient Feedback</label>
-                                                <input data-source-file="Research_Paper.pdf" data-source-url="/edocs/509149d5e3e1f156500000d9/download" data-title="Patient Feedback" id="509149d5e3e1f156500000d9" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="50c1b119e3e1f1667900001d">Infection Control Certificate</label>
-                                                <input data-source-file="header-short-980.jpg" data-source-url="/edocs/50c1b119e3e1f1667900001d/download" data-title="Infection Control Certificate" id="50c1b119e3e1f1667900001d" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5239c5b8e3e1f1535500110e">Ma Gformuserguide</label>
-                                                <input data-source-file="MAGformuserguide.pdf" data-source-url="/edocs/5239c5b8e3e1f1535500110e/download" data-title="Ma Gformuserguide" id="5239c5b8e3e1f1535500110e" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5239c694e3e1f15df5000a7b">Mag Appraisal Form V3</label>
-                                                <input data-source-file="MAG-AppraisalForm-V3.2.pdf" data-source-url="/edocs/5239c694e3e1f15df5000a7b/download" data-title="Mag Appraisal Form V3" id="5239c694e3e1f15df5000a7b" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="525c134fe3e1f14bea0004fc">appraisee form</label>
-                                                <input data-source-file="Appraisee_Feedback_Form.doc" data-source-url="/edocs/525c134fe3e1f14bea0004fc/download" data-title="appraisee form" id="525c134fe3e1f14bea0004fc" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                              <label class="left-align" for="5272838be3e1f14649001128">Job plan</label>
-                                                <input data-source-file="Job_plan.doc" data-source-url="/edocs/5272838be3e1f14649001128/download" data-title="Job plan" id="5272838be3e1f14649001128" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="529f11d2e3e1f120c5000b9d">Event Feedback Form</label>
-                                                <input data-source-file="Event_feedback_form.docx" data-source-url="/edocs/529f11d2e3e1f120c5000b9d/download" data-title="Event Feedback Form" id="529f11d2e3e1f120c5000b9d" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="52c39fcde3e1f15d8c000003">Appraisal</label>
-                                                <input data-source-file="appraisal.txt" data-source-url="/edocs/52c39fcde3e1f15d8c000003/download" data-title="Appraisal" id="52c39fcde3e1f15d8c000003" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="52fd935f80254226ad000003">Screen Shot 2014 02 13 At 10</label>
-                                                <input data-source-file="Screen_Shot_2014-02-13_at_10.29.51.png" data-source-url="/edocs/52fd935f80254226ad000003/download" data-title="Screen Shot 2014 02 13 At 10" id="52fd935f80254226ad000003" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="53018bea8025425108000002">new test</label>
-                                                <input data-source-file="LaunchingYourCareer-FindingPerfectJob.pdf" data-source-url="/edocs/53018bea8025425108000002/download" data-title="new test" id="53018bea8025425108000002" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="54bfbbe9f2a39f1fc0000001">Job Plan Jan 2015</label>
-                                                <input data-source-file="Dr-John-T-Smith-21Jan15-at-1447-job_plan.pdf" data-source-url="/edocs/54bfbbe9f2a39f1fc0000001/download" data-title="Job Plan Jan 2015" id="54bfbbe9f2a39f1fc0000001" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="509144c2e3e1f156500000b0">PREM Data</label>
-                                                <input data-source-file="Research_Paper.doc" data-source-url="/edocs/509144c2e3e1f156500000b0/download" data-title="PREM Data" id="509144c2e3e1f156500000b0" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="560175418025422902000001">Appraisal Summary Jul 2014</label>
-                                                <input data-source-file="Dr-John-T-Smith-22Sep15-at-1534-summary.pdf" data-source-url="/edocs/560175418025422902000001/download" data-title="Appraisal Summary Jul 2014" id="560175418025422902000001" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="56409a1c802542684e000001">Appraisal Summary Nov 2015</label>
-                                                <input data-source-file="Dr-John-T-Smith-09Nov15-at-1304-summary.pdf" data-source-url="/edocs/56409a1c802542684e000001/download" data-title="Appraisal Summary Nov 2015" id="56409a1c802542684e000001" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5034e032e3e1f12443000065">ACP360 Report</label>
-                                                <input data-source-file="Sample_ACP360_Report.pdf" data-source-url="/edocs/5034e032e3e1f12443000065/download" data-title="ACP360 Report" id="5034e032e3e1f12443000065" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="588751a7f2a39f248b000011">Revalidation User Guide Pics</label>
-                                                <input data-source-file="Revalidation_User_Guide_pics.zip" data-source-url="/edocs/588751a7f2a39f248b000011/download" data-title="Revalidation User Guide Pics" id="588751a7f2a39f248b000011" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5034e032e3e1f12443000066">My Section 12 certificate</label>
-                                                <input data-source-file="my_certificate.txt" data-source-url="/edocs/5034e032e3e1f12443000066/download" data-title="My Section 12 certificate" id="5034e032e3e1f12443000066" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5034e032e3e1f1244300006b">PDP 2010</label>
-                                                <input data-source-file="pdp_2010.txt" data-source-url="/edocs/5034e032e3e1f1244300006b/download" data-title="PDP 2010" id="5034e032e3e1f1244300006b" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="50914762e3e1f156500000c0">Business Analytics 2011</label>
-                                                <input data-source-file="Research_Paper.pdf" data-source-url="/edocs/50914762e3e1f156500000c0/download" data-title="Business Analytics 2011" id="50914762e3e1f156500000c0" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="52455593e3e1f1176f00021f">MAG form Jun 11</label>
-                                                <input data-source-file="mag_form_jun_6_2011.pdf" data-source-url="/edocs/52455593e3e1f1176f00021f/download" data-title="MAG form Jun 11" id="52455593e3e1f1176f00021f" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="524556b7e3e1f1176f000235">Blank MAG</label>
-                                                <input data-source-file="blank_mag.pdf" data-source-url="/edocs/524556b7e3e1f1176f000235/download" data-title="Blank MAG" id="524556b7e3e1f1176f000235" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="57110647f2a39f171e0002c4">Management Plan</label>
-                                                <input data-source-file="Demo_-_Dr_J_Smith_-_Management_Plan.xlsx" data-source-url="/edocs/57110647f2a39f171e0002c4/download" data-title="Management Plan" id="57110647f2a39f171e0002c4" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5711072a8025420f23000081">Certificate of Recognition </label>
-                                                <input data-source-file="Demo_-_J_Smith_-_Certificate_of_recognition_.pdf" data-source-url="/edocs/5711072a8025420f23000081/download" data-title="Certificate of Recognition " id="5711072a8025420f23000081" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                              <label class="left-align" for="57110750f2a39f171e0002ca">Dr J Smith - Patient testimonial</label>
-                                                <input data-source-file="Demo_-_J_Smith_-_Testimonial.txt" data-source-url="/edocs/57110750f2a39f171e0002ca/download" data-title="Dr J Smith - Patient testimonial" id="57110750f2a39f171e0002ca" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5711077980254274970000db">Dr J Smith - Ceritifcate 2010</label>
-                                                <input data-source-file="Demo_J_Smith_Certificate.docx" data-source-url="/edocs/5711077980254274970000db/download" data-title="Dr J Smith - Ceritifcate 2010" id="5711077980254274970000db" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="571106658025425b3b00024d">Dr J Smith - Notes</label>
-                                                <input data-source-file="Demo_-_Dr_J_Smith_-_Notes.doc" data-source-url="/edocs/571106658025425b3b00024d/download" data-title="Dr J Smith - Notes" id="571106658025425b3b00024d" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="577147d7f2a39f0296000130">Job Plan Annual Review 2016</label>
-                                                <input data-source-file="job_plan_annual_review_2016.docm" data-source-url="/edocs/577147d7f2a39f0296000130/download" data-title="Job Plan Annual Review 2016" id="577147d7f2a39f0296000130" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5658655d80254242d4000001">MSF Report Nov 2015</label>
-                                                <input data-source-file="Dr-John-T-Smith-27Nov15-at-1414-msf.pdf" data-source-url="/edocs/5658655d80254242d4000001/download" data-title="MSF Report Nov 2015" id="5658655d80254242d4000001" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5090f587e3e1f10bc9000306">Colleague Feedback</label>
-                                                <input data-source-file="colleague_feedback.txt" data-source-url="/edocs/5090f587e3e1f10bc9000306/download" data-title="Colleague Feedback" id="5090f587e3e1f10bc9000306" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5795e7b1f2a39f2d86000001">Appraisal Summary Jul 2016</label>
-                                                <input data-source-file="Dr-John-T-Smith-25Jul16-at-1019-summary.pdf" data-source-url="/edocs/5795e7b1f2a39f2d86000001/download" data-title="Appraisal Summary Jul 2016" id="5795e7b1f2a39f2d86000001" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="57bb155e80254261e5000068">Letter to Dr J Smith</label>
-                                                <input data-source-file="Letter_to_Dr_J_Smith.rtf" data-source-url="/edocs/57bb155e80254261e5000068/download" data-title="Letter to Dr J Smith" id="57bb155e80254261e5000068" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="57bb169080254266f000003e">Letter to Dr J Smith</label>
-                                                <input data-source-file="Letter_to_Dr_J_Smith.rtf" data-source-url="/edocs/57bb169080254266f000003e/download" data-title="Letter to Dr J Smith" id="57bb169080254266f000003e" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="57bdaf1080254246b7000001">Job Plan Jan 2016</label>
-                                                <input data-source-file="Dr-John-T-Smith-24Aug16-at-1428-job_plan.pdf" data-source-url="/edocs/57bdaf1080254246b7000001/download" data-title="Job Plan Jan 2016" id="57bdaf1080254246b7000001" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="50b34290e3e1f169c9000060">Rapid Tranq</label>
-                                                <input data-source-file="management_of_acutely_disturbed_children-rapid_tranquillization.pdf" data-source-url="/edocs/50b34290e3e1f169c9000060/download" data-title="Rapid Tranq" id="50b34290e3e1f169c9000060" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5272845ce3e1f1464900112d">PDP</label>
-                                                <input data-source-file="0530_001.pdf" data-source-url="/edocs/5272845ce3e1f1464900112d/download" data-title="PDP" id="5272845ce3e1f1464900112d" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="57c7fa33f2a39f2094000001">Job Plan Jan 2015</label>
-                                                <input data-source-file="Dr-John-T-Smith-01Sep16-at-0951-job_plan.pdf" data-source-url="/edocs/57c7fa33f2a39f2094000001/download" data-title="Job Plan Jan 2015" id="57c7fa33f2a39f2094000001" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5239c8eae3e1f15df5000ab1">abcd</label>
-                                                <input data-source-file="MAG-AppraisalForm-V3.2.pdf" data-source-url="/edocs/5239c8eae3e1f15df5000ab1/download" data-title="abcd" id="5239c8eae3e1f15df5000ab1" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="57e236a2802542255d000120">Gstt Dbs Declaration 1</label>
-                                                <input data-source-file="GSTT_DBS_declaration-1.docx" data-source-url="/edocs/57e236a2802542255d000120/download" data-title="Gstt Dbs Declaration 1" id="57e236a2802542255d000120" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="50914373e3e1f1565000009d">Last Appraisal</label>
-                                                <input data-source-file="Research_Paper.pdf" data-source-url="/edocs/50914373e3e1f1565000009d/download" data-title="Last Appraisal" id="50914373e3e1f1565000009d" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="509145d0e3e1f10bc9000391">Teaching info document</label>
-                                                <input data-source-file="Research_Paper.doc" data-source-url="/edocs/509145d0e3e1f10bc9000391/download" data-title="Teaching info document" id="509145d0e3e1f10bc9000391" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="50914576e3e1f10bc900038c">Non-Clinical Activity Data</label>
-                                                <input data-source-file="Research_Paper.pdf" data-source-url="/edocs/50914576e3e1f10bc900038c/download" data-title="Non-Clinical Activity Data" id="50914576e3e1f10bc900038c" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="50910830e3e1f10bc9000328">Research Paper - PDF Version</label>
-                                                <input data-source-file="Research_Paper.pdf" data-source-url="/edocs/50910830e3e1f10bc9000328/download" data-title="Research Paper - PDF Version" id="50910830e3e1f10bc9000328" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5800bfd7f2a39f1835000158">Do Ls Certificate</label>
-                                                <input data-source-file="DoLS_Certificate.pdf" data-source-url="/edocs/5800bfd7f2a39f1835000158/download" data-title="Do Ls Certificate" id="5800bfd7f2a39f1835000158" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="50914835e3e1f10bc900039f">HoNOSCA Data</label>
-                                                <input data-source-file="Research_Paper.doc" data-source-url="/edocs/50914835e3e1f10bc900039f/download" data-title="HoNOSCA Data" id="50914835e3e1f10bc900039f" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="58184d42802542546d00000d">80c9a103</label>
-                                                <input data-source-file="80c9a103.kevin400x.jpg" data-source-url="/edocs/58184d42802542546d00000d/download" data-title="80c9a103" id="58184d42802542546d00000d" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5818750c8025427141000002">Genres</label>
-                                                <input data-source-file="genres.png" data-source-url="/edocs/5818750c8025427141000002/download" data-title="Genres" id="5818750c8025427141000002" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="582dcdb080254254af000001">Job Plan Apr 2017</label>
-                                                <input data-source-file="Dr-John-T-Smith-17Nov16-at-1533-job_plan.pdf" data-source-url="/edocs/582dcdb080254254af000001/download" data-title="Job Plan Apr 2017" id="582dcdb080254254af000001" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="583584608025420e9d000031">ON CALL INFORMATION</label>
-                                                <input data-source-file="On_Call_Information.docx" data-source-url="/edocs/583584608025420e9d000031/download" data-title="ON CALL INFORMATION" id="583584608025420e9d000031" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5835857ef2a39f5bec00002f">ON CALL INFORMATION</label>
-                                                <input data-source-file="On_Call_Information.docx" data-source-url="/edocs/5835857ef2a39f5bec00002f/download" data-title="ON CALL INFORMATION" id="5835857ef2a39f5bec00002f" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5846d249802542142300003c">Membership Application Form</label>
-                                                <input data-source-file="MembershipApplicationForm.pdf" data-source-url="/edocs/5846d249802542142300003c/download" data-title="Membership Application Form" id="5846d249802542142300003c" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5846e3b8f2a39f62fc000015">ANNualised Notes</label>
-                                                <input data-source-file="Annualised_job_planning_aw_050309.pdf" data-source-url="/edocs/5846e3b8f2a39f62fc000015/download" data-title="ANNualised Notes" id="5846e3b8f2a39f62fc000015" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5846e3dcf2a39f63e2000012">Annualised notes </label>
-                                                <input data-source-file="Annualised_job_planning_aw_050309.pdf" data-source-url="/edocs/5846e3dcf2a39f63e2000012/download" data-title="Annualised notes " id="5846e3dcf2a39f63e2000012" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5846e3fc8025421e1d000055">Annualised notes </label>
-                                                <input data-source-file="Annualised_job_planning_aw_050309.pdf" data-source-url="/edocs/5846e3fc8025421e1d000055/download" data-title="Annualised notes " id="5846e3fc8025421e1d000055" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="584938f98025427293000001">Job Plan Jan 2016</label>
-                                                <input data-source-file="Dr-John-T-Smith-08Dec16-at-1042-job_plan.pdf" data-source-url="/edocs/584938f98025427293000001/download" data-title="Job Plan Jan 2016" id="584938f98025427293000001" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="585a670ff2a39f1ef9000006">Training</label>
-                                                <input data-source-file="Chrysanthemum.jpg" data-source-url="/edocs/585a670ff2a39f1ef9000006/download" data-title="Training" id="585a670ff2a39f1ef9000006" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="585a67138025423b6d000003">Training</label>
-                                                <input data-source-file="Chrysanthemum.jpg" data-source-url="/edocs/585a67138025423b6d000003/download" data-title="Training" id="585a67138025423b6d000003" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="585a6d00f2a39f23aa000001">Appraisal Summary Dec 2016</label>
-                                                <input data-source-file="Dr-John-T-Smith-21Dec16-at-1151-summary.pdf" data-source-url="/edocs/585a6d00f2a39f23aa000001/download" data-title="Appraisal Summary Dec 2016" id="585a6d00f2a39f23aa000001" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5861c12e80254211e8000041">Screen Shot 2016 11 09 At 02</label>
-                                                <input data-source-file="Screen_Shot_2016-11-09_at_02.28.13.png" data-source-url="/edocs/5861c12e80254211e8000041/download" data-title="Screen Shot 2016 11 09 At 02" id="5861c12e80254211e8000041" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5034e032e3e1f12443000069">Job Plan for 2012</label>
-                                                <input data-source-file="job_plan_2012.txt" data-source-url="/edocs/5034e032e3e1f12443000069/download" data-title="Job Plan for 2012" id="5034e032e3e1f12443000069" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="587f748bf2a39f02db000029">Favicon</label>
-                                                <input data-source-file="favicon.ico" data-source-url="/edocs/587f748bf2a39f02db000029/download" data-title="Favicon" id="587f748bf2a39f02db000029" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="5239c935e3e1f15df5000ab8">abcde</label>
-                                                <input data-source-file="MAG-AppraisalForm-V3.2.pdf" data-source-url="/edocs/5239c935e3e1f15df5000ab8/download" data-title="abcde" id="5239c935e3e1f15df5000ab8" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="589886fd80254232d400001a">Unnamed</label>
-                                                <input data-source-file="unnamed.jpg" data-source-url="/edocs/589886fd80254232d400001a/download" data-title="Unnamed" id="589886fd80254232d400001a" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="50b359abe3e1f126b900000c">Research Paper</label>
-                                                <input data-source-file="Research_Paper.docx" data-source-url="/edocs/50b359abe3e1f126b900000c/download" data-title="Research Paper" id="50b359abe3e1f126b900000c" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="52e8c201e3e1f1589400002e">Example</label>
-                                                <input data-source-file="example.pdf" data-source-url="/edocs/52e8c201e3e1f1589400002e/download" data-title="Example" id="52e8c201e3e1f1589400002e" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="58c142f9f2a39f790000000f">project on quality </label>
-                                                <input data-source-file="Carrot_Cake.docx" data-source-url="/edocs/58c142f9f2a39f790000000f/download" data-title="project on quality " id="58c142f9f2a39f790000000f" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="58c2b075f2a39f6a5d000001">MSF Report Mar 2017</label>
-                                                <input data-source-file="Dr-John-T-Smith-10Mar17-at-1356-msf.pdf" data-source-url="/edocs/58c2b075f2a39f6a5d000001/download" data-title="MSF Report Mar 2017" id="58c2b075f2a39f6a5d000001" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="58cbc555f2a39f1c8c000003">Als</label>
-                                                <input data-source-file="ALS.docx" data-source-url="/edocs/58cbc555f2a39f1c8c000003/download" data-title="Als" id="58cbc555f2a39f1c8c000003" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="520dced8e3e1f107a800002a">QIA Activity 1</label>
-                                                <input data-source-file="JohnSmith.jpg" data-source-url="/edocs/520dced8e3e1f107a800002a/download" data-title="QIA Activity 1" id="520dced8e3e1f107a800002a" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="51f0e6e2e3e1f17e05000314">Ed Appraiser 2010</label>
-                                                <input data-source-file="D1005R1-northumberland-screen-shot.png" data-source-url="/edocs/51f0e6e2e3e1f17e05000314/download" data-title="Ed Appraiser 2010" id="51f0e6e2e3e1f17e05000314" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="510a818ae3e1f1621d000053">Multi axial evidence</label>
-                                                <input data-source-file="My_Multi_Source_Feedback_Report.docx" data-source-url="/edocs/510a818ae3e1f1621d000053/download" data-title="Multi axial evidence" id="510a818ae3e1f1621d000053" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                              <li class="edoc">
-                                                <label class="left-align" for="58de75e5802542634e000048">Test File</label>
-                                                <input data-source-file="Best-Interests.jpg" data-source-url="/edocs/58de75e5802542634e000048/download" data-title="Test File" id="58de75e5802542634e000048" name="gaga" nobind="true" type="radio">
-                                              </li>
-                                            </ol>
-                                        </div> <!-- / form-group -->
-                                        <div class="form-group form-submission">
-                                          <button type="submit" id="commit_existing" name="commit" class="btn btn-default btn-sm">Add Existing Document</button>
-                                          <button type="submit" id="cancel button" name="commit" class="btn btn-danger btn-sm">Cancel</button>
-                                        </div> <!-- / form-group -->
-                                      </fieldset>
-                                    </form>
-                                  </div>  <!-- / tab-pane -->
-                                
-                                </div> <!-- tab-content horizontal container -->
-                              </div>
-                            </div> <!-- / row -->
-                      
-                      
-                      
-                          </div> <!-- END modal-content -->
-                        </div> <!-- END modal-dialog -->
-                      </div> <!-- END modal fade -->
                       
                     </div>
 
@@ -1551,7 +1163,7 @@
                                             
                                             <div class="row"> 
                                               <div class="col-xs-12">
-                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P02_Close_Evidence_1">Save & Close</button>
+                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P02_Close_Evidence_2">Save & Close</button>
                                               </div><!-- END col -->
                                             </div> <!-- END Row -->
                                           </div>  <!-- / form-group -->
@@ -1563,6 +1175,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -1578,12 +1191,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_comment" aria-expanded="false" data-toggle="collapse" data-target="#add_comment">Add Comment
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P02_Add_Comment" aria-expanded="false" data-toggle="collapse" data-target="#P02_Add_Comment">Add Comment
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P02_Add_Comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -1700,6 +1313,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -1716,12 +1330,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_note" aria-expanded="false" data-toggle="collapse" data-target="#add_note">Add Private Note
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P02_Add_Note" aria-expanded="false" data-toggle="collapse" data-target="#P02_Add_Note">Add Private Note
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P02_Add_Note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -1838,8 +1452,12 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
+                      
+                      
+                      
                     </div>
 
                     <div id="0103-re-admission-rates" class="tabcontent tab-pane">
@@ -2151,7 +1769,7 @@
                                             
                                             <div class="row"> 
                                               <div class="col-xs-12">
-                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P03_Close_Evidence_1">Save & Close</button>
+                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P03_Close_Evidence_2">Save & Close</button>
                                               </div><!-- END col -->
                                             </div> <!-- END Row -->
                                           </div>  <!-- / form-group -->
@@ -2163,6 +1781,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -2178,12 +1797,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_comment" aria-expanded="false" data-toggle="collapse" data-target="#add_comment">Add Comment
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P03_Add_Comment" aria-expanded="false" data-toggle="collapse" data-target="#P03_Add_Comment">Add Comment
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P03_Add_Comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -2300,6 +1919,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -2316,12 +1936,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_note" aria-expanded="false" data-toggle="collapse" data-target="#add_note">Add Private Note
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P03_Add_Note" aria-expanded="false" data-toggle="collapse" data-target="#P03_Add_Note">Add Private Note
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P03_Add_Note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -2438,8 +2058,13 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
+                      
+                      
+                      
+                      
                     </div>
 
                     <div id="0104-gp-letters" class="tabcontent tab-pane">
@@ -2751,7 +2376,7 @@
                                             
                                             <div class="row"> 
                                               <div class="col-xs-12">
-                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P04_Close_Evidence_1">Save & Close</button>
+                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P04_Close_Evidence_2">Save & Close</button>
                                               </div><!-- END col -->
                                             </div> <!-- END Row -->
                                           </div>  <!-- / form-group -->
@@ -2763,6 +2388,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -2778,12 +2404,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_comment" aria-expanded="false" data-toggle="collapse" data-target="#add_comment">Add Comment
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P04_Add_Comment" aria-expanded="false" data-toggle="collapse" data-target="#P04_Add_Comment">Add Comment
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P04_Add_Comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -2900,6 +2526,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -2916,12 +2543,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_note" aria-expanded="false" data-toggle="collapse" data-target="#add_note">Add Private Note
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P04_Add_Note" aria-expanded="false" data-toggle="collapse" data-target="#P04_Add_Note">Add Private Note
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P04_Add_Note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -3038,8 +2665,12 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
+                      
+                      
+                      
                     </div>
 
                     <div id="0105-multi-axial-coding" class="tabcontent tab-pane">
@@ -3351,7 +2982,7 @@
                                             
                                             <div class="row"> 
                                               <div class="col-xs-12">
-                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P05_Close_Evidence_1">Save & Close</button>
+                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P05_Close_Evidence_2">Save & Close</button>
                                               </div><!-- END col -->
                                             </div> <!-- END Row -->
                                           </div>  <!-- / form-group -->
@@ -3363,6 +2994,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -3378,12 +3010,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_comment" aria-expanded="false" data-toggle="collapse" data-target="#add_comment">Add Comment
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P05_Add_Comment" aria-expanded="false" data-toggle="collapse" data-target="#P05_Add_Comment">Add Comment
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P05_Add_Comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -3500,6 +3132,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -3516,12 +3149,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_note" aria-expanded="false" data-toggle="collapse" data-target="#add_note">Add Private Note
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P05_Add_Note" aria-expanded="false" data-toggle="collapse" data-target="#P05_Add_Note">Add Private Note
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P05_Add_Note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -3638,8 +3271,12 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
+                      
+                      
+                      
                     </div>
 
                     <div id="0106-test-dataset" class="tabcontent tab-pane">
@@ -3950,7 +3587,7 @@
                                             
                                             <div class="row"> 
                                               <div class="col-xs-12">
-                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P06_Close_Evidence_1">Save & Close</button>
+                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P06_Close_Evidence_2">Save & Close</button>
                                               </div><!-- END col -->
                                             </div> <!-- END Row -->
                                           </div>  <!-- / form-group -->
@@ -3962,6 +3599,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -3977,12 +3615,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_comment" aria-expanded="false" data-toggle="collapse" data-target="#add_comment">Add Comment
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P06_Add_Comment" aria-expanded="false" data-toggle="collapse" data-target="#P06_Add_Comment">Add Comment
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P06_Add_Comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -4099,6 +3737,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -4115,12 +3754,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_note" aria-expanded="false" data-toggle="collapse" data-target="#add_note">Add Private Note
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P06_Add_Note" aria-expanded="false" data-toggle="collapse" data-target="#P06_Add_Note">Add Private Note
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P06_Add_Note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -4237,8 +3876,13 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
+                      
+                      
+                      
+                      
                     </div>
 
                     <div id="0107-section-58-complience" class="tabcontent tab-pane">
@@ -4550,7 +4194,7 @@
                                             
                                             <div class="row"> 
                                               <div class="col-xs-12">
-                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P07_Close_Evidence_1">Save & Close</button>
+                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P07_Close_Evidence_2">Save & Close</button>
                                               </div><!-- END col -->
                                             </div> <!-- END Row -->
                                           </div>  <!-- / form-group -->
@@ -4562,6 +4206,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -4577,12 +4222,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_comment" aria-expanded="false" data-toggle="collapse" data-target="#add_comment">Add Comment
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P07_Add_Comment" aria-expanded="false" data-toggle="collapse" data-target="#P07_Add_Comment">Add Comment
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P07_Add_Comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -4699,6 +4344,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -4715,12 +4361,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_note" aria-expanded="false" data-toggle="collapse" data-target="#add_note">Add Private Note
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P07_Add_Note" aria-expanded="false" data-toggle="collapse" data-target="#P07_Add_Note">Add Private Note
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P07_Add_Note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -4837,8 +4483,12 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
+                      
+                      
+                      
                     </div>
 
                     <div id="0108-discharge-notifications" class="tabcontent tab-pane">
@@ -5150,7 +4800,7 @@
                                             
                                             <div class="row"> 
                                               <div class="col-xs-12">
-                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P08_Close_Evidence_1">Save & Close</button>
+                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P08_Close_Evidence_2">Save & Close</button>
                                               </div><!-- END col -->
                                             </div> <!-- END Row -->
                                           </div>  <!-- / form-group -->
@@ -5162,6 +4812,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -5177,12 +4828,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_comment" aria-expanded="false" data-toggle="collapse" data-target="#add_comment">Add Comment
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P08_Add_Comment" aria-expanded="false" data-toggle="collapse" data-target="#P08_Add_Comment">Add Comment
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P08_Add_Comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -5299,6 +4950,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -5315,12 +4967,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_note" aria-expanded="false" data-toggle="collapse" data-target="#add_note">Add Private Note
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P08_Add_Note" aria-expanded="false" data-toggle="collapse" data-target="#P08_Add_Note">Add Private Note
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P08_Add_Note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -5437,8 +5089,12 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
+                      
+                      
+                      
                     </div>
 
                     <!-- =========================================================== -->
@@ -5752,7 +5408,7 @@
                                             
                                             <div class="row"> 
                                               <div class="col-xs-12">
-                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P00_Close_Evidence_1">Save & Close</button>
+                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P00_Close_Evidence_2">Save & Close</button>
                                               </div><!-- END col -->
                                             </div> <!-- END Row -->
                                           </div>  <!-- / form-group -->
@@ -5764,6 +5420,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -5779,12 +5436,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_comment" aria-expanded="false" data-toggle="collapse" data-target="#add_comment">Add Comment
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P00_Add_Comment" aria-expanded="false" data-toggle="collapse" data-target="#P00_Add_Comment">Add Comment
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P00_Add_Comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -5901,6 +5558,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -5917,12 +5575,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_note" aria-expanded="false" data-toggle="collapse" data-target="#add_note">Add Private Note
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P00_Add_Note" aria-expanded="false" data-toggle="collapse" data-target="#P00_Add_Note">Add Private Note
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P00_Add_Note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -6039,6 +5697,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                     </div>
@@ -6352,7 +6011,7 @@
                                             
                                             <div class="row"> 
                                               <div class="col-xs-12">
-                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P00_Close_Evidence_1">Save & Close</button>
+                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P00_Close_Evidence_2">Save & Close</button>
                                               </div><!-- END col -->
                                             </div> <!-- END Row -->
                                           </div>  <!-- / form-group -->
@@ -6364,6 +6023,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -6379,12 +6039,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_comment" aria-expanded="false" data-toggle="collapse" data-target="#add_comment">Add Comment
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P00_Add_Comment" aria-expanded="false" data-toggle="collapse" data-target="#P00_Add_Comment">Add Comment
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P00_Add_Comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -6501,6 +6161,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -6517,12 +6178,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_note" aria-expanded="false" data-toggle="collapse" data-target="#add_note">Add Private Note
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P00_Add_Note" aria-expanded="false" data-toggle="collapse" data-target="#P00_Add_Note">Add Private Note
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P00_Add_Note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -6639,6 +6300,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                     </div>
@@ -6952,7 +6614,7 @@
                                             
                                             <div class="row"> 
                                               <div class="col-xs-12">
-                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P00_Close_Evidence_1">Save & Close</button>
+                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P00_Close_Evidence_2">Save & Close</button>
                                               </div><!-- END col -->
                                             </div> <!-- END Row -->
                                           </div>  <!-- / form-group -->
@@ -6964,6 +6626,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -6979,12 +6642,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_comment" aria-expanded="false" data-toggle="collapse" data-target="#add_comment">Add Comment
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P00_Add_Comment" aria-expanded="false" data-toggle="collapse" data-target="#P00_Add_Comment">Add Comment
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P00_Add_Comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -7101,6 +6764,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -7117,12 +6781,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_note" aria-expanded="false" data-toggle="collapse" data-target="#add_note">Add Private Note
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P00_Add_Note" aria-expanded="false" data-toggle="collapse" data-target="#P00_Add_Note">Add Private Note
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P00_Add_Note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -7239,6 +6903,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                     </div>
@@ -7554,7 +7219,7 @@
                                             
                                             <div class="row"> 
                                               <div class="col-xs-12">
-                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P00_Close_Evidence_1">Save & Close</button>
+                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P00_Close_Evidence_2">Save & Close</button>
                                               </div><!-- END col -->
                                             </div> <!-- END Row -->
                                           </div>  <!-- / form-group -->
@@ -7566,6 +7231,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -7581,12 +7247,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_comment" aria-expanded="false" data-toggle="collapse" data-target="#add_comment">Add Comment
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P00_Add_Comment" aria-expanded="false" data-toggle="collapse" data-target="#P00_Add_Comment">Add Comment
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P00_Add_Comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -7703,6 +7369,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -7719,12 +7386,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_note" aria-expanded="false" data-toggle="collapse" data-target="#add_note">Add Private Note
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P00_Add_Note" aria-expanded="false" data-toggle="collapse" data-target="#P00_Add_Note">Add Private Note
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P00_Add_Note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -7841,6 +7508,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                     </div>
@@ -8154,7 +7822,7 @@
                                             
                                             <div class="row"> 
                                               <div class="col-xs-12">
-                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P00_Close_Evidence_1">Save & Close</button>
+                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P00_Close_Evidence_2">Save & Close</button>
                                               </div><!-- END col -->
                                             </div> <!-- END Row -->
                                           </div>  <!-- / form-group -->
@@ -8166,6 +7834,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -8181,12 +7850,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_comment" aria-expanded="false" data-toggle="collapse" data-target="#add_comment">Add Comment
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P00_Add_Comment" aria-expanded="false" data-toggle="collapse" data-target="#P00_Add_Comment">Add Comment
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P00_Add_Comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -8303,6 +7972,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -8319,12 +7989,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_note" aria-expanded="false" data-toggle="collapse" data-target="#add_note">Add Private Note
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P00_Add_Note" aria-expanded="false" data-toggle="collapse" data-target="#P00_Add_Note">Add Private Note
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P00_Add_Note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -8441,6 +8111,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                     </div>
@@ -8754,7 +8425,7 @@
                                             
                                             <div class="row"> 
                                               <div class="col-xs-12">
-                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P00_Close_Evidence_1">Save & Close</button>
+                                                <button type="button" class="btn btn-teal pull-right btn-sm margin-top10px P00_Close_Evidence_2">Save & Close</button>
                                               </div><!-- END col -->
                                             </div> <!-- END Row -->
                                           </div>  <!-- / form-group -->
@@ -8766,6 +8437,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -8781,12 +8453,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_comment" aria-expanded="false" data-toggle="collapse" data-target="#add_comment">Add Comment
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P00_Add_Comment" aria-expanded="false" data-toggle="collapse" data-target="#P00_Add_Comment">Add Comment
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P00_Add_Comment" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -8903,6 +8575,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                       
@@ -8919,12 +8592,12 @@
                                 <div class="panel panel-default">
                                   <div class="panel-heading" id="toggle_add_evidence" role="tab">
                                   <h3 class="panel-title">
-                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="add_note" aria-expanded="false" data-toggle="collapse" data-target="#add_note">Add Private Note
+                                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="P00_Add_Note" aria-expanded="false" data-toggle="collapse" data-target="#P00_Add_Note">Add Private Note
                                       <i class="more-less glyphicon glyphicon-minus pull-right"></i>
                                     </a>
                                   </h3>
                                   </div>
-                                  <div id="add_note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
+                                  <div id="P00_Add_Note" class="panel-collapse collapse in" aria-labelledby="toggle_add_evidence" role="tabpanel">
                                     <div class="panel-body add-evidence">
                                       <form  class="sa-form" method="post">
                                           <div class="form-group">
@@ -9041,6 +8714,7 @@
                                 </div> <!-- / panel -->
                       
                               </div>  <!-- / panel-group sa-accordion -->
+                          
                         </div> <!-- / col evidence-box-->
                       </div> <!-- / Row -->
                     </div>
