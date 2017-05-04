@@ -170,8 +170,6 @@ h1, h2, h3, h4, h5, h6, p{
     color: $ink;
     text-decoration: none; }
 
-  a:focus { }
-
   a:link{ color:$bodytext;}
   a:visited{ color:$bodytext;}
   a:hover{ color:$link-hover;}
@@ -410,7 +408,6 @@ h1, h2, h3, h4, h5, h6, p{
     content: "\f095" ;
     padding-right:8px;
     color:$grey18;
-    // float:left;
   }
   p.link-phone{ // This places the phone icon in front individual text
     padding-left: 1.3em ;
@@ -432,7 +429,6 @@ h1, h2, h3, h4, h5, h6, p{
     content: "\f003" ;
     padding-right:5px;
     color:$grey18;
-    // float:left;
   }
   p.link-email{ // This places the email icon in front individual text
     padding-left: 1.3em ;
