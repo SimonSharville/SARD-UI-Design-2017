@@ -1277,6 +1277,26 @@ body {
   border-top: 1px solid #211F0F;
   border-bottom: 1px solid #211F0F; }
 
+.panel-admin > .panel-heading {
+  background-color: #b20059;
+  color: white;
+  border: 0; }
+
+.panel-admin > .panel-body {
+  background-color: #e50073;
+  color: white; }
+
+.panel-admin > .perf-wht {
+  background-color: #e50073; }
+
+.panel-admin > .perf-grey {
+  background-color: #e50073; }
+
+.panel-admin > .panel-footer {
+  background-color: #7f0040;
+  color: white;
+  border: 0; }
+
 .panel-clean {
   background-color: transparent;
   box-shadow: none; }
@@ -3874,18 +3894,52 @@ input, button, select, textarea {
   border: none;
   box-shadow: none; }
 
-.sa-accordion .panel-default > .panel-heading + .panel-collapse > .panel-body {
+.sa-accordion .panel-heading + .panel-collapse > .panel-body {
   border: none;
   border-left: 1px solid #615E5C;
   border-right: 1px solid #615E5C; }
 
-.sa-accordion .panel-default:last-of-type > .panel-heading + .panel-collapse > .panel-body {
+.sa-accordion:last-of-type > .panel-heading + .panel-collapse > .panel-body {
   border-bottom: 1px solid #615E5C; }
 
 .sa-accordion .panel-body {
   margin-bottom: -1px;
   border: none;
   box-shadow: none; }
+
+.sa-accordion .panel-footer {
+  background-color: #545150;
+  color: white;
+  border: none; }
+
+.panel-default.sa-accordion .panel-heading + .panel-collapse > .panel-body {
+  border: none; }
+
+/* change color of open class */
+.panel-admin.sa-accordion .panel-heading h3 {
+  background-color: #99004d; }
+
+.panel-admin.sa-accordion .panel-heading h3:hover {
+  background-color: #7f0040; }
+
+.panel-admin.sa-accordion .panel-heading h3:active {
+  background-color: #660033; }
+
+/* change color of collapsed class */
+.panel-admin.sa-accordion .collapsed {
+  background-color: #cc0066; }
+
+.panel-admin.sa-accordion .collapsed:hover {
+  background-color: #b20059; }
+
+.panel-admin.sa-accordion .collapsed:active {
+  background-color: #99004d; }
+
+.panel-admin.sa-accordion .panel-heading + .panel-collapse > .panel-body {
+  border: none; }
+
+.panel-admin.sa-accordion .panel-footer {
+  background-color: #cc0066; }
 
 .table-default {
   background-color: #EDEBEB; }
