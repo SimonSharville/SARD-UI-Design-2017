@@ -22,3 +22,72 @@
 .admin .breadcrumb > .active {
   color: $admin-colour-dark;
 }
+
+.messages-collapse{
+  
+  a:link{ color:$text;}
+  .glyphicon{color:$text;}
+
+.message{
+  position: relative;
+  border-bottom: 1px solid white;
+}
+.message:last-of-type{
+  border-bottom: none;
+}
+
+  a:link.accordion-toggle:after{
+    font-family: 'FontAwesome';
+    content: "\f068"; // minus
+    float:right;
+    position: absolute;
+    top:0;
+    right:0;
+  }
+  a:link.accordion-toggle.collapsed:after{
+    font-family: 'FontAwesome';
+    content: "\f067"; // plus
+  }
+
+  h4{ margin-bottom:0;}
+  h6{ margin-top:0;}
+}
+
+// Message Toggle KEPT FOR REFERENCE ====================
+// .message.toggle{
+//   border-bottom: 1px solid white;
+// }
+// .message.toggle input {
+//   display: none;
+//   visibility: hidden;
+//   }
+// .message.toggle label {
+//   display: block;
+//   padding-right:20px;
+//    position: relative;
+// }
+// .message.toggle label:hover {
+//   color: #000;
+// }
+// .message.toggle label::after {
+//   float:right;
+//   font-size: 15px;
+//   content: "+";
+//   position: absolute;
+//   top:0;
+//   right:0;
+// }
+// .message.toggle .expand {
+//   height: 0px;
+//   overflow: hidden;
+//   transition: height 0.5s;
+// }
+// section {
+//   // padding: 0 20px;
+// }
+// .message.toggle #toggle:checked ~ .expand {
+//   height: auto;
+// }
+// .message.toggle #toggle:checked ~ label::after {
+//   content: "-";
+// }

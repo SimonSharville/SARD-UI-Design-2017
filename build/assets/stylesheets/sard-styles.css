@@ -1928,12 +1928,6 @@ a.glyphicon-info-sign {
   border: 1px solid white;
   padding: 0px; }
 
-a:hover, a:focus .glyphicon-info-sign {
-  color: #007cad; }
-
-.notice .glyphicon.glyphicon-info-sign {
-  color: #00a0e0; }
-
 .tooltip {
   font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
   letter-spacing: 0.025em; }
@@ -2507,7 +2501,10 @@ a:hover, a:focus .glyphicon-info-sign {
 .notice a.glyphicon-info-sign, h5 a.glyphicon-info-sign, p a.glyphicon-info-sign {
   color: #007cad; }
 
-.notice a:hover, .notice a:focus .glyphicon-info-sign, h5 a:hover, h5 a:focus .glyphicon-info-sign, p a:hover, p a:focus .glyphicon-info-sign {
+.notice a:hover .glyphicon-info-sign,
+.notice a:focus .glyphicon-info-sign, h5 a:hover .glyphicon-info-sign,
+h5 a:focus .glyphicon-info-sign, p a:hover .glyphicon-info-sign,
+p a:focus .glyphicon-info-sign {
   color: #00577a; }
 
 ul {
@@ -5696,3 +5693,34 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 
 .admin .breadcrumb > .active {
   color: #b20059; }
+
+.messages-collapse a:link {
+  color: #211F0F; }
+
+.messages-collapse .glyphicon {
+  color: #211F0F; }
+
+.messages-collapse .message {
+  position: relative;
+  border-bottom: 1px solid white; }
+
+.messages-collapse .message:last-of-type {
+  border-bottom: none; }
+
+.messages-collapse a:link.accordion-toggle:after {
+  font-family: 'FontAwesome';
+  content: "\f068";
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.messages-collapse a:link.accordion-toggle.collapsed:after {
+  font-family: 'FontAwesome';
+  content: "\f067"; }
+
+.messages-collapse h4 {
+  margin-bottom: 0; }
+
+.messages-collapse h6 {
+  margin-top: 0; }
