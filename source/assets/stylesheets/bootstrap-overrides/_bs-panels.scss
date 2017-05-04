@@ -264,6 +264,19 @@ $panelBaseGrey:         $grey02;
 
 .panel-white > .panel-footer{ background-color:white;  color: $bodytext; border-top:1px solid $grey18; border-bottom:1px solid $grey18;}
 
+// Panel Admin ----------------------------------------------------------------------
+
+.panel-admin{  }
+
+.panel-admin > .panel-heading{ background-color:darken($admin-colour, 10%);   color:white;   border:0;}
+
+.panel-admin > .panel-body{ background-color:lighten($admin-colour, 0%); color:white; }
+
+.panel-admin > .perf-wht{ background-color:lighten($admin-colour, 0%); }
+.panel-admin > .perf-grey{ background-color:lighten($admin-colour, 0%); }
+
+.panel-admin > .panel-footer{ background-color:darken($admin-colour, 20%);   color:white;   border:0;}
+
 // Panel Clean ----------------------------------------------------------------------
 
 .panel-clean{  background-color:transparent; box-shadow:none; }

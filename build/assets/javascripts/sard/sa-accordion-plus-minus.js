@@ -1,1 +1,1 @@
-function toggleIcon(o){$(o.target).prev(".panel-heading").find(".more-less").toggleClass("glyphicon-plus glyphicon-minus")}$(".panel-group").on("hidden.bs.collapse",toggleIcon),$(".panel-group").on("shown.bs.collapse",toggleIcon);
+function toggleIcon(n){$(n.target).prev(".panel-heading").find(".more-less").toggleClass("glyphicon-plus glyphicon-minus")}$(".panel").on("hidden.bs.collapse",toggleIcon),$(".panel").on("shown.bs.collapse",toggleIcon);
