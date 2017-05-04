@@ -29,7 +29,7 @@
 .sa-accordion .glyphicon-plus
 {color:white;}
 
-// Colouring ====================================
+// Colouring =========================================================
 $accordian: $grey14;
 
 /* change color of open class */
@@ -59,14 +59,13 @@ $accordian: $grey14;
   border:none;
   box-shadow:none;
 }
-.sa-accordion .panel-default > .panel-heading + .panel-collapse > .panel-body{ 
+.sa-accordion .panel-heading + .panel-collapse > .panel-body{ 
   border:none;
   border-left:1px solid $accordian;
   border-right:1px solid $accordian;
-  
 }
 
-.sa-accordion .panel-default:last-of-type > .panel-heading + .panel-collapse > .panel-body{
+.sa-accordion:last-of-type > .panel-heading + .panel-collapse > .panel-body{
   border-bottom:1px solid $accordian;
 }
 
@@ -76,5 +75,47 @@ $accordian: $grey14;
   box-shadow:none;
 }
 
+.sa-accordion .panel-footer{
+  background-color: darken($accordian, 5%);
+  color:white;
+  border:none;
+}
 
+// Default Colouring =========================================================
 
+.panel-default.sa-accordion .panel-heading + .panel-collapse > .panel-body{ 
+  border:none;
+}
+
+// Admin Colouring ==========================================================
+
+/* change color of open class */
+.panel-admin.sa-accordion .panel-heading h3{ 
+  background-color: darken($admin-colour, 15%); 
+}
+
+.panel-admin.sa-accordion .panel-heading h3:hover{
+  background-color:darken($admin-colour, 20%);
+}
+.panel-admin.sa-accordion .panel-heading h3:active{
+  background-color:darken($admin-colour, 25%);
+}
+
+/* change color of collapsed class */
+.panel-admin.sa-accordion .collapsed { 
+  background-color: darken($admin-colour, 5%); 
+}
+.panel-admin.sa-accordion .collapsed:hover { 
+  background-color: darken($admin-colour, 10%); 
+}
+.panel-admin.sa-accordion .collapsed:active { 
+  background-color: darken($admin-colour, 15%); 
+}
+
+.panel-admin.sa-accordion .panel-heading + .panel-collapse > .panel-body{ 
+  border:none;
+}
+
+.panel-admin.sa-accordion .panel-footer{
+  background-color: darken($admin-colour, 5%);
+}
