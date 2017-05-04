@@ -8,13 +8,13 @@ a.glyphicon-info-sign{
     padding:0px;
   }
 
-  a:hover, a:focus .glyphicon-info-sign{
-    color: darken($info, 10%);
-  }
+  // a:hover .glyphicon-info-sign, a:focus .glyphicon-info-sign{
+  //   color: darken($info, 10%);
+  // }
 
-  .notice .glyphicon.glyphicon-info-sign{
-    color:$info;
-  }
+  // .notice .glyphicon.glyphicon-info-sign{
+  //   color:$info;
+  // }
 
 .tooltip{
   font-family: 'robotomedium', Helvetica, Arial, Sans-serif;

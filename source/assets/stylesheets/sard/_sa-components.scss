@@ -346,7 +346,8 @@
     a:hover{ color:$link-hover;}
     a:active{ color:$link-hover;}
     a.glyphicon-info-sign{ color: darken($info, 10%); }
-    a:hover, a:focus .glyphicon-info-sign{ color: darken($info, 20%);}
+    a:hover .glyphicon-info-sign, 
+    a:focus .glyphicon-info-sign{ color: darken($info, 20%);}
   }
 
 
