@@ -15,10 +15,11 @@
     $double: 0.125em; /* 16 * 0.125 = 2px */
   
   // Text Link Colours
+    $text:             $grey18;
     $bodytext:         $grey18;
     $link:             $grey18;
     $link-visited:     $plum;
-    $link-hover:       darken($turq, 10%);
+    $link-hover:       darken($turq, 5%);
     $link-active:      $purple;
     
 
@@ -70,31 +71,7 @@ h1, h2, h3, h4, h5, h6, p{
   }
 
   
-  li p { // This adjust the spacing and endents of multi line links in a list
-    padding-left: 1.25em;
-    text-indent:-1.25em;
-    margin-bottom:0.5em;
-    line-height: 1.3em;
-  }
 
-  ul.bullet-list{
-    padding-left:12px;
-    list-style: none;
-    // list-style-type: disc;
-    // list-style-position: outside;
-    // list-style-image: none;
-    li::before {
-      content: "•"; 
-      // color: $turq;
-      display: inline-block; width: .55em;
-      margin-left: -.55em;
-      font-size: 190%;
-      vertical-align:middle;
-      line-height:.4em;
-    }
-    li{ padding-bottom:.5em;}
-    li:last-of-type{ padding-bottom:0em;}
-  }
 
 // Small screens
 @media (max-width: 767px) {
@@ -181,7 +158,45 @@ h1, h2, h3, h4, h5, h6, p{
   a.text-link:hover{ color:$teal;}
   a.text-link:active{ color:$teal;}
 
+
+
+
+// List Items ========================================================
+
+  ul { // Removes bullet and indent globally
+    padding: 0;
+    list-style-type: none;
+    list-style: none;
+  }
+    
+
+  ul.bullet-list{
+    padding-left:12px;
+    list-style: none;
+    li::before {
+      content: "•"; 
+      display: inline-block; width: .55em;
+      margin-left: -.55em;
+      font-size: 190%;
+      vertical-align:middle;
+      line-height:.4em;
+    }
+    li{ padding-bottom:.5em;}
+    li:last-of-type{ padding-bottom:0em;}
+  }
+
+
+li p { // This adjust the spacing and indents of multi line links in a list
+    padding-left: 1.25em;
+    text-indent:-1.25em;
+    margin-bottom:0.5em;
+    line-height: 1.3em;
+  }
+
+
+
 // Link Icons ==========================================================================
+
 
   // ARROW =============================================================================
   .link-arrow{ // This places the arrow icon in front of all text links in a single cell

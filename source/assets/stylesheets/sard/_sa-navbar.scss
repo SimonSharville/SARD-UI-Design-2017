@@ -565,3 +565,43 @@ $inpageNavDropdownBG  : darken($inpage-navbar, 15%);
 
 }
 // End small screens
+
+
+
+
+// SARD Top Nav =====================================================================
+// You will only need this if we re-introduce the top nav section
+
+// .sa-top-nav {
+//   .navbar{
+//     margin-bottom: 0px;
+//   }
+
+//   .navbar-brand{
+//     padding: 15px 10px;
+//   }
+
+//   /* Extra Small Devices, Phones */ 
+//   @media only screen and (max-width : 767px) {
+//     .navbar-form{
+//       margin-left:  0px;
+//       margin-right:  0px;
+//       padding:      0px 15px;
+//       border-top:   0px;
+//       border-bottom:   0px;
+//       box-shadow: none;
+//     }
+
+//     .navbar-nav{
+//       margin: 5px 0px 0px 0px;
+//     }
+//   }
+
+//   /* Small Devices, Tablets */
+//   @media only screen and (min-width : 768px) {
+//     .nav > li > a{
+//       padding:      15px 0px;
+//     }
+
+//   }
+// } // End top-nav

@@ -96,7 +96,6 @@
   background-size: 25px 25px;
   background-repeat: no-repeat;
   background-position: center; 
-  // width:40px;
   height:40px;
 }
 
@@ -104,12 +103,16 @@
   background-color:$grey10;
   padding-left: 20px;
   padding-right: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .row-turq{ 
   background-color:$turq;
   padding-left: 20px;
   padding-right: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 // Only display element on Mobile ==================
@@ -145,9 +148,9 @@
 
 // Various sapcings ================================
 
-.indent{
-  // padding-left:15px;
-  // padding-right:15px;
+.indent15{
+  padding-left:15px;
+  padding-right:15px;
 }
 
 .no-indent{
@@ -166,43 +169,6 @@
 .fast-links{ margin-top:20px; margin-bottom:30px;}
 
 
-// Top Nav =====================================================================
-// You will only need this if we re-introduce the top nav section
-
-// .sa-top-nav {
-//   .navbar{
-//     margin-bottom: 0px;
-//   }
-
-//   .navbar-brand{
-//     padding: 15px 10px;
-//   }
-
-//   /* Extra Small Devices, Phones */ 
-//   @media only screen and (max-width : 767px) {
-//     .navbar-form{
-//       margin-left:  0px;
-//       margin-right:  0px;
-//       padding:      0px 15px;
-//       border-top:   0px;
-//       border-bottom:   0px;
-//       box-shadow: none;
-//     }
-
-//     .navbar-nav{
-//       margin: 5px 0px 0px 0px;
-//     }
-//   }
-
-//   /* Small Devices, Tablets */
-//   @media only screen and (min-width : 768px) {
-//     .nav > li > a{
-//       padding:      15px 0px;
-//     }
-
-//   }
-// } // End top-nav
-
 
 
 //  Perforation dots ==============================================================
@@ -219,8 +185,6 @@
       background-position: -4px 0px;
       margin: 15px 0px 25px 0px;
     }
-
-
 
  .row-top-perfs:before{
     display: block;
@@ -270,7 +234,6 @@
   }
 
 
-
   .tab-content .perf {
     margin: 40px -30px 30px -30px;
     // background-image: url("../graphics/dot_grey06.png");
@@ -311,113 +274,122 @@
 
 
 // Notices ===============================================================
-  .notice{
-    padding-top:1px;
-    margin-bottom:7px;
-    padding-bottom:8px;
-    border-bottom: 1px solid white;
-  }
-  .notice:last-of-type{
-    border-bottom: none;
-    margin-bottom:-20px;
-  }
+.notice-group{
+}
 
-  .notice{ 
-    &.status:before{
-      height: 32px;
-      width: 32px;
-      background-size: 28px 28px;
-      background-repeat: no-repeat;
-      padding-top:4px;
-    }
-    &.status-alert:before{ padding-left:2px; }
-    &.status-danger:before{ padding-left:2px; }
-    &.status:hover:before{ }
+.notice-group h3 .glyphicon{
+font-size:14px;
+}
 
-    h5, h6, p{
-      margin:0 0 0 40px;
-    }
-    p{ margin-bottom:-3px;}
-  }
+.notice{
+  padding-top:1px;
+  margin-bottom:7px;
+  padding-bottom:8px;
+  border-bottom: 1px solid $grey06;
+}
+.notice:last-of-type{
+  border-bottom: none;
+  margin-bottom:-20px;
+}
+.panel-body .notice{
+  border-bottom-color: white;
+}
 
-   .notice, h5, p{
-    a:link{ color:$bodytext;}
-    a:visited{ color:$bodytext;}
-    a:hover{ color:$link-hover;}
-    a:active{ color:$link-hover;}
-    a.glyphicon-info-sign{ color: darken($info, 10%); }
-    a:hover .glyphicon-info-sign, 
-    a:focus .glyphicon-info-sign{ color: darken($info, 20%);}
+.notice{ 
+  &.status:before{
+    height: 32px;
+    width: 32px;
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    padding-top:4px;
   }
+  &.status-alert:before{ padding-left:2px; }
+  &.status-danger:before{ padding-left:2px; }
+  &.status:hover:before{ }
+
+  h5, h6, p{
+    margin:0 0 0 40px;
+  }
+  p{ margin-bottom:-3px;}
+}
+
+ .notice{
+  a:link{ color:$text;}
+  a:visited{ color:$text;}
+  a:hover{ color:$link-hover;}
+  a:active{ color:$link-hover;}
+}
 
 
 // Status Lights ========================================================
 // Are in _sa-rag-status
 
 
-// List Items ========================================================
-  ul { // Removes bullet points globally
-    list-style-type: none;
-  }
 
-  
-  .list-group{ // Used in Dashboard/Support Docs panel .doc-list
-    margin-bottom:0px;
-    .group{
-      font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-      border-bottom:1px solid $bodytext;
-      padding-bottom:5px;
-      margin-bottom:5px;
-      border-top:1px solid $bodytext;
-      padding-top:5px;
-      margin-top:5px;
-    }
-    .group:first-of-type{
-      border-top:none;
-      padding-top:0px;
-      margin-top:0px;
-    }
-    .grouped{
-      border-bottom:1px solid white;
-      padding-bottom:5px;
-      margin-bottom:5px;
-    }
-  }
 
-   a.link-arrow:before{ // Used on Dashboard/Your Details, email link
-    font-family: 'FontAwesome';
-        content: "\f0a9" ;
-        padding-right:5px;
-        vertical-align:middle;
-        color:$client-colour;
-        a:visited:before{color:$client-colour;}
-  }
+// Doc Lists ======================================================
+// Used in Dashboard/Support Docs
 
-// Box content ========================================================
+.doc-list{ 
+  margin-bottom:0px;
+}
+.doc-list .title{
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+  border-bottom:1px solid $bodytext;
+  padding-bottom:5px;
+  margin-bottom:5px;
+  border-top:1px solid $bodytext;
+  padding-top:5px;
+  margin-top:5px;
+}
+.doc-list .title:first-of-type{
+  border-top:none;
+  padding-top:0px;
+  margin-top:0px;
+}
+.doc-list .link{
+  border-bottom:1px solid $grey06;
+  padding-bottom:5px;
+  margin-bottom:5px;
+}
+.panel-body .doc-list .link{
+  border-bottom-color: white;
+}
 
-  .box-content{ // Used on Dashboard/Notifications
-    .date {
-      font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-      background: $grey16;
-      color:white;
-      padding: 3px 10px;
-      margin: 10px -3px 8px -3px;
-      border-radius:20px;
-    }
 
-    .time {
-      font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-      border-top: 1px solid white;
-      padding-top: 10px;
-      margin-top: 10px;
-      margin-bottom: 5px;
-    }
-    .time:first-of-type{
-      border-top: none;
-      padding-top: 0px;
-    }
-    ul{ padding-left:10px; }
-  }
+// Notices ========================================================
+// Used on Dashboard/Notifications
+
+.notifications .date {
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+  background: $grey16;
+  color:white;
+  padding: 3px 10px;
+  margin: 10px -3px 8px -3px;
+  border-radius:20px;
+}
+
+.notifications .time {
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+  border-top: 1px solid $grey06;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.notifications .time:first-of-type{
+  border-top: none;
+  padding-top: 0px;
+}
+
+.panel-body .notifications .time{
+  border-top-color: white;
+}
+
+.panel-body .notifications:last-child {
+  margin-bottom:-15px;
+}
+.notifications ul{ padding-left:10px; }
+
 
 
 
@@ -444,6 +416,54 @@ img.user-guide-cover{
   width: 100%;
   }
 }
+
+
+// Messages ===========================================
+.message-group{
+  border-bottom: 1px solid white;
+}
+.message-group:last-of-type{
+  border-bottom: 1px solid transparent;
+}
+
+.panel-body .message-group:last-of-type{
+  margin-bottom: -10px;
+}
+
+.message{
+  position: relative;
+  border-bottom: 1px solid white;
+}
+
+.message:last-of-type{
+  border-bottom: 1px solid transparent;
+}
+
+.message h4{ }
+.message h6{ 
+  margin-top:-8px;
+  padding-bottom:3px;
+}
+.message p{ }
+
+.messages-collapse{
+
+  a:link{ color:$text;}
+  .glyphicon{color:$text;}
+  a:link.accordion-toggle:after{
+    font-family: 'FontAwesome';
+    content: "\f068"; // minus
+    float:right;
+    position: absolute;
+    top:0;
+    right:0;
+  }
+  a:link.accordion-toggle.collapsed:after{
+    font-family: 'FontAwesome';
+    content: "\f067"; // plus
+  }
+}
+
 
 
 
