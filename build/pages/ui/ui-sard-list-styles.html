@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>SARD UI : BS Tooltips</title>
+    <title>SARD UI : SARD Variable Columns</title>
     <link rel="icon" type="image/ico" href="../../assets/graphics/favicon.ico"/>
 
     <!-- Bootstrap -->
@@ -149,20 +149,20 @@
     <!-- ============================================================================ -->
     <!-- Breadcrumb -->
     <div class="breadcrumbs">
-    <div class="container">
-      <ol class="breadcrumb">
-        <li><a href="../../index.html">Home</a></li>
-        <li class="active">UI BS Tooltips</li>
-      </ol>
-    </div>
+      <div class="container">
+        <div class="row">
+          <ol class="breadcrumb">
+            <li><a href="../../index.html">Home</a></li>
+            <li class="active">UI SARD List Styles</li>
+          </ol>
+        </div>
+      </div>
     </div>
  
 
     <!-- ============================================================================ -->
     <!-- Page Header -->
-    <div class="container"> 
-    <div class=" page-header">
-
+    <div class="container page-header"> 
       <div class="row">
         <div class="col-xs-12">
           <div class="profile-image pull-left">
@@ -171,12 +171,11 @@
 
           <div class="page-title">
               <h4 class="user-name">&nbsp;</h4>
-              <h1 class="ui title">Bootstrap Components</h1>
+              <h1 class="ui title">SARD Components</h1>
           </div>
         </div> <!-- col-xs-12 -->
       </div> <!-- END Row -->
     </div> <!-- END page-header -->
-  </div> <!-- END container -->
 
 </div>  <!-- END top-section -->
 
@@ -188,9 +187,6 @@
 
     <!-- ============================================================================ -->
     <!-- MAIN CONTENT  - OPTIONAL  -->
-
-    
-
     <div class="sa-main-content">
 
       
@@ -262,80 +258,245 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
-            <h1>Tooltips & Popovers</h1>
-            <h4>To avoid visual clutter all should be set to float right of the list item they are within.</h4>
-            <p>&nbsp;</p>
-          </div> <!-- / Column -->
-        </div> <!-- / Row -->
+            <h1>List Styles</h1>
+            <h4>This page shows a range of List Styles used throught the system. Some, but not all, use list while others use divs and collapsable divs.  </h4>
+            <h4>&nbsp;</h4>
+          </div> <!-- END Column -->
+        </div> <!-- END Row -->
       
       
-          <!-- Notice Panel ============================================================================== -->
         <div class="row">
-           <div class="col-sm-6">
+          <div class="col-xs-12">
+            <h2>Notices</h2>
+            <p>Below shows a set of notices both within a Panel and without.</br>
+            Notices can be used to list a variety of links with their status applied.</p>
+          </div> <!-- END Column -->
       
-             <div class="panel panel-default">
+          <div class="col-xs-6">
+            <div class="panel panel-default">
               <div class="panel-heading">
-                <h3 class="panel-title">Notices<a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="This is an example of a popover" data-placement="bottom" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam massa sem, aliquet a sagittis sit amet, euismod hendrerit massa. Morbi lorem mauris, sagittis ut dapibus et, rutrum et risus. Phasellus in erat faucibus, venenatis risus et, congue diam. Maecenas feugiat sem in ante suscipit, et consequat justo ultricies. Donec a tincidunt dolor. Cras faucibus ipsum id laoreet pulvinar. Nulla porttitor metus eget mauris convallis mollis."></a></h3>
+                <h3 class="panel-title">Notices<a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="Popover title" data-placement="bottom" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam massa sem, aliquet a sagittis sit amet, euismod hendrerit massa. Morbi lorem mauris, sagittis ut dapibus et, rutrum et risus. Phasellus in erat faucibus, venenatis risus et, congue diam. Maecenas feugiat sem in ante suscipit, et conseuqat justo ultricies. Donec a tincidunt dolor. Cras faucibus ipsum id laoreet pulvinar. Nulla porttitor metus eget mauris convallis mollis. Proin tempus mi id tortor elementum lobortis eu quis dui. In id nisl congue, fermentum risus eget, fringilla tellus. Phasellus auctor diam vel porta efficitur. Nunc quis ante a mi egestas vulputate eget eu arcu. Nam dui arcu, commodo eu congue at, imperdiet maximus leo."></a></h3>
               </div>
               <div class="panel-body">
                 <div class="notice status status-success">
-                  <a href="">
-                    <h6>Status Success</h6>
-                    <p>This is an example of a Status Success.</p>
+                  <a href="#">
+                    <h6>Recommendation Due</h6>
+                    <p>Fri 31 Jan 2020</p>
                   </a>
                 </div>
                 <div class="notice status status-warning">
-                  <a href="">
-                    <h6>Status Warning</h6>
-                    <p>This is an example of a Status Warning.</p>
+                  <a href="#">
+                    <h6>Approved Clinician Expiry</h6>
+                    <p>Sun 22 Oct 2017</p>
                   </a>
                 </div>
                 <div class="notice status status-alert">
-                  <a href="">
-                    <h6>Status Alert</h6>
-                    <p>This is an example of a Status Alert.</p>
+                  <a class="pull-right glyphicon glyphicon-info-sign"  
+                  data-toggle="tooltip" 
+                  title="The <strong>GMC Registration Expiry</strong> is the date on which you normally renew your GMC registration. 
+                  This can be updated by clicking on 'Edit My Details' below. 
+                  If your GMC registration is renewed annually by direct debit this can be blank."></a>
+                  <a href="#">
+                    <h6>GMC Registration Expiry</h6>
+                    <p>Sat 01 Jul 2017</p>
                   </a>
                 </div>
                 <div class="notice status status-danger">
+                  <a href="#">
+                    <h6>Appraisal Due</h6>
+                    <p>Sat 01 Jul 2017</p>
+                  </a>
+                </div>
+                <div class="notice status status-success">
                   <a class="pull-right glyphicon glyphicon-info-sign"  
                   data-toggle="tooltip" 
-                  title="This is an example of a tootip."></a>
-                  <a href="">
-                    <h6>Status Danger</h6>
-                    <p>This is an example of a Status Danger.</p>
+                  title="Your <strong>MSF due date</strong> is 5 years after the date of your last complete MSF. 
+                  To have a complete MSF you must have completed the self assessment questionnaire, colleague feedback and patient feedback."></a>
+                  <a href="#">
+                    <h6>MSF Due</h6>
+                    <p>Wed 14 Jul 2021</p>
                   </a>
                 </div>
                 <div class="notice status status-none">
-                  <a class="pull-right glyphicon glyphicon-info-sign"  
-                  data-toggle="tooltip" 
-                  title="This is an example of a tootip."></a>
-                  <a href="">
-                    <h6>Status None</h6>
-                    <p>This is an example of a Status None.</p>
+                  <a href="#">
+                    <h6>Job Plan Due</h6>
+                    <p>Sun 01 Apr 2018</p>
                   </a>
                 </div>
               </div>
-            </div> <!-- / Panel -->
+            </div> <!-- END Panel -->
+          </div> <!-- END Col -->
       
-          </div> <!-- / Column -->
-      
-          <div class="col-sm-6">
-            <h4>Popovers</h4>
-            <p>Popovers are added by using a link with NO url, like this:</br>
-              <code>&lt;a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="Add popover title here" data-placement="bottom" data-content="Add popover content here."&gt;&lt;/a&gt;</code>
-            </p>
-            <h4>Tooltips</h4>
-            <p>Tooltips are added by adding the following:</br>
-              <code>&lt;a class="pull-right glyphicon glyphicon-info-sign"  
+          <div class="col-xs-6">
+              <div class="notice-group">
+                <h3>Notices<a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="Popover title" data-placement="bottom" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam massa sem, aliquet a sagittis sit amet, euismod hendrerit massa. Morbi lorem mauris, sagittis ut dapibus et, rutrum et risus. Phasellus in erat faucibus, venenatis risus et, congue diam. Maecenas feugiat sem in ante suscipit, et conseuqat justo ultricies. Donec a tincidunt dolor. Cras faucibus ipsum id laoreet pulvinar. Nulla porttitor metus eget mauris convallis mollis. Proin tempus mi id tortor elementum lobortis eu quis dui. In id nisl congue, fermentum risus eget, fringilla tellus. Phasellus auctor diam vel porta efficitur. Nunc quis ante a mi egestas vulputate eget eu arcu. Nam dui arcu, commodo eu congue at, imperdiet maximus leo."></a></h3>
+              
+                <div class="notice status status-success">
+                  <a href="#">
+                    <h6>Recommendation Due</h6>
+                    <p>Fri 31 Jan 2020</p>
+                  </a>
+                </div>
+                <div class="notice status status-warning">
+                  <a href="#">
+                    <h6>Approved Clinician Expiry</h6>
+                    <p>Sun 22 Oct 2017</p>
+                  </a>
+                </div>
+                <div class="notice status status-alert">
+                  <a class="pull-right glyphicon glyphicon-info-sign"  
                   data-toggle="tooltip" 
-                  title="This is an example of a tootip."&gt;&lt;/a&gt;</code>
-            </p>
-            <p>Tooltips are activated by hovering over them while Popovers are activated by clicking on them.</p>
+                  title="The <strong>GMC Registration Expiry</strong> is the date on which you normally renew your GMC registration. 
+                  This can be updated by clicking on 'Edit My Details' below. 
+                  If your GMC registration is renewed annually by direct debit this can be blank."></a>
+                  <a href="#">
+                    <h6>GMC Registration Expiry</h6>
+                    <p>Sat 01 Jul 2017</p>
+                  </a>
+                </div>
+                <div class="notice status status-danger">
+                  <a href="#">
+                    <h6>Appraisal Due</h6>
+                    <p>Sat 01 Jul 2017</p>
+                  </a>
+                </div>
+                <div class="notice status status-success">
+                  <a class="pull-right glyphicon glyphicon-info-sign"  
+                  data-toggle="tooltip" 
+                  title="Your <strong>MSF due date</strong> is 5 years after the date of your last complete MSF. 
+                  To have a complete MSF you must have completed the self assessment questionnaire, colleague feedback and patient feedback."></a>
+                  <a href="#">
+                    <h6>MSF Due</h6>
+                    <p>Wed 14 Jul 2021</p>
+                  </a>
+                </div>
+                <div class="notice status status-none">
+                  <a href="#">
+                    <h6>Job Plan Due</h6>
+                    <p>Sun 01 Apr 2018</p>
+                  </a>
+                </div>
+              </div> <!-- / notices -->
+          </div> <!-- / Col -->
+        </div> <!-- / Row -->
+      
+        <div class="row perf break"></div>
+      
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Doc Lists</h2>
+            <p>This is simple list of document links.</p>
           </div> <!-- END Column -->
       
+          <div class="col-xs-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Support Docs</h3>
+              </div>
+              <div class="panel-body">
+                <ul class="list-group doc-list">
+                  <li class="title">Trust Policy Documents</li>
+                  <li class="link link-arrow"><a href="https://s3-eu-west-1.amazonaws.com/sardjv-production/uploads/public/support_documents/sources/52b/463/15e/3e1/f15/747/000/3f2/original/appraisal.txt?1387553885" target="_blank">Appraisal Policy</a></li>
+                  <li class="link link-arrow"><a href="https://s3-eu-west-1.amazonaws.com/sardjv-production/uploads/public/support_documents/sources/57e/13f/4f8/025/420/c86/000/005/original/GSTT_DBS_declaration.docx?1474379599" target="_blank">DBS Declaration</a></li>
+                </ul>
+              </div>
+            </div> <!-- END Panel -->
+          </div> <!-- / Col -->
       
+          <div class="col-xs-6">
+            <div class="list-group">
+                <h3 class="">Support Docs</h3>
+                <ul class="doc-list">
+                  <li class="title">Trust Policy Documents</li>
+                  <li class="link link-arrow"><a href="https://s3-eu-west-1.amazonaws.com/sardjv-production/uploads/public/support_documents/sources/52b/463/15e/3e1/f15/747/000/3f2/original/appraisal.txt?1387553885" target="_blank">Appraisal Policy</a></li>
+                  <li class="link link-arrow"><a href="https://s3-eu-west-1.amazonaws.com/sardjv-production/uploads/public/support_documents/sources/57e/13f/4f8/025/420/c86/000/005/original/GSTT_DBS_declaration.docx?1474379599" target="_blank">DBS Declaration</a></li>
+                </ul>
+            </div>
+          </div> <!-- / Col -->
         </div> <!-- / Row -->
-      </div> <!-- / Container -->
+      
+        <div class="row perf break"></div>
+      
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Notifications</h2>
+            <p>Notifications</p>
+          </div> <!-- END Column -->
+      
+          <div class="col-xs-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Your Notifications</h3>
+              </div>
+              <div class="panel-body">
+                <div class="notifications">
+                <p class="date">Sat, 10 Dec 2016</p>
+                <ul class="link-arrow">
+                  <h6 class="time">01:16PM</h6>
+                  <li><p><a href="https://demo.sardjv.co.uk/users/2-3/eleave_calendar">Dr Janet T Johnson approved a leave period</a></p></li>
+                </ul>
+                  <p class="date">Thu, 08 Dec 2016</p>
+                <ul class="link-arrow">
+                  <h6 class="time">10:41 AM</h6>
+                  <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith is now complete</a></p></li>
+                  <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith has been signed off by  Laura Gordon</a></p></li>
+                  <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith has been signed off by Dr Sophie Buijsen</a></p></li>
+                  <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith has been signed off by Dr John T Smith</a></p></li>
+                  <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith is ready to sign off and requires your signature</a></p></li>
+                  <h6 class="time">09:30 AM</h6>
+                  <li><p><a href="https://demo.sardjv.co.uk/users/2-3/eleave_calendar">Dr Janet T Johnson approved a leave period</a></p></li>
+                </ul>
+                <p class="date">Thu, 17 Nov 2016</p>
+                <ul class="link-arrow">
+                  <h6 class="time">03:33 PM</h6>
+                  <li><p><a href="https://demo.sardjv.co.uk/users/2-3/appraisals/jul2016-1/portfolio#domain_attributes/5034dfb2e3e1f1226d00000c/appraisal_datasets/5034e01ee3e1f12443000055">Evidence uploaded by  SARD System was attached to your portfolio Jul 2016</a></p></li>
+                  <h6 class="time">03:32PM</h6>
+                  <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/555c56c1f2a39f7ff900017f">The Job Plan Apr 2017 for Dr John T Smith is now complete</a></p></li>
+                  <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/555c56c1f2a39f7ff900017f">The Job Plan Apr 2017 for Dr John T Smith has been signed off by Dr Sophie Buijsen</a></p></li>
+                </ul>
+                </div>
+              </div>
+              <div class="perf-wht"></div>
+              <div class="panel-body button">
+                <a href="#" class="btn btn-primary">View All Notifications</a>
+              </div>
+            </div> <!-- / Panel -->
+          </div> <!-- / Col -->
+      
+          <div class="col-xs-6">
+              <div class="notifications">
+                <h3 class="">Your Notifications</h3>
+                <p class="date">Sat, 10 Dec 2016</p>
+                <ul class="link-arrow">
+                  <h6 class="time">01:16PM</h6>
+                  <li><p><a href="https://demo.sardjv.co.uk/users/2-3/eleave_calendar">Dr Janet T Johnson approved a leave period</a></p></li>
+                </ul>
+                  <p class="date">Thu, 08 Dec 2016</p>
+                <ul class="link-arrow">
+                  <h6 class="time">10:41 AM</h6>
+                  <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith is now complete</a></p></li>
+                  <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith has been signed off by  Laura Gordon</a></p></li>
+                  <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith has been signed off by Dr Sophie Buijsen</a></p></li>
+                  <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith has been signed off by Dr John T Smith</a></p></li>
+                  <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith is ready to sign off and requires your signature</a></p></li>
+                  <h6 class="time">09:30 AM</h6>
+                  <li><p><a href="https://demo.sardjv.co.uk/users/2-3/eleave_calendar">Dr Janet T Johnson approved a leave period</a></p></li>
+                </ul>
+                <p class="date">Thu, 17 Nov 2016</p>
+                <ul class="link-arrow">
+                  <h6 class="time">03:33 PM</h6>
+                  <li><p><a href="https://demo.sardjv.co.uk/users/2-3/appraisals/jul2016-1/portfolio#domain_attributes/5034dfb2e3e1f1226d00000c/appraisal_datasets/5034e01ee3e1f12443000055">Evidence uploaded by  SARD System was attached to your portfolio Jul 2016</a></p></li>
+                  <h6 class="time">03:32PM</h6>
+                  <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/555c56c1f2a39f7ff900017f">The Job Plan Apr 2017 for Dr John T Smith is now complete</a></p></li>
+                  <li><p><a href="https://demo.sardjv.co.uk/online_job_plans/555c56c1f2a39f7ff900017f">The Job Plan Apr 2017 for Dr John T Smith has been signed off by Dr Sophie Buijsen</a></p></li>
+                </ul>
+                <a href="#" class="btn btn-primary">View All Notifications</a>
+              </div><!-- / notifications -->
+          </div> <!-- / Col -->
+        </div> <!-- / Row -->
+      
+      
+      </div> <!-- END Container -->
 
       
     </div> <!-- END Main Content -->
