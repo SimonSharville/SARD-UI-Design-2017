@@ -200,7 +200,7 @@ li p { // This adjust the spacing and indents of multi line links in a list
 
   // ARROW =============================================================================
   .link-arrow{ // This places the arrow icon in front of all text links in a single cell
-    p{padding-left: 1.3em ;
+    li, p{padding-left: 1.3em ;
       text-indent: -1.3em ;
     }
     a:link:before{
