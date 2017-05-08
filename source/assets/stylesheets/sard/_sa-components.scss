@@ -419,19 +419,37 @@ img.user-guide-cover{
 
 
 // Messages ===========================================
-.message-group{
-  border-bottom: 1px solid white;
-}
-.message-group:last-of-type{
-  border-bottom: 1px solid transparent;
+
+.messages{
+
 }
 
-.panel-body .message-group:last-of-type{
+.messages h3{
+  padding-bottom:10px;
+  border-bottom: 1px solid $grey06;
+}
+
+ .messages .panel-heading h3{
+  padding-bottom:0px;
+  border-bottom: none;
+}
+
+.message-group{
+  border-bottom: 1px solid $grey06;
+}
+.panel-body .message-group{
+  border-bottom-color: white;
+}
+.message-group:last-of-type{
   margin-bottom: -10px;
+  border-bottom: 1px solid transparent;
 }
 
 .message{
   position: relative;
+  border-bottom: 1px solid $grey06;
+}
+.panel-body .message{
   border-bottom: 1px solid white;
 }
 

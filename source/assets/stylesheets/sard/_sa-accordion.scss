@@ -1,5 +1,6 @@
 // SA-Accordion ================================================
 
+
 .sa-accordion .panel-heading .accordion-toggle {
   display: block;
 }
@@ -32,6 +33,10 @@
 // Colouring =========================================================
 $accordian: $grey14;
 
+.sa-accordion{
+  // border-bottom:1px solid $accordian;
+}
+
 /* change color of open class */
 .sa-accordion .panel-heading h3{ 
   background-color: darken($accordian, 15%); 
@@ -63,6 +68,7 @@ $accordian: $grey14;
   border:none;
   border-left:1px solid $accordian;
   border-right:1px solid $accordian;
+  border-bottom:1px solid $accordian;
 }
 
 .sa-accordion:last-of-type > .panel-heading + .panel-collapse > .panel-body{
