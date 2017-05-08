@@ -23,3 +23,27 @@
   color: $admin-colour-dark;
 }
 
+
+
+// Trust Chart Diagram ===================================
+
+.admin-db #trust_chart{
+  // background-color:red;
+  position: relative;
+  top:-20px;
+  left:-170px;
+}
+
+.admin-db #trust_chart .rect{
+  fill:none;
+  x:100;
+  y:20;
+}
+
+.admin-db #trust_chart .title{
+  display:none;
+}
+
+.admin-db #results{
+  margin-bottom:30px;
+}

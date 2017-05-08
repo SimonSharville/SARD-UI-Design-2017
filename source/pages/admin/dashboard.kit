@@ -24,7 +24,7 @@
     <![endif]-->
     <link href="../../assets/stylesheets/sard-styles.css" rel="stylesheet">
   </head>
-<body id="admin" class="admin">
+<body id="admin" class="admin admin-db">
 
 <div id="top"></div>
 
@@ -84,90 +84,120 @@
           <h3>Welcome Bella</h3>
           <h5>This is your dashboard where you will find messages and quick links to important sections of your Admin area.</h5>
         </div>
-      </div>
+      </div> <!-- Row -->
 
-      <div class="col-xs-6"> <!-- Messages -->
-        <div class="panel panel-admin sa-accordion" id="accordion" role="tablist" aria-multiselectable="true">
-          <div class="panel-heading" id="heading_four" role="tab">
-          <h3 class="panel-title">
-            <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="Admin_DB_Messages" aria-expanded="false" data-toggle="collapse" data-target="#Admin_DB_Messages">SARD Messages
-              <i class="more-less glyphicon glyphicon-minus pull-right"></i>
-            </a>
-          </h3>
-          </div>
-          <div id="Admin_DB_Messages" class="panel-collapse collapse in">
-            <div class="panel-body">
+      <div class="row">
+        <div class="col-xs-6"> <!-- Messages -->
+          <div class="panel panel-admin sa-accordion" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel-heading" id="heading_four" role="tab">
+              <h3 class="panel-title">
+                <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="Admin_DB_Messages" aria-expanded="false" data-toggle="collapse" data-target="#Admin_DB_Messages">SARD Messages
+                  <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+                </a>
+              </h3>
+            </div>
+            <div id="Admin_DB_Messages" class="panel-collapse collapse in">
+              <div class="panel-body">
 
-              <div class="message-group">
-                <div class="messages-collapse">
+                <div class="message-group">
+                  <div class="messages-collapse">
+                    <div class="message">
+                      <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="ADB_Message_01" aria-expanded="false" data-toggle="collapse" data-target="#ADB_Message_01">
+                        <!-- <i class="more-less glyphicon glyphicon-minus pull-right"></i> -->
+                        <h4>Collapsable Message</h4>
+                        <h6>Message Subtitle</h6>
+                      </a>
+                      <div id="ADB_Message_01"class="collapse ">
+                        <p>Hello</p>
+                      </div>
+                    </div> <!-- / message -->
+
+                    <div class="message">
+                      <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="ADB_Message_02" aria-expanded="false" data-toggle="collapse" data-target="#ADB_Message_02">
+                        <!-- <i class="more-less glyphicon glyphicon-minus pull-right"></i> -->
+                        <h4>Message</h4>
+                      </a>
+                      <div id="ADB_Message_02"class="collapse ">
+                        <p>Hello2</p>
+                      </div>
+                    </div> <!-- / message -->
+                  </div> <!-- / messages-collapse-->
+                </div> <!-- / message-group-->
+                
+                <div class="message-group">
                   <div class="message">
-                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="ADB_Message_01" aria-expanded="false" data-toggle="collapse" data-target="#ADB_Message_01">
-                      <!-- <i class="more-less glyphicon glyphicon-minus pull-right"></i> -->
-                      <h4>Collapsable Message</h4>
-                      <h6>Message Subtitle</h6>
-                    </a>
-                    <div id="ADB_Message_01"class="collapse ">
-                      <p>Hello</p>
-                    </div>
+                    <h4>Non-Collapsable Message</h4>
+                    <h6>Message Subtitle</h6>
+                    <p>A group of messages should sit within a message-group, whether they are collapsable or not. If you wish to mix collapsable messages with non-collapsable messages, then the two types should be withing separate message-groups. </p>
                   </div> <!-- / message -->
-
                   <div class="message">
-                    <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="ADB_Message_02" aria-expanded="false" data-toggle="collapse" data-target="#ADB_Message_02">
-                      <!-- <i class="more-less glyphicon glyphicon-minus pull-right"></i> -->
-                      <h4>Message</h4>
-                    </a>
-                    <div id="ADB_Message_02"class="collapse ">
-                      <p>Hello2</p>
-                    </div>
+                    <h4>Message Title should be H4</h4>
+                    <h6>Message Subtitle should be H6</h6>
+                    <p>Message should be p.</p>
+                    <p>A group of messages should sit within a message-group, whether they are collapsable or not. If you wish to mix collapsable messages with non-collapsable messages, then the two types should be withing separate message-groups. </p>
                   </div> <!-- / message -->
-                </div> <!-- / messages-collapse-->
-              </div> <!-- / message-group-->
-              
-              <div class="message-group">
-              <div class="message">
-                <h4>Non-Collapsable Message</h4>
-                <h6>Message Subtitle</h6>
-                <p>A group of messages should sit within a message-group, whether they are collapsable or not. If you wish to mix collapsable messages with non-collapsable messages, then the two types should be withing separate message-groups. </p>
-              </div> <!-- / message -->
-              <div class="message">
-                <h4>Message Title should be H4</h4>
-                <h6>Message Subtitle should be H6</h6>
-                <p>Message should be p.</p>
-                <p>A group of messages should sit within a message-group, whether they are collapsable or not. If you wish to mix collapsable messages with non-collapsable messages, then the two types should be withing separate message-groups. </p>
-              </div> <!-- / message -->
-            </div> <!-- / message-group-->
+                </div> <!-- / message-group-->
 
-            </div> <!-- / panel-body -->
-            <div class="panel-footer">
-              Panel footer
+                <button type="button" class="btn btn-sm btn-admin pull-right">View Appraisal Compliance</button>
+              </div> <!-- / panel-body -->
+            </div> <!-- / panel-collapse -->
+          </div> <!-- / panel -->
+        </div> <!-- / Col --> <!-- / Messages -->
+
+        <div class="col-xs-6"> <!-- Appraisal Compliance -->
+          <div class="panel panel-admin sa-accordion" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel-heading" id="heading_four" role="tab">
+            <h3 class="panel-title">
+              <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="Admin_DB_AppraisalComplience" aria-expanded="false" data-toggle="collapse" data-target="#Admin_DB_AppraisalComplience">Appraisal Compliance
+                <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+              </a>
+            </h3>
             </div>
-          </div>
-        </div> <!-- / panel -->
-       </div> <!-- / Col --> <!-- / Messages -->
+            <div id="Admin_DB_AppraisalComplience" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <!-- @import "articles/appraisals/trust-chart.kit" -->
+                <button type="button" class="btn btn-sm btn-admin pull-right">View Appraisal Compliance</button>
+              </div>
+            </div> <!-- / panel-collapse -->
+          </div> <!-- / panel -->
+        </div> <!-- / Col --> <!-- / Appraisal Compliance -->
 
-       <div class="col-xs-6"> <!-- Appraisal Complience -->
-        <div class="panel panel-admin sa-accordion" id="accordion" role="tablist" aria-multiselectable="true">
-          <div class="panel-heading" id="heading_four" role="tab">
-          <h3 class="panel-title">
-            <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="Admin_DB_AppraisalComplience" aria-expanded="false" data-toggle="collapse" data-target="#Admin_DB_AppraisalComplience">Appraisal Complience
-              <i class="more-less glyphicon glyphicon-minus pull-right"></i>
-            </a>
-          </h3>
-          </div>
-          <div id="Admin_DB_AppraisalComplience" class="panel-collapse collapse in">
-            <div class="panel-body">
-              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+        <div class="col-xs-6"> <!-- MSF Compliance -->
+          <div class="panel panel-admin sa-accordion" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel-heading" id="heading_four" role="tab">
+            <h3 class="panel-title">
+              <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="Admin_DB_MFSComplience" aria-expanded="false" data-toggle="collapse" data-target="#Admin_DB_MFSComplience">MSF Compliance
+                <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+              </a>
+            </h3>
             </div>
-            <div class="panel-footer">
-              Panel footer
+            <div id="Admin_DB_MFSComplience" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <!-- @import "articles/msf/trust-chart.kit" -->
+                <button type="button" class="btn btn-sm btn-admin pull-right">View MSF Compliance</button>
+              </div>
+            </div> <!-- / panel-collapse -->
+          </div> <!-- / panel -->
+        </div> <!-- / Col --> <!-- / MSF Compliance -->
+
+        <div class="col-xs-12"> <!-- Advanced Job Plan Report -->
+          <div class="panel panel-admin sa-accordion" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel-heading" id="heading_four" role="tab">
+              <h3 class="panel-title">
+                <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="Admin_DB_JobPlanResults" aria-expanded="false" data-toggle="collapse" data-target="#Admin_DB_JobPlanResults">Advanced Job Plan Report
+                  <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+                </a>
+              </h3>
             </div>
-          </div>
-        </div> <!-- / panel -->
-       </div> <!-- / Col --> <!-- / Appraisal Complience -->
-
-
-
-     </div> <!-- / row -->
+            <div id="Admin_DB_JobPlanResults" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <!-- @import "articles/jobplans/results.kit" -->
+                <button type="button" class="btn btn-sm btn-admin pull-right">View Job Plan Report</button>
+              </div>
+            </div> <!-- / panel-collapse -->
+          </div> <!-- / panel -->
+        </div><!-- / Col --> <!-- / Advanced Job Plan Report -->
+      </div> <!-- Row -->
         
 
       

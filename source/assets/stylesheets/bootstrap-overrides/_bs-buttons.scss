@@ -175,6 +175,18 @@ $btn-light: $grey04;
 .btn-client:focus { background-color: darken($client-colour, 17%)!important;}
 .btn-client:active,  { background-color: darken($client-colour, 20%)!important;}
 
+.btn-admin { background-color: darken($admin-colour, 0%); color:white!important;}
+.btn-admin:visited { background-color: darken($admin-colour, 0%); color:white!important;}
+.btn-admin:hover { background-color: darken($admin-colour, 5%); color:white!important;}
+.btn-admin:focus { background-color: darken($admin-colour, 7%)!important;}
+.btn-admin:active,  { background-color: darken($admin-colour, 10%)!important;}
+
+.btn-admin-dark { background-color: darken($admin-colour, 20%); color:white!important;}
+.btn-admin-dark:visited { background-color: darken($admin-colour, 20%); color:white!important;}
+.btn-admin-dark:hover { background-color: darken($admin-colour, 25%); color:white!important;}
+.btn-admin-dark:focus { background-color: darken($admin-colour, 25%)!important;}
+.btn-admin-dark:active,  { background-color: darken($admin-colour, 30%)!important;}
+
 
 .btn-link{
   color: $turq;

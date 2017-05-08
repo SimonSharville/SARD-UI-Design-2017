@@ -1866,6 +1866,42 @@ button:hover {
 .btn-client:active {
   background-color: #004c4c !important; }
 
+.btn-admin {
+  background-color: #e50073;
+  color: white !important; }
+
+.btn-admin:visited {
+  background-color: #e50073;
+  color: white !important; }
+
+.btn-admin:hover {
+  background-color: #cc0066;
+  color: white !important; }
+
+.btn-admin:focus {
+  background-color: #c10061 !important; }
+
+.btn-admin:active {
+  background-color: #b20059 !important; }
+
+.btn-admin-dark {
+  background-color: #7f0040;
+  color: white !important; }
+
+.btn-admin-dark:visited {
+  background-color: #7f0040;
+  color: white !important; }
+
+.btn-admin-dark:hover {
+  background-color: #660033;
+  color: white !important; }
+
+.btn-admin-dark:focus {
+  background-color: #660033 !important; }
+
+.btn-admin-dark:active {
+  background-color: #4c0026 !important; }
+
 .btn-link {
   color: #00B2B2;
   -webkit-box-shadow: none;
@@ -2604,7 +2640,6 @@ img.user-guide-cover {
   border-bottom-color: white; }
 
 .message-group:last-of-type {
-  margin-bottom: -10px;
   border-bottom: 1px solid transparent; }
 
 .message {
@@ -5754,3 +5789,19 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 
 .admin .breadcrumb > .active {
   color: #b20059; }
+
+.admin-db #trust_chart {
+  position: relative;
+  top: -20px;
+  left: -170px; }
+
+.admin-db #trust_chart .rect {
+  fill: none;
+  x: 100;
+  y: 20; }
+
+.admin-db #trust_chart .title {
+  display: none; }
+
+.admin-db #results {
+  margin-bottom: 30px; }
