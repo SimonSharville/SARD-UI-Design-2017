@@ -447,6 +447,9 @@ ul {
   list-style-type: none;
   list-style: none; }
 
+ol {
+  padding-left: 30px; }
+
 ul.bullet-list {
   padding-left: 12px;
   list-style: none; }
@@ -2652,9 +2655,15 @@ img.user-guide-cover {
 .message:last-of-type {
   border-bottom: 1px solid transparent; }
 
+.message h4 {
+  color: #E50073; }
+
+.admin-db .message h4 {
+  color: #211F0F; }
+
 .message h6 {
   margin-top: -8px;
-  padding-bottom: 3px; }
+  padding-bottom: 2px; }
 
 .messages-collapse a:link {
   color: #211F0F; }
@@ -2662,7 +2671,7 @@ img.user-guide-cover {
 .messages-collapse .glyphicon {
   color: #211F0F; }
 
-.messages-collapse a:link.accordion-toggle:after {
+.messages-collapse a:link.accordion-toggle[aria-expanded="true"]:after {
   font-family: 'FontAwesome';
   content: "\f068";
   float: right;
@@ -2670,9 +2679,13 @@ img.user-guide-cover {
   top: 0;
   right: 0; }
 
-.messages-collapse a:link.accordion-toggle.collapsed:after {
+.messages-collapse a:link.accordion-toggle[aria-expanded="false"]:after {
   font-family: 'FontAwesome';
-  content: "\f067"; }
+  content: "\f067";
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0; }
 
 .ui.title {
   margin-top: -10px; }
