@@ -441,7 +441,6 @@ img.user-guide-cover{
   border-bottom-color: white;
 }
 .message-group:last-of-type{
-  // margin-bottom: -10px;
   border-bottom: 1px solid transparent;
 }
 
@@ -457,18 +456,19 @@ img.user-guide-cover{
   border-bottom: 1px solid transparent;
 }
 
-.message h4{ }
+.message h4{ color: $admin-colour;}
+.admin-db .message h4{ color: $text;}
+
 .message h6{ 
   margin-top:-8px;
-  padding-bottom:3px;
+  padding-bottom:2px;
 }
 .message p{ }
 
 .messages-collapse{
-
   a:link{ color:$text;}
   .glyphicon{color:$text;}
-  a:link.accordion-toggle:after{
+  a:link.accordion-toggle[aria-expanded="true"]:after{
     font-family: 'FontAwesome';
     content: "\f068"; // minus
     float:right;
@@ -476,9 +476,13 @@ img.user-guide-cover{
     top:0;
     right:0;
   }
-  a:link.accordion-toggle.collapsed:after{
+  a:link.accordion-toggle[aria-expanded="false"]:after{
     font-family: 'FontAwesome';
     content: "\f067"; // plus
+    float:right;
+    position: absolute;
+    top:0;
+    right:0;
   }
 }
 
