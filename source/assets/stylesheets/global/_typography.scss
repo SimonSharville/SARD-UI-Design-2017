@@ -455,10 +455,10 @@ li p { // This adjust the spacing and indents of multi line links in a list
   }
 
 
-// Glyphicons =========================================================================
+// Glyphicons  & Font Awesome =========================================================================
 
   .glyphicon-ok{color:$green;}
   .glyphicon-remove{color:$red;}
   .glyphicon-minus{color:$grey16;}
-  .glyphicon{ padding: 0 5px 0 0;}
+  .glyphicon, .fa{ padding: 0 5px 0 0;}
 

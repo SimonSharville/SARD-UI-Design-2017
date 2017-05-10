@@ -97,25 +97,25 @@ $accordian: $grey14;
 
 /* change color of open class */
 .panel-admin.sa-accordion .panel-heading h3{ 
-  background-color: darken($admin-colour, 15%); 
+  background-color: darken($admin-colour, 0%); 
 }
 
 .panel-admin.sa-accordion .panel-heading h3:hover{
-  background-color:darken($admin-colour, 20%);
+  background-color:darken($admin-colour, 5%);
 }
 .panel-admin.sa-accordion .panel-heading h3:active{
-  background-color:darken($admin-colour, 25%);
+  background-color:darken($admin-colour, 10%);
 }
 
 /* change color of collapsed class */
 .panel-admin.sa-accordion .collapsed { 
-  background-color: darken($admin-colour, 5%); 
+  background-color: darken($admin-colour, 0%); 
 }
 .panel-admin.sa-accordion .collapsed:hover { 
-  background-color: darken($admin-colour, 10%); 
+  background-color: darken($admin-colour, 5%); 
 }
 .panel-admin.sa-accordion .collapsed:active { 
-  background-color: darken($admin-colour, 15%); 
+  background-color: darken($admin-colour, 10%); 
 }
 
 .panel-admin.sa-accordion .panel-heading + .panel-collapse > .panel-body{ 
@@ -123,5 +123,5 @@ $accordian: $grey14;
 }
 
 .panel-admin.sa-accordion .panel-footer{
-  background-color: darken($admin-colour, 5%);
+  background-color: darken($admin-colour, 0%);
 }

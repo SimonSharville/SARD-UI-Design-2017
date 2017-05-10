@@ -693,7 +693,7 @@ p.link-email {
 .glyphicon-minus {
   color: #403D3D; }
 
-.glyphicon {
+.glyphicon, .fa {
   padding: 0 5px 0 0; }
 
 * {
@@ -1286,22 +1286,21 @@ body {
   border-bottom: 1px solid #211F0F; }
 
 .panel-admin > .panel-heading {
-  background-color: #b20059;
+  background-color: #e50073;
   color: white;
   border: 0; }
 
 .panel-admin > .panel-body {
-  background-color: #e50073;
-  color: white; }
+  background-color: #edebeb; }
 
 .panel-admin > .perf-wht {
-  background-color: #e50073; }
+  background-color: transparent; }
 
 .panel-admin > .perf-grey {
-  background-color: #e50073; }
+  background-color: transparent; }
 
 .panel-admin > .panel-footer {
-  background-color: #7f0040;
+  background-color: #e50073;
   color: white;
   border: 0; }
 
@@ -2054,12 +2053,16 @@ a.glyphicon-info-sign {
   outline: none !important; }
 
 .pagination > li > a:hover,
-.pagination > li > span:hover,
+.pagination > li > span:hover {
+  color: white;
+  background-color: #007f7f;
+  border-color: #007f7f; }
+
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   color: white;
-  background-color: #004D4D;
-  border-color: #004D4D; }
+  background-color: #006666;
+  border-color: #006666; }
 
 .pagination > .active > a,
 .pagination > .active > span,
@@ -2069,6 +2072,33 @@ a.glyphicon-info-sign {
 .pagination > .active > span:focus {
   background-color: #00B2B2;
   border-color: #00B2B2; }
+
+.admin .pagination > li > a,
+.admin .pagination > li > span {
+  color: #E50073;
+  outline: none !important; }
+
+.admin .pagination > li > a:hover,
+.admin .pagination > li > span:hover {
+  color: white;
+  background-color: #b20059;
+  border-color: #b20059; }
+
+.admin .pagination > li > a:focus,
+.admin .pagination > li > span:focus {
+  color: white;
+  background-color: #99004d;
+  border-color: #99004d; }
+
+.admin .pagination > .active > a,
+.admin .pagination > .active > span,
+.admin .pagination > .active > a:hover,
+.admin .pagination > .active > span:hover,
+.admin .pagination > .active > a:focus,
+.admin .pagination > .active > span:focus {
+  background-color: #E50073;
+  border-color: #E50073;
+  color: white; }
 
 .modal-dialog {
   margin-top: 30px; }
@@ -2441,9 +2471,23 @@ a.glyphicon-info-sign {
   margin-top: 20px;
   margin-bottom: 30px; }
 
+hr {
+  height: 1px;
+  color: #211F0F;
+  background: #ed1d61;
+  border: 0;
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
 .divide-rule {
   border-top: 1px solid #B5B0B0;
   margin: 20px 10px 20px 10px; }
+
+.divider {
+  border-top: 1px solid #211F0F; }
+
+.divider-grey {
+  border-top: 1px solid #B5B0B0; }
 
 .perf {
   background-image: url("../graphics/dot_grey04.png");
@@ -2474,15 +2518,17 @@ a.glyphicon-info-sign {
   background-image: url("../graphics/dot_grey06.png");
   background-repeat: repeat-x;
   height: 16px;
-  background-position: -4px 0px;
-  margin: 15px -20px 25px -20px; }
+  background-position: -4px 0px; }
 
 .perf-wht {
   background-image: url("../graphics/dot_white.png");
   background-repeat: repeat-x;
   height: 16px;
-  background-position: -4px 0px;
-  margin: 15px -20px 25px -20px; }
+  background-position: -4px 0px; }
+
+.panel-body .perf-wht {
+  margin-left: -15px;
+  margin-right: -15px; }
 
 .break {
   margin-left: -100%;
@@ -4023,29 +4069,29 @@ input, button, select, textarea {
 
 /* change color of open class */
 .panel-admin.sa-accordion .panel-heading h3 {
-  background-color: #99004d; }
+  background-color: #e50073; }
 
 .panel-admin.sa-accordion .panel-heading h3:hover {
-  background-color: #7f0040; }
+  background-color: #cc0066; }
 
 .panel-admin.sa-accordion .panel-heading h3:active {
-  background-color: #660033; }
+  background-color: #b20059; }
 
 /* change color of collapsed class */
 .panel-admin.sa-accordion .collapsed {
-  background-color: #cc0066; }
+  background-color: #e50073; }
 
 .panel-admin.sa-accordion .collapsed:hover {
-  background-color: #b20059; }
+  background-color: #cc0066; }
 
 .panel-admin.sa-accordion .collapsed:active {
-  background-color: #99004d; }
+  background-color: #b20059; }
 
 .panel-admin.sa-accordion .panel-heading + .panel-collapse > .panel-body {
   border: none; }
 
 .panel-admin.sa-accordion .panel-footer {
-  background-color: #cc0066; }
+  background-color: #e50073; }
 
 .table-default {
   background-color: #EDEBEB; }
@@ -5092,13 +5138,31 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   color: #00B2B2; }
 
 #sard-search-input .glyphicon-search:hover {
-  color: #004D4D; }
+  color: #007f7f; }
 
 #sard-search-input .glyphicon-search:active {
-  color: #000078; }
+  color: #006666; }
 
 #sard-search-input .btn {
   top: 0px; }
+
+.sard-search .results {
+  padding-top: 5px;
+  margin-bottom: -5px;
+  color: white; }
+
+.admin .sard-search {
+  background-color: #E50073; }
+
+.admin #sard-search-input .glyphicon-search {
+  font-size: 23px;
+  color: #E50073; }
+
+.admin #sard-search-input .glyphicon-search:hover {
+  color: #b20059; }
+
+.admin #sard-search-input .glyphicon-search:active {
+  color: #99004d; }
 
 table.dataTable {
   clear: both;
@@ -5818,3 +5882,23 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 
 .admin-db #results {
   margin-bottom: 30px; }
+
+.options {
+  margin-bottom: 20px; }
+
+#users.table > thead > tr > th,
+#users.table > tbody > tr > th,
+#users.table > tfoot > tr > th,
+#users.table > thead > tr > td,
+#users.table > tbody > tr > td,
+#users.table > tfoot > tr > td {
+  padding: 5px 5px 5px 0px;
+  vertical-align: middle; }
+
+#users.table .user-photo {
+  width: 60px; }
+
+#users.table .edit {
+  font-size: 1.5em;
+  float: right;
+  margin-right: -5px; }
