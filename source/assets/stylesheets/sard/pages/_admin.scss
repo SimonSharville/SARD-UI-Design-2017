@@ -47,3 +47,29 @@
 .admin-db #results{
   margin-bottom:30px;
 }
+
+// Users ===================================================
+
+.options{
+  margin-bottom: 20px;
+}
+
+#users.table > thead > tr > th,
+  #users.table > tbody > tr > th,
+  #users.table > tfoot > tr > th,
+  #users.table > thead > tr > td,
+  #users.table > tbody > tr > td,
+  #users.table > tfoot > tr > td{
+  padding: 5px 5px 5px 0px ;
+  vertical-align:middle;
+}
+
+#users.table .user-photo{
+  width:60px;
+}
+#users.table .edit{
+  font-size:1.5em;
+  float:right;
+  margin-right:-5px;
+}
+

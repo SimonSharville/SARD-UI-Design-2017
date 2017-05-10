@@ -38,13 +38,36 @@
     color:$turq;
 }
 #sard-search-input .glyphicon-search:hover{
-    color:$teal;
+    color:darken($turq, 10%);
 }
 #sard-search-input .glyphicon-search:active{
-    color:$ink;
+    color:darken($turq, 15%);
 }
 
 #sard-search-input .btn{
   top: 0px; // Ths overrides the sard button styles for movement when pressed
 }
 
+.sard-search .results{
+  padding-top:5px;
+  margin-bottom:-5px;
+  color:white;
+}
+
+// Admin Colours ========================
+
+
+.admin .sard-search{
+background-color:$admin-colour;
+}
+
+.admin #sard-search-input .glyphicon-search{
+    font-size: 23px;
+    color:$admin-colour;
+}
+.admin #sard-search-input .glyphicon-search:hover{
+    color:darken($admin-colour, 10%);
+}
+.admin #sard-search-input .glyphicon-search:active{
+    color:darken($admin-colour, 15%);
+}
