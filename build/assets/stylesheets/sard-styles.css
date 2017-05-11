@@ -430,6 +430,18 @@ a:hover {
 a:active {
   color: #009999; }
 
+a:link .fa {
+  color: #403D3D; }
+
+a:visited .fa {
+  color: #403D3D; }
+
+a:hover .fa {
+  color: #009999; }
+
+a:active .fa {
+  color: #009999; }
+
 .text-link:link {
   color: #007f7f; }
 
@@ -684,6 +696,9 @@ p.link-email {
   padding-left: 1.3em;
   text-indent: -1.3em; }
 
+.glyphicon, .fa {
+  padding: 0 5px 0 0; }
+
 .glyphicon-ok {
   color: #359E00; }
 
@@ -692,9 +707,6 @@ p.link-email {
 
 .glyphicon-minus {
   color: #403D3D; }
-
-.glyphicon, .fa {
-  padding: 0 5px 0 0; }
 
 * {
   -webkit-font-smoothing: antialiased !important;
@@ -5886,6 +5898,26 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 .options {
   margin-bottom: 20px; }
 
+.options .btn {
+  margin-bottom: 5px; }
+
+.options .divider {
+  margin: 10px 5px; }
+
+@media (min-width: 768px) {
+  .options .btn {
+    display: block;
+    position: relative;
+    width: 100%; } }
+
+#users.table {
+  border-bottom: 1px solid #B5B0B0;
+  width: calc(100% - 1px); }
+
+#users.table tbody tr {
+  box-sizing: border-box;
+  border-right: 1px solid #B5B0B0; }
+
 #users.table > thead > tr > th,
 #users.table > tbody > tr > th,
 #users.table > tfoot > tr > th,
@@ -5895,10 +5927,102 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   padding: 5px 5px 5px 0px;
   vertical-align: middle; }
 
+#users.table > tbody > tr.medic {
+  border-left: 10px solid #00B2B2; }
+
+#users.table > tbody > tr.non-medic {
+  border-left: 10px solid #004D4D; }
+
 #users.table .user-photo {
-  width: 60px; }
+  width: 60px;
+  padding-left: 10px; }
 
 #users.table .edit {
   font-size: 1.5em;
   float: right;
   margin-right: -5px; }
+
+.user-cards {
+  margin-right: -8px; }
+
+.user-card {
+  background-color: #EDEBEB;
+  display: inline-block;
+  width: calc(50% - 12px);
+  margin-right: 10px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  vertical-align: top; }
+
+.user-card.medic:before {
+  height: 18px;
+  border-radius: 4px 4px 0px 0px;
+  background-color: #00B2B2;
+  width: 100%;
+  padding: 2px 10px;
+  content: "Medic";
+  color: white;
+  font-size: 1em;
+  line-height: 1em;
+  float: right;
+  text-align: right; }
+
+.user-card.non-medic:before {
+  height: 18px;
+  border-radius: 4px 4px 0px 0px;
+  background-color: #004D4D;
+  width: 100%;
+  padding: 2px 10px;
+  content: "Non Medic";
+  color: white;
+  font-size: 1em;
+  line-height: 1em;
+  float: right;
+  text-align: right; }
+
+.user-card .user-title {
+  display: table;
+  width: 100%;
+  vertical-align: middle;
+  border-bottom: 1px solid #B5B0B0;
+  padding: 7px 10px; }
+
+.user-card .user-title .user-photo {
+  width: 60px;
+  padding-right: 10px;
+  display: table-cell;
+  vertical-align: middle; }
+
+.user-card .user-title .user-photo img {
+  width: 100%; }
+
+.user-card .user-title .user-name {
+  display: table-cell;
+  vertical-align: middle; }
+
+.user-card .user-title p {
+  margin: 0; }
+
+.user-card .user-title .name {
+  font-size: 1.2em;
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+  line-height: 1em;
+  margin-bottom: 0; }
+
+.user-card .user-detail {
+  border-bottom: 1px solid #B5B0B0;
+  padding: 7px 10px; }
+
+.user-card .user-detail table {
+  width: 100%; }
+
+.user-card .user-detail table td {
+  line-height: 1.2em; }
+
+.user-card .edit-box {
+  padding: 7px 10px; }
+
+.user-card .edit-box .edit {
+  float: right;
+  font-size: 1.5em;
+  line-height: 1em; }
