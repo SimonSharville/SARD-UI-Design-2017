@@ -59,7 +59,7 @@
 
           <div class="page-title">
               <h4 class="user-name">Bella Owen</h4>
-              <h1 class="title">All Users</h1>
+              <h1 class="title">All Users (Table)</h1>
           </div>
         </div> <!-- col-xs-12 -->
 
@@ -105,14 +105,13 @@
           <h3>Options</h3>
         </div>
         <div class="col-xs-2">
-          <button type="button" class="btn btn-sm btn-default btn-block ">All Users</button>
+          <button type="button" class="btn btn-sm btn-default btn-block showAll">All Users</button>
         </div>
         <div class="col-xs-2">
-          <button type="button" class="btn btn-sm btn-default btn-block ">Medics</button>
+          <button type="button" class="btn btn-sm btn-primary btn-block showSingle" target="medic">Medics</button>
         </div>
         <div class="col-xs-2">
-          <button type="button" class="btn btn-sm btn-default btn-block ">Non Medics</button>
-          
+          <button type="button" class="btn btn-sm btn-teal btn-block showSingle"target="non-medic">Non Medics</button>
         </div>
         <div class="col-xs-2">
           <button type="button" class="btn btn-sm btn-admin btn-block ">Invite All</button>
@@ -133,7 +132,7 @@
             <table id="users" class="table table-hover">
               <thead>
                 <tr>
-                  <th>Photo</th>
+                  <th></th>
                   <th>First Name</th>
                   <th>Last name</th>
                   <th>Employee Number</th>
@@ -147,7 +146,7 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr class="targetDiv medic">
                   <td><img class="user-photo" src="../../assets/graphics/user-icon.png" alt="Profile Image"></td>
                   <td><a href="#">Joe</a></td>
                   <td><a href="#">Bloggs</a></td>
@@ -160,12 +159,12 @@
                   <td><button type="button" class="btn btn-xs btn-default">Invite</button></td>
                   <td>
                     <span class="edit">
-                      <a href="#" role="button"><i class="fa fa-eye turq"></i></a>
-                      <a href="#" role="button"><i class="fa fa-times-circle red"></i></a>
+                      <a href="#" role="button"><i class="fa fa-eye"></i></a>
+                      <a href="#" role="button"><i class="fa fa-pencil"></i></a>
                     </span>
                   </td>
                 </tr>
-                <tr>
+                <tr class="targetDiv medic">
                   <td><img class="user-photo" src="../../assets/graphics/user-icon.png" alt="Profile Image"></td>
                   <td>FirstName</td>
                   <td>LastName</td>
@@ -178,12 +177,12 @@
                   <td><button type="button" class="btn btn-xs btn-default">Invite</button></td>
                   <td>
                     <span class="edit">
-                      <a href="#" role="button"><i class="fa fa-eye turq"></i></a>
-                      <a href="#" role="button"><i class="fa fa-times-circle red"></i></a>
+                      <a href="#" role="button"><i class="fa fa-eye"></i></a>
+                      <a href="#" role="button"><i class="fa fa-pencil"></i></a>
                     </span>
                   </td>
                 </tr>
-                <tr>
+                <tr class="targetDiv non-medic">
                   <td><img class="user-photo" src="../../assets/graphics/user-icon.png" alt="Profile Image"></td>
                   <td>FirstName</td>
                   <td>LastName</td>
@@ -196,12 +195,12 @@
                   <td><button type="button" class="btn btn-xs btn-default">Invite</button></td>
                   <td>
                     <span class="edit">
-                      <a href="#" role="button"><i class="fa fa-eye turq"></i></a>
-                      <a href="#" role="button"><i class="fa fa-times-circle red"></i></a>
+                      <a href="#" role="button"><i class="fa fa-eye"></i></a>
+                      <a href="#" role="button"><i class="fa fa-pencil"></i></a>
                     </span>
                   </td>
                 </tr>
-                <tr>
+                <tr class="targetDiv medic">
                   <td><img class="user-photo" src="../../assets/graphics/user-icon.png" alt="Profile Image"></td>
                   <td>FirstName</td>
                   <td>LastName</td>
@@ -214,12 +213,12 @@
                   <td><button type="button" class="btn btn-xs btn-default">Invite</button></td>
                   <td>
                     <span class="edit">
-                      <a href="#" role="button"><i class="fa fa-eye turq"></i></a>
-                      <a href="#" role="button"><i class="fa fa-times-circle red"></i></a>
+                      <a href="#" role="button"><i class="fa fa-eye"></i></a>
+                      <a href="#" role="button"><i class="fa fa-pencil"></i></a>
                     </span>
                   </td>
                 </tr>
-                <tr>
+                <tr class="targetDiv non-medic">
                   <td><img class="user-photo" src="../../assets/graphics/user-icon.png" alt="Profile Image"></td>
                   <td>FirstName</td>
                   <td>LastName</td>
@@ -232,8 +231,8 @@
                   <td><button type="button" class="btn btn-xs btn-default">Invite</button></td>
                   <td>
                     <span class="edit">
-                      <a href="#" role="button"><i class="fa fa-eye turq"></i></a>
-                      <a href="#" role="button"><i class="fa fa-times-circle red"></i></a>
+                      <a href="#" role="button"><i class="fa fa-eye"></i></a>
+                      <a href="#" role="button"><i class="fa fa-pencil"></i></a>
                     </span>
                   </td>
                 </tr>

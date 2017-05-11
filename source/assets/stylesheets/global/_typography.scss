@@ -151,7 +151,13 @@ h1, h2, h3, h4, h5, h6, p{
   a:visited{ color:$bodytext;}
   a:hover{ color:$link-hover;}
   a:active{ color:$link-hover;}
-    
+
+  a:link .fa{ color:$grey16;}
+  a:visited .fa{ color:$grey16;}
+  a:hover .fa{ color:$link-hover;}
+  a:active .fa{ color:$link-hover;}
+
+
   // This makes links in text blue when they have no link icon
   .text-link:link{ color:darken($turq, 10%);}
   a.text-link:visited{ color:darken($turq, 10%);}
@@ -456,9 +462,13 @@ li p { // This adjust the spacing and indents of multi line links in a list
 
 
 // Glyphicons  & Font Awesome =========================================================================
+  
+  .glyphicon, .fa{ 
+    padding: 0 5px 0 0;
+  }
 
   .glyphicon-ok{color:$green;}
   .glyphicon-remove{color:$red;}
   .glyphicon-minus{color:$grey16;}
-  .glyphicon, .fa{ padding: 0 5px 0 0;}
+  
 
