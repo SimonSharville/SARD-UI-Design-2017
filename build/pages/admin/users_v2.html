@@ -96,8 +96,8 @@
                   <li class="divider"></li>
                   <li class="dropdown-header">Admin Pages</li>
                   <li><a href="../../pages/admin/dashboard.html">Dashboard</a></li>
-                  <li><a href="../../pages/admin/users.html">All Users</a></li>
-                  <li><a href="../../pages/admin/users_v2.html">All Users (v2)</a></li>
+                  <li><a href="../../pages/admin/users.html">All Users (Table)</a></li>
+                  <li><a href="../../pages/admin/users_v2.html">All Users (Cards)</a></li>
                   <li><a href="../../pages/admin/sard-messages.html">SARD Messages</a></li>
                 </ul>
               </li>
@@ -159,8 +159,8 @@
                   <li><a href="dashboard.html">Dashboard</a></li>
                   <li class="divider"></li>
                   <li class="dropdown-header">Users</li>
-                  <li><a href="users.html">All Users</a></li>
-                  <li><a href="users_v2.html">All Users (v2)</a></li>
+                  <li><a href="users.html">All Users (Table)</a></li>
+                  <li><a href="users_v2.html">All Users (Cards)</a></li>
                   <li><a href="#">Advanced User Search</a></li>
                   <li class="divider"></li>
                   <li class="dropdown-header">Appraisals</li>
@@ -348,7 +348,7 @@
 
           <div class="page-title">
               <h4 class="user-name">Bella Owen</h4>
-              <h1 class="title">All Users (v2)</h1>
+              <h1 class="title">All Users (Cards)</h1>
           </div>
         </div> <!-- col-xs-12 -->
 
@@ -369,6 +369,8 @@
     <div class="container sa-main-content">
 
       <div class="row">
+        
+
         <div class="col-xs-12"> 
           <h3>All users</h3>
           <div class="sard-search admin">
@@ -387,163 +389,505 @@
             </div>
           </div> <!-- / sard-search -->
         </div>
-      </div> <!-- / Row -->
 
-      <div class="row options">
-        <div class="col-xs-12">
-          <h3>Options</h3>
-        </div>
-        <div class="col-xs-2">
-          <button type="button" class="btn btn-sm btn-default btn-block ">All Users</button>
-        </div>
-        <div class="col-xs-2">
-          <button type="button" class="btn btn-sm btn-default btn-block ">Medics</button>
-        </div>
-        <div class="col-xs-2">
-          <button type="button" class="btn btn-sm btn-default btn-block ">Non Medics</button>
-          
-        </div>
-        <div class="col-xs-2">
-          <button type="button" class="btn btn-sm btn-admin btn-block ">Invite All</button>
-        </div>
-        <div class="col-xs-2">
-          <button type="button" class="btn btn-sm btn-admin btn-block ">New User</button>
-        </div>
-        <div class="col-xs-2">
-          <button type="button" class="btn btn-sm btn-labeled btn-dark btn-block">
-             <span class="btn-label"><i class="fa fa-file-text-o"></i></span>Export to CSV
-          </button>
-        </div>
-      </div> <!-- / Row -->
-
-      <div class="row">
-        <div class="col-xs-12"> 
-          <div class="table-responsive">
-            <table id="users" class="table table-hover">
-              <thead>
-                <tr>
-                  <th>Photo</th>
-                  <th>First Name</th>
-                  <th>Last name</th>
-                  <th>Employee Number</th>
-                  <th>GMC Number</th>
-                  <th>Directorate</th>
-                  <th>Speciality</th>
-                  <th>Lead Appraiser</th>
-                  <th>Last Sign In</th>
-                  <th>Invite</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><img class="user-photo" src="../../assets/graphics/user-icon.png" alt="Profile Image"></td>
-                  <td><a href="#">Joe</a></td>
-                  <td><a href="#">Bloggs</a></td>
-                  <td>01010101</td>
-                  <td>12345678</td>
-                  <td>Directorate</td>
-                  <td>Speciality</td>
-                  <td>DrNameLasName</td>
-                  <td>DateDateDate</td>
-                  <td><button type="button" class="btn btn-xs btn-default">Invite</button></td>
-                  <td>
-                    <span class="edit">
-                      <a href="#" role="button"><i class="fa fa-eye turq"></i></a>
-                      <a href="#" role="button"><i class="fa fa-times-circle red"></i></a>
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img class="user-photo" src="../../assets/graphics/user-icon.png" alt="Profile Image"></td>
-                  <td>FirstName</td>
-                  <td>LastName</td>
-                  <td>01010101</td>
-                  <td>12345678</td>
-                  <td>Directorate</td>
-                  <td>Speciality</td>
-                  <td>DrNameLasName</td>
-                  <td>DateDateDate</td>
-                  <td><button type="button" class="btn btn-xs btn-default">Invite</button></td>
-                  <td>
-                    <span class="edit">
-                      <a href="#" role="button"><i class="fa fa-eye turq"></i></a>
-                      <a href="#" role="button"><i class="fa fa-times-circle red"></i></a>
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img class="user-photo" src="../../assets/graphics/user-icon.png" alt="Profile Image"></td>
-                  <td>FirstName</td>
-                  <td>LastName</td>
-                  <td>01010101</td>
-                  <td>12345678</td>
-                  <td>Directorate</td>
-                  <td>Speciality</td>
-                  <td>DrNameLasName</td>
-                  <td>DateDateDate</td>
-                  <td><button type="button" class="btn btn-xs btn-default">Invite</button></td>
-                  <td>
-                    <span class="edit">
-                      <a href="#" role="button"><i class="fa fa-eye turq"></i></a>
-                      <a href="#" role="button"><i class="fa fa-times-circle red"></i></a>
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img class="user-photo" src="../../assets/graphics/user-icon.png" alt="Profile Image"></td>
-                  <td>FirstName</td>
-                  <td>LastName</td>
-                  <td>01010101</td>
-                  <td>12345678</td>
-                  <td>Directorate</td>
-                  <td>Speciality</td>
-                  <td>DrNameLasName</td>
-                  <td>DateDateDate</td>
-                  <td><button type="button" class="btn btn-xs btn-default">Invite</button></td>
-                  <td>
-                    <span class="edit">
-                      <a href="#" role="button"><i class="fa fa-eye turq"></i></a>
-                      <a href="#" role="button"><i class="fa fa-times-circle red"></i></a>
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img class="user-photo" src="../../assets/graphics/user-icon.png" alt="Profile Image"></td>
-                  <td>FirstName</td>
-                  <td>LastName</td>
-                  <td>01010101</td>
-                  <td>12345678</td>
-                  <td>Directorate</td>
-                  <td>Speciality</td>
-                  <td>DrNameLasName</td>
-                  <td>DateDateDate</td>
-                  <td><button type="button" class="btn btn-xs btn-default">Invite</button></td>
-                  <td>
-                    <span class="edit">
-                      <a href="#" role="button"><i class="fa fa-eye turq"></i></a>
-                      <a href="#" role="button"><i class="fa fa-times-circle red"></i></a>
-                    </span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <nav aria-label="Page navigation"> 
-              <ul class="pagination"> 
-                <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li> 
-                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li> 
-                <li><a href="#">2</a></li> 
-                <li><a href="#">3</a></li> 
-                <li><a href="#">4</a></li> 
-                <li><a href="#">5</a></li> 
-                <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li> 
-              </ul> 
-            </nav>
+        <div class="col-sm-3 col-sm-push-9">
+          <div class="options">
+            <h3>Options</h3>
+            <button type="button" class="btn btn-sm btn-default showAll">All Users</button>
+            <button type="button" class="btn btn-sm btn-primary showSingle" target="medic">Medics</button>
+            <button type="button" class="btn btn-sm btn-teal showSingle" target="non-medic">Non Medics</button>
+            <button type="button" class="btn btn-sm btn-default">Invite All</button>
+            <button type="button" class="btn btn-sm btn-default">New User</button>
+            <button type="button" class="btn btn-sm btn-labeled btn-admin">
+               <span class="btn-label"><i class="fa fa-file-text-o"></i></span>Export to CSV
+            </button>
           </div>
+        </div>
 
-
-          
-        </div><!-- / col-xs-12 --> 
+        <div class="col-sm-9 col-sm-pull-3"> 
+          <div class="user-cards">
+            <div class="user-card targetDiv medic">
+              <!-- <div class="category"></div> -->
+              <div class="user-title">
+                <div class="user-photo">
+                <img class="" src="../../assets/graphics/user-icon.png" alt="Profile Image">
+                </div>
+                <div class="user-name">
+                  <p class="name"><span class="title">Dr. </span><span class="first-name">Firstname </span><span class="last-name">Lastname</span></p>
+                  <p class="jobtitle">Job Title</p>
+                </div>
+              </div>
+              <div class="user-detail">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>Employee Number</th>
+                      <td><a href="#">0101010101</a></td>
+                    </tr>
+                    <tr>
+                      <th>GMC Number</th>
+                      <td><a href="#">0101010101</a></td>
+                    </tr>
+                    <tr>
+                      <th>Directorate</th>
+                      <td><a href="#">OP</a></td>
+                    </tr>
+                    <tr>
+                      <th>Speciality</th>
+                      <td><a href="#">OLD AGE PSYCHIATRY</a></td>
+                    </tr>
+                    <tr>
+                      <th>Lead Appraiser</th>
+                      <td><a href="#">Dr Sophie Buijsen</a></td>
+                    </tr>
+                    <tr>
+                      <th>Last sign in</th>
+                      <td>Mon, 08 May 2017</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="edit-box">
+                <button type="button" class="btn btn-xs btn-default">Invite</button>
+                <span class="edit">
+                    <a href="#" role="button"><i class="fa fa-eye"></i></a>
+                    <a href="#" role="button"><i class="fa fa-pencil"></i></a>
+                  </span>
+              </div>
+            </div> <!-- / user-card -->
+            <div class="user-card targetDiv non-medic">
+                <div class="user-title">
+                  <div class="user-photo">
+                  <img class="" src="../../assets/graphics/user-icon.png" alt="Profile Image">
+                  </div>
+                  <div class="user-name">
+                    <p class="name"><span class="title">Dr. </span><span class="first-name">Firstname </span><span class="last-name">Lastname</span></p>
+                    <p class="jobtitle">Job Title</p>
+                  </div>
+                </div>
+                <div class="user-detail">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>Employee Number</th>
+                        <td><a href="#">0101010101</a></td>
+                      </tr>
+                      <tr>
+                        <th>GMC Number</th>
+                        <td><a href="#">0101010101</a></td>
+                      </tr>
+                      <tr>
+                        <th>Directorate</th>
+                        <td><a href="#">OP</a></td>
+                      </tr>
+                      <tr>
+                        <th>Speciality</th>
+                        <td><a href="#">OLD AGE PSYCHIATRY</a></td>
+                      </tr>
+                      <tr>
+                        <th>Lead Appraiser</th>
+                        <td><a href="#">Dr Sophie Buijsen</a></td>
+                      </tr>
+                      <tr>
+                        <th>Last sign in</th>
+                        <td>Mon, 08 May 2017</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="edit-box">
+                  <button type="button" class="btn btn-xs btn-default">Invite</button>
+                  <span class="edit">
+                      <a href="#" role="button"><i class="fa fa-eye"></i></a>
+                      <a href="#" role="button"><i class="fa fa-pencil"></i></a>
+                    </span>
+                </div>
+            </div>  <!-- / user-card -->
+            <div class="user-card targetDiv non-medic">
+                <div class="user-title">
+                  <div class="user-photo">
+                  <img class="" src="../../assets/graphics/user-icon.png" alt="Profile Image">
+                  </div>
+                  <div class="user-name">
+                    <p class="name"><span class="title">Dr. </span><span class="first-name">Firstname </span><span class="last-name">Lastname</span></p>
+                    <p class="jobtitle">Job Title</p>
+                  </div>
+                </div>
+                <div class="user-detail">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>Employee Number</th>
+                        <td><a href="#">0101010101</a></td>
+                      </tr>
+                      <tr>
+                        <th>GMC Number</th>
+                        <td><a href="#">0101010101</a></td>
+                      </tr>
+                      <tr>
+                        <th>Directorate</th>
+                        <td><a href="#">OP</a></td>
+                      </tr>
+                      <tr>
+                        <th>Speciality</th>
+                        <td><a href="#">OLD AGE PSYCHIATRY</a></td>
+                      </tr>
+                      <tr>
+                        <th>Lead Appraiser</th>
+                        <td><a href="#">Dr Sophie Buijsen</a></td>
+                      </tr>
+                      <tr>
+                        <th>Last sign in</th>
+                        <td>Mon, 08 May 2017</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="edit-box">
+                  <button type="button" class="btn btn-xs btn-default">Invite</button>
+                  <span class="edit">
+                      <a href="#" role="button"><i class="fa fa-eye"></i></a>
+                      <a href="#" role="button"><i class="fa fa-pencil"></i></a>
+                    </span>
+                </div>
+            </div> <!-- / user-card -->
+            <div class="user-card targetDiv medic">
+                <div class="user-title">
+                  <div class="user-photo">
+                  <img class="" src="../../assets/graphics/user-icon.png" alt="Profile Image">
+                  </div>
+                  <div class="user-name">
+                    <p class="name"><span class="title">Dr. </span><span class="first-name">Firstname </span><span class="last-name">Lastname</span></p>
+                    <p class="jobtitle">Job Title</p>
+                  </div>
+                </div>
+                <div class="user-detail">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>Employee Number</th>
+                        <td><a href="#">0101010101</a></td>
+                      </tr>
+                      <tr>
+                        <th>GMC Number</th>
+                        <td><a href="#">0101010101</a></td>
+                      </tr>
+                      <tr>
+                        <th>Directorate</th>
+                        <td><a href="#">OP</a></td>
+                      </tr>
+                      <tr>
+                        <th>Speciality</th>
+                        <td><a href="#">OLD AGE PSYCHIATRY</a></td>
+                      </tr>
+                      <tr>
+                        <th>Lead Appraiser</th>
+                        <td><a href="#">Dr Sophie Buijsen</a></td>
+                      </tr>
+                      <tr>
+                        <th>Last sign in</th>
+                        <td>Mon, 08 May 2017</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="edit-box">
+                  <button type="button" class="btn btn-xs btn-default">Invite</button>
+                  <span class="edit">
+                      <a href="#" role="button"><i class="fa fa-eye"></i></a>
+                      <a href="#" role="button"><i class="fa fa-pencil"></i></a>
+                    </span>
+                </div>
+            </div> <!-- / user-card -->
+            <div class="user-card targetDiv medic">
+                <div class="user-title">
+                  <div class="user-photo">
+                  <img class="" src="../../assets/graphics/user-icon.png" alt="Profile Image">
+                  </div>
+                  <div class="user-name">
+                    <p class="name"><span class="title">Dr. </span><span class="first-name">Firstname </span><span class="last-name">Lastname</span></p>
+                    <p class="jobtitle">Job Title</p>
+                  </div>
+                </div>
+                <div class="user-detail">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>Employee Number</th>
+                        <td><a href="#">0101010101</a></td>
+                      </tr>
+                      <tr>
+                        <th>GMC Number</th>
+                        <td><a href="#">0101010101</a></td>
+                      </tr>
+                      <tr>
+                        <th>Directorate</th>
+                        <td><a href="#">OP</a></td>
+                      </tr>
+                      <tr>
+                        <th>Speciality</th>
+                        <td><a href="#">OLD AGE PSYCHIATRY</a></td>
+                      </tr>
+                      <tr>
+                        <th>Lead Appraiser</th>
+                        <td><a href="#">Dr Sophie Buijsen</a></td>
+                      </tr>
+                      <tr>
+                        <th>Last sign in</th>
+                        <td>Mon, 08 May 2017</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="edit-box">
+                  <button type="button" class="btn btn-xs btn-default">Invite</button>
+                  <span class="edit">
+                      <a href="#" role="button"><i class="fa fa-eye"></i></a>
+                      <a href="#" role="button"><i class="fa fa-pencil"></i></a>
+                    </span>
+                </div>
+            </div> <!-- / user-card -->
+            <div class="user-card targetDiv medic">
+                <div class="user-title">
+                  <div class="user-photo">
+                  <img class="" src="../../assets/graphics/user-icon.png" alt="Profile Image">
+                  </div>
+                  <div class="user-name">
+                    <p class="name"><span class="title">Dr. </span><span class="first-name">Firstname </span><span class="last-name">Lastname</span></p>
+                    <p class="jobtitle">Job Title</p>
+                  </div>
+                </div>
+                <div class="user-detail">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>Employee Number</th>
+                        <td><a href="#">0101010101</a></td>
+                      </tr>
+                      <tr>
+                        <th>GMC Number</th>
+                        <td><a href="#">0101010101</a></td>
+                      </tr>
+                      <tr>
+                        <th>Directorate</th>
+                        <td><a href="#">OP</a></td>
+                      </tr>
+                      <tr>
+                        <th>Speciality</th>
+                        <td><a href="#">OLD AGE PSYCHIATRY</a></td>
+                      </tr>
+                      <tr>
+                        <th>Lead Appraiser</th>
+                        <td><a href="#">Dr Sophie Buijsen</a></td>
+                      </tr>
+                      <tr>
+                        <th>Last sign in</th>
+                        <td>Mon, 08 May 2017</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="edit-box">
+                  <button type="button" class="btn btn-xs btn-default">Invite</button>
+                  <span class="edit">
+                      <a href="#" role="button"><i class="fa fa-eye"></i></a>
+                      <a href="#" role="button"><i class="fa fa-pencil"></i></a>
+                    </span>
+                </div>
+            </div> <!-- / user-card -->
+            <div class="user-card targetDiv non-medic">
+                <div class="user-title">
+                  <div class="user-photo">
+                  <img class="" src="../../assets/graphics/user-icon.png" alt="Profile Image">
+                  </div>
+                  <div class="user-name">
+                    <p class="name"><span class="title">Dr. </span><span class="first-name">Firstname </span><span class="last-name">Lastname</span></p>
+                    <p class="jobtitle">Job Title</p>
+                  </div>
+                </div>
+                <div class="user-detail">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>Employee Number</th>
+                        <td><a href="#">0101010101</a></td>
+                      </tr>
+                      <tr>
+                        <th>GMC Number</th>
+                        <td><a href="#">0101010101</a></td>
+                      </tr>
+                      <tr>
+                        <th>Directorate</th>
+                        <td><a href="#">OP</a></td>
+                      </tr>
+                      <tr>
+                        <th>Speciality</th>
+                        <td><a href="#">OLD AGE PSYCHIATRY</a></td>
+                      </tr>
+                      <tr>
+                        <th>Lead Appraiser</th>
+                        <td><a href="#">Dr Sophie Buijsen</a></td>
+                      </tr>
+                      <tr>
+                        <th>Last sign in</th>
+                        <td>Mon, 08 May 2017</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="edit-box">
+                  <button type="button" class="btn btn-xs btn-default">Invite</button>
+                  <span class="edit">
+                      <a href="#" role="button"><i class="fa fa-eye"></i></a>
+                      <a href="#" role="button"><i class="fa fa-pencil"></i></a>
+                    </span>
+                </div>
+            </div> <!-- / user-card -->
+            <div class="user-card targetDiv medic">
+                <div class="user-title">
+                  <div class="user-photo">
+                  <img class="" src="../../assets/graphics/user-icon.png" alt="Profile Image">
+                  </div>
+                  <div class="user-name">
+                    <p class="name"><span class="title">Dr. </span><span class="first-name">Firstname </span><span class="last-name">Lastname</span></p>
+                    <p class="jobtitle">Job Title</p>
+                  </div>
+                </div>
+                <div class="user-detail">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>Employee Number</th>
+                        <td><a href="#">0101010101</a></td>
+                      </tr>
+                      <tr>
+                        <th>GMC Number</th>
+                        <td><a href="#">0101010101</a></td>
+                      </tr>
+                      <tr>
+                        <th>Directorate</th>
+                        <td><a href="#">OP</a></td>
+                      </tr>
+                      <tr>
+                        <th>Speciality</th>
+                        <td><a href="#">OLD AGE PSYCHIATRY</a></td>
+                      </tr>
+                      <tr>
+                        <th>Lead Appraiser</th>
+                        <td><a href="#">Dr Sophie Buijsen</a></td>
+                      </tr>
+                      <tr>
+                        <th>Last sign in</th>
+                        <td>Mon, 08 May 2017</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="edit-box">
+                  <button type="button" class="btn btn-xs btn-default">Invite</button>
+                  <span class="edit">
+                      <a href="#" role="button"><i class="fa fa-eye"></i></a>
+                      <a href="#" role="button"><i class="fa fa-pencil"></i></a>
+                    </span>
+                </div>
+            </div> <!-- / user-card --><div class="user-card targetDiv medic">
+                <div class="user-title">
+                  <div class="user-photo">
+                  <img class="" src="../../assets/graphics/user-icon.png" alt="Profile Image">
+                  </div>
+                  <div class="user-name">
+                    <p class="name"><span class="title">Dr. </span><span class="first-name">Firstname </span><span class="last-name">Lastname</span></p>
+                    <p class="jobtitle">Job Title</p>
+                  </div>
+                </div>
+                <div class="user-detail">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>Employee Number</th>
+                        <td><a href="#">0101010101</a></td>
+                      </tr>
+                      <tr>
+                        <th>GMC Number</th>
+                        <td><a href="#">0101010101</a></td>
+                      </tr>
+                      <tr>
+                        <th>Directorate</th>
+                        <td><a href="#">OP</a></td>
+                      </tr>
+                      <tr>
+                        <th>Speciality</th>
+                        <td><a href="#">OLD AGE PSYCHIATRY</a></td>
+                      </tr>
+                      <tr>
+                        <th>Lead Appraiser</th>
+                        <td><a href="#">Dr Sophie Buijsen</a></td>
+                      </tr>
+                      <tr>
+                        <th>Last sign in</th>
+                        <td>Mon, 08 May 2017</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="edit-box">
+                  <button type="button" class="btn btn-xs btn-default">Invite</button>
+                  <span class="edit">
+                      <a href="#" role="button"><i class="fa fa-eye"></i></a>
+                      <a href="#" role="button"><i class="fa fa-pencil"></i></a>
+                    </span>
+                </div>
+            </div> <!-- / user-card -->
+            <div class="user-card targetDiv non-medic">
+                <div class="user-title">
+                  <div class="user-photo">
+                  <img class="" src="../../assets/graphics/user-icon.png" alt="Profile Image">
+                  </div>
+                  <div class="user-name">
+                    <p class="name"><span class="title">Dr. </span><span class="first-name">Firstname </span><span class="last-name">Lastname</span></p>
+                    <p class="jobtitle">Job Title</p>
+                  </div>
+                </div>
+                <div class="user-detail">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>Employee Number</th>
+                        <td><a href="#">0101010101</a></td>
+                      </tr>
+                      <tr>
+                        <th>GMC Number</th>
+                        <td><a href="#">0101010101</a></td>
+                      </tr>
+                      <tr>
+                        <th>Directorate</th>
+                        <td><a href="#">OP</a></td>
+                      </tr>
+                      <tr>
+                        <th>Speciality</th>
+                        <td><a href="#">OLD AGE PSYCHIATRY</a></td>
+                      </tr>
+                      <tr>
+                        <th>Lead Appraiser</th>
+                        <td><a href="#">Dr Sophie Buijsen</a></td>
+                      </tr>
+                      <tr>
+                        <th>Last sign in</th>
+                        <td>Mon, 08 May 2017</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="edit-box">
+                  <button type="button" class="btn btn-xs btn-default">Invite</button>
+                  <span class="edit">
+                      <a href="#" role="button"><i class="fa fa-eye"></i></a>
+                      <a href="#" role="button"><i class="fa fa-pencil"></i></a>
+                    </span>
+                </div>
+            </div> <!-- / user-card -->
+          </div>
+        </div><!-- / col-sm-9 --> 
       </div> <!-- / Row -->
         
 
@@ -625,6 +969,9 @@
     
     <!-- MegaMenu -->
     <script type="text/javascript" src="../../assets/javascripts/sard/sa-megamenu.js"></script>
+    
+    <!-- User Cards -->
+    <script type="text/javascript" src="../../assets/javascripts/sard/sa-user-cards.js"></script>
     
     
     
