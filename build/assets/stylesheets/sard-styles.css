@@ -2496,10 +2496,20 @@ hr {
   margin: 20px 10px 20px 10px; }
 
 .divider {
-  border-top: 1px solid #211F0F; }
+  height: 1px;
+  color: #211F0F;
+  background: #211F0F;
+  border: 0;
+  margin-top: 0.5em;
+  margin-bottom: -0.5em; }
 
 .divider-grey {
-  border-top: 1px solid #B5B0B0; }
+  height: 1px;
+  color: #B5B0B0;
+  background: #B5B0B0;
+  border: 0;
+  margin-top: 0.5em;
+  margin-bottom: -0.5em; }
 
 .perf {
   background-image: url("../graphics/dot_grey04.png");
@@ -5443,7 +5453,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 .do-next-chart .appraisal.complete {
   background-color: #359E00; }
 
-.dn-rule hr {
+.dn-rule {
   border-top: 6px solid #403D3D;
   margin-top: 50px;
   margin-bottom: -48px; }

@@ -189,11 +189,21 @@ hr {
 }
 
 .divider{
-  border-top: 1px solid $text;
+  height: 1px;
+  color: $text;
+  background: $text;
+  border: 0;
+  margin-top: 0.5em;
+  margin-bottom:-0.5em;
 }
 
 .divider-grey{
-  border-top: 1px solid $grey08;
+  height: 1px;
+  color: $grey08;
+  background: $grey08;
+  border: 0;
+  margin-top: 0.5em;
+  margin-bottom:-0.5em;
 }
 
 .perf {
