@@ -5127,22 +5127,22 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   margin-left: -5px;
   margin-right: -5px; }
 
-.sard-search {
+.sa-search {
   background-color: #00B2B2;
   margin: 0px 0px 30px 0px;
   padding: 10px;
   border-radius: 12px; }
 
-#sard-search-input {
+#sa-search-input {
   padding: 4px;
   border-radius: 6px;
   background-color: white; }
 
-#sard-search-input input {
+#sa-search-input input {
   border: 0;
   box-shadow: none; }
 
-#sard-search-input button {
+#sa-search-input button {
   margin: 2px 0 0 0;
   background: none;
   box-shadow: none;
@@ -5150,41 +5150,49 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   padding: 0 8px 0 10px;
   border-left: solid 1px #ccc; }
 
-#sard-search-input button:hover {
+#sa-search-input button:hover {
   border: 0;
   box-shadow: none;
   border-left: solid 1px #ccc; }
 
-#sard-search-input .glyphicon-search {
+#sa-search-input .glyphicon-search {
   font-size: 23px;
   color: #00B2B2; }
 
-#sard-search-input .glyphicon-search:hover {
+#sa-search-input .glyphicon-search:hover {
   color: #007f7f; }
 
-#sard-search-input .glyphicon-search:active {
+#sa-search-input .glyphicon-search:active {
   color: #006666; }
 
-#sard-search-input .btn {
+#sa-search-input .btn {
   top: 0px; }
 
-.sard-search .results {
+.sa-search .results {
   padding-top: 5px;
   margin-bottom: -5px;
   color: white; }
 
-.admin .sard-search {
+.admin .sa-search {
   background-color: #E50073; }
 
-.admin #sard-search-input .glyphicon-search {
+.admin #sa-search-input .glyphicon-search {
   font-size: 23px;
   color: #E50073; }
 
-.admin #sard-search-input .glyphicon-search:hover {
+.admin #sa-search-input .glyphicon-search:hover {
   color: #b20059; }
 
-.admin #sard-search-input .glyphicon-search:active {
+.admin #sa-search-input .glyphicon-search:active {
   color: #99004d; }
+
+.ASF {
+  margin-bottom: -5px;
+  color: #211F0F;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 6px;
+  padding: 10px; }
 
 table.dataTable {
   clear: both;
