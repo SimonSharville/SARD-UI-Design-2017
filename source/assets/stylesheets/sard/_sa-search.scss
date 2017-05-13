@@ -1,24 +1,24 @@
 // From: http://bootsnipp.com/snippets/featured/custom-search-input
 
-.sa-search{
+.sard-search{
   background-color:$turq;
   margin:0px 0px 30px 0px;
   padding:10px;
   border-radius:12px;
 }
 
-#sa-search-input{
+#sard-search-input{
     padding: 4px;
     border-radius: 6px;
     background-color: white;
 }
 
-#sa-search-input input{
+#sard-search-input input{
     border: 0;
     box-shadow: none;
 }
 
-#sa-search-input button{
+#sard-search-input button{
     margin: 2px 0 0 0;
     background: none;
     box-shadow: none;
@@ -27,28 +27,28 @@
     border-left: solid 1px #ccc;
 }
 
-#sa-search-input button:hover{
+#sard-search-input button:hover{
     border: 0;
     box-shadow: none;
     border-left: solid 1px #ccc;
 }
 
-#sa-search-input .glyphicon-search{
+#sard-search-input .glyphicon-search{
     font-size: 23px;
     color:$turq;
 }
-#sa-search-input .glyphicon-search:hover{
+#sard-search-input .glyphicon-search:hover{
     color:darken($turq, 10%);
 }
-#sa-search-input .glyphicon-search:active{
+#sard-search-input .glyphicon-search:active{
     color:darken($turq, 15%);
 }
 
-#sa-search-input .btn{
+#sard-search-input .btn{
   top: 0px; // Ths overrides the sard button styles for movement when pressed
 }
 
-.sa-search .results{
+.sard-search .results{
   padding-top:5px;
   margin-bottom:-5px;
   color:white;
@@ -57,30 +57,24 @@
 // Admin Colours ========================
 
 
-.admin .sa-search{
+.admin .sard-search{
 background-color:$admin-colour;
 }
 
-.admin #sa-search-input .glyphicon-search{
+.admin #sard-search-input .glyphicon-search{
     font-size: 23px;
     color:$admin-colour;
 }
-.admin #sa-search-input .glyphicon-search:hover{
+.admin #sard-search-input .glyphicon-search:hover{
     color:darken($admin-colour, 10%);
 }
-.admin #sa-search-input .glyphicon-search:active{
+.admin #sard-search-input .glyphicon-search:active{
     color:darken($admin-colour, 15%);
 }
 
 
 // Advanced Search Form ====================================
 
-.ASF{
-  // padding-top:5px;
-  margin-bottom:-5px;
-  color:$text;
-  background-color:white;
-  margin-top:10px;
-  border-radius: 6px;
-  padding:10px;
+#ASF{
+  
 }
