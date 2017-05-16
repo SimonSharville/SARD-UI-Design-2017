@@ -389,6 +389,9 @@ strong, bold {
 .asterisk {
   color: #00B2B2; }
 
+.admin .asterisk {
+  color: #E50073; }
+
 .center {
   text-align: center; }
 
@@ -4001,7 +4004,6 @@ input, button, select, textarea {
 .toggle-plus.accordion-toggle[aria-expanded="true"]:after {
   font-family: 'FontAwesome';
   content: "\f068";
-  float: right;
   position: absolute;
   top: 0;
   right: 0;
@@ -4010,7 +4012,6 @@ input, button, select, textarea {
 .toggle-plus.accordion-toggle[aria-expanded="false"]:after {
   font-family: 'FontAwesome';
   content: "\f067";
-  float: right;
   position: absolute;
   top: 0;
   right: 0;
@@ -5198,13 +5199,20 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   margin-top: 0; }
 
 .asf-form {
-  margin: -5px;
   margin-bottom: 10px;
   box-sizing: border-box; }
 
 .asf-form fieldset {
   box-sizing: border-box;
   background-color: #EDEBEB; }
+
+.asf-form fieldset fieldset {
+  background-color: white;
+  margin: 8px; }
+  .asf-form fieldset fieldset .note {
+    margin-bottom: 0;
+    padding-left: 0.8em;
+    text-indent: -0.8em; }
 
 .asf-form legend {
   background-color: #403D3D;
@@ -5217,8 +5225,8 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   border: none; }
 
 .asf-form legend.toggle-plus.accordion-toggle:after {
-  right: 10px;
-  top: -4px;
+  position: relative;
+  float: right;
   color: white; }
 
 .asf-form .form-group {
@@ -5227,6 +5235,9 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 
 .asf-form .form-group:first-child {
   margin-top: 10px; }
+
+.asf-form .form-group:last-child {
+  margin-bottom: 10px; }
 
 .asf-form .form-group .control-label {
   text-align: left;
@@ -5245,6 +5256,30 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   border-color: #E50073;
   border-width: 1px;
   outline: none; }
+
+.double-text-column {
+  margin: 0;
+  padding-left: 10px;
+  width: 49%;
+  display: inline-block; }
+
+.double-text-column:nth-child(odd) {
+  padding-right: 10px;
+  border-right: 1px solid #B5B0B0; }
+
+.double-text-column:nth-child(even) {
+  border-right: none; }
+
+.double-text-column input[type=checkbox] {
+  float: right; }
+
+.asf-form .form-group select[class=col-xs-6] {
+  width: 54.7%;
+  left: 8px; }
+
+.asf-form .form-group input[class=col-xs-7] {
+  width: 54.7%;
+  left: 8px; }
 
 table.dataTable {
   clear: both;

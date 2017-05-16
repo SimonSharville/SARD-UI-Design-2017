@@ -402,180 +402,390 @@
                       <div class="col-xs-12">
                         <h4 class="heading">Advanced User Search</h4>
                       </div> <!-- / col-xs-12 -->
+                    </div> <!-- / Row -->
             
-                      <div class="col-xs-12">
-                          
-                            <div class="col-sm-6">
-                              <form class="asf-form form-horizontal">
-                                <fieldset>
-                                  <legend class="toggle-plus accordion-toggle collapsed"  href="#" aria-controls="UserDetails" aria-expanded="false" data-toggle="collapse" data-target="#UserDetails">
-                                    User Details
-                                  </legend>
+                    <div class="row">
             
-                                  <div id="UserDetails" class="collapse in">
-                                    <div class="form-group">
-                                      <label for="advanced_search_Trust Start Date:"class="col-xs-5 control-label">Trust start date:</label>
-                                      <div class="col-xs-7">
-                                        <input id="advanced_search_users_trust_start_from" name="date" type="text" class="col-xs-5 hasDatepicker" placeholder="From">
-                                        <div class="col-xs-2 centre">to</div>
-                                        <input id="advanced_search_users_trust_start_to" type="text" class="col-xs-5 hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="To">
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="advanced_search_Trust End Date:"class="col-xs-5 control-label">Trust end date:</label>
-                                      <div class="col-xs-7">
-                                        <input id="advanced_search_users_trust_end_from" name="date" type="text" class="col-xs-5 hasDatepicker" placeholder="From">
-                                        <div class="col-xs-2 centre">to</div>
-                                        <input id="advanced_search_users_trust_end_to" type="text" class="col-xs-5 hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="To">
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="advanced_search_Sign In Count:"class="col-xs-5 control-label">Sign in count:</label>
-                                      <div class="col-xs-7">
-                                        <input id="advanced_search_users_sign_in_count_from" name="date" type="text" class="col-xs-5 hasDatepicker" placeholder="From">
-                                        <div class="col-xs-2 centre">to</div>
-                                        <input id="advanced_search_users_sign_in_count_to" type="text" class="col-xs-5 hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="To">
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="advanced_search_dormant" class="col-xs-5">Dormant</label>
-                                      <div class="col-xs-3 ">
-                                          <input type="checkbox">
-                                      </div>
+                      <div class="col-md-6">
+                        <form class="asf-form form-horizontal">
+                          <fieldset>
+                            <legend class="toggle-plus accordion-toggle collapsed" href="#" aria-controls="UserDetails" aria-expanded="false" data-toggle="collapse" data-target="#UserDetails">User Details</legend>
             
-                                      <label for="advanced_search_dummy" class="col-xs-5">Dummy</label>
-                                      <div class="col-xs-3 ">
-                                          <input type="checkbox">
-                                      </div>
-                                    </div><!-- / form-group -->
-                                  </div> <!-- / UserDetails -->
-                                </fieldset>
-                              </form>
-                            </div> <!-- / col-sm-6 -->
+                            <div id="UserDetails" class="collapse in">
+                              <div class="form-group">
+                                <label for="advanced_search_Trust Start Date:"class="col-xs-5 control-label">Trust start date:</label>
+                                <div class="col-xs-7">
+                                  <input id="advanced_search_users_trust_start_from" name="date" type="text" class="col-xs-5 hasDatepicker" placeholder="From">
+                                  <div class="col-xs-2 centre">to</div>
+                                  <input id="advanced_search_users_trust_start_to" type="text" class="col-xs-5 hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="To">
+                                </div>
+                              </div> <!-- / form-group -->
             
-                            <div class="col-sm-6">
-                              <form class="asf-form form-horizontal">
+                              <div class="form-group">
+                                <label for="advanced_search_Trust End Date:"class="col-xs-5 control-label">Trust end date:</label>
+                                <div class="col-xs-7">
+                                  <input id="advanced_search_users_trust_end_from" name="date" type="text" class="col-xs-5 hasDatepicker" placeholder="From">
+                                  <div class="col-xs-2 centre">to</div>
+                                  <input id="advanced_search_users_trust_end_to" type="text" class="col-xs-5 hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="To">
+                                </div>
+                              </div> <!-- / form-group -->
+            
+                              <div class="form-group">
+                                <label for="advanced_search_Sign In Count:"class="col-xs-5 control-label">Sign in count:</label>
+                                <div class="col-xs-7">
+                                  <input id="advanced_search_users_sign_in_count_from" name="date" type="text" class="col-xs-5 hasDatepicker" placeholder="From">
+                                  <div class="col-xs-2 centre">to</div>
+                                  <input id="advanced_search_users_sign_in_count_to" type="text" class="col-xs-5 hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="To">
+                                </div>
+                              </div> <!-- / form-group -->
+            
+                              <div class="form-group">
+                                <label for="advanced_search_dormant" class="col-xs-5">Dormant</label>
+                                <div class="col-xs-3 ">
+                                    <input type="checkbox">
+                                </div>
+            
+                                <label for="advanced_search_dummy" class="col-xs-5">Dummy</label>
+                                <div class="col-xs-3 ">
+                                    <input type="checkbox">
+                                </div>
+                              </div> <!-- / form-group -->
+                            </div> <!-- / UserDetails -->
+                          </fieldset>
+                        </form>
+                        <form class="asf-form form-horizontal">
+                          <fieldset>
+                            <legend class="toggle-plus accordion-toggle collapsed"  href="#" aria-controls="SystemRoles" aria-expanded="false" data-toggle="collapse" data-target="#SystemRoles">System Roles</legend>
+                            <div id="SystemRoles" class="collapse in">
+                              <div class="form-group">
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Medical Director">Medical Director</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Operational Director">Operational Director</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Chief Operating Officer">Chief Operating Officer</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Clinical Lead (jp)">Clinical Lead (JP)</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Divisional Director">Divisional Director</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Responsible Officer">Responsible Officer</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Job Plan Lead (Custom)">Job Plan Lead (custom)</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Operational Lead (jp)">Operational Lead (JP)</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Lead Doctor">Lead Doctor</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Medical Manager">Medical Manager</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Deputy Medical Director">Deputy Medical Director</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Head of Specialty">Head of Specialty</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Clinical Lead / Service Manager">Clinical Lead / Service Manager</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_General Manager (jp)">General Manager (JP)</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Temporary Position">Temporary Position</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Bank Staff Only">Bank Staff Only</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Specialty Lead">Specialty Lead</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Appraisal Lead (Custom)">Appraisal Lead (custom)</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Job Plan Lead (Speciality)">Job Plan Lead (speciality)</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Leave Coordinator">Leave Coordinator</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Leave Approver">Leave Approver</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Appraiser">Appraiser</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Job Plan Lead (Directorate)">Job Plan Lead (directorate)</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Clinical Director">Clinical Director</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Medic">Medic</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                                <div class="double-text-column">
+                                  <label for="advanced_search_Staff">Staff</label>
+                                  <input type="checkbox">
+                                </div>
+            
+                              </div><!-- / form-group -->
+                            </div> <!-- / SystemRoles -->
+                          </fieldset>
+                        </form>
+                      </div>
+            
+                      <div class="col-md-6">
+                        <form class="asf-form form-horizontal">
+                          <fieldset>
+                            <legend class="toggle-plus accordion-toggle collapsed" href="#" aria-controls="Recommendations" aria-expanded="false" data-toggle="collapse" data-target="#Recommendations">Recommendations (Revalidation)</legend>
+            
+                            <div id="Recommendations" class="collapse in">
+                              <div class="form-group">
+                                <div class="col-xs-12">
+                                  The user
+                                  <select id="has_recommendation" name="has_recommendation">
+                                    <option value="true">has</option>
+                                    <option value="false">does not have</option>
+                                  </select>
+                                  a recommendation with the following criteria:
+                                </div>
+                              </div> <!-- / form-group -->
+            
+                              <div class="form-group">
+                                <label for="advanced_search_Under Notice Date:"class="col-xs-5 control-label">Under notice date:</label>
+                                <div class="col-xs-7">
+                                  <input id="advanced_search_recommendations_under_notice_from" name="date" type="text" class="col-xs-5 hasDatepicker" placeholder="From">
+                                  <div class="col-xs-2 centre">to</div>
+                                  <input id="advanced_search_recommendations_under_notice_to" type="text" class="col-xs-5 hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="To">
+                                </div>
+                              </div> <!-- / form-group -->
+            
+                              <div class="form-group">
+                                <label for="advanced_search_Due Date:"class="col-xs-5 control-label">Due date:</label>
+                                <div class="col-xs-7">
+                                  <input id="advanced_search_recommendations_due_date_from" name="date" type="text" class="col-xs-5 hasDatepicker" placeholder="From">
+                                  <div class="col-xs-2 centre">to</div>
+                                  <input id="advanced_search_recommendations_due_date_to" type="text" class="col-xs-5 hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="To">
+                                </div>
+                              </div> <!-- / form-group -->
+            
+                              <div class="form-group">
+                                <label for="advanced_search_Recommendation Date:"class="col-xs-5 control-label">Recommendation date:</label>
+                                <div class="col-xs-7">
+                                  <input id="advanced_search_recommendations_recommendation_date_from" name="date" type="text" class="col-xs-5 hasDatepicker" placeholder="From">
+                                  <div class="col-xs-2 centre">to</div>
+                                  <input id="advanced_search_recommendations_recommendation_date_to" type="text" class="col-xs-5 hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="To">
+                                </div>
+                              </div> <!-- / form-group -->
+            
+                              <div class="form-group">
+                                <label for="advanced_search_Approval Date:"class="col-xs-5 control-label">Approval date:</label>
+                                <div class="col-xs-7">
+                                  <input id="advanced_search_recommendations_revalidation_date_from" name="date" type="text" class="col-xs-5 hasDatepicker" placeholder="From">
+                                  <div class="col-xs-2 centre">to</div>
+                                  <input id="advanced_search_recommendations_revalidation_date_to" type="text" class="col-xs-5 hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="To">
+                                </div>
+                              </div> <!-- / form-group -->
+            
+                            </div> <!-- / Recommendations -->
+                          </fieldset>
+                        </form>
+                        <form class="asf-form form-horizontal">
+                          <fieldset>
+                            <legend class="toggle-plus accordion-toggle collapsed" href="#" aria-controls="MultiSourceFeedbacks" aria-expanded="false" data-toggle="collapse" data-target="#MultiSourceFeedbacks">Multi-source Feedbacks (MSFs) / 360</legend>
+            
+                            <div id="MultiSourceFeedbacks" class="collapse in">
+                              <div class="form-group">
+                                <div class="col-xs-12">
+                                  The user
+                                  <select id="has_msf" name="has_msf">
+                                    <option value="true">has</option>
+                                    <option value="false">does not have</option>
+                                  </select>
+                                  an MSF with the following criteria:
+                                </div>
+                              </div> <!-- / form-group -->
+            
+                              <div class="form-group">
+                                <label for="advanced_search_Offline or Online"class="col-xs-5 control-label">Offline or online?</label>
+                                <select id="advanced_search_msfs_offline_or_online" name="advanced_search_msfs[offline_or_online]" class="col-xs-6">
+                                  <option value=""></option><option value="OfflineMsf">Offline</option>
+                                  <option value="OnlineMsf">Online</option>
+                                  <option value="Both">Both</option>
+                                </select>
+                              </div> <!-- / form-group -->
+            
+                              <div class="form-group">
+                                <label for="advanced_search_Includes patient feedback"class="col-xs-5 control-label">Includes patient feedback?</label>
+                                <select id="advanced_search_msfs_includes_patient_feedback" name="advanced_search_msfs[includes_patient_feedback]" class="col-xs-6">
+                                  <option value=""></option><option value="true">Yes</option>
+                                  <option value="false">No</option>
+                                  <option value="nil">Don't know</option>
+                                </select>
+                              </div> <!-- / form-group -->
+            
+                              <div class="form-group">
+                                <label for="advanced_search_Includes colleague feedback"class="col-xs-5 control-label">Includes colleague feedback?</label>
+                                <select id="advanced_search_msfs_includes_colleague_feedback" name="advanced_search_msfs[includes_colleague_feedback]" class="col-xs-6">
+                                  <option value=""></option><option value="true">Yes</option>
+                                  <option value="false">No</option>
+                                  <option value="nil">Don't know</option>
+                                </select>
+                              </div> <!-- / form-group -->
+            
+                              <div class="form-group">
+                                <label for="advanced_search_Includes self assessment"class="col-xs-5 control-label">Includes self assessment?</label>
+                                <select id="advanced_search_msfs_includes_self_assessment" name="advanced_search_msfs[includes_self_assessment]" class="col-xs-6">
+                                  <option value="">
+                                  </option><option value="true">Yes</option>
+                                  <option value="false">No</option>
+                                  <option value="nil">Don't know</option>
+                                </select>
+                              </div> <!-- / form-group -->
+            
+                              <div class="form-group">
+                                <label for="advanced_search_Complete"class="col-xs-5 control-label">Complete</label>
+                                <select id="advanced_search_msfs_complete" name="advanced_search_msfs[complete]" class="col-xs-6">
+                                  <option value=""></option><option value="true">Yes</option>
+                                  <option value="false">No</option>
+                                </select>
+                              </div> <!-- / form-group -->
+            
+                              <div class="form-group">
+                                <label for="advanced_search_Has Report"class="col-xs-5 control-label">Complete</label>
+                                <select id="advanced_search_msfs_has_report" name="advanced_search_msfs[has_report]" class="col-xs-6">
+                                  <option value=""></option>
+                                  <option value="true">Yes</option>
+                                  <option value="false">No</option>
+                                </select>
+                              </div> <!-- / form-group -->
+            
+                              <div class="form-group">
+                                <label for="advanced_search_completion_date"class="col-xs-5 control-label">Completion date:</label>
+                                <div class="col-xs-7">
+                                  <input id="advanced_search_msfs_completion_date_from" name="date" type="text" class="col-xs-5 hasDatepicker" placeholder="From">
+                                  <div class="col-xs-2 centre">to</div>
+                                  <input id="advanced_search_msfs_completion_date_to" type="text" class="col-xs-5 hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="To">
+                                </div>
+                              </div> <!-- / form-group -->
+                              <div class="form-group">
+                                    <label for="advanced_search_Patient feedback returns" class="col-xs-5 control-label">Patient feedback returns</label>
+                                    <input id="advanced_search_msfs_patient_feedback_returns" name="advanced_search_msfs[patient_feedback_returns]" type="text"  class="col-xs-7">
+                                  </div> <!-- / form-group -->
+            
                               <fieldset>
-                                <legend class="toggle-plus accordion-toggle collapsed"  href="#" aria-controls="Set02" aria-expanded="false" data-toggle="collapse" data-target="#Set02">
-                                  Legend 2
-                                </legend>
-                                <div id="Set02" class="collapse in">
+                                <legend class="toggle-plus accordion-toggle collapsed" href="#" aria-controls="MSF_Ready" aria-expanded="false" data-toggle="collapse" data-target="#MSF_Ready">Multi-source Feedbacks (MSFs) / 360</legend>
+                                <div id="MSF_Ready" class="collapse in">
                                   <div class="form-group">
-                                      <label for="inputEmail3" class="col-xs-2 control-label">Email</label>
-                                      <div class="col-xs-10">
-                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="inputPassword3" class="col-xs-2 control-label">Password</label>
-                                      <div class="col-xs-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <div class="col-xs-offset-2 col-xs-10">
-                                        <div class="checkbox">
-                                          <label>
-                                            <input type="checkbox"> Remember me
-                                          </label>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <div class="col-xs-offset-2 col-xs-10">
-                                        <button type="submit" class="btn btn-default">Sign in</button>
-                                      </div>
-                                    </div>
-                                </div> <!-- / Set-02 -->
-                              </fieldset>
-                              </form>
-                            </div> <!-- / col-sm-6 -->
-            
-                            <div class="col-sm-6">
-                              <form class="asf-form form-horizontal">
-                              <fieldset>
-                                <legend class="toggle-plus accordion-toggle collapsed"  href="#" aria-controls="Set03" aria-expanded="false" data-toggle="collapse" data-target="#Set03">
-                                  Legend 3
-                                </legend>
-                                <div id="Set03" class="collapse in">
+                                    <label for="advanced_search_Ready for analysis?*" class="col-xs-5 control-label">Ready for analysis? <span class="asterisk">*</span></label>
+                                    <select id="advanced_search_msfs_ready_for_analysis" name="advanced_search_msfs[ready_for_analysis]" class="col-xs-6">
+                                      <option value=""></option>
+                                      <option value="true">Yes</option>
+                                      <option value="false">No</option></select>
+                                  </div> <!-- / form-group -->
                                   <div class="form-group">
-                                      <label for="inputEmail3" class="col-xs-2 control-label">Email</label>
-                                      <div class="col-xs-10">
-                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="inputPassword3" class="col-xs-2 control-label">Password</label>
-                                      <div class="col-xs-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <div class="col-xs-offset-2 col-xs-10">
-                                        <div class="checkbox">
-                                          <label>
-                                            <input type="checkbox"> Remember me
-                                          </label>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <div class="col-xs-offset-2 col-xs-10">
-                                        <button type="submit" class="btn btn-default">Sign in</button>
-                                      </div>
-                                    </div>
-                                </div> <!-- / Set-03 -->
-                              </fieldset>
-                              </form>
-                            </div> <!-- / col-sm-6 -->
+                                    <label for="advanced_search_Patient feedback returns" class="col-xs-5 control-label">Patient feedback returns</label>
+                                    <input id="advanced_search_msfs_patient_feedback_returns" name="advanced_search_msfs[patient_feedback_returns]" type="text"  class="col-xs-7">
+                                  </div> <!-- / form-group -->
             
-                            <div class="col-sm-6">
-                              <form class="asf-form form-horizontal">
-                                <fieldset>
-                                  <legend class="toggle-plus accordion-toggle collapsed"  href="#" aria-controls="Set04" aria-expanded="false" data-toggle="collapse" data-target="#Set04">
-                                  Legend 4
-                                </legend>
-                                  <div id="Set04" class="collapse in">
-                                    <div class="form-group">
-                                      <label for="inputEmail3" class="col-xs-2 control-label">Email</label>
-                                      <div class="col-xs-10">
-                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                                      </div>
+                                   <div class="form-group">
+                                    <label for="advanced_search_Colleague feedback returns" class="col-xs-5 control-label">Colleague feedback returns</label>
+                                    <input id="advanced_search_msfs_colleague_feedback_returns" name="advanced_search_msfs[colleague_feedback_returns]" type="text"  class="col-xs-7">
+                                  </div> <!-- / form-group -->
+                                  <div class="form-group">
+                                    <div class="col-xs-12">
+                                      <p class="note"><span class="asterisk">*</span> To determine if a MSF is ready for analysis we use the GMC recommended number of returns, which are: 
+                                      15 colleague feedback questionnaires are completed 
+                                      34 patient questionnaires are returned 
+                                      Alternatively you can specify your own thresholds above. 
+                                      NB This does not take into consideration whether the medic has notified the administrator that they believe their MSF is ready for analysis. It is just based on the number of returns.</p>
                                     </div>
-                                    <div class="form-group">
-                                      <label for="inputPassword3" class="col-xs-2 control-label">Password</label>
-                                      <div class="col-xs-10">
-                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <div class="col-xs-offset-2 col-xs-10">
-                                        <div class="checkbox">
-                                          <label>
-                                            <input type="checkbox"> Remember me
-                                          </label>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <div class="col-xs-offset-2 col-xs-10">
-                                        <button type="submit" class="btn btn-default">Sign in</button>
-                                      </div>
-                                    </div>
-                                  </div> <!-- / Set-04 -->
-                                </fieldset>
-                              </form>
-                            </div> <!-- / col-sm-6 -->
-                          
-                      </div> <!-- / col-xs-12 -->
+                                  </div> <!-- / form-group -->
             
+                                  
+            
+            
+            
+                                </div> <!-- / MSF_Ready -->
+            
+                              </fieldset><!-- / Nested fieldset -->
+            
+                              
+            
+                            </div> <!-- / MultiSourceFeedbacks -->
+                          </fieldset>
+                        </form>
+                      </div> <!-- / col-md-6 --> 
+            
+                    </div> <!-- / Row --> 
+            
+                    <div class="row">
                       <div class="col-xs-12 right">
                         <a class="btn btn-xs btn-admin accordion-toggle collapsed" href="#" aria-controls="ASF-content" aria-expanded="false" data-toggle="collapse" data-target="#ASF-panel">Submit</a>
                         <a class="btn btn-xs btn-default accordion-toggle collapsed" href="#" aria-controls="ASF-content" aria-expanded="false" data-toggle="collapse" data-target="#ASF-panel">Close</a>
                       </div>
                     </div> <!-- / Row -->
-            
-                    
             
                   </div> <!-- / ASF-body -->
             

@@ -3,7 +3,6 @@
   .toggle-plus.accordion-toggle[aria-expanded="true"]:after{
     font-family: 'FontAwesome';
     content: "\f068"; // minus
-    float:right;
     position: absolute;
     top:0;
     right:0;
@@ -12,7 +11,6 @@
   .toggle-plus.accordion-toggle[aria-expanded="false"]:after{
     font-family: 'FontAwesome';
     content: "\f067"; // plus
-    float:right;
     position: absolute;
     top:0;
     right:0;
