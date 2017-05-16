@@ -244,7 +244,8 @@
     <div class="col-xs-12">
       <h2>Messages</h2>
       <p>Message lists are made up of DIVS classed <code>.message</code>, nested within a<code>.message-group</code>, A message can be collapsable or not, but you shouldn't put collapsable and non-collapsable within the same group. You can however have multiple groups.</br>
-        When used whithout a panel they should all be wrapped in a DIV with a class of <code>.messages</code>. Regardless of whether they are within a panel or not, the type should use the classes set out below.</p>
+        When used without a panel they should all be wrapped in a DIV with a class of <code>.messages</code>. Regardless of whether they are within a panel or not, the type should use the classes set out below.</p>
+        <p>To include the + / - symbols in the collapsable messages, simply add <code>.toggle-plus</code> to the <code>.accordion-toggle</code> class.</p>
     </div> <!-- END Column -->
 
     <div class="col-xs-6">
@@ -262,8 +263,7 @@
             <div class="message-group">
               <div class="messages-collapse">
                 <div class="message">
-                  <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="ADB_Message_01" aria-expanded="false" data-toggle="collapse" data-target="#ADB_Message_01">
-                    <!-- <i class="more-less glyphicon glyphicon-minus pull-right"></i> -->
+                  <a href="#" class="toggle-plus accordion-toggle collapsed" role="button" aria-controls="ADB_Message_01" aria-expanded="false" data-toggle="collapse" data-target="#ADB_Message_01">
                     <h4>Collapsable Message</h4>
                     <h6>Message Subtitle</h6>
                   </a>
@@ -273,8 +273,7 @@
                 </div> <!-- / message -->
 
                 <div class="message">
-                  <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="ADB_Message_02" aria-expanded="false" data-toggle="collapse" data-target="#ADB_Message_02">
-                    <!-- <i class="more-less glyphicon glyphicon-minus pull-right"></i> -->
+                  <a href="#" class="toggle-plus accordion-toggle collapsed" role="button" aria-controls="ADB_Message_02" aria-expanded="false" data-toggle="collapse" data-target="#ADB_Message_02">
                     <h4>Message</h4>
                   </a>
                   <div id="ADB_Message_02"class="collapse ">
@@ -312,8 +311,7 @@
         <div class="message-group">
           <div class="messages-collapse">
             <div class="message">
-              <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="ADB_Message_03" aria-expanded="false" data-toggle="collapse" data-target="#ADB_Message_03">
-                <!-- <i class="more-less glyphicon glyphicon-minus pull-right"></i> -->
+              <a href="#" class="toggle-plus accordion-toggle collapsed" role="button" aria-controls="ADB_Message_03" aria-expanded="false" data-toggle="collapse" data-target="#ADB_Message_03">
                 <h4>Collapsable Message</h4>
                 <h6>Message Subtitle</h6>
               </a>
@@ -323,8 +321,7 @@
             </div> <!-- / message -->
 
             <div class="message">
-              <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="ADB_Message_04" aria-expanded="false" data-toggle="collapse" data-target="#ADB_Message_04">
-                <!-- <i class="more-less glyphicon glyphicon-minus pull-right"></i> -->
+              <a href="#" class="toggle-plus accordion-toggle collapsed" role="button" aria-controls="ADB_Message_04" aria-expanded="false" data-toggle="collapse" data-target="#ADB_Message_04">
                 <h4>Message Title</h4>
               </a>
               <div id="ADB_Message_04"class="collapse ">

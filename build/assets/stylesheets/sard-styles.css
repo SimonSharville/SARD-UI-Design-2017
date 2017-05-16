@@ -2736,25 +2736,6 @@ img.user-guide-cover {
 .messages-collapse a:link {
   color: #211F0F; }
 
-.messages-collapse .glyphicon {
-  color: #211F0F; }
-
-.messages-collapse a:link.accordion-toggle[aria-expanded="true"]:after {
-  font-family: 'FontAwesome';
-  content: "\f068";
-  float: right;
-  position: absolute;
-  top: 0;
-  right: 0; }
-
-.messages-collapse a:link.accordion-toggle[aria-expanded="false"]:after {
-  font-family: 'FontAwesome';
-  content: "\f067";
-  float: right;
-  position: absolute;
-  top: 0;
-  right: 0; }
-
 .ui.title {
   margin-top: -10px; }
 
@@ -4017,6 +3998,24 @@ input, button, select, textarea {
   content: "\f057";
   padding: 0px 1px; }
 
+.toggle-plus.accordion-toggle[aria-expanded="true"]:after {
+  font-family: 'FontAwesome';
+  content: "\f068";
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #211F0F; }
+
+.toggle-plus.accordion-toggle[aria-expanded="false"]:after {
+  font-family: 'FontAwesome';
+  content: "\f067";
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #211F0F; }
+
 .sa-accordion .panel-heading .accordion-toggle {
   display: block; }
 
@@ -5131,11 +5130,11 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   background-color: #00B2B2;
   margin: 0px 0px 30px 0px;
   padding: 10px;
-  border-radius: 12px; }
+  border-radius: 8px; }
 
 #sard-search-input {
   padding: 4px;
-  border-radius: 6px;
+  border-radius: 4px;
   background-color: white; }
 
 #sard-search-input input {
@@ -5169,9 +5168,9 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   top: 0px; }
 
 .sard-search .results {
-  padding-top: 5px;
-  margin-bottom: -5px;
-  color: white; }
+  color: white;
+  line-height: 1em;
+  padding-top: 5px; }
 
 .admin .sard-search {
   background-color: #E50073; }
@@ -5185,6 +5184,67 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 
 .admin #sard-search-input .glyphicon-search:active {
   color: #99004d; }
+
+#ASF .header {
+  padding-top: 10px; }
+
+#ASF .ASF-body {
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 4px;
+  padding: 10px; }
+
+#ASF .ASF-body .heading {
+  margin-top: 0; }
+
+.asf-form {
+  margin: -5px;
+  margin-bottom: 10px;
+  box-sizing: border-box; }
+
+.asf-form fieldset {
+  box-sizing: border-box;
+  background-color: #EDEBEB; }
+
+.asf-form legend {
+  background-color: #403D3D;
+  box-sizing: border-box;
+  font-size: 1em;
+  color: white;
+  padding: 0 5px 1px 5px;
+  margin-top: 10px;
+  margin-bottom: -1px;
+  border: none; }
+
+.asf-form legend.toggle-plus.accordion-toggle:after {
+  right: 10px;
+  top: -4px;
+  color: white; }
+
+.asf-form .form-group {
+  margin: 5px 0px;
+  font-size: 0.8em; }
+
+.asf-form .form-group:first-child {
+  margin-top: 10px; }
+
+.asf-form .form-group .control-label {
+  text-align: left;
+  padding-top: 2px; }
+
+.asf-form .form-group .form-control {
+  width: inherit; }
+
+.asf-form .form-group input {
+  padding: 5px;
+  height: 22px;
+  margin: 0; }
+
+.asf-form .form-group input:focus {
+  box-shadow: none !important;
+  border-color: #E50073;
+  border-width: 1px;
+  outline: none; }
 
 table.dataTable {
   clear: both;

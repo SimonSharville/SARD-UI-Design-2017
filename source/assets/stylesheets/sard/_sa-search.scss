@@ -4,12 +4,12 @@
   background-color:$turq;
   margin:0px 0px 30px 0px;
   padding:10px;
-  border-radius:12px;
+  border-radius:8px;
 }
 
 #sard-search-input{
     padding: 4px;
-    border-radius: 6px;
+    border-radius: 4px;
     background-color: white;
 }
 
@@ -49,9 +49,9 @@
 }
 
 .sard-search .results{
-  padding-top:5px;
-  margin-bottom:-5px;
   color:white;
+  line-height:1em;
+  padding-top:5px;
 }
 
 // Admin Colours ========================
@@ -76,5 +76,85 @@ background-color:$admin-colour;
 // Advanced Search Form ====================================
 
 #ASF{
-  
+  // display:inline-block;
 }
+
+#ASF .header{
+  padding-top: 10px;
+}
+
+#ASF .ASF-body{
+  background-color:white;
+  margin-top:10px;
+  border-radius: 4px;
+  padding:10px
+}
+
+#ASF .ASF-body .heading{
+  margin-top:0;
+}
+
+.asf-form{
+margin:-5px;
+margin-bottom:10px;
+box-sizing: border-box;
+}
+
+.asf-form fieldset{
+  box-sizing: border-box;
+  // border:1px solid $grey16;
+  background-color:$grey02;
+}
+
+.asf-form legend{
+  background-color:$grey16;
+  box-sizing: border-box;
+  font-size:1em;
+  color:white;
+  padding:0 5px 1px 5px;
+  margin-top:10px;
+  margin-bottom:-1px;
+  // margin-left:-1px;
+  // width: calc(100% + 2px);
+  border:none;
+}
+
+// This overrides the .toggle plus in sa-accordion
+.asf-form legend.toggle-plus.accordion-toggle:after{
+    right:10px;
+    top:-4px;
+    color:white;
+  }
+
+.asf-form .form-group{
+  margin:5px 0px;
+  font-size:0.8em;
+  // background-color:yellow;
+}
+
+.asf-form .form-group:first-child{
+  margin-top:10px;
+}
+
+.asf-form .form-group .control-label{
+  text-align:left;
+  padding-top:2px;
+}
+
+.asf-form .form-group .form-control{
+  width:inherit;
+}
+
+.asf-form .form-group input{
+  padding:5px;
+  height: 22px;
+  margin:0;
+}
+.asf-form .form-group input:focus{
+  box-shadow: none!important;
+  border-color: $admin-colour;
+  border-width:1px;
+  outline: none;
+}
+
+

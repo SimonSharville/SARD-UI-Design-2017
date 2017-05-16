@@ -499,23 +499,6 @@ img.user-guide-cover{
 
 .messages-collapse{
   a:link{ color:$text;}
-  .glyphicon{color:$text;}
-  a:link.accordion-toggle[aria-expanded="true"]:after{
-    font-family: 'FontAwesome';
-    content: "\f068"; // minus
-    float:right;
-    position: absolute;
-    top:0;
-    right:0;
-  }
-  a:link.accordion-toggle[aria-expanded="false"]:after{
-    font-family: 'FontAwesome';
-    content: "\f067"; // plus
-    float:right;
-    position: absolute;
-    top:0;
-    right:0;
-  }
 }
 
 
