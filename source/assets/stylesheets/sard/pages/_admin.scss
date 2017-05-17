@@ -8,7 +8,7 @@
 
 
 .admin .jumbotron{
-  background-color:$admin-colour;
+  background-color:$admin;
 }
 
 .admin #top{ // This lowers the content to allow for the second navbar
@@ -16,11 +16,11 @@
 }
 
 .admin .breadcrumbs{
-  border-bottom: 1px solid $admin-colour;
+  border-bottom: 1px solid $admin;
 }
 
 .admin .breadcrumb > .active {
-  color: $admin-colour-dark;
+  color: $admin-dark;
 }
 
 
@@ -94,11 +94,11 @@
 }
 
 #users.table > tbody > tr.medic{
-  border-left:10px solid $turq;
+  border-left:10px solid $medic;
 }
 
 #users.table > tbody > tr.non-medic{
-  border-left:10px solid $teal;
+  border-left:10px solid $non-medic;
 }
 
 #users.table .user-photo{
@@ -127,7 +127,7 @@
 .user-card.medic:before{
   height:18px;
   border-radius: 4px 4px 0px 0px;
-  background-color:$turq;
+  background-color:$medic;
   width:100%;
   padding: 2px 10px;
   content: "Medic";
@@ -141,7 +141,7 @@
 .user-card.non-medic:before{
   height:18px;
   border-radius: 4px 4px 0px 0px;
-  background-color:$teal;
+  background-color:$non-medic;
   width:100%;
   padding: 2px 10px;
   content: "Non Medic";

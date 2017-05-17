@@ -1,3 +1,25 @@
+  // Add .toggle-plus before an .accordion-toggle to include a + - symbol to it 
+
+  .toggle-plus.accordion-toggle[aria-expanded="true"]:after{
+    font-family: 'FontAwesome';
+    content: "\f068"; // minus
+    position: absolute;
+    top:0;
+    right:0;
+    color:$text;
+  }
+  .toggle-plus.accordion-toggle[aria-expanded="false"]:after{
+    font-family: 'FontAwesome';
+    content: "\f067"; // plus
+    position: absolute;
+    top:0;
+    right:0;
+    color:$text;
+  }
+
+
+
+
 // SA-Accordion ================================================
 
 
@@ -97,25 +119,25 @@ $accordian: $grey14;
 
 /* change color of open class */
 .panel-admin.sa-accordion .panel-heading h3{ 
-  background-color: darken($admin-colour, 0%); 
+  background-color: darken($admin, 0%); 
 }
 
 .panel-admin.sa-accordion .panel-heading h3:hover{
-  background-color:darken($admin-colour, 5%);
+  background-color:darken($admin, 5%);
 }
 .panel-admin.sa-accordion .panel-heading h3:active{
-  background-color:darken($admin-colour, 10%);
+  background-color:darken($admin, 10%);
 }
 
 /* change color of collapsed class */
 .panel-admin.sa-accordion .collapsed { 
-  background-color: darken($admin-colour, 0%); 
+  background-color: darken($admin, 0%); 
 }
 .panel-admin.sa-accordion .collapsed:hover { 
-  background-color: darken($admin-colour, 5%); 
+  background-color: darken($admin, 5%); 
 }
 .panel-admin.sa-accordion .collapsed:active { 
-  background-color: darken($admin-colour, 10%); 
+  background-color: darken($admin, 10%); 
 }
 
 .panel-admin.sa-accordion .panel-heading + .panel-collapse > .panel-body{ 
@@ -123,5 +145,5 @@ $accordian: $grey14;
 }
 
 .panel-admin.sa-accordion .panel-footer{
-  background-color: darken($admin-colour, 0%);
+  background-color: darken($admin, 0%);
 }

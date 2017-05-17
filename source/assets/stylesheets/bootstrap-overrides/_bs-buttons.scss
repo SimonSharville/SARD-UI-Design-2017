@@ -169,24 +169,35 @@ $btn-light: $grey04;
 .btn-white:focus { background-color: white!important; box-shadow:none!important;}
 .btn-white:active,  { background-color: white!important; box-shadow:none!important;}
 
-.btn-client { background-color: darken($client-colour, 15%); color:white!important;}
-.btn-client:visited { background-color: darken($client-colour, 15%); color:white!important;}
-.btn-client:hover { background-color: darken($client-colour, 17%); color:white!important;}
-.btn-client:focus { background-color: darken($client-colour, 17%)!important;}
-.btn-client:active,  { background-color: darken($client-colour, 20%)!important;}
+.btn-client { background-color: darken($client, 15%); color:white!important;}
+.btn-client:visited { background-color: darken($client, 15%); color:white!important;}
+.btn-client:hover { background-color: darken($client, 17%); color:white!important;}
+.btn-client:focus { background-color: darken($client, 17%)!important;}
+.btn-client:active,  { background-color: darken($client, 20%)!important;}
 
-.btn-admin { background-color: darken($admin-colour, 0%); color:white!important;}
-.btn-admin:visited { background-color: darken($admin-colour, 0%); color:white!important;}
-.btn-admin:hover { background-color: darken($admin-colour, 5%); color:white!important;}
-.btn-admin:focus { background-color: darken($admin-colour, 7%)!important;}
-.btn-admin:active,  { background-color: darken($admin-colour, 10%)!important;}
+.btn-admin { background-color: darken($admin, 0%); color:white!important;}
+.btn-admin:visited { background-color: darken($admin, 0%); color:white!important;}
+.btn-admin:hover { background-color: darken($admin, 5%); color:white!important;}
+.btn-admin:focus { background-color: darken($admin, 7%)!important;}
+.btn-admin:active,  { background-color: darken($admin, 10%)!important;}
 
-.btn-admin-dark { background-color: darken($admin-colour, 20%); color:white!important;}
-.btn-admin-dark:visited { background-color: darken($admin-colour, 20%); color:white!important;}
-.btn-admin-dark:hover { background-color: darken($admin-colour, 25%); color:white!important;}
-.btn-admin-dark:focus { background-color: darken($admin-colour, 25%)!important;}
-.btn-admin-dark:active,  { background-color: darken($admin-colour, 30%)!important;}
+.btn-admin-dark { background-color: darken($admin, 20%); color:white!important;}
+.btn-admin-dark:visited { background-color: darken($admin, 20%); color:white!important;}
+.btn-admin-dark:hover { background-color: darken($admin, 25%); color:white!important;}
+.btn-admin-dark:focus { background-color: darken($admin, 25%)!important;}
+.btn-admin-dark:active,  { background-color: darken($admin, 30%)!important;}
 
+.btn-medic { background-color: darken($medic, 0%); color:white!important;}
+.btn-medic:visited { background-color: darken($medic, 0%); color:white!important;}
+.btn-medic:hover { background-color: darken($medic, 5%); color:white!important;}
+.btn-medic:focus { background-color: darken($medic, 7%)!important;}
+.btn-medic:active,  { background-color: darken($medic, 10%)!important;}
+
+.btn-non-medic { background-color: darken($non-medic, 0%); color:white!important;}
+.btn-non-medic:visited { background-color: darken($non-medic, 0%); color:white!important;}
+.btn-non-medic:hover { background-color: darken($non-medic, 5%); color:white!important;}
+.btn-non-medic:focus { background-color: darken($non-medic, 7%)!important;}
+.btn-non-medic:active,  { background-color: darken($non-medic, 10%)!important;}
 
 .btn-link{
   color: $turq;

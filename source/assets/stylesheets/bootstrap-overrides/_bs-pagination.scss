@@ -2,22 +2,22 @@
 
 .pagination > li > a,
 .pagination > li > span {
-  color: $client-colour;
+  color: $client;
   outline: none !important; // This removes the glow on imput buttons
 }
 
 .pagination > li > a:hover,
 .pagination > li > span:hover {
   color: white;
-  background-color: darken($client-colour, 10%);
-  border-color: darken($client-colour, 10%);
+  background-color: darken($client, 10%);
+  border-color: darken($client, 10%);
 }
 
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   color: white;
-  background-color: darken($client-colour, 15%);
-  border-color: darken($client-colour, 15%);
+  background-color: darken($client, 15%);
+  border-color: darken($client, 15%);
 }
 
 .pagination > .active > a,
@@ -26,30 +26,30 @@
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
-  background-color: $client-colour;
-  border-color: $client-colour;
+  background-color: $client;
+  border-color: $client;
 }
 
 
 // Admin Colours =======================================================
 .admin .pagination > li > a,
 .admin .pagination > li > span {
-  color: $admin-colour;
+  color: $admin;
   outline: none !important; // This removes the glow on imput buttons
 }
 
 .admin .pagination > li > a:hover,
 .admin .pagination > li > span:hover{
   color: white;
-  background-color: darken($admin-colour, 10%);
-  border-color: darken($admin-colour, 10%);
+  background-color: darken($admin, 10%);
+  border-color: darken($admin, 10%);
 }
 
 .admin .pagination > li > a:focus,
 .admin .pagination > li > span:focus {
   color: white;
-  background-color: darken($admin-colour, 15%);
-  border-color: darken($admin-colour, 15%);
+  background-color: darken($admin, 15%);
+  border-color: darken($admin, 15%);
 }
 
 .admin .pagination > .active > a,
@@ -58,7 +58,7 @@
 .admin .pagination > .active > span:hover,
 .admin .pagination > .active > a:focus,
 .admin .pagination > .active > span:focus {
-  background-color: $admin-colour;
-  border-color: $admin-colour;
+  background-color: $admin;
+  border-color: $admin;
   color:white;
 }
