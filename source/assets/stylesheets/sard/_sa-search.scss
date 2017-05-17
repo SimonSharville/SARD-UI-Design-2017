@@ -197,15 +197,58 @@ box-sizing: border-box;
   // margin-right:10px;
 }
 
-.asf-form .form-group select[class=col-xs-6]{
-  width:54.7%;
-  left:8px;
-}
 
-.asf-form .form-group input[class=col-xs-7]{
-  width:54.7%;
-  left:8px;
-}
+
+// This adjusts the input field widths for various sizes so they line up with the rest. 
+// Small screens
+@media (max-width: 767px) {
+  .asf-form .form-group select[class=col-xs-6]{
+    width:56%;
+    left:8px;
+  }
+  .asf-form .form-group input[class=col-xs-7]{
+    width:56%;
+    left:8px;
+  }
+} 
+
+// Medium screens
+@media (min-width: 768px) and (max-width: 991px) {
+  .asf-form .form-group select[class=col-xs-6]{
+    width:56%;
+    left:8px;
+  }
+  .asf-form .form-group input[class=col-xs-7]{
+    width:56%;
+    left:8px;
+  }
+} 
+
+
+// Large screens
+@media (min-width: 992px) and (max-width: 1199px) {
+  .asf-form .form-group select[class=col-xs-6]{
+    width:54.7%;
+    left:8px;
+  }
+  .asf-form .form-group input[class=col-xs-7]{
+    width:54.7%;
+    left:8px;
+  }
+} 
+
+
+// Large screens
+@media (min-width: 1200px) {
+  .asf-form .form-group select[class=col-xs-6]{
+    width:55.5%;
+    left:8px;
+  }
+  .asf-form .form-group input[class=col-xs-7]{
+    width:55.5%;
+    left:8px;
+  }
+} 
 
 
 

@@ -5127,6 +5127,56 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   margin-left: -5px;
   margin-right: -5px; }
 
+.admin .datepicker table tr td.today,
+.admin .datepicker table tr td.today:hover,
+.admin .datepicker table tr td.today.disabled,
+.admin .datepicker table tr td.today.disabled:hover {
+  background-color: #E50073; }
+
+.admin .datepicker table tr td.today:hover,
+.admin .datepicker table tr td.today:hover:hover,
+.admin .datepicker table tr td.today.disabled:hover,
+.admin .datepicker table tr td.today.disabled:hover:hover,
+.admin .datepicker table tr td.today:focus,
+.admin .datepicker table tr td.today:hover:focus,
+.admin .datepicker table tr td.today.disabled:focus,
+.admin .datepicker table tr td.today.disabled:hover:focus,
+.admin .datepicker table tr td.today:active,
+.admin .datepicker table tr td.today:hover:active,
+.admin .datepicker table tr td.today.disabled:active,
+.admin .datepicker table tr td.today.disabled:hover:active,
+.admin .datepicker table tr td.today.active,
+.admin .datepicker table tr td.today:hover.active,
+.admin .datepicker table tr td.today.disabled.active,
+.admin .datepicker table tr td.today.disabled:hover.active,
+.admin .open .dropdown-toggle.datepicker table tr td.today,
+.admin .open .dropdown-toggle.datepicker table tr td.today:hover,
+.admin .open .dropdown-toggle.datepicker table tr td.today.disabled,
+.admin .open .dropdown-toggle.datepicker table tr td.today.disabled:hover {
+  background-color: #cc0066; }
+
+.admin .datepicker table tr td span.active:hover,
+.admin .datepicker table tr td span.active:hover:hover,
+.admin .datepicker table tr td span.active.disabled:hover,
+.admin .datepicker table tr td span.active.disabled:hover:hover,
+.admin .datepicker table tr td span.active:focus,
+.admin .datepicker table tr td span.active:hover:focus,
+.admin .datepicker table tr td span.active.disabled:focus,
+.admin .datepicker table tr td span.active.disabled:hover:focus,
+.admin .datepicker table tr td span.active:active,
+.admin .datepicker table tr td span.active:hover:active,
+.admin .datepicker table tr td span.active.disabled:active,
+.admin .datepicker table tr td span.active.disabled:hover:active,
+.admin .datepicker table tr td span.active.active,
+.admin .datepicker table tr td span.active:hover.active,
+.admin .datepicker table tr td span.active.disabled.active,
+.admin .datepicker table tr td span.active.disabled:hover.active,
+.admin .open .dropdown-toggle.datepicker table tr td span.active,
+.admin .open .dropdown-toggle.datepicker table tr td span.active:hover,
+.admin .open .dropdown-toggle.datepicker table tr td span.active.disabled,
+.admin .open .dropdown-toggle.datepicker table tr td span.active.disabled:hover {
+  background-color: #E50073; }
+
 .sard-search {
   background-color: #00B2B2;
   margin: 0px 0px 30px 0px;
@@ -5273,13 +5323,37 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 .double-text-column input[type=checkbox] {
   float: right; }
 
-.asf-form .form-group select[class=col-xs-6] {
-  width: 54.7%;
-  left: 8px; }
+@media (max-width: 767px) {
+  .asf-form .form-group select[class=col-xs-6] {
+    width: 56%;
+    left: 8px; }
+  .asf-form .form-group input[class=col-xs-7] {
+    width: 56%;
+    left: 8px; } }
 
-.asf-form .form-group input[class=col-xs-7] {
-  width: 54.7%;
-  left: 8px; }
+@media (min-width: 768px) and (max-width: 991px) {
+  .asf-form .form-group select[class=col-xs-6] {
+    width: 56%;
+    left: 8px; }
+  .asf-form .form-group input[class=col-xs-7] {
+    width: 56%;
+    left: 8px; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .asf-form .form-group select[class=col-xs-6] {
+    width: 54.7%;
+    left: 8px; }
+  .asf-form .form-group input[class=col-xs-7] {
+    width: 54.7%;
+    left: 8px; } }
+
+@media (min-width: 1200px) {
+  .asf-form .form-group select[class=col-xs-6] {
+    width: 55.5%;
+    left: 8px; }
+  .asf-form .form-group input[class=col-xs-7] {
+    width: 55.5%;
+    left: 8px; } }
 
 table.dataTable {
   clear: both;
