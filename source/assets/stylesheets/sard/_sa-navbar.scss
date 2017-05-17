@@ -22,11 +22,11 @@
 
 // Navbar Default ======================================
 
-$navBG          : darken($client-colour, 10%);
-$navHover       : darken($client-colour, 15%);
-$navActive      : darken($client-colour, 20%);
+$navBG          : darken($client, 10%);
+$navHover       : darken($client, 15%);
+$navActive      : darken($client, 20%);
 $navText        : white;
-$navDropdownBG  : darken($client-colour, 15%);
+$navDropdownBG  : darken($client, 15%);
 
 
 
@@ -120,7 +120,7 @@ $navDropdownBG  : darken($client-colour, 15%);
 // Mobile version -------------------------------------------------------
 .navbar-default .navbar-toggle {
   border:none;
-  background-color:$client-colour;
+  background-color:$client;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
@@ -266,7 +266,7 @@ $adminNavDropdownBG  : darken($admin-navbar, 15%);
 
 // // Navbar Second =======================================================
 
-$second-navbar        : $admin-colour;
+$second-navbar        : $admin;
 $secondNavBG          : darken($second-navbar, 10%);
 $secondNavHover       : darken($second-navbar, 15%);
 $secondNavActive      : darken($second-navbar, 20%);

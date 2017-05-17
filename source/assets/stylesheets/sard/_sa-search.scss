@@ -1,15 +1,15 @@
 // From: http://bootsnipp.com/snippets/featured/custom-search-input
 
 .sard-search{
-  background-color:$turq;
+  background-color:$client;
   margin:0px 0px 30px 0px;
   padding:10px;
-  border-radius:12px;
+  border-radius:8px;
 }
 
 #sard-search-input{
     padding: 4px;
-    border-radius: 6px;
+    border-radius: 4px;
     background-color: white;
 }
 
@@ -35,13 +35,13 @@
 
 #sard-search-input .glyphicon-search{
     font-size: 23px;
-    color:$turq;
+    color:$client;
 }
 #sard-search-input .glyphicon-search:hover{
-    color:darken($turq, 10%);
+    color:darken($client, 10%);
 }
 #sard-search-input .glyphicon-search:active{
-    color:darken($turq, 15%);
+    color:darken($client, 15%);
 }
 
 #sard-search-input .btn{
@@ -49,32 +49,231 @@
 }
 
 .sard-search .results{
-  padding-top:5px;
-  margin-bottom:-5px;
   color:white;
+  line-height:1em;
+  padding-top:5px;
 }
 
 // Admin Colours ========================
 
 
 .admin .sard-search{
-background-color:$admin-colour;
+background-color:$admin;
 }
 
 .admin #sard-search-input .glyphicon-search{
     font-size: 23px;
-    color:$admin-colour;
+    color:$admin;
 }
 .admin #sard-search-input .glyphicon-search:hover{
-    color:darken($admin-colour, 10%);
+    color:darken($admin, 10%);
 }
 .admin #sard-search-input .glyphicon-search:active{
-    color:darken($admin-colour, 15%);
+    color:darken($admin, 15%);
 }
 
 
 // Advanced Search Form ====================================
 
 #ASF{
+  // display:inline-block;
+}
+
+#ASF .header{
+  padding-top: 10px;
+}
+
+#ASF .ASF-body{
+  background-color:white;
+  margin-top:10px;
+  border-radius: 4px;
+  padding:10px
+}
+
+#ASF .ASF-body .heading{
+  margin-top:0;
+}
+
+.asf-form{
+margin-bottom:10px;
+box-sizing: border-box;
+}
+
+
+.asf-form legend{
+  background-color:$grey16;
+  box-sizing: border-box;
+  font-size:1em;
+  color:white;
+  padding:0 8px 1px 8px;
+  margin-top:10px;
+  margin-bottom:-1px;
+  // margin-left:-1px;
+  // width: calc(100% + 2px);
+  border:none;
+}
+
+// This overrides the .toggle plus in sa-accordion
+.asf-form legend.toggle-plus.accordion-toggle:after{
+  position: relative;
+  float:right;
+    // right:15px;
+    // top:-4px;
+  color:white;
+}
+
+.asf-form fieldset{
+  box-sizing: border-box;
+  // border:1px solid $grey16;
+  background-color:$grey02;
+}
+
+.asf-form fieldset fieldset{
+  background-color:white;
+  margin:8px;
   
 }
+
+.asf-form .form-group{
+  margin:5px 0px;
+  font-size:0.8em;
+  line-height:1.25em;
+  // background-color:yellow;
+}
+
+.asf-form .form-group:first-child{
+  margin-top:10px;
+}
+
+.asf-form .form-group:last-child{
+  margin-bottom:10px;
+}
+
+.asf-form .form-group .control-label{
+  text-align:left;
+  padding-top:2px;
+}
+
+.asf-form .form-group .form-control{
+  width:inherit;
+}
+
+// this is a fix to give a little space to the inputs.
+.asf-form .form-group .checkbox-inline input[type=checkbox],
+.asf-form .form-group .radio-inline input[type=radio]{
+  margin-right:3px;
+  margin-top:1px;
+}
+
+.asf-form .form-group .checkbox-inline,
+.asf-form .form-group .radio-inline{
+  padding-top:2px;
+
+}
+
+.asf-form .form-group input:focus{
+  box-shadow: none!important;
+  border-color: $admin;
+  border-width:1px;
+  outline: none;
+}
+
+.asf-form .form-group .indent{
+  padding-left: 17px;
+}
+
+.asf-form .form-group .subtitle{
+  margin-bottom:5px;
+}
+
+.asf-form .note{ 
+    margin-bottom:0;
+    padding-top:5px;
+    padding-left: 0.8em;
+    text-indent:-0.8em;
+  }
+
+.asf-form .divide-rule{
+  margin:10px;
+}
+
+// Double Text Columns =======================
+.double-text-column{
+  margin:0;
+  padding-left:10px;
+  width:49%;
+  display:inline-block;
+}
+
+.double-text-column:nth-child(odd){
+  // background-color:pink;
+  padding-right:10px;
+  border-right:1px solid $grey08;
+}
+
+.double-text-column:nth-child(even){
+  // background-color:pink;
+  // padding:0;
+  border-right:none;
+}
+
+.double-text-column input[type=checkbox] {
+  float:right;
+  // margin-right:10px;
+}
+
+
+// This adjusts the input field widths for various sizes so they line up with the rest. 
+// Small screens
+@media (max-width: 767px) {
+  .asf-form .form-group select[class=col-xs-6]{
+    width:56%;
+    left:8px;
+  }
+  .asf-form .form-group input[class=col-xs-7]{
+    width:56%;
+    left:8px;
+  }
+} 
+
+// Medium screens
+@media (min-width: 768px) and (max-width: 991px) {
+  .asf-form .form-group select[class=col-xs-6]{
+    width:56%;
+    left:8px;
+  }
+  .asf-form .form-group input[class=col-xs-7]{
+    width:56%;
+    left:8px;
+  }
+} 
+
+
+// Large screens
+@media (min-width: 992px) and (max-width: 1199px) {
+  .asf-form .form-group select[class=col-xs-6]{
+    width:54.7%;
+    left:8px;
+  }
+  .asf-form .form-group input[class=col-xs-7]{
+    width:54.7%;
+    left:8px;
+  }
+} 
+
+
+// Large screens
+@media (min-width: 1200px) {
+  .asf-form .form-group select[class=col-xs-6]{
+    width:55.5%;
+    left:8px;
+  }
+  .asf-form .form-group input[class=col-xs-7]{
+    width:55.5%;
+    left:8px;
+  }
+} 
+
+
+
+

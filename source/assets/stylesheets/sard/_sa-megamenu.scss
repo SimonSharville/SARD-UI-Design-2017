@@ -50,7 +50,7 @@
   cursor: not-allowed;
 }
 .megamenu li .dropdown-header {
-  color: $client-colour;
+  color: $client;
   font-size: 1.1em;
   line-height: 1.2em;
   padding: 1px 0px!important;
@@ -91,7 +91,7 @@ margin:6px 0;
 
 .menu-large.admin{
   .megamenu li .dropdown-header {
-    color: $admin-colour;
+    color: $admin;
   }
   .megamenu .divider{
   background-color:$grey06;

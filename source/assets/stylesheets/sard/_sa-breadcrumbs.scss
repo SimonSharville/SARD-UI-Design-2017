@@ -1,7 +1,7 @@
 // BS Breadcrumbs Overrides
 
 .breadcrumbs{
-  border-bottom: 1px solid $client-colour;
+  border-bottom: 1px solid $client;
   margin-bottom:20px;
   background-color:white;
 }
@@ -23,6 +23,6 @@
   color: $grey08;
 }
 .breadcrumb > .active {
-  color: $client-colour-dark;
+  color: $client-dark;
 }
 
