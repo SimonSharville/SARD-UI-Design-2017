@@ -95,33 +95,17 @@ background-color:$admin;
 }
 
 .asf-form{
-// margin:-5px;
 margin-bottom:10px;
 box-sizing: border-box;
 }
 
-.asf-form fieldset{
-  box-sizing: border-box;
-  // border:1px solid $grey16;
-  background-color:$grey02;
-}
-
-.asf-form fieldset fieldset{
-  background-color:white;
-  margin:8px;
-  .note{ 
-    margin-bottom:0;
-    padding-left: 0.8em;
-    text-indent:-0.8em;
-  }
-}
 
 .asf-form legend{
   background-color:$grey16;
   box-sizing: border-box;
   font-size:1em;
   color:white;
-  padding:0 5px 1px 5px;
+  padding:0 8px 1px 8px;
   margin-top:10px;
   margin-bottom:-1px;
   // margin-left:-1px;
@@ -135,12 +119,25 @@ box-sizing: border-box;
   float:right;
     // right:15px;
     // top:-4px;
-    color:white;
-  }
+  color:white;
+}
+
+.asf-form fieldset{
+  box-sizing: border-box;
+  // border:1px solid $grey16;
+  background-color:$grey02;
+}
+
+.asf-form fieldset fieldset{
+  background-color:white;
+  margin:8px;
+  
+}
 
 .asf-form .form-group{
   margin:5px 0px;
   font-size:0.8em;
+  line-height:1.25em;
   // background-color:yellow;
 }
 
@@ -161,11 +158,19 @@ box-sizing: border-box;
   width:inherit;
 }
 
-.asf-form .form-group input{
-  padding:5px;
-  height: 22px;
-  margin:0;
+// this is a fix to give a little space to the inputs.
+.asf-form .form-group .checkbox-inline input[type=checkbox],
+.asf-form .form-group .radio-inline input[type=radio]{
+  margin-right:3px;
+  margin-top:1px;
 }
+
+.asf-form .form-group .checkbox-inline,
+.asf-form .form-group .radio-inline{
+  padding-top:2px;
+
+}
+
 .asf-form .form-group input:focus{
   box-shadow: none!important;
   border-color: $admin;
@@ -173,6 +178,26 @@ box-sizing: border-box;
   outline: none;
 }
 
+.asf-form .form-group .indent{
+  padding-left: 17px;
+}
+
+.asf-form .form-group .subtitle{
+  margin-bottom:5px;
+}
+
+.asf-form .note{ 
+    margin-bottom:0;
+    padding-top:5px;
+    padding-left: 0.8em;
+    text-indent:-0.8em;
+  }
+
+.asf-form .divide-rule{
+  margin:10px;
+}
+
+// Double Text Columns =======================
 .double-text-column{
   margin:0;
   padding-left:10px;
@@ -196,7 +221,6 @@ box-sizing: border-box;
   float:right;
   // margin-right:10px;
 }
-
 
 
 // This adjusts the input field widths for various sizes so they line up with the rest. 
@@ -249,6 +273,7 @@ box-sizing: border-box;
     left:8px;
   }
 } 
+
 
 
 

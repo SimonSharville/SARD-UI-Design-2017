@@ -187,6 +187,17 @@ $btn-light: $grey04;
 .btn-admin-dark:focus { background-color: darken($admin, 25%)!important;}
 .btn-admin-dark:active,  { background-color: darken($admin, 30%)!important;}
 
+.btn-medic { background-color: darken($medic, 0%); color:white!important;}
+.btn-medic:visited { background-color: darken($medic, 0%); color:white!important;}
+.btn-medic:hover { background-color: darken($medic, 5%); color:white!important;}
+.btn-medic:focus { background-color: darken($medic, 7%)!important;}
+.btn-medic:active,  { background-color: darken($medic, 10%)!important;}
+
+.btn-non-medic { background-color: darken($non-medic, 0%); color:white!important;}
+.btn-non-medic:visited { background-color: darken($non-medic, 0%); color:white!important;}
+.btn-non-medic:hover { background-color: darken($non-medic, 5%); color:white!important;}
+.btn-non-medic:focus { background-color: darken($non-medic, 7%)!important;}
+.btn-non-medic:active,  { background-color: darken($non-medic, 10%)!important;}
 
 .btn-link{
   color: $turq;

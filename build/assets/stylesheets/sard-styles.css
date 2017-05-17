@@ -1919,6 +1919,42 @@ button:hover {
 .btn-admin-dark:active {
   background-color: #4c0026 !important; }
 
+.btn-medic {
+  background-color: #00b2b2;
+  color: white !important; }
+
+.btn-medic:visited {
+  background-color: #00b2b2;
+  color: white !important; }
+
+.btn-medic:hover {
+  background-color: #009999;
+  color: white !important; }
+
+.btn-medic:focus {
+  background-color: #008e8e !important; }
+
+.btn-medic:active {
+  background-color: #007f7f !important; }
+
+.btn-non-medic {
+  background-color: #000078;
+  color: white !important; }
+
+.btn-non-medic:visited {
+  background-color: #000078;
+  color: white !important; }
+
+.btn-non-medic:hover {
+  background-color: #00005f;
+  color: white !important; }
+
+.btn-non-medic:focus {
+  background-color: #000054 !important; }
+
+.btn-non-medic:active {
+  background-color: #000045 !important; }
+
 .btn-link {
   color: #00B2B2;
   -webkit-box-shadow: none;
@@ -5252,24 +5288,12 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   margin-bottom: 10px;
   box-sizing: border-box; }
 
-.asf-form fieldset {
-  box-sizing: border-box;
-  background-color: #EDEBEB; }
-
-.asf-form fieldset fieldset {
-  background-color: white;
-  margin: 8px; }
-  .asf-form fieldset fieldset .note {
-    margin-bottom: 0;
-    padding-left: 0.8em;
-    text-indent: -0.8em; }
-
 .asf-form legend {
   background-color: #403D3D;
   box-sizing: border-box;
   font-size: 1em;
   color: white;
-  padding: 0 5px 1px 5px;
+  padding: 0 8px 1px 8px;
   margin-top: 10px;
   margin-bottom: -1px;
   border: none; }
@@ -5279,9 +5303,18 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   float: right;
   color: white; }
 
+.asf-form fieldset {
+  box-sizing: border-box;
+  background-color: #EDEBEB; }
+
+.asf-form fieldset fieldset {
+  background-color: white;
+  margin: 8px; }
+
 .asf-form .form-group {
   margin: 5px 0px;
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  line-height: 1.25em; }
 
 .asf-form .form-group:first-child {
   margin-top: 10px; }
@@ -5296,16 +5329,35 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 .asf-form .form-group .form-control {
   width: inherit; }
 
-.asf-form .form-group input {
-  padding: 5px;
-  height: 22px;
-  margin: 0; }
+.asf-form .form-group .checkbox-inline input[type=checkbox],
+.asf-form .form-group .radio-inline input[type=radio] {
+  margin-right: 3px;
+  margin-top: 1px; }
+
+.asf-form .form-group .checkbox-inline,
+.asf-form .form-group .radio-inline {
+  padding-top: 2px; }
 
 .asf-form .form-group input:focus {
   box-shadow: none !important;
   border-color: #E50073;
   border-width: 1px;
   outline: none; }
+
+.asf-form .form-group .indent {
+  padding-left: 17px; }
+
+.asf-form .form-group .subtitle {
+  margin-bottom: 5px; }
+
+.asf-form .note {
+  margin-bottom: 0;
+  padding-top: 5px;
+  padding-left: 0.8em;
+  text-indent: -0.8em; }
+
+.asf-form .divide-rule {
+  margin: 10px; }
 
 .double-text-column {
   margin: 0;
@@ -6110,7 +6162,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   border-left: 10px solid #00B2B2; }
 
 #users.table > tbody > tr.non-medic {
-  border-left: 10px solid #004D4D; }
+  border-left: 10px solid #000078; }
 
 #users.table .user-photo {
   width: 60px;
@@ -6149,7 +6201,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 .user-card.non-medic:before {
   height: 18px;
   border-radius: 4px 4px 0px 0px;
-  background-color: #004D4D;
+  background-color: #000078;
   width: 100%;
   padding: 2px 10px;
   content: "Non Medic";
