@@ -48,7 +48,7 @@
   left: 0;
   z-index: 1030;
   background-color:$grey18;
-  color: $client-colour;
+  color: $client;
   height:40px;
   padding: 10px 0px 0px 0px;
   a{color:white;}
@@ -488,7 +488,7 @@ img.user-guide-cover{
   border-bottom: 1px solid transparent;
 }
 
-.message h4{ color: $admin-colour;}
+.message h4{ color: $admin;}
 .admin-db .message h4{ color: $text;}
 
 .message h6{ 

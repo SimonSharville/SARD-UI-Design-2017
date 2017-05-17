@@ -1,7 +1,7 @@
 // From: http://bootsnipp.com/snippets/featured/custom-search-input
 
 .sard-search{
-  background-color:$turq;
+  background-color:$client;
   margin:0px 0px 30px 0px;
   padding:10px;
   border-radius:8px;
@@ -35,13 +35,13 @@
 
 #sard-search-input .glyphicon-search{
     font-size: 23px;
-    color:$turq;
+    color:$client;
 }
 #sard-search-input .glyphicon-search:hover{
-    color:darken($turq, 10%);
+    color:darken($client, 10%);
 }
 #sard-search-input .glyphicon-search:active{
-    color:darken($turq, 15%);
+    color:darken($client, 15%);
 }
 
 #sard-search-input .btn{
@@ -58,18 +58,18 @@
 
 
 .admin .sard-search{
-background-color:$admin-colour;
+background-color:$admin;
 }
 
 .admin #sard-search-input .glyphicon-search{
     font-size: 23px;
-    color:$admin-colour;
+    color:$admin;
 }
 .admin #sard-search-input .glyphicon-search:hover{
-    color:darken($admin-colour, 10%);
+    color:darken($admin, 10%);
 }
 .admin #sard-search-input .glyphicon-search:active{
-    color:darken($admin-colour, 15%);
+    color:darken($admin, 15%);
 }
 
 
@@ -168,7 +168,7 @@ box-sizing: border-box;
 }
 .asf-form .form-group input:focus{
   box-shadow: none!important;
-  border-color: $admin-colour;
+  border-color: $admin;
   border-width:1px;
   outline: none;
 }

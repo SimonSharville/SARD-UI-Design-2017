@@ -121,7 +121,7 @@
 .datepicker table tr td.today.disabled,
 .datepicker table tr td.today.disabled:hover {
   color: #ffffff;
-  background-color: $turq;  // Today colour
+  background-color: $client;  // Today colour
   border-color: #ffb733;
   border-radius: 50%; // Added
 }
@@ -146,7 +146,7 @@
 .open .dropdown-toggle.datepicker table tr td.today.disabled,
 .open .dropdown-toggle.datepicker table tr td.today.disabled:hover {
   color: #ffffff!important;
-  background-color: darken($turq, 5%); // Today Hover colour
+  background-color: darken($client, 5%); // Today Hover colour
   border-color: #f59e00;
 }
 .datepicker table tr td.today:active,
@@ -619,7 +619,7 @@ fieldset[disabled] .datepicker table tr td.active.disabled:hover.active {
 .open .dropdown-toggle.datepicker table tr td span.active.disabled,
 .open .dropdown-toggle.datepicker table tr td span.active.disabled:hover {
   color: #ffffff;
-  background-color: $turq;  //  current/selected Month/Year colour
+  background-color: $client;  //  current/selected Month/Year colour
   border-color: #285e8e;
 }
 .datepicker table tr td span.active:active,
@@ -762,7 +762,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   .datepicker table tr td.today:hover,
   .datepicker table tr td.today.disabled,
   .datepicker table tr td.today.disabled:hover {
-    background-color: $admin-colour;  // Today colour
+    background-color: $admin;  // Today colour
 
   }
 
@@ -786,7 +786,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   .open .dropdown-toggle.datepicker table tr td.today:hover,
   .open .dropdown-toggle.datepicker table tr td.today.disabled,
   .open .dropdown-toggle.datepicker table tr td.today.disabled:hover {
-    background-color: darken($admin-colour, 5%); // Today Hover colour
+    background-color: darken($admin, 5%); // Today Hover colour
   }
 
   .datepicker table tr td span.active:hover,
@@ -809,6 +809,6 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   .open .dropdown-toggle.datepicker table tr td span.active:hover,
   .open .dropdown-toggle.datepicker table tr td span.active.disabled,
   .open .dropdown-toggle.datepicker table tr td span.active.disabled:hover {
-    background-color: $admin-colour;  //  current/selected Month/Year colour
+    background-color: $admin;  //  current/selected Month/Year colour
   }
 }

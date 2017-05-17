@@ -19,7 +19,7 @@
     $bodytext:         $grey18;
     $link:             $grey18;
     $link-visited:     $plum;
-    $link-hover:       darken($turq, 5%);
+    $link-hover:       darken($client, 5%);
     $link-active:      $purple;
     
 
@@ -114,8 +114,8 @@ h1, h2, h3, h4, h5, h6, p{
     font-weight:normal;
   }
 
-  .asterisk{color:$turq}
-  .admin .asterisk{color:$admin-colour}
+  .asterisk{color:$client}
+  .admin .asterisk{color:$admin}
 
   .center{text-align:center;}
   .centre{text-align:center;}
@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6, p{
 //  TEXT LINK Styles ========================================================== 
 
   a {
-    color: $turq;
+    color: $client;
     text-decoration: none; 
   }
 
@@ -160,10 +160,10 @@ h1, h2, h3, h4, h5, h6, p{
 
 
   // This makes links in text blue when they have no link icon
-  .text-link:link{ color:darken($turq, 10%);}
-  a.text-link:visited{ color:darken($turq, 10%);}
-  a.text-link:hover{ color:$teal;}
-  a.text-link:active{ color:$teal;}
+  .text-link:link{ color:darken($client, 10%);}
+  a.text-link:visited{ color:darken($client, 10%);}
+  a.text-link:hover{ color:$client-dark;}
+  a.text-link:active{ color:$client-dark;}
 
 
 
@@ -218,9 +218,9 @@ li p { // This adjust the spacing and indents of multi line links in a list
       font-family: 'FontAwesome';
       content: "\f0a9" ;
       padding-right:5px;
-      color:$turq;
+      color:$client;
     }
-    a:visited:before{color:$turq;}
+    a:visited:before{color:$client;}
   }
 
   p.link-arrow{ // This places the pdf icon in front individual text
@@ -237,10 +237,10 @@ li p { // This adjust the spacing and indents of multi line links in a list
     font-family: 'FontAwesome';
     content: "\f0a9" ;
     padding-right:5px;
-    color:$turq;
+    color:$client;
   }
 
-  p.link-arrow a:visited:before{color:$turq;}
+  p.link-arrow a:visited:before{color:$client;}
 
 
   // PDF ===========================================================================

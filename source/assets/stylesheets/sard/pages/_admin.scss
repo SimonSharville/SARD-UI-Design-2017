@@ -8,7 +8,7 @@
 
 
 .admin .jumbotron{
-  background-color:$admin-colour;
+  background-color:$admin;
 }
 
 .admin #top{ // This lowers the content to allow for the second navbar
@@ -16,11 +16,11 @@
 }
 
 .admin .breadcrumbs{
-  border-bottom: 1px solid $admin-colour;
+  border-bottom: 1px solid $admin;
 }
 
 .admin .breadcrumb > .active {
-  color: $admin-colour-dark;
+  color: $admin-dark;
 }
 
 
