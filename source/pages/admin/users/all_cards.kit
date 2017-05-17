@@ -95,7 +95,62 @@
                 </span>
               </div>
             </div>
-            <!-- @import "../search/advanced-search-toggle.kit" -->
+
+            <!-- Advanced User Search ==================================================================================== -->
+            <div id="ASF">
+              <div class="row">
+                <div class="header">
+                  <div class="col-xs-6 results">
+                    There are currently 57 users
+                  </div>
+                  <div class="col-xs-6 right">
+                    <a class="btn btn-xs btn-admin-dark accordion-toggle collapsed" href="#" aria-controls="ASF-content" aria-expanded="false" data-toggle="collapse" data-target="#ASF-panel">Advanced Search</a>
+                  </div>
+                </div> <!-- / Header -->
+              </div> <!-- / Row -->
+
+              <div class="row">
+                <div id="ASF-panel" class="col-xs-12 collapse in">
+
+                  <div class="ASF-body">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h4 class="heading">Advanced User Search</h4>
+                      </div> <!-- / col-xs-12 -->
+                    </div> <!-- / Row -->
+
+                    <!-- @import "../search/advanced-search-toggle.kit" -->
+
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <div class="results-per-page">
+                          <label for="advanced_search_Results per page"class="col-xs-5 control-label">Results per page</label>
+                          <select id="per_page" name="per_page">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="50" selected="selected">50</option>
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                            <option value="500">500</option>
+                            <option value="1000">1000</option>
+                            <option value="2000">2000</option>
+                          </select>
+                          <a class="btn btn-xs btn-admin" href="#">Submit</a>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 right">
+                        <a class="btn btn-xs btn-admin accordion-toggle collapsed" href="#" aria-controls="ASF-content" aria-expanded="false" data-toggle="collapse" data-target="#ASF-panel">Close Search</a>
+                      </div>
+                    </div> <!-- / Row -->
+
+                  </div> <!-- / ASF-body -->
+
+                </div> <!-- / ASF-panel -->
+
+              </div> <!-- / Row -->
+
+            </div> <!-- / ASF -->
+            <!-- / Advanced User Search ==================================================================================== -->
           </div> <!-- / sard-search -->
         </div>
 

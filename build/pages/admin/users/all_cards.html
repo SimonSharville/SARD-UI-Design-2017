@@ -160,7 +160,7 @@
                     <li class="dropdown-header">Users</li>
                     <li><a href="../users/all_table.html">All Users (Table)</a></li>
                     <li><a href="../users/all_cards.html">All Users (Cards)</a></li>
-                    <li><a href="#">Advanced User Search</a></li>
+                    <li><a href="../users/advanced-user-search.html">Advanced User Search</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header">Appraisals</li>
                     <li class="bold"><a href="#">All Appraisals</a></li>
@@ -380,6 +380,8 @@
                 </span>
               </div>
             </div>
+
+            <!-- Advanced User Search ==================================================================================== -->
             <div id="ASF">
               <div class="row">
                 <div class="header">
@@ -391,28 +393,26 @@
                   </div>
                 </div> <!-- / Header -->
               </div> <!-- / Row -->
-            
-            
-            
+
               <div class="row">
-                <div id="ASF-panel" class="col-xs-12 collapse">
-            
+                <div id="ASF-panel" class="col-xs-12 collapse in">
+
                   <div class="ASF-body">
                     <div class="row">
                       <div class="col-xs-12">
                         <h4 class="heading">Advanced User Search</h4>
                       </div> <!-- / col-xs-12 -->
                     </div> <!-- / Row -->
-            
+
+                      
                     <div class="row">
-            
                       <div class="col-md-6">  <!-- Left Column--> 
-            
+                    
                         <!-- User Details ================================================================================================= -->
                         <form class="asf-form form-horizontal">
                           <fieldset>
                             <legend class="toggle-plus accordion-toggle collapsed" href="#" aria-controls="UserDetails" aria-expanded="false" data-toggle="collapse" data-target="#UserDetails">User Details</legend>
-            
+                    
                             <div id="UserDetails" class="collapse in">
                               <div class="form-group">
                                 <label for="advanced_search_Trust Start Date:"class="col-xs-5 control-label">Trust start date:</label>
@@ -422,7 +422,7 @@
                                   <input id="advanced_search_users_trust_start_to" type="text" class="col-xs-5 hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="To">
                                 </div>
                               </div> <!-- / form-group -->
-            
+                    
                               <div class="form-group">
                                 <label for="advanced_search_Trust End Date:"class="col-xs-5 control-label">Trust end date:</label>
                                 <div class="col-xs-7">
@@ -431,7 +431,7 @@
                                   <input id="advanced_search_users_trust_end_to" type="text" class="col-xs-5 hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="To">
                                 </div>
                               </div> <!-- / form-group -->
-            
+                    
                               <div class="form-group">
                                 <label for="advanced_search_Sign In Count:"class="col-xs-5 control-label">Sign in count:</label>
                                 <div class="col-xs-7">
@@ -440,13 +440,13 @@
                                   <input id="advanced_search_users_sign_in_count_to" type="text" class="col-xs-5 hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="To">
                                 </div>
                               </div> <!-- / form-group -->
-            
+                    
                               <div class="form-group">
                                 <div class="col-xs-12">
                                   <label for="advanced_search_dummy" class="">Dummy</label>
                                   <input type="checkbox" value=""  class="pull-right">
                                 </div>
-            
+                    
                                 <div class="col-xs-12">
                                   <label for="advanced_search_dormant" class="">Dormant</label>
                                   <input type="checkbox" value=""  class="pull-right">
@@ -455,154 +455,154 @@
                             </div> <!-- / UserDetails -->
                           </fieldset>
                         </form>
-            
+                    
                         <!-- System Roles ================================================================================================== -->
                         <form class="asf-form form-horizontal">
                           <fieldset>
                             <legend class="toggle-plus accordion-toggle collapsed"  href="#" aria-controls="SystemRoles" aria-expanded="false" data-toggle="collapse" data-target="#SystemRoles">System Roles</legend>
                             <div id="SystemRoles" class="collapse in">
                               <div class="form-group">
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Medical Director">Medical Director</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Operational Director">Operational Director</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Chief Operating Officer">Chief Operating Officer</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Clinical Lead (jp)">Clinical Lead (JP)</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Divisional Director">Divisional Director</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Responsible Officer">Responsible Officer</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Job Plan Lead (Custom)">Job Plan Lead (custom)</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Operational Lead (jp)">Operational Lead (JP)</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Lead Doctor">Lead Doctor</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Medical Manager">Medical Manager</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Deputy Medical Director">Deputy Medical Director</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Head of Specialty">Head of Specialty</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Clinical Lead / Service Manager">Clinical Lead / Service Manager</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_General Manager (jp)">General Manager (JP)</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Temporary Position">Temporary Position</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Bank Staff Only">Bank Staff Only</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Specialty Lead">Specialty Lead</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Appraisal Lead (Custom)">Appraisal Lead (custom)</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Job Plan Lead (Speciality)">Job Plan Lead (speciality)</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Leave Coordinator">Leave Coordinator</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Leave Approver">Leave Approver</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Appraiser">Appraiser</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Job Plan Lead (Directorate)">Job Plan Lead (directorate)</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Clinical Director">Clinical Director</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Medic">Medic</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                                 <div class="double-text-column">
                                   <label for="advanced_search_Staff">Staff</label>
                                   <input type="checkbox">
                                 </div>
-            
+                    
                               </div><!-- / form-group -->
                             </div> <!-- / SystemRoles -->
                           </fieldset>
                         </form>
-            
+                    
                         <!-- Medic Groups ================================================================================================== -->
                         <form class="asf-form form-horizontal">
                           <fieldset>
                             <legend class="toggle-plus accordion-toggle collapsed" href="#" aria-controls="MedicGroups" aria-expanded="false" data-toggle="collapse" data-target="#MedicGroups">Medic Groups</legend>
-            
+                    
                             <div id="MedicGroups" class="collapse in">
                               <div class="form-group">
                                 <div class="col-xs-12 inline">
@@ -693,12 +693,12 @@
                             </div> <!-- / MedicGroups -->
                           </fieldset>
                         </form>
-            
+                    
                         <!-- Directorates =============================================================================================== -->
                         <form class="asf-form form-horizontal">
                           <fieldset>
                             <legend class="toggle-plus accordion-toggle collapsed" href="#" aria-controls="Directorates" aria-expanded="false" data-toggle="collapse" data-target="#Directorates">Directorates</legend>
-            
+                    
                             <div id="Directorates" class="collapse in">
                               <div class="form-group">
                                 <div class="col-xs-12">
@@ -719,12 +719,12 @@
                             </div> <!-- / Directorates -->
                           </fieldset>
                         </form>
-            
+                    
                         <!-- Job Plans =============================================================================================== -->
                         <form class="asf-form form-horizontal">
                           <fieldset>
                             <legend class="toggle-plus accordion-toggle collapsed" href="#" aria-controls="JobPlans" aria-expanded="false" data-toggle="collapse" data-target="#JobPlans">Job Plans</legend>
-            
+                    
                             <div id="JobPlans" class="collapse in">
                               <div class="form-group">
                                 <div class="col-xs-12">
@@ -749,18 +749,18 @@
                             </div> <!-- / JobPlans -->
                           </fieldset>
                         </form>
-            
+                    
                       </div> <!-- / col-md-6 Left Column--> 
-            
-            
-            
+                    
+                    
+                    
                       <div class="col-md-6"> <!-- Right Column--> 
-            
+                    
                         <!-- Recommendations ============================================================================================== -->
                         <form class="asf-form form-horizontal">
                           <fieldset>
                             <legend class="toggle-plus accordion-toggle collapsed" href="#" aria-controls="Recommendations" aria-expanded="false" data-toggle="collapse" data-target="#Recommendations">Recommendations (Revalidation)</legend>
-            
+                    
                             <div id="Recommendations" class="collapse in">
                               <div class="form-group">
                                 <div class="col-xs-12">
@@ -772,7 +772,7 @@
                                   a recommendation with the following criteria:
                                 </div>
                               </div> <!-- / form-group -->
-            
+                    
                               <div class="form-group">
                                 <label for="advanced_search_Under Notice Date:"class="col-xs-5 control-label">Under notice date:</label>
                                 <div class="col-xs-7">
@@ -781,7 +781,7 @@
                                   <input id="advanced_search_recommendations_under_notice_to" type="text" class="col-xs-5 hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="To">
                                 </div>
                               </div> <!-- / form-group -->
-            
+                    
                               <div class="form-group">
                                 <label for="advanced_search_Due Date:"class="col-xs-5 control-label">Due date:</label>
                                 <div class="col-xs-7">
@@ -790,7 +790,7 @@
                                   <input id="advanced_search_recommendations_due_date_to" type="text" class="col-xs-5 hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="To">
                                 </div>
                               </div> <!-- / form-group -->
-            
+                    
                               <div class="form-group">
                                 <label for="advanced_search_Recommendation Date:"class="col-xs-5 control-label">Recommendation date:</label>
                                 <div class="col-xs-7">
@@ -799,7 +799,7 @@
                                   <input id="advanced_search_recommendations_recommendation_date_to" type="text" class="col-xs-5 hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="To">
                                 </div>
                               </div> <!-- / form-group -->
-            
+                    
                               <div class="form-group">
                                 <label for="advanced_search_Approval Date:"class="col-xs-5 control-label">Approval date:</label>
                                 <div class="col-xs-7">
@@ -808,16 +808,16 @@
                                   <input id="advanced_search_recommendations_revalidation_date_to" type="text" class="col-xs-5 hasDatepicker" name="date" aria-describedby="expiry_date" placeholder="To">
                                 </div>
                               </div> <!-- / form-group -->
-            
+                    
                             </div> <!-- / Recommendations -->
                           </fieldset>
                         </form>
-            
+                    
                         <!-- MSF ========================================================================================================= -->
                         <form class="asf-form form-horizontal">
                           <fieldset>
                             <legend class="toggle-plus accordion-toggle collapsed" href="#" aria-controls="MultiSourceFeedbacks" aria-expanded="false" data-toggle="collapse" data-target="#MultiSourceFeedbacks">Multi-source Feedbacks (MSFs) / 360</legend>
-            
+                    
                             <div id="MultiSourceFeedbacks" class="collapse in">
                               <div class="form-group">
                                 <div class="col-xs-12">
@@ -829,7 +829,7 @@
                                   an MSF with the following criteria:
                                 </div>
                               </div> <!-- / form-group -->
-            
+                    
                               <div class="form-group">
                                 <label for="advanced_search_Offline or Online"class="col-xs-5 control-label">Offline or online?</label>
                                 <select id="advanced_search_msfs_offline_or_online" name="advanced_search_msfs[offline_or_online]" class="col-xs-6">
@@ -838,7 +838,7 @@
                                   <option value="Both">Both</option>
                                 </select>
                               </div> <!-- / form-group -->
-            
+                    
                               <div class="form-group">
                                 <label for="advanced_search_Includes patient feedback"class="col-xs-5 control-label">Includes patient feedback?</label>
                                 <select id="advanced_search_msfs_includes_patient_feedback" name="advanced_search_msfs[includes_patient_feedback]" class="col-xs-6">
@@ -847,7 +847,7 @@
                                   <option value="nil">Don't know</option>
                                 </select>
                               </div> <!-- / form-group -->
-            
+                    
                               <div class="form-group">
                                 <label for="advanced_search_Includes colleague feedback"class="col-xs-5 control-label">Includes colleague feedback?</label>
                                 <select id="advanced_search_msfs_includes_colleague_feedback" name="advanced_search_msfs[includes_colleague_feedback]" class="col-xs-6">
@@ -856,7 +856,7 @@
                                   <option value="nil">Don't know</option>
                                 </select>
                               </div> <!-- / form-group -->
-            
+                    
                               <div class="form-group">
                                 <label for="advanced_search_Includes self assessment"class="col-xs-5 control-label">Includes self assessment?</label>
                                 <select id="advanced_search_msfs_includes_self_assessment" name="advanced_search_msfs[includes_self_assessment]" class="col-xs-6">
@@ -866,7 +866,7 @@
                                   <option value="nil">Don't know</option>
                                 </select>
                               </div> <!-- / form-group -->
-            
+                    
                               <div class="form-group">
                                 <label for="advanced_search_Complete"class="col-xs-5 control-label">Complete</label>
                                 <select id="advanced_search_msfs_complete" name="advanced_search_msfs[complete]" class="col-xs-6">
@@ -874,7 +874,7 @@
                                   <option value="false">No</option>
                                 </select>
                               </div> <!-- / form-group -->
-            
+                    
                               <div class="form-group">
                                 <label for="advanced_search_Has Report"class="col-xs-5 control-label">Complete</label>
                                 <select id="advanced_search_msfs_has_report" name="advanced_search_msfs[has_report]" class="col-xs-6">
@@ -883,7 +883,7 @@
                                   <option value="false">No</option>
                                 </select>
                               </div> <!-- / form-group -->
-            
+                    
                               <div class="form-group">
                                 <label for="advanced_search_completion_date"class="col-xs-5 control-label">Completion date:</label>
                                 <div class="col-xs-7">
@@ -896,7 +896,7 @@
                                     <label for="advanced_search_Patient feedback returns" class="col-xs-5 control-label">Patient feedback returns</label>
                                     <input id="advanced_search_msfs_patient_feedback_returns" name="advanced_search_msfs[patient_feedback_returns]" type="text"  class="col-xs-7">
                                   </div> <!-- / form-group -->
-            
+                    
                               <fieldset>
                                 <legend class="toggle-plus accordion-toggle collapsed" href="#" aria-controls="MSF_Ready" aria-expanded="false" data-toggle="collapse" data-target="#MSF_Ready">Multi-source Feedbacks (MSFs) / 360</legend>
                                 <div id="MSF_Ready" class="collapse in">
@@ -911,7 +911,7 @@
                                     <label for="advanced_search_Patient feedback returns" class="col-xs-5 control-label">Patient feedback returns</label>
                                     <input id="advanced_search_msfs_patient_feedback_returns" name="advanced_search_msfs[patient_feedback_returns]" type="text"  class="col-xs-7">
                                   </div> <!-- / form-group -->
-            
+                    
                                    <div class="form-group">
                                     <label for="advanced_search_Colleague feedback returns" class="col-xs-5 control-label">Colleague feedback returns</label>
                                     <input id="advanced_search_msfs_colleague_feedback_returns" name="advanced_search_msfs[colleague_feedback_returns]" type="text"  class="col-xs-7">
@@ -925,20 +925,20 @@
                                       NB This does not take into consideration whether the medic has notified the administrator that they believe their MSF is ready for analysis. It is just based on the number of returns.</p>
                                     </div>
                                   </div> <!-- / form-group -->
-            
+                    
                                 </div> <!-- / MSF_Ready -->
-            
+                    
                               </fieldset><!-- / Nested fieldset -->
-            
+                    
                             </div> <!-- / MultiSourceFeedbacks -->
                           </fieldset>
                         </form>
-            
+                    
                         <!-- Appraisals ================================================================================================== -->
                         <form class="asf-form form-horizontal">
                           <fieldset>
                             <legend class="toggle-plus accordion-toggle collapsed" href="#" aria-controls="Appraisals" aria-expanded="false" data-toggle="collapse" data-target="#Appraisals">Appraisals</legend>
-            
+                    
                             <div id="Appraisals" class="collapse in">
                               
                               <div class="form-group">
@@ -951,7 +951,7 @@
                                   <option value="na">unknown (grey)</option>
                                 </select>
                               </div> <!-- / form-group -->
-            
+                    
                               <div class="form-group">
                                 <label for="advanced_search_appraisal_due_date*"class="col-xs-5 control-label">Appraisal due date<span class="asterisk">*</span></label>
                                 <div class="col-xs-7">
@@ -963,9 +963,9 @@
                                   <p class="note"><span class="asterisk">*</span> a user's appraisal due date is based on their allocated appraisal month.</p>
                                 </div>
                               </div> <!-- / form-group -->
-            
+                    
                               <div class="divide-rule"></div>
-            
+                    
                               <div class="form-group">
                                 <div class="col-xs-12">
                                   The user
@@ -976,7 +976,7 @@
                                   an appraisal with the following criteria:
                                 </div>
                               </div> <!-- / form-group -->
-            
+                    
                               <div class="form-group">
                                 <label for="advanced_search_Offline or Online"class="col-xs-5 control-label">Offline or online?</label>
                                 <select id="advanced_search_appraisals_offline_or_online" name="advanced_search_appraisals[offline_or_online]" class="col-xs-6">
@@ -986,7 +986,7 @@
                                   <option value="Both">Both</option>
                                 </select>
                               </div> <!-- / form-group -->
-            
+                    
                               <div class="form-group">
                                 <label for="advanced_search_state"class="col-xs-5 control-label">State</label>
                                 <select id="advanced_search_appraisals_state" name="advanced_search_appraisals[state]" class="col-xs-6">
@@ -997,7 +997,7 @@
                                   <option value="complete">complete</option>
                                 </select>
                               </div> <!-- / form-group -->
-            
+                    
                               <div class="form-group">
                                 <label for="advanced_search_appraisal_meeting_date*"class="col-xs-5 control-label">Appraisal meeting date<span class="asterisk">*</span></label>
                                 <div class="col-xs-7">
@@ -1009,16 +1009,16 @@
                                   <p class="note"><span class="asterisk">*</span> this is the date the appraisal meeting took place ('Date of appraisal meeting' in section20 of online appraisals / 'appraisal meeting date' in offline appraisals). Applicable only to complete appraisals.</p>
                                 </div>
                               </div> <!-- / form-group -->
-            
+                    
                             </div> <!-- / Appraisals -->
                           </fieldset>
                         </form>
-            
+                    
                         <!-- Specialities =============================================================================================== -->
                         <form class="asf-form form-horizontal">
                           <fieldset>
                             <legend class="toggle-plus accordion-toggle collapsed" href="#" aria-controls="Specialities" aria-expanded="false" data-toggle="collapse" data-target="#Specialities">Specialities</legend>
-            
+                    
                             <div id="Specialities" class="collapse in">
                               <div class="form-group">
                                 <div class="col-xs-12">
@@ -1037,16 +1037,16 @@
                                   </select>
                                 </div>
                               </div> <!-- / form-group -->
-            
+                    
                             </div> <!-- / Specialities -->
                           </fieldset>
                         </form>
-            
+                    
                         <!-- Specialities =============================================================================================== -->
                         <form class="asf-form form-horizontal">
                           <fieldset>
                             <legend class="toggle-plus accordion-toggle collapsed" href="#" aria-controls="PositionTitles" aria-expanded="false" data-toggle="collapse" data-target="#PositionTitles">Position Titles</legend>
-            
+                    
                             <div id="PositionTitles" class="collapse in">
                               <div class="form-group">
                                 <div class="col-xs-12">
@@ -1056,17 +1056,17 @@
                                   </select>
                                 </div>
                               </div> <!-- / form-group -->
-            
+                    
                             </div> <!-- / Specialities -->
                           </fieldset>
                         </form>
-            
+                    
                       </div> <!-- / col-md-6 Right Column--> 
-            
+                    
                     </div> <!-- / Row --> 
-            
-            
-            
+                    
+                    
+
                     <div class="row">
                       <div class="col-xs-6">
                         <div class="results-per-page">
@@ -1088,19 +1088,15 @@
                         <a class="btn btn-xs btn-admin accordion-toggle collapsed" href="#" aria-controls="ASF-content" aria-expanded="false" data-toggle="collapse" data-target="#ASF-panel">Close Search</a>
                       </div>
                     </div> <!-- / Row -->
-            
+
                   </div> <!-- / ASF-body -->
-            
+
                 </div> <!-- / ASF-panel -->
-            
+
               </div> <!-- / Row -->
-            
-            
-            
+
             </div> <!-- / ASF -->
-            
-            
-            
+            <!-- / Advanced User Search ==================================================================================== -->
           </div> <!-- / sard-search -->
         </div>
 
