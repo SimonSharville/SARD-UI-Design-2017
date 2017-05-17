@@ -89,13 +89,13 @@ margin:6px 0;
 
 // Admin colours ==========================================
 
-.menu-large.admin{
+.admin .menu-large{
   .megamenu li .dropdown-header {
     color: $admin;
   }
-  .megamenu .divider{
-  background-color:$grey06;
-  }
+  // .megamenu .divider{
+  // background-color:$grey06;
+  // }
 }
 
 // Dropdown overrides ==============================================================================
