@@ -165,7 +165,23 @@ h1, h2, h3, h4, h5, h6, p{
   a.text-link:hover{ color:$client-dark;}
   a.text-link:active{ color:$client-dark;}
 
+// Admin Colours ========================
 
+// .admin a {
+//     color: $admin;
+//     text-decoration: none; 
+//   }
+
+.admin a:hover, 
+.admin a:focus {
+    color:darken($admin, 10%);
+  }
+
+// This makes links in text blue when they have no link icon
+  .admin .text-link:link{ color:darken($admin, 10%);}
+  .admin a.text-link:visited{ color:darken($admin, 10%);}
+  .admin a.text-link:hover{ color:$admin-dark;}
+  .admin a.text-link:active{ color:$admin-dark;}
 
 
 // List Items ========================================================
