@@ -157,108 +157,108 @@ $adminNavDropdownBG  : darken($admin-navbar, 15%);
 
 
 /* navbar */
-.navbar-admin {
+.admin .navbar-default {
   background-color: $adminNavBG;
-  border:none;
+  // border:none;
 }
 
-.navbar-admin .navbar-brand:hover,
-.navbar-admin .navbar-brand:focus {
+.admin .navbar-default .navbar-brand:hover,
+.admin .navbar-default .navbar-brand:focus {
   color: $navText;
 }
 /* Link */
-.navbar-admin .navbar-nav > li > a {
+.admin .navbar-default .navbar-nav > li > a {
   color: $navText;
   padding-left: 10px;
   padding-right: 10px;
 }
-.navbar-admin .navbar-nav > li > a:hover,
-.navbar-admin .navbar-nav > li > a:focus {
+.admin .navbar-default .navbar-nav > li > a:hover,
+.admin .navbar-default .navbar-nav > li > a:focus {
   color: $navText;
   background-color: $adminNavHover;
 }
-.navbar-admin .navbar-nav > .active > a,
-.navbar-admin .navbar-nav > .active > a:hover,
-.navbar-admin .navbar-nav > .active > a:focus {
+.admin .navbar-default .navbar-nav > .active > a,
+.admin .navbar-default .navbar-nav > .active > a:hover,
+.admin .navbar-default .navbar-nav > .active > a:focus {
   background-color: $adminNavActive;
 }
-.navbar-admin .navbar-nav > .open > a,
-.navbar-admin .navbar-nav > .open > a:hover,
-.navbar-admin .navbar-nav > .open > a:focus {
+.admin .navbar-default .navbar-nav > .open > a,
+.admin .navbar-default .navbar-nav > .open > a:hover,
+.admin .navbar-default .navbar-nav > .open > a:focus {
   color: $navText;
   background-color: $adminNavActive;
 }
 /* Caret */
-.navbar-admin .navbar-nav > .dropdown > a .caret {
+.admin .navbar-default .navbar-nav > .dropdown > a .caret {
   border-top-color: $navText;
   border-bottom-color: $navText;
 }
-.navbar-admin .navbar-nav > .dropdown > a:hover .caret,
-.navbar-admin .navbar-nav > .dropdown > a:focus .caret {
+.admin .navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.admin .navbar-default .navbar-nav > .dropdown > a:focus .caret {
   border-top-color: $navText;
   border-bottom-color: $navText;
 }
-.navbar-admin .navbar-nav > .open > a .caret,
-.navbar-admin .navbar-nav > .open > a:hover .caret,
-.navbar-admin .navbar-nav > .open > a:focus .caret {
+.admin .navbar-default .navbar-nav > .open > a .caret,
+.admin .navbar-default .navbar-nav > .open > a:hover .caret,
+.admin .navbar-default .navbar-nav > .open > a:focus .caret {
   border-top-color: $navText;
   border-bottom-color: $navText;
 }
 
 
 // dropdown -------------------------------------------------------------
-.navbar-admin .navbar-nav > li > .dropdown-menu {
+.admin .navbar-default .navbar-nav > li > .dropdown-menu {
   border-radius: 0;
   background-color:$adminNavDropdownBG;
   border:none;
   color: $navText;
 }
 
-.navbar-admin .navbar-nav .dropdown-menu > li > a {
+.admin .navbar-default .navbar-nav .dropdown-menu > li > a {
   color: $navText;
 }
 
-.navbar-admin .navbar-nav .dropdown-menu > li > a:hover,
-.navbar-admin .navbar-nav .dropdown-menu > li > a:focus, {
+.admin .navbar-default .navbar-nav .dropdown-menu > li > a:hover,
+.admin .navbar-default .navbar-nav .dropdown-menu > li > a:focus, {
   background-color: $adminNavActive;
   color: $navText;
 }
 
-.navbar-admin .navbar-nav .open .dropdown-menu > li > a {
+.admin .navbar-default .navbar-nav .open .dropdown-menu > li > a {
   color: $navText;
 }
-.navbar-admin .navbar-nav .open .dropdown-menu > li > a:hover,
-.navbar-admin .navbar-nav .open .dropdown-menu > li > a:focus {
+.admin .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.admin .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
   color: $navText;
   background-color: $adminNavActive;
 }
-.navbar-admin .navbar-nav .open .dropdown-menu > .active > a,
-.navbar-admin .navbar-nav .open .dropdown-menu > .active > a:hover,
-.navbar-admin .navbar-nav .open .dropdown-menu > .active > a:focus {
+.admin .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.admin .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.admin .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
   color: $navText;
   background-color: $adminNavActive;
 }
 
 // Mobile version -------------------------------------------------------
-.navbar-admin .navbar-toggle {
+.admin .navbar-default .navbar-toggle {
   border:none;
   background-color:$admin-navbar;
 }
-.navbar-admin .navbar-toggle:hover,
-.navbar-admin .navbar-toggle:focus {
+.admin .navbar-default .navbar-toggle:hover,
+.admin .navbar-default .navbar-toggle:focus {
   background-color: $adminNavHover;
 }
-.navbar-admin .navbar-toggle .icon-bar {
+.admin .navbar-default .navbar-toggle .icon-bar {
   background-color: $navText;
 }
 
 // Small screens ===================================
 @media (max-width: 767px) {
-  .navbar-admin .navbar-nav > li > a {
+  .admin .navbar-default .navbar-nav > li > a {
       padding: 5px 10px;
       margin-top:0px;
     }
-    .navbar-admin .navbar-nav > li:last-child > a{
+    .admin .navbar-default .navbar-nav > li:last-child > a{
       padding-bottom:10px;
     }
 }
