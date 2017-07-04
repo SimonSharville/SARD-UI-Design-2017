@@ -17,7 +17,7 @@
   @media (max-width: 767px) {
     .brand img{
       width:100%;
-      margin: 0 0px 50px 0px;
+      margin: 0 0px 30px 0px;
     }
   } 
 
@@ -25,12 +25,12 @@
   @media (min-width: 768px){
     .brand img{
       width:calc(100% + 10px);
-      margin: 0 -5px 50px -5px;
+      margin: 0 -5px 30px -5px;
     }
   } 
 
   .sign-in{
-    margin-bottom:60px;
+    margin-bottom:10px;
   }
 
   .login-addons .demo-statement{
