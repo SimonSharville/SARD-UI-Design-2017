@@ -5304,7 +5304,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   background-color: #403D3D;
   box-sizing: border-box;
   color: white;
-  padding: 2px 8px 4px 8px;
+  padding: 2px 12px 4px 12px;
   margin-top: 10px;
   margin-bottom: -1px;
   border: none; }
@@ -5317,15 +5317,17 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 
 .asf-form fieldset {
   box-sizing: border-box;
-  background-color: #EDEBEB; }
+  background-color: #EDEBEB;
+  margin-bottom: 18px; }
 
 .asf-form fieldset fieldset {
   background-color: white;
-  margin: 8px; }
+  margin: 12px; }
 
 .asf-form .form-group {
   margin: 5px 0px;
-  line-height: 1.4em; }
+  line-height: 1.4em;
+  padding: 4px; }
 
 .asf-form .form-group:first-child {
   margin-top: 10px; }
@@ -5342,8 +5344,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 
 .asf-form .form-group .checkbox-inline input[type=checkbox],
 .asf-form .form-group .radio-inline input[type=radio] {
-  margin-right: 3px;
-  margin-top: 1px; }
+  margin-right: 3px; }
 
 .asf-form .form-group .checkbox-inline,
 .asf-form .form-group .radio-inline {
@@ -5356,7 +5357,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   outline: none; }
 
 .asf-form .form-group .indent {
-  padding-left: 17px; }
+  padding-left: 15px; }
 
 .asf-form .form-group .subtitle {
   margin-bottom: 5px; }
@@ -5366,6 +5367,16 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   padding-top: 5px;
   padding-left: 0.8em;
   text-indent: -0.8em; }
+
+.asf-form select {
+  border-color: #C7C4C2;
+  background-color: white; }
+
+.asf-form select option {
+  padding-bottom: 4px; }
+
+.asf-form select option:first-child {
+  margin-top: -10px; }
 
 .asf-form .divide-rule {
   margin: 10px; }
