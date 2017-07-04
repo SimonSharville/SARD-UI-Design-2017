@@ -5303,9 +5303,8 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 .asf-form legend {
   background-color: #403D3D;
   box-sizing: border-box;
-  font-size: 1em;
   color: white;
-  padding: 0 8px 1px 8px;
+  padding: 2px 8px 4px 8px;
   margin-top: 10px;
   margin-bottom: -1px;
   border: none; }
@@ -5313,6 +5312,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 .asf-form legend.toggle-plus.accordion-toggle:after {
   position: relative;
   float: right;
+  top: 1px;
   color: white; }
 
 .asf-form fieldset {
@@ -5325,8 +5325,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 
 .asf-form .form-group {
   margin: 5px 0px;
-  font-size: 0.8em;
-  line-height: 1.25em; }
+  line-height: 1.4em; }
 
 .asf-form .form-group:first-child {
   margin-top: 10px; }
