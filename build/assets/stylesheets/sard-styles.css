@@ -2710,34 +2710,6 @@ hr {
 .panel-body .doc-list .link {
   border-bottom-color: white; }
 
-.notifications .date {
-  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-  background: #403D3D;
-  color: white;
-  padding: 3px 10px;
-  margin: 10px -3px 8px -3px;
-  border-radius: 20px; }
-
-.notifications .time {
-  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-  border-top: 1px solid #C7C4C2;
-  padding-top: 10px;
-  margin-top: 10px;
-  margin-bottom: 5px; }
-
-.notifications .time:first-of-type {
-  border-top: none;
-  padding-top: 0px; }
-
-.panel-body .notifications .time {
-  border-top-color: white; }
-
-.panel-body .notifications:last-child {
-  margin-bottom: -15px; }
-
-.notifications ul {
-  padding-left: 10px; }
-
 .doc-covers {
   margin-left: -8px;
   margin-right: -8px; }
@@ -5721,6 +5693,38 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   border-top: 1px solid #403D3D;
   margin-top: 5px;
   margin-bottom: -12px; }
+
+.notifications {
+  padding: 0; }
+
+.notifications .date {
+  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+  font-size: 16px;
+  border-top: 1px solid #403D3D;
+  color: black;
+  padding: 5px 0px 0px 0px;
+  margin-top: 15px; }
+
+.notifications .date:first-of-type {
+  border-top: none;
+  margin-top: 0px; }
+
+.notifications .time {
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+  border-top: 1px solid white;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px; }
+
+.notifications .time:first-of-type {
+  border-top: none;
+  padding-top: 0px; }
+
+.panel-body .notifications:last-child {
+  margin-bottom: -15px; }
+
+.notifications ul {
+  padding-left: 10px; }
 
 #login-page {
   background-color: #00B2B2; }

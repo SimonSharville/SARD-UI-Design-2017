@@ -393,40 +393,6 @@ font-size:14px;
 }
 
 
-// Notices ========================================================
-// Used on Dashboard/Notifications
-
-.notifications .date {
-  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-  background: $grey16;
-  color:white;
-  padding: 3px 10px;
-  margin: 10px -3px 8px -3px;
-  border-radius:20px;
-}
-
-.notifications .time {
-  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-  border-top: 1px solid $grey06;
-  padding-top: 10px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-.notifications .time:first-of-type{
-  border-top: none;
-  padding-top: 0px;
-}
-
-.panel-body .notifications .time{
-  border-top-color: white;
-}
-
-.panel-body .notifications:last-child {
-  margin-bottom:-15px;
-}
-.notifications ul{ padding-left:10px; }
-
-
 
 
 // Images adjustments ================================================
