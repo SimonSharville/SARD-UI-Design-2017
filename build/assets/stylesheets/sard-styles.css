@@ -970,6 +970,9 @@ body {
     padding-bottom: 0px;
     font-family: 'robotomedium', Helvetica, Arial, Sans-serif; }
 
+.panel-heading .btn {
+  margin-left: 10px; }
+
 .panel-body, .button {
   padding-top: 8px; }
 
