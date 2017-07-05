@@ -2455,6 +2455,9 @@ a.glyphicon-info-sign {
 .sa-footer .text-right {
   padding-right: 0px; }
 
+.admin .sa-footer {
+  color: #E50073; }
+
 @media only screen and (min-width: 992px) {
   .sa-right-column {
     padding-right: 0px; }
