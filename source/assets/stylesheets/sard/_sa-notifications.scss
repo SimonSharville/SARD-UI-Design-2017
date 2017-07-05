@@ -1,0 +1,36 @@
+// Used on Dashboard/Notifications
+
+.notifications{
+  padding:0;
+}
+
+.notifications .date {
+  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+  font-size:16px;
+  border-top: 1px solid $grey16;
+  color:black;
+  padding: 5px 0px 0px 0px;
+  margin-top:15px;
+}
+
+.notifications .date:first-of-type{
+  border-top:none;
+  margin-top:0px;
+}
+
+.notifications .time {
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+  border-top: 1px solid white;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.notifications .time:first-of-type{
+  border-top: none;
+  padding-top: 0px;
+}
+
+.panel-body .notifications:last-child {
+  margin-bottom:-15px;
+}
+.notifications ul{ padding-left:10px; }
