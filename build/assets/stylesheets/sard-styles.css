@@ -2544,6 +2544,12 @@ a.glyphicon-info-sign {
   margin-top: 20px;
   margin-bottom: 30px; }
 
+.quick-links {
+  margin-bottom: 15px; }
+
+.quick-links .btn {
+  margin-bottom: 5px; }
+
 hr {
   height: 1px;
   color: #211F0F;
