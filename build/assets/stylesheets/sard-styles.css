@@ -5709,7 +5709,8 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   border-top: 1px solid #403D3D;
   color: black;
   padding: 5px 0px 0px 0px;
-  margin-top: 15px; }
+  margin-top: 15px;
+  margin-bottom: 5px; }
 
 .notifications .date:first-of-type {
   border-top: none;
@@ -5727,7 +5728,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   padding-top: 0px; }
 
 .panel-body .notifications:last-child {
-  margin-bottom: -15px; }
+  margin-bottom: -10px; }
 
 .notifications ul {
   padding-left: 10px; }
