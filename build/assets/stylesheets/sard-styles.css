@@ -5706,7 +5706,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 .notifications .date {
   font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
   font-size: 16px;
-  border-top: 1px solid #403D3D;
+  border-top: 1px solid white;
   color: black;
   padding: 5px 0px 0px 0px;
   margin-top: 15px;
