@@ -6148,12 +6148,15 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 .admin-db #trust_chart {
   position: relative;
   top: -20px;
-  left: -170px; }
+  left: -170px;
+  z-index: 0; }
 
 .admin-db #trust_chart .rect {
   fill: none;
   x: 100;
-  y: 20; }
+  y: 20;
+  overflow: hidden;
+  z-index: -100; }
 
 .admin-db #trust_chart .title {
   display: none; }
