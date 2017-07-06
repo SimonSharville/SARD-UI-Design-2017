@@ -5733,6 +5733,21 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 .notifications ul {
   padding-left: 10px; }
 
+.notifications.panel .panel-body {
+  padding: 9px; }
+
+.notifications .datatable .table {
+  border: none;
+  border-bottom: 1px solid white; }
+
+.notifications .datatable .table td {
+  border-bottom: none;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.notifications .datatable .table td.date-time {
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif; }
+
 #login-page {
   background-color: #00B2B2; }
   #login-page .brand {
