@@ -34,14 +34,22 @@
 .panel-body .notifications:last-child {
   margin-bottom:-10px;
 }
-.notifications ul{ padding-left:10px; }
+
 
 
 // v2 of Notifications. Using sortable datatable =====================
-
-
 
 .notifications.datatable .table td.date-time{
   font-family: 'robotobold', Helvetica, Arial, Sans-serif;
 }
 
+
+// This indents the text below the link arrow icon
+.notifications.datatable .link-arrow td a{
+  margin-left: -1.25em;
+  text-indent: 1.25em;
+}
+// This aligns the link
+.notifications.datatable .link-arrow td.detail{
+  padding-left:30px;
+}
