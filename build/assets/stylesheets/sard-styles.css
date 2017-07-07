@@ -5730,8 +5730,15 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 .panel-body .notifications:last-child {
   margin-bottom: -10px; }
 
-.notifications ul {
-  padding-left: 10px; }
+.notifications.datatable .table td.date-time {
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif; }
+
+.notifications.datatable .link-arrow td a {
+  margin-left: -1.25em;
+  text-indent: 1.25em; }
+
+.notifications.datatable .link-arrow td.detail {
+  padding-left: 30px; }
 
 #login-page {
   background-color: #00B2B2; }
