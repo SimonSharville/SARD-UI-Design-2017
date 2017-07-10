@@ -36,7 +36,7 @@ div.dataTables_wrapper div.dataTables_length select {
 }
 
 div.dataTables_wrapper div.dataTables_filter {
-    text-align: right;
+    text-align: right
 }
 
 div.dataTables_wrapper div.dataTables_filter label {
@@ -107,28 +107,24 @@ table.dataTable thead .sorting_desc:after,
 table.dataTable thead .sorting_asc_disabled:after,
 table.dataTable thead .sorting_desc_disabled:after {
     position: absolute;
-    // bottom: 8px;
+    bottom: 8px;
     right: 8px;
-    // display: block;
-
-    float:right;
+    display: block;
     font-family: 'Glyphicons Halflings';
-    opacity: 0.9;
+    opacity: 0.5
 }
 
 table.dataTable thead .sorting:after {
-    opacity: 0.9;
+    opacity: 0.2;
     content: "\e150"
 }
 
 table.dataTable thead .sorting_asc:after {
-    content: "\e155";
-    color:$turq;
+    content: "\e155"
 }
 
 table.dataTable thead .sorting_desc:after {
-    content: "\e156";
-    color:$turq;
+    content: "\e156"
 }
 
 table.dataTable thead .sorting_asc_disabled:after,
@@ -140,24 +136,24 @@ div.dataTables_scrollHead table.dataTable {
     margin-bottom: 0 !important
 }
 
-div.dataTables_scrollBody table {
+div.dataTables_scrollBody>table {
     border-top: none;
     margin-top: 0 !important;
     margin-bottom: 0 !important
 }
 
-div.dataTables_scrollBody table thead .sorting:after,
-div.dataTables_scrollBody table thead .sorting_asc:after,
-div.dataTables_scrollBody table thead .sorting_desc:after {
+div.dataTables_scrollBody>table>thead .sorting:after,
+div.dataTables_scrollBody>table>thead .sorting_asc:after,
+div.dataTables_scrollBody>table>thead .sorting_desc:after {
     display: none
 }
 
-div.dataTables_scrollBody table tbody tr:first-child th,
-div.dataTables_scrollBody table tbody tr:first-child td {
+div.dataTables_scrollBody>table>tbody>tr:first-child>th,
+div.dataTables_scrollBody>table>tbody>tr:first-child>td {
     border-top: none
 }
 
-div.dataTables_scrollFoot table {
+div.dataTables_scrollFoot>table {
     margin-top: 0 !important;
     border-top: none
 }
@@ -179,7 +175,7 @@ table.dataTable.table-condensed .sorting:after,
 table.dataTable.table-condensed .sorting_asc:after,
 table.dataTable.table-condensed .sorting_desc:after {
     top: 6px;
-    right: 6px;
+    right: 6px
 }
 
 table.table-bordered.dataTable th,
@@ -215,16 +211,17 @@ div.table-responsive>div.dataTables_wrapper>div.row>div[class^="col-"]:last-chil
     padding-right: 0
 }
 
-// DATATABLE Sortable Table styling ============================================
+// SARD DATATABLE Sortable Table styling of the above code ===========================================
+// ===================================================================================================
 
-.dataTables_wrapper>.row:first-child{ // this aligns the show options and search with the table below.
-  margin-left:-8px!important;
-  margin-right:-8px!important;
+.datatable .row:first-child{ // this aligns the show options and search with the table below.
+  // margin-left:-8px!important;
+  // margin-right:-8px!important;
 }
 
-.dataTables_wrapper>.row:last-child{ // This aligns the pagintaion etc with eth table above.
-  margin-left:-8px!important;
-  margin-right:-8px!important;
+.datatable .row:last-child{ // This aligns the pagintaion etc with the table above.
+  // margin-left:-8px!important;
+  // margin-right:-8px!important;
 }
 
 .datatable .table{
@@ -268,6 +265,18 @@ div.table-responsive>div.dataTables_wrapper>div.row>div[class^="col-"]:last-chil
 
 .datatable .edit{
   float:right;
-  // padding-right:10px;
 }
 
+// Sorting Icon Colours
+
+table.dataTable thead .sorting:after {
+    opacity: 0.9;
+}
+
+table.dataTable thead .sorting_asc:after {
+    color:$client;
+}
+
+table.dataTable thead .sorting_desc:after {
+    color:$client;
+}
