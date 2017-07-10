@@ -2191,6 +2191,7 @@ a.glyphicon-info-sign {
 .modal .close {
   position: absolute;
   right: -15px;
+  padding-left: 3.5px;
   margin-top: -20px;
   background-color: white;
   border-radius: 50%;
