@@ -2191,6 +2191,7 @@ a.glyphicon-info-sign {
 .modal .close {
   position: absolute;
   right: -15px;
+  padding-left: 3.5px;
   margin-top: -20px;
   background-color: white;
   border-radius: 50%;
@@ -5504,22 +5505,21 @@ table.dataTable thead .sorting_desc:after,
 table.dataTable thead .sorting_asc_disabled:after,
 table.dataTable thead .sorting_desc_disabled:after {
   position: absolute;
+  bottom: 8px;
   right: 8px;
-  float: right;
+  display: block;
   font-family: 'Glyphicons Halflings';
-  opacity: 0.9; }
+  opacity: 0.5; }
 
 table.dataTable thead .sorting:after {
-  opacity: 0.9;
+  opacity: 0.2;
   content: "\e150"; }
 
 table.dataTable thead .sorting_asc:after {
-  content: "\e155";
-  color: #00B2B2; }
+  content: "\e155"; }
 
 table.dataTable thead .sorting_desc:after {
-  content: "\e156";
-  color: #00B2B2; }
+  content: "\e156"; }
 
 table.dataTable thead .sorting_asc_disabled:after,
 table.dataTable thead .sorting_desc_disabled:after {
@@ -5528,21 +5528,21 @@ table.dataTable thead .sorting_desc_disabled:after {
 div.dataTables_scrollHead table.dataTable {
   margin-bottom: 0 !important; }
 
-div.dataTables_scrollBody table {
+div.dataTables_scrollBody > table {
   border-top: none;
   margin-top: 0 !important;
   margin-bottom: 0 !important; }
 
-div.dataTables_scrollBody table thead .sorting:after,
-div.dataTables_scrollBody table thead .sorting_asc:after,
-div.dataTables_scrollBody table thead .sorting_desc:after {
+div.dataTables_scrollBody > table > thead .sorting:after,
+div.dataTables_scrollBody > table > thead .sorting_asc:after,
+div.dataTables_scrollBody > table > thead .sorting_desc:after {
   display: none; }
 
-div.dataTables_scrollBody table tbody tr:first-child th,
-div.dataTables_scrollBody table tbody tr:first-child td {
+div.dataTables_scrollBody > table > tbody > tr:first-child > th,
+div.dataTables_scrollBody > table > tbody > tr:first-child > td {
   border-top: none; }
 
-div.dataTables_scrollFoot table {
+div.dataTables_scrollFoot > table {
   margin-top: 0 !important;
   border-top: none; }
 
@@ -5588,13 +5588,27 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:fir
 div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:last-child {
   padding-right: 0; }
 
-.dataTables_wrapper > .row:first-child {
-  margin-left: -8px !important;
-  margin-right: -8px !important; }
+div.dataTables_wrapper div.dataTables_length label {
+  background-color: none;
+  margin-left: -13px;
+  margin-right: -13px;
+  padding: 5px;
+  border-radius: 6px; }
 
-.dataTables_wrapper > .row:last-child {
-  margin-left: -8px !important;
-  margin-right: -8px !important; }
+div.dataTables_wrapper div.dataTables_filter label {
+  background-color: #00B2B2;
+  margin-left: -8px;
+  margin-right: -8px;
+  padding: 5px;
+  border-radius: 6px; }
+
+div.dataTables_wrapper div.dataTables_info {
+  margin-left: -8px;
+  margin-right: -8px; }
+
+div.dataTables_wrapper div.dataTables_paginate {
+  margin-left: -8px;
+  margin-right: -8px; }
 
 .datatable .table {
   padding: 0px;
@@ -5629,6 +5643,15 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 
 .datatable .edit {
   float: right; }
+
+table.dataTable thead .sorting:after {
+  opacity: 0.9; }
+
+table.dataTable thead .sorting_asc:after {
+  color: #00B2B2; }
+
+table.dataTable thead .sorting_desc:after {
+  color: #00B2B2; }
 
 .do-next-wrapper {
   padding-left: 10px;
@@ -6081,49 +6104,17 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   position: relative;
   right: 200%; }
 
-.edoc-list {
-  margin-top: 20px; }
+.eDoc-modal {
+  padding: 10px; }
 
-.edoc-list .edocuments {
-  padding-right: 10px;
-  padding-left: 10px; }
+.eDoc-modal .link-arrow {
+  padding-left: 0;
+  text-indent: 0; }
 
-.edoc-list .date {
-  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-  background: #403D3D;
-  color: white;
-  padding: 3px 20px;
-  margin: 0px -13px 0px -13px;
-  border-radius: 20px; }
-
-.edoc-list .time {
-  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-  border-top: 1px solid white;
+.eDoc-modal .actions {
+  border-top: 1px solid #C7C4C2;
   padding-top: 10px;
-  margin-top: 10px;
-  margin-bottom: 5px; }
-
-.edoc-list .time:first-of-type {
-  border-top: none;
-  padding-top: 0px; }
-
-.edoc-list table {
-  margin-bottom: 0px; }
-
-.edoc-list tr > td {
-  border-top: 1px solid #D9D6D6 !important; }
-
-.edoc-list td.file {
-  font-size: 1.2em;
-  line-height: 1.25em;
-  padding-left: 2em;
-  text-indent: -1.3em; }
-
-.edoc-list td.links {
-  text-align: right;
-  font-size: 1.2em;
-  padding-bottom: 7px;
-  margin-bottom: 7px; }
+  text-align: right; }
 
 #job-plan .all-activities {
   display: block; }
