@@ -2191,6 +2191,7 @@ a.glyphicon-info-sign {
 .modal .close {
   position: absolute;
   right: -15px;
+  padding-left: 3.5px;
   margin-top: -20px;
   background-color: white;
   border-radius: 50%;
@@ -6102,6 +6103,18 @@ table.dataTable thead .sorting_desc:after {
   float: left;
   position: relative;
   right: 200%; }
+
+.eDoc-modal {
+  padding: 10px; }
+
+.eDoc-modal .link-arrow {
+  padding-left: 0;
+  text-indent: 0; }
+
+.eDoc-modal .actions {
+  border-top: 1px solid #C7C4C2;
+  padding-top: 10px;
+  text-align: right; }
 
 #job-plan .all-activities {
   display: block; }
