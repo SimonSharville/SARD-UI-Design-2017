@@ -40,7 +40,7 @@
  }
 
 
-.new-footer{
+.sa-footer{
   position: fixed;
   bottom: 0;
   margin-bottom: 0;
@@ -54,8 +54,12 @@
   a{color:white;}
 }
 
-.new-footer .text-left{ padding-left:0px;}
-.new-footer .text-right{ padding-right:0px;}
+.sa-footer .text-left{ padding-left:0px;}
+.sa-footer .text-right{ padding-right:0px;}
+
+.admin .sa-footer{
+  color: $admin;
+}
 
 
 .sa-main-column{ 
@@ -167,6 +171,10 @@
 .vertical-spaced{ margin-top:20px; margin-bottom:20px;}
 
 .fast-links{ margin-top:20px; margin-bottom:30px;}
+
+.quick-links{margin-bottom:15px;}
+
+.quick-links .btn{ margin-bottom:5px;}
 
 
 
@@ -367,7 +375,7 @@ font-size:14px;
 }
 .doc-list .title{
   font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-  border-bottom:1px solid $bodytext;
+  border-bottom:2px solid white;
   padding-bottom:5px;
   margin-bottom:5px;
   border-top:1px solid $bodytext;
@@ -387,40 +395,6 @@ font-size:14px;
 .panel-body .doc-list .link{
   border-bottom-color: white;
 }
-
-
-// Notices ========================================================
-// Used on Dashboard/Notifications
-
-.notifications .date {
-  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-  background: $grey16;
-  color:white;
-  padding: 3px 10px;
-  margin: 10px -3px 8px -3px;
-  border-radius:20px;
-}
-
-.notifications .time {
-  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-  border-top: 1px solid $grey06;
-  padding-top: 10px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-.notifications .time:first-of-type{
-  border-top: none;
-  padding-top: 0px;
-}
-
-.panel-body .notifications .time{
-  border-top-color: white;
-}
-
-.panel-body .notifications:last-child {
-  margin-bottom:-15px;
-}
-.notifications ul{ padding-left:10px; }
 
 
 

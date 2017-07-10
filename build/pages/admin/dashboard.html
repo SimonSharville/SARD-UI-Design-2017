@@ -99,6 +99,7 @@
                     <li><a href="../../pages/users/dashboard.html">Dashboard</a></li>
                     <li><a href="../../pages/users/my-appraisal.html">My Appraisal</a></li>
                     <li><a href="../../pages/users/my-appraisal.html">Job Plan</a></li>
+                    <li><a href="../../pages/users/notifications.html">Notifications</a></li>
                   </ul>
                 </li>
                 <li class="col-sm-3">
@@ -444,9 +445,7 @@
                   </div> <!-- / messages-collapse-->
                 </div> <!-- / message-group-->
                 
-                
-
-                <button type="button" class="btn btn-sm btn-admin pull-right">View Appraisal Compliance</button>
+                <a href="sard-messages.html" class="btn btn-sm btn-admin pull-right" role="button">View All Messages</a>
               </div> <!-- / panel-body -->
             </div> <!-- / panel-collapse -->
           </div> <!-- / panel -->
@@ -463,106 +462,7 @@
             </div>
             <div id="Admin_DB_AppraisalComplience" class="panel-collapse collapse in">
               <div class="panel-body">
-                <div id="trust_chart">
-                    <div style="position: relative;">
-                        <div dir="ltr" style="position: relative; width: 700px; height: 300px;">
-                            <div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" aria-label="A chart.">
-                                <svg width="700" height="300" aria-label="A chart." style="overflow: hidden;">
-                                    <defs id="defs"></defs>
-                                    <rect class="rect" x="0" y="0" width="700" height="300" stroke="none" stroke-width="0" fill="#ffffff"></rect>
-                                    <g>
-                                        <text class="title" text-anchor="start" x="107" y="35.05" font-family="Arial" font-size="13" font-weight="bold" stroke="none" stroke-width="0" fill="#000000">Appraisal Compliance</text>
-                                        <rect x="107" y="24" width="487" height="13" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-                                    </g>
-                                    <g>
-                                        <rect x="429" y="58" width="165" height="93" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-                                        <g>
-                                            <rect x="429" y="58" width="165" height="13" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-                                            <g>
-                                                <text text-anchor="start" x="447" y="69.05" font-family="Arial" font-size="13" stroke="none" stroke-width="0" fill="#222222">Compliant</text>
-                                            </g>
-                                            <circle cx="435.5" cy="64.5" r="6.5" stroke="none" stroke-width="0" fill="#228b22"></circle>
-                                        </g>
-                                        <g>
-                                            <rect x="429" y="79" width="165" height="30" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-                                            <g>
-                                                <text text-anchor="start" x="447" y="90.05" font-family="Arial" font-size="13" stroke="none" stroke-width="0" fill="#222222">Compliant with upcoming</text>
-                                                <text text-anchor="start" x="447" y="107.05" font-family="Arial" font-size="13" stroke="none" stroke-width="0" fill="#222222">renewal</text>
-                                            </g>
-                                            <circle cx="435.5" cy="85.5" r="6.5" stroke="none" stroke-width="0" fill="#ffa500"></circle>
-                                        </g>
-                                        <g>
-                                            <rect x="429" y="117" width="165" height="13" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-                                            <g>
-                                                <text text-anchor="start" x="447" y="128.05" font-family="Arial" font-size="13" stroke="none" stroke-width="0" fill="#222222">Non Compliant</text>
-                                            </g>
-                                            <circle cx="435.5" cy="123.5" r="6.5" stroke="none" stroke-width="0" fill="#ff0000"></circle>
-                                        </g>
-                                        <g>
-                                            <rect x="429" y="138" width="165" height="13" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-                                            <g>
-                                                <text text-anchor="start" x="447" y="149.05" font-family="Arial" font-size="13" stroke="none" stroke-width="0" fill="#222222">Compliance unknown</text>
-                                            </g>
-                                            <circle cx="435.5" cy="144.5" r="6.5" stroke="none" stroke-width="0" fill="#808080"></circle>
-                                        </g>
-                                    </g>
-                                    <g>
-                                        <path d="M350,141.8L350,160.20000000000002A92,73.60000000000001,0,0,1,278.96252281908863,231.86398319740456L278.96252281908863,213.46398319740456A92,73.60000000000001,0,0,0,350,141.8" stroke="#1a681a" stroke-width="1" fill="#1a681a"></path>
-                                        <path d="M258,141.8L258,160.20000000000002L278.96252281908863,231.86398319740456L278.96252281908863,213.46398319740456" stroke="#1a681a" stroke-width="1" fill="#1a681a"></path>
-                                        <path d="M258,141.8L258,68.2A92,73.60000000000001,0,0,1,278.96252281908863,213.46398319740456L258,141.8A0,0,0,0,0,258,141.8" stroke="#228b22" stroke-width="1" fill="#228b22"></path>
-                                        <text text-anchor="start" x="298.50708398244115" y="141.12453103313516" font-family="Arial" font-size="13" stroke="none" stroke-width="0" fill="#ffffff">46.3%</text>
-                                    </g>
-                                    <g>
-                                        <path d="M258,141.8L258,160.20000000000002L230.2417049292423,90.03002554475711L230.2417049292423,71.63002554475712" stroke="#606060" stroke-width="1" fill="#606060"></path>
-                                        <path d="M258,141.8L230.2417049292423,71.63002554475712A92,73.60000000000001,0,0,1,258,68.2L258,141.8A0,0,0,0,0,258,141.8" stroke="#808080" stroke-width="1" fill="#808080"></path>
-                                    </g>
-                                    <g>
-                                        <path d="M189.31710361169945,190.76797153218564L189.31710361169945,209.16797153218565A92,73.60000000000001,0,0,1,166,160.20000000000002L166,141.8A92,73.60000000000001,0,0,0,189.31710361169945,190.76797153218564" stroke="#bf0000" stroke-width="1" fill="#bf0000"></path>
-                                        <path d="M258,141.8L258,160.20000000000002L189.31710361169945,209.16797153218565L189.31710361169945,190.76797153218564" stroke="#bf0000" stroke-width="1" fill="#bf0000"></path>
-                                        <path d="M258,141.8L189.31710361169945,190.76797153218564A92,73.60000000000001,0,0,1,230.2417049292423,71.63002554475712L258,141.8A0,0,0,0,0,258,141.8" stroke="#ff0000" stroke-width="1" fill="#ff0000"></path>
-                                        <text text-anchor="start" x="182.75530296102278" y="134.38823818351182" font-family="Arial" font-size="13" stroke="none" stroke-width="0" fill="#ffffff">31.7%</text>
-                                    </g>
-                                    <g>
-                                        <path d="M278.96252281908863,213.46398319740456L278.96252281908863,231.86398319740456A92,73.60000000000001,0,0,1,189.31710361169945,209.16797153218567L189.31710361169945,190.76797153218564A92,73.60000000000001,0,0,0,278.96252281908863,213.46398319740456" stroke="#bf7c00" stroke-width="1" fill="#bf7c00"></path>
-                                        <path d="M258,141.8L278.96252281908863,213.46398319740456A92,73.60000000000001,0,0,1,189.31710361169945,190.76797153218564L258,141.8A0,0,0,0,0,258,141.8" stroke="#ffa500" stroke-width="1" fill="#ffa500"></path>
-                                        <text text-anchor="start" x="220.2240946983561" y="193.07279990318247" font-family="Arial" font-size="13" stroke="none" stroke-width="0" fill="#ffffff">17.1%</text>
-                                    </g>
-                                    <g></g>
-                                </svg>
-                                <div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>Medics</th>
-                                                <th>Number</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Compliant</td>
-                                                <td>19</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Compliant with upcoming renewal</td>
-                                                <td>7</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Non Compliant</td>
-                                                <td>13</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Compliance unknown</td>
-                                                <td>2</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div aria-hidden="true" style="display: none; position: absolute; top: 310px; left: 710px; white-space: nowrap; font-family: Arial; font-size: 13px; font-weight: bold;">13 (31.7%)</div>
-                        <div></div>
-                    </div>
-                </div>
+                <img src="../../../assets/images/report_appraisal_compliance.png" alt="Appraisal Compliance">
                 <button type="button" class="btn btn-sm btn-admin pull-right">View Appraisal Compliance</button>
               </div>
             </div> <!-- / panel-collapse -->
@@ -580,93 +480,7 @@
             </div>
             <div id="Admin_DB_MFSComplience" class="panel-collapse collapse in">
               <div class="panel-body">
-                <div id="trust_chart">
-                    <div style="position: relative;">
-                        <div dir="ltr" style="position: relative; width: 700px; height: 300px;">
-                            <div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" aria-label="A chart.">
-                                <svg width="700" height="300" aria-label="A chart." style="overflow: hidden;">
-                                    <defs id="defs"></defs>
-                                    <rect class="rect" x="0" y="0" width="700" height="300" stroke="none" stroke-width="0" fill="#ffffff"></rect>
-                                    <g>
-                                        <text class="title" text-anchor="start" x="107" y="35.05" font-family="Arial" font-size="13" font-weight="bold" stroke="none" stroke-width="0" fill="#000000">MSF Compliance</text>
-                                        <rect x="107" y="24" width="487" height="13" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-                                    </g>
-                                    <g>
-                                        <rect x="429" y="58" width="165" height="55" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-                                        <g>
-                                            <rect x="429" y="58" width="165" height="13" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-                                            <g>
-                                                <text text-anchor="start" x="447" y="69.05" font-family="Arial" font-size="13" stroke="none" stroke-width="0" fill="#222222">Compliant</text>
-                                            </g>
-                                            <circle cx="435.5" cy="64.5" r="6.5" stroke="none" stroke-width="0" fill="#228b22"></circle>
-                                        </g>
-                                        <g>
-                                            <rect x="429" y="79" width="165" height="13" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-                                            <g>
-                                                <text text-anchor="start" x="447" y="90.05" font-family="Arial" font-size="13" stroke="none" stroke-width="0" fill="#222222">Non Compliant</text>
-                                            </g>
-                                            <circle cx="435.5" cy="85.5" r="6.5" stroke="none" stroke-width="0" fill="#ff0000"></circle>
-                                        </g>
-                                        <g>
-                                            <rect x="429" y="100" width="165" height="13" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-                                            <g>
-                                                <text text-anchor="start" x="447" y="111.05" font-family="Arial" font-size="13" stroke="none" stroke-width="0" fill="#222222">Compliance unknown</text>
-                                            </g>
-                                            <circle cx="435.5" cy="106.5" r="6.5" stroke="none" stroke-width="0" fill="#808080"></circle>
-                                        </g>
-                                    </g>
-                                    <g>
-                                        <path d="M258,141.8L258,160.20000000000002L312.07624321090753,100.65634921400388L312.07624321090753,82.25634921400388" stroke="#1a681a" stroke-width="1" fill="#1a681a"></path>
-                                        <path d="M258,141.8L258,68.2A92,73.60000000000001,0,0,1,312.07624321090753,82.25634921400388L258,141.8A0,0,0,0,0,258,141.8" stroke="#228b22" stroke-width="1" fill="#228b22"></path>
-                                        <text text-anchor="start" x="265.49417074551604" y="97.96621445773512" font-family="Arial" font-size="13" stroke="none" stroke-width="0" fill="#ffffff">10%</text>
-                                    </g>
-                                    <g>
-                                        <path d="M350,141.8L350,160.20000000000002A92,73.60000000000001,0,0,1,345.49719949915414,182.94365078599617L345.49719949915414,164.54365078599616A92,73.60000000000001,0,0,0,350,141.8" stroke="#bf0000" stroke-width="1" fill="#bf0000"></path>
-                                        <path d="M258,141.8L258,160.20000000000002L345.49719949915414,182.94365078599617L345.49719949915414,164.54365078599616" stroke="#bf0000" stroke-width="1" fill="#bf0000"></path>
-                                        <path d="M258,141.8L312.07624321090753,82.25634921400388A92,73.60000000000001,0,0,1,345.49719949915414,164.54365078599616L258,141.8A0,0,0,0,0,258,141.8" stroke="#ff0000" stroke-width="1" fill="#ff0000"></path>
-                                        <text text-anchor="start" x="305.7861365578109" y="131.19952975509528" font-family="Arial" font-size="13" stroke="none" stroke-width="0" fill="#ffffff">20%</text>
-                                    </g>
-                                    <g>
-                                        <path d="M345.49719949915414,164.54365078599614L345.49719949915414,182.94365078599614A92,73.60000000000001,0,0,1,166,160.20000000000002L166,141.8A92,73.60000000000001,0,0,0,345.49719949915414,164.54365078599614" stroke="#606060" stroke-width="1" fill="#606060"></path>
-                                        <path d="M258,141.8L345.49719949915414,164.54365078599614A92,73.60000000000001,0,1,1,258,68.2L258,141.8A0,0,0,1,0,258,141.8" stroke="#808080" stroke-width="1" fill="#808080"></path>
-                                        <text text-anchor="start" x="193.62886570555622" y="174.98028879586533" font-family="Arial" font-size="13" stroke="none" stroke-width="0" fill="#ffffff">70%</text>
-                                    </g>
-                                    <g></g>
-                                </svg>
-                                <div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>Appraisees</th>
-                                                <th>Number</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Compliant</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Compliant with upcoming renewal</td>
-                                                <td>0</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Non Compliant</td>
-                                                <td>10</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Compliance unknown</td>
-                                                <td>35</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div aria-hidden="true" style="display: none; position: absolute; top: 310px; left: 710px; white-space: nowrap; font-family: Arial; font-size: 13px; font-weight: bold;">35 (70%)</div>
-                        <div></div>
-                    </div>
-                </div>
+                <img src="../../../assets/images/report_msf_compliance.png" alt="MSF Compliance">
                 <button type="button" class="btn btn-sm btn-admin pull-right">View MSF Compliance</button>
               </div>
             </div> <!-- / panel-collapse -->
@@ -684,76 +498,8 @@
             </div>
             <div id="Admin_DB_JobPlanResults" class="panel-collapse collapse in">
               <div class="panel-body">
-                <div id="results">
-                    <div id="sequence">
-                        <svg width="700" height="50" id="trail">
-                            <text id="endlabel" style="fill: rgb(0, 0, 0);" x="267" y="15" dy="0.35em" text-anchor="middle">33.3%, count: 16</text>
-                            <g transform="translate(0, 0)">
-                                <polygon points="0,0 175,0 185,15 175,30 0,30" style="fill: rgb(142, 250, 128);"></polygon>
-                                <text x="92.5" y="15" dy="0.35em" text-anchor="middle">No Job Plan</text>
-                            </g>
-                        </svg>
-                    </div>
-                    <div id="partition_chart">
-                        <svg width="750" height="450">
-                            <g id="container">
-                                <circle r="225" style="opacity: 0;"></circle>
-                                <path display="none" d="M0.22499906250118523,-87.99971235988146A88,88 0 1,1 -1.9848309807830455,-87.97761332280913L-1.1048838938011736,-43.986125444067234A44,44 0 1,0 0.22499906250117338,-43.99942471694231Z" fill-rule="evenodd" transform="translate(375,225)" style="fill: rgb(165, 230, 255); opacity: 1;"></path>
-                                <path d="M0.2249990625011945,-132.99980968190096A133,133 0 1,1 -114.62152884062901,67.46039672457353L-76.66384226264891,45.206805787709506A89,89 0 1,0 0.2249990625011771,-88.99971559180328Z" fill-rule="evenodd" transform="translate(375,225)" style="fill: rgb(255, 189, 85); opacity: 1;"></path>
-                                <path d="M0.22499906250119145,-177.99985779607206A178,178 0 1,1 -37.010407635018666,174.10982087949478L-27.80736286445841,131.08299115645912A134,134 0 1,0 0.224999062501178,-133.99981110218727Z" fill-rule="evenodd" transform="translate(375,225)" style="fill: rgb(255, 189, 85); opacity: 1;"></path>
-                                <path d="M-38.14621379457719,173.86450578866985A178,178 0 0,1 -130.38852789506734,121.1727353547705L-98.11978579444033,91.26065765516456A134,134 0 0,0 -28.771135788337258,130.87483236072956Z" fill-rule="evenodd" transform="translate(375,225)" style="fill: rgb(255, 190, 86); opacity: 1;"></path>
-                                <path d="M-131.17676929249288,120.31897272659907A178,178 0 0,1 -149.8087863284484,96.1318237567419L-112.7473539205743,72.41570398683396A134,134 0 0,0 -98.78863734972195,90.53620894749858Z" fill-rule="evenodd" transform="translate(375,225)" style="fill: rgb(255, 190, 86); opacity: 1;"></path>
-                                <path d="M-150.4331460083327,95.15181859552479A178,178 0 0,1 -153.68188868881725,89.81022819834044L-115.66503518379176,67.65796062498643A134,134 0 0,0 -113.27714586541461,71.58413388863192Z" fill-rule="evenodd" transform="translate(375,225)" style="fill: rgb(255, 190, 86); opacity: 1;"></path>
-                                <path d="M-115.29371341427233,66.30504993699681A133,133 0 0,1 -1.1116528925426818,-132.9953541588822L-0.8183211047813054,-88.9962378450318A89,89 0 0,0 -77.18851416334222,44.305002891947964Z" fill-rule="evenodd" transform="translate(375,225)" style="fill: rgb(142, 250, 128); opacity: 1;"></path>
-                            </g>
-                        </svg>
-                    </div>
-                    <div id="result_tables">
-                        <table class="table">
-                            <tbody>
-                                <tr class="data group1" id="pmk0bmhi" style="background-color: rgb(255, 189, 85);">
-                                    <td class="name">Has Job Plan</td>
-                                    <td>66.7%</td>
-                                    <td>32 users</td>
-                                </tr>
-                                <tr class="data group2" id="l1gmzz4w" style="background-color: rgb(255, 189, 85);">
-                                    <td class="name">DCC</td>
-                                    <td>53.4%</td>
-                                    <td>148 PAs</td>
-                                </tr>
-                                <tr class="data group2" id="m207a96k" style="background-color: rgb(255, 190, 86);">
-                                    <td class="name">SPA</td>
-                                    <td>9.7%</td>
-                                    <td>27 PAs</td>
-                                </tr>
-                                <tr class="data group2" id="kmsq9je0" style="background-color: rgb(255, 190, 86);">
-                                    <td class="name">AR</td>
-                                    <td>2.8%</td>
-                                    <td>8 PAs</td>
-                                </tr>
-                                <tr class="data group2" id="tf2lfg1i" style="background-color: rgb(255, 190, 86);">
-                                    <td class="name">ED</td>
-                                    <td>0.7%</td>
-                                    <td>2 PAs</td>
-                                </tr>
-                                <tr class="data group2" id="35ryu9pq" style="background-color: rgb(255, 190, 86);">
-                                    <td class="name">PRIV</td>
-                                    <td>0%</td>
-                                    <td>0 PAs</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table class="table">
-                            <tbody>
-                                <tr class="data group1" id="xohq2cgc" style="background-color: rgb(142, 250, 128);">
-                                    <td class="name">No Job Plan</td>
-                                    <td>33.3%</td>
-                                    <td>16 users</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                <img src="../../../assets/images/report_job_plan.png" alt="MSF Compliance">
+              </br></br>
                 <button type="button" class="btn btn-sm btn-admin pull-right">View Job Plan Report</button>
               </div>
             </div> <!-- / panel-collapse -->
@@ -771,7 +517,7 @@
   
   
   <!-- <div class="row"> -->
-  <div class="new-footer">
+  <div class="sa-footer">
     <div class="container">
           <div class=" col-xs-5">
             © <a href="http://www.sardjv.co.uk/" target="new">SARD JV</a>

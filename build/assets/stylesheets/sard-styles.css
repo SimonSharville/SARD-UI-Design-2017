@@ -970,6 +970,9 @@ body {
     padding-bottom: 0px;
     font-family: 'robotomedium', Helvetica, Arial, Sans-serif; }
 
+.panel-heading .btn {
+  margin-left: 10px; }
+
 .panel-body, .button {
   padding-top: 8px; }
 
@@ -2435,7 +2438,7 @@ a.glyphicon-info-sign {
   height: 100%;
   min-height: 100%; }
 
-.new-footer {
+.sa-footer {
   position: fixed;
   bottom: 0;
   margin-bottom: 0;
@@ -2446,14 +2449,17 @@ a.glyphicon-info-sign {
   color: #00B2B2;
   height: 40px;
   padding: 10px 0px 0px 0px; }
-  .new-footer a {
+  .sa-footer a {
     color: white; }
 
-.new-footer .text-left {
+.sa-footer .text-left {
   padding-left: 0px; }
 
-.new-footer .text-right {
+.sa-footer .text-right {
   padding-right: 0px; }
+
+.admin .sa-footer {
+  color: #E50073; }
 
 @media only screen and (min-width: 992px) {
   .sa-right-column {
@@ -2537,6 +2543,12 @@ a.glyphicon-info-sign {
 .fast-links {
   margin-top: 20px;
   margin-bottom: 30px; }
+
+.quick-links {
+  margin-bottom: 15px; }
+
+.quick-links .btn {
+  margin-bottom: 5px; }
 
 hr {
   height: 1px;
@@ -2684,7 +2696,7 @@ hr {
 
 .doc-list .title {
   font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-  border-bottom: 1px solid #211F0F;
+  border-bottom: 2px solid white;
   padding-bottom: 5px;
   margin-bottom: 5px;
   border-top: 1px solid #211F0F;
@@ -2703,34 +2715,6 @@ hr {
 
 .panel-body .doc-list .link {
   border-bottom-color: white; }
-
-.notifications .date {
-  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-  background: #403D3D;
-  color: white;
-  padding: 3px 10px;
-  margin: 10px -3px 8px -3px;
-  border-radius: 20px; }
-
-.notifications .time {
-  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-  border-top: 1px solid #C7C4C2;
-  padding-top: 10px;
-  margin-top: 10px;
-  margin-bottom: 5px; }
-
-.notifications .time:first-of-type {
-  border-top: none;
-  padding-top: 0px; }
-
-.panel-body .notifications .time {
-  border-top-color: white; }
-
-.panel-body .notifications:last-child {
-  margin-bottom: -15px; }
-
-.notifications ul {
-  padding-left: 10px; }
 
 .doc-covers {
   margin-left: -8px;
@@ -5716,6 +5700,46 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   margin-top: 5px;
   margin-bottom: -12px; }
 
+.notifications {
+  padding: 0; }
+
+.notifications .date {
+  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+  font-size: 16px;
+  border-top: 1px solid white;
+  color: black;
+  padding: 5px 0px 0px 0px;
+  margin-top: 15px;
+  margin-bottom: 5px; }
+
+.notifications .date:first-of-type {
+  border-top: none;
+  margin-top: 0px; }
+
+.notifications .time {
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+  border-top: 1px solid white;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px; }
+
+.notifications .time:first-of-type {
+  border-top: none;
+  padding-top: 0px; }
+
+.panel-body .notifications:last-child {
+  margin-bottom: -10px; }
+
+.notifications.datatable .table td.date-time {
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif; }
+
+.notifications.datatable .link-arrow td a {
+  margin-left: -1.25em;
+  text-indent: 1.25em; }
+
+.notifications.datatable .link-arrow td.detail {
+  padding-left: 30px; }
+
 #login-page {
   background-color: #00B2B2; }
   #login-page .brand {
@@ -6132,12 +6156,15 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
 .admin-db #trust_chart {
   position: relative;
   top: -20px;
-  left: -170px; }
+  left: -170px;
+  z-index: 0; }
 
 .admin-db #trust_chart .rect {
   fill: none;
   x: 100;
-  y: 20; }
+  y: 20;
+  overflow: hidden;
+  z-index: -100; }
 
 .admin-db #trust_chart .title {
   display: none; }
