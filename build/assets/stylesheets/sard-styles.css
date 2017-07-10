@@ -6103,6 +6103,13 @@ table.dataTable thead .sorting_desc:after {
   position: relative;
   right: 200%; }
 
+.eDoc-modal {
+  padding: 10px; }
+
+.eDoc-modal .link-arrow {
+  padding-left: 0;
+  text-indent: 0; }
+
 #job-plan .all-activities {
   display: block; }
 
