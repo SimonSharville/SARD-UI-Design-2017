@@ -6110,6 +6110,11 @@ table.dataTable thead .sorting_desc:after {
   padding-left: 0;
   text-indent: 0; }
 
+.eDoc-modal .actions {
+  border-top: 1px solid #C7C4C2;
+  padding-top: 10px;
+  text-align: right; }
+
 #job-plan .all-activities {
   display: block; }
 
