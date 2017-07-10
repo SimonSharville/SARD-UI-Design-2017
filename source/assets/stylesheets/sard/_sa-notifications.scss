@@ -1,0 +1,55 @@
+// Used on Dashboard/Notifications
+
+.notifications{
+  padding:0;
+}
+
+.notifications .date {
+  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+  font-size:16px;
+  border-top: 1px solid white;
+  color:black;
+  padding: 5px 0px 0px 0px;
+  margin-top:15px;
+  margin-bottom: 5px;
+}
+
+.notifications .date:first-of-type{
+  border-top:none;
+  margin-top:0px;
+}
+
+.notifications .time {
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+  border-top: 1px solid white;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.notifications .time:first-of-type{
+  border-top: none;
+  padding-top: 0px;
+}
+
+.panel-body .notifications:last-child {
+  margin-bottom:-10px;
+}
+
+
+
+// v2 of Notifications. Using sortable datatable =====================
+
+.notifications.datatable .table td.date-time{
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+}
+
+
+// This indents the text below the link arrow icon
+.notifications.datatable .link-arrow td a{
+  margin-left: -1.25em;
+  text-indent: 1.25em;
+}
+// This aligns the link
+.notifications.datatable .link-arrow td.detail{
+  padding-left:30px;
+}

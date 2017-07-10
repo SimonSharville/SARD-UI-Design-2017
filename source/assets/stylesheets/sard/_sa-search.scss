@@ -103,9 +103,9 @@ box-sizing: border-box;
 .asf-form legend{
   background-color:$grey16;
   box-sizing: border-box;
-  font-size:1em;
+  // font-size:1.3em;
   color:white;
-  padding:0 8px 1px 8px;
+  padding:2px 12px 4px 12px;
   margin-top:10px;
   margin-bottom:-1px;
   // margin-left:-1px;
@@ -118,7 +118,7 @@ box-sizing: border-box;
   position: relative;
   float:right;
     // right:15px;
-    // top:-4px;
+    top:1px;
   color:white;
 }
 
@@ -126,19 +126,21 @@ box-sizing: border-box;
   box-sizing: border-box;
   // border:1px solid $grey16;
   background-color:$grey02;
+  margin-bottom:18px;
 }
 
 .asf-form fieldset fieldset{
   background-color:white;
-  margin:8px;
+  margin:12px;
   
 }
 
 .asf-form .form-group{
   margin:5px 0px;
-  font-size:0.8em;
-  line-height:1.25em;
+  // font-size:1em;
+  line-height:1.4em;
   // background-color:yellow;
+  padding:4px;
 }
 
 .asf-form .form-group:first-child{
@@ -162,7 +164,7 @@ box-sizing: border-box;
 .asf-form .form-group .checkbox-inline input[type=checkbox],
 .asf-form .form-group .radio-inline input[type=radio]{
   margin-right:3px;
-  margin-top:1px;
+  // margin-top:1px;
 }
 
 .asf-form .form-group .checkbox-inline,
@@ -179,7 +181,7 @@ box-sizing: border-box;
 }
 
 .asf-form .form-group .indent{
-  padding-left: 17px;
+  padding-left: 15px;
 }
 
 .asf-form .form-group .subtitle{
@@ -192,6 +194,19 @@ box-sizing: border-box;
     padding-left: 0.8em;
     text-indent:-0.8em;
   }
+
+// Scrollable list selections
+.asf-form select{
+  // border:none;
+  border-color:$grey06;
+  background-color:white;
+}
+.asf-form select option {
+    padding-bottom:4px;
+}
+.asf-form select option:first-child {
+    margin-top:-10px;
+}
 
 .asf-form .divide-rule{
   margin:10px;
