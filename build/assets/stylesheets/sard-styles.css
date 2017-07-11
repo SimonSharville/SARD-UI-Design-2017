@@ -2721,14 +2721,6 @@ hr {
   margin-left: -8px;
   margin-right: -8px; }
 
-img.user-guide-cover {
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5);
-  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5); }
-
 .step-by-step {
   padding-left: 5px;
   padding-right: 3px;
@@ -5840,6 +5832,14 @@ table.dataTable thead .sorting_desc:after {
 .user-guides {
   margin-left: -8px;
   margin-right: -8px; }
+
+.user-guide-thumb {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5); }
 
 #index-page .index-list ul {
   padding-left: 20px;

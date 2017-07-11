@@ -1,21 +1,20 @@
 // Support
 
-// Adjusts the table spacing in the systemAccess Table
+// System Access & Help =============
 #systemAccess  {
-    .table > thead > tr > th,
-    .table > tbody > tr > th,
-    .table > tfoot > tr > th,
-    .table > thead > tr > td,
-    .table > tbody > tr > td,
-    .table > tfoot > tr > td {
-      padding: 8px 8px;
-    }
+  .table > thead > tr > th,
+  .table > tbody > tr > th,
+  .table > tfoot > tr > th,
+  .table > thead > tr > td,
+  .table > tbody > tr > td,
+  .table > tfoot > tr > td {
+    padding: 8px 8px;
+  }
 }
 
 #systemAccess table{
   margin-bottom:10px;
 }
-
 
 
 // Support Videos ====================
@@ -39,8 +38,6 @@
     width:100%;
   }
 }
-
-
 
 #supportVideos .vid-text{
   padding: 0 15px;
@@ -72,7 +69,17 @@
   border:none;
 }
 
+// User Guides ====================
 .user-guides{
   margin-left:-8px;
   margin-right:-8px;
+}
+
+.user-guide-thumb{
+  width: 100%;
+  margin-top:10px;
+  margin-bottom:10px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5); 
+  -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5); 
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5);
 }
