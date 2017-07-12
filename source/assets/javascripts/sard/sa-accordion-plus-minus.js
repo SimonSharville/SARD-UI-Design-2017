@@ -7,6 +7,6 @@ function toggleIcon(e) {
         .find(".more-less")
         .toggleClass('glyphicon-plus glyphicon-minus');
 }
-$('.panel').on('hidden.bs.collapse', toggleIcon);
-$('.panel').on('shown.bs.collapse', toggleIcon);
+$('.accordion').on('hidden.bs.collapse', toggleIcon);
+$('.accordion').on('shown.bs.collapse', toggleIcon);
 
