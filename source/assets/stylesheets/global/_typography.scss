@@ -89,15 +89,13 @@ h1, h2, h3, h4, h5, h6, p{
 
 // TEXT Styles ==========================================================
   
-  .black{ 
+  black{ 
     font-family: 'robotoblack', Helvetica, Arial, Sans-serif;
     font-weight:normal;
+    letter-spacing: $vslight;
   }
+
   strong, bold{ 
-    font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-    font-weight:normal;
-  }
-  .bold{ 
     font-family: 'robotobold', Helvetica, Arial, Sans-serif;
     font-weight:normal;
   }

@@ -1,42 +1,104 @@
 <div class="col-xs-12">
-  <div id="faqs">
+  <div id="faqs" class="faqs">
     <h2>FAQs</h2>
-    <p>Access to this site is by invitation only. If you believe that you require access then please contact one of your organisation's administrators:
-    <br>
-    <a href="mailto:bella.owen@example.com">bella.owen@example.com</a>
-    </p>
-    <p>Navigating a new system can be a challenging experience but you're not alone. We've provided access to the following forms of help and support:</p>
 
-        <span class="icon"></span>
-        <h4>Online Chat Support (Monday to Friday - 9am - 5pm)</h4>
-        <p></p>
-        <img alt="Chat-image" src="assets/images/chat-image.png">
-        <p>During the hours of 9am to 5pm, Monday to Friday, a "Live Support Online" button will appear similar to the one in the picture above but positioned in the bottom left corner of the screen. If you have any questions about the system you can talk to the team at SARD by simply clicking on the green button and initiating a chat session.</p>
-        <span class="icon"></span>
-        <h4>Knowledge base, support questions, feedback and suggestions</h4>
-        <p></p>
-        <img alt="Help-and-feedback" src="assets/images/help-and-feedback-image.png">
-        <p>In the bottom right corner of each page is a help and feedback button. This gives you access to context sensitive support information that guides you through the appraisal process. You can also suggest features or submit a support query.</p>
-        <span class="icon"></span>
-        <h4>System administrators within your organisation</h4>
-        <p>Listed below are the system administrators within your organisation. If your query relates to a non-technical issue or an issue that relates specifically for your trust then it may be best to contact one of your system administrators.</p>
-    <table class="table table-default">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Telephone</th>
-          <th>Position Title</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="odd">
-          <td>Mrs Bella Owen</td>
-          <td><a href="mailto:bella.owen@example.com">bella.owen@example.com</a></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="panel faq-accordion" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel-heading" id="heading_four" role="tab">
+        <div class="section">
+          <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="FAQ_Section_01" aria-expanded="false" data-toggle="collapse" data-target="#FAQ_Section_01">General
+            <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div id="FAQ_Section_01" class="panel-body panel-collapse collapse in">
+        <div class="question">
+          <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="FAQ_s01q01" aria-expanded="true" data-toggle="collapse" data-target="#FAQ_s01q01">
+            <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+            <h4>Question (h4)</h4>
+            <h6>Description (h6)</h6>
+          </a>
+        </div> <!-- / question -->
+        <div id="FAQ_s01q01" class="answer collapse in">
+          <p>One Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat vehicula ligula fermentum dignissim. Sed iaculis sem id eros accumsan, ac bibendum urna euismod. Vestibulum tristique pellentesque elit, id laoreet tellus posuere sed. Aliquam accumsan mi lectus, eget accumsan erat pellentesque nec. Nam vel venenatis odio, sit amet porta augue. Proin luctus arcu lacus, et convallis risus elementum et.</p>
+          <ul>
+            Unordered List
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat vehicula ligula fermentum dignissim. Sed iaculis sem id eros accumsan, ac bibendum urna euismod. Vestibulum tristique pellentesque elit, id laoreet tellus posuere sed.</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat vehicula ligula fermentum dignissim. Sed iaculis sem id eros accumsan, ac bibendum urna euismod. Vestibulum tristique pellentesque elit, id laoreet tellus posuere sed. 
+          </p>
+          <ol>
+            Ordered list
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat vehicula ligula fermentum dignissim. Sed iaculis sem id eros accumsan, ac bibendum urna euismod. Vestibulum tristique pellentesque elit, id laoreet tellus posuere sed.</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ol>
+        </div> <!-- / answer -->
+      </div> <!-- / FAQ-Section -->
+    </div> <!-- / panel faq-accordion -->
+
+    <div class="panel faq-accordion" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel-heading" id="heading_four" role="tab">
+        <div class="section">
+          <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="FAQ_Section_02" aria-expanded="false" data-toggle="collapse" data-target="#FAQ_Section_02">Section
+            <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div id="FAQ_Section_02" class="panel-body panel-collapse collapse in">
+        <div class="question">
+          <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="FAQ_s02q01" aria-expanded="true" data-toggle="collapse" data-target="#FAQ_s02q01">
+            <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+            <h4>Question (h4)</h4>
+          </a>
+        </div> <!-- / question -->
+        <div id="FAQ_s02q01" class="answer collapse in">
+          <p>One Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat vehicula ligula fermentum dignissim. Sed iaculis sem id eros accumsan, ac bibendum urna euismod. Vestibulum tristique pellentesque elit, id laoreet tellus posuere sed. Aliquam accumsan mi lectus, eget accumsan erat pellentesque nec. Nam vel venenatis odio, sit amet porta augue. Proin luctus arcu lacus, et convallis risus elementum et.</p>
+          <ul>
+            Unordered List
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat vehicula ligula fermentum dignissim. Sed iaculis sem id eros accumsan, ac bibendum urna euismod. Vestibulum tristique pellentesque elit, id laoreet tellus posuere sed.</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat vehicula ligula fermentum dignissim. Sed iaculis sem id eros accumsan, ac bibendum urna euismod. Vestibulum tristique pellentesque elit, id laoreet tellus posuere sed. 
+          </p>
+          <ol>
+            Ordered list
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ol>
+        </div> <!-- / answer -->
+        
+        <div class="question">
+          <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="FAQ_s02q02" aria-expanded="true" data-toggle="collapse" data-target="#FAQ_s02q02">
+            <i class="more-less glyphicon glyphicon-minus pull-right"></i>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat vehicula ligula fermentum dignissim. Sed iaculis sem id eros accumsan, ac bibendum urna euismod. Vestibulum tristique pellentesque elit, id laoreet tellus posuere sed.</h4>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat vehicula ligula fermentum dignissim. Sed iaculis sem id eros accumsan, ac bibendum urna euismod. Vestibulum tristique pellentesque elit, id laoreet tellus posuere sed.</h6>
+          </a>
+        </div> <!-- / question -->
+        <div id="FAQ_s02q02" class="answer collapse in">
+          <p>One Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat vehicula ligula fermentum dignissim. Sed iaculis sem id eros accumsan, ac bibendum urna euismod. Vestibulum tristique pellentesque elit, id laoreet tellus posuere sed. Aliquam accumsan mi lectus, eget accumsan erat pellentesque nec. Nam vel venenatis odio, sit amet porta augue. Proin luctus arcu lacus, et convallis risus elementum et.</p>
+          <ul>
+            <bold>Unordered List</bold>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat vehicula ligula fermentum dignissim. Sed iaculis sem id eros accumsan, ac bibendum urna euismod. Vestibulum tristique pellentesque elit, id laoreet tellus posuere sed.</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed <bold>feugiat</bold> vehicula ligula <black>fermentum</black> dignissim. Sed iaculis sem id eros accumsan, ac bibendum urna euismod. <strong>Vestibulum</strong> tristique pellentesque elit, id laoreet tellus posuere sed. 
+          </p>
+          <ol>
+            <strong>Ordered list</strong>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ol>
+        </div> <!-- / answer -->
+      </div> <!-- / FAQ-Section -->
+    </div> <!-- / panel faq-accordion -->
+
   </div> <!-- / faqs -->
-</div>
+</div> <!-- / col -->
