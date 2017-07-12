@@ -1,0 +1,121 @@
+// sa-nav-tabs =====================================
+// Used globaly
+
+
+$tab-colour:              $grey04;
+$tab-colour-active:       $grey16;
+$tab-colour-hover:        $grey06;
+$tab-list-colour:         $grey02;
+$tab-list-hover:          $grey08;
+$tab-pane-colour:         white;
+$tab-text:                $grey18;
+$tab-shadow:              $grey10;
+$h-tab-number-bg:           $grey12;
+$h-tab-number-bg-active:    $grey18;
+$v-tab-number-bg:           $grey16;
+$v-tab-number-bg-active:    $grey18;
+
+
+
+// Structure ========================================
+
+.sa-tabs {
+  // border-bottom: 10px solid $red;
+}
+
+.sa-tab-container {
+  margin-right: auto;
+  margin-left: auto;
+  border-bottom: 10px solid $tab-colour-active;
+}
+@media (min-width: 768px) {
+  .sa-tab-container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .sa-tab-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .sa-tab-container {
+    width: 1170px;
+  }
+}
+.sa-tab-container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  border-bottom: 10px solid $tab-colour-active;
+}
+
+.tab-wrapper, .sa-tab-content {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .tab-wrapper, .sa-tab-content {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .tab-wrapper, .sa-tab-content {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .tab-wrapper, .sa-tab-content {
+    width: 1170px;
+  }
+}
+
+.sa-tab-content > .tab-pane {
+  display: none;
+}
+.sa-tab-content > .active {
+  display: block;
+}
+
+.sa-tabs.nav-tabs {
+  border:0;
+}
+
+
+
+// Tabs ===========================================
+.sa-tabs.nav-tabs > li {
+  margin-top:5px;
+  margin-bottom: 0px;
+}
+
+.sa-tabs.nav-tabs > li > a{
+  background-color:$tab-colour;
+  color:$tab-text;
+  border-radius: 0;
+  border: 0;
+}
+
+.sa-tabs.nav-tabs > li > a:hover{
+  background-color:$tab-colour-hover;
+}
+
+.sa-tabs.nav-tabs > li.active > a,
+.sa-tabs.nav-tabs > li.active > a:hover,
+.sa-tabs.nav-tabs > li.active > a:focus{
+  background-color:$tab-colour-active;
+  color:white;
+  border: 0;
+}
+
+.sa-tabs.nav-tabs.nav-justified > li > a {
+}
+
+.sa-tabs.nav-tabs.nav-justified > li > a:hover {
+}
+
+.sa-tabs.nav-tabs.nav-justified > .active > a,
+.sa-tabs.nav-tabs.nav-justified > .active > a:hover,
+.sa-tabs.nav-tabs.nav-justified > .active > a:focus {
+}

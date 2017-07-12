@@ -254,377 +254,257 @@
           </nav>
       </div><!-- /container -->
 
-          <div class="ui-sard-nav-tabs">
-      
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-12">
-                  <h1>SARD Nav Tabs v02</h1>
-            
-                  <h4>
-                  SARD Nav Tabs come in either Horizontal or Vertical format.</h4>
-                   <h4>Vertical Tabs can be nested within Horizontal Tabs or used independently.</h4> 
-                   <h4>Horizontal Tabs can be nested within Vertical Tabs or used independently.</h4> 
-                  <h4>Horizontal tabs can be standard width or justified.
-                </h4> 
-                </div> <!-- END Column -->
-              </div>
-            </div> <!-- END Container -->
+      <div class="ui-sard-nav-tabs">
       
       
-            <div class="sa-h-tabs">
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
       
-                <div class="horizontal-tabs">
-                  <div class="h-tab-wrapper">
-                    <!-- tab-navs -->
-                    <ul class="container nav nav-tabs">
-                      <li class="active">
-                        <a href="#" class="sa-tab" data-toggle="tab">
-                            <div class="tab-number"><p>A</p></div>
-                            <div class="tab-title"><p>Tab A Title</p></div>
-                        </a>
-                      </li>
-                      <li class="">
-                        <a href="#" class="sa-tab" data-toggle="tab">
-                            <div class="tab-number"><p>B</p></div>
-                            <div class="tab-title"><p>Tab B Title</p></div>
-                        </a>
-                      </li>
-                      <li class="">
-                        <a href="#" class="sa-tab" data-toggle="tab">
-                            <div class="tab-number"><p>C</p></div>
-                            <div class="tab-title"><p>Tab C Title</p></div>
-                        </a>
-                      </li>
-                      <li class="">
-                        <a href="#" class="sa-tab" data-toggle="tab">
-                            <div class="tab-number"><p>D</p></div>
-                            <div class="tab-title"><p>Tab D Title</p></div>
-                        </a>
-                      </li>
-                    </ul>
-                  </div> <!-- END h-tab-wrapper -->
-                </div> <!-- END horizontal-tabs --> 
+            <h4>Basic Boostrap Tabs</h4>
       
-                <!-- tab-content -->
-                <div class="tab-content horizontal container">
-                  <div id="tab-a" class="tab-pane fade in active">
-                    <h3>Horizontal Tabs</h3>
-                    <p>The above is <code>.sa-h-tabs</code> / <code>.horizontal-tabs</code> / <code>.h-tab-wrapper</code> / <code>.container .nav .nav-tabs</code></br>
-                      While below is the same but with <code>.nav-justified</code> added.</p>
-                  </div>
-                  <div id="tab-b" class="tab-pane fade">
-                    <h3>TAB B</h3>
-                    <p>Some content in tab B.</p>
-                  </div>
-                  <div id="tab-c" class="tab-pane fade">
-                    <h3>TAB C</h3>
-                    <p>Some content in tab C.</p>
-                  </div>
-                  <div id="tab-d" class="tab-pane fade">
-                    <h3>TAB D</h3>
-                    <p>Some content in tab D.</p>
-                  </div>
-                </div> <!-- END tab-content -->
+            <ul class="nav nav-tabs">
+                <li class="nav active"><a href="#A" data-toggle="tab">A - really long long long title</a></li>
+                <li class="nav"><a href="#B" data-toggle="tab">B- really long long long title</a></li>
+                <li class="nav"><a href="#C" data-toggle="tab">C- really long long long title</a></li>
+            </ul>
       
-            </div> <!-- END sa-h-tabs --> 
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="A">Content inside tab A</div>
+                <div class="tab-pane fade" id="B">Content inside tab B</div>
+                <div class="tab-pane fade" id="C">Content inside tab C</div>
+            </div> 
       
-            <div class="sa-h-tabs">
+        </div> <!-- / Column -->
+      </div> <!-- / Row -->
       
-                <div class="horizontal-tabs">
-                  <div class="h-tab-wrapper">
-                    <!-- tab-navs -->
-                    <ul class="container nav nav-tabs nav-justified">
-                      <li class="active">
-                        <a href="#tab-e" class="sa-tab" data-toggle="tab">
-                            <div class="tab-number"><p>E</p></div>
-                            <div class="tab-title"><p>Nested Vertical Tabs</p></div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#tab-f" class="sa-tab" data-toggle="tab">
-                          <div class="tab-number"><p>F</p></div>
-                          <div class="tab-title"><p> Tab F Title</p></div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#tab-g" class="sa-tab" data-toggle="tab">
-                          <div class="tab-number"><p>G</p></div>
-                          <div class="tab-title"><p>Tab G Title</p></div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#tab-h" class="sa-tab" data-toggle="tab">
-                          <div class="tab-number"><p>H</p></div>
-                          <div class="tab-title"><p>Tab H Title</p></div>
-                        </a>
-                      </li>
-                    </ul>
-                  </div> <!-- END h-tab-wrapper -->
-                </div> <!-- END horizontal-tabs --> 
+      </div> <!-- END Container -->
       
-                <!-- Horizontal tab-content -->
-                <div class="tab-content horizontal container">
-                  <div id="tab-e" class="tab-pane fade in active">
+      <div class="row perf"></div> <!-- ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• -->
       
-                    <!-- Vertical tabs -->
-                    
-                    <div class="sa-v-tabs clearfix">
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
       
-                      <div class="tab-section-title">
-                        <h3>Nested Vertical Tabs</h3>
-                      </div>
+            <h4>Basic Boostrap Justified Tabs</h4>
       
-                    <div class="v-tab-wrapper">
-                      <div class="col-xs-4 col-sm-3 tab-column appraisal-dataset">
-                          <!-- required for floating -->
-                          <!-- Nav tabs -->
-                          <ul class="nav nav-tabs tabs-left">
-                              <p class="tab-intro">Here are Vertical Tabs that sit within the tab-content of the above Horizontal Tabs. Vertical Tabs use a class of <code>.sa-v-tabs</code>.</p>
-                              <li class="active">
-                                <a href="#tab-1" class="sa-tab" data-toggle="tab">
-                                  <div class="tab-number"><p>1</p></div>
-                                  <div class="tab-title"><p>Title</p></div>
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#tab-2" class="sa-tab" data-toggle="tab">
-                                  <div class="tab-number"><p>2</p></div>
-                                  <div class="tab-title"><p>multiple line</br>Title</p></div>
-                                </a>
-                              </li>
-                              <p class="tab-subtitle">.tab-subtitle</p>
-                              <li>
-                                <a href="#tab-3" class="sa-tab" data-toggle="tab">
-                                  <div class="tab-number"><p>3</p></div>
-                                  <div class="tab-title"><p>Title Title Title Title Title Title Title </p></div>
-                                </a>
-                              </li>
-                              <h6>H6 - Some text here</h6>
-                              <li>
-                                <a href="#tab-4" class="sa-tab" data-toggle="tab">
-                                  <div class="tab-number"><p>4</p></div>
-                                  <div class="tab-title"><p>Title</p></div>
-                                </a>
-                              </li>
-                          </ul>
-                      </div> <!-- END col-xs-3 -->
+            <ul class="nav nav-tabs nav-justified">
+                <li class="nav active"><a href="#A" data-toggle="tab">A - really long long long title</a></li>
+                <li class="nav"><a href="#B" data-toggle="tab">B- really long long long title</a></li>
+                <li class="nav"><a href="#C" data-toggle="tab">C- really long long long title</a></li>
+            </ul>
       
-                      <!-- Vertical Tab Content -->
-                      <div class="col-xs-8 col-sm-9 tab-content vertical">
-                          <div class="tab-pane active" id="tab-1">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium mi et magna euismod fringilla. Quisque dictum vulputate neque quis blandit. Morbi porttitor enim ac enim gravida, sed tempor risus dapibus. Pellentesque molestie diam vel nunc lacinia tristique. Nunc non scelerisque erat, et lobortis nibh. Nam et malesuada enim. Etiam vitae nulla at ligula tincidunt bibendum elementum vitae mi. Duis vulputate libero sit amet rhoncus interdum. Nam laoreet venenatis nulla, id placerat tortor vehicula a. Aenean mollis mi sed lacus aliquam accumsan. Curabitur euismod ante quis eros efficitur scelerisque. Pellentesque mollis tempus massa nec interdum. Vivamus accumsan mauris sit amet velit dictum, nec lacinia leo consectetur. Aliquam fringilla felis est, tincidunt feugiat enim vehicula non. Vivamus ipsum lorem, varius at nisl nec, volutpat cursus nibh.</br>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium mi et magna euismod fringilla. Quisque dictum vulputate neque quis blandit. Morbi porttitor enim ac enim gravida, sed tempor risus dapibus. Pellentesque molestie diam vel nunc lacinia tristique. Nunc non scelerisque erat, et lobortis nibh. Nam et malesuada enim. Etiam vitae nulla at ligula tincidunt bibendum elementum vitae mi. Duis vulputate libero sit amet rhoncus interdum. Nam laoreet venenatis nulla, id placerat tortor vehicula a. Aenean mollis mi sed lacus aliquam accumsan. Curabitur euismod ante quis eros efficitur scelerisque. Pellentesque mollis tempus massa nec interdum. Vivamus accumsan mauris sit amet velit dictum, nec lacinia leo consectetur. Aliquam fringilla felis est, tincidunt feugiat enim vehicula non. Vivamus ipsum lorem, varius at nisl nec, volutpat cursus nibh.
-                            </br>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium mi et magna euismod fringilla. Quisque dictum vulputate neque quis blandit. Morbi porttitor enim ac enim gravida, sed tempor risus dapibus. Pellentesque molestie diam vel nunc lacinia tristique. Nunc non scelerisque erat, et lobortis nibh. Nam et malesuada enim. Etiam vitae nulla at ligula tincidunt bibendum elementum vitae mi. Duis vulputate libero sit amet rhoncus interdum. Nam laoreet venenatis nulla, id placerat tortor vehicula a. Aenean mollis mi sed lacus aliquam accumsan. Curabitur euismod ante quis eros efficitur scelerisque. Pellentesque mollis tempus massa nec interdum. Vivamus accumsan mauris sit amet velit dictum, nec lacinia leo consectetur. Aliquam fringilla felis est, tincidunt feugiat enim vehicula non. Vivamus ipsum lorem, varius at nisl nec, volutpat cursus nibh.
-                            </br>
-                          </div>
-                          <div class="tab-pane" id="tab-2">Tab Two.</div>
-                          <div class="tab-pane" id="tab-3">Tab Three.</div>
-                          <div class="tab-pane" id="tab-4">Tab Four.</div>
-                      </div> <!-- END tab-content vertical -->
-                    </div> <!--  END v-tab-wrapper -->
+            <!-- Tab panes -->
+            <div class="sa-tab-content">
+                <div class="tab-pane fade in active" id="A">Content inside tab A</div>
+                <div class="tab-pane fade" id="B">Content inside tab B</div>
+                <div class="tab-pane fade" id="C">Content inside tab C</div>
+            </div> 
       
-                    </div> <!-- END sa-v-tabs -->
+        </div> <!-- / Column -->
+      </div> <!-- / Row -->
       
-                </div>
-                <div id="tab-f" class="tab-pane fade">
-                  <h3>TAB F</h3>
-                  <p>Some content in tab F.</p>
-                </div>
-                <div id="tab-g" class="tab-pane fade">
-                  <h3>TAB G</h3>
-                  <p>Some content in tab G.</p>
-                </div>
-                <div id="tab-h" class="tab-pane fade">
-                  <h3>TAB H</h3>
-                  <p>Some content in tab H.</p>
-                </div>
-              </div> <!-- END tab-content -->
+      </div> <!-- END Container -->
       
-            </div> <!-- END sa-h-tabs --> 
+      <div class="row perf"></div> <!-- ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• -->
+      
+      <div class="container">
+      
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Basic Sard Nav Tabs</h1>
+            <h4>These are the basic SARD Nav Tabs. </h4> 
+            <h4>All sa-tabs must sit within a <strong>tab-wrapper</strong>, which must sit with either a <strong>sa-tab-container</strong> or a <strong>sa-tab-container-fluid</strong>, depending on whether the rule should be fill width of the page or not.</h4> 
+            <h4>&nbsp;</h4>
+          </div> <!-- / Column -->
+        </div> <!-- / Row -->
+      </div> <!-- END Container -->
+      
+      <div class="sa-tab-container-fluid">
+        <div class="tab-wrapper">
+            <h3>sa-tabs fluid</h3>
+            <!-- tab-navs -->
+            <ul class="sa-tabs nav nav-tabs">
+              <li class="active">
+                <a href="#tab-a" class="sa-tab" data-toggle="tab"><span class="tab-number">A</span>Really Long long long long title</a>
+              </li>
+              <li class="">
+                <a href="#tab-b" class="sa-tab" data-toggle="tab"><span class="tab-number">B</span>Really Long long long long title</a>
+              </li>
+              <li class="">
+                <a href="#tab-c" class="sa-tab" data-toggle="tab"><span class="tab-number">C</span>Really Long long long long title</a>
+              </li>
+              <li class="">
+                <a href="#tab-d" class="sa-tab" data-toggle="tab"><span class="tab-number">D</span>Really Long long long long title</a>
+              </li>
+            </ul>
+          </div> <!-- / tab-wrapper -->
+      </div> <!-- / tab-container -->
+      
+      <!-- tab-content -->
+      <div class="sa-tab-content">
+          <div id="tab-a" class="tab-pane fade in active">
+            <h3>TAB A</h3>
+            <p>Some content in tab A.</p>
+          </div>
+          <div id="tab-b" class="tab-pane fade">
+            <h3>TAB B</h3>
+            <p>Some content in tab B.</p>
+          </div>
+          <div id="tab-c" class="tab-pane fade">
+            <h3>TAB C</h3>
+            <p>Some content in tab C.</p>
+          </div>
+          <div id="tab-d" class="tab-pane fade">
+            <h3>TAB D</h3>
+            <p>Some content in tab D.</p>
+          </div>
+      </div> <!-- END tab-content -->
       
       
-            <!-- ======================================================================== -->
       
-            <div class="row perf"></div> 
+      <div class="row perf"></div> <!-- ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• -->
       
-            <!-- Vertical tabs -->
-                    
-              <div class="sa-v-tabs container clearfix">
       
-                <div class="tab-section-title">
-                  <h3>Independent Vertical Tabs</h3>
-                </div>
+      <div class="sa-tab-container">
+        <div class="tab-wrapper">
+          <h3>sa-tabs</h3>
+          <!-- tab-navs -->
+          <ul class="sa-tabs nav nav-tabs">
+            <li class="active">
+              <a href="#tab-aa" class="sa-tab" data-toggle="tab"><span class="tab-number">A</span>Really Long long long long title</a>
+            </li>
+            <li class="">
+              <a href="#tab-bb" class="sa-tab" data-toggle="tab"><span class="tab-number">B</span>Really Long long long long title</a>
+            </li>
+            <li class="">
+              <a href="#tab-cc" class="sa-tab" data-toggle="tab"><span class="tab-number">C</span>Really Long long long long title</a>
+            </li>
+            <li class="">
+              <a href="#tab-dd" class="sa-tab" data-toggle="tab"><span class="tab-number">D</span>Really Long long long long title</a>
+            </li>
+          </ul>
+          </div> <!-- / tab-wrapper -->
+      </div> <!-- / tab-container -->      
       
-              <div class="v-tab-wrapper">
-                <div class="col-xs-4 col-sm-3 tab-column appraisal-dataset">
-                    <!-- required for floating -->
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs tabs-left">
-                        <p class="tab-intro">These are the same Vertical Tabs as above, but with <code>.container</code> added to <code>.sa-v-tabs</code> class.</p>
-                        <li class="active">
-                          <a href="#tab-5" class="sa-tab" data-toggle="tab">
-                            <div class="tab-number"><p>5</p></div>
-                            <div class="tab-title"><p>Nested Horizontal Tabs</p></div>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#tab-6" class="sa-tab" data-toggle="tab">
-                            <div class="tab-number"><p>6</p></div>
-                            <div class="tab-title"><p>Nested  Horizontal Tabs</br>with no attached number</p></div>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#tab-7" class="sa-tab" data-toggle="tab">
-                            <div class="tab-number"><p>7</p></div>
-                            <div class="tab-title"><p>Title Title Title Title Title Title Title </p></div>
-                          </a>
-                        </li>
-                        <h6>H6 - Some text here</h6>
-                        <li>
-                          <a href="#tab-8" class="sa-tab" data-toggle="tab">
-                            <div class="tab-number"><p>8</p></div>
-                            <div class="tab-title"><p>Title</p></div>
-                          </a>
-                        </li>
-                    </ul>
-                </div> <!-- END col-xs-3 -->
+      <!-- tab-content -->
+      <div class="sa-tab-content">
+          <div id="tab-aa" class="tab-pane fade in active">
+            <h3>TAB A</h3>
+            <p>Some content in tab A.</p>
+          </div>
+          <div id="tab-bb" class="tab-pane fade">
+            <h3>TAB B</h3>
+            <p>Some content in tab B.</p>
+          </div>
+          <div id="tab-cc" class="tab-pane fade">
+            <h3>TAB C</h3>
+            <p>Some content in tab C.</p>
+          </div>
+          <div id="tab-dd" class="tab-pane fade">
+            <h3>TAB D</h3>
+            <p>Some content in tab D.</p>
+          </div>
+      </div> <!-- END tab-content -->
       
-                <!-- Vertical Tab Content -->
-                <div class="col-xs-8 col-sm-9 tab-content vertical">
-                    <div class="tab-pane active" id="tab-5">
       
-                      <h3>Nested Horizontal Tabs</h3>
-                      
-                      <div class="sa-h-tabs">
-                        <div class="horizontal-tabs">
-                          <div class="h-tab-wrapper">
-                            <!-- tab-navs -->
-                            <ul class="container nav nav-tabs nav-justified">
-                              <li class="active">
-                                <a href="#tab-i" class="sa-tab" data-toggle="tab">
-                                    <div class="tab-number"><p>I</p></div>
-                                    <div class="tab-title"><p>Tab I Title</p></div>
-                                </a>
-                              </li>
-                              <li class="">
-                                <a href="#tab-j" class="sa-tab" data-toggle="tab">
-                                    <div class="tab-number"><p>J</p></div>
-                                    <div class="tab-title"><p>Tab J Title</p></div>
-                                </a>
-                              </li>
-                              <li class="">
-                                <a href="#tab-k" class="sa-tab" data-toggle="tab">
-                                    <div class="tab-number"><p>K</p></div>
-                                    <div class="tab-title"><p>Tab K Title</p></div>
-                                </a>
-                              </li>
-                              <li class="">
-                                <a href="#tab-l" class="sa-tab" data-toggle="tab">
-                                    <div class="tab-number"><p>L</p></div>
-                                    <div class="tab-title"><p>Tab L Title</p></div>
-                                </a>
-                              </li>
-                            </ul>
-                          </div> <!-- END h-tab-wrapper -->
-                        </div> <!-- END horizontal-tabs --> 
       
-                        <!-- tab-content -->
-                        <div class="tab-content horizontal container">
-                          <div id="tab-i" class="tab-pane fade in active">
-                            <h3>TAB I</h3>
-                            <p>Some content in tab I.</br>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium mi et magna euismod fringilla. Quisque dictum vulputate neque quis blandit. Morbi porttitor enim ac enim gravida, sed tempor risus dapibus. Pellentesque molestie diam vel nunc lacinia tristique. Nunc non scelerisque erat, et lobortis nibh. Nam et malesuada enim. Etiam vitae nulla at ligula tincidunt bibendum elementum vitae mi. Duis vulputate libero sit amet rhoncus interdum. Nam laoreet venenatis nulla, id placerat tortor vehicula a. Aenean mollis mi sed lacus aliquam accumsan. Curabitur euismod ante quis eros efficitur scelerisque. Pellentesque mollis tempus massa nec interdum. Vivamus accumsan mauris sit amet velit dictum, nec lacinia leo consectetur. Aliquam fringilla felis est, tincidunt feugiat enim vehicula non. Vivamus ipsum lorem, varius at nisl nec, volutpat cursus nibh.</br>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium mi et magna euismod fringilla. Quisque dictum vulputate neque quis blandit. Morbi porttitor enim ac enim gravida, sed tempor risus dapibus. Pellentesque molestie diam vel nunc lacinia tristique. Nunc non scelerisque erat, et lobortis nibh. Nam et malesuada enim. Etiam vitae nulla at ligula tincidunt bibendum elementum vitae mi. Duis vulputate libero sit amet rhoncus interdum. Nam laoreet venenatis nulla, id placerat tortor vehicula a. Aenean mollis mi sed lacus aliquam accumsan. Curabitur euismod ante quis eros efficitur scelerisque. Pellentesque mollis tempus massa nec interdum. Vivamus accumsan mauris sit amet velit dictum, nec lacinia leo consectetur. Aliquam fringilla felis est, tincidunt feugiat enim vehicula non. Vivamus ipsum lorem, varius at nisl nec, volutpat cursus nibh.</p>
-                          </div>
-                          <div id="tab-j" class="tab-pane fade">
-                            <h3>TAB B</h3>
-                            <p>Some content in tab B.</p>
-                          </div>
-                          <div id="tab-k" class="tab-pane fade">
-                            <h3>TAB C</h3>
-                            <p>Some content in tab C.</p>
-                          </div>
-                          <div id="tab-l" class="tab-pane fade">
-                            <h3>TAB D</h3>
-                            <p>Some content in tab D.</p>
-                          </div>
-                        </div> <!-- END tab-content -->
+      <div class="row perf"></div> <!-- ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• -->
       
-                    </div> <!-- END sa-h-tabs -->
-                      
-                    </div>
+      <div class="sa-tab-container-fluid">
+        <div class="tab-wrapper">
+            <h3>sa Justified tabs fluid</h3>
+            <!-- tab-navs -->
+            <ul class="sa-tabs nav nav-tabs nav-justified">
+              <li class="active">
+                <a href="#tab-e" class="sa-tab" data-toggle="tab"><span class="tab-number">E</span>Really Long long long long title</a>
+              </li>
+              <li class="">
+                <a href="#tab-f" class="sa-tab" data-toggle="tab"><span class="tab-number">F</span>Really Long long long long title</a>
+              </li>
+              <li class="">
+                <a href="#tab-g" class="sa-tab" data-toggle="tab"><span class="tab-number">G</span>Really Long long long long title</a>
+              </li>
+              <li class="">
+                <a href="#tab-h" class="sa-tab" data-toggle="tab"><span class="tab-number">H</span>Really Long long long long title</a>
+              </li>
+            </ul>
+        </div> <!-- / tab-wrapper -->
+      </div> <!-- / tab-container -->
       
-                    <div class="tab-pane" id="tab-6">
-                      <h3>Nested Horizontal Tabs with no attached number</h3>
-                      <div class="sa-h-tabs">
-                        <div class="horizontal-tabs">
-                          <div class="h-tab-wrapper">
-                            <!-- tab-navs -->
-                            <ul class="container nav nav-tabs nav-justified">
-                              <li class="active">
-                                <a href="#tab-M" class="sa-tab-center clearfix" data-toggle="tab"> <!-- These have been changed from sa-tab to sa-tab-center, and clearfix added. This won't work in ie8 though. ss --> 
-                                    <!-- <div class="tab-number"><p>A</p></div> -->
-                                    <!-- <div class="tab-title"><p>Overview</p></div> -->
-                                    <h5>Tab M</h5>
-                                </a>
-                              </li>
-                              <li class="">
-                                <a href="#tab-N" class="sa-tab-center clearfix" data-toggle="tab">
-                                    <!-- <div class="tab-number"><p>B</p></div> -->
-                                    <!-- <div class="tab-title"><p>Breakdown</p></div> -->
-                                    <h5>Tab N</h5>
-                                </a>
-                              </li>
-                              <li class="">
-                                <a href="#tab-O" class="sa-tab-center clearfix" data-toggle="tab">
-                                    <!-- <div class="tab-number"><p>C</p></div> -->
-                                    <!-- <div class="tab-title"><p>Weekley Calendar</p></div> -->
-                                    <h5>Tab O</h5>
-                                </a>
-                              </li>
-                              <li class="">
-                                <a href="#tab-P" class="sa-tab-center clearfix" data-toggle="tab">
-                                    <!-- <div class="tab-number"><p>D</p></div> -->
-                                    <!-- <div class="tab-title"><p>Clashing Activities</p></div> -->
-                                    <h5>Tab P</h5>
-                                </a>
-                              </li>
-                            </ul>
-                          </div> <!-- END h-tab-wrapper -->
-                        </div> <!-- END horizontal-tabs --> 
+      <!-- tab-content -->
+      <div class="sa-tab-content">
+          <div id="tab-e" class="tab-pane fade in active">
+            <h3>TAB E</h3>
+            <p>Some content in tab E.</p>
+          </div>
+          <div id="tab-f" class="tab-pane fade">
+            <h3>TAB F</h3>
+            <p>Some content in tab F.</p>
+          </div>
+          <div id="tab-g" class="tab-pane fade">
+            <h3>TAB G</h3>
+            <p>Some content in tab G.</p>
+          </div>
+          <div id="tab-h" class="tab-pane fade">
+            <h3>TAB H</h3>
+            <p>Some content in tab H.</p>
+          </div>
+      </div> <!-- END tab-content -->
       
-                        <!-- tab-content -->
-                        <div class="tab-content horizontal container">
-                          <div id="tab-M" class="tab-pane fade in active">
-                            <h3>Tab M</h3>
-                            <p>Nested Horizontal Tabs with no added number are built slightly different.</p>
-                            <p>To centre the title within the tab, the tab has the following class <code>class="sa-tab-center clearfix"</code>. This uses Flexbox to align everthing and isn't recognised in IE below version 10. </p>
-                          </div>
-                          <div id="tab-N" class="tab-pane fade">
-                            <h3>Tab N</h3>
-                            <p>Some content</p>
-                          </div>
-                          <div id="tab-O" class="tab-pane fade">
-                            <h3>Tab O</h3>
-                            <p>Some content</p>
-                          </div>
-                          <div id="tab-P" class="tab-pane fade">
-                            <h3>Tab P</h3>
-                            <p>Some content</p>
-                          </div>
-                        </div> <!-- tab-content horizontal container -->
-                      </div>
-                    </div>
-                    <div class="tab-pane" id="tab-7">Tab Seven.</div>
-                    <div class="tab-pane" id="tab-8">Tab Eight.</div>
-                </div> <!-- END tab-content vertical -->
-              </div> <!--  END v-tab-wrapper -->
       
-              </div> <!-- END sa-v-tabs -->
+      <div class="row perf"></div> <!-- ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• -->
       
-            </div> <!-- END ui-sard-nav-tabs -->
+      <div class="sa-tab-container">
+          <h3>sa Justified tabs</h3>
+          <!-- tab-navs -->
+          <ul class="sa-tabs nav nav-tabs nav-justified">
+            <li class="active">
+              <a href="#tab-ee" class="sa-tab" data-toggle="tab"><span class="tab-number">E</span>Really Long long long long title</a>
+            </li>
+            <li class="">
+              <a href="#tab-ff" class="sa-tab" data-toggle="tab"><span class="tab-number">F</span>Really Long long long long title</a>
+            </li>
+            <li class="">
+              <a href="#tab-gg" class="sa-tab" data-toggle="tab"><span class="tab-number">G</span>Really Long long long long title</a>
+            </li>
+            <li class="">
+              <a href="#tab-hh" class="sa-tab" data-toggle="tab"><span class="tab-number">H</span>Really Long long long long title</a>
+            </li>
+          </ul>
+      </div> <!-- / tab-container -->
+      
+      <!-- tab-content -->
+      <div class="sa-tab-content">
+          <div id="tab-ee" class="tab-pane fade in active">
+            <h3>TAB E</h3>
+            <p>Some content in tab E.</p>
+          </div>
+          <div id="tab-ff" class="tab-pane fade">
+            <h3>TAB F</h3>
+            <p>Some content in tab F.</p>
+          </div>
+          <div id="tab-gg" class="tab-pane fade">
+            <h3>TAB G</h3>
+            <p>Some content in tab G.</p>
+          </div>
+          <div id="tab-hh" class="tab-pane fade">
+            <h3>TAB H</h3>
+            <p>Some content in tab H.</p>
+          </div>
+      </div> <!-- END tab-content -->
+      
+      
+      
+      
+        
+      
+      
+      
+      
+        
+      </div> <!-- END ui-sard-nav-tabs -->
       
       
 

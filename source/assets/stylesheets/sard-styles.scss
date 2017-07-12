@@ -20,7 +20,7 @@
 
   @import "bootstrap-overrides/bs-jumbotron";
 
-  @import "bootstrap-overrides/bs-nav-tabs";
+  // @import "bootstrap-overrides/bs-nav-tabs";
 
   @import "bootstrap-overrides/bs-panels";
 
@@ -51,7 +51,9 @@
 
   @import "sard/sa-breadcrumbs";
 
-  @import "sard/sa-tabs";
+  // @import "sard/sa-tabs";
+
+  @import "sard/sa-nav-tabs-v02";
 
   @import "sard/sa-forms";
 
