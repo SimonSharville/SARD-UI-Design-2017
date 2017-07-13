@@ -57,24 +57,24 @@ $tab-number-bg-active:    $grey18;
   border-bottom: 10px solid $tab-colour-active;
 }
 
-.tab-wrapper, .sa-tab-content {
+.sa-tab-wrapper, .sa-tab-content {
   margin-right: auto;
   margin-left: auto;
   padding-left: 16px;
   padding-right: 16px;
 }
 @media (min-width: 768px) {
-  .tab-wrapper, .sa-tab-content {
+  .sa-tab-wrapper, .sa-tab-content {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .tab-wrapper, .sa-tab-content {
+  .sa-tab-wrapper, .sa-tab-content {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .tab-wrapper, .sa-tab-content {
+  .sa-tab-wrapper, .sa-tab-content {
     width: 1170px;
   }
 }
@@ -175,6 +175,10 @@ $tab-number-bg-active:    $grey18;
   line-height:1.25em;
 }
 
+.tab-title h3{
+
+}
+
 // Justified Tabs =====================
 
 .sa-tab-container .sa-tabs.nav-tabs.nav-justified {
@@ -207,7 +211,7 @@ $tab-number-bg-active:    $grey18;
 // This is an override for the tabs that sit within sa-tab-container, to make it same width as page with no overhang.
 // I may remove this or use it later for nested tabs
 
-.sa-tab-container .tab-wrapper {
+.sa-tab-container .sa-tab-wrapper {
   padding-left:0;
   padding-right:0;
 }
@@ -216,7 +220,7 @@ $tab-number-bg-active:    $grey18;
   .sa-tab-container {
     width: 718px;
   }
-  .sa-tab-container .tab-wrapper{
+  .sa-tab-container .sa-tab-wrapper{
     width: 718px;
   }
 }
@@ -224,7 +228,7 @@ $tab-number-bg-active:    $grey18;
   .sa-tab-container {
     width: 938px;
   }
-  .sa-tab-container .tab-wrapper{
+  .sa-tab-container .sa-tab-wrapper{
     width: 938px;
   }
 }
@@ -232,9 +236,81 @@ $tab-number-bg-active:    $grey18;
   .sa-tab-container {
     width: 1154px;
   }
-  .sa-tab-container .tab-wrapper{
+  .sa-tab-container .sa-tab-wrapper{
     width: 1154px;
   }
+}
+
+
+// VERTICAL Tabs ===================================================================================================
+
+
+
+
+.vertical-tabs{
+  display: flex; // Fix to make Tab Content and Tab Wrapper always be 100% Height
+}
+
+.vertical-tabs .sa-tab-wrapper{
+   @include make-xs-column(4);
+   @include make-sm-column(3);
+   // background-color:yellow;
+   padding:0;
+   padding-right:8px;
+  }
+
+.vertical-tabs .sa-tab-content{
+   @include make-xs-column(8);
+   @include make-sm-column(9);
+   // background-color:pink;
+   padding:16px;
+   margin:0;
+   border:1px solid $tab-colour-active;
+   border-left:10px solid $tab-colour-active;
+}
+
+.vertical-tabs .tab-intro{
+    padding-top:0px;
+    padding-right:20px;
+    text-align:left;
+  }
+.vertical-tabs .sa-tabs.nav-tabs{
+  margin:0;
+  text-align:left;
+  min-height:50px;
+  height:50px;
+
+}
+.vertical-tabs .sa-tabs.nav-tabs > li {
+  float: none;
+  padding:0;
+  margin:0;
+  margin-bottom: 10px;
+}
+
+.vertical-tabs .sa-tabs.nav-tabs > li > a{
+  -webkit-box-shadow: inset -6px 0px 0px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: inset -6px 0px 0px 0px rgba(0,0,0,0.25);
+  box-shadow: inset -6px 0px 0px 0px rgba(0,0,0,0.25);
+  margin:0;
+}
+
+.vertical-tabs .sa-tabs.nav-tabs  > li.active > a{
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.vertical-tabs .sa-tabs.nav-tabs .tab-number {
+  text-align: center;
+}
+
+.vertical-tabs .sa-tabs.nav-tabs .tab-title{
+  text-align:left;
+}
+
+.vertical-tabs .sa-tabs.nav-tabs .tab-title p{
+  padding:0;
 }
 
 
