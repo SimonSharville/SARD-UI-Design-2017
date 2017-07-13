@@ -202,3 +202,39 @@ $tab-number-bg-active:    $grey18;
 
 .sa-tabs.nav-tabs.nav-justified .tab-title p{
 }
+
+
+// This is an override for the tabs that sit within sa-tab-container, to make it same width as page with no overhang.
+// I may remove this or use it later for nested tabs
+
+.sa-tab-container .tab-wrapper {
+  padding-left:0;
+  padding-right:0;
+}
+
+@media (min-width: 768px) {
+  .sa-tab-container {
+    width: 718px;
+  }
+  .sa-tab-container .tab-wrapper{
+    width: 718px;
+  }
+}
+@media (min-width: 992px) {
+  .sa-tab-container {
+    width: 938px;
+  }
+  .sa-tab-container .tab-wrapper{
+    width: 938px;
+  }
+}
+@media (min-width: 1200px) {
+  .sa-tab-container {
+    width: 1154px;
+  }
+  .sa-tab-container .tab-wrapper{
+    width: 1154px;
+  }
+}
+
+
