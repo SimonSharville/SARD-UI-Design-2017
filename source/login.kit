@@ -69,9 +69,9 @@
 
       <div class="row">
         <div class="col-xs-12 col-sm-8 col-sm-offset-2 login-addons">
-          <div class="panel-group sa-accordion" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel-group accordion sa-accordion" id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
-              <div class="panel-heading" id="collapseOne" role="tab">
+              <div class="panel-heading" id="dummy_accounts" role="tab">
               <h3 class="panel-title">
                 <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="Demo" aria-expanded="false" data-toggle="collapse" data-target="#Demo" data-parent="#accordion">Demonstration website dummy accounts
                   <i class="more-less glyphicon pull-right glyphicon-plus"></i>
@@ -79,7 +79,7 @@
               </h3>
               </div>
     
-              <div id="Demo" class="panel-default panel-collapse collapse" aria-labelledby="collapseOne" role="tabpanel" aria-expanded="false">
+              <div id="Demo" class="panel-default panel-collapse collapse" aria-labelledby="dummy_accounts" role="tabpanel" aria-expanded="false">
                 <div class="panel-body panel-table">
                   <p class="demo-statement">This is a demonstration website. The demonstration database will be destroyed and rebuilt on a regular basis. Please feel free to play around with it, add explanations in portfolios etc. but be warned no data will be saved! The following dummy accounts exist for demonstration purposes.</p>
                   <table class="table table-hover table-condensed">
@@ -153,7 +153,7 @@
             </div> <!-- / panel -->
     
             <div class="panel panel-default">
-              <div class="panel-heading" id="headingTwo" role="tab">
+              <div class="panel-heading" role="tab">
                 <h3 class="panel-title">
                   <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="system_access" aria-expanded="false" data-toggle="collapse" data-target="#system_access" data-parent="#accordion">System access and help
                     <i class="more-less glyphicon glyphicon-plus pull-right"></i>
@@ -163,30 +163,44 @@
     
               <div id="system_access" class="panel-collapse collapse" aria-labelledby="headingTwo" role="tabpanel" aria-expanded="false">
                 <div class="panel-body">
-                  <!-- @import "pages/global/articles/system_access.html" -->
-                </div> <!-- / panel-body -->
-              </div> <!-- / panel-collapse -->
-            </div> <!-- / panel -->
+                  <!-- @import "pages/global/support_articles/system_access.html" -->
+                </div>
+              </div>
+            </div>
 
-
-    
             <div class="panel panel-default">
-              <div class="panel-heading" id="headingThree" role="tab">
+              <div class="panel-heading" role="tab">
                 <h3 class="panel-title">
                   <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="support_videos" aria-expanded="false" data-toggle="collapse" data-target="#support_videos" data-parent="#accordion">Support Videos
                     <i class="more-less glyphicon glyphicon-plus pull-right"></i>
                   </a>
                 </h3>
-              </div> <!-- / panel-heading -->
+              </div>
     
               <div id="support_videos" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
                 <div class="panel-body">
-                  <!-- @import "pages/global/articles/support_videos.html" -->
-                </div><!-- / panel-body -->
-              </div> <!-- / panel-collapse collapse -->
+                  <!-- @import "pages/global/support_articles/support_videos.html" -->
+                </div>
+              </div>
+            </div> <!-- / panel -->
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab">
+                <h3 class="panel-title">
+                  <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="guides" aria-expanded="false" data-toggle="collapse" data-target="#guides" data-parent="#accordion">Guides
+                    <i class="more-less glyphicon glyphicon-plus pull-right"></i>
+                  </a>
+                </h3>
+              </div>
+    
+              <div id="guides" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+                <div class="panel-body">
+                  <!-- @import "pages/global/support_articles/guides.html" -->
+                </div>
+              </div>
             </div> <!-- / panel -->
     
-          </div>
+          </div> <!-- / Panel-Group -->
         </div> <!-- / col login-addons -->
       </div> <!-- / Row -->
 

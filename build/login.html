@@ -69,9 +69,9 @@
 
       <div class="row">
         <div class="col-xs-12 col-sm-8 col-sm-offset-2 login-addons">
-          <div class="panel-group sa-accordion" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel-group accordion sa-accordion" id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
-              <div class="panel-heading" id="collapseOne" role="tab">
+              <div class="panel-heading" id="dummy_accounts" role="tab">
               <h3 class="panel-title">
                 <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="Demo" aria-expanded="false" data-toggle="collapse" data-target="#Demo" data-parent="#accordion">Demonstration website dummy accounts
                   <i class="more-less glyphicon pull-right glyphicon-plus"></i>
@@ -79,7 +79,7 @@
               </h3>
               </div>
     
-              <div id="Demo" class="panel-default panel-collapse collapse" aria-labelledby="collapseOne" role="tabpanel" aria-expanded="false">
+              <div id="Demo" class="panel-default panel-collapse collapse" aria-labelledby="dummy_accounts" role="tabpanel" aria-expanded="false">
                 <div class="panel-body panel-table">
                   <p class="demo-statement">This is a demonstration website. The demonstration database will be destroyed and rebuilt on a regular basis. Please feel free to play around with it, add explanations in portfolios etc. but be warned no data will be saved! The following dummy accounts exist for demonstration purposes.</p>
                   <table class="table table-hover table-condensed">
@@ -153,7 +153,7 @@
             </div> <!-- / panel -->
     
             <div class="panel panel-default">
-              <div class="panel-heading" id="headingTwo" role="tab">
+              <div class="panel-heading" role="tab">
                 <h3 class="panel-title">
                   <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="system_access" aria-expanded="false" data-toggle="collapse" data-target="#system_access" data-parent="#accordion">System access and help
                     <i class="more-less glyphicon glyphicon-plus pull-right"></i>
@@ -163,26 +163,28 @@
     
               <div id="system_access" class="panel-collapse collapse" aria-labelledby="headingTwo" role="tabpanel" aria-expanded="false">
                 <div class="panel-body">
-                  <div id="systemAccess">
-                    <p>Access to this site is by invitation only. If you believe that you require access then please contact one of your organisation's administrators:
-                    <br>
-                    <a href="mailto:bella.owen@example.com">bella.owen@example.com</a>
-                    </p>
-                    <p>Navigating a new system can be a challenging experience but you're not alone. We've provided access to the following forms of help and support:</p>
+                  <div class="col-xs-12">
+                    <div id="systemAccess">
+                      <h2>System access and help</h2>
+                      <p>Access to this site is by invitation only. If you believe that you require access then please contact one of your organisation's administrators:
+                      <br>
+                      <a href="mailto:bella.owen@example.com">bella.owen@example.com</a>
+                      </p>
+                      <p>Navigating a new system can be a challenging experience but you're not alone. We've provided access to the following forms of help and support:</p>
                   
-                        <span class="icon"></span>
-                        <h4>Online Chat Support (Monday to Friday - 9am - 5pm)</h4>
-                        <p></p>
-                        <img alt="Chat-image" src="assets/images/chat-image.png">
-                        <p>During the hours of 9am to 5pm, Monday to Friday, a "Live Support Online" button will appear similar to the one in the picture above but positioned in the bottom left corner of the screen. If you have any questions about the system you can talk to the team at SARD by simply clicking on the green button and initiating a chat session.</p>
-                        <span class="icon"></span>
-                        <h4>Knowledge base, support questions, feedback and suggestions</h4>
-                        <p></p>
-                        <img alt="Help-and-feedback" src="assets/images/help-and-feedback-image.png">
-                        <p>In the bottom right corner of each page is a help and feedback button. This gives you access to context sensitive support information that guides you through the appraisal process. You can also suggest features or submit a support query.</p>
-                        <span class="icon"></span>
-                        <h4>System administrators within your organisation</h4>
-                        <p>Listed below are the system administrators within your organisation. If your query relates to a non-technical issue or an issue that relates specifically for your trust then it may be best to contact one of your system administrators.</p>
+                          <span class="icon"></span>
+                          <h4>Online Chat Support (Monday to Friday - 9am - 5pm)</h4>
+                          <p></p>
+                          <img alt="Chat-image" src="assets/images/chat-image.png">
+                          <p>During the hours of 9am to 5pm, Monday to Friday, a "Live Support Online" button will appear similar to the one in the picture above but positioned in the bottom left corner of the screen. If you have any questions about the system you can talk to the team at SARD by simply clicking on the green button and initiating a chat session.</p>
+                          <span class="icon"></span>
+                          <h4>Knowledge base, support questions, feedback and suggestions</h4>
+                          <p></p>
+                          <img alt="Help-and-feedback" src="assets/images/help-and-feedback-image.png">
+                          <p>In the bottom right corner of each page is a help and feedback button. This gives you access to context sensitive support information that guides you through the appraisal process. You can also suggest features or submit a support query.</p>
+                          <span class="icon"></span>
+                          <h4>System administrators within your organisation</h4>
+                          <p>Listed below are the system administrators within your organisation. If your query relates to a non-technical issue or an issue that relates specifically for your trust then it may be best to contact one of your system administrators.</p>
                       <table class="table table-default">
                         <thead>
                           <tr>
@@ -201,26 +203,26 @@
                           </tr>
                         </tbody>
                       </table>
-                  </div> <!-- / systemAccess -->
-                </div> <!-- / panel-body -->
-              </div> <!-- / panel-collapse -->
-            </div> <!-- / panel -->
+                    </div> <!-- / systemAccess -->
+                  </div>
+                </div>
+              </div>
+            </div>
 
-
-    
             <div class="panel panel-default">
-              <div class="panel-heading" id="headingThree" role="tab">
+              <div class="panel-heading" role="tab">
                 <h3 class="panel-title">
                   <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="support_videos" aria-expanded="false" data-toggle="collapse" data-target="#support_videos" data-parent="#accordion">Support Videos
                     <i class="more-less glyphicon glyphicon-plus pull-right"></i>
                   </a>
                 </h3>
-              </div> <!-- / panel-heading -->
+              </div>
     
               <div id="support_videos" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
                 <div class="panel-body">
-                  <div id="supportVideos">
-                        
+                  <div class="col-xs-12">
+                    <div id="supportVideos">
+                      <h2>Support Videos</h2>
                       <div class="row vid-list">
                           <div class="col-xs-4 vid-thumb">
                             <a href="#"  data-toggle="modal" data-target="#vidModal00">
@@ -455,13 +457,55 @@
                           </div>
                           <!-- Modal -->
                       </div> <!-- / vid-list -->
+                    </div> <!-- / supportVideos -->
+                  </div>
+                </div>
+              </div>
+            </div> <!-- / panel -->
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab">
+                <h3 class="panel-title">
+                  <a href="#" class="accordion-toggle collapsed" role="button" aria-controls="guides" aria-expanded="false" data-toggle="collapse" data-target="#guides" data-parent="#accordion">Guides
+                    <i class="more-less glyphicon glyphicon-plus pull-right"></i>
+                  </a>
+                </h3>
+              </div>
+    
+              <div id="guides" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+                <div class="panel-body">
                   
-                  </div> <!-- / supportVideos -->
-                </div><!-- / panel-body -->
-              </div> <!-- / panel-collapse collapse -->
+                  <div class="col-xs-12">
+                    <h2>User Guides</h2>
+                    <div class="user-guides">
+                      <div class="col-sm-3 col-xs-4">
+                        <a href="assets/guides/SARD-User-Guide-Job-Planning.pdf" target="new">
+                          <img src="assets/guides/SARD-User-Guide-Job-Planning-thumb.png" class="user-guide-thumb" alt="Job Planning User Guide">
+                        </a>
+                      </div>
+                      <div class="col-sm-3 col-xs-4">
+                        <a href="assets/guides/SARD-User-Guide-eLeave.pdf" target="new">
+                          <img src="assets/guides/SARD-User-Guide-eLeave-thumb.png" class="user-guide-thumb" alt="Job Planning User Guide">
+                        </a>
+                      </div>
+                      <div class="col-sm-3 col-xs-4">
+                        <a href="assets/guides/SARD-User-Guide-360.pdf" target="new">
+                          <img src="assets/guides/SARD-User-Guide-360-thumb.png" class="user-guide-thumb" alt="Job Planning User Guide">
+                        </a>
+                      </div>
+                      <div class="col-sm-3 col-xs-4">
+                        <a href="assets/guides/SARD-User-Guide-MRv.pdf" target="new">
+                          <img src="assets/guides/SARD-User-Guide-MRv-thumb.png" class="user-guide-thumb" alt="Job Planning User Guide">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
             </div> <!-- / panel -->
     
-          </div>
+          </div> <!-- / Panel-Group -->
         </div> <!-- / col login-addons -->
       </div> <!-- / Row -->
 
