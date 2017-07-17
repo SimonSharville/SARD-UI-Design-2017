@@ -16,16 +16,6 @@ $tab-number-bg-active:    $grey18;
 // $v-tab-number-bg-active:    $grey18;
 
 
-/* Mixin */
-// http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
-@mixin vertical-align($position: relative) {
-  position: $position;
-  top: 50%;
-  -webkit-transform: perspective(1px) translateY(-50%);
-  -ms-transform: perspective(1px) translateY(-50%);
-  transform: perspective(1px) translateY(-50%);
-}
-
 // Structure ========================================
 
 .sa-tabs {
@@ -79,21 +69,10 @@ $tab-number-bg-active:    $grey18;
   }
 }
 
-.sa-tab-content > .tab-pane {
-  display: none;
-}
-.sa-tab-content > .active {
-  display: block;
-}
-
-
 
 // Tabs ===========================================
 .sa-tabs.nav-tabs {
-  // background-color:yellow;
   border:0;
-  text-align:center;
-
   margin-left:-4px;margin-right:-4px; // Adjust for tab spacing
   width: calc(100% + 8px); // Adjust for tab spacing
 }
@@ -101,7 +80,6 @@ $tab-number-bg-active:    $grey18;
 .sa-tabs.nav-tabs > li {
   margin-top:5px;
   margin-bottom: 0px;
-  text-align:center;
 }
 
 .sa-tabs.nav-tabs > li > a{
@@ -110,7 +88,6 @@ $tab-number-bg-active:    $grey18;
   border-radius: 0;
   border: 0;
   min-height:50px;
-  height:50px;
   margin-left:4px;margin-right:4px; // This increases the space between tabs
   padding:0;
   -webkit-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.30);
@@ -134,13 +111,7 @@ $tab-number-bg-active:    $grey18;
 }
 
 .tab-number{
-  float:left;
   background-color:$tab-number-bg;
-  display:table-cell;
-  min-height:50px;
-  height:50px;
-  min-width:50px;
-  width:50px;
   -webkit-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.20);
   -moz-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.20);
   box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.20);
@@ -151,61 +122,82 @@ $tab-number-bg-active:    $grey18;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  text-align:center;
 }
 
-.tab-number p{
- @include vertical-align(); 
- font-size:2em;
- color:white;
+
+
+// Solving the Vertical align problem  1st Atempt ====================
+
+.sa-tab{
+  display: table;
 }
 
-.tab-title{
+.sa-tab .tab-number{
   display: table-cell;
-  min-height:50px;
+  vertical-align: middle;
+  max-height:50px;
   height:50px;
-  padding:0 10px;
+  min-width:50px;
+  float:left;
+  font-size:2em;
+  padding:0;
+  line-height:1.75em;
+  text-align:center;
+  color:white;
 }
 
-.tab-title p{
-  @include vertical-align();
-  text-indent:0;
-  padding-left:0;
-  font-size: 1em;
+.sa-tab .tab-title{
+  display: table-cell;
+  vertical-align: middle;
+  max-height:50px;
+  height:50px;
+  padding: 5px 8px;
+  font-size:1em;
   line-height:1.25em;
-}
-
-.tab-title h3{
 
 }
+
+.sa-tab .title-lg{
+  font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+  font-size:2em;
+  line-height:1em;
+}
+
+.sa-tab .title-md{
+  font-size:1.5em;
+}
+
+
+
 
 // Justified Tabs =====================
 
-.sa-tab-container .sa-tabs.nav-tabs.nav-justified {
-}
+// .sa-tab-container .sa-tabs.nav-tabs.nav-justified {
+// }
 
-.sa-tabs.nav-tabs.nav-justified {
-}
+// .sa-tabs.nav-tabs.nav-justified {
 
-.sa-tabs.nav-tabs.nav-justified > li {
-}
+// }
 
-.sa-tabs.nav-tabs.nav-justified > li > a {
-}
+// .sa-tabs.nav-tabs.nav-justified > li {
+// }
 
-.sa-tabs.nav-tabs.nav-justified > li > a:hover {
-}
+// .sa-tabs.nav-tabs.nav-justified > li > a {
+// }
 
-.sa-tabs.nav-tabs.nav-justified > .active > a,
-.sa-tabs.nav-tabs.nav-justified > .active > a:hover,
-.sa-tabs.nav-tabs.nav-justified > .active > a:focus {
-}
+// .sa-tabs.nav-tabs.nav-justified > li > a:hover {
+// }
 
-.sa-tabs.nav-tabs.nav-justified .tab-number {
-}
+// .sa-tabs.nav-tabs.nav-justified > .active > a,
+// .sa-tabs.nav-tabs.nav-justified > .active > a:hover,
+// .sa-tabs.nav-tabs.nav-justified > .active > a:focus {
+// }
 
-.sa-tabs.nav-tabs.nav-justified .tab-title p{
-}
+// .sa-tabs.nav-tabs.nav-justified .tab-number {
+// }
+
+// .sa-tabs.nav-tabs.nav-justified .tab-title {
+// }
 
 
 // This is an override for the tabs that sit within sa-tab-container, to make it same width as page with no overhang.
@@ -241,11 +233,12 @@ $tab-number-bg-active:    $grey18;
   }
 }
 
+.tab-pane{
+  padding-top:16px;
+}
+
 
 // VERTICAL Tabs ===================================================================================================
-
-
-
 
 .vertical-tabs{
   display: flex; // Fix to make Tab Content and Tab Wrapper always be 100% Height
@@ -254,7 +247,6 @@ $tab-number-bg-active:    $grey18;
 .vertical-tabs .sa-tab-wrapper{
    @include make-xs-column(4);
    @include make-sm-column(3);
-   // background-color:yellow;
    padding:0;
    padding-right:8px;
   }
@@ -262,8 +254,7 @@ $tab-number-bg-active:    $grey18;
 .vertical-tabs .sa-tab-content{
    @include make-xs-column(8);
    @include make-sm-column(9);
-   // background-color:pink;
-   padding:16px;
+   padding:0 16px;
    margin:0;
    border:1px solid $tab-colour-active;
    border-left:10px solid $tab-colour-active;
@@ -272,11 +263,9 @@ $tab-number-bg-active:    $grey18;
 .vertical-tabs .tab-intro{
     padding-top:0px;
     padding-right:20px;
-    text-align:left;
   }
 .vertical-tabs .sa-tabs.nav-tabs{
   margin:0;
-  text-align:left;
   min-height:50px;
   height:50px;
 
@@ -302,15 +291,36 @@ $tab-number-bg-active:    $grey18;
 }
 
 .vertical-tabs .sa-tabs.nav-tabs .tab-number {
-  text-align: center;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
-.vertical-tabs .sa-tabs.nav-tabs .tab-title{
-  text-align:left;
+// .vertical-tabs .sa-tabs.nav-tabs .tab-title{
+// }
+
+
+
+
+// Tab Content ======================================================
+.sa-tab-content > .tab-pane {
+  display: none;
+}
+.sa-tab-content > .active {
+  display: block;
 }
 
-.vertical-tabs .sa-tabs.nav-tabs .tab-title p{
-  padding:0;
+// Nested tabs ======================================================
+
+.vertical-tabs.nested{
+  // padding:0;
+  margin-left:-16px;
 }
 
+.nested .tab-number{
+  background-color:$tab-number-bg;
+}
 
+.nested .active .tab-number{
+  background-color:$tab-number-bg-active;
+}
