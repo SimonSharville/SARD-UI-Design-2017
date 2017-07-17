@@ -1,6 +1,9 @@
 
-// These are the SARD specific styles
 
+// Import Bootstrap scss ===============
+  @import "bootstrap.scss";
+
+// These are the SARD specific styles
 
 // Global styles =======================
   @import "global/colours";
