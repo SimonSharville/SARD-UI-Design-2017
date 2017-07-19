@@ -35,7 +35,7 @@
 
   @import "bootstrap-overrides/bs-tooltips-popovers";
 
-  @import "bootstrap-overrides/bs-pagination";
+  // @import "bootstrap-overrides/bs-pagination";
 
   // @import "bootstrap-overrides/bs-modal";
 
@@ -47,6 +47,8 @@
   @import "sard/sa-jumbotron";
 
   @import "sard/sa-page-header";
+
+  @import "sard/sa-pagination";
   
   @import "sard/sa-alerts";
 

@@ -7245,59 +7245,6 @@ a.glyphicon-info-sign {
 .popover-content a:visited {
   color: white; }
 
-.pagination > li > a,
-.pagination > li > span {
-  color: #00B2B2;
-  outline: none !important; }
-
-.pagination > li > a:hover,
-.pagination > li > span:hover {
-  color: white;
-  background-color: #007f7f;
-  border-color: #007f7f; }
-
-.pagination > li > a:focus,
-.pagination > li > span:focus {
-  color: white;
-  background-color: #006666;
-  border-color: #006666; }
-
-.pagination > .active > a,
-.pagination > .active > span,
-.pagination > .active > a:hover,
-.pagination > .active > span:hover,
-.pagination > .active > a:focus,
-.pagination > .active > span:focus {
-  background-color: #00B2B2;
-  border-color: #00B2B2; }
-
-.admin .pagination > li > a,
-.admin .pagination > li > span {
-  color: #E50073;
-  outline: none !important; }
-
-.admin .pagination > li > a:hover,
-.admin .pagination > li > span:hover {
-  color: white;
-  background-color: #b20059;
-  border-color: #b20059; }
-
-.admin .pagination > li > a:focus,
-.admin .pagination > li > span:focus {
-  color: white;
-  background-color: #99004d;
-  border-color: #99004d; }
-
-.admin .pagination > .active > a,
-.admin .pagination > .active > span,
-.admin .pagination > .active > a:hover,
-.admin .pagination > .active > span:hover,
-.admin .pagination > .active > a:focus,
-.admin .pagination > .active > span:focus {
-  background-color: #E50073;
-  border-color: #E50073;
-  color: white; }
-
 .progress-bar {
   background-color: #00B2B2; }
 
@@ -7355,6 +7302,59 @@ a.glyphicon-info-sign {
 
 .page-title {
   display: inline-block; }
+
+.pagination > li > a,
+.pagination > li > span {
+  color: #00B2B2;
+  outline: none !important; }
+
+.pagination > li > a:hover,
+.pagination > li > span:hover {
+  color: white;
+  background-color: #007f7f;
+  border-color: #007f7f; }
+
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: white;
+  background-color: #006666;
+  border-color: #006666; }
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #00B2B2;
+  border-color: #00B2B2; }
+
+.admin .pagination > li > a,
+.admin .pagination > li > span {
+  color: #E50073;
+  outline: none !important; }
+
+.admin .pagination > li > a:hover,
+.admin .pagination > li > span:hover {
+  color: white;
+  background-color: #b20059;
+  border-color: #b20059; }
+
+.admin .pagination > li > a:focus,
+.admin .pagination > li > span:focus {
+  color: white;
+  background-color: #99004d;
+  border-color: #99004d; }
+
+.admin .pagination > .active > a,
+.admin .pagination > .active > span,
+.admin .pagination > .active > a:hover,
+.admin .pagination > .active > span:hover,
+.admin .pagination > .active > a:focus,
+.admin .pagination > .active > span:focus {
+  background-color: #E50073;
+  border-color: #E50073;
+  color: white; }
 
 .alert {
   font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
