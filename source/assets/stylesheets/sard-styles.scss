@@ -21,7 +21,7 @@
 
   @import "bootstrap-overrides/bs-page-header";
 
-  @import "bootstrap-overrides/bs-jumbotron";
+  // @import "bootstrap-overrides/bs-jumbotron";
 
   // @import "bootstrap-overrides/bs-nav-tabs";
 
@@ -43,6 +43,8 @@
 
 
 // SARD styles =======================
+
+  @import "sard/sa-jumbotron";
   
   @import "sard/sa-alerts";
 
