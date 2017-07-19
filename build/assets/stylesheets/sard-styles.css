@@ -6591,23 +6591,6 @@ body {
 .margin-bottom20px {
   margin-bottom: 20px; }
 
-.page-header {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 10px 0px 5px 0px;
-  border-bottom: none; }
-
-.page-header .profile-image {
-  padding-right: 10px;
-  float: left; }
-
-.page-header .profile-image img {
-  border-radius: 50%;
-  width: 100px; }
-
-.page-title {
-  display: inline-block; }
-
 .panel {
   border-radius: 0px;
   font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
@@ -7355,6 +7338,23 @@ a.glyphicon-info-sign {
 
 .jumbotron img {
   width: 100%; }
+
+.page-header {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 10px 0px 5px 0px;
+  border-bottom: none; }
+
+.page-header .profile-image {
+  padding-right: 10px;
+  float: left; }
+
+.page-header .profile-image img {
+  border-radius: 50%;
+  width: 100px; }
+
+.page-title {
+  display: inline-block; }
 
 .alert {
   font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
