@@ -6591,89 +6591,6 @@ body {
 .margin-bottom20px {
   margin-bottom: 20px; }
 
-a.glyphicon-info-sign {
-  color: #00a0e0;
-  background-color: white;
-  border-radius: 50%;
-  border: 1px solid white;
-  padding: 0px; }
-
-.tooltip {
-  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
-  letter-spacing: 0.025em; }
-
-.tooltip p {
-  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
-  letter-spacing: 0.025em;
-  text-align: left; }
-
-.tooltip.in {
-  opacity: 0.9;
-  filter: alpha(opacity=90); }
-
-.tooltip-inner {
-  background-color: #00a0e0; }
-
-.tooltip.top .tooltip-arrow {
-  border-top-color: #00a0e0; }
-
-.tooltip.top-left .tooltip-arrow {
-  border-top-color: #00a0e0; }
-
-.tooltip.top-right .tooltip-arrow {
-  border-top-color: #00a0e0; }
-
-.tooltip.right .tooltip-arrow {
-  border-right-color: #00a0e0; }
-
-.tooltip.left .tooltip-arrow {
-  border-left-color: #00a0e0; }
-
-.tooltip.bottom .tooltip-arrow {
-  border-bottom-color: #00a0e0; }
-
-.tooltip.bottom-left .tooltip-arrow {
-  border-bottom-color: #00a0e0; }
-
-.tooltip.bottom-right .tooltip-arrow {
-  border-bottom-color: #00a0e0; }
-
-.popover {
-  max-width: 500px;
-  background-color: #14bcff; }
-
-.popover-title {
-  background-color: #007cad;
-  color: white;
-  border-bottom: 0px solid #007cad;
-  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
-  letter-spacing: 0.05em; }
-
-.popover-content {
-  color: black;
-  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
-  letter-spacing: 0.025em;
-  line-height: 1.3em; }
-
-.popover.top > .arrow:after {
-  border-top-color: #14bcff; }
-
-.popover.right > .arrow:after {
-  border-right-color: #14bcff; }
-
-.popover.bottom > .arrow:after {
-  border-bottom-color: #14bcff; }
-
-.popover.left > .arrow:after {
-  border-left-color: #14bcff; }
-
-.popover-content a:link {
-  color: white;
-  font-family: 'robotomedium', Helvetica, Arial, Sans-serif; }
-
-.popover-content a:visited {
-  color: white; }
-
 .jumbotron {
   background-color: #00B2B2;
   border-radius: 0px;
@@ -6854,6 +6771,89 @@ a.glyphicon-info-sign {
     color: #590000; }
   .alert-CPL a:hover, .alert-CPL a:focus {
     color: black; }
+
+a.glyphicon-info-sign {
+  color: #00a0e0;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 0px; }
+
+.tooltip {
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+  letter-spacing: 0.025em; }
+
+.tooltip p {
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+  letter-spacing: 0.025em;
+  text-align: left; }
+
+.tooltip.in {
+  opacity: 0.9;
+  filter: alpha(opacity=90); }
+
+.tooltip-inner {
+  background-color: #00a0e0; }
+
+.tooltip.top .tooltip-arrow {
+  border-top-color: #00a0e0; }
+
+.tooltip.top-left .tooltip-arrow {
+  border-top-color: #00a0e0; }
+
+.tooltip.top-right .tooltip-arrow {
+  border-top-color: #00a0e0; }
+
+.tooltip.right .tooltip-arrow {
+  border-right-color: #00a0e0; }
+
+.tooltip.left .tooltip-arrow {
+  border-left-color: #00a0e0; }
+
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #00a0e0; }
+
+.tooltip.bottom-left .tooltip-arrow {
+  border-bottom-color: #00a0e0; }
+
+.tooltip.bottom-right .tooltip-arrow {
+  border-bottom-color: #00a0e0; }
+
+.popover {
+  max-width: 500px;
+  background-color: #14bcff; }
+
+.popover-title {
+  background-color: #007cad;
+  color: white;
+  border-bottom: 0px solid #007cad;
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+  letter-spacing: 0.05em; }
+
+.popover-content {
+  color: black;
+  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+  letter-spacing: 0.025em;
+  line-height: 1.3em; }
+
+.popover.top > .arrow:after {
+  border-top-color: #14bcff; }
+
+.popover.right > .arrow:after {
+  border-right-color: #14bcff; }
+
+.popover.bottom > .arrow:after {
+  border-bottom-color: #14bcff; }
+
+.popover.left > .arrow:after {
+  border-left-color: #14bcff; }
+
+.popover-content a:link {
+  color: white;
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif; }
+
+.popover-content a:visited {
+  color: white; }
 
 .rag-red {
   background-color: #BF0000; }

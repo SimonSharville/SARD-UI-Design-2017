@@ -33,7 +33,7 @@
 
   // @import "bootstrap-overrides/bs-buttons";
 
-  @import "bootstrap-overrides/bs-tooltips-popovers";
+  // @import "bootstrap-overrides/bs-tooltips-popovers";
 
   // @import "bootstrap-overrides/bs-pagination";
 
@@ -51,6 +51,8 @@
   @import "sard/sa-pagination";
   
   @import "sard/sa-alerts";
+
+  @import "sard/sa-tooltips-popovers";
 
   @import "sard/sa-rag-status";
 
