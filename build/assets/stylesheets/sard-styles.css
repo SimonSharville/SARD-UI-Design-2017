@@ -8977,6 +8977,10 @@ div[class*="col-xs-2"] .navbar-nav > li > .dropdown-menu, div[class*="col-sm-2"]
 .nav-tabs > li > a {
   border-radius: 0px; }
 
+.nav-justified > li, .nav-tabs.nav-justified > li {
+  padding-left: 5px;
+  padding-right: 5px; }
+
 .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
   border-radius: 0px; }
 
@@ -9050,21 +9054,20 @@ div[class*="col-xs-2"] .navbar-nav > li > .dropdown-menu, div[class*="col-sm-2"]
   -moz-box-shadow: none;
   box-shadow: none; }
 
-.sa-h-tabs .h-tab-wrapper .sa-tab-center {
+.sa-h-tabs .h-tab-wrapper .sa-tab.center {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 5px;
   -webkit-box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.3); }
 
-.sa-h-tabs .h-tab-wrapper .active .sa-tab-center {
+.sa-h-tabs .h-tab-wrapper .active .sa-tab.center {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none; }
 
-.sa-h-tabs .h-tab-wrapper .sa-tab-center p, .sa-h-tabs .h-tab-wrapper h1, .sa-h-tabs .h-tab-wrapper h2, .sa-h-tabs .h-tab-wrapper h3, .sa-h-tabs .h-tab-wrapper h4, .sa-h-tabs .h-tab-wrapper h5, .sa-h-tabs .h-tab-wrapper h6 {
+.sa-h-tabs .h-tab-wrapper .sa-tab.center p, .sa-h-tabs .h-tab-wrapper h1, .sa-h-tabs .h-tab-wrapper h2, .sa-h-tabs .h-tab-wrapper h3, .sa-h-tabs .h-tab-wrapper h4, .sa-h-tabs .h-tab-wrapper h5, .sa-h-tabs .h-tab-wrapper h6 {
   font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
   font-size: 1.2em;
   line-height: 1.1em;
@@ -9132,10 +9135,6 @@ div[class*="col-xs-2"] .navbar-nav > li > .dropdown-menu, div[class*="col-sm-2"]
 
 .sa-h-tabs .h-tab-wrapper .nav-tabs.nav-justified > li:last-of-type > a {
   float: none; }
-
-.sa-h-tabs .h-tab-wrapper .nav-tabs.nav-justified > li > a {
-  margin-left: 5px;
-  margin-right: 5px; }
 
 @media (min-width: 768px) {
   .sa-h-tabs .h-tab-wrapper .nav-tabs.nav-justified > li {
@@ -9309,12 +9308,8 @@ div[class*="col-xs-2"] .navbar-nav > li > .dropdown-menu, div[class*="col-sm-2"]
 
 .tab-content.vertical .h-tab-wrapper {
   width: 100%;
-  padding-left: 10px;
-  padding-right: 20px; }
-
-.tab-content.vertical .sa-h-tabs .h-tab-wrapper .nav-tabs.nav-justified {
-  margin-right: 0px;
-  margin-left: 5px; }
+  padding-left: 15px;
+  padding-right: 15px; }
 
 .tab-content.vertical .sa-h-tabs .h-tab-wrapper .sa-tab {
   -webkit-box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.25);
