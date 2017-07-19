@@ -6591,427 +6591,6 @@ body {
 .margin-bottom20px {
   margin-bottom: 20px; }
 
-.panel {
-  border-radius: 0px;
-  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
-  background-color: #EDEBEB;
-  border: none; }
-
-.panel-heading {
-  border-radius: 0px;
-  border-color: white; }
-  .panel-heading h3 {
-    font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
-    font-size: 1.500em; }
-  .panel-heading h4 {
-    padding-bottom: 0px;
-    font-family: 'robotomedium', Helvetica, Arial, Sans-serif; }
-
-.panel-heading .btn {
-  margin-left: 10px; }
-
-.panel-body, .button {
-  padding-top: 8px; }
-
-.panel-footer {
-  border-radius: 0px;
-  border-color: white;
-  background-color: #EDEBEB;
-  border-bottom: none; }
-
-.panel-default > .panel-heading {
-  background-color: #403D3D;
-  border: 0;
-  color: white; }
-
-.panel-default > .panel-body {
-  background-color: #EDEBEB; }
-
-.panel-default > .perf-wht {
-  background-color: #EDEBEB; }
-
-.panel-default > .perf-grey {
-  background-color: #EDEBEB; }
-
-.panel-default > .panel-footer {
-  background-color: #403D3D;
-  color: white;
-  border: 0; }
-
-.panel-primary > .panel-heading {
-  background-color: #007f7f;
-  color: white;
-  border: 0; }
-
-.panel-primary > .panel-body {
-  background-color: #00b2b2; }
-
-.panel-primary > .perf-wht {
-  background-color: #00b2b2; }
-
-.panel-primary > .perf-grey {
-  background-color: #00b2b2; }
-
-.panel-primary > .panel-footer {
-  background-color: #004c4c;
-  color: white;
-  border: 0; }
-
-.panel-success > .panel-heading {
-  background-color: #246b00;
-  color: white;
-  border: 0; }
-
-.panel-success > .panel-body {
-  background-color: #46d100; }
-
-.panel-success > .perf-wht {
-  background-color: #46d100; }
-
-.panel-success > .perf-grey {
-  background-color: #46d100; }
-
-.panel-success > .panel-footer {
-  background-color: #133800;
-  color: white;
-  border: 0; }
-
-.panel-info > .panel-heading {
-  background-color: #007cad;
-  color: white;
-  border: 0; }
-
-.panel-info > .panel-body {
-  background-color: #00a0e0; }
-
-.panel-info > .perf-wht {
-  background-color: #00a0e0; }
-
-.panel-info > .perf-grey {
-  background-color: #00a0e0; }
-
-.panel-info > .panel-footer {
-  background-color: #00577a;
-  color: white;
-  border: 0; }
-
-.panel-warning > .panel-heading {
-  background-color: black;
-  color: #FFB200;
-  border: 0; }
-
-.panel-warning > .panel-body {
-  background-color: #ffb200; }
-
-.panel-warning > .perf-wht {
-  background-color: #ffb200; }
-
-.panel-warning > .perf-grey {
-  background-color: #ffb200; }
-
-.panel-warning > .panel-footer {
-  background-color: black;
-  color: #FFB200;
-  border: 0; }
-
-.panel-danger > .panel-heading {
-  background-color: black;
-  color: #BF0000;
-  border: 0; }
-
-.panel-danger > .panel-body {
-  background-color: #bf0000; }
-
-.panel-danger > .perf-wht {
-  background-color: #bf0000; }
-
-.panel-danger > .perf-grey {
-  background-color: #bf0000; }
-
-.panel-danger > .panel-footer {
-  background-color: black;
-  color: #BF0000;
-  border: 0; }
-
-.panel-MRv > .panel-heading {
-  background-color: #007f7f;
-  color: white;
-  border: 0; }
-
-.panel-MRv > .panel-body {
-  background-color: #00b2b2;
-  color: white; }
-
-.panel-MRv > .perf-wht {
-  background-color: #00b2b2; }
-
-.panel-MRv > .perf-grey {
-  background-color: #00b2b2; }
-
-.panel-MRv > .panel-footer {
-  background-color: #004c4c;
-  color: white;
-  border: 0; }
-
-.panel-NRv > .panel-heading {
-  background-color: #cc5500;
-  color: white;
-  border: 0; }
-
-.panel-NRv > .panel-body {
-  background-color: #ff6a00;
-  color: white; }
-
-.panel-NRv > .perf-wht {
-  background-color: #ff6a00; }
-
-.panel-NRv > .perf-grey {
-  background-color: #ff6a00; }
-
-.panel-NRv > .panel-footer {
-  background-color: #994000;
-  color: white;
-  border: 0; }
-
-.panel-360 > .panel-heading {
-  background-color: #cc8e00;
-  color: white;
-  border: 0; }
-
-.panel-360 > .panel-body {
-  background-color: #ffb200;
-  color: white; }
-
-.panel-360 > .perf-wht {
-  background-color: #ffb200; }
-
-.panel-360 > .perf-grey {
-  background-color: #ffb200; }
-
-.panel-360 > .panel-footer {
-  background-color: #996b00;
-  color: white;
-  border: 0; }
-
-.panel-eLeave > .panel-heading {
-  background-color: #839626;
-  color: white;
-  border: 0; }
-
-.panel-eLeave > .panel-body {
-  background-color: #a7bf30;
-  color: white; }
-
-.panel-eLeave > .perf-wht {
-  background-color: #a7bf30; }
-
-.panel-eLeave > .perf-grey {
-  background-color: #a7bf30; }
-
-.panel-eLeave > .panel-footer {
-  background-color: #606d1c;
-  color: white;
-  border: 0; }
-
-.panel-A4A > .panel-heading {
-  background-color: #660066;
-  color: white;
-  border: 0; }
-
-.panel-A4A > .panel-body {
-  background-color: #990099;
-  color: white; }
-
-.panel-A4A > .perf-wht {
-  background-color: #990099; }
-
-.panel-A4A > .perf-grey {
-  background-color: #990099; }
-
-.panel-A4A > .panel-footer {
-  background-color: #330033;
-  color: white;
-  border: 0; }
-
-.panel-JPL > .panel-heading {
-  background-color: #b20059;
-  color: white;
-  border: 0; }
-
-.panel-JPL > .panel-body {
-  background-color: #e50073;
-  color: white; }
-
-.panel-JPL > .perf-wht {
-  background-color: #e50073; }
-
-.panel-JPL > .perf-grey {
-  background-color: #e50073; }
-
-.panel-JPL > .panel-footer {
-  background-color: #7f0040;
-  color: white;
-  border: 0; }
-
-.panel-eRo > .panel-heading {
-  background-color: #003434;
-  color: white;
-  border: 0; }
-
-.panel-eRo > .panel-body {
-  background-color: #004d4d;
-  color: white; }
-
-.panel-eRo > .perf-wht {
-  background-color: #004d4d; }
-
-.panel-eRo > .perf-grey {
-  background-color: #004d4d; }
-
-.panel-eRo > .panel-footer {
-  background-color: #001a1a;
-  color: white;
-  border: 0; }
-
-.panel-CPL > .panel-heading {
-  background-color: #8c0000;
-  color: white;
-  border: 0; }
-
-.panel-CPL > .panel-body {
-  background-color: #bf0000;
-  color: white; }
-
-.panel-CPL > .perf-wht {
-  background-color: #bf0000; }
-
-.panel-CPL > .perf-grey {
-  background-color: #bf0000; }
-
-.panel-CPL > .panel-footer {
-  background-color: #590000;
-  color: white;
-  border: 0; }
-
-.panel-dark > .panel-heading {
-  background-color: #615E5C;
-  color: white;
-  border: 0; }
-
-.panel-dark > .panel-body {
-  background-color: #B5B0B0; }
-
-.panel-dark > .perf-wht {
-  background-color: #B5B0B0; }
-
-.panel-dark > .perf-grey {
-  background-color: #B5B0B0; }
-
-.panel-dark > .panel-footer {
-  background-color: #403D3D;
-  color: white;
-  border: 0; }
-
-.panel-vdark > .panel-heading {
-  background-color: #211F0F;
-  color: white;
-  border: 0; }
-
-.panel-vdark > .panel-body {
-  background-color: #403D3D;
-  color: white; }
-
-.panel-vdark > .perf-wht {
-  background-color: #403D3D; }
-
-.panel-vdark > .perf-grey {
-  background-color: #403D3D; }
-
-.panel-vdark > .panel-footer {
-  background-color: #211F0F;
-  color: white;
-  border: 0; }
-
-.panel-white {
-  background-color: white;
-  box-shadow: none; }
-
-.panel-white > .panel-heading {
-  color: #211F0F;
-  border-top: 1px solid #211F0F;
-  border-bottom: 1px solid #211F0F; }
-
-.panel-white > .panel-body {
-  color: #211F0F; }
-
-.panel-white > .perf-wht {
-  background-color: white; }
-
-.panel-white > .perf-grey {
-  background-color: white; }
-
-.panel-white > .panel-footer {
-  background-color: white;
-  color: #211F0F;
-  border-top: 1px solid #211F0F;
-  border-bottom: 1px solid #211F0F; }
-
-.panel-admin > .panel-heading {
-  background-color: #e50073;
-  color: white;
-  border: 0; }
-
-.panel-admin > .panel-body {
-  background-color: #edebeb; }
-
-.panel-admin > .perf-wht {
-  background-color: transparent; }
-
-.panel-admin > .perf-grey {
-  background-color: transparent; }
-
-.panel-admin > .panel-footer {
-  background-color: #e50073;
-  color: white;
-  border: 0; }
-
-.panel-clean {
-  background-color: transparent;
-  box-shadow: none; }
-
-.panel-clean > .panel-heading {
-  color: #211F0F;
-  border-top: none;
-  border-bottom: 1px solid #211F0F;
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: 0px; }
-
-.panel-clean > .panel-body {
-  color: #211F0F;
-  padding-left: 0px;
-  padding-right: 0px; }
-
-.panel-clean > .perf-wht {
-  background-color: white; }
-
-.panel-clean > .perf-grey {
-  background-color: white; }
-
-.panel-clean > .panel-footer {
-  background-color: white;
-  color: #211F0F;
-  border-top: 1px solid #211F0F;
-  border-bottom: none;
-  padding-left: 0px;
-  padding-right: 0px; }
-
-.panel-group .panel {
-  border-radius: 0; }
-
-.panel-group .panel + .panel {
-  margin-top: 1px; }
-
 .table h3 {
   font-family: 'robotoregular', Helvetica, Arial, Sans-serif; }
 
@@ -9384,6 +8963,427 @@ textarea {
 
 .panel-admin.sa-accordion .panel-footer {
   background-color: #e50073; }
+
+.panel {
+  border-radius: 0px;
+  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+  background-color: #EDEBEB;
+  border: none; }
+
+.panel-heading {
+  border-radius: 0px;
+  border-color: white; }
+  .panel-heading h3 {
+    font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+    font-size: 1.500em; }
+  .panel-heading h4 {
+    padding-bottom: 0px;
+    font-family: 'robotomedium', Helvetica, Arial, Sans-serif; }
+
+.panel-heading .btn {
+  margin-left: 10px; }
+
+.panel-body, .button {
+  padding-top: 8px; }
+
+.panel-footer {
+  border-radius: 0px;
+  border-color: white;
+  background-color: #EDEBEB;
+  border-bottom: none; }
+
+.panel-default > .panel-heading {
+  background-color: #403D3D;
+  border: 0;
+  color: white; }
+
+.panel-default > .panel-body {
+  background-color: #EDEBEB; }
+
+.panel-default > .perf-wht {
+  background-color: #EDEBEB; }
+
+.panel-default > .perf-grey {
+  background-color: #EDEBEB; }
+
+.panel-default > .panel-footer {
+  background-color: #403D3D;
+  color: white;
+  border: 0; }
+
+.panel-primary > .panel-heading {
+  background-color: #007f7f;
+  color: white;
+  border: 0; }
+
+.panel-primary > .panel-body {
+  background-color: #00b2b2; }
+
+.panel-primary > .perf-wht {
+  background-color: #00b2b2; }
+
+.panel-primary > .perf-grey {
+  background-color: #00b2b2; }
+
+.panel-primary > .panel-footer {
+  background-color: #004c4c;
+  color: white;
+  border: 0; }
+
+.panel-success > .panel-heading {
+  background-color: #246b00;
+  color: white;
+  border: 0; }
+
+.panel-success > .panel-body {
+  background-color: #46d100; }
+
+.panel-success > .perf-wht {
+  background-color: #46d100; }
+
+.panel-success > .perf-grey {
+  background-color: #46d100; }
+
+.panel-success > .panel-footer {
+  background-color: #133800;
+  color: white;
+  border: 0; }
+
+.panel-info > .panel-heading {
+  background-color: #007cad;
+  color: white;
+  border: 0; }
+
+.panel-info > .panel-body {
+  background-color: #00a0e0; }
+
+.panel-info > .perf-wht {
+  background-color: #00a0e0; }
+
+.panel-info > .perf-grey {
+  background-color: #00a0e0; }
+
+.panel-info > .panel-footer {
+  background-color: #00577a;
+  color: white;
+  border: 0; }
+
+.panel-warning > .panel-heading {
+  background-color: black;
+  color: #FFB200;
+  border: 0; }
+
+.panel-warning > .panel-body {
+  background-color: #ffb200; }
+
+.panel-warning > .perf-wht {
+  background-color: #ffb200; }
+
+.panel-warning > .perf-grey {
+  background-color: #ffb200; }
+
+.panel-warning > .panel-footer {
+  background-color: black;
+  color: #FFB200;
+  border: 0; }
+
+.panel-danger > .panel-heading {
+  background-color: black;
+  color: #BF0000;
+  border: 0; }
+
+.panel-danger > .panel-body {
+  background-color: #bf0000; }
+
+.panel-danger > .perf-wht {
+  background-color: #bf0000; }
+
+.panel-danger > .perf-grey {
+  background-color: #bf0000; }
+
+.panel-danger > .panel-footer {
+  background-color: black;
+  color: #BF0000;
+  border: 0; }
+
+.panel-MRv > .panel-heading {
+  background-color: #007f7f;
+  color: white;
+  border: 0; }
+
+.panel-MRv > .panel-body {
+  background-color: #00b2b2;
+  color: white; }
+
+.panel-MRv > .perf-wht {
+  background-color: #00b2b2; }
+
+.panel-MRv > .perf-grey {
+  background-color: #00b2b2; }
+
+.panel-MRv > .panel-footer {
+  background-color: #004c4c;
+  color: white;
+  border: 0; }
+
+.panel-NRv > .panel-heading {
+  background-color: #cc5500;
+  color: white;
+  border: 0; }
+
+.panel-NRv > .panel-body {
+  background-color: #ff6a00;
+  color: white; }
+
+.panel-NRv > .perf-wht {
+  background-color: #ff6a00; }
+
+.panel-NRv > .perf-grey {
+  background-color: #ff6a00; }
+
+.panel-NRv > .panel-footer {
+  background-color: #994000;
+  color: white;
+  border: 0; }
+
+.panel-360 > .panel-heading {
+  background-color: #cc8e00;
+  color: white;
+  border: 0; }
+
+.panel-360 > .panel-body {
+  background-color: #ffb200;
+  color: white; }
+
+.panel-360 > .perf-wht {
+  background-color: #ffb200; }
+
+.panel-360 > .perf-grey {
+  background-color: #ffb200; }
+
+.panel-360 > .panel-footer {
+  background-color: #996b00;
+  color: white;
+  border: 0; }
+
+.panel-eLeave > .panel-heading {
+  background-color: #839626;
+  color: white;
+  border: 0; }
+
+.panel-eLeave > .panel-body {
+  background-color: #a7bf30;
+  color: white; }
+
+.panel-eLeave > .perf-wht {
+  background-color: #a7bf30; }
+
+.panel-eLeave > .perf-grey {
+  background-color: #a7bf30; }
+
+.panel-eLeave > .panel-footer {
+  background-color: #606d1c;
+  color: white;
+  border: 0; }
+
+.panel-A4A > .panel-heading {
+  background-color: #660066;
+  color: white;
+  border: 0; }
+
+.panel-A4A > .panel-body {
+  background-color: #990099;
+  color: white; }
+
+.panel-A4A > .perf-wht {
+  background-color: #990099; }
+
+.panel-A4A > .perf-grey {
+  background-color: #990099; }
+
+.panel-A4A > .panel-footer {
+  background-color: #330033;
+  color: white;
+  border: 0; }
+
+.panel-JPL > .panel-heading {
+  background-color: #b20059;
+  color: white;
+  border: 0; }
+
+.panel-JPL > .panel-body {
+  background-color: #e50073;
+  color: white; }
+
+.panel-JPL > .perf-wht {
+  background-color: #e50073; }
+
+.panel-JPL > .perf-grey {
+  background-color: #e50073; }
+
+.panel-JPL > .panel-footer {
+  background-color: #7f0040;
+  color: white;
+  border: 0; }
+
+.panel-eRo > .panel-heading {
+  background-color: #003434;
+  color: white;
+  border: 0; }
+
+.panel-eRo > .panel-body {
+  background-color: #004d4d;
+  color: white; }
+
+.panel-eRo > .perf-wht {
+  background-color: #004d4d; }
+
+.panel-eRo > .perf-grey {
+  background-color: #004d4d; }
+
+.panel-eRo > .panel-footer {
+  background-color: #001a1a;
+  color: white;
+  border: 0; }
+
+.panel-CPL > .panel-heading {
+  background-color: #8c0000;
+  color: white;
+  border: 0; }
+
+.panel-CPL > .panel-body {
+  background-color: #bf0000;
+  color: white; }
+
+.panel-CPL > .perf-wht {
+  background-color: #bf0000; }
+
+.panel-CPL > .perf-grey {
+  background-color: #bf0000; }
+
+.panel-CPL > .panel-footer {
+  background-color: #590000;
+  color: white;
+  border: 0; }
+
+.panel-dark > .panel-heading {
+  background-color: #615E5C;
+  color: white;
+  border: 0; }
+
+.panel-dark > .panel-body {
+  background-color: #B5B0B0; }
+
+.panel-dark > .perf-wht {
+  background-color: #B5B0B0; }
+
+.panel-dark > .perf-grey {
+  background-color: #B5B0B0; }
+
+.panel-dark > .panel-footer {
+  background-color: #403D3D;
+  color: white;
+  border: 0; }
+
+.panel-vdark > .panel-heading {
+  background-color: #211F0F;
+  color: white;
+  border: 0; }
+
+.panel-vdark > .panel-body {
+  background-color: #403D3D;
+  color: white; }
+
+.panel-vdark > .perf-wht {
+  background-color: #403D3D; }
+
+.panel-vdark > .perf-grey {
+  background-color: #403D3D; }
+
+.panel-vdark > .panel-footer {
+  background-color: #211F0F;
+  color: white;
+  border: 0; }
+
+.panel-white {
+  background-color: white;
+  box-shadow: none; }
+
+.panel-white > .panel-heading {
+  color: #211F0F;
+  border-top: 1px solid #211F0F;
+  border-bottom: 1px solid #211F0F; }
+
+.panel-white > .panel-body {
+  color: #211F0F; }
+
+.panel-white > .perf-wht {
+  background-color: white; }
+
+.panel-white > .perf-grey {
+  background-color: white; }
+
+.panel-white > .panel-footer {
+  background-color: white;
+  color: #211F0F;
+  border-top: 1px solid #211F0F;
+  border-bottom: 1px solid #211F0F; }
+
+.panel-admin > .panel-heading {
+  background-color: #e50073;
+  color: white;
+  border: 0; }
+
+.panel-admin > .panel-body {
+  background-color: #edebeb; }
+
+.panel-admin > .perf-wht {
+  background-color: transparent; }
+
+.panel-admin > .perf-grey {
+  background-color: transparent; }
+
+.panel-admin > .panel-footer {
+  background-color: #e50073;
+  color: white;
+  border: 0; }
+
+.panel-clean {
+  background-color: transparent;
+  box-shadow: none; }
+
+.panel-clean > .panel-heading {
+  color: #211F0F;
+  border-top: none;
+  border-bottom: 1px solid #211F0F;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.panel-clean > .panel-body {
+  color: #211F0F;
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.panel-clean > .perf-wht {
+  background-color: white; }
+
+.panel-clean > .perf-grey {
+  background-color: white; }
+
+.panel-clean > .panel-footer {
+  background-color: white;
+  color: #211F0F;
+  border-top: 1px solid #211F0F;
+  border-bottom: none;
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.panel-group .panel {
+  border-radius: 0; }
+
+.panel-group .panel + .panel {
+  margin-top: 1px; }
 
 .table-default {
   background-color: #EDEBEB; }
