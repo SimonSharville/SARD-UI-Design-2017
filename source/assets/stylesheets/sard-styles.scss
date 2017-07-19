@@ -37,7 +37,7 @@
 
   @import "bootstrap-overrides/bs-pagination";
 
-  @import "bootstrap-overrides/bs-modal";
+  // @import "bootstrap-overrides/bs-modal";
 
   @import "bootstrap-overrides/bs-progress-bar";
 
@@ -63,6 +63,8 @@
   @import "sard/sa-nav-tabs";
 
   @import "sard/sa-forms";
+
+  @import "sard/sa-modal";
 
   @import "sard/sa-accordion";
 

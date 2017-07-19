@@ -7315,41 +7315,6 @@ a.glyphicon-info-sign {
   border-color: #E50073;
   color: white; }
 
-.modal-dialog {
-  margin-top: 30px; }
-
-@media (min-width: 768px) {
-  .modal-dialog {
-    width: 700px; } }
-
-@media (min-width: 992px) {
-  .modal-dialog {
-    width: 800px; } }
-
-@media (min-width: 1200px) {
-  .modal-dialog {
-    width: 900px; } }
-
-.modal-content {
-  padding: 5px; }
-
-.modal .close {
-  position: absolute;
-  right: -15px;
-  padding-left: 3.5px;
-  margin-top: -20px;
-  background-color: white;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  opacity: 1;
-  font-size: 2em;
-  color: #00B2B2; }
-
-.modal .close:hover {
-  color: #BF0000; }
-
 .progress-bar {
   background-color: #00B2B2; }
 
@@ -9270,6 +9235,41 @@ textarea {
   font-family: 'FontAwesome';
   content: "\f057";
   padding: 0px 1px; }
+
+.modal-dialog {
+  margin-top: 30px; }
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 700px; } }
+
+@media (min-width: 992px) {
+  .modal-dialog {
+    width: 800px; } }
+
+@media (min-width: 1200px) {
+  .modal-dialog {
+    width: 900px; } }
+
+.modal-content {
+  padding: 5px; }
+
+.modal .close {
+  position: absolute;
+  right: -15px;
+  padding-left: 3.5px;
+  margin-top: -20px;
+  background-color: white;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+  font-size: 2em;
+  color: #00B2B2; }
+
+.modal .close:hover {
+  color: #BF0000; }
 
 .toggle-plus.accordion-toggle[aria-expanded="true"]:after {
   font-family: 'FontAwesome';
