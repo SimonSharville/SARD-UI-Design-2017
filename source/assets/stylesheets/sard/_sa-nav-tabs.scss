@@ -43,6 +43,7 @@ $v-tab-number-bg-active:  $grey18;
 // Everything should be contained in the .sa-h-tabs tag
 
 
+
 .sa-h-tabs{
 
     li p{ // Overrides bootstrap seetings, hopefully
@@ -278,7 +279,9 @@ $v-tab-number-bg-active:  $grey18;
 
 //http://bootsnipp.com/snippets/nP8E7
 
-
+.sa-v-tabs{
+  margin-bottom:15px;
+}
 
 .sa-h-tabs .sa-v-tabs{
   margin-left:-15px; // This aligns Vertical Tabs when nested in Horizontal Tabs
@@ -517,7 +520,6 @@ $v-tab-number-bg-active:  $grey18;
 
 // TAB CONTENT ==================================================================
 // Tab Content Both H and V =====================================================
-
 
 .sa-h-tabs .tab-content > .tab-pane {
   padding-top:10px;

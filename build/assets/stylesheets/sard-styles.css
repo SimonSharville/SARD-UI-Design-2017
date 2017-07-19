@@ -9144,6 +9144,9 @@ div[class*="col-xs-2"] .navbar-nav > li > .dropdown-menu, div[class*="col-sm-2"]
   top: auto;
   left: auto; }
 
+.sa-v-tabs {
+  margin-bottom: 15px; }
+
 .sa-h-tabs .sa-v-tabs {
   margin-left: -15px; }
 
