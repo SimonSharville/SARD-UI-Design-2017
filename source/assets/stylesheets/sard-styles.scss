@@ -27,7 +27,7 @@
 
   @import "bootstrap-overrides/bs-panels";
 
-  @import "bootstrap-overrides/bs-alerts";
+  // @import "bootstrap-overrides/bs-alerts";
 
   @import "bootstrap-overrides/bs-tables";
 
@@ -43,6 +43,8 @@
 
 
 // SARD styles =======================
+  
+  @import "sard/sa-alerts";
 
   @import "sard/sa-rag-status";
 
