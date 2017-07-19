@@ -1,0 +1,607 @@
+// sa-tabs =====================================
+// This is used for the Appraisal pages
+
+
+$tab-colour:              $grey04;
+$tab-colour-active:       $grey16;
+$tab-colour-hover:        $grey06;
+$tab-list-colour:         $grey02;
+$tab-list-hover:          $grey08;
+$tab-pane-colour:         white;
+$tab-text:                $grey18;
+$tab-shadow:              $grey10;
+$h-tab-number-bg:           $grey12;
+$h-tab-number-bg-active:    $grey18;
+$v-tab-number-bg:           $grey12;
+$v-tab-number-bg-active:    $grey18;
+
+
+
+// BS Nav Tabs Overrides ====================================================
+ 
+// These are taken from bootstrap-example-code.css and amended
+// Because of the way Bootsrap is written I had to include all code for each component.
+
+
+.nav-tabs > li > a {
+  border-radius: 0px;
+}
+
+.nav-tabs-justified > li > a {
+  border-radius: 0px;
+}
+
+
+
+
+
+
+// HORIZONTAL SARD TABS ==========================================================
+// Everything should be contained in the .sa-h-tabs tag
+
+
+.sa-h-tabs{
+
+    li p{ // Overrides bootstrap seetings, hopefully
+      text-indent:0px;
+      line-height:initial;
+      margin: initial;
+      padding: initial;
+    }
+
+    // horzontal tabs =================================================
+
+    .horizontal-tabs{  // This places the rule full width of the window
+      border-bottom: 10px solid $tab-colour-active;
+      margin-bottom: 30px;
+    }
+
+} // End sa-h-tabs
+
+
+.sa-h-tabs{
+
+    .h-tab-wrapper { // This keeps the tabs within a conatiner
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    @media (min-width: 768px) {
+      .h-tab-wrapper {
+        width: 750px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+    @media (min-width: 992px) {
+      .h-tab-wrapper {
+        width: 970px;
+      }
+    }
+    @media (min-width: 1200px) {
+      .h-tab-wrapper {
+        width: 1170px;
+      }
+    }
+
+
+    .h-tab-wrapper{
+
+      .nav-tabs {
+        border: 0px;
+        padding:0px;
+      }
+
+      .nav-tabs > li {    // This one
+        margin-bottom:0px;
+      }
+      
+      .nav-tabs > li > a {
+        border: 0px;
+        min-height:50px;
+        background-color:$tab-colour;
+        color: $tab-text;
+      }
+
+      // tab spacing
+      .nav-tabs > li {  
+        margin-left:4px; // these sets the space between tabs
+        margin-right:4px;
+      }
+
+      .nav-tabs > li > a:hover {
+        background-color:$tab-colour-hover;
+      }
+
+      .nav-tabs .active{
+      }
+
+      .nav-tabs > li.active > a,
+      .nav-tabs > li.active > a:hover,
+      .nav-tabs > li.active > a:focus {
+        border: 0px;
+        background-color:$tab-colour-active;
+        color:white;
+        font-weight:100!important;
+      }
+
+      .sa-tab{
+      display:block;
+      padding:0;
+      -webkit-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.30);
+      -moz-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.30);
+      box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.30);
+    }
+
+    .active .sa-tab{
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+
+    .sa-tab-center{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding: 0 5px;
+      -webkit-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.30);
+      -moz-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.30);
+      box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.30);
+    }
+    .active .sa-tab-center{
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+
+    .sa-tab-center p, h1, h2, h3, h4, h5, h6{
+      font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+      font-size:1.2em;
+      line-height:1.1em;
+      padding:0px 5px;
+      margin:0;
+    }
+
+    
+    .tab-number{
+      background:$h-tab-number-bg;
+      display:table-cell;
+      vertical-align:middle;
+      text-align:center;
+      padding:0;
+      min-width:50px;
+      height:50px;
+      min-height:50px;
+      -webkit-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.20);
+      -moz-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.20);
+      box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.20);
+    }
+
+    .tab-number p{
+      color:white;
+      margin:0px;
+      font-size:2em;
+      text-align:center;
+    }
+
+    .active .tab-number{
+      background-color: $h-tab-number-bg-active;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+    
+    .tab-title{
+      display:table-cell;
+      vertical-align:middle;
+      height:50px;
+      min-height:50px;
+      padding-left:5px;
+      padding-right:5px;
+    }
+    .tab-title p{ 
+      display:table-cell;
+      vertical-align:middle;
+      line-height:1.2em;
+      text-align:left;
+    }
+
+    .tab-title h3{
+      font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+      font-size: 2.000em;
+      padding-left:5px;
+      margin-bottom:0px;
+    }
+
+    .tab-title h4, h5, h6{
+      font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+    }
+
+    .tab-title-center{
+      vertical-align:middle;
+      text-align:center;
+    }
+
+    } // end h-tab-wrapper
+} // End sa-h-tabs
+
+
+
+    
+// nav-tabs.nav-justified ==================================================
+.sa-h-tabs{
+     .h-tab-wrapper{
+        .nav-tabs.nav-justified {
+          width: 100%;
+          padding:0px;
+        }
+
+        .nav-tabs.nav-justified:last-of-type{
+        }
+
+        .nav-tabs.nav-justified > li {
+          float: none;
+        }
+
+        .nav-tabs.nav-justified > li:last-of-type > a {
+          float: none;
+        }
+
+        .nav-tabs.nav-justified > li > a {
+          margin-left:5px;
+          margin-right:5px;
+        }
+
+        @media (min-width: 768px) {
+          .nav-tabs.nav-justified{
+          }
+          .nav-tabs.nav-justified > li {
+            width: 1%;
+          }
+          .nav-tabs.nav-justified > li > a {
+
+          }
+        }
+
+        .nav-tabs.nav-justified > .dropdown .dropdown-menu {
+          top: auto;
+          left: auto;
+        }
+        
+    } // End h-tab-wrapper
+
+} // End sa-h-tabs
+
+
+
+// ========================================================================
+// VERTICAL SARD TABS =====================================================
+// Everything should be contained in the .sa-v-tabs tag
+
+//http://bootsnipp.com/snippets/nP8E7
+
+
+
+.sa-h-tabs .sa-v-tabs{
+  margin-left:-15px; // This aligns Vertical Tabs when nested in Horizontal Tabs
+}
+
+.sa-v-tabs { // This keeps the tabs within a conatiner
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    @media (min-width: 768px) {
+      .sa-v-tabs {
+        width: 750px;
+      }
+    }
+    @media (min-width: 992px) {
+      .sa-v-tabs {
+        width: 970px;
+      }
+    }
+    @media (min-width: 1200px) {
+      .sa-v-tabs {
+        width: 1170px;
+      }
+    }
+
+
+.sa-v-tabs{
+
+  .v-tab-wrapper{
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+
+  @media (min-width: 768px){
+    .v-tab-wrapper{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+
+
+  .tab-column{
+    padding:0;
+  }
+
+  .tab-column {
+    p, h1, h2, h3, h4, h5, h6{
+      padding-right:10px;
+      padding-top:10px;
+    }
+  }
+
+  .tab-intro{
+    padding-top:0px;
+    padding-right:20px;
+    padding-bottom:10px;
+  }
+ 
+
+  .nav-tabs > li > a{
+    border: 0px;
+    background-color:$tab-colour;
+    color: $tab-text;
+    padding:0;
+    border:transparent;
+  }
+
+  .tabs-left>li>a:hover,
+  .tabs-left>li>a:focus {
+    background-color:$tab-colour-hover;
+    border:transparent;
+  }
+
+  .tabs-left {
+    border-bottom: none;
+    padding-top: 2px;
+    margin-right:0px;
+  }
+  .tabs-left {
+  }
+
+  .tabs-left>li {
+    float: none;
+    margin-bottom: 10px;
+  }
+
+  .tabs-left>li {
+    margin-right: -1px;
+  }
+
+  .tabs-left>li.active>a,
+  .tabs-left>li.active>a:hover,
+  .tabs-left>li.active>a:focus {
+    background-color:$tab-colour-active;
+    color:white;
+    z-index:100;
+  }
+
+  .tabs-left .tab-subtitle{
+    font-family: 'robotolight', Helvetica, Arial, Sans-serif;
+    font-size: 1.500em;
+    line-height:1.15em;
+    margin-bottom:5px;
+  }
+
+  .tabs-left .tab-button{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right:20px;
+  }
+
+  li p{ // Overrides bootstrap settings, hopefully
+    text-indent:0px;
+    line-height:initial;
+    margin: initial;
+    padding: initial;
+  }
+
+  .sa-tab{
+    display:table;
+    padding:0;
+    -webkit-box-shadow: inset -6px 0px 0px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: inset -6px 0px 0px 0px rgba(0,0,0,0.25);
+    box-shadow: inset -6px 0px 0px 0px rgba(0,0,0,0.25);
+    height:50px;
+    min-height:50px;
+    width:100%;
+    min-width:100%;
+  }
+
+  .active .sa-tab{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .tab-number{
+    display:table-cell;
+    background:$v-tab-number-bg;
+    width:50px;
+    min-width:50px;
+    text-align:center;
+    vertical-align:middle;
+  }
+  .active .tab-number{
+    background:$v-tab-number-bg-active;
+  }
+
+  .tab-number.rag-red{background:$rag-red}
+  .tab-number.rag-green{background:$rag-green}
+  .tab-number.rag-amber{background:$rag-amber}
+  .tab-number.rag-na{background:$rag-na}
+
+  .tab-number p{
+    color:white;
+    padding:0px;
+    font-size:2em;
+  }
+  
+  .tab-title{
+    display:table-cell;
+    vertical-align:middle;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:10px;
+    padding-right:10px;
+  }
+  .tab-title p{ 
+    padding-top:0px; 
+    line-height:1.25em;
+  }
+
+} // End sa-v-tabs
+
+
+
+
+// ========================================================================
+// Nested Horizontal Tabs =================================================
+
+
+.tab-content.vertical { 
+
+  .horizontal-tabs{
+    margin-left:-20px;
+    margin-right:-20px;
+    margin-bottom: 15px;
+  }
+
+
+  .nav-tabs > li > a { // this closes the space between tabs
+    // margin-left:0px;
+    // margin-right:0px;
+  }
+
+  .horizontal.tab-content{
+    padding:0px;
+    width:100%;
+  }
+
+  .horizontal.tab-content > .tab-pane{
+    padding:0px;
+  }
+
+  .sa-h-tabs{
+    width:100%;
+  }
+
+  .h-tab-wrapper{
+    width:100%;
+    padding-left:10px;
+    padding-right:20px;
+  }
+
+  .sa-h-tabs .h-tab-wrapper .nav-tabs.nav-justified{
+    margin-right:0px; // These add space between the tabs
+    margin-left:5px;
+  }
+
+  .nav-tabs.nav-justified{
+    // padding-right:5px; // These add space between the tabs
+    // padding-left:5px;
+  }
+
+  .nav-tabs.nav-justified > li:last-of-type > a{
+    // margin-right:-5px;
+  }
+
+  .sa-h-tabs .h-tab-wrapper .sa-tab{
+    -webkit-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.25);
+    box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.25);
+  }
+
+  .sa-h-tabs .h-tab-wrapper .active .sa-tab{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .sa-h-tabs .h-tab-wrapper .sa-tab .tab-number{ background-color: $h-tab-number-bg;}
+
+  .sa-h-tabs .h-tab-wrapper .active .sa-tab .tab-number{ background-color: $h-tab-number-bg-active;}
+
+} // End tab-content.vertical 
+
+
+
+
+// TAB CONTENT ==================================================================
+// Tab Content Both H and V =====================================================
+
+
+.sa-h-tabs .tab-content > .tab-pane {
+  padding-top:10px;
+}
+
+
+.sa-v-tabs{
+
+  .vertical.tab-content{
+    background-color:white;
+    padding:0px;
+    border: 1px solid $tab-colour-active;
+    border-left: 10px solid $tab-colour-active;
+    min-height:100%;
+  }
+
+  .tab-content > .tab-pane {
+    border: 0px;
+    min-height:100%;
+    padding:20px;
+  }
+
+
+  .tab-content .row.perf{
+    margin-left: -20px;
+    margin-right:-20px;
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+
+} // End sa-v-tabs
+
+
+
+// =========================================================================
+// Tab Content - Section Title styles ======================================
+
+.tab-section-title{
+  margin-bottom:20px;
+}
+
+.tab-section-title .section{
+  margin:0;
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+  font-size: 1.7em;
+  margin-bottom:-10px;
+}
+.tab-section-title .title{
+  margin:0;
+  padding:0;
+  font-family: 'robotothin', Helvetica, Arial, Sans-serif;
+  font-size: 4.000em;
+  margin-left:-4px;
+  @media (max-width: 767px) {
+    font-size: 3.000em;
+  }
+}
+
+.tab-section-title .description{
+  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+  font-size: 1.25em;
+  line-height:1.27em;
+  margin:0;
+  padding:0;
+  padding-top:8px;
+}
+

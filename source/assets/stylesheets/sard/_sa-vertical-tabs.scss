@@ -1,232 +1,232 @@
-// ====================================================================================
+// // ====================================================================================
 
-$tab-colour:        $grey08;
-$tab-colour-hover:  $grey10;
-$tab-list-colour:   $grey02;
-$tab-list-hover:    $grey08;
-$tab-pane-colour:   white;
-$tab-text:          $grey18;
-
-
-
-// bs vertical-tabs =====================================
-// http://bootsnipp.com/snippets/nP8E7
-
-/*  bs tabs */
-
-  /*!
- * bootstrap-vertical-tabs - v1.1.0
- * https://dbtek.github.io/bootstrap-vertical-tabs
- * 2014-06-06
- * Copyright (c) 2014 Ä°smail Demirbilek
- * License: MIT
- */
+// $tab-colour:        $grey08;
+// $tab-colour-hover:  $grey10;
+// $tab-list-colour:   $grey02;
+// $tab-list-hover:    $grey08;
+// $tab-pane-colour:   white;
+// $tab-text:          $grey18;
 
 
 
- .sa-vertical-tabs{
-  display:flex; // added
-  margin-right:-16px; // This counterbalances the margin-right on .tab-column, so the content butts up to the tabs.
+// // bs vertical-tabs =====================================
+// // http://bootsnipp.com/snippets/nP8E7
 
-  .pre-tab-text{
-    padding: 0 15px 5px 15px;
-    margin-top:-5px;
-    .glyphicon{padding-right:5px;}
-  }
+// /*  bs tabs */
 
-  .tab-column{ 
-    padding-left:0px; 
-    padding-right:0px;
-    margin-right:-8px;
-  }
+//   /*!
+//  * bootstrap-vertical-tabs - v1.1.0
+//  * https://dbtek.github.io/bootstrap-vertical-tabs
+//  * 2014-06-06
+//  * Copyright (c) 2014 Ä°smail Demirbilek
+//  * License: MIT
+//  */
 
 
-  .toggle-list{
-    postition:relative;
-    background:$tab-colour;
-    min-height:50px; 
-    display: table; 
-    width:101%;
-    min-width:101%;
-    margin-right:-10px;
-    margin-top:2px;
-    text-align:left;
-    vertical-align:middle; 
-  }
-  .toggle-list.top{ margin-top:0px;}
 
-  a.toggle-list{
-    color:$tab-text;
-  }
+//  .sa-vertical-tabs{
+//   display:flex; // added
+//   margin-right:-16px; // This counterbalances the margin-right on .tab-column, so the content butts up to the tabs.
 
-  // An attempt at putting a togle image in - didn't work though.
+//   .pre-tab-text{
+//     padding: 0 15px 5px 15px;
+//     margin-top:-5px;
+//     .glyphicon{padding-right:5px;}
+//   }
+
+//   .tab-column{ 
+//     padding-left:0px; 
+//     padding-right:0px;
+//     margin-right:-8px;
+//   }
+
+
+//   .toggle-list{
+//     postition:relative;
+//     background:$tab-colour;
+//     min-height:50px; 
+//     display: table; 
+//     width:101%;
+//     min-width:101%;
+//     margin-right:-10px;
+//     margin-top:2px;
+//     text-align:left;
+//     vertical-align:middle; 
+//   }
+//   .toggle-list.top{ margin-top:0px;}
+
+//   a.toggle-list{
+//     color:$tab-text;
+//   }
+
+//   // An attempt at putting a togle image in - didn't work though.
   
-  // a:hover > .list-head:after{
-  //   font-family: 'Glyphicons Halflings';
-  //     content: "\e114" ;
-  //     padding-right:5px;
-  // }
+//   // a:hover > .list-head:after{
+//   //   font-family: 'Glyphicons Halflings';
+//   //     content: "\e114" ;
+//   //     padding-right:5px;
+//   // }
 
-  a:hover.toggle-list,
-  a:focus.ltoggle-list{
-    background-color:$tab-colour-hover;
-  }
+//   a:hover.toggle-list,
+//   a:focus.ltoggle-list{
+//     background-color:$tab-colour-hover;
+//   }
 
-  .toggle-list > .number{
-    display:table-cell;
-    background:$grey18;
-    padding:5px 2px 0px 2px;
-    margin-bottom:0px;
-    width:50px;
-    min-width:50px;
-    color:white;
-    font-size:2em;
-    text-align:center;
-  }
-  .toggle-list > .title{
-    padding:5px 10px 5px 10px;
-    display:table-cell; 
-    vertical-align:middle;
-    width:100%;
-    min-width:10%;
-  }
+//   .toggle-list > .number{
+//     display:table-cell;
+//     background:$grey18;
+//     padding:5px 2px 0px 2px;
+//     margin-bottom:0px;
+//     width:50px;
+//     min-width:50px;
+//     color:white;
+//     font-size:2em;
+//     text-align:center;
+//   }
+//   .toggle-list > .title{
+//     padding:5px 10px 5px 10px;
+//     display:table-cell; 
+//     vertical-align:middle;
+//     width:100%;
+//     min-width:10%;
+//   }
 
-    .nav-list > li > a{ // Used on collapse nav-list links
-    border-bottom: 1px solid $tab-colour;
-    background:$tab-list-colour;
-    margin-right: -1px;
-    padding-top:7px;
-    padding-bottom:7px;
-    // text-indent: 62px ;
-  }
+//     .nav-list > li > a{ // Used on collapse nav-list links
+//     border-bottom: 1px solid $tab-colour;
+//     background:$tab-list-colour;
+//     margin-right: -1px;
+//     padding-top:7px;
+//     padding-bottom:7px;
+//     // text-indent: 62px ;
+//   }
 
-  .nav-list > li:last-of-type{
-    border-bottom: none;
+//   .nav-list > li:last-of-type{
+//     border-bottom: none;
 
-  }
+//   }
 
-  .nav-list>li>a:hover,
-  .nav-list>li>a:focus {
-    background:$tab-list-hover; 
-    color:$tab-text;
-  }
+//   .nav-list>li>a:hover,
+//   .nav-list>li>a:focus {
+//     background:$tab-list-hover; 
+//     color:$tab-text;
+//   }
 
-  .nav-list > li > a{
-    padding-left: 34px; // indenting the text (See: portfolio.scss / .rag_status)
-  }
+//   .nav-list > li > a{
+//     padding-left: 34px; // indenting the text (See: portfolio.scss / .rag_status)
+//   }
 
-  .nav-list>li.active>a,
-  .nav-list>li.active>a:hover,
-  .nav-list>li.active>a:focus {
-    border-right: none;
-    border-left: 1px solid $tab-colour;
-    background:white; 
-    background-image:url(../textures/natural-paper.png);
-    z-index:1000; 
-    padding-left:33px; // indenting the text (See: portfolio.scss / .rag_status) (1px less because of border-left)
-  }
+//   .nav-list>li.active>a,
+//   .nav-list>li.active>a:hover,
+//   .nav-list>li.active>a:focus {
+//     border-right: none;
+//     border-left: 1px solid $tab-colour;
+//     background:white; 
+//     background-image:url(../textures/natural-paper.png);
+//     z-index:1000; 
+//     padding-left:33px; // indenting the text (See: portfolio.scss / .rag_status) (1px less because of border-left)
+//   }
 
-  .nav-tabs{}
+//   .nav-tabs{}
 
-  .nav-tabs > li{
-    border:none;
-  }
+//   .nav-tabs > li{
+//     border:none;
+//   }
 
-  .nav-tabs > li > a{
-    border:none;
-  }
+//   .nav-tabs > li > a{
+//     border:none;
+//   }
 
-  .nav-tabs > li.active > a{
-    border:none;
-  }
-
-
-
-  // Single Tabs  --------------------
-
-  .tabs-left {
-    border-bottom: none;
-    padding-top: 0px;
-  }
-
-  .tabs-left>li {
-    float: none;
-    margin-bottom: 2px;
-    margin-right: -2px;
-    border:1px solid $tab-colour;
-  }
-  .tabs-left>li:last-of-type {
-    margin-bottom: 0px;
-  }
-
-  .tabs-left>li>a {
-    border-radius: 0px; 
-    margin-right: 0;
-    color:$tab-text;
-    padding:0px;
-  }
-
-  .tabs-left>li.active>a,
-  .tabs-left>li.active>a:hover,
-  .tabs-left>li.active>a:focus {
-    border-right: none;
-    background:white; 
-    z-index:1000; 
-  }
-
-  .list-tab{
-    display:table;
-  }
-  .tabs-left>li>a .number{
-    display:table-cell;
-    background:$grey18;
-    padding:4px 2px 4px 2px;
-    width:48px;
-    min-width:48px;
-    color:white;
-    font-size:2em;
-    text-align:center;
-  }
-  .tabs-left>li>a .title{
-    padding:0px 10px 0px 10px;
-    display:table-cell; 
-    vertical-align:middle;
-    line-height:1.25em;
-  }
+//   .nav-tabs > li.active > a{
+//     border:none;
+//   }
 
 
-  // Content Area ==========
 
-  .tab-content-wrapper{ 
-    display:flex; 
-    height:100%; 
-    min-height:100%; 
-  }
+//   // Single Tabs  --------------------
 
-  .tab-content{
-    border:1px solid $tab-colour; 
-    background:white;
-    background-image:url(../textures/natural-paper.png); 
-    width:100%; 
-    min-width:100%;
-    padding:0px;
-  }  
+//   .tabs-left {
+//     border-bottom: none;
+//     padding-top: 0px;
+//   }
 
-  .tab-pane{
-    background:none;
-    border: none;
-    margin-left:15px;
-    margin-right:15px;
-    margin-bottom:-73px; // This removes the strange spacing below
-      margin-bottom: 0px\9; // ie* Hack
-  }
+//   .tabs-left>li {
+//     float: none;
+//     margin-bottom: 2px;
+//     margin-right: -2px;
+//     border:1px solid $tab-colour;
+//   }
+//   .tabs-left>li:last-of-type {
+//     margin-bottom: 0px;
+//   }
 
-  @media screen and (-webkit-min-device-pixel-ratio:0) // Safari Hack
-  {
-  .tab-pane {margin-bottom: 0px}
-  }
+//   .tabs-left>li>a {
+//     border-radius: 0px; 
+//     margin-right: 0;
+//     color:$tab-text;
+//     padding:0px;
+//   }
 
-} // End BS vertical-tabs-2
+//   .tabs-left>li.active>a,
+//   .tabs-left>li.active>a:hover,
+//   .tabs-left>li.active>a:focus {
+//     border-right: none;
+//     background:white; 
+//     z-index:1000; 
+//   }
+
+//   .list-tab{
+//     display:table;
+//   }
+//   .tabs-left>li>a .number{
+//     display:table-cell;
+//     background:$grey18;
+//     padding:4px 2px 4px 2px;
+//     width:48px;
+//     min-width:48px;
+//     color:white;
+//     font-size:2em;
+//     text-align:center;
+//   }
+//   .tabs-left>li>a .title{
+//     padding:0px 10px 0px 10px;
+//     display:table-cell; 
+//     vertical-align:middle;
+//     line-height:1.25em;
+//   }
+
+
+//   // Content Area ==========
+
+//   .tab-content-wrapper{ 
+//     display:flex; 
+//     height:100%; 
+//     min-height:100%; 
+//   }
+
+//   .tab-content{
+//     border:1px solid $tab-colour; 
+//     background:white;
+//     background-image:url(../textures/natural-paper.png); 
+//     width:100%; 
+//     min-width:100%;
+//     padding:0px;
+//   }  
+
+//   .tab-pane{
+//     background:none;
+//     border: none;
+//     margin-left:15px;
+//     margin-right:15px;
+//     margin-bottom:-73px; // This removes the strange spacing below
+//       margin-bottom: 0px\9; // ie* Hack
+//   }
+
+//   @media screen and (-webkit-min-device-pixel-ratio:0) // Safari Hack
+//   {
+//   .tab-pane {margin-bottom: 0px}
+//   }
+
+// } // End BS vertical-tabs-2
 
 
   
