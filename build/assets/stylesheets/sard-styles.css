@@ -6824,38 +6824,6 @@ a.glyphicon-info-sign {
 .popover-content a:visited {
   color: white; }
 
-.progress-bar {
-  background-color: #00B2B2; }
-
-.progress-bar-success {
-  background-color: #359E00; }
-
-.progress-bar-info {
-  background-color: #00a0e0; }
-
-.progress-bar-warning {
-  background-color: #FFB200; }
-
-.progress-bar-danger {
-  background-color: #BF0000; }
-
-.progress-xl {
-  height: 40px; }
-
-.progress-xl .progress-bar {
-  font-size: 30px;
-  line-height: 40px; }
-
-.progress-lg {
-  height: 30px; }
-
-.progress-lg .progress-bar {
-  font-size: 20px;
-  line-height: 30px; }
-
-.progress-sm {
-  height: 10px; }
-
 .jumbotron {
   background-color: #00B2B2;
   border-radius: 0px;
@@ -11408,6 +11376,38 @@ table.dataTable thead .sorting_desc:after {
 
 .notifications.datatable .link-arrow td.detail {
   padding-left: 30px; }
+
+.progress-bar {
+  background-color: #00B2B2; }
+
+.progress-bar-success {
+  background-color: #359E00; }
+
+.progress-bar-info {
+  background-color: #00a0e0; }
+
+.progress-bar-warning {
+  background-color: #FFB200; }
+
+.progress-bar-danger {
+  background-color: #BF0000; }
+
+.progress-xl {
+  height: 40px; }
+
+.progress-xl .progress-bar {
+  font-size: 30px;
+  line-height: 40px; }
+
+.progress-lg {
+  height: 30px; }
+
+.progress-lg .progress-bar {
+  font-size: 20px;
+  line-height: 30px; }
+
+.progress-sm {
+  height: 10px; }
 
 #login-page {
   background-color: #00B2B2; }
