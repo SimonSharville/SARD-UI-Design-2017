@@ -17,32 +17,17 @@
   @import "global/structure";
 
 
-// Bootstrap overrides =================
-
-  @import "bootstrap-overrides/bs-page-header";
-
-  @import "bootstrap-overrides/bs-jumbotron";
-
-  @import "bootstrap-overrides/bs-nav-tabs";
-
-  @import "bootstrap-overrides/bs-panels";
-
-  @import "bootstrap-overrides/bs-alerts";
-
-  @import "bootstrap-overrides/bs-tables";
-
-  @import "bootstrap-overrides/bs-buttons";
-
-  @import "bootstrap-overrides/bs-tooltips-popovers";
-
-  @import "bootstrap-overrides/bs-pagination";
-
-  @import "bootstrap-overrides/bs-modal";
-
-  @import "bootstrap-overrides/bs-progress-bar";
-
-
 // SARD styles =======================
+
+  @import "sard/sa-jumbotron";
+
+  @import "sard/sa-page-header";
+
+  @import "sard/sa-pagination";
+  
+  @import "sard/sa-alerts";
+
+  @import "sard/sa-tooltips-popovers";
 
   @import "sard/sa-rag-status";
 
@@ -54,13 +39,20 @@
 
   @import "sard/sa-breadcrumbs";
 
-  @import "sard/sa-tabs";
+
+  @import "sard/sa-nav-tabs";
 
   @import "sard/sa-forms";
 
+  @import "sard/sa-modal";
+
   @import "sard/sa-accordion";
 
+  @import "sard/sa-panels";
+
   @import "sard/sa-tables";
+
+  @import "sard/sa-buttons";
 
   @import "sard/sa-datepicker";
 
@@ -71,6 +63,8 @@
   @import "sard/sa-do-next-chart";
 
   @import "sard/sa-notifications";
+
+  @import "sard/sa-progress-bar";
 
 
 // SARD Page Specific Items ==========
