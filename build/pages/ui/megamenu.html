@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>SARD Index + Sidebar</title>
+    <title>SARD UI : SARD Megamenu</title>
+    <link rel="icon" type="image/ico" href="../../assets/graphics/favicon.ico"/>
 
     <link href="../../assets/stylesheets/sard-styles.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -15,12 +16,12 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body id="simple-vertical-tabs">
-    <div id="top"></div>
+<body id="ui-kop">
 
+  <div id="top"></div>
 
-  <div class="sa-top-section">
-
+  <div class="sa-top-section sa-header">
+   
     <!-- ============================================================================ -->
     <!-- Main Navigation -->
     <nav id="top-navbar" class="navbar navbar-default navbar-fixed-top">
@@ -142,68 +143,123 @@
       <div class="container">
         <ol class="breadcrumb">
           <li><a href="../../index.html">Home</a></li>
-          <li class="active">Simple Vertical Tabs</li>
+          <li class="active">UI SARD Megamenu</li>
         </ol>
       </div>
     </div>
+ 
 
-  </div>  <!-- END top-section -->
-
-  <!-- ============================================================================ -->
-  <!-- Main Section -->
-  <div class="sa-main-section">
-
-
-  <!-- ============================================================================ -->
-  <!-- Page Header -->
-  <div class="container">
-    <div class=" page-header">
-
+    <!-- ============================================================================ -->
+    <!-- Page Header -->
+    <div class="container page-header"> 
       <div class="row">
+        <div class="col-xs-12">
           <div class="profile-image pull-left">
             <img src="../../assets/graphics/flower-circle.png" alt="Profile Image">
           </div>
+
           <div class="page-title">
               <h4 class="user-name">&nbsp;</h4>
-              <h1 class="ui title">Simple Vertical Tabs</h1>
+              <h1 class="ui title">SARD Components</h1>
           </div>
+        </div> <!-- col-xs-12 -->
       </div> <!-- END Row -->
     </div> <!-- END page-header -->
-    </div> 
 
-     <div class="row perf"></div>
+</div>  <!-- END top-section -->
 
+<!-- <div class="row perf"></div> -->
+
+<!-- ============================================================================ -->
+<!-- Main Section -->
+<div class="sa-main-section">
 
     <!-- ============================================================================ -->
     <!-- MAIN CONTENT  - OPTIONAL  -->
 
-    <div class="container sa-main-content">
+    
 
-      <!-- Vertical Tabs -->
-      <!-- http://www.jqueryscript.net/other/Creating-A-Vertical-Tabs-System-with-jQuery-CSS3.html -->
+    <div class="sa-main-content">
 
-      <div class="row">
-        <div class="simple-vertical-tabs">
-          <div class="tabs">
-            <nav>
-              <a>Tab #1</a>
-              <a>Tab #2</a>
-              <a>Tab #3</a>
-            </nav>
-            <div class="content">
-              <p>Content #1</p>
-            </div>
-            <div class="content">
-              <p>Content #2</p>
-            </div>
-            <div class="content">
-              <p>Content #3</p>
-            </div>
-          </div>
+      <div class="container ui-navbar">
+          <nav id="" class="navbar navbar-inpage">
+            <div id="" class="">
+              <ul class="nav navbar-nav">
+                <li class="dropdown menu-large">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">UI Menu <b class="caret"></b></a>       
+                  <ul class="dropdown-menu megamenu">
+                    <li class="col-sm-3">
+                      <ul>
+                        <li class="dropdown-header">Components</li>
+                        <li><a href="../ui/accordions.html">Accordions</a></li>
+                        <li><a href="../ui/alerts.html">Alerts</a></li>
+                        <li><a href="../ui/buttons.html">Buttons</a></li>
+                        <li><a href="../ui/forms.html">Forms</a></li>
+                        <li><a href="../ui/list-styles.html">List Styles</a></li>
+                        <li><a href="../ui/megamenu.html">Megamenu</a></li>
+                        <li><a href="../ui/nav-tabs.html">Nav Tabs</a></li>
+                        <li><a href="../ui/panels.html">Panels</a></li>
+                        <li><a href="../ui/perforations.html">Perforations</a></li>
+                        <li><a href="../ui/status-alerts.html">Status Alerts</a></li>
+                        <li><a href="../ui/tables.html">Tables</a></li>
+                        <li><a href="../ui/text-links.html">Text Links</a></li>
+                        <li><a href="../ui/tooltips.html">Tooltips</a></li>
+                        <li><a href="../ui/typography.html">Typography</a></li>
+                        <li><a href="../ui/variable-columns.html">Variable Columns</a></li>
+                      </ul>
+                    </li>
+                    <li class="col-sm-3">
+                      <ul>
+                        <li class="dropdown-header">Global Pages</li>
+                        <li><a href="../../login.html">Login Page</a></li>
+                        <li><a href="../../support.html">Support</a></li>
+                      </ul>
+                    </li>
+                    <li class="col-sm-3">
+                      <ul>
+                        <li class="dropdown-header">User Pages</li>
+                        <li><a href="../users/dashboard.html">Dashboard</a></li>
+                        <li><a href="../users/my-appraisal.html">My Appraisal</a></li>
+                        <li><a href="../users/my-appraisal.html">Job Plan</a></li>
+                        <li><a href="../users/notifications.html">Notifications</a></li>
+                      </ul>
+                    </li>
+                    <li class="col-sm-3">
+                      <ul>
+                        <li class="dropdown-header">Admin Pages</li>
+                        <li class="divider"></li>
+                        <li><a href="../admin/dashboard.html">Dashboard</a></li>
+                        <li><a href="../admin/users/all_table.html">All Users (Table)</a></li>
+                        <li><a href="../admin/users/all_cards.html">All Users (Cards)</a></li>
+                        <li><a href="../admin/users/advanced-user-search.html">Advanced User Search</a></li>
+                        <li class="divider"></li>
+                        <li><a href="../admin/sard-messages.html">SARD Messages</a></li>       
+                      </ul>
+                    </li>
+                  </ul>
+                </li> <!-- / menu-large -->
+              </ul>
+            </div><!-- /col -->
+          </nav>
+      </div><!-- /container -->
 
-        </div> <!-- END simple-vertical-tabs -->
-      </div> <!-- END Row -->
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Megamenu</h1>
+            <p>Click on the link in the top nav to view it.</p>
+            <p>To change it's colour to the admin colour, simply add <code>admin</code> after <code>menu-large</code> </br>
+            i.e <code>class="dropdown menu-large admin"</code></p>
+            <p>If you don't want the dropdown menus, including the megamenu to appear on hover, then de-activete the JS script in javascripts/sard/sa-megamenu.js</p>
+          </div> <!-- END Column -->
+        </div> <!-- END Row -->
+      </div> <!-- END Container -->
+      
+      
+      
+      
 
+      
     </div> <!-- END Main Content -->
   </div>  <!-- END Main Section -->
   <!-- ============================================================================ -->
@@ -236,54 +292,54 @@
     <!-- Added SARD Scripts -->
     
     <!-- http://stackoverflow.com/questions/33079451/set-active-tab-in-tab-nav-coming-from-another-link-bootstrap -->
-    <script type="text/javascript" src="../../../assets/javascripts/sard/sa-tab-nav.js"></script>
+    <script type="text/javascript" src="../../assets/javascripts/sard/sa-tab-nav.js"></script>
     
     <!-- Create an active link in the menu of current page -->
     <!-- http://stackoverflow.com/questions/11533542/twitter-bootstrap-add-active-class-to-li -->
-    <script type="text/javascript" src="../../../assets/javascripts/sard/sa-menu-active.js"></script>
+    <script type="text/javascript" src="../../assets/javascripts/sard/sa-menu-active.js"></script>
     
     <!-- MegaMenu -->
-    <script type="text/javascript" src="../../../assets/javascripts/sard/sa-megamenu.js"></script>
+    <script type="text/javascript" src="../../assets/javascripts/sard/sa-megamenu.js"></script>
     
     <!-- Smooth Scroll to top -->
     <!-- http://www.paulund.co.uk/how-to-create-an-animated-scroll-to-top-with-jquery -->
-    <script type="text/javascript" src="../../../assets/javascripts/sard/sa-smoothscroll.js"></script>
+    <script type="text/javascript" src="../../assets/javascripts/sard/sa-smoothscroll.js"></script>
     
     <!--Date Picker -->
     <!--formden.js communicates with FormDen server to validate fields and submit via AJAX -->
     <!-- https://formden.com/blog/date-picker -->
     <script type="text/javascript" src="https://formden.com/static/cdn/formden.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-    <script type="text/javascript" src="../../../assets/javascripts/sard/sa-datepicker.js"></script>
+    <script type="text/javascript" src="../../assets/javascripts/sard/sa-datepicker.js"></script>
     
     <!-- Data Table -->
     <!-- https://datatables.net/examples/styling/bootstrap.html -->
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
-    <script type="text/javascript" src="../../../assets/javascripts/sard/sa-datatable.js"></script>
+    <script type="text/javascript" src="../../assets/javascripts/sard/sa-datatable.js"></script>
     
     <!-- Rag Buttons -->
     <!-- http://stackoverflow.com/questions/31178653/how-to-keep-active-css-style-after-click-a-button -->
-    <script type="text/javascript" src="../../../assets/javascripts/sard/sa-rag-button.js"></script>
+    <script type="text/javascript" src="../../assets/javascripts/sard/sa-rag-button.js"></script>
     
     <!-- Tag Inputs -->
     <!-- http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples/ -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.7.1/bootstrap-tagsinput.min.js'></script>
     
     <!-- Show / Hide Fieldsets -->
-    <script type="text/javascript" src="../../../assets/javascripts/sard/sa-show-fieldsets.js"></script>
+    <script type="text/javascript" src="../../assets/javascripts/sard/sa-show-fieldsets.js"></script>
     
     <!-- Clickable Table Cells -->
-    <script type="text/javascript" src="../../../assets/javascripts/sard/sa-clickable-table-cells.js"></script>
+    <script type="text/javascript" src="../../assets/javascripts/sard/sa-clickable-table-cells.js"></script>
     
     <!-- Accordion Plus-Minus -->
-    <script type="text/javascript" src="../../../assets/javascripts/sard/sa-accordion-plus-minus.js"></script>
+    <script type="text/javascript" src="../../assets/javascripts/sard/sa-accordion-plus-minus.js"></script>
     
     <!-- Show Hide -->
-    <script type="text/javascript" src="../../../assets/javascripts/sard/sa-appraisal-evidence-toggle.js"></script>
+    <script type="text/javascript" src="../../assets/javascripts/sard/sa-appraisal-evidence-toggle.js"></script>
     
     <!-- User Cards -->
-    <script type="text/javascript" src="../../../assets/javascripts/sard/sa-user-cards.js"></script>
+    <script type="text/javascript" src="../../assets/javascripts/sard/sa-user-cards.js"></script>
     
 
 
