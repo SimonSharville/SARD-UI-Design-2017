@@ -6139,7 +6139,7 @@ h1 {
 
 h2 {
   font-family: 'robotolight', Helvetica, Arial, Sans-serif;
-  font-size: 3.000em;
+  font-size: 2.5em;
   margin-top: 0;
   margin-left: -3px; }
 
@@ -6170,7 +6170,7 @@ p {
   h1 {
     font-size: 4.000em; }
   h2 {
-    font-size: 2.250em; }
+    font-size: 2.2em; }
   h3 {
     font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
     font-size: 1.750em; }
@@ -6182,7 +6182,7 @@ black {
   font-weight: normal;
   letter-spacing: 0.025em; }
 
-strong, bold {
+strong, .bold {
   font-family: 'robotobold', Helvetica, Arial, Sans-serif;
   font-weight: normal; }
 
@@ -6215,6 +6215,11 @@ strong, bold {
 
 .right {
   text-align: right; }
+
+.ui-intro {
+  font-family: 'robotoregular';
+  font-size: 1.25em;
+  line-height: 1.4em; }
 
 .page-title .user-name {
   font-family: 'robotoregular';
@@ -7846,6 +7851,16 @@ hr {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   cursor: not-allowed; }
 
+.megamenu > li > ul > li.bold > a {
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif; }
+
+.megamenu > li > ul > li.disabled > a {
+  color: #A39E9C; }
+
+.megamenu > li > ul > li.disabled > a:hover,
+.megamenu > li > ul > li.disabled > a:focus {
+  background-color: transparent; }
+
 .megamenu li .dropdown-header {
   color: #00B2B2;
   font-size: 1.1em;
@@ -8132,14 +8147,15 @@ div[class*="col-xs-2"] .navbar-nav > li > .dropdown-menu, div[class*="col-sm-2"]
     padding-right: 0px; } }
 
 .sa-v-tabs .tab-column {
-  padding: 0; }
+  padding: 0;
+  margin-top: -2px; }
 
 .sa-v-tabs .tab-column p, .sa-v-tabs .tab-column h1, .sa-v-tabs .tab-column h2, .sa-v-tabs .tab-column h3, .sa-v-tabs .tab-column h4, .sa-v-tabs .tab-column h5, .sa-v-tabs .tab-column h6 {
   padding-right: 10px;
   padding-top: 10px; }
 
 .sa-v-tabs .tab-intro {
-  padding-top: 0px;
+  padding-top: 2px;
   padding-right: 20px;
   padding-bottom: 10px; }
 
@@ -9281,14 +9297,15 @@ textarea {
 .table > thead > tr.success > th,
 .table > tbody > tr.success > th,
 .table > tfoot > tr.success > th {
-  background-color: #359E00; }
+  background-color: #359E00;
+  color: #211F0F; }
 
 .table-hover > tbody > tr > td.success:hover,
 .table-hover > tbody > tr > th.success:hover,
 .table-hover > tbody > tr.success:hover > td,
 .table-hover > tbody > tr:hover > .success,
 .table-hover > tbody > tr.success:hover > th {
-  background-color: #246b00; }
+  background-color: #308f00; }
 
 .table > thead > tr > td.info,
 .table > tbody > tr > td.info,
@@ -9302,14 +9319,15 @@ textarea {
 .table > thead > tr.info > th,
 .table > tbody > tr.info > th,
 .table > tfoot > tr.info > th {
-  background-color: #00a0e0; }
+  background-color: #00a0e0;
+  color: #211F0F; }
 
 .table-hover > tbody > tr > td.info:hover,
 .table-hover > tbody > tr > th.info:hover,
 .table-hover > tbody > tr.info:hover > td,
 .table-hover > tbody > tr:hover > .info,
 .table-hover > tbody > tr.info:hover > th {
-  background-color: #007cad; }
+  background-color: #008ec7; }
 
 .table > thead > tr > td.warning,
 .table > tbody > tr > td.warning,
@@ -9323,14 +9341,15 @@ textarea {
 .table > thead > tr.warning > th,
 .table > tbody > tr.warning > th,
 .table > tfoot > tr.warning > th {
-  background-color: #FFB200; }
+  background-color: #FFB200;
+  color: #211F0F; }
 
 .table-hover > tbody > tr > td.warning:hover,
 .table-hover > tbody > tr > th.warning:hover,
 .table-hover > tbody > tr.warning:hover > td,
 .table-hover > tbody > tr:hover > .warning,
 .table-hover > tbody > tr.warning:hover > th {
-  background-color: #cc8e00; }
+  background-color: #f0a700; }
 
 .table > thead > tr > td.danger,
 .table > tbody > tr > td.danger,
@@ -9344,14 +9363,15 @@ textarea {
 .table > thead > tr.danger > th,
 .table > tbody > tr.danger > th,
 .table > tfoot > tr.danger > th {
-  background-color: #BF0000; }
+  background-color: #BF0000;
+  color: #211F0F; }
 
 .table-hover > tbody > tr > td.danger:hover,
 .table-hover > tbody > tr > th.danger:hover,
 .table-hover > tbody > tr.danger:hover > td,
 .table-hover > tbody > tr:hover > .danger,
 .table-hover > tbody > tr.danger:hover > th {
-  background-color: #8c0000; }
+  background-color: #b00000; }
 
 .table-default {
   background-color: #EDEBEB; }
