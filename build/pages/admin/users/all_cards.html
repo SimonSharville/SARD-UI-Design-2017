@@ -8,21 +8,13 @@
     <title>Admin: All Users</title>
     <link rel="icon" type="image/ico" href="../../assets/graphics/favicon.ico"/>
 
-    <!-- Bootstrap -->
-    <link href="../../../assets/stylesheets/bootstrap.css" rel="stylesheet">
-    <!--[if lt IE 8]>
-      <link href="../../assets/stylesheets/bootstrap-ie7fix.min.css" rel="stylesheet">
-    <![endif]-->
-    
-    <!-- <link href="assets/css/reset.css" rel="stylesheet"> -->
-
+    <link href="../../../assets/stylesheets/sard-styles.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link href="../../../assets/stylesheets/sard-styles.css" rel="stylesheet">
   </head>
 <body id="admin" class="admin">
 
@@ -65,28 +57,22 @@
               <ul class="dropdown-menu megamenu">
                 <li class="col-sm-3">
                   <ul>
-                    <li class="dropdown-header">Bootstrap Components</li>
-                    <li><a href="../../../pages/ui/ui-bs-panels.html">Panels</a></li>
-                    <li><a href="../../../pages/ui/ui-bs-buttons.html">Buttons</a></li>
-                    <li><a href="../../../pages/ui/ui-bs-nav-tabs.html">Nav Tabs</a></li>
-                    <li><a href="../../../pages/ui/ui-bs-tables.html">Tables</a></li>
-                    <li><a href="../../../pages/ui/ui-bs-tooltips.html">Tooltips</a></li>
-                    <li><a href="../../../pages/ui/ui-bs-alerts.html">Alerts</a></li>
-                  </ul>
-                </li>
-                <li class="col-sm-3">
-                  <ul>
-                    <li class="dropdown-header">SARD Components</li>
-                    <li><a href="../../../pages/ui/ui-sard-typography.html">Typography</a></li>
-                    <li><a href="../../../pages/ui/ui-sard-perforations.html">Perforations</a></li>
-                    <li><a href="../../../pages/ui/ui-sard-nav-tabs.html">Nav Tabs</a></li>
-                    <li><a href="../../../pages/ui/ui-sard-text-links.html">Text Links</a></li>
-                    <li><a href="../../../pages/ui/ui-sard-forms.html">Forms</a></li>
-                    <li><a href="../../../pages/ui/ui-sard-alerts.html">Status Alerts</a></li>
-                    <li><a href="../../../pages/ui/ui-sard-variable-columns.html">Variable Columns</a></li>
-                    <li><a href="../../../pages/ui/ui-sard-megamenu.html">Megamenu</a></li>
-                    <li><a href="../../../pages/ui/ui-sard-accordions.html">Accordions</a></li>
-                    <li><a href="../../../pages/ui/ui-sard-list-styles.html">List Styles</a></li>
+                    <li class="dropdown-header">Components</li>
+                    <li><a href="../../../pages/ui/accordions.html">Accordions</a></li>
+                    <li><a href="../../../pages/ui/alerts.html">Alerts</a></li>
+                    <li><a href="../../../pages/ui/buttons.html">Buttons</a></li>
+                    <li><a href="../../../pages/ui/forms.html">Forms</a></li>
+                    <li><a href="../../../pages/ui/list-styles.html">List Styles</a></li>
+                    <li><a href="../../../pages/ui/megamenu.html">Megamenu</a></li>
+                    <li><a href="../../../pages/ui/nav-tabs.html">Nav Tabs</a></li>
+                    <li><a href="../../../pages/ui/panels.html">Panels</a></li>
+                    <li><a href="../../../pages/ui/perforations.html">Perforations</a></li>
+                    <li><a href="../../../pages/ui/status-alerts.html">Status Alerts</a></li>
+                    <li><a href="../../../pages/ui/tables.html">Tables</a></li>
+                    <li><a href="../../../pages/ui/text-links.html">Text Links</a></li>
+                    <li><a href="../../../pages/ui/tooltips.html">Tooltips</a></li>
+                    <li><a href="../../../pages/ui/typography.html">Typography</a></li>
+                    <li><a href="../../../pages/ui/variable-columns.html">Variable Columns</a></li>
                   </ul>
                 </li>
                 <li class="col-sm-3">
@@ -94,7 +80,10 @@
                     <li class="dropdown-header">Global Pages</li>
                     <li><a href="../../../login.html">Login Page</a></li>
                     <li><a href="../../../support.html">Support</a></li>
-                    <li class="divider"></li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
                     <li class="dropdown-header">User Pages</li>
                     <li><a href="../../../pages/users/dashboard.html">Dashboard</a></li>
                     <li><a href="../../../pages/users/my-appraisal.html">My Appraisal</a></li>
@@ -168,137 +157,137 @@
                     <li><a href="../users/advanced-user-search.html">Advanced User Search</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header">Appraisals</li>
-                    <li class="bold"><a href="#">All Appraisals</a></li>
-                    <li><a href="#">Appraisal Compliance</a></li>
-                    <li><a href="#">Appraisal Months</a></li>
-                    <li><a href="#">Directorate Reports</a></li>
-                    <li><a href="#">Speciality Reports</a></li>
-                    <li><a href="#">Position Title Reports</a></li>
-                    <li><a href="#">Location Org L4 Reports</a></li>
-                    <li><a href="#">Incomplete Appraisals</a></li>
-                    <li><a href="#">Appraiser Management</a></li>
-                    <li><a href="#">Appraisal Leads</a></li>
-                    <li><a href="#">Appraiser Feedback</a></li>
-                    <li><a href="#">Appraiser Feedback Reports</a></li>
-                    <li><a href="#">Appraisal Employers</a></li>
-                    <li><a href="#">Appraisal Exemptions</a></li>
-                    <li><a href="#">Due Date Extensions</a></li>
+                    <li class="disabled bold"><a href="#">All Appraisals</a></li>
+                    <li class="disabled"><a href="#">Appraisal Compliance</a></li>
+                    <li class="disabled"><a href="#">Appraisal Months</a></li>
+                    <li class="disabled"><a href="#">Directorate Reports</a></li>
+                    <li class="disabled"><a href="#">Speciality Reports</a></li>
+                    <li class="disabled"><a href="#">Position Title Reports</a></li>
+                    <li class="disabled"><a href="#">Location Org L4 Reports</a></li>
+                    <li class="disabled"><a href="#">Incomplete Appraisals</a></li>
+                    <li class="disabled"><a href="#">Appraiser Management</a></li>
+                    <li class="disabled"><a href="#">Appraisal Leads</a></li>
+                    <li class="disabled"><a href="#">Appraiser Feedback</a></li>
+                    <li class="disabled"><a href="#">Appraiser Feedback Reports</a></li>
+                    <li class="disabled"><a href="#">Appraisal Employers</a></li>
+                    <li class="disabled"><a href="#">Appraisal Exemptions</a></li>
+                    <li class="disabled"><a href="#">Due Date Extensions</a></li>
                   </ul>
                 </li>
                 <li class="col-sm-2">
                   <ul>
                     <li class="dropdown-header">MSF</li>
-                    <li class="bold"><a href="#">All MSFs</a></li>
-                    <li><a href="#">MSF Compliance</a></li>
-                    <li><a href="#">Action Needed</a></li>
+                    <li class="disabled bold"><a href="#">All MSFs</a></li>
+                    <li class="disabled"><a href="#">MSF Compliance</a></li>
+                    <li class="disabled"><a href="#">Action Needed</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header">Job Plans</li>
-                    <li><a href="#">All Job Plans</a></li>
-                    <li><a href="#">Advanced Report</a></li>
-                    <li><a href="#">CSV Exports</a></li>
-                    <li><a href="#">DoH Report</a></li>
-                    <li><a href="#">Job Plan Management</a></li>
-                    <li><a href="#">Compliance Report</a></li>
-                    <li><a href="#">Directorate Report</a></li>
-                    <li><a href="#">Position Report</a></li>
-                    <li><a href="#">Speciality Report</a></li>
-                    <li><a href="#">Category Stats</a></li>
-                    <li><a href="#">Directorate Stats</a></li>
-                    <li><a href="#">Position Stats</a></li>
-                    <li><a href="#">Speciality Stats</a></li>
-                    <li><a href="#">Activity Categorisation</a></li>
-                    <li><a href="#">Signatories</a></li>
-                    <li><a href="#">Locations</a></li>
-                    <li><a href="#">Tags</a></li>
-                    <li><a href="#">Exemptions</a></li>
-                    <li><a href="#">Templates</a></li>
+                    <li class="disabled"><a href="#">All Job Plans</a></li>
+                    <li class="disabled"><a href="#">Advanced Report</a></li>
+                    <li class="disabled"><a href="#">CSV Exports</a></li>
+                    <li class="disabled"><a href="#">DoH Report</a></li>
+                    <li class="disabled"><a href="#">Job Plan Management</a></li>
+                    <li class="disabled"><a href="#">Compliance Report</a></li>
+                    <li class="disabled"><a href="#">Directorate Report</a></li>
+                    <li class="disabled"><a href="#">Position Report</a></li>
+                    <li class="disabled"><a href="#">Speciality Report</a></li>
+                    <li class="disabled"><a href="#">Category Stats</a></li>
+                    <li class="disabled"><a href="#">Directorate Stats</a></li>
+                    <li class="disabled"><a href="#">Position Stats</a></li>
+                    <li class="disabled"><a href="#">Speciality Stats</a></li>
+                    <li class="disabled"><a href="#">Activity Categorisation</a></li>
+                    <li class="disabled"><a href="#">Signatories</a></li>
+                    <li class="disabled"><a href="#">Locations</a></li>
+                    <li class="disabled"><a href="#">Tags</a></li>
+                    <li class="disabled"><a href="#">Exemptions</a></li>
+                    <li class="disabled"><a href="#">Templates</a></li>
                   </ul>
                 </li>
                 <li class="col-sm-2">
                   <ul>
                     <li class="dropdown-header">eLeave</li>
-                    <li><a href="#">eLeave Calendar</a></li>
-                    <li><a href="#">Leave Allowances</a></li>
-                    <li><a href="#">Leave Approvers</a></li>
+                    <li class="disabled"><a href="#">eLeave Calendar</a></li>
+                    <li class="disabled"><a href="#">Leave Allowances</a></li>
+                    <li class="disabled"><a href="#">Leave Approvers</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header">Recommendations</li>
-                    <li><a href="#">Recommendations</a></li>
-                    <li><a href="#">Recommendation Status</a></li>
+                    <li class="disabled"><a href="#">Recommendations</a></li>
+                    <li class="disabled"><a href="#">Recommendation Status</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header">Evidence</li>
-                    <li><a href="#">eDocs</a></li>
-                    <li><a href="#">MAG Forms</a></li>
-                    <li><a href="#">S12 / AC</a></li>
-                    <li><a href="#">Complaints</a></li>
-                    <li><a href="#">SUIs</a></li>
-                    <li><a href="#">Capability/Performance Issues</a></li>
-                    <li><a href="#">Criminal Records Bureau</a></li>
-                    <li><a href="#">Disciplinary</a></li>
-                    <li><a href="#">Grievances</a></li>
-                    <li><a href="#">Health Concerns</a></li>
+                    <li class="disabled"><a href="#">eDocs</a></li>
+                    <li class="disabled"><a href="#">MAG Forms</a></li>
+                    <li class="disabled"><a href="#">S12 / AC</a></li>
+                    <li class="disabled"><a href="#">Complaints</a></li>
+                    <li class="disabled"><a href="#">SUIs</a></li>
+                    <li class="disabled"><a href="#">Capability/Performance Issues</a></li>
+                    <li class="disabled"><a href="#">Criminal Records Bureau</a></li>
+                    <li class="disabled"><a href="#">Disciplinary</a></li>
+                    <li class="disabled"><a href="#">Grievances</a></li>
+                    <li class="disabled"><a href="#">Health Concerns</a></li>
                   </ul>
                 </li>
                 <li class="col-sm-2">
                   <ul>
                     <li class="dropdown-header">GMC</li>
-                    <li><a href="#">Council Memberships</a></li>
-                    <li><a href="#">Prescribed Connections</a></li>
-                    <li><a href="#">Quarterly Reports</a></li>
-                    <li><a href="#">AOA Reports</a></li>
+                    <li class="disabled"><a href="#">Council Memberships</a></li>
+                    <li class="disabled"><a href="#">Prescribed Connections</a></li>
+                    <li class="disabled"><a href="#">Quarterly Reports</a></li>
+                    <li class="disabled"><a href="#">AOA Reports</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header">Medical Roles</li>
-                    <li><a href="#">Medical Roles</a></li>
+                    <li class="disabled"><a href="#">Medical Roles</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header">Appraisal Datasets</li>
-                    <li><a href="#">Section Mapping</a></li>
-                    <li><a href="#">Categories</a></li>
-                    <li><a href="#">Dataset Matrix</a></li>
+                    <li class="disabled"><a href="#">Section Mapping</a></li>
+                    <li class="disabled"><a href="#">Categories</a></li>
+                    <li class="disabled"><a href="#">Dataset Matrix</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header">Data</li>
-                    <li><a href="#">Medic Groups</a></li>
-                    <li><a href="#">Directorates</a></li>
-                    <li><a href="#">Location org 14s</a></li>
-                    <li><a href="#">Team org 15s</a></li>
-                    <li><a href="#">Specialities</a></li>
-                    <li><a href="#">Position Titles</a></li>
-                    <li><a href="#">ESR Roles</a></li>
-                    <li><a href="#">Site Names</a></li>
+                    <li class="disabled"><a href="#">Medic Groups</a></li>
+                    <li class="disabled"><a href="#">Directorates</a></li>
+                    <li class="disabled"><a href="#">Location org 14s</a></li>
+                    <li class="disabled"><a href="#">Team org 15s</a></li>
+                    <li class="disabled"><a href="#">Specialities</a></li>
+                    <li class="disabled"><a href="#">Position Titles</a></li>
+                    <li class="disabled"><a href="#">ESR Roles</a></li>
+                    <li class="disabled"><a href="#">Site Names</a></li>
                   </ul>
                 </li>
                 <li class="col-sm-2">
                   <ul>
                     <li class="dropdown-header">CSV Import</li>
-                    <li><a href="#">User Import</a></li>
-                    <li><a href="#">User Update</a></li>
-                    <li><a href="#">Photo Import</a></li>
-                    <li><a href="#">Section 12 Import</a></li>
-                    <li><a href="#">GMC Import</a></li>
-                    <li><a href="#">GMC Update</a></li>
-                    <li><a href="#">Appraisal Import</a></li>
-                    <li><a href="#">Lead Appraiser Import</a></li>
-                    <li><a href="#">Recommendation Import</a></li>
-                    <li><a href="#">Speciality Import</a></li>
-                    <li><a href="#">Role Import</a></li>
-                    <li><a href="#">Medic Group Import</a></li>
-                    <li><a href="#">Offline MSF Import</a></li>
-                    <li><a href="#">Patient Feedback Import</a></li>
-                    <li><a href="#">Offline Job Plan Import</a></li>
-                    <li><a href="#">Gov and FtoP Import</a></li>
-                    <li><a href="#">Org Structure Import</a></li>
-                    <li><a href="#">Appraisal Month Import</a></li>
+                    <li class="disabled"><a href="#">User Import</a></li>
+                    <li class="disabled"><a href="#">User Update</a></li>
+                    <li class="disabled"><a href="#">Photo Import</a></li>
+                    <li class="disabled"><a href="#">Section 12 Import</a></li>
+                    <li class="disabled"><a href="#">GMC Import</a></li>
+                    <li class="disabled"><a href="#">GMC Update</a></li>
+                    <li class="disabled"><a href="#">Appraisal Import</a></li>
+                    <li class="disabled"><a href="#">Lead Appraiser Import</a></li>
+                    <li class="disabled"><a href="#">Recommendation Import</a></li>
+                    <li class="disabled"><a href="#">Speciality Import</a></li>
+                    <li class="disabled"><a href="#">Role Import</a></li>
+                    <li class="disabled"><a href="#">Medic Group Import</a></li>
+                    <li class="disabled"><a href="#">Offline MSF Import</a></li>
+                    <li class="disabled"><a href="#">Patient Feedback Import</a></li>
+                    <li class="disabled"><a href="#">Offline Job Plan Import</a></li>
+                    <li class="disabled"><a href="#">Gov and FtoP Import</a></li>
+                    <li class="disabled"><a href="#">Org Structure Import</a></li>
+                    <li class="disabled"><a href="#">Appraisal Month Import</a></li>
                   </ul>
                 </li>
                 <li class="col-sm-2">
                   <ul>
                     <li class="dropdown-header">Misc</li>
-                    <li><a href="#">Roles</a></li>
-                    <li><a href="#">Support Documents</a></li>
-                    <li><a href="#">Document Groups</a></li>
-                    <li><a href="#">Content</a></li>
-                    <li><a href="#">Employers</a></li>
-                    <li><a href="#">Single Pages</a></li>
-                    <li><a href="#">Audit Logs</a></li>
-                    <li><a href="#">Notification Docs</a></li>
+                    <li class="disabled"><a href="#">Roles</a></li>
+                    <li class="disabled"><a href="#">Support Documents</a></li>
+                    <li class="disabled"><a href="#">Document Groups</a></li>
+                    <li class="disabled"><a href="#">Content</a></li>
+                    <li class="disabled"><a href="#">Employers</a></li>
+                    <li class="disabled"><a href="#">Single Pages</a></li>
+                    <li class="disabled"><a href="#">Audit Logs</a></li>
+                    <li class="disabled"><a href="#">Notification Docs</a></li>
                     <li><a href="../sard-messages.html">SARD Messages</a></li>
                   </ul>
                 </li>
