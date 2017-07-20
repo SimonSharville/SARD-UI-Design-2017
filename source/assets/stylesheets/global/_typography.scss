@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6, p{
   
   h2 {
     font-family: 'robotolight', Helvetica, Arial, Sans-serif;
-    font-size: 3.000em;
+    font-size: 2.5em;
     margin-top:0;
     margin-left:-3px;
   }
@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6, p{
   h1{ font-size: 4.000em;}
   h2{ 
     // font-family: 'robotolight', Helvetica, Arial, Sans-serif;
-    font-size: 2.250em;
+    font-size: 2.2em;
   }
   h3{
     font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6, p{
     letter-spacing: $vslight;
   }
 
-  strong, bold{ 
+  strong, .bold{ 
     font-family: 'robotobold', Helvetica, Arial, Sans-serif;
     font-weight:normal;
   }
@@ -119,6 +119,12 @@ h1, h2, h3, h4, h5, h6, p{
   .centre{text-align:center;}
   .left{text-align:left;}
   .right{text-align:right;}
+
+  .ui-intro{
+    font-family: 'robotoregular';
+    font-size:1.25em;
+    line-height:1.4em;
+  }
 
 
 // Global Page styles ==========================================================
