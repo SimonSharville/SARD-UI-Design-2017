@@ -1,0 +1,189 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Variables Columns</h1>
+      <p class="ui-intro">Bootstap tables spread flexible columns evenly across the table. Sometimes, for purposes of layout and legibility you may want to set a column or multiple columns to be a set width. To do this we have come up with Variable column widths for a table. </p>
+      <p class="ui-intro">Simply add a class of width you require to the top column TH or TD and that column will set to that width, all others will adjust to fill. If you wish to completely control the width of all columns then the widths must add up to 100</p>
+      <p>&nbsp;</p>
+    </div> <!-- END Column -->
+  </div> <!-- END Row -->
+
+
+  <div class="row">
+    <div class="col-xs-12">
+    <h2>Default Bootstrap Table</h2>
+    <p>This has no set Column widths</p>
+        <table class="table table-hover table-default">
+          <thead>
+            <tr>
+              <th>Column One</th>
+              <th>Column Two</th>
+              <th>Column Three</th>
+              <th>Column Four</th>
+              <th>Column Five</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+              <td>Doe</td>
+              <td>Doe</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+              <td>Moe</td>
+              <td>Moe</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+              <td>Moe</td>
+              <td>Moe</td>
+            </tr>
+          </tbody>
+          <tfoot>
+              <tr>
+                <th>table footer</th>
+                <th>$180</th>
+                <th>$180</th>
+                <th>$180</th>
+                <th>$180</th>
+              </tr>
+            </tfoot>
+        </table>
+    </div> <!-- END Column -->
+  </div> <!-- END Row -->
+
+  <div class="row">
+    <div class="col-xs-12">
+    <h2>Variable Table</h2>
+    <p>Here we have added a class of <code>tcol-10</code> to the first two column headings. All other columns resize to fill the width.</br>
+      <code>&lt;th class="tcol-10"&gt;Column One&lt;/th&gt;</code>
+    </p>
+        <table class="table table-hover table-default">
+          <thead>
+            <tr>
+              <th class="tcol-10">Column One</th>
+              <th class="tcol-10">Column Two</th>
+              <th>Column Three</th>
+              <th>Column Four</th>
+              <th>Column Five</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+              <td>Doe</td>
+              <td>Doe</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+              <td>Moe</td>
+              <td>Moe</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+              <td>Moe</td>
+              <td>Moe</td>
+            </tr>
+          </tbody>
+          <tfoot>
+              <tr>
+                <th>footer</th>
+                <th>$180</th>
+                <th>$180</th>
+                <th>$180</th>
+                <th>$180</th>
+              </tr>
+            </tfoot>
+        </table>
+    </div> <!-- END Column -->
+  </div> <!-- END Row -->
+
+  <div class="row">
+    <div class="col-xs-12">
+    <h2>Variable Table</h2>
+    <p>Here we have added a class of <code>tcol-10</code> to the second, fourth and fifth column headings. All other columns resize to fill the width.</br>
+      <code>&lt;th class="tcol-10"&gt;Column Two&lt;/th&gt;</code>
+    </p>
+        <table class="table table-hover table-default">
+          <thead>
+            <tr>
+              <th>Column One</th>
+              <th class="tcol-10">Column Two</th>
+              <th>Column Three</th>
+              <th class="tcol-10">Column Four</th>
+              <th class="tcol-10">Column Five</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+              <td>Doe</td>
+              <td>Doe</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+              <td>Moe</td>
+              <td>Moe</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+              <td>Moe</td>
+              <td>Moe</td>
+            </tr>
+          </tbody>
+          <tfoot>
+              <tr>
+                <th>footer</th>
+                <th>$180</th>
+                <th>$180</th>
+                <th>$180</th>
+                <th>$180</th>
+              </tr>
+            </tfoot>
+        </table>
+    </div> <!-- END Column -->
+  </div> <!-- END Row -->
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Sizes</h2>
+      <p class="ui-intro">So far we have the follwing sizes:</p>
+      <p>
+        .tcol-66 { width:66%; } </br>
+        .tcol-50 { width:50%; } </br>
+        .tcol-45 { width:45%; } </br>
+        .tcol-41 { width:41%; } </br>
+        .tcol-40 { width:40%; } </br>
+        .tcol-39 { width:39%; } </br>
+        .tcol-33 { width:33%; } </br>
+        .tcol-30 { width:30%; } </br>
+        .tcol-25 { width:25%; } </br>
+        .tcol-20 { width:20%; } </br>
+        .tcol-15 { width:15%; } </br>
+        .tcol-14 { width:14%; } </br>
+        .tcol-10 { width:10%; } </br>
+        .tcol-5  { width:5%; }
+      </p>
+      <p>More can be added in sa-tables.scss</p>
+    </div> <!-- END Column -->
+  </div> <!-- END Row -->
+</div> <!-- END Container -->
