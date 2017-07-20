@@ -49,6 +49,16 @@
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   cursor: not-allowed;
 }
+.megamenu> li > ul > li.bold > a{
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+}
+.megamenu> li > ul > li.disabled > a{
+  color:$grey10;
+}
+.megamenu> li > ul > li.disabled > a:hover,
+.megamenu> li > ul > li.disabled > a:focus,{
+  background-color: transparent;
+}
 .megamenu li .dropdown-header {
   color: $client;
   font-size: 1.1em;
