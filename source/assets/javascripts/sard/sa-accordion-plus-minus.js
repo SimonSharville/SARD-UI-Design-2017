@@ -2,10 +2,11 @@
 
 function toggleIcon(e) {
     $(e.target)
-        .prev('.panel-heading')
+        // .prev('.panel-heading') // this is the original setting
+        .prev('')
         .find(".more-less")
         .toggleClass('glyphicon-plus glyphicon-minus');
 }
-$('.panel').on('hidden.bs.collapse', toggleIcon);
-$('.panel').on('shown.bs.collapse', toggleIcon);
+$('.accordion').on('hidden.bs.collapse', toggleIcon);
+$('.accordion').on('shown.bs.collapse', toggleIcon);
 

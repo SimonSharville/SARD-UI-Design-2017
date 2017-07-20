@@ -360,7 +360,20 @@ padding-right:7px;
 }
 
 
+// eDoc Modal popup =================================================================
+.eDoc-modal{
+  padding:10px;
+}
+.eDoc-modal .link-arrow{
+  padding-left:0;
+  text-indent:0;
+}
 
+.eDoc-modal .actions{
+  border-top:1px solid $grey06;
+  padding-top:10px;
+  text-align:right;
+}
 
 
 
@@ -368,56 +381,56 @@ padding-right:7px;
 // eDoc Page - List ===================================================================
 // Option 1 ONLY
 
-.edoc-list{ 
-  margin-top:20px;
-}
+// .edoc-list{ 
+//   margin-top:20px;
+// }
 
-.edoc-list .edocuments{
-  padding-right:10px;
-  padding-left:10px;
-}
-  .edoc-list .date {
-  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-  background: $grey16;
-  color:white;
-  padding: 3px 20px;
-  margin: 0px -13px 0px -13px;
-  border-radius:20px;
-}
+// .edoc-list .edocuments{
+//   padding-right:10px;
+//   padding-left:10px;
+// }
+//   .edoc-list .date {
+//   font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+//   background: $grey16;
+//   color:white;
+//   padding: 3px 20px;
+//   margin: 0px -13px 0px -13px;
+//   border-radius:20px;
+// }
 
-.edoc-list .time {
-  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-  border-top: 1px solid white;
-  padding-top: 10px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-.edoc-list .time:first-of-type{
-  border-top: none;
-  padding-top: 0px;
-}
+// .edoc-list .time {
+//   font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+//   border-top: 1px solid white;
+//   padding-top: 10px;
+//   margin-top: 10px;
+//   margin-bottom: 5px;
+// }
+// .edoc-list .time:first-of-type{
+//   border-top: none;
+//   padding-top: 0px;
+// }
 
-.edoc-list table{
-  margin-bottom:0px;
-}
+// .edoc-list table{
+//   margin-bottom:0px;
+// }
 
-.edoc-list tr > td {
-  border-top:1px solid $grey04!important;
-}
+// .edoc-list tr > td {
+//   border-top:1px solid $grey04!important;
+// }
 
-.edoc-list td.file{
-  font-size:1.2em;
-  line-height:1.25em;
-  padding-left: 2em ;
-  text-indent: -1.3em ;
-}
+// .edoc-list td.file{
+//   font-size:1.2em;
+//   line-height:1.25em;
+//   padding-left: 2em ;
+//   text-indent: -1.3em ;
+// }
 
-.edoc-list td.links{
-  text-align:right;
-  font-size:1.2em;
-  padding-bottom:7px;
-  margin-bottom:7px;
-}
+// .edoc-list td.links{
+//   text-align:right;
+//   font-size:1.2em;
+//   padding-bottom:7px;
+//   margin-bottom:7px;
+// }
 
 
 

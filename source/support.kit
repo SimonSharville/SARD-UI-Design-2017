@@ -8,21 +8,13 @@
     <title>SARD My Appraisal</title>
     <link rel="icon" type="image/ico" href="assets/graphics/favicon.ico"/>
 
-    <!-- Bootstrap -->
-    <link href="assets/stylesheets/bootstrap.css" rel="stylesheet">
-    <!--[if lt IE 8]>
-      <link href="assets/stylesheets/bootstrap-ie7fix.min.css" rel="stylesheet">
-    <![endif]-->
-    
-    <!-- <link href="assets/css/reset.css" rel="stylesheet"> -->
-
+    <link href="assets/stylesheets/sard-styles.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link href="assets/stylesheets/sard-styles.css" rel="stylesheet">
   </head>
 <body id="support">
 
@@ -90,14 +82,22 @@
               <ul class="nav nav-tabs nav-justified">
                 <li class="active">
                   <a href="#system_access" class="sa-tab" data-toggle="tab">
-                      
-                      <div class="tab-title"><h3>System access and help</h3></div>
+                    <div class="tab-title"><h4>System access and help</h4></div>
                   </a>
                 </li>
                 <li class="">
                   <a href="#support_videos" class="sa-tab" data-toggle="tab">
-                    
-                    <div class="tab-title"><h3>Support Videos</h3></div>
+                    <div class="tab-title"><h4>Support Videos</h4></div>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="#guides" class="sa-tab" data-toggle="tab">
+                    <div class="tab-title"><h4>Guides</h4></div>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="#faqs" class="sa-tab" data-toggle="tab">
+                    <div class="tab-title"><h4>FAQs</h4></div>
                   </a>
                 </li>
               </ul>
@@ -107,13 +107,19 @@
             <!-- horizontal-tab-content -->
             <div class="tab-content horizontal container">
               <div id="system_access" class="tab-pane fade in active">
-                <h2>System access and help</h2>
-                <!-- @import "pages/global/articles/system_access.html" -->                
+                <!-- @import "pages/global/support_articles/system_access.html" -->                
               </div>  <!-- / tab-pane -->
 
               <div id="support_videos" class="tab-pane fade">
-                <h2>Support Videos</h2>
-                <!-- @import "pages/global/articles/support_videos.html" -->
+                <!-- @import "pages/global/support_articles/support_videos.html" -->
+              </div>  <!-- / tab-pane -->
+
+              <div id="guides" class="tab-pane fade">
+                <!-- @import "pages/global/support_articles/guides.html" -->
+              </div>  <!-- / tab-pane -->
+
+              <div id="faqs" class="tab-pane fade">
+                <!-- @import "pages/global/support_articles/faqs.html" -->
               </div>  <!-- / tab-pane -->
 
             </div> <!-- END tab-content horizontal -->
