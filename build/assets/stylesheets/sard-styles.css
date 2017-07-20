@@ -6139,7 +6139,7 @@ h1 {
 
 h2 {
   font-family: 'robotolight', Helvetica, Arial, Sans-serif;
-  font-size: 3.000em;
+  font-size: 2.5em;
   margin-top: 0;
   margin-left: -3px; }
 
@@ -6170,7 +6170,7 @@ p {
   h1 {
     font-size: 4.000em; }
   h2 {
-    font-size: 2.250em; }
+    font-size: 2.2em; }
   h3 {
     font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
     font-size: 1.750em; }
@@ -6182,7 +6182,7 @@ black {
   font-weight: normal;
   letter-spacing: 0.025em; }
 
-strong, bold {
+strong, .bold {
   font-family: 'robotobold', Helvetica, Arial, Sans-serif;
   font-weight: normal; }
 
@@ -6215,6 +6215,11 @@ strong, bold {
 
 .right {
   text-align: right; }
+
+.ui-intro {
+  font-family: 'robotoregular';
+  font-size: 1.25em;
+  line-height: 1.4em; }
 
 .page-title .user-name {
   font-family: 'robotoregular';
@@ -8142,14 +8147,15 @@ div[class*="col-xs-2"] .navbar-nav > li > .dropdown-menu, div[class*="col-sm-2"]
     padding-right: 0px; } }
 
 .sa-v-tabs .tab-column {
-  padding: 0; }
+  padding: 0;
+  margin-top: -2px; }
 
 .sa-v-tabs .tab-column p, .sa-v-tabs .tab-column h1, .sa-v-tabs .tab-column h2, .sa-v-tabs .tab-column h3, .sa-v-tabs .tab-column h4, .sa-v-tabs .tab-column h5, .sa-v-tabs .tab-column h6 {
   padding-right: 10px;
   padding-top: 10px; }
 
 .sa-v-tabs .tab-intro {
-  padding-top: 0px;
+  padding-top: 2px;
   padding-right: 20px;
   padding-bottom: 10px; }
 
