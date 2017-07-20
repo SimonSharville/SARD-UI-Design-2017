@@ -7846,6 +7846,16 @@ hr {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   cursor: not-allowed; }
 
+.megamenu > li > ul > li.bold > a {
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif; }
+
+.megamenu > li > ul > li.disabled > a {
+  color: #A39E9C; }
+
+.megamenu > li > ul > li.disabled > a:hover,
+.megamenu > li > ul > li.disabled > a:focus {
+  background-color: transparent; }
+
 .megamenu li .dropdown-header {
   color: #00B2B2;
   font-size: 1.1em;
