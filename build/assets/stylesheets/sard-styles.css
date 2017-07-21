@@ -6222,13 +6222,16 @@ strong, .bold {
   line-height: 1.4em; }
 
 .page-title .user-name {
-  font-family: 'robotoregular';
+  font-family: 'robotobold';
   line-height: 1em;
   padding-left: 2px; }
 
 .page-title .title {
   font-family: 'robotothin';
   line-height: 0.6em; }
+
+.page-title .date {
+  font-family: 'robotoregular'; }
 
 a {
   color: #00B2B2;
