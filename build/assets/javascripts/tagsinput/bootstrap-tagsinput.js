@@ -317,3 +317,4 @@
     })
 }(window.jQuery);
 //# sourceMappingURL=bootstrap-tagsinput.min.js.map
+
