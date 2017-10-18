@@ -459,3 +459,265 @@
 fieldset .table-hover > tbody > tr:hover {
   background-color: $grey04;
 }
+
+
+
+// Sard Tables ==================================
+
+.table.table-sard{
+  margin: 0px 0px 10px 0px;
+}
+
+
+.table.table-sard > thead > tr > th,
+.table.table-sard > tbody > tr > th,
+.table.table-sard > tfoot > tr > th,
+.table.table-sard > thead > tr > td,
+.table.table-sard > tbody > tr > td,
+.table.table-sard > tfoot > tr > td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.table.table-sard > thead > tr > th:first-child,
+.table.table-sard > tbody > tr > th:first-child,
+.table.table-sard > tfoot > tr > th:first-child,
+.table.table-sard > thead > tr > td:first-child,
+.table.table-sard > tbody > tr > td:first-child,
+.table.table-sard > tfoot > tr > td:first-child {
+  padding-left: 10px;
+}
+
+.table.table-sard > thead > tr > th:last-child,
+.table.table-sard > tbody > tr > th:last-child,
+.table.table-sard > tfoot > tr > th:last-child,
+.table.table-sard > thead > tr > td:last-child,
+.table.table-sard > tbody > tr > td:last-child,
+.table.table-sard > tfoot > tr > td:last-child {
+  padding-right: 10px;
+}
+
+
+.table.table-sard > thead > tr > th{
+  background-color: $grey08;
+  font-family: $font-heavy;
+  border-bottom: 1px solid $grey08;
+  border-right: 1px solid $grey08;
+}
+
+.table.table-sard > tbody{
+  border-top: none;
+  border: 1px solid $grey04;
+}
+
+.table.table-sard > tbody > tr.bordered{
+  border-top: 1px solid white;
+}
+
+.table.table-sard > tbody > tr > td{
+  border-top: none;
+}
+
+.table.table-sard > tbody > tr:first-child > td{
+  border-top: none;
+}
+
+.table.table-sard > thead > tr > th.border,
+.table.table-sard > tbody > tr > td.border{
+  border-top: 1px solid $grey04;
+  border-left: 1px solid $grey04;
+  border-bottom: 1px solid $grey04;
+  border-right: 1px solid $grey04;
+}
+.table.table-sard > thead > tr > th:first-child.border,
+.table.table-sard > tbody > tr > td:first-child.border{
+  border-left: transparent;
+}
+.table.table-sard > thead > tr > th:last-child.border,
+.table.table-sard > tbody > tr > td:last-child.border{
+  border-right: transparent;
+}
+
+.table.table-sard > thead > tr > th.border-left,
+.table.table-sard > tbody > tr > td.border-left{
+  border-left: 1px solid $grey04;
+}
+.table.table-sard > thead > tr > th:first-child.border-left,
+.table.table-sard > tbody > tr > td:first-child.border-left{
+  border-left: transparent;
+}
+
+.table.table-sard > thead > tr > th.border-top,
+.table.table-sard > tbody > tr > td.border-top{
+  border-top: 1px solid $grey04;
+}
+.table.table-sard > thead > tr:first-child > th.border-top,
+.table.table-sard > tbody > tr:first-child > td.border-top{
+  border-top: transparent;
+}
+
+.table.table-sard > thead > tr > th.border-right,
+.table.table-sard > tbody > tr > td.border-right{
+  border-right: 1px solid $grey04;
+}
+.table.table-sard > thead > tr > th:last-child.border-right,
+.table.table-sard > tbody > tr > td:last-child.border-right{
+  border-right: transparent;
+}
+
+.table.table-sard > thead > tr > th.border-bottom,
+.table.table-sard > tbody > tr > td.border-bottom{
+  border-bottom: 1px solid $grey04;
+}
+.table.table-sard > thead > tr:last-child > th.border-bottom,
+.table.table-sard > tbody > tr:last-child > td.border-bottom{
+  border-bottom: transparent;
+}
+
+.table.table-sard > tbody > tr > td.bg-grey{
+  background-color: $grey04;
+}
+.table.table-sard > tbody > tr > td.bg-white{
+  background-color: white;
+}
+
+.table.table-sard > tbody > tr > td.title{
+  background-color: $grey04;
+  font-family: $font-bold;
+  // padding-left: 15px;
+  // padding-right: 15px;
+  border-top: none;
+}
+
+// Sard Tables IN PANEL ==================================
+
+.panel-body .table.table-sard{
+  margin: -8px 0px -15px 0px;
+}
+
+
+.panel-body .table.table-sard > thead > tr > th,
+.panel-body .table.table-sard > tbody > tr > th,
+.panel-body .table.table-sard > tfoot > tr > th,
+.panel-body .table.table-sard > thead > tr > td,
+.panel-body .table.table-sard > tbody > tr > td,
+.panel-body .table.table-sard > tfoot > tr > td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.panel-body .table.table-sard > thead > tr > th:first-child,
+.panel-body .table.table-sard > tbody > tr > th:first-child,
+.panel-body .table.table-sard > tfoot > tr > th:first-child,
+.panel-body .table.table-sard > thead > tr > td:first-child,
+.panel-body .table.table-sard > tbody > tr > td:first-child,
+.panel-body .table.table-sard > tfoot > tr > td:first-child {
+  padding-left: 15px;
+}
+
+.panel-body .table.table-sard > thead > tr > th:last-child,
+.panel-body .table.table-sard > tbody > tr > th:last-child,
+.panel-body .table.table-sard > tfoot > tr > th:last-child,
+.panel-body .table.table-sard > thead > tr > td:last-child,
+.panel-body .table.table-sard > tbody > tr > td:last-child,
+.panel-body .table.table-sard > tfoot > tr > td:last-child {
+  padding-right: 15px;
+}
+
+
+.panel-body .table.table-sard > thead > tr > th{
+  background-color: $grey08;
+  font-family: $font-heavy;
+  border-bottom: none;
+  border-right: none;
+}
+
+.panel-body .table.table-sard > tbody{
+  border: none;
+  // border-top: none;
+  border-bottom: 4px solid white;
+}
+
+.panel-body .table.table-sard > tbody:last-of-type{
+  border: none;
+  // border-top: none;
+  border-bottom: 0px solid white;
+}
+
+.panel-body .table.table-sard > tbody > tr.bordered{
+  border-top: 1px solid white;
+}
+
+.panel-body .table.table-sard > tbody > tr > td{
+  border-top: none;
+}
+
+.panel-body .table.table-sard > tbody > tr:first-child > td{
+  border-top: none;
+}
+
+.panel-body .table.table-sard > thead > tr > th.border,
+.panel-body .table.table-sard > tbody > tr > td.border{
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+.panel-body .table.table-sard > thead > tr > th:first-child.border,
+.panel-body .table.table-sard > tbody > tr > td:first-child.border{
+  border-left: transparent;
+}
+.panel-body .table.table-sard > thead > tr > th:last-child.border,
+.panel-body .table.table-sard > tbody > tr > td:last-child.border{
+  border-right: transparent;
+}
+
+.panel-body .table.table-sard > thead > tr > th.border-left,
+.panel-body .table.table-sard > tbody > tr > td.border-left{
+  border-left: 1px solid white;
+}
+.panel-body .table.table-sard > thead > tr > th:first-child.border-left,
+.panel-body .table.table-sard > tbody > tr > td:first-child.border-left{
+  border-left: transparent;
+}
+
+.panel-body .table.table-sard > thead > tr > th.border-top,
+.panel-body .table.table-sard > tbody > tr > td.border-top{
+  border-top: 1px solid white;
+}
+.panel-body .table.table-sard > thead > tr:first-child > th.border-top,
+.panel-body .table.table-sard > tbody > tr:first-child > td.border-top{
+  border-top: transparent;
+}
+
+.panel-body .table.table-sard > thead > tr > th.border-right,
+.panel-body .table.table-sard > tbody > tr > td.border-right{
+  border-right: 1px solid white;
+}
+.panel-body .table.table-sard > thead > tr > th:last-child.border-right,
+.panel-body .table.table-sard > tbody > tr > td:last-child.border-right{
+  border-right: transparent;
+}
+
+.panel-body .table.table-sard > thead > tr > th.border-bottom,
+.panel-body .table.table-sard > tbody > tr > td.border-bottom{
+  border-bottom: 1px solid white;
+}
+.panel-body .table.table-sard > thead > tr:last-child > th.border-bottom,
+.panel-body .table.table-sard > tbody > tr:last-child > td.border-bottom{
+  border-bottom: transparent;
+}
+
+.panel-body .table.table-sard > tbody > tr > td.bg-grey{
+  background-color: $grey04;
+}
+.panel-body .table.table-sard > tbody > tr > td.bg-white{
+  background-color: white;
+  border: 1px solid white;
+}
+
+.panel-body .table.table-sard > tbody > tr > td.title{
+  background-color: $grey04;
+  font-family: $font-bold;
+  border-top: none;
+}

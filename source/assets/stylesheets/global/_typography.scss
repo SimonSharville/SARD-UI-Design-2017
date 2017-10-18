@@ -22,6 +22,15 @@
     $link-hover:       darken($client, 5%);
     $link-active:      $purple;
     
+// Roboto =================================================================
+
+$font-thin:    'roboto-thin', Helvetica, Arial, Sans-serif; 
+$font-light:   'roboto-light', Helvetica, Arial, Sans-serif; 
+$font-regular: 'roboto-regular', Helvetica, Arial, Sans-serif; 
+$font-medium:  'roboto-medium', Helvetica, Arial, Sans-serif; 
+$font-bold:    'roboto-bold', Helvetica, Arial, Sans-serif; 
+$font-heavy:   'roboto-black', Helvetica, Arial, Sans-serif; 
+
 
 h1, h2, h3, h4, h5, h6, p{
   font-weight:normal;
