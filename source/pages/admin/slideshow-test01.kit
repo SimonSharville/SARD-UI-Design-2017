@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Admin: SARD Messages</title>
+    <link rel="icon" type="image/ico" href="../../assets/graphics/favicon.ico"/>
+
+    <link href="../../assets/stylesheets/sard-styles.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none}
+</style>
+
+  </head>
+<body id="admin" class="admin">
+
+<div id="top"></div>
+
+<div class="sa-top-section sa-header">
+  <!-- ============================================================================ -->
+  <!-- Main Navigation -->
+  <!-- @import "../../navbars/navbar3.html" -->
+  <!-- @import "../../navbars/admin-bar.html" -->
+  
+  <!-- ============================================================================ -->
+  <!-- Jumbotron -->
+  <!-- @import "../../headers/header-SARD-2.html" -->
+
+    <!-- ============================================================================ -->
+    <!-- Breadcrumb -->
+    <div class="breadcrumbs">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a href="../../index.html">Home</a></li>
+        <li class="active">SARD Messages</li>
+      </ol>
+    </div>
+    </div>
+    <!-- ============================================================================ -->
+    <!-- Page Header -->
+    <div class="container">
+    <div class=" page-header">
+      <div class="row">
+        <div class="col-xs-12">
+
+
+          <div class="page-title">
+              <h4 class="user-name">Tests</h4>
+              <h1 class="title">Slideshow Test 01</h1>
+          </div>
+        </div> <!-- col-xs-12 -->
+
+      </div> <!-- END Row -->
+    </div> <!-- END page-header -->
+  </div> <!-- END Container -->
+    
+</div>  <!-- END top-section -->
+
+
+
+  <!-- ============================================================================ -->
+  <!-- Main Section -->
+  <div class="sa-main-section">
+    <!-- ============================================================================ -->
+    <!-- MAIN CONTENT  - OPTIONAL  -->
+
+    <div class="container sa-main-content">
+
+
+
+      <div class="row">
+        <div class="col-xs-12"> 
+          
+          <div class="w3-container">
+            <h2>Slideshow Test 01</h2>
+            <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide the user is currently viewing.</p>
+            <p>Taken from: <a href="https://www.w3schools.com/w3css/w3css_slideshow.asp" target="blank">W3.CSS Slideshow</a></p>
+          </div>
+
+          <div class="w3-content" style="max-width:800px">
+            <img class="mySlides" src="../../assets/images/img_nature_wide.jpg" style="width:100%">
+            <img class="mySlides" src="../../assets/images/img_snow_wide.jpg" style="width:100%">
+            <img class="mySlides" src="../../assets/images/img_mountains_wide.jpg" style="width:100%">
+          </div>
+
+          <div class="w3-center">
+            <div class="w3-section">
+              <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+              <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+            </div>
+            <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+            <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+            <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+          </div>
+
+        </div><!-- / Col --> 
+      </div> <!-- Row -->
+        
+
+      
+
+    </div> <!-- / sa-Main Content -->
+  </div>  <!-- / sa-Main Section -->
+  <!-- ============================================================================ -->
+  <!-- Footer -->
+  <!-- @import "../../navbars/footer.html" -->
+  <!-- ============================================================================ -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../assets/javascripts/bootstrap.min.js"></script>
+    <script src="../../assets/javascripts/tooltip.js"></script>
+
+    <!-- Added SARD Scripts -->
+    <!-- @import "../../assets/javascripts/SARD-scripts-nested-x2.kit" -->
+    <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+    
+
+
+  </body>
+</html>
